@@ -40,7 +40,10 @@ def draw_rectangles(rects, source):
     blank = np.zeros((height,width,3), np.uint8)
     for index, rect in enumerate(rects):
         x,y,w,h = rect
-        cv2.rectangle(blank, (x,y), (x + w, y + h), (255, 255, 255), -1)
+
+        cropped = source[y: y + h, x: x + w]
+        avg_color = np.average( np.average(cropped, axis=0), axis=0)
+        cv2.rectangle(blank, (x,y), (x + w, y + h), avg_color, -1)
     return blank
 
 
@@ -48,7 +51,6 @@ def save_rects(rects, filename):
     rectangles = []
     for index, rect in enumerate(rects):
         x,y,w,h = rect
-        # cropped = original[y - border: y + h + border, x - border: x + w + border]
         rectangles.append({
             'x': x,
             'y': y,
