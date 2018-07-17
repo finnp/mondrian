@@ -144,32 +144,26 @@ def process_image(file_name):
     draw_black_border(opening)
 
     file_without_ending = file_name[:-len('.' + image_type)]
-    output_filename = output_dir + '/' + file_without_ending + '-binary'
-    cv2.imwrite(output_filename  + '.jpg', binary)
-    output_filename = output_dir + '/' + file_without_ending + '-max'
-    cv2.imwrite(output_filename  + '.jpg', max)
-    output_filename = output_dir + '/' + file_without_ending + '-open' # best so far i think
-    cv2.imwrite(output_filename  + '.jpg', opening)
+    def save_img(img, postfix):
+        output_filename = output_dir + '/' + file_without_ending + '-' + postfix
+        cv2.imwrite(output_filename  + '.jpg', img)
+
+    save_img(binary, 'binary')
+    save_img(max, 'max')
+    save_img(opening, 'open') # best so far
 
     rects, polygons = find_contours(opening)
 
     save_rects(rects, output_dir + '/' + file_without_ending + '.json')
 
     drawn = draw_rectangles(rects, original)
-    output_filename = output_dir + '/' + file_without_ending + '-drawn' # best so far i think
-    cv2.imwrite(output_filename  + '.jpg', drawn)
+    save_img(drawn, 'drawn')
 
     voronoi = draw_voronoi(original, rects)
-    output_filename = output_dir + '/' + file_without_ending + '-voronoi'
-    cv2.imwrite(output_filename  + '.jpg', voronoi)
+    save_img(voronoi, 'voronoi')
 
     cv2.drawContours(original,polygons,-1,(0,255,0),3)
-    output_filename = output_dir + '/' + file_without_ending + '-marked'
-    cv2.imwrite(output_filename  + '.jpg', original)
-
-    #
-    #     with open(output_filename + '.json', 'w') as fp:
-    #         json.dump(metadata, fp)
+    save_img(original, 'marked')
 
 files = os.listdir(input_dir)
 files = list(filter(lambda f: f[-len(image_type):] == 'jpg', files))
