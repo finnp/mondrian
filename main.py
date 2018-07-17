@@ -63,12 +63,20 @@ def draw_rectangles(rects, source):
 
         cropped = source[y: y + h, x: x + w]
         avg_color = np.average( np.average(cropped, axis=0), axis=0)
-        print("avg", avg_color)
-        color = avg_color
         color = find_closest_color(avg_color)
-        print("closest", color)
 
         cv2.rectangle(blank, (x,y), (x + w, y + h), color, -1)
+        middle = (round((2*x + w)/2),round((2*y + h)/2))
+        cv2.circle(blank, middle, 4, (0, 0 ,0), -1)
+        corner_u_l = x,y
+        corner_u_r = x + w,y
+        corner_d_l = x,y+h
+        corner_d_r = (x + w, y + h)
+        cv2.circle(blank, corner_u_l, 3, (0, 255 ,0), -1)
+        cv2.circle(blank, corner_u_r, 3, (0, 255 ,0), -1)
+        cv2.circle(blank, corner_d_l, 3, (0, 255 ,0), -1)
+        cv2.circle(blank, corner_d_r, 3, (0, 255 ,0), -1)
+
     return blank
 
 
