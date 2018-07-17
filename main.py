@@ -18,24 +18,22 @@ kernel = cv2.getStructuringElement(cv2.MORPH_RECT,(10,10))
 
 def find_contours (img):
     _, contours, _ = cv2.findContours(img.copy(), retr_type, contour_algorithm)
-    contours = list(filter(lambda cont: cv2.contourArea(cont) > min_ticket_size, contours))
+    # contours = list(filter(lambda cont: cv2.contourArea(cont) > min_ticket_size, contours))
     rects = []
     polygons = []
     for cont in contours:
-        polygon = cv2.approxPolyDP(cont, 40, True).copy().reshape(-1, 2)
+        polygon = cv2.approxPolyDP(cont, 1, True).copy().reshape(-1, 2)
         polygon = cv2.convexHull(polygon)
-        if (len(polygon) > 15): continue # possibly not needed when comparing the areas
         area = cv2.contourArea(polygon)
         rect = cv2.boundingRect(polygon)
-        x,y,width,height = rect
-        if (width > 2.3*height or height > 2.3*width): continue # unusual shape
-        rect_area = width * height
-        area_diff = abs(rect_area - area)
-        if (area_diff > 60000): continue
         rects.append(rect)
         polygons.append(polygon)
 
     return (rects, polygons)
+
+def draw_black_border(img):
+    height, width = img.shape[:2]
+    cv2.rectangle(img, (0,0), (width, height), (0, 255, 0))
 
 def process_image(file_name):
     original = cv2.imread(input_dir + '/' + file_name)
@@ -49,20 +47,22 @@ def process_image(file_name):
 
     opening = cv2.morphologyEx(max, cv2.MORPH_OPEN, kernel)
 
+    draw_black_border(opening)
 
     file_without_ending = file_name[:-len('.' + image_type)]
-    output_filename = output_dir + '/' + file_without_ending + '-r'
-    cv2.imwrite(output_filename  + '.jpg', r)
-    output_filename = output_dir + '/' + file_without_ending + '-g'
-    cv2.imwrite(output_filename  + '.jpg', g)
-    output_filename = output_dir + '/' + file_without_ending + '-b'
-    cv2.imwrite(output_filename  + '.jpg', b)
     output_filename = output_dir + '/' + file_without_ending + '-binary'
     cv2.imwrite(output_filename  + '.jpg', binary)
     output_filename = output_dir + '/' + file_without_ending + '-max'
     cv2.imwrite(output_filename  + '.jpg', max)
-    output_filename = output_dir + '/' + file_without_ending + '-open'
+    output_filename = output_dir + '/' + file_without_ending + '-open' # best so far i think
     cv2.imwrite(output_filename  + '.jpg', opening)
+
+    rects, polygons = find_contours(opening)
+
+    cv2.drawContours(original,polygons,-1,(0,255,0),3)
+    output_filename = output_dir + '/' + file_without_ending + '-marked'
+    cv2.imwrite(output_filename  + '.jpg', original)
+
     #
     #     with open(output_filename + '.json', 'w') as fp:
     #         json.dump(metadata, fp)
