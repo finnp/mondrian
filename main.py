@@ -8,6 +8,16 @@ import datetime
 retr_type = cv2.RETR_LIST
 contour_algorithm = cv2.CHAIN_APPROX_SIMPLE
 
+def to_opencv_color(color):
+    r,g,b = color
+    return (b,g,r)
+
+yellow = (255, 243, 0)
+blue = (0, 102, 181)
+red = (238, 21, 31)
+white = (255, 255, 255)
+colors = [to_opencv_color(yellow), to_opencv_color(blue), to_opencv_color(red), to_opencv_color(white)]
+
 input_dir = 'img'
 output_dir = 'output'
 image_type = 'jpg'
@@ -35,6 +45,16 @@ def draw_black_border(img):
     height, width = img.shape[:2]
     cv2.rectangle(img, (0,0), (width, height), (0, 0, 0))
 
+def find_closest_color(to_color):
+    current_distance = 500
+    current_color = (255, 255, 255)
+    for from_color in colors:
+        new_distance = np.linalg.norm(np.array(from_color) - to_color)
+        if (new_distance < current_distance):
+            current_color = from_color
+            current_distance = new_distance
+    return current_color
+
 def draw_rectangles(rects, source):
     height, width = source.shape[:2]
     blank = np.zeros((height,width,3), np.uint8)
@@ -43,7 +63,12 @@ def draw_rectangles(rects, source):
 
         cropped = source[y: y + h, x: x + w]
         avg_color = np.average( np.average(cropped, axis=0), axis=0)
-        cv2.rectangle(blank, (x,y), (x + w, y + h), avg_color, -1)
+        print("avg", avg_color)
+        color = avg_color
+        color = find_closest_color(avg_color)
+        print("closest", color)
+
+        cv2.rectangle(blank, (x,y), (x + w, y + h), color, -1)
     return blank
 
 
