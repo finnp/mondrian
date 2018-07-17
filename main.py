@@ -55,6 +55,13 @@ def find_closest_color(to_color):
             current_distance = new_distance
     return current_color
 
+def get_average_color_for_rect(img, rect):
+    x,y,w,h = rect
+
+    cropped = img[y: y + h, x: x + w]
+    avg_color = np.average( np.average(cropped, axis=0), axis=0)
+    return find_closest_color(avg_color)
+
 def draw_voronoi(img, rects):
 
     voronoi = img.copy()
@@ -75,12 +82,7 @@ def draw_voronoi(img, rects):
         for f in facets[i] :
             ifacet_arr.append(f)
 
-        rect = rects[i]
-        x,y,w,h = rect
-
-        cropped = img[y: y + h, x: x + w]
-        avg_color = np.average( np.average(cropped, axis=0), axis=0)
-        color = find_closest_color(avg_color)
+        color = get_average_color_for_rect(img, rects[i])
 
         ifacet = np.array(ifacet_arr, np.int)
 
@@ -97,9 +99,7 @@ def draw_rectangles(rects, source):
     for index, rect in enumerate(rects):
         x,y,w,h = rect
 
-        cropped = source[y: y + h, x: x + w]
-        avg_color = np.average( np.average(cropped, axis=0), axis=0)
-        color = find_closest_color(avg_color)
+        color = get_average_color_for_rect(source, rect)
 
         cv2.rectangle(blank, (x,y), (x + w, y + h), color, -1)
         middle = (round((2*x + w)/2),round((2*y + h)/2))
