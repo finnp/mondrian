@@ -33,7 +33,30 @@ def find_contours (img):
 
 def draw_black_border(img):
     height, width = img.shape[:2]
-    cv2.rectangle(img, (0,0), (width, height), (0, 255, 0))
+    cv2.rectangle(img, (0,0), (width, height), (0, 0, 0))
+
+def draw_rectangles(rects, source):
+    height, width = source.shape[:2]
+    blank = np.zeros((height,width,3), np.uint8)
+    for index, rect in enumerate(rects):
+        x,y,w,h = rect
+        cv2.rectangle(blank, (x,y), (x + w, y + h), (255, 255, 255), -1)
+    return blank
+
+
+def save_rects(rects, filename):
+    rectangles = []
+    for index, rect in enumerate(rects):
+        x,y,w,h = rect
+        # cropped = original[y - border: y + h + border, x - border: x + w + border]
+        rectangles.append({
+            'x': x,
+            'y': y,
+            'width': w,
+            'height': h
+        })
+    with open(filename, 'w') as fp:
+        json.dump(rectangles, fp)
 
 def process_image(file_name):
     original = cv2.imread(input_dir + '/' + file_name)
@@ -58,6 +81,12 @@ def process_image(file_name):
     cv2.imwrite(output_filename  + '.jpg', opening)
 
     rects, polygons = find_contours(opening)
+
+    save_rects(rects, output_dir + '/' + file_without_ending + '.json')
+
+    drawn = draw_rectangles(rects, original)
+    output_filename = output_dir + '/' + file_without_ending + '-drawn' # best so far i think
+    cv2.imwrite(output_filename  + '.jpg', drawn)
 
     cv2.drawContours(original,polygons,-1,(0,255,0),3)
     output_filename = output_dir + '/' + file_without_ending + '-marked'
