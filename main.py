@@ -141,13 +141,57 @@ def process_image(file_name):
 
     opening = cv2.morphologyEx(max, cv2.MORPH_OPEN, kernel)
 
+    # adjust these numbers
+    with_lines = np.copy(original)
+    edges = cv2.Canny(opening, 50, 150)
+    lines = cv2.HoughLinesP(
+        cv2.bitwise_not(opening),
+        rho = 1,
+        theta = np.pi / 2,
+        threshold=50,
+        minLineLength=120,
+        maxLineGap=10
+    )
+    already_seen = set()
+    reduced_lines = []
+
+    for index, line in enumerate(lines):
+        x1,y1,x2,y2 = line[0]
+        # cv2.line(with_lines,(x1,y1),(x2,y2),(0,0,255),2)
+        if index in already_seen:
+            continue
+        if (abs(y1-y2) > abs(x1-x2)):
+            # vertical
+            for other_index, other_line in enumerate(lines):
+                x1_other,y1_other,x2_other,y2_other = other_line[0]
+                if (abs(x1 - x1_other) < 50):
+                    if (y2_other < y2):
+                        y2 = y2_other
+                    if (y1_other > y1):
+                        y1 = y1_other
+
+                    already_seen.add(other_index)
+        else:
+            #horizontal
+            for other_index, other_line in enumerate(lines):
+                x1_other,y1_other,x2_other,y2_other = other_line[0]
+                if (abs(y1 - y1_other) < 50):
+                    already_seen.add(other_index)
+
+        reduced_lines.append((x1,y1,x2,y2))
+
+    for x1,y1,x2,y2 in reduced_lines:
+        line_color = (np.random.randint(200, 255),np.random.randint(200, 255),np.random.randint(200,255))
+        cv2.line(with_lines,(x1,y1),(x2,y2),line_color,2)
     draw_black_border(opening)
 
     file_without_ending = file_name[:-len('.' + image_type)]
-    def save_img(img, postfix):
-        output_filename = output_dir + '/' + file_without_ending + '-' + postfix
+    def save_img(img, type):
+        output_filename = output_dir + '/' + type + '-' + file_without_ending
         cv2.imwrite(output_filename  + '.jpg', img)
 
+    save_img(with_lines, 'lines')
+    save_img(edges, 'edges')
     save_img(binary, 'binary')
     save_img(max, 'max')
     save_img(opening, 'open') # best so far
