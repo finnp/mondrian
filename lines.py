@@ -67,17 +67,10 @@ def reduce_lines(lines):
                 y_values.append(y2_b)
                 seen_horizontal.add(other_index)
 
-            # taking the average x value for all the lines to get the middle
+            # taking the average y value for all the lines to get the middle
             y = int(np.mean(y_values))
         output_horizontal.append((x1,y,x2,y))
 
-    # else:
-    #     #horizontal
-    #     for other_index, other_line in enumerate(lines):
-    #         x1_other,y1_other,x2_other,y2_other = other_line[0]
-    #         if (abs(y1 - y1_other) < min_distance):
-    #             already_seen.add(other_index)
-            # horizontal_lines.append((x1,y1,x2,y2))
     return (output_vertical, output_horizontal)
 
 
