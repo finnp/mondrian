@@ -5,6 +5,7 @@ import os
 import json
 import datetime
 from helpers import connect_lines, reduce_lines
+from draw import draw_voronoi
 
 retr_type = cv2.RETR_LIST
 contour_algorithm = cv2.CHAIN_APPROX_SIMPLE
@@ -62,37 +63,6 @@ def get_closest_color(img, rect):
     cropped = img[y: y + h, x: x + w]
     avg_color = np.average( np.average(cropped, axis=0), axis=0)
     return find_closest_color(avg_color)
-
-def draw_voronoi(img, rects):
-
-    voronoi = img.copy()
-
-    width, height = img.shape[:2]
-
-    subdiv = cv2.Subdiv2D((0, 0, height, width))
-
-    for rect in rects :
-        x,y,w,h = rect
-        middle = (round((2*x + w)/2),round((2*y + h)/2))
-        subdiv.insert(middle)
-
-    ( facets, centers) = subdiv.getVoronoiFacetList([])
-
-    for i in range(0,len(facets)) :
-        ifacet_arr = []
-        for f in facets[i] :
-            ifacet_arr.append(f)
-
-        color = get_closest_color(img, rects[i])
-
-        ifacet = np.array(ifacet_arr, np.int)
-
-
-        cv2.fillConvexPoly(voronoi, ifacet, color);
-        ifacets = np.array([ifacet])
-        cv2.polylines(voronoi, ifacets, True, (0, 0, 0), 1)
-        cv2.circle(voronoi, (centers[i][0], centers[i][1]), 3, (0, 0, 0), -1)
-    return voronoi
 
 def draw_rectangles(rects, source):
     height, width = source.shape[:2]
@@ -187,9 +157,6 @@ def process_image(file_name):
 
     drawn = draw_rectangles(rects, original)
     save_img(drawn, 'drawn')
-
-    voronoi = draw_voronoi(original, rects)
-    save_img(voronoi, 'voronoi')
 
     cv2.drawContours(original,polygons,-1,(0,255,0),3)
     save_img(original, 'marked')
