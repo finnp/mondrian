@@ -153,7 +153,8 @@ def process_image(file_name):
         maxLineGap=10
     )
     already_seen = set()
-    reduced_lines = []
+    horizontal_lines = []
+    vertical_lines = []
 
     for index, line in enumerate(lines):
         x1,y1,x2,y2 = line[0]
@@ -171,6 +172,7 @@ def process_image(file_name):
                         y1 = y1_other
 
                     already_seen.add(other_index)
+            vertical_lines.append((x1,y1,x2,y2))
         else:
             #horizontal
             for other_index, other_line in enumerate(lines):
@@ -178,11 +180,12 @@ def process_image(file_name):
                 if (abs(y1 - y1_other) < 50):
                     already_seen.add(other_index)
 
-        reduced_lines.append((x1,y1,x2,y2))
+            horizontal_lines.append((x1,y1,x2,y2))
 
-    for x1,y1,x2,y2 in reduced_lines:
-        line_color = (np.random.randint(200, 255),np.random.randint(200, 255),np.random.randint(200,255))
-        cv2.line(with_lines,(x1,y1),(x2,y2),line_color,2)
+    for x1,y1,x2,y2 in horizontal_lines:
+        cv2.line(with_lines,(x1,y1),(x2,y2),(100, 100, 255),2)
+    for x1,y1,x2,y2 in vertical_lines:
+        cv2.line(with_lines,(x1,y1),(x2,y2),(100, 255, 100),2)
     draw_black_border(opening)
 
     file_without_ending = file_name[:-len('.' + image_type)]
