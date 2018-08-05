@@ -3,12 +3,11 @@ import numpy as np
 def split_by_orientation(lines):
     horizontal = []
     vertical = []
-    for line in lines:
-        x1,y1,x2,y2 = line[0]
+    for x1,y1,x2,y2 in lines:
         if (abs(y1-y2) > abs(x1-x2)):
-            vertical.append(line[0])
+            vertical.append((x1,y1,x2,y2))
         else:
-            horizontal.append(line[0])
+            horizontal.append((x1,y1,x2,y2))
     return (horizontal, vertical)
 
 def reduce_lines(lines):
@@ -31,8 +30,8 @@ def reduce_lines(lines):
     for index, (x1,y1,x2,y2) in enumerate(input_vertical):
         if index in seen_vertical:
             continue
+        x_values = [x1,x2]
         for other_index, (x1_b,y1_b,x2_b,y2_b) in enumerate(input_vertical):
-            x_values = [x1, x2]
             if (abs(x1 - x1_b) < min_distance):
                 # if the end is further to the top, choose this end
                 if (y2_b < y2):
@@ -41,20 +40,19 @@ def reduce_lines(lines):
                 if (y1_b > y1):
                     y1 = y1_b
 
-                x_values.append(x1_b)
-                x_values.append(x2_b)
+                x_values += [x1_b, x2_b]
                 seen_vertical.add(other_index)
 
             # taking the average x value for all the lines to get the middle
-            x = int(np.mean(x_values))
+        x = int(np.mean(x_values))
         output_vertical.append((x,y1,x,y2))
 
     #horizontal
     for index, (x1,y1,x2,y2) in enumerate(input_horizontal):
         if index in seen_horizontal:
             continue
+        y_values = [y1, y2]
         for other_index, (x1_b,y1_b,x2_b,y2_b) in enumerate(input_horizontal):
-            y_values = [y1, y2]
             if (abs(y1 - y1_b) < min_distance):
                 # if the start if further to the left, choose this point
                 if (x1_b < x1):
@@ -63,12 +61,11 @@ def reduce_lines(lines):
                 if (x2_b > x2):
                     x2 = x2_b
 
-                y_values.append(y1_b)
-                y_values.append(y2_b)
+                y_values += [y1_b, y2_b]
                 seen_horizontal.add(other_index)
 
             # taking the average y value for all the lines to get the middle
-            y = int(np.mean(y_values))
+        y = int(np.mean(y_values))
         output_horizontal.append((x1,y,x2,y))
 
     return (output_vertical, output_horizontal)

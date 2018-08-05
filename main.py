@@ -3,7 +3,7 @@ import sys
 import imutils
 import datetime
 from lines import connect_lines, reduce_lines
-from draw import draw_rectangles
+from draw import draw_rectangles, draw_lines
 from files import process_pipeline
 
 retr_type = cv2.RETR_LIST
@@ -56,6 +56,10 @@ def process_image(original):
         maxLineGap=10
     )
 
+    lines = [line[0] for line in lines] # weird HoughLinesP output
+
+    # draw_lines(with_lines, lines)
+
     (vertical_lines, horizontal_lines) = reduce_lines(lines)
 
     # add helper lines for borders
@@ -64,9 +68,7 @@ def process_image(original):
 
     connected_lines = connect_lines(horizontal_lines, vertical_lines)
 
-    for x1,y1,x2,y2 in connected_lines:
-        cv2.line(with_lines,(x1,y1),(x2,y2),(100, 100, 255),2)
-        cv2.circle(with_lines, (x1,y1), 5, (255,255,255))
+    draw_lines(with_lines, connected_lines)
 
     draw_black_border(opening)
 

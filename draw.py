@@ -10,6 +10,12 @@ red = (238, 21, 31)
 white = (255, 255, 255)
 colors = [to_opencv_color(yellow), to_opencv_color(blue), to_opencv_color(red), to_opencv_color(white)]
 
+def draw_lines(img, lines):
+    for x1,y1,x2,y2 in lines:
+        cv2.line(img,(x1,y1),(x2,y2),(100, 100, 255),2)
+        cv2.circle(img, (x1,y1), 5, (255,255,255))
+
+
 def draw_rectangles(rects, source):
     height, width = source.shape[:2]
     blank = np.zeros((height,width,3), np.uint8)
