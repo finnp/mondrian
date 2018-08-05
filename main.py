@@ -5,20 +5,10 @@ import os
 import json
 import datetime
 from helpers import connect_lines, reduce_lines
-from draw import draw_voronoi
+from draw import draw_rectangles
 
 retr_type = cv2.RETR_LIST
 contour_algorithm = cv2.CHAIN_APPROX_SIMPLE
-
-def to_opencv_color(color):
-    r,g,b = color
-    return (b,g,r)
-
-yellow = (255, 243, 0)
-blue = (0, 102, 181)
-red = (238, 21, 31)
-white = (255, 255, 255)
-colors = [to_opencv_color(yellow), to_opencv_color(blue), to_opencv_color(red), to_opencv_color(white)]
 
 input_dir = 'img'
 output_dir = 'output'
@@ -46,46 +36,6 @@ def find_contours (img):
 def draw_black_border(img):
     height, width = img.shape[:2]
     cv2.rectangle(img, (0,0), (width, height), (0, 0, 0))
-
-def find_closest_color(to_color):
-    current_distance = 500
-    current_color = (255, 255, 255)
-    for from_color in colors:
-        new_distance = np.linalg.norm(np.array(from_color) - to_color)
-        if (new_distance < current_distance):
-            current_color = from_color
-            current_distance = new_distance
-    return current_color
-
-def get_closest_color(img, rect):
-    x,y,w,h = rect
-
-    cropped = img[y: y + h, x: x + w]
-    avg_color = np.average( np.average(cropped, axis=0), axis=0)
-    return find_closest_color(avg_color)
-
-def draw_rectangles(rects, source):
-    height, width = source.shape[:2]
-    blank = np.zeros((height,width,3), np.uint8)
-    for index, rect in enumerate(rects):
-        x,y,w,h = rect
-
-        color = get_closest_color(source, rect)
-
-        cv2.rectangle(blank, (x,y), (x + w, y + h), color, -1)
-        middle = (round((2*x + w)/2),round((2*y + h)/2))
-        cv2.circle(blank, middle, 4, (0, 0 ,0), -1)
-        corner_u_l = x,y
-        corner_u_r = x + w,y
-        corner_d_l = x,y+h
-        corner_d_r = (x + w, y + h)
-        cv2.circle(blank, corner_u_l, 3, (0, 255 ,0), -1)
-        cv2.circle(blank, corner_u_r, 3, (0, 255 ,0), -1)
-        cv2.circle(blank, corner_d_l, 3, (0, 255 ,0), -1)
-        cv2.circle(blank, corner_d_r, 3, (0, 255 ,0), -1)
-
-    return blank
-
 
 def save_rects(rects, filename):
     rectangles = []

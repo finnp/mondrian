@@ -10,6 +10,27 @@ red = (238, 21, 31)
 white = (255, 255, 255)
 colors = [to_opencv_color(yellow), to_opencv_color(blue), to_opencv_color(red), to_opencv_color(white)]
 
+def draw_rectangles(rects, source):
+    height, width = source.shape[:2]
+    blank = np.zeros((height,width,3), np.uint8)
+    for index, rect in enumerate(rects):
+        x,y,w,h = rect
+
+        color = get_closest_color(source, rect)
+
+        cv2.rectangle(blank, (x,y), (x + w, y + h), color, -1)
+        middle = (round((2*x + w)/2),round((2*y + h)/2))
+        cv2.circle(blank, middle, 4, (0, 0 ,0), -1)
+        corner_u_l = x,y
+        corner_u_r = x + w,y
+        corner_d_l = x,y+h
+        corner_d_r = (x + w, y + h)
+        cv2.circle(blank, corner_u_l, 3, (0, 255 ,0), -1)
+        cv2.circle(blank, corner_u_r, 3, (0, 255 ,0), -1)
+        cv2.circle(blank, corner_d_l, 3, (0, 255 ,0), -1)
+        cv2.circle(blank, corner_d_r, 3, (0, 255 ,0), -1)
+
+    return blank
 
 def draw_voronoi(img, rects):
 
