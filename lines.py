@@ -1,38 +1,84 @@
+import numpy as np
+
+def split_by_orientation(lines):
+    horizontal = []
+    vertical = []
+    for line in lines:
+        x1,y1,x2,y2 = line[0]
+        if (abs(y1-y2) > abs(x1-x2)):
+            vertical.append(line[0])
+        else:
+            horizontal.append(line[0])
+    return (horizontal, vertical)
+
 def reduce_lines(lines):
     """
         Takes a list of vertical and horizontal lines,
         tries to reduce them to essential lines eliminating lines close to each
         other.
     """
-    already_seen = set()
-    horizontal_lines = []
-    vertical_lines = []
+
+    (input_horizontal, input_vertical) = split_by_orientation(lines)
     min_distance = 50 # minimal distance for lines to be considered distinct
-    for index, line in enumerate(lines):
-        x1,y1,x2,y2 = line[0]
-        if index in already_seen:
+
+
+    seen_vertical = set()
+    seen_horizontal = set()
+    output_vertical = []
+    output_horizontal = []
+
+    # vertical
+    for index, (x1,y1,x2,y2) in enumerate(input_vertical):
+        if index in seen_vertical:
             continue
-        if (abs(y1-y2) > abs(x1-x2)):
-            # vertical
-            for other_index, other_line in enumerate(lines):
-                x1_other,y1_other,x2_other,y2_other = other_line[0]
-                if (abs(x1 - x1_other) < min_distance):
-                    if (y2_other < y2):
-                        y2 = y2_other
-                    if (y1_other > y1):
-                        y1 = y1_other
+        for other_index, (x1_b,y1_b,x2_b,y2_b) in enumerate(input_vertical):
+            x_values = [x1, x2]
+            if (abs(x1 - x1_b) < min_distance):
+                # if the end is further to the top, choose this end
+                if (y2_b < y2):
+                    y2 = y2_b
+                # if the start if further to the bottom, choose it
+                if (y1_b > y1):
+                    y1 = y1_b
 
-                    already_seen.add(other_index)
-            vertical_lines.append((x1,y1,x2,y2))
-        else:
-            #horizontal
-            for other_index, other_line in enumerate(lines):
-                x1_other,y1_other,x2_other,y2_other = other_line[0]
-                if (abs(y1 - y1_other) < min_distance):
-                    already_seen.add(other_index)
+                x_values.append(x1_b)
+                x_values.append(x2_b)
+                seen_vertical.add(other_index)
 
-            horizontal_lines.append((x1,y1,x2,y2))
-    return (vertical_lines, horizontal_lines)
+            # taking the average x value for all the lines to get the middle
+            x = int(np.mean(x_values))
+        output_vertical.append((x,y1,x,y2))
+
+    #horizontal
+    for index, (x1,y1,x2,y2) in enumerate(input_horizontal):
+        if index in seen_horizontal:
+            continue
+        for other_index, (x1_b,y1_b,x2_b,y2_b) in enumerate(input_horizontal):
+            y_values = [y1, y2]
+            if (abs(y1 - y1_b) < min_distance):
+                # if the start if further to the left, choose this point
+                if (x1_b < x1):
+                    x1 = x1_b
+                # if the end is further to the right, choose it
+                if (x2_b > x2):
+                    x2 = x2_b
+
+                y_values.append(y1_b)
+                y_values.append(y2_b)
+                seen_horizontal.add(other_index)
+
+            # taking the average x value for all the lines to get the middle
+            y = int(np.mean(y_values))
+        output_horizontal.append((x1,y,x2,y))
+
+    # else:
+    #     #horizontal
+    #     for other_index, other_line in enumerate(lines):
+    #         x1_other,y1_other,x2_other,y2_other = other_line[0]
+    #         if (abs(y1 - y1_other) < min_distance):
+    #             already_seen.add(other_index)
+            # horizontal_lines.append((x1,y1,x2,y2))
+    return (output_vertical, output_horizontal)
 
 
 
