@@ -4,7 +4,7 @@ import imutils
 import os
 import json
 import datetime
-from helpers import connect_lines
+from helpers import connect_lines, reduce_lines
 
 retr_type = cv2.RETR_LIST
 contour_algorithm = cv2.CHAIN_APPROX_SIMPLE
@@ -155,36 +155,12 @@ def process_image(file_name):
         minLineLength=120,
         maxLineGap=10
     )
-    already_seen = set()
-    # prefilled with helperlines for the borders
-    horizontal_lines = [(0,0,width,0), (0,height,width,height)]
-    vertical_lines = [(0,0,0,height), (width,0,width,height)]
 
-    for index, line in enumerate(lines):
-        x1,y1,x2,y2 = line[0]
-        # cv2.line(with_lines,(x1,y1),(x2,y2),(0,0,255),2)
-        if index in already_seen:
-            continue
-        if (abs(y1-y2) > abs(x1-x2)):
-            # vertical
-            for other_index, other_line in enumerate(lines):
-                x1_other,y1_other,x2_other,y2_other = other_line[0]
-                if (abs(x1 - x1_other) < 50):
-                    if (y2_other < y2):
-                        y2 = y2_other
-                    if (y1_other > y1):
-                        y1 = y1_other
+    (vertical_lines, horizontal_lines) = reduce_lines(lines)
 
-                    already_seen.add(other_index)
-            vertical_lines.append((x1,y1,x2,y2))
-        else:
-            #horizontal
-            for other_index, other_line in enumerate(lines):
-                x1_other,y1_other,x2_other,y2_other = other_line[0]
-                if (abs(y1 - y1_other) < 50):
-                    already_seen.add(other_index)
-
-            horizontal_lines.append((x1,y1,x2,y2))
+    # add helper lines for borders
+    horizontal_lines += [(0,0,width,0), (0,height,width,height)]
+    vertical_lines += [(0,0,0,height), (width,0,width,height)]
 
     connected_lines = connect_lines(horizontal_lines, vertical_lines)
 

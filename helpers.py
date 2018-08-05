@@ -1,3 +1,41 @@
+def reduce_lines(lines):
+    """
+        Takes a list of vertical and horizontal lines,
+        tries to reduce them to essential lines eliminating lines close to each
+        other.
+    """
+    already_seen = set()
+    horizontal_lines = []
+    vertical_lines = []
+    min_distance = 50 # minimal distance for lines to be considered distinct
+    for index, line in enumerate(lines):
+        x1,y1,x2,y2 = line[0]
+        if index in already_seen:
+            continue
+        if (abs(y1-y2) > abs(x1-x2)):
+            # vertical
+            for other_index, other_line in enumerate(lines):
+                x1_other,y1_other,x2_other,y2_other = other_line[0]
+                if (abs(x1 - x1_other) < min_distance):
+                    if (y2_other < y2):
+                        y2 = y2_other
+                    if (y1_other > y1):
+                        y1 = y1_other
+
+                    already_seen.add(other_index)
+            vertical_lines.append((x1,y1,x2,y2))
+        else:
+            #horizontal
+            for other_index, other_line in enumerate(lines):
+                x1_other,y1_other,x2_other,y2_other = other_line[0]
+                if (abs(y1 - y1_other) < min_distance):
+                    already_seen.add(other_index)
+
+            horizontal_lines.append((x1,y1,x2,y2))
+    return (vertical_lines, horizontal_lines)
+
+
+
 def connect_lines(horizontal_lines, vertical_lines):
     """
         Makes sure the ends of every line are touching another line
@@ -6,6 +44,13 @@ def connect_lines(horizontal_lines, vertical_lines):
             - Prefer crossing lines in the direction of the end
                 - e.g. the right end of a horizontal should rather connect to a vertical to the closest_vertical_right
             - Make sure the "crossing line" is actually long enough to cross this line
+
+        Idea:
+            - Test and improve this algorithm by
+                - 1. create lines a la mondrian
+                - 2. randomly shorten this lines
+                - 3. run the algorithm over the sortened version
+                - 4. check whether the result is the original
     """
     lines = []
 
