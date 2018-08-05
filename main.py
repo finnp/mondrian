@@ -4,7 +4,7 @@ import imutils
 import os
 import json
 import datetime
-from helpers import connect_lines, reduce_lines
+from lines import connect_lines, reduce_lines
 from draw import draw_rectangles
 
 retr_type = cv2.RETR_LIST
