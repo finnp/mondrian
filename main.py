@@ -1,18 +1,13 @@
 import cv2, numpy as np
 import sys
 import imutils
-import os
-import json
 import datetime
 from lines import connect_lines, reduce_lines
 from draw import draw_rectangles
+from files import process_pipeline
 
 retr_type = cv2.RETR_LIST
 contour_algorithm = cv2.CHAIN_APPROX_SIMPLE
-
-input_dir = 'img'
-output_dir = 'output'
-image_type = 'jpg'
 
 threshold_value = 50
 
@@ -37,22 +32,7 @@ def draw_black_border(img):
     height, width = img.shape[:2]
     cv2.rectangle(img, (0,0), (width, height), (0, 0, 0))
 
-def save_rects(rects, filename):
-    rectangles = []
-    for index, rect in enumerate(rects):
-        x,y,w,h = rect
-        rectangles.append({
-            'x': x,
-            'y': y,
-            'width': w,
-            'height': h
-        })
-    with open(filename, 'w') as fp:
-        json.dump(rectangles, fp)
-
-def process_image(file_name):
-    original = cv2.imread(input_dir + '/' + file_name)
-
+def process_image(original):
     height, width, channels = original.shape
 
     b,g,r = cv2.split(original)
@@ -90,31 +70,19 @@ def process_image(file_name):
 
     draw_black_border(opening)
 
-    file_without_ending = file_name[:-len('.' + image_type)]
-    def save_img(img, type):
-        output_filename = output_dir + '/' + type + '-' + file_without_ending
-        cv2.imwrite(output_filename  + '.jpg', img)
-
-    save_img(with_lines, 'lines')
-    save_img(edges, 'edges')
-    save_img(binary, 'binary')
-    save_img(max, 'max')
-    save_img(opening, 'open') # best so far
-
     rects, polygons = find_contours(opening)
-
-    save_rects(rects, output_dir + '/' + file_without_ending + '.json')
-
     drawn = draw_rectangles(rects, original)
-    save_img(drawn, 'drawn')
 
     cv2.drawContours(original,polygons,-1,(0,255,0),3)
-    save_img(original, 'marked')
 
-files = os.listdir(input_dir)
-files = list(filter(lambda f: f[-len(image_type):] == 'jpg', files))
-total = len(files)
+    return [
+        (with_lines, 'lines'),
+        (edges, 'edges'),
+        (binary, 'binary'),
+        (max, 'max'),
+        (opening, 'open'),
+        (drawn, 'drawn'),
+        (original, 'marked')
+    ]
 
-for index, file_name in enumerate(files):
-    print('processing ' + str(index + 1) + '/' + str(total), file_name)
-    process_image(file_name)
+process_pipeline(process_image)
