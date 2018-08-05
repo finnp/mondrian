@@ -4,6 +4,7 @@ import imutils
 import os
 import json
 import datetime
+from helpers import connect_lines
 
 retr_type = cv2.RETR_LIST
 contour_algorithm = cv2.CHAIN_APPROX_SIMPLE
@@ -132,6 +133,8 @@ def save_rects(rects, filename):
 def process_image(file_name):
     original = cv2.imread(input_dir + '/' + file_name)
 
+    height, width, channels = original.shape
+
     b,g,r = cv2.split(original)
     _, binary = cv2.threshold(original, threshold_value, 255, cv2.THRESH_BINARY)
 
@@ -153,8 +156,9 @@ def process_image(file_name):
         maxLineGap=10
     )
     already_seen = set()
-    horizontal_lines = []
-    vertical_lines = []
+    # prefilled with helperlines for the borders
+    horizontal_lines = [(0,0,width,0), (0,height,width,height)]
+    vertical_lines = [(0,0,0,height), (width,0,width,height)]
 
     for index, line in enumerate(lines):
         x1,y1,x2,y2 = line[0]
@@ -182,10 +186,12 @@ def process_image(file_name):
 
             horizontal_lines.append((x1,y1,x2,y2))
 
-    for x1,y1,x2,y2 in horizontal_lines:
+    connected_lines = connect_lines(horizontal_lines, vertical_lines)
+
+    for x1,y1,x2,y2 in connected_lines:
         cv2.line(with_lines,(x1,y1),(x2,y2),(100, 100, 255),2)
-    for x1,y1,x2,y2 in vertical_lines:
-        cv2.line(with_lines,(x1,y1),(x2,y2),(100, 255, 100),2)
+        cv2.circle(with_lines, (x1,y1), 5, (255,255,255))
+
     draw_black_border(opening)
 
     file_without_ending = file_name[:-len('.' + image_type)]
