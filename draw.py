@@ -15,6 +15,13 @@ def draw_lines(img, lines, color = (100, 100, 255)):
         cv2.line(img,(x1,y1),(x2,y2),color,2)
         cv2.circle(img, (x1,y1), 5, color)
 
+def draw_corners(img, corners, angles, color = (100,255,200)):
+    for corner in corners:
+        cv2.ellipse(img,corner,(10,10),0,angles[0],angles[1],color,-1)
+
+def draw_points(img, points, color = (255,100,100)):
+    for point in points:
+        cv2.circle(img, point, 10, color, -1)
 
 def draw_rectangles(rects, source):
     height, width = source.shape[:2]

@@ -2,8 +2,8 @@ import cv2, numpy as np
 import sys
 import imutils
 import datetime
-from lines import connect_lines, reduce_lines, detect_lines
-from draw import draw_rectangles, draw_lines
+from lines import connect_lines, reduce_lines, detect_lines, find_corners
+from draw import draw_rectangles, draw_lines, draw_points, draw_corners
 from files import process_pipeline
 
 retr_type = cv2.RETR_LIST
@@ -56,10 +56,21 @@ def process_image(original):
 
     # add helper lines for borders
     horizontal_lines += [(0,0,width,0), (0,height,width,height)]
-    vertical_lines += [(0,0,0,height), (width,0,width,height)]
+    vertical_lines += [(width,height,width,0), (0,height,0,0)]
 
-    connected_lines = connect_lines(horizontal_lines, vertical_lines)
-    draw_lines(with_lines, connected_lines)
+    (horizontal, vertical) = connect_lines(horizontal_lines, vertical_lines)
+
+    top_left, bottom_left, bottom_right, top_right = find_corners(horizontal, vertical)
+    top_left.append((0,0))
+    bottom_left.append((0,height))
+    bottom_right.append((width,height))
+    top_right.append((width,0))
+    draw_corners(with_lines, top_left, (0, 90))
+    draw_corners(with_lines, top_right, (90, 180))
+    draw_corners(with_lines, bottom_right, (180, 270))
+    draw_corners(with_lines, bottom_left, (270, 360))
+
+    draw_lines(with_lines, horizontal + vertical)
 
     # draw_lines(with_lines, connected_lines)
 

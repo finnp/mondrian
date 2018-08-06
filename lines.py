@@ -142,7 +142,8 @@ def connect_lines(horizontal_lines, vertical_lines):
                 - 3. run the algorithm over the sortened version
                 - 4. check whether the result is the original
     """
-    lines = []
+    horizontal = []
+    vertical = []
 
     for x1,y1,x2,y2 in horizontal_lines:
         closest_vertical_left = 20000
@@ -154,7 +155,7 @@ def connect_lines(horizontal_lines, vertical_lines):
                 closest_vertical_right = x2 - v_x1
         x1 = x1 - closest_vertical_left
         x2 = x2 - closest_vertical_right
-        lines.append((x1,y1,x2,y2))
+        horizontal.append((x1,y1,x2,y2))
 
     for x1,y1,x2,y2 in vertical_lines:
         closest_horizontal_up = 20000
@@ -166,6 +167,39 @@ def connect_lines(horizontal_lines, vertical_lines):
                 closest_horizontal_down = y2 - h_y1
         y1 = y1 - closest_horizontal_up
         y2 = y2 - closest_horizontal_down
-        lines.append((x1,y1,x2,y2))
+        vertical.append((x1,y1,x2,y2))
 
-    return lines
+    return (horizontal, vertical)
+
+
+def find_corners(horizontal, vertical):
+    top_left = []
+    top_right = []
+    bottom_left = []
+    bottom_right = []
+
+    for x_1,y_h,x_2,_ in horizontal:
+        for x_v,y_1,_,y_2 in vertical:
+            crossing = (x_v, y_h)
+            if (x_v >= x_1 and x_v <= x_2 and y_h <= y_1 and y_h >= y_2):
+                if (x_1 == x_v):
+                    # left
+                    if (y_1 != y_h):
+                        bottom_left.append(crossing)
+                    if (y_2 != y_h):
+                        top_left.append(crossing)
+                elif (x_2 == x_v):
+                    # right
+                    if (y_1 != y_h):
+                        bottom_right.append(crossing)
+                    if (y_2 != y_h):
+                        top_right.append(crossing)
+                else:
+                    if y_1 != y_h:
+                        top_left.append(crossing)
+                        top_right.append(crossing)
+                    if y_2 != y_h:
+                        bottom_left.append(crossing)
+                        bottom_right.append(crossing)
+
+    return (top_left, bottom_left, bottom_right, top_right)
