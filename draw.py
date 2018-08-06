@@ -25,23 +25,14 @@ def draw_points(img, points, color = (255,100,100)):
 
 def draw_rectangles(rects, source):
     height, width = source.shape[:2]
-    blank = np.zeros((height,width,3), np.uint8)
+    blank = np.ones((height,width,3), np.uint8) * 255
     for index, rect in enumerate(rects):
         x,y,w,h = rect
 
         color = get_closest_color(source, rect)
 
         cv2.rectangle(blank, (x,y), (x + w, y + h), color, -1)
-        middle = (round((2*x + w)/2),round((2*y + h)/2))
-        cv2.circle(blank, middle, 4, (0, 0 ,0), -1)
-        corner_u_l = x,y
-        corner_u_r = x + w,y
-        corner_d_l = x,y+h
-        corner_d_r = (x + w, y + h)
-        cv2.circle(blank, corner_u_l, 3, (0, 255 ,0), -1)
-        cv2.circle(blank, corner_u_r, 3, (0, 255 ,0), -1)
-        cv2.circle(blank, corner_d_l, 3, (0, 255 ,0), -1)
-        cv2.circle(blank, corner_d_r, 3, (0, 255 ,0), -1)
+        cv2.rectangle(blank, (x,y), (x + w, y + h), (0,0,0), 5)
 
     return blank
 

@@ -2,7 +2,7 @@ import cv2, numpy as np
 import sys
 import imutils
 import datetime
-from lines import connect_lines, reduce_lines, detect_lines, find_corners
+from lines import connect_lines, reduce_lines, detect_lines, find_corners, find_rectangles
 from draw import draw_rectangles, draw_lines, draw_points, draw_corners
 from files import process_pipeline
 
@@ -61,10 +61,12 @@ def process_image(original):
     (horizontal, vertical) = connect_lines(horizontal_lines, vertical_lines)
 
     top_left, bottom_left, bottom_right, top_right = find_corners(horizontal, vertical)
+    # add given image corners (should be done by find_corners)
     top_left.append((0,0))
     bottom_left.append((0,height))
     bottom_right.append((width,height))
     top_right.append((width,0))
+    rectangles = find_rectangles(top_left, bottom_left, bottom_right, top_right)
     draw_corners(with_lines, top_left, (0, 90))
     draw_corners(with_lines, top_right, (90, 180))
     draw_corners(with_lines, bottom_right, (180, 270))
@@ -72,12 +74,10 @@ def process_image(original):
 
     draw_lines(with_lines, horizontal + vertical)
 
-    # draw_lines(with_lines, connected_lines)
-
     draw_black_border(opening)
 
     rects, polygons = find_contours(opening)
-    drawn = draw_rectangles(rects, original)
+    drawn = draw_rectangles(rectangles, original)
 
     cv2.drawContours(original,polygons,-1,(0,255,0),3)
 
