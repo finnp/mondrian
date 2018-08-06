@@ -1,4 +1,62 @@
 import numpy as np
+import cv2
+
+def detect_lines_hough(img):
+    lines = cv2.HoughLinesP(
+        cv2.bitwise_not(opening),
+        rho = 1,
+        theta = np.pi / 2,
+        threshold=50,
+        minLineLength=120,
+        maxLineGap=10
+    )
+    return [line[0] for line in lines] # weird HoughLinesP output
+
+def detect_lines(img):
+    """
+        Custom line detection algorithm
+    """
+    height, width = img.shape
+    horizontal = []
+    vertical = []
+    current_line = False
+    current_line_start = 0
+
+    for y in range(height):
+        for x in range(width):
+            if(img[y,x] == 255):
+                if not current_line:
+                    current_line = True
+                    current_line_start = x
+            else:
+                if current_line:
+                    current_line = False
+                    if x - current_line_start > 100:
+                        horizontal.append((current_line_start, y, x - 1, y))
+        if current_line:
+            current_line = False
+            if x - current_line_start > 100:
+                horizontal.append((current_line_start, y, x - 1, y))
+
+    current_line = False
+    current_line_start = 0
+    for x in range(width):
+        for y in range(height):
+            if(img[y,x] == 255):
+                if not current_line:
+                    current_line = True
+                    current_line_start = y
+            else:
+                if current_line:
+                    current_line = False
+                    if y - current_line_start > 100:
+                        vertical.append((x, y - 1, x, current_line_start))
+        if current_line:
+            current_line = False
+            if y - current_line_start > 100:
+                vertical.append((x, y - 1, x, current_line_start))
+    return (horizontal, vertical)
+
 
 def split_by_orientation(lines):
     horizontal = []
@@ -10,16 +68,12 @@ def split_by_orientation(lines):
             horizontal.append((x1,y1,x2,y2))
     return (horizontal, vertical)
 
-def reduce_lines(lines):
+def reduce_lines(input_horizontal, input_vertical, min_distance):
     """
         Takes a list of vertical and horizontal lines,
         tries to reduce them to essential lines eliminating lines close to each
         other.
     """
-
-    (input_horizontal, input_vertical) = split_by_orientation(lines)
-    min_distance = 50 # minimal distance for lines to be considered distinct
-
 
     seen_vertical = set()
     seen_horizontal = set()

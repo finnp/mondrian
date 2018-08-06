@@ -2,7 +2,7 @@ import cv2, numpy as np
 import sys
 import imutils
 import datetime
-from lines import connect_lines, reduce_lines
+from lines import connect_lines, reduce_lines, detect_lines
 from draw import draw_rectangles, draw_lines
 from files import process_pipeline
 
@@ -47,28 +47,21 @@ def process_image(original):
     # adjust these numbers
     with_lines = np.copy(original)
     edges = cv2.Canny(opening, 50, 150)
-    lines = cv2.HoughLinesP(
-        cv2.bitwise_not(opening),
-        rho = 1,
-        theta = np.pi / 2,
-        threshold=50,
-        minLineLength=120,
-        maxLineGap=10
-    )
 
-    lines = [line[0] for line in lines] # weird HoughLinesP output
+    (horizontal, vertical) = detect_lines(cv2.bitwise_not(opening))
 
-    # draw_lines(with_lines, lines)
+    min_distance = width * 0.03 # minimal distance for lines to be considered distinct
 
-    (vertical_lines, horizontal_lines) = reduce_lines(lines)
+    (vertical_lines, horizontal_lines) = reduce_lines(horizontal, vertical, min_distance)
 
     # add helper lines for borders
     horizontal_lines += [(0,0,width,0), (0,height,width,height)]
     vertical_lines += [(0,0,0,height), (width,0,width,height)]
 
     connected_lines = connect_lines(horizontal_lines, vertical_lines)
-
     draw_lines(with_lines, connected_lines)
+
+    # draw_lines(with_lines, connected_lines)
 
     draw_black_border(opening)
 
