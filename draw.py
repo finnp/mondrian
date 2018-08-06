@@ -1,4 +1,5 @@
 import cv2, numpy as np
+import math
 
 def to_opencv_color(color):
     r,g,b = color
@@ -33,6 +34,9 @@ def draw_rectangles(rects, source):
 
         cv2.rectangle(blank, (x,y), (x + w, y + h), color, -1)
         cv2.rectangle(blank, (x,y), (x + w, y + h), (0,0,0), 5)
+
+        # center
+        # cv2.circle(blank, (int(x + w/2), int(y + h/2)), 10, (100,100,100), -1)
 
     return blank
 
@@ -70,7 +74,13 @@ def draw_voronoi(img, rects):
 def get_closest_color(img, rect):
     x,y,w,h = rect
 
+    w = math.ceil(w/2)
+    h = math.ceil(h/2)
+    x += int(w/4)
+    y += int(h/4)
+
     cropped = img[y: y + h, x: x + w]
+
     avg_color = np.average( np.average(cropped, axis=0), axis=0)
     return find_closest_color(avg_color)
 

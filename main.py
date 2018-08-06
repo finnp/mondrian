@@ -77,18 +77,20 @@ def process_image(original):
     draw_black_border(opening)
 
     rects, polygons = find_contours(opening)
-    drawn = draw_rectangles(rectangles, original)
+    drawn = draw_rectangles(rectangles, binary)
 
-    cv2.drawContours(original,polygons,-1,(0,255,0),3)
+    # cv2.drawContours(original,polygons,-1,(0,255,0),3)
+
+    overlay = cv2.addWeighted(original, 0.3, drawn, 0.7,0)
 
     return [
+        (overlay, 'overlay'),
         (with_lines, 'lines'),
         (edges, 'edges'),
         (binary, 'binary'),
         (max, 'max'),
         (opening, 'open'),
-        (drawn, 'drawn'),
-        (original, 'marked')
+        (drawn, 'drawn')
     ]
 
 process_pipeline(process_image)
