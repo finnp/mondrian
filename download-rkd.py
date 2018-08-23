@@ -19,4 +19,4 @@ for file in files:
         thumb_id = soup.select('.record-metadata')[0]['data-thumb-id']
         download_url = 'https://images.rkd.nl/rkd/thumb/1000x1000/' + thumb_id + '.jpg'
         urlretrieve(download_url, 'img/' + id + '.jpg')
-        print('File ' + file + 'downloaded.')
+        print('File ' + file + ' downloaded.')
