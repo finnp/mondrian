@@ -3,7 +3,7 @@ import sys
 import imutils
 import datetime
 from lines import connect_lines, reduce_lines, detect_lines, find_corners, find_rectangles
-from draw import draw_rectangles, draw_lines, draw_points, draw_corners
+from draw import draw_rectangles, draw_lines, draw_points, draw_corners, clip_rectangles
 from files import process_pipeline
 
 retr_type = cv2.RETR_LIST
@@ -44,15 +44,25 @@ def process_image(original):
 
     opening = cv2.morphologyEx(max, cv2.MORPH_OPEN, kernel)
 
+    # remove lines, only black rectangles remain
+    dilated = cv2.dilate(max, cv2.getStructuringElement(cv2.MORPH_RECT,(25,25)))
+
     # adjust these numbers
     with_lines = np.copy(original)
-    edges = cv2.Canny(opening, 50, 150)
+
+    edges = cv2.Canny(dilated, 50, 150)
+    black_rects,_ = find_contours(edges)
+    dilated = draw_rectangles(black_rects, original)
+    clip_rectangles(black_rects, opening)
 
     (horizontal, vertical) = detect_lines(cv2.bitwise_not(opening))
 
     min_distance = width * 0.03 # minimal distance for lines to be considered distinct
 
     (vertical_lines, horizontal_lines) = reduce_lines(horizontal, vertical, min_distance)
+    before_connect = np.copy(original)
+    draw_lines(before_connect, horizontal + vertical, color=(255,255,255))
+    draw_lines(before_connect, vertical_lines + horizontal_lines)
 
     # add helper lines for borders
     horizontal_lines += [(0,0,width,0), (0,height,width,height)]
@@ -84,7 +94,9 @@ def process_image(original):
     overlay = cv2.addWeighted(original, 0.3, drawn, 0.7,0)
 
     return [
+        (dilated, 'dilated'),
         (overlay, 'overlay'),
+        (before_connect, 'before-lines'),
         (with_lines, 'lines'),
         (edges, 'edges'),
         (binary, 'binary'),

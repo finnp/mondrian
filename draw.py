@@ -24,6 +24,11 @@ def draw_points(img, points, color = (255,100,100)):
     for point in points:
         cv2.circle(img, point, 10, color, -1)
 
+def clip_rectangles(rects, img):
+    for rect in rects:
+        x,y,w,h = rect
+        cv2.rectangle(img, (x,y), (x + w, y + h), (255,255,255), -1)
+
 def draw_rectangles(rects, source):
     height, width = source.shape[:2]
     blank = np.ones((height,width,3), np.uint8) * 255

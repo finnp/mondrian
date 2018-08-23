@@ -1,14 +1,18 @@
 import os
 import cv2
 import json
+import sys
 
 input_dir = 'img'
 output_dir = 'output'
 image_type = 'jpg'
 
 def process_pipeline(process_image):
-    files = os.listdir(input_dir)
-    files = list(filter(lambda f: f[-len(image_type):] == 'jpg', files))
+    if len(sys.argv) > 1:
+        files = [name + '.jpg' for name in sys.argv[1:]]
+    else:
+        files = os.listdir(input_dir)
+        files = list(filter(lambda f: f[-len(image_type):] == 'jpg', files))
     total = len(files)
 
     for index, file_name in enumerate(files):
