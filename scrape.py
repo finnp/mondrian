@@ -1,33 +1,38 @@
-from urllib.request import urlopen
 import re
 import json
+import os
 from bs4 import BeautifulSoup
 
-# page = urlopen('http://catalogue.pietmondrian.nl/paris-2-1920-1937-b104-b281.312/1920-1921-b104-b132')
-
-page = open('input.html').read()
-
+dir = 'catalogue-pages'
 output_dir = 'catalogue'
+files = os.listdir(dir)
 
-soup = BeautifulSoup(page, 'html.parser')
-cr_id_regex = re.compile('B\d+')
+for file in files:
+    page = open(dir + '/' + file).read()
 
-for div in soup.select('table.main'):
-    img = div.select('img')[0]
-    text = div.select('td[align=left]')[0].text
-    share = div.select('.addthiscontainer')[0]
-    direct_link = share['addthis:url']
-    database_link = div.select('.database-link')[0]['href']
-    cr_id = cr_id_regex.search(text).group(0)
+    soup = BeautifulSoup(page, 'html.parser')
+    cr_id_regex = re.compile('[ABC]\d+(?:\.\d+)?')
 
-    file_name = 'catalogue/' + cr_id + '.json'
-    output = open(file_name, 'w')
-    output.write(json.dumps({
-        'id': cr_id,
-        'database': database_link,
-        'link': direct_link,
-        'thumbnail': img['src'],
-        'description': text,
-    }, indent=2))
-    output.close()
-    print('Written ' + file_name)
+    for div in soup.select('table.main'):
+        imgs = div.select('img')
+        if len(imgs) == 0:
+            continue
+        img = imgs[0]
+        text = div.select('td[align=left]')[0].text
+        share = div.select('.addthiscontainer')[0]
+        direct_link = share['addthis:url']
+        database_link = div.select('.database-link')[0]['href']
+        matches = re.findall(cr_id_regex, text)
+        cr_id = matches[-1]
+
+        file_name = 'catalogue/' + cr_id + '.json'
+        output = open(file_name, 'w')
+        output.write(json.dumps({
+            'id': cr_id,
+            'database': database_link,
+            'link': direct_link,
+            'thumbnail': img['src'],
+            'description': text,
+        }, indent=2))
+        output.close()
+        print('Written ' + file_name)
