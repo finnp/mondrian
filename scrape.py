@@ -12,6 +12,7 @@ for file in files:
 
     soup = BeautifulSoup(page, 'html.parser')
     cr_id_regex = re.compile('[ABC]\d+(?:\.\d+)?')
+    state_regex = re.compile('\((first|second) state\)')
 
     for div in soup.select('table.main'):
         imgs = div.select('img')
@@ -24,6 +25,15 @@ for file in files:
         database_link = div.select('.database-link')[0]['href']
         matches = re.findall(cr_id_regex, text)
         cr_id = matches[-1]
+        state_description = state_regex.search(text)
+        if state_description:
+            state = state_description.group(1)
+            prefix = cr_id[0]
+            ids = cr_id[1:].split('.')
+            if state == 'first':
+                cr_id = prefix + ids[0]
+            else:
+                cr_id = prefix + ids[1]
 
         file_name = 'catalogue/' + cr_id + '.json'
         output = open(file_name, 'w')
