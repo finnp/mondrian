@@ -9,7 +9,8 @@ yellow = (255, 243, 0)
 blue = (0, 102, 181)
 red = (238, 21, 31)
 white = (255, 255, 255)
-colors = [to_opencv_color(yellow), to_opencv_color(blue), to_opencv_color(red), to_opencv_color(white)]
+black = (0,0,0)
+colors = [to_opencv_color(black), to_opencv_color(yellow), to_opencv_color(blue), to_opencv_color(red), to_opencv_color(white)]
 
 def draw_lines(img, lines, color = (100, 100, 255)):
     for x1,y1,x2,y2 in lines:
