@@ -1,0 +1,1348 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+
+
+<!-- <tal:global_defines define="global foo context/@@frontend/globalize"/>
+ -->
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="nl"
+      xml:lang="nl">
+
+  
+    
+    
+    
+    
+    
+    
+
+  
+
+<head>
+<base href="http://catalogue.pietmondrian.nl/sketchbook-ii-1914-b376-b378/" />
+
+
+    <meta http-equiv="Content-Type"
+          content="text/html;charset=utf-8" />
+
+    <title>Piet Mondrian | Sketchbook II, 1914 (B376-B378)</title>
+    <link rel="kss-base-url" href="http://catalogue.pietmondrian.nl/sketchbook-ii-1914-b376-b378" />
+
+  
+  
+    
+    
+    
+      <style type="text/css">@import url(http://catalogue.pietmondrian.nl/portal_css/rkdmonographsskin/kupustyles.css);</style>
+    
+    
+    
+  
+
+  
+    
+    
+    
+      <style type="text/css">@import url(http://catalogue.pietmondrian.nl/portal_css/rkdmonographsskin/kupuplone.css);</style>
+    
+    
+    
+  
+
+  
+    
+    
+    
+      <style type="text/css">@import url(http://catalogue.pietmondrian.nl/portal_css/rkdmonographsskin/kupudrawerstyles.css);</style>
+    
+    
+    
+  
+
+  
+    
+    
+    
+      <style type="text/css" media="print">@import url(http://catalogue.pietmondrian.nl/portal_css/rkdmonographsskin/print.css);</style>
+    
+    
+    
+  
+
+  
+    
+    
+    
+      <style type="text/css" media="screen">@import url(http://catalogue.pietmondrian.nl/portal_css/rkdmonographsskin/jscalendar/calendar-system.css);</style>
+    
+    
+    
+  
+
+  
+    
+        <!--[if IE]>    
+    
+    
+    
+      <style type="text/css" media="screen">@import url(http://catalogue.pietmondrian.nl/portal_css/rkdmonographsskin/IEFixes.css);</style>
+    
+    
+    
+        <![endif]-->
+    
+  
+
+  
+    
+    
+    
+      <style type="text/css" media="screen">@import url(http://catalogue.pietmondrian.nl/portal_css/rkdmonographsskin/defaultstyle.css);</style>
+    
+    
+    
+  
+
+  
+    
+    
+    
+      <style type="text/css" media="screen">@import url(http://catalogue.pietmondrian.nl/portal_css/rkdmonographsskin/subsite-theme.css);</style>
+    
+    
+    
+  
+
+  
+    
+    
+    
+      <style type="text/css" media="screen">@import url(http://catalogue.pietmondrian.nl/portal_css/rkdmonographsskin/rkdmonographs.css);</style>
+    
+    
+    
+  
+
+  
+    
+        <!--[if IE 7]>    
+    
+    
+    
+      <style type="text/css" media="screen">@import url(http://catalogue.pietmondrian.nl/portal_css/rkdmonographsskin/ie7fix.css);</style>
+    
+    
+    
+        <![endif]-->
+    
+  
+
+  
+    
+        <!--[if IE 8]>    
+    
+    
+    
+      <style type="text/css" media="screen">@import url(http://catalogue.pietmondrian.nl/portal_css/rkdmonographsskin/ie8fix.css);</style>
+    
+    
+    
+        <![endif]-->
+    
+  
+
+  
+    
+    
+    
+      <style type="text/css" media="screen">@import url(http://catalogue.pietmondrian.nl/portal_css/rkdmonographsskin/products.rkdmonographs.css);</style>
+    
+    
+    
+  
+
+  
+    
+    
+    
+      <style type="text/css" media="screen">@import url(http://catalogue.pietmondrian.nl/portal_css/rkdmonographsskin/monographs_print.css);</style>
+    
+    
+    
+  
+
+
+  
+  
+    
+    
+      <script type="text/javascript"
+              src="http://catalogue.pietmondrian.nl/portal_javascripts/rkdmonographsskin/jquery-cachekey2945.js">
+      </script>
+    
+    
+    
+  
+
+  
+    
+    
+      <script type="text/javascript"
+              src="http://catalogue.pietmondrian.nl/portal_javascripts/rkdmonographsskin/calendar_formfield-cachekey8509.js">
+      </script>
+    
+    
+    
+  
+
+  
+    
+    
+      <script type="text/javascript"
+              src="http://catalogue.pietmondrian.nl/portal_javascripts/rkdmonographsskin/swordfish_functions-cachekey3423.js">
+      </script>
+    
+    
+    
+  
+
+  
+    
+    
+      <script type="text/javascript"
+              src="http://catalogue.pietmondrian.nl/portal_javascripts/rkdmonographsskin/fckeditor-cachekey0070.js">
+      </script>
+    
+    
+    
+  
+
+  
+    
+    
+      <script type="text/javascript"
+              src="http://catalogue.pietmondrian.nl/portal_javascripts/rkdmonographsskin/print-cachekey8927.js">
+      </script>
+    
+    
+    
+  
+
+  
+    
+    
+      <script type="text/javascript"
+              src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=xa-4fd87a8b529ac85b">
+      </script>
+    
+    
+    
+  
+
+  
+    
+      <!--[if lt IE 9]>    
+    
+    
+      <script type="text/javascript"
+              src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js">
+      </script>
+    
+    
+    
+        <![endif]-->
+    
+  
+
+
+  
+  <link rel="kinetic-stylesheet" type="text/css"
+        href="http://catalogue.pietmondrian.nl/portal_kss/rkdmonographsskin/plone-cachekey6395.kss" />
+
+  <link rel="kinetic-stylesheet" type="text/css"
+        href="http://catalogue.pietmondrian.nl/portal_kss/rkdmonographsskin/fckeditor_plone-cachekey4455.kss" />
+
+
+
+          
+<!--      <script type="text/javascript" charset="iso-8859-1"-->
+<!--              src="jscripts/tiny_mce/tiny_mce.js"> </script>-->
+<!--      <script type="text/javascript" charset="iso-8859-1"-->
+<!--              src="jscripts/tiny_mce/tiny_mce_init.js"> </script>-->
+    
+   
+
+<title>Sketchbook II, 1914 (B376-B378) &mdash; Piet Mondrian</title>
+
+    
+
+    <link rel="shortcut icon" type="image/x-icon"
+          href="http://catalogue.pietmondrian.nl/favicon.ico" />
+
+
+
+    <link rel="home" href="http://catalogue.pietmondrian.nl"
+          title="Front page" />
+
+    <link rel="contents"
+          href="http://catalogue.pietmondrian.nl/sitemap"
+          title="Site Map" />
+
+
+
+
+
+
+    <link rel="search"
+          href="http://catalogue.pietmondrian.nl/search_form"
+          title="Search this site" />
+
+
+<!-- Internet Explorer ACC CSS Fixes -->
+<!-- MOVED TO RESOURCE REGISTRIES -->
+
+
+
+    <!-- Disable IE6 image toolbar -->
+    <meta http-equiv="imagetoolbar" content="no" />
+
+
+	
+    
+    <link rel="stylesheet" type="text/css" href="/subsite-theme.css" />
+
+   
+</head>
+
+   
+   	 <body>
+   
+
+   
+   	 <div id='mainContainer' class='contentpage'>
+   
+
+  <div class="print-version">
+    <img id="print-logo"
+         src="http://catalogue.pietmondrian.nl/print_logo.gif"
+         alt="Sketchbook II, 1914 (B376-B378)" />
+  </div>
+   <div id="top-actions-container">
+     <div id="socialmedia">
+       <span class="share-link">Share</span>
+       <div id="addthiscontainer" class="addthis_toolbox addthis_default_style addthis_32x32_style" addthis:title="RKD Monographs">
+        	 <div class="visualClear"></div>
+          <a class="addthis_button_facebook"></a>
+          <a class="addthis_button_twitter"></a>
+          <a class="addthis_button_linkedin"></a>
+        </div>
+     </div>
+
+    <ul id="portal-siteactions">
+      <!-- test -->
+      <li id="action-contact">
+        <a title="Link naar contactformulier"
+           href="http://catalogue.pietmondrian.nl/contact-info">
+          <img alt="e-mail"
+               src="http://catalogue.pietmondrian.nl/email-icon.gif" />
+        </a>
+      </li>
+      <li id="action-home">
+        <a title="Homepage"
+           href="http://www.rkdmonographs.nl">
+          <img alt="homepage"
+               src="http://catalogue.pietmondrian.nl/home-icon.gif" />
+        </a>
+      </li><li id="action-rkdhome">
+        <a href="http://www.rkd.nl" title="Link naar RKD website">RKD-home</a></li><li id="action-sitemap"><a
+    title="Sitemap"
+    href="http://catalogue.pietmondrian.nl/sitemap">sitemap</a>
+      </li></ul>     
+   </div>
+   <div id="logo-actions-container">
+    <a id="portal-logo" class="header" accesskey="1"
+       href="http://catalogue.pietmondrian.nl">
+      <img src="http://catalogue.pietmondrian.nl/rkd-logo.png"
+           alt="Sketchbook II, 1914 (B376-B378)" />
+    </a>
+   </div>
+
+
+<div id="columnWrapper">
+   <div id="header-wrapper">
+      
+        <a class="link-logo"
+           href="http://catalogue.pietmondrian.nl">
+         <div class="header header-image"
+              style="background-image:url(http://catalogue.pietmondrian.nl/header_images/banner-mondriaan)">
+         </div>
+         </a>
+      
+      <div id="searchContainerRight">
+         <form id="livesearch0"
+               action="http://catalogue.pietmondrian.nl/search"
+               name="searchform">
+            <div id="portal-searchbox">
+    <form name="searchform"
+          action="http://catalogue.pietmondrian.nl/search">
+
+        <label for="searchGadget" class="hiddenStructure">Search Site</label>
+
+        <div class="LSBox">
+        <input name="SearchableText" type="text" size="18"
+               title="Search Site" accesskey="4"
+               class="inputLabel" id="searchGadget" />
+
+        <input class="searchButton" type="submit" value="" />
+    
+        <div class="searchSection">
+            <input id="searchbox_currentfolder_only"
+                   class="noborder" type="checkbox"
+                   name="path"
+                   value="/SW3/mondriaan/sketchbook-ii-1914-b376-b378" />
+            <label for="searchbox_currentfolder_only"
+                   style="cursor: pointer">
+                only in current section
+            </label>
+        </div>
+
+        <div class="LSResult" id="LSResult" style=""><div class="LSShadow" id="LSShadow"></div></div>
+        </div>
+    </form>
+
+    <div id="portal-advanced-search" class="hiddenStructure">
+        <a href="http://catalogue.pietmondrian.nl/search_form"
+           accesskey="5">
+            Advanced Search&hellip;
+        </a>
+    </div>
+
+</div>
+
+			</form>
+      </div>
+      
+       <div id="portal-breadcrumbs">
+
+    <span id="breadcrumbs-you-are-here">You
+are here:</span>
+    <a href="http://catalogue.pietmondrian.nl">Home</a>
+    <span class="breadcrumbSeparator">
+        &rarr;
+        
+    </span>
+    <span dir="ltr">
+        
+            
+            
+            <span>Sketchbook II, 1914 (B376-B378)</span>
+         
+    </span>
+
+</div>
+
+      
+
+	</div>
+
+<!-- content column -->
+  <div id="contentcolumns-wrapper">
+   <div id="column_2">
+      <div id="content">
+       
+         
+
+    <dl class="portalMessage info" id="kssPortalMessage" style="display:none">
+        <dt>Info</dt>
+        <dd></dd>
+    </dl>
+
+
+          <!-- page content -->
+        
+           
+          
+  
+  <div class="visualClear"><!-- --></div>
+<div class="documentActions">
+    
+
+    <h5 class="hiddenStructure">Document Actions</h5>
+
+    <ul>
+    
+        <li id="document-action-print">
+            <a href="javascript:print();" title="">deze pagina</a>
+        </li>
+    
+
+    </ul>
+    
+
+    
+
+</div>
+
+    
+        <h1> 
+          Sketchbook II, 1914 (B376-B378)
+          
+        </h1>
+    
+    
+    
+
+    
+
+
+
+    
+
+    
+      <div class="document_content"><p><html xmlns:addthis="http://www.addthis.com/help/api-spec"><head><meta HTTP-EQUIV="Content-type" CONTENT="text/html; charset=utf8"/></head><body><div align="center"><table width="100%" border="0" class="main" cellpadding="0" cellspacing=""><tr><td><table class="area" border="0" width="100%" cellpadding="0" cellspacing="0" STYLE="font-size: 12px; font-type: Verdana;font-weight: normal;"><col width="30%"/><col width="5%"/><col width="65%"/><tr><td valign="top" align="center"><span class="listing-link link-to-popup" id="276965"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\div\mr.jpg&amp;width=150&amp;height=150"/></span><div class="image-popup"><span class="close-icon">X</span><div class="image-description"> Piet&#160;Mondriaan
+      &#160;  
+
+    ,
+            <b>Sketchbook II, Paris</b>,&#160;1914</div><span class="image-thumb"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\div\mr.jpg&amp;width=220&amp;height=220"/></span><span class="image-large"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\div\mr.jpg&amp;width=700&amp;height=700"/></span><ul class="popup-icons"><li class="icon-item"><a href="#" class="image-fullsize">Image fullsize</a></li><li class="icon-item"><a href="https://rkd.nl/en/explore/images/276965" class="database-link" target="_blank">Show in RKDexplore</a></li><li class="icon-item"><a href="#" class="share-link">Share</a></li></ul><div class="addthiscontainer addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="http://catalogue.pietmondrian.nl/sketchbook-ii-1914-b376-b378/#276965"><div class="visualClear"></div><a class="addthis_button_facebook"></a><a class="addthis_button_twitter"></a><a class="addthis_button_linkedin"></a></div></div></td><td/><td valign="top" align="left"><br/> Piet&#160;Mondriaan
+      &#160;  
+
+    <br/><b>Sketchbook II, Paris</b> 1914<br/>paper, 172
+        x
+        110&#160;mm<br/>Solomon R. Guggenheim Museum, New York City, no.&#160;81.2823<br/><br/>B376</td></tr><tr><td colspan="3"><br/><hr/></td></tr></table></td></tr></table></div></body></html><br /><html xmlns:addthis="http://www.addthis.com/help/api-spec"><head><meta HTTP-EQUIV="Content-type" CONTENT="text/html; charset=utf8"/></head><body><div align="center"><table width="100%" border="0" class="main" cellpadding="0" cellspacing=""><tr><td><table class="area" border="0" width="100%" cellpadding="0" cellspacing="0" STYLE="font-size: 12px; font-type: Verdana;font-weight: normal;"><col width="30%"/><col width="5%"/><col width="65%"/><tr><td valign="top" align="center"><span class="listing-link link-to-popup" id="276978"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=geenafb.jpg&amp;width=150&amp;height=150"/></span><div class="image-popup"><span class="close-icon">X</span><div class="image-description"> Piet&#160;Mondriaan
+      &#160;  
+
+    ,
+            <b>Sketch (1)</b>,&#160;1914</div><span class="image-thumb"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=geenafb.jpg&amp;width=220&amp;height=220"/></span><span class="image-large"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=geenafb.jpg&amp;width=700&amp;height=700"/></span><ul class="popup-icons"><li class="icon-item"><a href="#" class="image-fullsize">Image fullsize</a></li><li class="icon-item"><a href="https://rkd.nl/en/explore/images/276978" class="database-link" target="_blank">Show in RKDexplore</a></li><li class="icon-item"><a href="#" class="share-link">Share</a></li></ul><div class="addthiscontainer addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="http://catalogue.pietmondrian.nl/sketchbook-ii-1914-b376-b378/#276978"><div class="visualClear"></div><a class="addthis_button_facebook"></a><a class="addthis_button_twitter"></a><a class="addthis_button_linkedin"></a></div></div></td><td/><td valign="top" align="left"><br/> Piet&#160;Mondriaan
+      &#160;  
+
+    <br/><b>Sketch (1)</b> 1914<br/>paper, 172
+        x
+        105&#160;mm<br/>Solomon R. Guggenheim Museum, New York City, no.&#160;81.2823<br/><br/>B376.1</td></tr><tr><td colspan="3"><br/><hr/></td></tr></table></td></tr></table></div></body></html><br /><html xmlns:addthis="http://www.addthis.com/help/api-spec"><head><meta HTTP-EQUIV="Content-type" CONTENT="text/html; charset=utf8"/></head><body><div align="center"><table width="100%" border="0" class="main" cellpadding="0" cellspacing=""><tr><td><table class="area" border="0" width="100%" cellpadding="0" cellspacing="0" STYLE="font-size: 12px; font-type: Verdana;font-weight: normal;"><col width="30%"/><col width="5%"/><col width="65%"/><tr><td valign="top" align="center"><span class="listing-link link-to-popup" id="276982"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=geenafb.jpg&amp;width=150&amp;height=150"/></span><div class="image-popup"><span class="close-icon">X</span><div class="image-description"> Piet&#160;Mondriaan
+      &#160;  
+
+    ,
+            <b>Sketch (2)</b>,&#160;1914</div><span class="image-thumb"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=geenafb.jpg&amp;width=220&amp;height=220"/></span><span class="image-large"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=geenafb.jpg&amp;width=700&amp;height=700"/></span><ul class="popup-icons"><li class="icon-item"><a href="#" class="image-fullsize">Image fullsize</a></li><li class="icon-item"><a href="https://rkd.nl/en/explore/images/276982" class="database-link" target="_blank">Show in RKDexplore</a></li><li class="icon-item"><a href="#" class="share-link">Share</a></li></ul><div class="addthiscontainer addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="http://catalogue.pietmondrian.nl/sketchbook-ii-1914-b376-b378/#276982"><div class="visualClear"></div><a class="addthis_button_facebook"></a><a class="addthis_button_twitter"></a><a class="addthis_button_linkedin"></a></div></div></td><td/><td valign="top" align="left"><br/> Piet&#160;Mondriaan
+      &#160;  
+
+    <br/><b>Sketch (2)</b> 1914<br/>paper, 172
+        x
+        105&#160;mm<br/>Solomon R. Guggenheim Museum, New York City, no.&#160;81.2823<br/><br/>B376.2</td></tr><tr><td colspan="3"><br/><hr/></td></tr></table></td></tr></table></div></body></html><br /><html xmlns:addthis="http://www.addthis.com/help/api-spec"><head><meta HTTP-EQUIV="Content-type" CONTENT="text/html; charset=utf8"/></head><body><div align="center"><table width="100%" border="0" class="main" cellpadding="0" cellspacing=""><tr><td><table class="area" border="0" width="100%" cellpadding="0" cellspacing="0" STYLE="font-size: 12px; font-type: Verdana;font-weight: normal;"><col width="30%"/><col width="5%"/><col width="65%"/><tr><td valign="top" align="center"><span class="listing-link link-to-popup" id="275690"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\144\1001244144.jpg&amp;width=150&amp;height=150"/></span><div class="image-popup"><span class="close-icon">X</span><div class="image-description"> Piet&#160;Mondriaan
+      &#160;  
+
+    ,
+            <b>Demolished building (3)</b>,&#160;1914</div><span class="image-thumb"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\144\1001244144.jpg&amp;width=220&amp;height=220"/></span><span class="image-large"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\144\1001244144.jpg&amp;width=700&amp;height=700"/></span><ul class="popup-icons"><li class="icon-item"><a href="#" class="image-fullsize">Image fullsize</a></li><li class="icon-item"><a href="https://rkd.nl/en/explore/images/275690" class="database-link" target="_blank">Show in RKDexplore</a></li><li class="icon-item"><a href="#" class="share-link">Share</a></li></ul><div class="addthiscontainer addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="http://catalogue.pietmondrian.nl/sketchbook-ii-1914-b376-b378/#275690"><div class="visualClear"></div><a class="addthis_button_facebook"></a><a class="addthis_button_twitter"></a><a class="addthis_button_linkedin"></a></div></div></td><td/><td valign="top" align="left"><br/> Piet&#160;Mondriaan
+      &#160;  
+
+    <br/><b>Demolished building (3)</b> 1914<br/>pencil / paper, 171
+        x
+        100&#160;mm<br/>Private collection<br/><br/>B377 / B376.3</td></tr><tr><td colspan="3"><br/><hr/></td></tr></table></td></tr></table></div></body></html><br /><html xmlns:addthis="http://www.addthis.com/help/api-spec"><head><meta HTTP-EQUIV="Content-type" CONTENT="text/html; charset=utf8"/></head><body><div align="center"><table width="100%" border="0" class="main" cellpadding="0" cellspacing=""><tr><td><table class="area" border="0" width="100%" cellpadding="0" cellspacing="0" STYLE="font-size: 12px; font-type: Verdana;font-weight: normal;"><col width="30%"/><col width="5%"/><col width="65%"/><tr><td valign="top" align="center"><span class="listing-link link-to-popup" id="276983"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=geenafb.jpg&amp;width=150&amp;height=150"/></span><div class="image-popup"><span class="close-icon">X</span><div class="image-description"> Piet&#160;Mondriaan
+      &#160;  
+
+    ,
+            <b>Notre-Dame-des-Champs (4)</b>,&#160;1914</div><span class="image-thumb"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=geenafb.jpg&amp;width=220&amp;height=220"/></span><span class="image-large"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=geenafb.jpg&amp;width=700&amp;height=700"/></span><ul class="popup-icons"><li class="icon-item"><a href="#" class="image-fullsize">Image fullsize</a></li><li class="icon-item"><a href="https://rkd.nl/en/explore/images/276983" class="database-link" target="_blank">Show in RKDexplore</a></li><li class="icon-item"><a href="#" class="share-link">Share</a></li></ul><div class="addthiscontainer addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="http://catalogue.pietmondrian.nl/sketchbook-ii-1914-b376-b378/#276983"><div class="visualClear"></div><a class="addthis_button_facebook"></a><a class="addthis_button_twitter"></a><a class="addthis_button_linkedin"></a></div></div></td><td/><td valign="top" align="left"><br/> Piet&#160;Mondriaan
+      &#160;  
+
+    <br/><b>Notre-Dame-des-Champs (4)</b> 1914<br/>paper, 172
+        x
+        105&#160;mm<br/>Solomon R. Guggenheim Museum, New York City, no.&#160;81.2823<br/><br/>B376.4</td></tr><tr><td colspan="3"><br/><hr/></td></tr></table></td></tr></table></div></body></html><br /><html xmlns:addthis="http://www.addthis.com/help/api-spec"><head><meta HTTP-EQUIV="Content-type" CONTENT="text/html; charset=utf8"/></head><body><div align="center"><table width="100%" border="0" class="main" cellpadding="0" cellspacing=""><tr><td><table class="area" border="0" width="100%" cellpadding="0" cellspacing="0" STYLE="font-size: 12px; font-type: Verdana;font-weight: normal;"><col width="30%"/><col width="5%"/><col width="65%"/><tr><td valign="top" align="center"><span class="listing-link link-to-popup" id="276984"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=geenafb.jpg&amp;width=150&amp;height=150"/></span><div class="image-popup"><span class="close-icon">X</span><div class="image-description"> Piet&#160;Mondriaan
+      &#160;  
+
+    ,
+            <b>Notre-Dame-des-Champs (5)</b>,&#160;1914</div><span class="image-thumb"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=geenafb.jpg&amp;width=220&amp;height=220"/></span><span class="image-large"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=geenafb.jpg&amp;width=700&amp;height=700"/></span><ul class="popup-icons"><li class="icon-item"><a href="#" class="image-fullsize">Image fullsize</a></li><li class="icon-item"><a href="https://rkd.nl/en/explore/images/276984" class="database-link" target="_blank">Show in RKDexplore</a></li><li class="icon-item"><a href="#" class="share-link">Share</a></li></ul><div class="addthiscontainer addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="http://catalogue.pietmondrian.nl/sketchbook-ii-1914-b376-b378/#276984"><div class="visualClear"></div><a class="addthis_button_facebook"></a><a class="addthis_button_twitter"></a><a class="addthis_button_linkedin"></a></div></div></td><td/><td valign="top" align="left"><br/> Piet&#160;Mondriaan
+      &#160;  
+
+    <br/><b>Notre-Dame-des-Champs (5)</b> 1914<br/>paper, 172
+        x
+        105&#160;mm<br/>Solomon R. Guggenheim Museum, New York City, no.&#160;81.2823<br/><br/>B376.5</td></tr><tr><td colspan="3"><br/><hr/></td></tr></table></td></tr></table></div></body></html><br /><html xmlns:addthis="http://www.addthis.com/help/api-spec"><head><meta HTTP-EQUIV="Content-type" CONTENT="text/html; charset=utf8"/></head><body><div align="center"><table width="100%" border="0" class="main" cellpadding="0" cellspacing=""><tr><td><table class="area" border="0" width="100%" cellpadding="0" cellspacing="0" STYLE="font-size: 12px; font-type: Verdana;font-weight: normal;"><col width="30%"/><col width="5%"/><col width="65%"/><tr><td valign="top" align="center"><span class="listing-link link-to-popup" id="275691"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\716\1001233716.jpg&amp;width=150&amp;height=150"/></span><div class="image-popup"><span class="close-icon">X</span><div class="image-description"> Piet&#160;Mondriaan
+      &#160;  
+
+    ,
+            <b>Demolished building (6)</b>,&#160;1914</div><span class="image-thumb"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\716\1001233716.jpg&amp;width=220&amp;height=220"/></span><span class="image-large"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\716\1001233716.jpg&amp;width=700&amp;height=700"/></span><ul class="popup-icons"><li class="icon-item"><a href="#" class="image-fullsize">Image fullsize</a></li><li class="icon-item"><a href="https://rkd.nl/en/explore/images/275691" class="database-link" target="_blank">Show in RKDexplore</a></li><li class="icon-item"><a href="#" class="share-link">Share</a></li></ul><div class="addthiscontainer addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="http://catalogue.pietmondrian.nl/sketchbook-ii-1914-b376-b378/#275691"><div class="visualClear"></div><a class="addthis_button_facebook"></a><a class="addthis_button_twitter"></a><a class="addthis_button_linkedin"></a></div></div></td><td/><td valign="top" align="left"><br/> Piet&#160;Mondriaan
+      &#160;  
+
+    <br/><b>Demolished building (6)</b> 1914<br/>pencil / paper, 172
+        x
+        105&#160;mm<br/>Gemeentemuseum Den Haag, The Hague, no.&#160;T 50-1987 / 0120684<br/><br/>B378 / B376.6</td></tr><tr><td colspan="3"><br/><hr/></td></tr></table></td></tr></table></div></body></html><br /><html xmlns:addthis="http://www.addthis.com/help/api-spec"><head><meta HTTP-EQUIV="Content-type" CONTENT="text/html; charset=utf8"/></head><body><div align="center"><table width="100%" border="0" class="main" cellpadding="0" cellspacing=""><tr><td><table class="area" border="0" width="100%" cellpadding="0" cellspacing="0" STYLE="font-size: 12px; font-type: Verdana;font-weight: normal;"><col width="30%"/><col width="5%"/><col width="65%"/><tr><td valign="top" align="center"><span class="listing-link link-to-popup" id="276985"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\494\1001244494.jpg&amp;width=150&amp;height=150"/></span><div class="image-popup"><span class="close-icon">X</span><div class="image-description"> Piet&#160;Mondriaan
+      &#160;  
+
+    ,
+            <b>Demolished building (7)</b>,&#160;1914</div><span class="image-thumb"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\494\1001244494.jpg&amp;width=220&amp;height=220"/></span><span class="image-large"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\494\1001244494.jpg&amp;width=700&amp;height=700"/></span><ul class="popup-icons"><li class="icon-item"><a href="#" class="image-fullsize">Image fullsize</a></li><li class="icon-item"><a href="https://rkd.nl/en/explore/images/276985" class="database-link" target="_blank">Show in RKDexplore</a></li><li class="icon-item"><a href="#" class="share-link">Share</a></li></ul><div class="addthiscontainer addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="http://catalogue.pietmondrian.nl/sketchbook-ii-1914-b376-b378/#276985"><div class="visualClear"></div><a class="addthis_button_facebook"></a><a class="addthis_button_twitter"></a><a class="addthis_button_linkedin"></a></div></div></td><td/><td valign="top" align="left"><br/> Piet&#160;Mondriaan
+      &#160;  
+
+    <br/><b>Demolished building (7)</b> 1914<br/>paper, 172
+        x
+        105&#160;mm<br/>Solomon R. Guggenheim Museum, New York City, no.&#160;81.2823<br/><br/>B376.7</td></tr><tr><td colspan="3"><br/><hr/></td></tr></table></td></tr></table></div></body></html><br /><html xmlns:addthis="http://www.addthis.com/help/api-spec"><head><meta HTTP-EQUIV="Content-type" CONTENT="text/html; charset=utf8"/></head><body><div align="center"><table width="100%" border="0" class="main" cellpadding="0" cellspacing=""><tr><td><table class="area" border="0" width="100%" cellpadding="0" cellspacing="0" STYLE="font-size: 12px; font-type: Verdana;font-weight: normal;"><col width="30%"/><col width="5%"/><col width="65%"/><tr><td valign="top" align="center"><span class="listing-link link-to-popup" id="276986"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=geenafb.jpg&amp;width=150&amp;height=150"/></span><div class="image-popup"><span class="close-icon">X</span><div class="image-description"> Piet&#160;Mondriaan
+      &#160;  
+
+    ,
+            <b>Demolished building (8)</b>,&#160;1914</div><span class="image-thumb"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=geenafb.jpg&amp;width=220&amp;height=220"/></span><span class="image-large"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=geenafb.jpg&amp;width=700&amp;height=700"/></span><ul class="popup-icons"><li class="icon-item"><a href="#" class="image-fullsize">Image fullsize</a></li><li class="icon-item"><a href="https://rkd.nl/en/explore/images/276986" class="database-link" target="_blank">Show in RKDexplore</a></li><li class="icon-item"><a href="#" class="share-link">Share</a></li></ul><div class="addthiscontainer addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="http://catalogue.pietmondrian.nl/sketchbook-ii-1914-b376-b378/#276986"><div class="visualClear"></div><a class="addthis_button_facebook"></a><a class="addthis_button_twitter"></a><a class="addthis_button_linkedin"></a></div></div></td><td/><td valign="top" align="left"><br/> Piet&#160;Mondriaan
+      &#160;  
+
+    <br/><b>Demolished building (8)</b> 1914<br/>paper, 172
+        x
+        105&#160;mm<br/>Solomon R. Guggenheim Museum, New York City, no.&#160;81.2823<br/><br/>B376.8</td></tr><tr><td colspan="3"><br/><hr/></td></tr></table></td></tr></table></div></body></html><br /><html xmlns:addthis="http://www.addthis.com/help/api-spec"><head><meta HTTP-EQUIV="Content-type" CONTENT="text/html; charset=utf8"/></head><body><div align="center"><table width="100%" border="0" class="main" cellpadding="0" cellspacing=""><tr><td><table class="area" border="0" width="100%" cellpadding="0" cellspacing="0" STYLE="font-size: 12px; font-type: Verdana;font-weight: normal;"><col width="30%"/><col width="5%"/><col width="65%"/><tr><td valign="top" align="center"><span class="listing-link link-to-popup" id="276987"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=geenafb.jpg&amp;width=150&amp;height=150"/></span><div class="image-popup"><span class="close-icon">X</span><div class="image-description"> Piet&#160;Mondriaan
+      &#160;  
+
+    ,
+            <b>Demolished building (9)</b>,&#160;1914</div><span class="image-thumb"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=geenafb.jpg&amp;width=220&amp;height=220"/></span><span class="image-large"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=geenafb.jpg&amp;width=700&amp;height=700"/></span><ul class="popup-icons"><li class="icon-item"><a href="#" class="image-fullsize">Image fullsize</a></li><li class="icon-item"><a href="https://rkd.nl/en/explore/images/276987" class="database-link" target="_blank">Show in RKDexplore</a></li><li class="icon-item"><a href="#" class="share-link">Share</a></li></ul><div class="addthiscontainer addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="http://catalogue.pietmondrian.nl/sketchbook-ii-1914-b376-b378/#276987"><div class="visualClear"></div><a class="addthis_button_facebook"></a><a class="addthis_button_twitter"></a><a class="addthis_button_linkedin"></a></div></div></td><td/><td valign="top" align="left"><br/> Piet&#160;Mondriaan
+      &#160;  
+
+    <br/><b>Demolished building (9)</b> 1914<br/>paper, 172
+        x
+        105&#160;mm<br/>Solomon R. Guggenheim Museum, New York City, no.&#160;81.2823<br/><br/>B376.9</td></tr><tr><td colspan="3"><br/><hr/></td></tr></table></td></tr></table></div></body></html><br /><html xmlns:addthis="http://www.addthis.com/help/api-spec"><head><meta HTTP-EQUIV="Content-type" CONTENT="text/html; charset=utf8"/></head><body><div align="center"><table width="100%" border="0" class="main" cellpadding="0" cellspacing=""><tr><td><table class="area" border="0" width="100%" cellpadding="0" cellspacing="0" STYLE="font-size: 12px; font-type: Verdana;font-weight: normal;"><col width="30%"/><col width="5%"/><col width="65%"/><tr><td valign="top" align="center"><span class="listing-link link-to-popup" id="276988"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=geenafb.jpg&amp;width=150&amp;height=150"/></span><div class="image-popup"><span class="close-icon">X</span><div class="image-description"> Piet&#160;Mondriaan
+      &#160;  
+
+    ,
+            <b>Demolished building (10)</b>,&#160;1914</div><span class="image-thumb"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=geenafb.jpg&amp;width=220&amp;height=220"/></span><span class="image-large"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=geenafb.jpg&amp;width=700&amp;height=700"/></span><ul class="popup-icons"><li class="icon-item"><a href="#" class="image-fullsize">Image fullsize</a></li><li class="icon-item"><a href="https://rkd.nl/en/explore/images/276988" class="database-link" target="_blank">Show in RKDexplore</a></li><li class="icon-item"><a href="#" class="share-link">Share</a></li></ul><div class="addthiscontainer addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="http://catalogue.pietmondrian.nl/sketchbook-ii-1914-b376-b378/#276988"><div class="visualClear"></div><a class="addthis_button_facebook"></a><a class="addthis_button_twitter"></a><a class="addthis_button_linkedin"></a></div></div></td><td/><td valign="top" align="left"><br/> Piet&#160;Mondriaan
+      &#160;  
+
+    <br/><b>Demolished building (10)</b> 1914<br/>paper, 172
+        x
+        105&#160;mm<br/>Solomon R. Guggenheim Museum, New York City, no.&#160;81.2823<br/><br/>B376.10</td></tr><tr><td colspan="3"><br/><hr/></td></tr></table></td></tr></table></div></body></html><br /><html xmlns:addthis="http://www.addthis.com/help/api-spec"><head><meta HTTP-EQUIV="Content-type" CONTENT="text/html; charset=utf8"/></head><body><div align="center"><table width="100%" border="0" class="main" cellpadding="0" cellspacing=""><tr><td><table class="area" border="0" width="100%" cellpadding="0" cellspacing="0" STYLE="font-size: 12px; font-type: Verdana;font-weight: normal;"><col width="30%"/><col width="5%"/><col width="65%"/><tr><td valign="top" align="center"><span class="listing-link link-to-popup" id="276989"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=geenafb.jpg&amp;width=150&amp;height=150"/></span><div class="image-popup"><span class="close-icon">X</span><div class="image-description"> Piet&#160;Mondriaan
+      &#160;  
+
+    ,
+            <b>Demolished building (11)</b>,&#160;1914</div><span class="image-thumb"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=geenafb.jpg&amp;width=220&amp;height=220"/></span><span class="image-large"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=geenafb.jpg&amp;width=700&amp;height=700"/></span><ul class="popup-icons"><li class="icon-item"><a href="#" class="image-fullsize">Image fullsize</a></li><li class="icon-item"><a href="https://rkd.nl/en/explore/images/276989" class="database-link" target="_blank">Show in RKDexplore</a></li><li class="icon-item"><a href="#" class="share-link">Share</a></li></ul><div class="addthiscontainer addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="http://catalogue.pietmondrian.nl/sketchbook-ii-1914-b376-b378/#276989"><div class="visualClear"></div><a class="addthis_button_facebook"></a><a class="addthis_button_twitter"></a><a class="addthis_button_linkedin"></a></div></div></td><td/><td valign="top" align="left"><br/> Piet&#160;Mondriaan
+      &#160;  
+
+    <br/><b>Demolished building (11)</b> 1914<br/>paper, 172
+        x
+        105&#160;mm<br/>Solomon R. Guggenheim Museum, New York City, no.&#160;81.2823<br/><br/>B376.11</td></tr><tr><td colspan="3"><br/><hr/></td></tr></table></td></tr></table></div></body></html><br /><html xmlns:addthis="http://www.addthis.com/help/api-spec"><head><meta HTTP-EQUIV="Content-type" CONTENT="text/html; charset=utf8"/></head><body><div align="center"><table width="100%" border="0" class="main" cellpadding="0" cellspacing=""><tr><td><table class="area" border="0" width="100%" cellpadding="0" cellspacing="0" STYLE="font-size: 12px; font-type: Verdana;font-weight: normal;"><col width="30%"/><col width="5%"/><col width="65%"/><tr><td valign="top" align="center"><span class="listing-link link-to-popup" id="276990"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=geenafb.jpg&amp;width=150&amp;height=150"/></span><div class="image-popup"><span class="close-icon">X</span><div class="image-description"> Piet&#160;Mondriaan
+      &#160;  
+
+    ,
+            <b>Demolished building (12)</b>,&#160;1914</div><span class="image-thumb"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=geenafb.jpg&amp;width=220&amp;height=220"/></span><span class="image-large"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=geenafb.jpg&amp;width=700&amp;height=700"/></span><ul class="popup-icons"><li class="icon-item"><a href="#" class="image-fullsize">Image fullsize</a></li><li class="icon-item"><a href="https://rkd.nl/en/explore/images/276990" class="database-link" target="_blank">Show in RKDexplore</a></li><li class="icon-item"><a href="#" class="share-link">Share</a></li></ul><div class="addthiscontainer addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="http://catalogue.pietmondrian.nl/sketchbook-ii-1914-b376-b378/#276990"><div class="visualClear"></div><a class="addthis_button_facebook"></a><a class="addthis_button_twitter"></a><a class="addthis_button_linkedin"></a></div></div></td><td/><td valign="top" align="left"><br/> Piet&#160;Mondriaan
+      &#160;  
+
+    <br/><b>Demolished building (12)</b> 1914<br/>paper, 172
+        x
+        105&#160;mm<br/>Solomon R. Guggenheim Museum, New York City, no.&#160;81.2823<br/><br/>B376.12</td></tr><tr><td colspan="3"><br/><hr/></td></tr></table></td></tr></table></div></body></html><br /><html xmlns:addthis="http://www.addthis.com/help/api-spec"><head><meta HTTP-EQUIV="Content-type" CONTENT="text/html; charset=utf8"/></head><body><div align="center"><table width="100%" border="0" class="main" cellpadding="0" cellspacing=""><tr><td><table class="area" border="0" width="100%" cellpadding="0" cellspacing="0" STYLE="font-size: 12px; font-type: Verdana;font-weight: normal;"><col width="30%"/><col width="5%"/><col width="65%"/><tr><td valign="top" align="center"><span class="listing-link link-to-popup" id="276991"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=geenafb.jpg&amp;width=150&amp;height=150"/></span><div class="image-popup"><span class="close-icon">X</span><div class="image-description"> Piet&#160;Mondriaan
+      &#160;  
+
+    ,
+            <b>Demolished building (13)</b>,&#160;1914</div><span class="image-thumb"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=geenafb.jpg&amp;width=220&amp;height=220"/></span><span class="image-large"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=geenafb.jpg&amp;width=700&amp;height=700"/></span><ul class="popup-icons"><li class="icon-item"><a href="#" class="image-fullsize">Image fullsize</a></li><li class="icon-item"><a href="https://rkd.nl/en/explore/images/276991" class="database-link" target="_blank">Show in RKDexplore</a></li><li class="icon-item"><a href="#" class="share-link">Share</a></li></ul><div class="addthiscontainer addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="http://catalogue.pietmondrian.nl/sketchbook-ii-1914-b376-b378/#276991"><div class="visualClear"></div><a class="addthis_button_facebook"></a><a class="addthis_button_twitter"></a><a class="addthis_button_linkedin"></a></div></div></td><td/><td valign="top" align="left"><br/> Piet&#160;Mondriaan
+      &#160;  
+
+    <br/><b>Demolished building (13)</b> 1914<br/>paper, 172
+        x
+        105&#160;mm<br/>Solomon R. Guggenheim Museum, New York City, no.&#160;81.2823<br/><br/>B376.13</td></tr><tr><td colspan="3"><br/><hr/></td></tr></table></td></tr></table></div></body></html><br /><html xmlns:addthis="http://www.addthis.com/help/api-spec"><head><meta HTTP-EQUIV="Content-type" CONTENT="text/html; charset=utf8"/></head><body><div align="center"><table width="100%" border="0" class="main" cellpadding="0" cellspacing=""><tr><td><table class="area" border="0" width="100%" cellpadding="0" cellspacing="0" STYLE="font-size: 12px; font-type: Verdana;font-weight: normal;"><col width="30%"/><col width="5%"/><col width="65%"/><tr><td valign="top" align="center"><span class="listing-link link-to-popup" id="276992"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=geenafb.jpg&amp;width=150&amp;height=150"/></span><div class="image-popup"><span class="close-icon">X</span><div class="image-description"> Piet&#160;Mondriaan
+      &#160;  
+
+    ,
+            <b>Paris roofs (14)</b>,&#160;1914</div><span class="image-thumb"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=geenafb.jpg&amp;width=220&amp;height=220"/></span><span class="image-large"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=geenafb.jpg&amp;width=700&amp;height=700"/></span><ul class="popup-icons"><li class="icon-item"><a href="#" class="image-fullsize">Image fullsize</a></li><li class="icon-item"><a href="https://rkd.nl/en/explore/images/276992" class="database-link" target="_blank">Show in RKDexplore</a></li><li class="icon-item"><a href="#" class="share-link">Share</a></li></ul><div class="addthiscontainer addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="http://catalogue.pietmondrian.nl/sketchbook-ii-1914-b376-b378/#276992"><div class="visualClear"></div><a class="addthis_button_facebook"></a><a class="addthis_button_twitter"></a><a class="addthis_button_linkedin"></a></div></div></td><td/><td valign="top" align="left"><br/> Piet&#160;Mondriaan
+      &#160;  
+
+    <br/><b>Paris roofs (14)</b> 1914<br/>paper, 105
+        x
+        172&#160;mm<br/>Solomon R. Guggenheim Museum, New York City, no.&#160;81.2823<br/><br/>B376.14</td></tr><tr><td colspan="3"><br/><hr/></td></tr></table></td></tr></table></div></body></html><br /><html xmlns:addthis="http://www.addthis.com/help/api-spec"><head><meta HTTP-EQUIV="Content-type" CONTENT="text/html; charset=utf8"/></head><body><div align="center"><table width="100%" border="0" class="main" cellpadding="0" cellspacing=""><tr><td><table class="area" border="0" width="100%" cellpadding="0" cellspacing="0" STYLE="font-size: 12px; font-type: Verdana;font-weight: normal;"><col width="30%"/><col width="5%"/><col width="65%"/><tr><td valign="top" align="center"><span class="listing-link link-to-popup" id="276993"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=geenafb.jpg&amp;width=150&amp;height=150"/></span><div class="image-popup"><span class="close-icon">X</span><div class="image-description"> Piet&#160;Mondriaan
+      &#160;  
+
+    ,
+            <b>Paris roofs (15)</b>,&#160;1914</div><span class="image-thumb"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=geenafb.jpg&amp;width=220&amp;height=220"/></span><span class="image-large"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=geenafb.jpg&amp;width=700&amp;height=700"/></span><ul class="popup-icons"><li class="icon-item"><a href="#" class="image-fullsize">Image fullsize</a></li><li class="icon-item"><a href="https://rkd.nl/en/explore/images/276993" class="database-link" target="_blank">Show in RKDexplore</a></li><li class="icon-item"><a href="#" class="share-link">Share</a></li></ul><div class="addthiscontainer addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="http://catalogue.pietmondrian.nl/sketchbook-ii-1914-b376-b378/#276993"><div class="visualClear"></div><a class="addthis_button_facebook"></a><a class="addthis_button_twitter"></a><a class="addthis_button_linkedin"></a></div></div></td><td/><td valign="top" align="left"><br/> Piet&#160;Mondriaan
+      &#160;  
+
+    <br/><b>Paris roofs (15)</b> 1914<br/>paper, 172
+        x
+        105&#160;mm<br/>Solomon R. Guggenheim Museum, New York City, no.&#160;81.2823<br/><br/>B376.15</td></tr><tr><td colspan="3"><br/><hr/></td></tr></table></td></tr></table></div></body></html><br /><html xmlns:addthis="http://www.addthis.com/help/api-spec"><head><meta HTTP-EQUIV="Content-type" CONTENT="text/html; charset=utf8"/></head><body><div align="center"><table width="100%" border="0" class="main" cellpadding="0" cellspacing=""><tr><td><table class="area" border="0" width="100%" cellpadding="0" cellspacing="0" STYLE="font-size: 12px; font-type: Verdana;font-weight: normal;"><col width="30%"/><col width="5%"/><col width="65%"/><tr><td valign="top" align="center"><span class="listing-link link-to-popup" id="276994"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=geenafb.jpg&amp;width=150&amp;height=150"/></span><div class="image-popup"><span class="close-icon">X</span><div class="image-description"> Piet&#160;Mondriaan
+      &#160;  
+
+    ,
+            <b>Paris roofs (16)</b>,&#160;1914</div><span class="image-thumb"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=geenafb.jpg&amp;width=220&amp;height=220"/></span><span class="image-large"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=geenafb.jpg&amp;width=700&amp;height=700"/></span><ul class="popup-icons"><li class="icon-item"><a href="#" class="image-fullsize">Image fullsize</a></li><li class="icon-item"><a href="https://rkd.nl/en/explore/images/276994" class="database-link" target="_blank">Show in RKDexplore</a></li><li class="icon-item"><a href="#" class="share-link">Share</a></li></ul><div class="addthiscontainer addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="http://catalogue.pietmondrian.nl/sketchbook-ii-1914-b376-b378/#276994"><div class="visualClear"></div><a class="addthis_button_facebook"></a><a class="addthis_button_twitter"></a><a class="addthis_button_linkedin"></a></div></div></td><td/><td valign="top" align="left"><br/> Piet&#160;Mondriaan
+      &#160;  
+
+    <br/><b>Paris roofs (16)</b> 1914<br/>paper, 172
+        x
+        105&#160;mm<br/>Solomon R. Guggenheim Museum, New York City, no.&#160;81.2823<br/><br/>B376.16</td></tr><tr><td colspan="3"><br/><hr/></td></tr></table></td></tr></table></div></body></html><br /><html xmlns:addthis="http://www.addthis.com/help/api-spec"><head><meta HTTP-EQUIV="Content-type" CONTENT="text/html; charset=utf8"/></head><body><div align="center"><table width="100%" border="0" class="main" cellpadding="0" cellspacing=""><tr><td><table class="area" border="0" width="100%" cellpadding="0" cellspacing="0" STYLE="font-size: 12px; font-type: Verdana;font-weight: normal;"><col width="30%"/><col width="5%"/><col width="65%"/><tr><td valign="top" align="center"><span class="listing-link link-to-popup" id="276996"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=geenafb.jpg&amp;width=150&amp;height=150"/></span><div class="image-popup"><span class="close-icon">X</span><div class="image-description"> Piet&#160;Mondriaan
+      &#160;  
+
+    ,
+            <b>Paris roofs (17)</b>,&#160;1914</div><span class="image-thumb"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=geenafb.jpg&amp;width=220&amp;height=220"/></span><span class="image-large"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=geenafb.jpg&amp;width=700&amp;height=700"/></span><ul class="popup-icons"><li class="icon-item"><a href="#" class="image-fullsize">Image fullsize</a></li><li class="icon-item"><a href="https://rkd.nl/en/explore/images/276996" class="database-link" target="_blank">Show in RKDexplore</a></li><li class="icon-item"><a href="#" class="share-link">Share</a></li></ul><div class="addthiscontainer addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="http://catalogue.pietmondrian.nl/sketchbook-ii-1914-b376-b378/#276996"><div class="visualClear"></div><a class="addthis_button_facebook"></a><a class="addthis_button_twitter"></a><a class="addthis_button_linkedin"></a></div></div></td><td/><td valign="top" align="left"><br/> Piet&#160;Mondriaan
+      &#160;  
+
+    <br/><b>Paris roofs (17)</b> 1914<br/>paper, 172
+        x
+        105&#160;mm<br/>Solomon R. Guggenheim Museum, New York City, no.&#160;81.2823<br/><br/>B376.17</td></tr><tr><td colspan="3"><br/><hr/></td></tr></table></td></tr></table></div></body></html><br /><html xmlns:addthis="http://www.addthis.com/help/api-spec"><head><meta HTTP-EQUIV="Content-type" CONTENT="text/html; charset=utf8"/></head><body><div align="center"><table width="100%" border="0" class="main" cellpadding="0" cellspacing=""><tr><td><table class="area" border="0" width="100%" cellpadding="0" cellspacing="0" STYLE="font-size: 12px; font-type: Verdana;font-weight: normal;"><col width="30%"/><col width="5%"/><col width="65%"/><tr><td valign="top" align="center"><span class="listing-link link-to-popup" id="276997"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=geenafb.jpg&amp;width=150&amp;height=150"/></span><div class="image-popup"><span class="close-icon">X</span><div class="image-description"> Piet&#160;Mondriaan
+      &#160;  
+
+    ,
+            <b>Notre-Dame-des-Champs (18)</b>,&#160;1914</div><span class="image-thumb"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=geenafb.jpg&amp;width=220&amp;height=220"/></span><span class="image-large"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=geenafb.jpg&amp;width=700&amp;height=700"/></span><ul class="popup-icons"><li class="icon-item"><a href="#" class="image-fullsize">Image fullsize</a></li><li class="icon-item"><a href="https://rkd.nl/en/explore/images/276997" class="database-link" target="_blank">Show in RKDexplore</a></li><li class="icon-item"><a href="#" class="share-link">Share</a></li></ul><div class="addthiscontainer addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="http://catalogue.pietmondrian.nl/sketchbook-ii-1914-b376-b378/#276997"><div class="visualClear"></div><a class="addthis_button_facebook"></a><a class="addthis_button_twitter"></a><a class="addthis_button_linkedin"></a></div></div></td><td/><td valign="top" align="left"><br/> Piet&#160;Mondriaan
+      &#160;  
+
+    <br/><b>Notre-Dame-des-Champs (18)</b> 1914<br/>paper, 172
+        x
+        105&#160;mm<br/>Solomon R. Guggenheim Museum, New York City, no.&#160;81.2823<br/><br/>B376.18</td></tr><tr><td colspan="3"><br/><hr/></td></tr></table></td></tr></table></div></body></html><br /><html xmlns:addthis="http://www.addthis.com/help/api-spec"><head><meta HTTP-EQUIV="Content-type" CONTENT="text/html; charset=utf8"/></head><body><div align="center"><table width="100%" border="0" class="main" cellpadding="0" cellspacing=""><tr><td><table class="area" border="0" width="100%" cellpadding="0" cellspacing="0" STYLE="font-size: 12px; font-type: Verdana;font-weight: normal;"><col width="30%"/><col width="5%"/><col width="65%"/><tr><td valign="top" align="center"><span class="listing-link link-to-popup" id="276998"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=geenafb.jpg&amp;width=150&amp;height=150"/></span><div class="image-popup"><span class="close-icon">X</span><div class="image-description"> Piet&#160;Mondriaan
+      &#160;  
+
+    ,
+            <b>Notre-Dame-des-Champs (19)</b>,&#160;1914</div><span class="image-thumb"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=geenafb.jpg&amp;width=220&amp;height=220"/></span><span class="image-large"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=geenafb.jpg&amp;width=700&amp;height=700"/></span><ul class="popup-icons"><li class="icon-item"><a href="#" class="image-fullsize">Image fullsize</a></li><li class="icon-item"><a href="https://rkd.nl/en/explore/images/276998" class="database-link" target="_blank">Show in RKDexplore</a></li><li class="icon-item"><a href="#" class="share-link">Share</a></li></ul><div class="addthiscontainer addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="http://catalogue.pietmondrian.nl/sketchbook-ii-1914-b376-b378/#276998"><div class="visualClear"></div><a class="addthis_button_facebook"></a><a class="addthis_button_twitter"></a><a class="addthis_button_linkedin"></a></div></div></td><td/><td valign="top" align="left"><br/> Piet&#160;Mondriaan
+      &#160;  
+
+    <br/><b>Notre-Dame-des-Champs (19)</b> 1914<br/>paper, 105
+        x
+        172&#160;mm<br/>Solomon R. Guggenheim Museum, New York City, no.&#160;81.2823<br/><br/>B376.19</td></tr><tr><td colspan="3"><br/><hr/></td></tr></table></td></tr></table></div></body></html><br /><html xmlns:addthis="http://www.addthis.com/help/api-spec"><head><meta HTTP-EQUIV="Content-type" CONTENT="text/html; charset=utf8"/></head><body><div align="center"><table width="100%" border="0" class="main" cellpadding="0" cellspacing=""><tr><td><table class="area" border="0" width="100%" cellpadding="0" cellspacing="0" STYLE="font-size: 12px; font-type: Verdana;font-weight: normal;"><col width="30%"/><col width="5%"/><col width="65%"/><tr><td valign="top" align="center"><span class="listing-link link-to-popup" id="276999"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=geenafb.jpg&amp;width=150&amp;height=150"/></span><div class="image-popup"><span class="close-icon">X</span><div class="image-description"> Piet&#160;Mondriaan
+      &#160;  
+
+    ,
+            <b>Sketch (20)</b>,&#160;1914</div><span class="image-thumb"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=geenafb.jpg&amp;width=220&amp;height=220"/></span><span class="image-large"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=geenafb.jpg&amp;width=700&amp;height=700"/></span><ul class="popup-icons"><li class="icon-item"><a href="#" class="image-fullsize">Image fullsize</a></li><li class="icon-item"><a href="https://rkd.nl/en/explore/images/276999" class="database-link" target="_blank">Show in RKDexplore</a></li><li class="icon-item"><a href="#" class="share-link">Share</a></li></ul><div class="addthiscontainer addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="http://catalogue.pietmondrian.nl/sketchbook-ii-1914-b376-b378/#276999"><div class="visualClear"></div><a class="addthis_button_facebook"></a><a class="addthis_button_twitter"></a><a class="addthis_button_linkedin"></a></div></div></td><td/><td valign="top" align="left"><br/> Piet&#160;Mondriaan
+      &#160;  
+
+    <br/><b>Sketch (20)</b> 1914<br/>paper, 172
+        x
+        105&#160;mm<br/>Solomon R. Guggenheim Museum, New York City, no.&#160;81.2823<br/><br/>B376.20</td></tr><tr><td colspan="3"><br/><hr/></td></tr></table></td></tr></table></div></body></html><br /><html xmlns:addthis="http://www.addthis.com/help/api-spec"><head><meta HTTP-EQUIV="Content-type" CONTENT="text/html; charset=utf8"/></head><body><div align="center"><table width="100%" border="0" class="main" cellpadding="0" cellspacing=""><tr><td><table class="area" border="0" width="100%" cellpadding="0" cellspacing="0" STYLE="font-size: 12px; font-type: Verdana;font-weight: normal;"><col width="30%"/><col width="5%"/><col width="65%"/><tr><td valign="top" align="center"><span class="listing-link link-to-popup" id="277000"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=geenafb.jpg&amp;width=150&amp;height=150"/></span><div class="image-popup"><span class="close-icon">X</span><div class="image-description"> Piet&#160;Mondriaan
+      &#160;  
+
+    ,
+            <b>Paris roofs (21)</b>,&#160;1914</div><span class="image-thumb"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=geenafb.jpg&amp;width=220&amp;height=220"/></span><span class="image-large"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=geenafb.jpg&amp;width=700&amp;height=700"/></span><ul class="popup-icons"><li class="icon-item"><a href="#" class="image-fullsize">Image fullsize</a></li><li class="icon-item"><a href="https://rkd.nl/en/explore/images/277000" class="database-link" target="_blank">Show in RKDexplore</a></li><li class="icon-item"><a href="#" class="share-link">Share</a></li></ul><div class="addthiscontainer addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="http://catalogue.pietmondrian.nl/sketchbook-ii-1914-b376-b378/#277000"><div class="visualClear"></div><a class="addthis_button_facebook"></a><a class="addthis_button_twitter"></a><a class="addthis_button_linkedin"></a></div></div></td><td/><td valign="top" align="left"><br/> Piet&#160;Mondriaan
+      &#160;  
+
+    <br/><b>Paris roofs (21)</b> 1914<br/>paper, 105
+        x
+        172&#160;mm<br/>Solomon R. Guggenheim Museum, New York City, no.&#160;81.2823<br/><br/>B376.21</td></tr><tr><td colspan="3"><br/><hr/></td></tr></table></td></tr></table></div></body></html><br /><html xmlns:addthis="http://www.addthis.com/help/api-spec"><head><meta HTTP-EQUIV="Content-type" CONTENT="text/html; charset=utf8"/></head><body><div align="center"><table width="100%" border="0" class="main" cellpadding="0" cellspacing=""><tr><td><table class="area" border="0" width="100%" cellpadding="0" cellspacing="0" STYLE="font-size: 12px; font-type: Verdana;font-weight: normal;"><col width="30%"/><col width="5%"/><col width="65%"/><tr><td valign="top" align="center"><span class="listing-link link-to-popup" id="277002"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=geenafb.jpg&amp;width=150&amp;height=150"/></span><div class="image-popup"><span class="close-icon">X</span><div class="image-description"> Piet&#160;Mondriaan
+      &#160;  
+
+    ,
+            <b>Paris roofs (seen through a window?) (22)</b>,&#160;1914</div><span class="image-thumb"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=geenafb.jpg&amp;width=220&amp;height=220"/></span><span class="image-large"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=geenafb.jpg&amp;width=700&amp;height=700"/></span><ul class="popup-icons"><li class="icon-item"><a href="#" class="image-fullsize">Image fullsize</a></li><li class="icon-item"><a href="https://rkd.nl/en/explore/images/277002" class="database-link" target="_blank">Show in RKDexplore</a></li><li class="icon-item"><a href="#" class="share-link">Share</a></li></ul><div class="addthiscontainer addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="http://catalogue.pietmondrian.nl/sketchbook-ii-1914-b376-b378/#277002"><div class="visualClear"></div><a class="addthis_button_facebook"></a><a class="addthis_button_twitter"></a><a class="addthis_button_linkedin"></a></div></div></td><td/><td valign="top" align="left"><br/> Piet&#160;Mondriaan
+      &#160;  
+
+    <br/><b>Paris roofs (seen through a window?) (22)</b> 1914<br/>paper, 172
+        x
+        105&#160;mm<br/>Solomon R. Guggenheim Museum, New York City, no.&#160;81.2823<br/><br/>B376.22</td></tr><tr><td colspan="3"><br/><hr/></td></tr></table></td></tr></table></div></body></html><br /><html xmlns:addthis="http://www.addthis.com/help/api-spec"><head><meta HTTP-EQUIV="Content-type" CONTENT="text/html; charset=utf8"/></head><body><div align="center"><table width="100%" border="0" class="main" cellpadding="0" cellspacing=""><tr><td><table class="area" border="0" width="100%" cellpadding="0" cellspacing="0" STYLE="font-size: 12px; font-type: Verdana;font-weight: normal;"><col width="30%"/><col width="5%"/><col width="65%"/><tr><td valign="top" align="center"><span class="listing-link link-to-popup" id="277003"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=geenafb.jpg&amp;width=150&amp;height=150"/></span><div class="image-popup"><span class="close-icon">X</span><div class="image-description"> Piet&#160;Mondriaan
+      &#160;  
+
+    ,
+            <b>Paris roofs (seen through a window?) (23)</b>,&#160;1914</div><span class="image-thumb"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=geenafb.jpg&amp;width=220&amp;height=220"/></span><span class="image-large"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=geenafb.jpg&amp;width=700&amp;height=700"/></span><ul class="popup-icons"><li class="icon-item"><a href="#" class="image-fullsize">Image fullsize</a></li><li class="icon-item"><a href="https://rkd.nl/en/explore/images/277003" class="database-link" target="_blank">Show in RKDexplore</a></li><li class="icon-item"><a href="#" class="share-link">Share</a></li></ul><div class="addthiscontainer addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="http://catalogue.pietmondrian.nl/sketchbook-ii-1914-b376-b378/#277003"><div class="visualClear"></div><a class="addthis_button_facebook"></a><a class="addthis_button_twitter"></a><a class="addthis_button_linkedin"></a></div></div></td><td/><td valign="top" align="left"><br/> Piet&#160;Mondriaan
+      &#160;  
+
+    <br/><b>Paris roofs (seen through a window?) (23)</b> 1914<br/>paper, 172
+        x
+        105&#160;mm<br/>Solomon R. Guggenheim Museum, New York City, no.&#160;81.2823<br/><br/>B376.23</td></tr><tr><td colspan="3"><br/><hr/></td></tr></table></td></tr></table></div></body></html><br /><html xmlns:addthis="http://www.addthis.com/help/api-spec"><head><meta HTTP-EQUIV="Content-type" CONTENT="text/html; charset=utf8"/></head><body><div align="center"><table width="100%" border="0" class="main" cellpadding="0" cellspacing=""><tr><td><table class="area" border="0" width="100%" cellpadding="0" cellspacing="0" STYLE="font-size: 12px; font-type: Verdana;font-weight: normal;"><col width="30%"/><col width="5%"/><col width="65%"/><tr><td valign="top" align="center"><span class="listing-link link-to-popup" id="277004"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=geenafb.jpg&amp;width=150&amp;height=150"/></span><div class="image-popup"><span class="close-icon">X</span><div class="image-description"> Piet&#160;Mondriaan
+      &#160;  
+
+    ,
+            <b>Paris roofs (seen through a window?) (24)</b>,&#160;1914</div><span class="image-thumb"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=geenafb.jpg&amp;width=220&amp;height=220"/></span><span class="image-large"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=geenafb.jpg&amp;width=700&amp;height=700"/></span><ul class="popup-icons"><li class="icon-item"><a href="#" class="image-fullsize">Image fullsize</a></li><li class="icon-item"><a href="https://rkd.nl/en/explore/images/277004" class="database-link" target="_blank">Show in RKDexplore</a></li><li class="icon-item"><a href="#" class="share-link">Share</a></li></ul><div class="addthiscontainer addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="http://catalogue.pietmondrian.nl/sketchbook-ii-1914-b376-b378/#277004"><div class="visualClear"></div><a class="addthis_button_facebook"></a><a class="addthis_button_twitter"></a><a class="addthis_button_linkedin"></a></div></div></td><td/><td valign="top" align="left"><br/> Piet&#160;Mondriaan
+      &#160;  
+
+    <br/><b>Paris roofs (seen through a window?) (24)</b> 1914<br/>paper, 172
+        x
+        105&#160;mm<br/>Solomon R. Guggenheim Museum, New York City, no.&#160;81.2823<br/><br/>B376.24</td></tr><tr><td colspan="3"><br/><hr/></td></tr></table></td></tr></table></div></body></html><br /><html xmlns:addthis="http://www.addthis.com/help/api-spec"><head><meta HTTP-EQUIV="Content-type" CONTENT="text/html; charset=utf8"/></head><body><div align="center"><table width="100%" border="0" class="main" cellpadding="0" cellspacing=""><tr><td><table class="area" border="0" width="100%" cellpadding="0" cellspacing="0" STYLE="font-size: 12px; font-type: Verdana;font-weight: normal;"><col width="30%"/><col width="5%"/><col width="65%"/><tr><td valign="top" align="center"><span class="listing-link link-to-popup" id="277005"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=geenafb.jpg&amp;width=150&amp;height=150"/></span><div class="image-popup"><span class="close-icon">X</span><div class="image-description"> Piet&#160;Mondriaan
+      &#160;  
+
+    ,
+            <b>Paris roofs (25)</b>,&#160;1914</div><span class="image-thumb"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=geenafb.jpg&amp;width=220&amp;height=220"/></span><span class="image-large"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=geenafb.jpg&amp;width=700&amp;height=700"/></span><ul class="popup-icons"><li class="icon-item"><a href="#" class="image-fullsize">Image fullsize</a></li><li class="icon-item"><a href="https://rkd.nl/en/explore/images/277005" class="database-link" target="_blank">Show in RKDexplore</a></li><li class="icon-item"><a href="#" class="share-link">Share</a></li></ul><div class="addthiscontainer addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="http://catalogue.pietmondrian.nl/sketchbook-ii-1914-b376-b378/#277005"><div class="visualClear"></div><a class="addthis_button_facebook"></a><a class="addthis_button_twitter"></a><a class="addthis_button_linkedin"></a></div></div></td><td/><td valign="top" align="left"><br/> Piet&#160;Mondriaan
+      &#160;  
+
+    <br/><b>Paris roofs (25)</b> 1914<br/>paper, 105
+        x
+        172&#160;mm<br/>Solomon R. Guggenheim Museum, New York City, no.&#160;81.2823<br/><br/>B376.25</td></tr><tr><td colspan="3"><br/><hr/></td></tr></table></td></tr></table></div></body></html><br /><html xmlns:addthis="http://www.addthis.com/help/api-spec"><head><meta HTTP-EQUIV="Content-type" CONTENT="text/html; charset=utf8"/></head><body><div align="center"><table width="100%" border="0" class="main" cellpadding="0" cellspacing=""><tr><td><table class="area" border="0" width="100%" cellpadding="0" cellspacing="0" STYLE="font-size: 12px; font-type: Verdana;font-weight: normal;"><col width="30%"/><col width="5%"/><col width="65%"/><tr><td valign="top" align="center"><span class="listing-link link-to-popup" id="277007"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=geenafb.jpg&amp;width=150&amp;height=150"/></span><div class="image-popup"><span class="close-icon">X</span><div class="image-description"> Piet&#160;Mondriaan
+      &#160;  
+
+    ,
+            <b>Demolished building (26)</b>,&#160;1914</div><span class="image-thumb"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=geenafb.jpg&amp;width=220&amp;height=220"/></span><span class="image-large"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=geenafb.jpg&amp;width=700&amp;height=700"/></span><ul class="popup-icons"><li class="icon-item"><a href="#" class="image-fullsize">Image fullsize</a></li><li class="icon-item"><a href="https://rkd.nl/en/explore/images/277007" class="database-link" target="_blank">Show in RKDexplore</a></li><li class="icon-item"><a href="#" class="share-link">Share</a></li></ul><div class="addthiscontainer addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="http://catalogue.pietmondrian.nl/sketchbook-ii-1914-b376-b378/#277007"><div class="visualClear"></div><a class="addthis_button_facebook"></a><a class="addthis_button_twitter"></a><a class="addthis_button_linkedin"></a></div></div></td><td/><td valign="top" align="left"><br/> Piet&#160;Mondriaan
+      &#160;  
+
+    <br/><b>Demolished building (26)</b> 1914<br/>paper, 105
+        x
+        172&#160;mm<br/>Solomon R. Guggenheim Museum, New York City, no.&#160;81.2823<br/><br/>B376.26</td></tr><tr><td colspan="3"><br/><hr/></td></tr></table></td></tr></table></div></body></html><br /><html xmlns:addthis="http://www.addthis.com/help/api-spec"><head><meta HTTP-EQUIV="Content-type" CONTENT="text/html; charset=utf8"/></head><body><div align="center"><table width="100%" border="0" class="main" cellpadding="0" cellspacing=""><tr><td><table class="area" border="0" width="100%" cellpadding="0" cellspacing="0" STYLE="font-size: 12px; font-type: Verdana;font-weight: normal;"><col width="30%"/><col width="5%"/><col width="65%"/><tr><td valign="top" align="center"><span class="listing-link link-to-popup" id="277009"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=geenafb.jpg&amp;width=150&amp;height=150"/></span><div class="image-popup"><span class="close-icon">X</span><div class="image-description"> Piet&#160;Mondriaan
+      &#160;  
+
+    ,
+            <b>Sketch (27)</b>,&#160;1914</div><span class="image-thumb"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=geenafb.jpg&amp;width=220&amp;height=220"/></span><span class="image-large"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=geenafb.jpg&amp;width=700&amp;height=700"/></span><ul class="popup-icons"><li class="icon-item"><a href="#" class="image-fullsize">Image fullsize</a></li><li class="icon-item"><a href="https://rkd.nl/en/explore/images/277009" class="database-link" target="_blank">Show in RKDexplore</a></li><li class="icon-item"><a href="#" class="share-link">Share</a></li></ul><div class="addthiscontainer addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="http://catalogue.pietmondrian.nl/sketchbook-ii-1914-b376-b378/#277009"><div class="visualClear"></div><a class="addthis_button_facebook"></a><a class="addthis_button_twitter"></a><a class="addthis_button_linkedin"></a></div></div></td><td/><td valign="top" align="left"><br/> Piet&#160;Mondriaan
+      &#160;  
+
+    <br/><b>Sketch (27)</b> 1914<br/>paper, 172
+        x
+        105&#160;mm<br/>Solomon R. Guggenheim Museum, New York City, no.&#160;81.2823<br/><br/>B376.27</td></tr><tr><td colspan="3"><br/><hr/></td></tr></table></td></tr></table></div></body></html><br /><html xmlns:addthis="http://www.addthis.com/help/api-spec"><head><meta HTTP-EQUIV="Content-type" CONTENT="text/html; charset=utf8"/></head><body><div align="center"><table width="100%" border="0" class="main" cellpadding="0" cellspacing=""><tr><td><table class="area" border="0" width="100%" cellpadding="0" cellspacing="0" STYLE="font-size: 12px; font-type: Verdana;font-weight: normal;"><col width="30%"/><col width="5%"/><col width="65%"/><tr><td valign="top" align="center"><span class="listing-link link-to-popup" id="277010"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=geenafb.jpg&amp;width=150&amp;height=150"/></span><div class="image-popup"><span class="close-icon">X</span><div class="image-description"> Piet&#160;Mondriaan
+      &#160;  
+
+    ,
+            <b>Sketch (28)</b>,&#160;1914</div><span class="image-thumb"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=geenafb.jpg&amp;width=220&amp;height=220"/></span><span class="image-large"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=geenafb.jpg&amp;width=700&amp;height=700"/></span><ul class="popup-icons"><li class="icon-item"><a href="#" class="image-fullsize">Image fullsize</a></li><li class="icon-item"><a href="https://rkd.nl/en/explore/images/277010" class="database-link" target="_blank">Show in RKDexplore</a></li><li class="icon-item"><a href="#" class="share-link">Share</a></li></ul><div class="addthiscontainer addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="http://catalogue.pietmondrian.nl/sketchbook-ii-1914-b376-b378/#277010"><div class="visualClear"></div><a class="addthis_button_facebook"></a><a class="addthis_button_twitter"></a><a class="addthis_button_linkedin"></a></div></div></td><td/><td valign="top" align="left"><br/> Piet&#160;Mondriaan
+      &#160;  
+
+    <br/><b>Sketch (28)</b> 1914<br/>paper, 105
+        x
+        172&#160;mm<br/>Solomon R. Guggenheim Museum, New York City, no.&#160;81.2823<br/><br/>B376.28</td></tr><tr><td colspan="3"><br/><hr/></td></tr></table></td></tr></table></div></body></html><br /><html xmlns:addthis="http://www.addthis.com/help/api-spec"><head><meta HTTP-EQUIV="Content-type" CONTENT="text/html; charset=utf8"/></head><body><div align="center"><table width="100%" border="0" class="main" cellpadding="0" cellspacing=""><tr><td><table class="area" border="0" width="100%" cellpadding="0" cellspacing="0" STYLE="font-size: 12px; font-type: Verdana;font-weight: normal;"><col width="30%"/><col width="5%"/><col width="65%"/><tr><td valign="top" align="center"><span class="listing-link link-to-popup" id="277011"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=geenafb.jpg&amp;width=150&amp;height=150"/></span><div class="image-popup"><span class="close-icon">X</span><div class="image-description"> Piet&#160;Mondriaan
+      &#160;  
+
+    ,
+            <b>Sketch (29)</b>,&#160;1914</div><span class="image-thumb"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=geenafb.jpg&amp;width=220&amp;height=220"/></span><span class="image-large"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=geenafb.jpg&amp;width=700&amp;height=700"/></span><ul class="popup-icons"><li class="icon-item"><a href="#" class="image-fullsize">Image fullsize</a></li><li class="icon-item"><a href="https://rkd.nl/en/explore/images/277011" class="database-link" target="_blank">Show in RKDexplore</a></li><li class="icon-item"><a href="#" class="share-link">Share</a></li></ul><div class="addthiscontainer addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="http://catalogue.pietmondrian.nl/sketchbook-ii-1914-b376-b378/#277011"><div class="visualClear"></div><a class="addthis_button_facebook"></a><a class="addthis_button_twitter"></a><a class="addthis_button_linkedin"></a></div></div></td><td/><td valign="top" align="left"><br/> Piet&#160;Mondriaan
+      &#160;  
+
+    <br/><b>Sketch (29)</b> 1914<br/>paper, 172
+        x
+        105&#160;mm<br/>Solomon R. Guggenheim Museum, New York City, no.&#160;81.2823<br/><br/>B376.29</td></tr><tr><td colspan="3"><br/><hr/></td></tr></table></td></tr></table></div></body></html></p><br /></div>
+    
+
+      
+
+    <div class="documentByLine">       
+      Datum laatste wijziging: 
+      Sep 15, 2017 09:31 AM
+      
+      <div>            
+        <a class="previous"
+           href="http://catalogue.pietmondrian.nl/sketchbook-i-1914-b371-b375">
+          &laquo; Vorige
+        </a>
+        <a class="next"
+           href="http://catalogue.pietmondrian.nl/sketchbook-leaves-1912-1914-b379-b411">
+          Volgende &raquo;
+        </a>
+      </div>     
+    </div>
+    
+
+        
+        
+          <!-- end page content -->
+      
+      <div class="visualClear"></div>
+    </div>
+    <div id="portal-footer">
+      <a title="Disclaimer"
+         href="http://catalogue.pietmondrian.nl/disclaimer">Disclaimer</a>   |
+      <a title="Privacy Statement"
+         href="http://catalogue.pietmondrian.nl/privacy_statement">Privacy Statement</a>   |
+        Copyright <sup>&copy;</sup> <script type="text/javascript">date = new Date(); document.write(date.getFullYear());</script>
+        - RKD Monographs. <a href="http://www.swordfish.nl" target="_blank">Powered by SwordFish<sup>&reg;</sup></a>
+    </div>
+  </div>
+<!-- end content column -->
+   <!-- left column -->
+  	<div id="column1-wrapper">
+	   <div id="column_1">
+       
+          
+<div id="portletwrapper-73776f7264666973682e66726f6e74656e642e6c656674636f6c756d6e0a636f6e746578740a2f5357332f6d6f6e64726961616e0a6d656e75706c6161746a65"
+     class="kssattr-portlethash-73776f7264666973682e66726f6e74656e642e6c656674636f6c756d6e0a636f6e746578740a2f5357332f6d6f6e64726961616e0a6d656e75706c6161746a65"><div class="portlet portletHtmlText sponsors">
+
+    <div class="portletTitle">
+        <h2>
+        	Menuplaatje
+        </h2>
+    </div>
+
+    <div class="portletBody">
+        <p><img src="/mondriaan/bestanden/nieuwe-afbeelding-menu/image_preview" alt="Nieuwe afbeelding menu" height="168" width="169" /></p>
+		
+    </div>
+</div>
+</div>
+
+<div id="portletwrapper-73776f7264666973682e66726f6e74656e642e6c656674636f6c756d6e0a636f6e746578740a2f5357332f6d6f6e64726961616e0a6e617669676174696f6e"
+     class="kssattr-portlethash-73776f7264666973682e66726f6e74656e642e6c656674636f6c756d6e0a636f6e746578740a2f5357332f6d6f6e64726961616e0a6e617669676174696f6e">
+		<div class="portlet portletNavigationTree">
+	        <ul class="portletNavigationTree navTreeLevel0">
+	            
+	            
+
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/link-verantwoording"
+           class="state-published" title="">
+          
+            Foreword
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/inleiding"
+           class="state-published" title="">
+          
+            Notes to Readers
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/catalogus"
+           class="state-published" title="">
+          
+            Catalogue
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/copy_of_winterswijk-i-before-circa-1897-a1-a22"
+           class="state-published" title="">
+          
+            Winterswijk, 1888-1896 (A1-A22) 
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/amsterdam-i-circa-1893-1897-a23-a49"
+           class="state-published" title="">
+          
+            Amsterdam, 1893-1897 (A23-A49)
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/winterswijk-2-1897-1899-a50-a91"
+           class="state-published" title="">
+          
+            Winterswijk, 1897-1899 (A50-A91)
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/amsterdam-2-circa-1897-1901-a92-a259"
+           class="state-published" title="">
+          
+            Amsterdam, 1897-1901 (A92-A259) 
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/amsterdam-3-circa-1902-1905-a260-a351"
+           class="state-published" title="">
+          
+            Amsterdam, 1902-1905 (A260-A351)
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/brabant-1904-early-1905-a352-a379"
+           class="state-published" title="">
+          
+            Brabant, 1904-1905 (A352-A379)
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/amsterdam-4-circa-1905-early-1908-a380-a537"
+           class="state-published" title="">
+          
+            Amsterdam, 1905-1908 (A380-A537)
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/twente-circa-1906-early-1908-a538-a593"
+           class="state-published" title="">
+          
+            Twente, 1906-1908 (A538-A593)
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/amsterdam-5-circa-1908-1911-a594-a673"
+           class="state-published" title="">
+          
+            Amsterdam, 1908-1911 (A594-A673)
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/zeeland-1909-1911-a674-a710-b1"
+           class="state-published" title="">
+          
+            Zeeland, 1909-1911 (A674-A710, B1)
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/unidentified-references-ua1-ua50"
+           class="state-published" title="">
+          
+            Unidentified references (UA1-UA50)
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/amsterdam-1911-b2-b4"
+           class="state-published" title="">
+          
+            Amsterdam, 1911 (B2-B4) 
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/paris-1-1912-1914-b5-b56"
+           class="state-published" title="">
+          
+            Paris 1, 1912-1914 (B5-B56)
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/nederland-1914-1919-b57-b103"
+           class="state-published" title="">
+          
+            Holland, 1914-1919 (B57-B103)
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/paris-2-1920-1937-b104-b281.312"
+           class="state-published" title="">
+          
+            Paris 2, 1920-1937 (B104-B281.312)
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/london-1938-1939-b282-b295.315"
+           class="state-published" title="">
+          
+            London, 1938-1939 (B282-B295.315)
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/new-york-1940-1944-b296.318-b324"
+           class="state-published" title="">
+          
+            New York, 1940-1944 (B296.318-B324)
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/drawings-1925-1943-b325-b370"
+           class="state-published" title="">
+          
+            Sketchbook, 1925 (B325-B333)
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/sketches-and-studies-b334-b370"
+           class="state-published" title="">
+          
+            Sketches and studies (B334-B370)
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/sketchbook-i-1914-b371-b375"
+           class="state-published" title="">
+          
+            Sketchbook I, 1914 (B371-B375)
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker navTreeCurrentNode navTreeItemInPath">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/sketchbook-ii-1914-b376-b378"
+           class="state-published navTreeCurrentItem"
+           title="">
+          
+            Sketchbook II, 1914 (B376-B378)
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/sketchbook-leaves-1912-1914-b379-b411"
+           class="state-published" title="">
+          
+            Sketchbook leaves, 1912-1914 (B379-B411)
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/catalogue-of-the-furniture-b412-415"
+           class="state-published" title="">
+          
+            Furniture (B412-415)
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/unidentifiable-references-u1-u27"
+           class="state-published" title="">
+          
+            Unidentifiable references (U1-U27)
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/catalogue-of-late-naturalistic-works-c1-c155"
+           class="state-published" title="">
+          
+            Late naturalistic works, 1912-1942 (C1-C155)
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/copies-c154-c155"
+           class="state-published" title="">
+          
+            Copies (C154-C155)
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/additions"
+           class="state-published" title="">
+          
+            New Additions
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/bibliography"
+           class="state-published" title="">
+          
+            Bibliography 1994-2017 (selection)
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/colophon-and-copyright-notice"
+           class="state-published" title="">
+          
+            Colophon and copyright notice
+        </a>
+        
+    
+    
+</li>
+
+
+
+
+	        </ul>
+		</div>
+
+</div>
+
+		   
+	   </div>
+	   <div id="column1-bottom"></div>
+	    <div class="visualClear"></div>
+	</div>
+<!-- end left column -->
+    <div class="print-version">
+      De afgedrukte pagina is te vinden op:  <a
+    href="http://catalogue.pietmondrian.nl/sketchbook-ii-1914-b376-b378">http://catalogue.pietmondrian.nl/sketchbook-ii-1914-b376-b378</a>
+    </div>
+  </div>
+</div>
+
+
+	</div >
+	</body >
+
+ </html>
+
+

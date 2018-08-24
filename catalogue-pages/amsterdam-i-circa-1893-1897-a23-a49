@@ -1,0 +1,1666 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+
+
+<!-- <tal:global_defines define="global foo context/@@frontend/globalize"/>
+ -->
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="nl"
+      xml:lang="nl">
+
+  
+    
+    
+    
+    
+    
+    
+
+  
+
+<head>
+<base href="http://catalogue.pietmondrian.nl/amsterdam-i-circa-1893-1897-a23-a49/" />
+
+
+    <meta http-equiv="Content-Type"
+          content="text/html;charset=utf-8" />
+
+    <title>Piet Mondrian | Amsterdam, 1893-1897 (A23-A49)</title>
+    <link rel="kss-base-url" href="http://catalogue.pietmondrian.nl/amsterdam-i-circa-1893-1897-a23-a49" />
+
+  
+  
+    
+    
+    
+      <style type="text/css">@import url(http://catalogue.pietmondrian.nl/portal_css/rkdmonographsskin/kupustyles.css);</style>
+    
+    
+    
+  
+
+  
+    
+    
+    
+      <style type="text/css">@import url(http://catalogue.pietmondrian.nl/portal_css/rkdmonographsskin/kupuplone.css);</style>
+    
+    
+    
+  
+
+  
+    
+    
+    
+      <style type="text/css">@import url(http://catalogue.pietmondrian.nl/portal_css/rkdmonographsskin/kupudrawerstyles.css);</style>
+    
+    
+    
+  
+
+  
+    
+    
+    
+      <style type="text/css" media="print">@import url(http://catalogue.pietmondrian.nl/portal_css/rkdmonographsskin/print.css);</style>
+    
+    
+    
+  
+
+  
+    
+    
+    
+      <style type="text/css" media="screen">@import url(http://catalogue.pietmondrian.nl/portal_css/rkdmonographsskin/jscalendar/calendar-system.css);</style>
+    
+    
+    
+  
+
+  
+    
+        <!--[if IE]>    
+    
+    
+    
+      <style type="text/css" media="screen">@import url(http://catalogue.pietmondrian.nl/portal_css/rkdmonographsskin/IEFixes.css);</style>
+    
+    
+    
+        <![endif]-->
+    
+  
+
+  
+    
+    
+    
+      <style type="text/css" media="screen">@import url(http://catalogue.pietmondrian.nl/portal_css/rkdmonographsskin/defaultstyle.css);</style>
+    
+    
+    
+  
+
+  
+    
+    
+    
+      <style type="text/css" media="screen">@import url(http://catalogue.pietmondrian.nl/portal_css/rkdmonographsskin/subsite-theme.css);</style>
+    
+    
+    
+  
+
+  
+    
+    
+    
+      <style type="text/css" media="screen">@import url(http://catalogue.pietmondrian.nl/portal_css/rkdmonographsskin/rkdmonographs.css);</style>
+    
+    
+    
+  
+
+  
+    
+        <!--[if IE 7]>    
+    
+    
+    
+      <style type="text/css" media="screen">@import url(http://catalogue.pietmondrian.nl/portal_css/rkdmonographsskin/ie7fix.css);</style>
+    
+    
+    
+        <![endif]-->
+    
+  
+
+  
+    
+        <!--[if IE 8]>    
+    
+    
+    
+      <style type="text/css" media="screen">@import url(http://catalogue.pietmondrian.nl/portal_css/rkdmonographsskin/ie8fix.css);</style>
+    
+    
+    
+        <![endif]-->
+    
+  
+
+  
+    
+    
+    
+      <style type="text/css" media="screen">@import url(http://catalogue.pietmondrian.nl/portal_css/rkdmonographsskin/products.rkdmonographs.css);</style>
+    
+    
+    
+  
+
+  
+    
+    
+    
+      <style type="text/css" media="screen">@import url(http://catalogue.pietmondrian.nl/portal_css/rkdmonographsskin/monographs_print.css);</style>
+    
+    
+    
+  
+
+
+  
+  
+    
+    
+      <script type="text/javascript"
+              src="http://catalogue.pietmondrian.nl/portal_javascripts/rkdmonographsskin/jquery-cachekey2945.js">
+      </script>
+    
+    
+    
+  
+
+  
+    
+    
+      <script type="text/javascript"
+              src="http://catalogue.pietmondrian.nl/portal_javascripts/rkdmonographsskin/calendar_formfield-cachekey8509.js">
+      </script>
+    
+    
+    
+  
+
+  
+    
+    
+      <script type="text/javascript"
+              src="http://catalogue.pietmondrian.nl/portal_javascripts/rkdmonographsskin/swordfish_functions-cachekey3423.js">
+      </script>
+    
+    
+    
+  
+
+  
+    
+    
+      <script type="text/javascript"
+              src="http://catalogue.pietmondrian.nl/portal_javascripts/rkdmonographsskin/fckeditor-cachekey0070.js">
+      </script>
+    
+    
+    
+  
+
+  
+    
+    
+      <script type="text/javascript"
+              src="http://catalogue.pietmondrian.nl/portal_javascripts/rkdmonographsskin/print-cachekey8927.js">
+      </script>
+    
+    
+    
+  
+
+  
+    
+    
+      <script type="text/javascript"
+              src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=xa-4fd87a8b529ac85b">
+      </script>
+    
+    
+    
+  
+
+  
+    
+      <!--[if lt IE 9]>    
+    
+    
+      <script type="text/javascript"
+              src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js">
+      </script>
+    
+    
+    
+        <![endif]-->
+    
+  
+
+
+  
+  <link rel="kinetic-stylesheet" type="text/css"
+        href="http://catalogue.pietmondrian.nl/portal_kss/rkdmonographsskin/plone-cachekey6395.kss" />
+
+  <link rel="kinetic-stylesheet" type="text/css"
+        href="http://catalogue.pietmondrian.nl/portal_kss/rkdmonographsskin/fckeditor_plone-cachekey4455.kss" />
+
+
+
+          
+<!--      <script type="text/javascript" charset="iso-8859-1"-->
+<!--              src="jscripts/tiny_mce/tiny_mce.js"> </script>-->
+<!--      <script type="text/javascript" charset="iso-8859-1"-->
+<!--              src="jscripts/tiny_mce/tiny_mce_init.js"> </script>-->
+    
+   
+
+<title>Amsterdam, 1893-1897 (A23-A49) &mdash; Piet Mondrian</title>
+
+    
+
+    <link rel="shortcut icon" type="image/x-icon"
+          href="http://catalogue.pietmondrian.nl/favicon.ico" />
+
+
+
+    <link rel="home" href="http://catalogue.pietmondrian.nl"
+          title="Front page" />
+
+    <link rel="contents"
+          href="http://catalogue.pietmondrian.nl/sitemap"
+          title="Site Map" />
+
+
+
+
+
+
+    <link rel="search"
+          href="http://catalogue.pietmondrian.nl/search_form"
+          title="Search this site" />
+
+
+<!-- Internet Explorer ACC CSS Fixes -->
+<!-- MOVED TO RESOURCE REGISTRIES -->
+
+
+
+    <!-- Disable IE6 image toolbar -->
+    <meta http-equiv="imagetoolbar" content="no" />
+
+
+	
+    
+    <link rel="stylesheet" type="text/css" href="/subsite-theme.css" />
+
+   
+</head>
+
+   
+   	 <body>
+   
+
+   
+   	 <div id='mainContainer' class='contentpage'>
+   
+
+  <div class="print-version">
+    <img id="print-logo"
+         src="http://catalogue.pietmondrian.nl/print_logo.gif"
+         alt="Amsterdam, 1893-1897 (A23-A49)" />
+  </div>
+   <div id="top-actions-container">
+     <div id="socialmedia">
+       <span class="share-link">Share</span>
+       <div id="addthiscontainer" class="addthis_toolbox addthis_default_style addthis_32x32_style" addthis:title="RKD Monographs">
+        	 <div class="visualClear"></div>
+          <a class="addthis_button_facebook"></a>
+          <a class="addthis_button_twitter"></a>
+          <a class="addthis_button_linkedin"></a>
+        </div>
+     </div>
+
+    <ul id="portal-siteactions">
+      <!-- test -->
+      <li id="action-contact">
+        <a title="Link naar contactformulier"
+           href="http://catalogue.pietmondrian.nl/contact-info">
+          <img alt="e-mail"
+               src="http://catalogue.pietmondrian.nl/email-icon.gif" />
+        </a>
+      </li>
+      <li id="action-home">
+        <a title="Homepage"
+           href="http://www.rkdmonographs.nl">
+          <img alt="homepage"
+               src="http://catalogue.pietmondrian.nl/home-icon.gif" />
+        </a>
+      </li><li id="action-rkdhome">
+        <a href="http://www.rkd.nl" title="Link naar RKD website">RKD-home</a></li><li id="action-sitemap"><a
+    title="Sitemap"
+    href="http://catalogue.pietmondrian.nl/sitemap">sitemap</a>
+      </li></ul>     
+   </div>
+   <div id="logo-actions-container">
+    <a id="portal-logo" class="header" accesskey="1"
+       href="http://catalogue.pietmondrian.nl">
+      <img src="http://catalogue.pietmondrian.nl/rkd-logo.png"
+           alt="Amsterdam, 1893-1897 (A23-A49)" />
+    </a>
+   </div>
+
+
+<div id="columnWrapper">
+   <div id="header-wrapper">
+      
+        <a class="link-logo"
+           href="http://catalogue.pietmondrian.nl">
+         <div class="header header-image"
+              style="background-image:url(http://catalogue.pietmondrian.nl/header_images/banner-mondriaan)">
+         </div>
+         </a>
+      
+      <div id="searchContainerRight">
+         <form id="livesearch0"
+               action="http://catalogue.pietmondrian.nl/search"
+               name="searchform">
+            <div id="portal-searchbox">
+    <form name="searchform"
+          action="http://catalogue.pietmondrian.nl/search">
+
+        <label for="searchGadget" class="hiddenStructure">Search Site</label>
+
+        <div class="LSBox">
+        <input name="SearchableText" type="text" size="18"
+               title="Search Site" accesskey="4"
+               class="inputLabel" id="searchGadget" />
+
+        <input class="searchButton" type="submit" value="" />
+    
+        <div class="searchSection">
+            <input id="searchbox_currentfolder_only"
+                   class="noborder" type="checkbox"
+                   name="path"
+                   value="/SW3/mondriaan/amsterdam-i-circa-1893-1897-a23-a49" />
+            <label for="searchbox_currentfolder_only"
+                   style="cursor: pointer">
+                only in current section
+            </label>
+        </div>
+
+        <div class="LSResult" id="LSResult" style=""><div class="LSShadow" id="LSShadow"></div></div>
+        </div>
+    </form>
+
+    <div id="portal-advanced-search" class="hiddenStructure">
+        <a href="http://catalogue.pietmondrian.nl/search_form"
+           accesskey="5">
+            Advanced Search&hellip;
+        </a>
+    </div>
+
+</div>
+
+			</form>
+      </div>
+      
+       <div id="portal-breadcrumbs">
+
+    <span id="breadcrumbs-you-are-here">You
+are here:</span>
+    <a href="http://catalogue.pietmondrian.nl">Home</a>
+    <span class="breadcrumbSeparator">
+        &rarr;
+        
+    </span>
+    <span dir="ltr">
+        
+            
+            
+            <span>Amsterdam, 1893-1897 (A23-A49)</span>
+         
+    </span>
+
+</div>
+
+      
+
+	</div>
+
+<!-- content column -->
+  <div id="contentcolumns-wrapper">
+   <div id="column_2">
+      <div id="content">
+       
+         
+
+    <dl class="portalMessage info" id="kssPortalMessage" style="display:none">
+        <dt>Info</dt>
+        <dd></dd>
+    </dl>
+
+
+          <!-- page content -->
+        
+           
+          
+  
+  <div class="visualClear"><!-- --></div>
+<div class="documentActions">
+    
+
+    <h5 class="hiddenStructure">Document Actions</h5>
+
+    <ul>
+    
+        <li id="document-action-print">
+            <a href="javascript:print();" title="">deze pagina</a>
+        </li>
+    
+
+    </ul>
+    
+
+    
+
+</div>
+
+    
+        <h1> 
+          Amsterdam, 1893-1897 (A23-A49)
+          
+        </h1>
+    
+    
+    
+
+    
+
+
+
+    
+
+    
+      <div class="document_content"><p><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:View>Normal</w:View>
+  <w:Zoom>0</w:Zoom>
+  <w:TrackMoves />
+  <w:TrackFormatting />
+  <w:HyphenationZone>21</w:HyphenationZone>
+  <w:PunctuationKerning />
+  <w:ValidateAgainstSchemas />
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:DoNotPromoteQF />
+  <w:LidThemeOther>NL</w:LidThemeOther>
+  <w:LidThemeAsian>X-NONE</w:LidThemeAsian>
+  <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
+  <w:Compatibility>
+   <w:BreakWrappedTables />
+   <w:SnapToGridInCell />
+   <w:WrapTextWithPunct />
+   <w:UseAsianBreakRules />
+   <w:DontGrowAutofit />
+   <w:SplitPgBreakAndParaMark />
+   <w:EnableOpenTypeKerning />
+   <w:DontFlipMirrorIndents />
+   <w:OverrideTableStyleHps />
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+  <m:mathPr>
+   <m:mathFont m:val="Cambria Math" />
+   <m:brkBin m:val="before" />
+   <m:brkBinSub m:val="&#45;-" />
+   <m:smallFrac m:val="off" />
+   <m:dispDef />
+   <m:lMargin m:val="0" />
+   <m:rMargin m:val="0" />
+   <m:defJc m:val="centerGroup" />
+   <m:wrapIndent m:val="1440" />
+   <m:intLim m:val="subSup" />
+   <m:naryLim m:val="undOvr" />
+  </m:mathPr></w:WordDocument>
+</xml><![endif]--></p><p><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="true"
+  DefSemiHidden="true" DefQFormat="false" DefPriority="99"
+  LatentStyleCount="267">
+  <w:LsdException Locked="false" Priority="0" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Normal" />
+  <w:LsdException Locked="false" Priority="9" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="heading 1" />
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 2" />
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 3" />
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 4" />
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 5" />
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 6" />
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 7" />
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 8" />
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 9" />
+  <w:LsdException Locked="false" Priority="39" Name="toc 1" />
+  <w:LsdException Locked="false" Priority="39" Name="toc 2" />
+  <w:LsdException Locked="false" Priority="39" Name="toc 3" />
+  <w:LsdException Locked="false" Priority="39" Name="toc 4" />
+  <w:LsdException Locked="false" Priority="39" Name="toc 5" />
+  <w:LsdException Locked="false" Priority="39" Name="toc 6" />
+  <w:LsdException Locked="false" Priority="39" Name="toc 7" />
+  <w:LsdException Locked="false" Priority="39" Name="toc 8" />
+  <w:LsdException Locked="false" Priority="39" Name="toc 9" />
+  <w:LsdException Locked="false" Priority="35" QFormat="true" Name="caption" />
+  <w:LsdException Locked="false" Priority="10" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Title" />
+  <w:LsdException Locked="false" Priority="1" Name="Default Paragraph Font" />
+  <w:LsdException Locked="false" Priority="11" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtitle" />
+  <w:LsdException Locked="false" Priority="22" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Strong" />
+  <w:LsdException Locked="false" Priority="20" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Emphasis" />
+  <w:LsdException Locked="false" Priority="59" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Table Grid" />
+  <w:LsdException Locked="false" UnhideWhenUsed="false" Name="Placeholder Text" />
+  <w:LsdException Locked="false" Priority="1" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="No Spacing" />
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading" />
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List" />
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid" />
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1" />
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2" />
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1" />
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2" />
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1" />
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2" />
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3" />
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List" />
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading" />
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List" />
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid" />
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 1" />
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 1" />
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 1" />
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 1" />
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 1" />
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 1" />
+  <w:LsdException Locked="false" UnhideWhenUsed="false" Name="Revision" />
+  <w:LsdException Locked="false" Priority="34" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="List Paragraph" />
+  <w:LsdException Locked="false" Priority="29" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Quote" />
+  <w:LsdException Locked="false" Priority="30" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Quote" />
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 1" />
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 1" />
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 1" />
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 1" />
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 1" />
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 1" />
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 1" />
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 1" />
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 2" />
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 2" />
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 2" />
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 2" />
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 2" />
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 2" />
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 2" />
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 2" />
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 2" />
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 2" />
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 2" />
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 2" />
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 2" />
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 2" />
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 3" />
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 3" />
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 3" />
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 3" />
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 3" />
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 3" />
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 3" />
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 3" />
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 3" />
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 3" />
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 3" />
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 3" />
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 3" />
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 3" />
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 4" />
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 4" />
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 4" />
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 4" />
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 4" />
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 4" />
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 4" />
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 4" />
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 4" />
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 4" />
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 4" />
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 4" />
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 4" />
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 4" />
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 5" />
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 5" />
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 5" />
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 5" />
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 5" />
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 5" />
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 5" />
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 5" />
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 5" />
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 5" />
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 5" />
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 5" />
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 5" />
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 5" />
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 6" />
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 6" />
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 6" />
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 6" />
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 6" />
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 6" />
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 6" />
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 6" />
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 6" />
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 6" />
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 6" />
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 6" />
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 6" />
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 6" />
+  <w:LsdException Locked="false" Priority="19" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtle Emphasis" />
+  <w:LsdException Locked="false" Priority="21" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Emphasis" />
+  <w:LsdException Locked="false" Priority="31" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtle Reference" />
+  <w:LsdException Locked="false" Priority="32" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Reference" />
+  <w:LsdException Locked="false" Priority="33" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Book Title" />
+  <w:LsdException Locked="false" Priority="37" Name="Bibliography" />
+  <w:LsdException Locked="false" Priority="39" QFormat="true" Name="TOC Heading" />
+ </w:LatentStyles>
+</xml><![endif]--><!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:Standaardtabel;
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-parent:"";
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-para-margin:0cm;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";}
+</style>
+<![endif]--></p><p class="MsoNormal"><span style="color:black;mso-ansi-language:EN-US" lang="EN-US"><html xmlns:addthis="http://www.addthis.com/help/api-spec"><head><meta HTTP-EQUIV="Content-type" CONTENT="text/html; charset=utf8"/></head><body><div align="center"><table width="100%" border="0" class="main" cellpadding="0" cellspacing=""><tr><td><table class="area" border="0" width="100%" cellpadding="0" cellspacing="0" STYLE="font-size: 12px; font-type: Verdana;font-weight: normal;"><col width="30%"/><col width="5%"/><col width="65%"/><tr><td valign="top" align="center"><span class="listing-link link-to-popup" id="261189"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\087\1001243087.jpg&amp;width=150&amp;height=150"/></span><div class="image-popup"><span class="close-icon">X</span><div class="image-description"> Piet&#160;Mondriaan
+      &#160;  
+
+    ,
+            <b>Still life</b>,&#160;dated 1893</div><span class="image-thumb"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\087\1001243087.jpg&amp;width=220&amp;height=220"/></span><span class="image-large"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\087\1001243087.jpg&amp;width=700&amp;height=700"/></span><ul class="popup-icons"><li class="icon-item"><a href="#" class="image-fullsize">Image fullsize</a></li><li class="icon-item"><a href="https://rkd.nl/en/explore/images/261189" class="database-link" target="_blank">Show in RKDexplore</a></li><li class="icon-item"><a href="#" class="share-link">Share</a></li></ul><div class="addthiscontainer addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="http://catalogue.pietmondrian.nl/amsterdam-i-circa-1893-1897-a23-a49/#261189"><div class="visualClear"></div><a class="addthis_button_facebook"></a><a class="addthis_button_twitter"></a><a class="addthis_button_linkedin"></a></div></div></td><td/><td valign="top" align="left"><br/> Piet&#160;Mondriaan
+      &#160;  
+
+    <br/><b>Still life</b> dated 1893<br/>oil paint / canvas, 66,5
+        x
+        77,5&#160;cm<br/>Stedelijk Museum Amsterdam, Amsterdam, no.&#160;A 8756<br/><br/>A23</td></tr><tr><td colspan="3"><br/><hr/></td></tr></table></td></tr></table></div></body></html></span></p>  <p class="MsoNormal"><span style="color:black;mso-ansi-language:EN-US" lang="EN-US"><html xmlns:addthis="http://www.addthis.com/help/api-spec"><head><meta HTTP-EQUIV="Content-type" CONTENT="text/html; charset=utf8"/></head><body><div align="center"><table width="100%" border="0" class="main" cellpadding="0" cellspacing=""><tr><td><table class="area" border="0" width="100%" cellpadding="0" cellspacing="0" STYLE="font-size: 12px; font-type: Verdana;font-weight: normal;"><col width="30%"/><col width="5%"/><col width="65%"/><tr><td valign="top" align="center"><span class="listing-link link-to-popup" id="277430"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\859\1001236859.jpg&amp;width=150&amp;height=150"/></span><div class="image-popup"><span class="close-icon">X</span><div class="image-description"> Piet&#160;Mondriaan
+      &#160;  
+
+    ,
+            <b>Christ's heirs</b>,&#160;1894</div><span class="image-thumb"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\859\1001236859.jpg&amp;width=220&amp;height=220"/></span><span class="image-large"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\859\1001236859.jpg&amp;width=700&amp;height=700"/></span><ul class="popup-icons"><li class="icon-item"><a href="#" class="image-fullsize">Image fullsize</a></li><li class="icon-item"><a href="https://rkd.nl/en/explore/images/277430" class="database-link" target="_blank">Show in RKDexplore</a></li><li class="icon-item"><a href="#" class="share-link">Share</a></li></ul><div class="addthiscontainer addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="http://catalogue.pietmondrian.nl/amsterdam-i-circa-1893-1897-a23-a49/#277430"><div class="visualClear"></div><a class="addthis_button_facebook"></a><a class="addthis_button_twitter"></a><a class="addthis_button_linkedin"></a></div></div></td><td/><td valign="top" align="left"><br/> Piet&#160;Mondriaan
+      &#160;  
+
+    <br/><b>Christ's heirs</b> 1894<br/>215
+        x
+        140&#160;mm<br/>Gemeentemuseum Den Haag, The Hague, no.&#160;P163-1985 ABC / 1011389<br/><br/>A24</td></tr><tr><td colspan="3"><br/><hr/></td></tr></table></td></tr></table></div></body></html></span></p>  <p class="MsoNormal"><span style="color:black;mso-ansi-language:EN-US" lang="EN-US"><html xmlns:addthis="http://www.addthis.com/help/api-spec"><head><meta HTTP-EQUIV="Content-type" CONTENT="text/html; charset=utf8"/></head><body><div align="center"><table width="100%" border="0" class="main" cellpadding="0" cellspacing=""><tr><td><table class="area" border="0" width="100%" cellpadding="0" cellspacing="0" STYLE="font-size: 12px; font-type: Verdana;font-weight: normal;"><col width="30%"/><col width="5%"/><col width="65%"/><tr><td valign="top" align="center"><span class="listing-link link-to-popup" id="261195"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\109\1001247109.jpg&amp;width=150&amp;height=150"/></span><div class="image-popup"><span class="close-icon">X</span><div class="image-description"> Piet&#160;Mondriaan
+      &#160;  
+
+    ,
+            <b>Portrait of Dorothy Gretchen Biersteker (1891-1978)</b>,&#160;dated 1894</div><span class="image-thumb"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\109\1001247109.jpg&amp;width=220&amp;height=220"/></span><span class="image-large"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\109\1001247109.jpg&amp;width=700&amp;height=700"/></span><ul class="popup-icons"><li class="icon-item"><a href="#" class="image-fullsize">Image fullsize</a></li><li class="icon-item"><a href="https://rkd.nl/en/explore/images/261195" class="database-link" target="_blank">Show in RKDexplore</a></li><li class="icon-item"><a href="#" class="share-link">Share</a></li></ul><div class="addthiscontainer addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="http://catalogue.pietmondrian.nl/amsterdam-i-circa-1893-1897-a23-a49/#261195"><div class="visualClear"></div><a class="addthis_button_facebook"></a><a class="addthis_button_twitter"></a><a class="addthis_button_linkedin"></a></div></div></td><td/><td valign="top" align="left"><br/> Piet&#160;Mondriaan
+      &#160;  
+
+    <br/><b>Portrait of Dorothy Gretchen Biersteker (1891-1978)</b> dated 1894<br/>oil paint / canvas, 110,5
+        x
+        75&#160;cm<br/>Vancouver Art Gallery, Vancouver (Canada)<br/><br/>A25</td></tr><tr><td colspan="3"><br/><hr/></td></tr></table></td></tr></table></div></body></html></span></p>  <p class="MsoNormal"><span style="color:black;mso-ansi-language:EN-US" lang="EN-US"><html xmlns:addthis="http://www.addthis.com/help/api-spec"><head><meta HTTP-EQUIV="Content-type" CONTENT="text/html; charset=utf8"/></head><body><div align="center"><table width="100%" border="0" class="main" cellpadding="0" cellspacing=""><tr><td><table class="area" border="0" width="100%" cellpadding="0" cellspacing="0" STYLE="font-size: 12px; font-type: Verdana;font-weight: normal;"><col width="30%"/><col width="5%"/><col width="65%"/><tr><td valign="top" align="center"><span class="listing-link link-to-popup" id="261199"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\994\1001246994.jpg&amp;width=150&amp;height=150"/></span><div class="image-popup"><span class="close-icon">X</span><div class="image-description"> Piet&#160;Mondriaan
+      &#160;  
+
+    ,
+            <b>Portrait of No&#235;l Biersteker (1894-1943)</b>,&#160;c. 1897</div><span class="image-thumb"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\994\1001246994.jpg&amp;width=220&amp;height=220"/></span><span class="image-large"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\994\1001246994.jpg&amp;width=700&amp;height=700"/></span><ul class="popup-icons"><li class="icon-item"><a href="#" class="image-fullsize">Image fullsize</a></li><li class="icon-item"><a href="https://rkd.nl/en/explore/images/261199" class="database-link" target="_blank">Show in RKDexplore</a></li><li class="icon-item"><a href="#" class="share-link">Share</a></li></ul><div class="addthiscontainer addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="http://catalogue.pietmondrian.nl/amsterdam-i-circa-1893-1897-a23-a49/#261199"><div class="visualClear"></div><a class="addthis_button_facebook"></a><a class="addthis_button_twitter"></a><a class="addthis_button_linkedin"></a></div></div></td><td/><td valign="top" align="left"><br/> Piet&#160;Mondriaan
+      &#160;  
+
+    <br/><b>Portrait of No&#235;l Biersteker (1894-1943)</b> c. 1897<br/>charcoal / paper, 1065
+        x
+        725&#160;mm<br/>Private collection<br/><br/>A26</td></tr><tr><td colspan="3"><br/><hr/></td></tr></table></td></tr></table></div></body></html></span></p>  <p class="MsoNormal"><span style="color:black;mso-ansi-language:EN-US" lang="EN-US"><html xmlns:addthis="http://www.addthis.com/help/api-spec"><head><meta HTTP-EQUIV="Content-type" CONTENT="text/html; charset=utf8"/></head><body><div align="center"><table width="100%" border="0" class="main" cellpadding="0" cellspacing=""><tr><td><table class="area" border="0" width="100%" cellpadding="0" cellspacing="0" STYLE="font-size: 12px; font-type: Verdana;font-weight: normal;"><col width="30%"/><col width="5%"/><col width="65%"/><tr><td valign="top" align="center"><span class="listing-link link-to-popup" id="67418"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\350\1001243350.jpg&amp;width=150&amp;height=150"/></span><div class="image-popup"><span class="close-icon">X</span><div class="image-description"> Piet&#160;Mondriaan
+      &#160;  
+
+    ,
+            <b>Head of a girl</b>,&#160;c. 1896?</div><span class="image-thumb"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\350\1001243350.jpg&amp;width=220&amp;height=220"/></span><span class="image-large"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\350\1001243350.jpg&amp;width=700&amp;height=700"/></span><ul class="popup-icons"><li class="icon-item"><a href="#" class="image-fullsize">Image fullsize</a></li><li class="icon-item"><a href="https://rkd.nl/en/explore/images/67418" class="database-link" target="_blank">Show in RKDexplore</a></li><li class="icon-item"><a href="#" class="share-link">Share</a></li></ul><div class="addthiscontainer addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="http://catalogue.pietmondrian.nl/amsterdam-i-circa-1893-1897-a23-a49/#67418"><div class="visualClear"></div><a class="addthis_button_facebook"></a><a class="addthis_button_twitter"></a><a class="addthis_button_linkedin"></a></div></div></td><td/><td valign="top" align="left"><br/> Piet&#160;Mondriaan
+      &#160;  
+
+    <br/><b>Head of a girl</b> c. 1896?<br/>black chalk / paper, 215
+        x
+        155&#160;mm<br/>Amsterdam
+          (Christie's), 2015-06-09,
+          no. 38<br/><br/>A27</td></tr><tr><td colspan="3"><br/><hr/></td></tr></table></td></tr></table></div></body></html></span></p>  <p class="MsoNormal"><span style="color:black;mso-ansi-language:EN-US" lang="EN-US"><html xmlns:addthis="http://www.addthis.com/help/api-spec"><head><meta HTTP-EQUIV="Content-type" CONTENT="text/html; charset=utf8"/></head><body><div align="center"><table width="100%" border="0" class="main" cellpadding="0" cellspacing=""><tr><td><table class="area" border="0" width="100%" cellpadding="0" cellspacing="0" STYLE="font-size: 12px; font-type: Verdana;font-weight: normal;"><col width="30%"/><col width="5%"/><col width="65%"/><tr><td valign="top" align="center"><span class="listing-link link-to-popup" id="261062"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\461\1001199461.jpg&amp;width=150&amp;height=150"/></span><div class="image-popup"><span class="close-icon">X</span><div class="image-description"> Piet&#160;Mondriaan
+      &#160;  
+
+    ,
+            <b>Portrait of Queen Wilhelmina (1880-1962) as a princes</b>,&#160;dated 1896</div><span class="image-thumb"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\461\1001199461.jpg&amp;width=220&amp;height=220"/></span><span class="image-large"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\461\1001199461.jpg&amp;width=700&amp;height=700"/></span><ul class="popup-icons"><li class="icon-item"><a href="#" class="image-fullsize">Image fullsize</a></li><li class="icon-item"><a href="https://rkd.nl/en/explore/images/261062" class="database-link" target="_blank">Show in RKDexplore</a></li><li class="icon-item"><a href="#" class="share-link">Share</a></li></ul><div class="addthiscontainer addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="http://catalogue.pietmondrian.nl/amsterdam-i-circa-1893-1897-a23-a49/#261062"><div class="visualClear"></div><a class="addthis_button_facebook"></a><a class="addthis_button_twitter"></a><a class="addthis_button_linkedin"></a></div></div></td><td/><td valign="top" align="left"><br/> Piet&#160;Mondriaan
+      &#160;  
+
+    <br/><b>Portrait of Queen Wilhelmina (1880-1962) as a princes</b> dated 1896<br/>oil paint / canvas, 59,5
+        x
+        50&#160;cm<br/>lower right
+          :&#160;
+      <i>Piet Mondriaan. / '96</i><br/>Paleis Het Loo Nationaal Museum, Apeldoorn, no.&#160;RL 6196<br/><br/>A28</td></tr><tr><td colspan="3"><br/><hr/></td></tr></table></td></tr></table></div></body></html></span></p>  <p class="MsoNormal"><span style="color:black;mso-ansi-language:EN-US" lang="EN-US"><html xmlns:addthis="http://www.addthis.com/help/api-spec"><head><meta HTTP-EQUIV="Content-type" CONTENT="text/html; charset=utf8"/></head><body><div align="center"><table width="100%" border="0" class="main" cellpadding="0" cellspacing=""><tr><td><table class="area" border="0" width="100%" cellpadding="0" cellspacing="0" STYLE="font-size: 12px; font-type: Verdana;font-weight: normal;"><col width="30%"/><col width="5%"/><col width="65%"/><tr><td valign="top" align="center"><span class="listing-link link-to-popup" id="261206"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\645\1001241645.jpg&amp;width=150&amp;height=150"/></span><div class="image-popup"><span class="close-icon">X</span><div class="image-description"> Piet&#160;Mondriaan
+      &#160;  
+
+    ,
+            <b>Women doing the wash</b>,&#160;1894-1896</div><span class="image-thumb"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\645\1001241645.jpg&amp;width=220&amp;height=220"/></span><span class="image-large"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\645\1001241645.jpg&amp;width=700&amp;height=700"/></span><ul class="popup-icons"><li class="icon-item"><a href="#" class="image-fullsize">Image fullsize</a></li><li class="icon-item"><a href="https://rkd.nl/en/explore/images/261206" class="database-link" target="_blank">Show in RKDexplore</a></li><li class="icon-item"><a href="#" class="share-link">Share</a></li></ul><div class="addthiscontainer addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="http://catalogue.pietmondrian.nl/amsterdam-i-circa-1893-1897-a23-a49/#261206"><div class="visualClear"></div><a class="addthis_button_facebook"></a><a class="addthis_button_twitter"></a><a class="addthis_button_linkedin"></a></div></div></td><td/><td valign="top" align="left"><br/> Piet&#160;Mondriaan
+      &#160;  
+
+    <br/><b>Women doing the wash</b> 1894-1896<br/>oil paint / canvas, 28,8
+        x
+        23,8&#160;cm<br/>London (England)
+          (Sotheby's), 2006-06-20,
+          no. 306<br/><br/>A29</td></tr><tr><td colspan="3"><br/><hr/></td></tr></table></td></tr></table></div></body></html></span></p>  <p class="MsoNormal"><span style="color:black;mso-ansi-language:EN-US" lang="EN-US"><html xmlns:addthis="http://www.addthis.com/help/api-spec"><head><meta HTTP-EQUIV="Content-type" CONTENT="text/html; charset=utf8"/></head><body><div align="center"><table width="100%" border="0" class="main" cellpadding="0" cellspacing=""><tr><td><table class="area" border="0" width="100%" cellpadding="0" cellspacing="0" STYLE="font-size: 12px; font-type: Verdana;font-weight: normal;"><col width="30%"/><col width="5%"/><col width="65%"/><tr><td valign="top" align="center"><span class="listing-link link-to-popup" id="261209"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\856\1001199856.jpg&amp;width=150&amp;height=150"/></span><div class="image-popup"><span class="close-icon">X</span><div class="image-description"> Piet&#160;Mondriaan
+      &#160;  
+
+    ,
+            <b>The Singel with round Lutheran church</b>,&#160;1893-1895</div><span class="image-thumb"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\856\1001199856.jpg&amp;width=220&amp;height=220"/></span><span class="image-large"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\856\1001199856.jpg&amp;width=700&amp;height=700"/></span><ul class="popup-icons"><li class="icon-item"><a href="#" class="image-fullsize">Image fullsize</a></li><li class="icon-item"><a href="https://rkd.nl/en/explore/images/261209" class="database-link" target="_blank">Show in RKDexplore</a></li><li class="icon-item"><a href="#" class="share-link">Share</a></li></ul><div class="addthiscontainer addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="http://catalogue.pietmondrian.nl/amsterdam-i-circa-1893-1897-a23-a49/#261209"><div class="visualClear"></div><a class="addthis_button_facebook"></a><a class="addthis_button_twitter"></a><a class="addthis_button_linkedin"></a></div></div></td><td/><td valign="top" align="left"><br/> Piet&#160;Mondriaan
+      &#160;  
+
+    <br/><b>The Singel with round Lutheran church</b> 1893-1895<br/>oil paint / canvas, 69
+        x
+        46&#160;cm<br/>Gemeentemuseum Den Haag, The Hague, no.&#160;98-1971 / 0334256<br/><br/>A30</td></tr><tr><td colspan="3"><br/><hr/></td></tr></table></td></tr></table></div></body></html></span></p>  <p class="MsoNormal"><span style="color:black;mso-ansi-language:EN-US" lang="EN-US"><html xmlns:addthis="http://www.addthis.com/help/api-spec"><head><meta HTTP-EQUIV="Content-type" CONTENT="text/html; charset=utf8"/></head><body><div align="center"><table width="100%" border="0" class="main" cellpadding="0" cellspacing=""><tr><td><table class="area" border="0" width="100%" cellpadding="0" cellspacing="0" STYLE="font-size: 12px; font-type: Verdana;font-weight: normal;"><col width="30%"/><col width="5%"/><col width="65%"/><tr><td valign="top" align="center"><span class="listing-link link-to-popup" id="261211"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\769\1001209769.jpg&amp;width=150&amp;height=150"/></span><div class="image-popup"><span class="close-icon">X</span><div class="image-description"> Piet&#160;Mondriaan
+      &#160;  
+
+    ,
+            <b>The Broeker house</b>,&#160;c. 1895-1898</div><span class="image-thumb"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\769\1001209769.jpg&amp;width=220&amp;height=220"/></span><span class="image-large"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\769\1001209769.jpg&amp;width=700&amp;height=700"/></span><ul class="popup-icons"><li class="icon-item"><a href="#" class="image-fullsize">Image fullsize</a></li><li class="icon-item"><a href="https://rkd.nl/en/explore/images/261211" class="database-link" target="_blank">Show in RKDexplore</a></li><li class="icon-item"><a href="#" class="share-link">Share</a></li></ul><div class="addthiscontainer addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="http://catalogue.pietmondrian.nl/amsterdam-i-circa-1893-1897-a23-a49/#261211"><div class="visualClear"></div><a class="addthis_button_facebook"></a><a class="addthis_button_twitter"></a><a class="addthis_button_linkedin"></a></div></div></td><td/><td valign="top" align="left"><br/> Piet&#160;Mondriaan
+      &#160;  
+
+    <br/><b>The Broeker house</b> c. 1895-1898<br/>oil paint / canvas, 82
+        x
+        71&#160;cm<br/>art dealer or private collection&#160;
+         J.P.&#160;Smid, Amsterdam<br/><br/>A31</td></tr><tr><td colspan="3"><br/><hr/></td></tr></table></td></tr></table></div></body></html></span></p>  <p class="MsoNormal"><span style="color:black;mso-ansi-language:EN-US" lang="EN-US"><html xmlns:addthis="http://www.addthis.com/help/api-spec"><head><meta HTTP-EQUIV="Content-type" CONTENT="text/html; charset=utf8"/></head><body><div align="center"><table width="100%" border="0" class="main" cellpadding="0" cellspacing=""><tr><td><table class="area" border="0" width="100%" cellpadding="0" cellspacing="0" STYLE="font-size: 12px; font-type: Verdana;font-weight: normal;"><col width="30%"/><col width="5%"/><col width="65%"/><tr><td valign="top" align="center"><span class="listing-link link-to-popup" id="261214"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\563\1001206563.jpg&amp;width=150&amp;height=150"/></span><div class="image-popup"><span class="close-icon">X</span><div class="image-description"> Piet&#160;Mondriaan
+      &#160;  
+
+    ,
+            <b>Farmyard with laundry and logs</b>,&#160;dated 1895</div><span class="image-thumb"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\563\1001206563.jpg&amp;width=220&amp;height=220"/></span><span class="image-large"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\563\1001206563.jpg&amp;width=700&amp;height=700"/></span><ul class="popup-icons"><li class="icon-item"><a href="#" class="image-fullsize">Image fullsize</a></li><li class="icon-item"><a href="https://rkd.nl/en/explore/images/261214" class="database-link" target="_blank">Show in RKDexplore</a></li><li class="icon-item"><a href="#" class="share-link">Share</a></li></ul><div class="addthiscontainer addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="http://catalogue.pietmondrian.nl/amsterdam-i-circa-1893-1897-a23-a49/#261214"><div class="visualClear"></div><a class="addthis_button_facebook"></a><a class="addthis_button_twitter"></a><a class="addthis_button_linkedin"></a></div></div></td><td/><td valign="top" align="left"><br/> Piet&#160;Mondriaan
+      &#160;  
+
+    <br/><b>Farmyard with laundry and logs</b> dated 1895<br/>aquarel paint (watercolor) / paper, 290
+        x
+        450&#160;mm<br/>London (England)
+          (Christie's), 2015-06-23
+           - 2015-06-24,
+          no. 120<br/><br/>A32</td></tr><tr><td colspan="3"><br/><hr/></td></tr></table></td></tr></table></div></body></html></span></p>  <p class="MsoNormal"><span style="color:black;mso-ansi-language:EN-US" lang="EN-US"><html xmlns:addthis="http://www.addthis.com/help/api-spec"><head><meta HTTP-EQUIV="Content-type" CONTENT="text/html; charset=utf8"/></head><body><div align="center"><table width="100%" border="0" class="main" cellpadding="0" cellspacing=""><tr><td><table class="area" border="0" width="100%" cellpadding="0" cellspacing="0" STYLE="font-size: 12px; font-type: Verdana;font-weight: normal;"><col width="30%"/><col width="5%"/><col width="65%"/><tr><td valign="top" align="center"><span class="listing-link link-to-popup" id="261414"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\467\1001246467.jpg&amp;width=150&amp;height=150"/></span><div class="image-popup"><span class="close-icon">X</span><div class="image-description"> Piet&#160;Mondriaan
+      &#160;  
+
+    ,
+            <b>Church with canal and bridges</b>,&#160;1894-1896</div><span class="image-thumb"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\467\1001246467.jpg&amp;width=220&amp;height=220"/></span><span class="image-large"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\467\1001246467.jpg&amp;width=700&amp;height=700"/></span><ul class="popup-icons"><li class="icon-item"><a href="#" class="image-fullsize">Image fullsize</a></li><li class="icon-item"><a href="https://rkd.nl/en/explore/images/261414" class="database-link" target="_blank">Show in RKDexplore</a></li><li class="icon-item"><a href="#" class="share-link">Share</a></li></ul><div class="addthiscontainer addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="http://catalogue.pietmondrian.nl/amsterdam-i-circa-1893-1897-a23-a49/#261414"><div class="visualClear"></div><a class="addthis_button_facebook"></a><a class="addthis_button_twitter"></a><a class="addthis_button_linkedin"></a></div></div></td><td/><td valign="top" align="left"><br/> Piet&#160;Mondriaan
+      &#160;  
+
+    <br/><b>Church with canal and bridges</b> 1894-1896<br/>charcoal / paper, 240
+        x
+        325&#160;mm<br/>Hamburg
+          (Hauswedell &amp; Nolte), 1999-12-04,
+          no. 1253<br/><br/>A33</td></tr><tr><td colspan="3"><br/><hr/></td></tr></table></td></tr></table></div></body></html></span></p>  <p class="MsoNormal"><span style="color:black;mso-ansi-language:EN-US" lang="EN-US"><html xmlns:addthis="http://www.addthis.com/help/api-spec"><head><meta HTTP-EQUIV="Content-type" CONTENT="text/html; charset=utf8"/></head><body><div align="center"><table width="100%" border="0" class="main" cellpadding="0" cellspacing=""><tr><td><table class="area" border="0" width="100%" cellpadding="0" cellspacing="0" STYLE="font-size: 12px; font-type: Verdana;font-weight: normal;"><col width="30%"/><col width="5%"/><col width="65%"/><tr><td valign="top" align="center"><span class="listing-link link-to-popup" id="261417"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\557\1001245557.jpg&amp;width=150&amp;height=150"/></span><div class="image-popup"><span class="close-icon">X</span><div class="image-description"> Piet&#160;Mondriaan
+      &#160;  
+
+    ,
+            <b>Village church at Blaricum</b>,&#160;c. 1896-1897</div><span class="image-thumb"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\557\1001245557.jpg&amp;width=220&amp;height=220"/></span><span class="image-large"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\557\1001245557.jpg&amp;width=700&amp;height=700"/></span><ul class="popup-icons"><li class="icon-item"><a href="#" class="image-fullsize">Image fullsize</a></li><li class="icon-item"><a href="https://rkd.nl/en/explore/images/261417" class="database-link" target="_blank">Show in RKDexplore</a></li><li class="icon-item"><a href="#" class="share-link">Share</a></li></ul><div class="addthiscontainer addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="http://catalogue.pietmondrian.nl/amsterdam-i-circa-1893-1897-a23-a49/#261417"><div class="visualClear"></div><a class="addthis_button_facebook"></a><a class="addthis_button_twitter"></a><a class="addthis_button_linkedin"></a></div></div></td><td/><td valign="top" align="left"><br/> Piet&#160;Mondriaan
+      &#160;  
+
+    <br/><b>Village church at Blaricum</b> c. 1896-1897<br/>charcoal / unknown, 345
+        x
+        230&#160;mm<br/>private collection&#160;
+         Ruth and Carl Heinz&#160;Gans, New York City<br/><br/>A34</td></tr><tr><td colspan="3"><br/><hr/></td></tr></table></td></tr></table></div></body></html></span></p>  <p class="MsoNormal"><span style="color:black;mso-ansi-language:EN-US" lang="EN-US"><html xmlns:addthis="http://www.addthis.com/help/api-spec"><head><meta HTTP-EQUIV="Content-type" CONTENT="text/html; charset=utf8"/></head><body><div align="center"><table width="100%" border="0" class="main" cellpadding="0" cellspacing=""><tr><td><table class="area" border="0" width="100%" cellpadding="0" cellspacing="0" STYLE="font-size: 12px; font-type: Verdana;font-weight: normal;"><col width="30%"/><col width="5%"/><col width="65%"/><tr><td valign="top" align="center"><span class="listing-link link-to-popup" id="261420"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\748\1001245748.jpg&amp;width=150&amp;height=150"/></span><div class="image-popup"><span class="close-icon">X</span><div class="image-description"> Piet&#160;Mondriaan
+      &#160;  
+
+    ,
+            <b>Field with church tower and haystack</b>,&#160;c. 1894-1896</div><span class="image-thumb"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\748\1001245748.jpg&amp;width=220&amp;height=220"/></span><span class="image-large"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\748\1001245748.jpg&amp;width=700&amp;height=700"/></span><ul class="popup-icons"><li class="icon-item"><a href="#" class="image-fullsize">Image fullsize</a></li><li class="icon-item"><a href="https://rkd.nl/en/explore/images/261420" class="database-link" target="_blank">Show in RKDexplore</a></li><li class="icon-item"><a href="#" class="share-link">Share</a></li></ul><div class="addthiscontainer addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="http://catalogue.pietmondrian.nl/amsterdam-i-circa-1893-1897-a23-a49/#261420"><div class="visualClear"></div><a class="addthis_button_facebook"></a><a class="addthis_button_twitter"></a><a class="addthis_button_linkedin"></a></div></div></td><td/><td valign="top" align="left"><br/> Piet&#160;Mondriaan
+      &#160;  
+
+    <br/><b>Field with church tower and haystack</b> c. 1894-1896<br/>oil paint / panel, 15,5
+        x
+        30&#160;cm<br/>Amsterdam
+          (Christie's), after 1995-06-01<br/><br/>A35</td></tr><tr><td colspan="3"><br/><hr/></td></tr></table></td></tr></table></div></body></html></span></p>  <p class="MsoNormal"><span style="color:black;mso-ansi-language:EN-US" lang="EN-US"><html xmlns:addthis="http://www.addthis.com/help/api-spec"><head><meta HTTP-EQUIV="Content-type" CONTENT="text/html; charset=utf8"/></head><body><div align="center"><table width="100%" border="0" class="main" cellpadding="0" cellspacing=""><tr><td><table class="area" border="0" width="100%" cellpadding="0" cellspacing="0" STYLE="font-size: 12px; font-type: Verdana;font-weight: normal;"><col width="30%"/><col width="5%"/><col width="65%"/><tr><td valign="top" align="center"><span class="listing-link link-to-popup" id="261422"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\112\1001200112.jpg&amp;width=150&amp;height=150"/></span><div class="image-popup"><span class="close-icon">X</span><div class="image-description"> Piet&#160;Mondriaan
+      &#160;  
+
+    ,
+            <b>Irrigation ditch with wood gate at left</b>,&#160;c. 1894-1895</div><span class="image-thumb"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\112\1001200112.jpg&amp;width=220&amp;height=220"/></span><span class="image-large"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\112\1001200112.jpg&amp;width=700&amp;height=700"/></span><ul class="popup-icons"><li class="icon-item"><a href="#" class="image-fullsize">Image fullsize</a></li><li class="icon-item"><a href="https://rkd.nl/en/explore/images/261422" class="database-link" target="_blank">Show in RKDexplore</a></li><li class="icon-item"><a href="#" class="share-link">Share</a></li></ul><div class="addthiscontainer addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="http://catalogue.pietmondrian.nl/amsterdam-i-circa-1893-1897-a23-a49/#261422"><div class="visualClear"></div><a class="addthis_button_facebook"></a><a class="addthis_button_twitter"></a><a class="addthis_button_linkedin"></a></div></div></td><td/><td valign="top" align="left"><br/> Piet&#160;Mondriaan
+      &#160;  
+
+    <br/><b>Irrigation ditch with wood gate at left</b> c. 1894-1895<br/>oil paint / cardboard, 23
+        x
+        37,5&#160;cm<br/>Amsterdam
+          (Sotheby's), 2011-05-17,
+          no. 6<br/><br/>A36</td></tr><tr><td colspan="3"><br/><hr/></td></tr></table></td></tr></table></div></body></html></span></p>  <p class="MsoNormal"><span style="color:black;mso-ansi-language:EN-US" lang="EN-US"><html xmlns:addthis="http://www.addthis.com/help/api-spec"><head><meta HTTP-EQUIV="Content-type" CONTENT="text/html; charset=utf8"/></head><body><div align="center"><table width="100%" border="0" class="main" cellpadding="0" cellspacing=""><tr><td><table class="area" border="0" width="100%" cellpadding="0" cellspacing="0" STYLE="font-size: 12px; font-type: Verdana;font-weight: normal;"><col width="30%"/><col width="5%"/><col width="65%"/><tr><td valign="top" align="center"><span class="listing-link link-to-popup" id="261426"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\115\1001200115.jpg&amp;width=150&amp;height=150"/></span><div class="image-popup"><span class="close-icon">X</span><div class="image-description"> Piet&#160;Mondriaan
+      &#160;  
+
+    ,
+            <b>Irrigation ditch with bridge, sketch</b>,&#160;c. 1894-1895</div><span class="image-thumb"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\115\1001200115.jpg&amp;width=220&amp;height=220"/></span><span class="image-large"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\115\1001200115.jpg&amp;width=700&amp;height=700"/></span><ul class="popup-icons"><li class="icon-item"><a href="#" class="image-fullsize">Image fullsize</a></li><li class="icon-item"><a href="https://rkd.nl/en/explore/images/261426" class="database-link" target="_blank">Show in RKDexplore</a></li><li class="icon-item"><a href="#" class="share-link">Share</a></li></ul><div class="addthiscontainer addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="http://catalogue.pietmondrian.nl/amsterdam-i-circa-1893-1897-a23-a49/#261426"><div class="visualClear"></div><a class="addthis_button_facebook"></a><a class="addthis_button_twitter"></a><a class="addthis_button_linkedin"></a></div></div></td><td/><td valign="top" align="left"><br/> Piet&#160;Mondriaan
+      &#160;  
+
+    <br/><b>Irrigation ditch with bridge, sketch</b> c. 1894-1895<br/>oil paint / canvas, 26,5
+        x
+        37,5&#160;cm<br/>Gemeentemuseum Den Haag, The Hague, no.&#160;58-1971 / 0334216<br/><br/>A37</td></tr><tr><td colspan="3"><br/><hr/></td></tr></table></td></tr></table></div></body></html></span></p>  <p class="MsoNormal"><span style="color:black;mso-ansi-language:EN-US" lang="EN-US"><html xmlns:addthis="http://www.addthis.com/help/api-spec"><head><meta HTTP-EQUIV="Content-type" CONTENT="text/html; charset=utf8"/></head><body><div align="center"><table width="100%" border="0" class="main" cellpadding="0" cellspacing=""><tr><td><table class="area" border="0" width="100%" cellpadding="0" cellspacing="0" STYLE="font-size: 12px; font-type: Verdana;font-weight: normal;"><col width="30%"/><col width="5%"/><col width="65%"/><tr><td valign="top" align="center"><span class="listing-link link-to-popup" id="261431"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\848\1001236848.jpg&amp;width=150&amp;height=150"/></span><div class="image-popup"><span class="close-icon">X</span><div class="image-description"> Piet&#160;Mondriaan
+      &#160;  
+
+    ,
+            <b>Irrigation ditch, bridge and goat, sketch</b>,&#160;c. 1894-1895</div><span class="image-thumb"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\848\1001236848.jpg&amp;width=220&amp;height=220"/></span><span class="image-large"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\848\1001236848.jpg&amp;width=700&amp;height=700"/></span><ul class="popup-icons"><li class="icon-item"><a href="#" class="image-fullsize">Image fullsize</a></li><li class="icon-item"><a href="https://rkd.nl/en/explore/images/261431" class="database-link" target="_blank">Show in RKDexplore</a></li><li class="icon-item"><a href="#" class="share-link">Share</a></li></ul><div class="addthiscontainer addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="http://catalogue.pietmondrian.nl/amsterdam-i-circa-1893-1897-a23-a49/#261431"><div class="visualClear"></div><a class="addthis_button_facebook"></a><a class="addthis_button_twitter"></a><a class="addthis_button_linkedin"></a></div></div></td><td/><td valign="top" align="left"><br/> Piet&#160;Mondriaan
+      &#160;  
+
+    <br/><b>Irrigation ditch, bridge and goat, sketch</b> c. 1894-1895<br/>oil paint / canvas, 34
+        x
+        41&#160;cm<br/>Amsterdam
+          (Christie's), 1989-12-13
+           - 1989-12-14,
+          no. 197<br/><br/>A38</td></tr><tr><td colspan="3"><br/><hr/></td></tr></table></td></tr></table></div></body></html></span></p>  <p class="MsoNormal"><span style="color:black;mso-ansi-language:EN-US" lang="EN-US"><html xmlns:addthis="http://www.addthis.com/help/api-spec"><head><meta HTTP-EQUIV="Content-type" CONTENT="text/html; charset=utf8"/></head><body><div align="center"><table width="100%" border="0" class="main" cellpadding="0" cellspacing=""><tr><td><table class="area" border="0" width="100%" cellpadding="0" cellspacing="0" STYLE="font-size: 12px; font-type: Verdana;font-weight: normal;"><col width="30%"/><col width="5%"/><col width="65%"/><tr><td valign="top" align="center"><span class="listing-link link-to-popup" id="261433"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\644\1001241644.jpg&amp;width=150&amp;height=150"/></span><div class="image-popup"><span class="close-icon">X</span><div class="image-description"> Piet&#160;Mondriaan
+      &#160;  
+
+    ,
+            <b>Irrigation ditch, bridge and goat, watercolor</b>,&#160;c. 1894-1895</div><span class="image-thumb"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\644\1001241644.jpg&amp;width=220&amp;height=220"/></span><span class="image-large"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\644\1001241644.jpg&amp;width=700&amp;height=700"/></span><ul class="popup-icons"><li class="icon-item"><a href="#" class="image-fullsize">Image fullsize</a></li><li class="icon-item"><a href="https://rkd.nl/en/explore/images/261433" class="database-link" target="_blank">Show in RKDexplore</a></li><li class="icon-item"><a href="#" class="share-link">Share</a></li></ul><div class="addthiscontainer addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="http://catalogue.pietmondrian.nl/amsterdam-i-circa-1893-1897-a23-a49/#261433"><div class="visualClear"></div><a class="addthis_button_facebook"></a><a class="addthis_button_twitter"></a><a class="addthis_button_linkedin"></a></div></div></td><td/><td valign="top" align="left"><br/> Piet&#160;Mondriaan
+      &#160;  
+
+    <br/><b>Irrigation ditch, bridge and goat, watercolor</b> c. 1894-1895<br/>aquarel paint (watercolor) / paper, 490
+        x
+        660&#160;mm<br/>Gemeentemuseum Den Haag, The Hague, no.&#160;T71-1962 / 0557349<br/><br/>A39</td></tr><tr><td colspan="3"><br/><hr/></td></tr></table></td></tr></table></div></body></html></span></p>  <p class="MsoNormal"><span style="color:black;mso-ansi-language:EN-US" lang="EN-US"><html xmlns:addthis="http://www.addthis.com/help/api-spec"><head><meta HTTP-EQUIV="Content-type" CONTENT="text/html; charset=utf8"/></head><body><div align="center"><table width="100%" border="0" class="main" cellpadding="0" cellspacing=""><tr><td><table class="area" border="0" width="100%" cellpadding="0" cellspacing="0" STYLE="font-size: 12px; font-type: Verdana;font-weight: normal;"><col width="30%"/><col width="5%"/><col width="65%"/><tr><td valign="top" align="center"><span class="listing-link link-to-popup" id="261442"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\980\1001246980.jpg&amp;width=150&amp;height=150"/></span><div class="image-popup"><span class="close-icon">X</span><div class="image-description"> Piet&#160;Mondriaan
+      &#160;  
+
+    ,
+            <b>Waalseilandsgracht with bridge and moored tjalk barges</b>,&#160;c. 1895-1896</div><span class="image-thumb"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\980\1001246980.jpg&amp;width=220&amp;height=220"/></span><span class="image-large"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\980\1001246980.jpg&amp;width=700&amp;height=700"/></span><ul class="popup-icons"><li class="icon-item"><a href="#" class="image-fullsize">Image fullsize</a></li><li class="icon-item"><a href="https://rkd.nl/en/explore/images/261442" class="database-link" target="_blank">Show in RKDexplore</a></li><li class="icon-item"><a href="#" class="share-link">Share</a></li></ul><div class="addthiscontainer addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="http://catalogue.pietmondrian.nl/amsterdam-i-circa-1893-1897-a23-a49/#261442"><div class="visualClear"></div><a class="addthis_button_facebook"></a><a class="addthis_button_twitter"></a><a class="addthis_button_linkedin"></a></div></div></td><td/><td valign="top" align="left"><br/> Piet&#160;Mondriaan
+      &#160;  
+
+    <br/><b>Waalseilandsgracht with bridge and moored tjalk barges</b> c. 1895-1896<br/>oil paint / canvas on board, 29,2
+        x
+        21,6&#160;cm<br/>private collection&#160;
+         Mr. and mrs. Isaac&#160;Schoenberg, Merion (Pennsylvania)<br/><br/>A40</td></tr><tr><td colspan="3"><br/><hr/></td></tr></table></td></tr></table></div></body></html></span></p>  <p class="MsoNormal"><span style="color:black;mso-ansi-language:EN-US" lang="EN-US"><html xmlns:addthis="http://www.addthis.com/help/api-spec"><head><meta HTTP-EQUIV="Content-type" CONTENT="text/html; charset=utf8"/></head><body><div align="center"><table width="100%" border="0" class="main" cellpadding="0" cellspacing=""><tr><td><table class="area" border="0" width="100%" cellpadding="0" cellspacing="0" STYLE="font-size: 12px; font-type: Verdana;font-weight: normal;"><col width="30%"/><col width="5%"/><col width="65%"/><tr><td valign="top" align="center"><span class="listing-link link-to-popup" id="261443"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\570\1001236570.jpg&amp;width=150&amp;height=150"/></span><div class="image-popup"><span class="close-icon">X</span><div class="image-description"> Piet&#160;Mondriaan
+      &#160;  
+
+    ,
+            <b>Waalseilandgracht with bridge and flat barges</b>,&#160;c. 1895-1896</div><span class="image-thumb"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\570\1001236570.jpg&amp;width=220&amp;height=220"/></span><span class="image-large"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\570\1001236570.jpg&amp;width=700&amp;height=700"/></span><ul class="popup-icons"><li class="icon-item"><a href="#" class="image-fullsize">Image fullsize</a></li><li class="icon-item"><a href="https://rkd.nl/en/explore/images/261443" class="database-link" target="_blank">Show in RKDexplore</a></li><li class="icon-item"><a href="#" class="share-link">Share</a></li></ul><div class="addthiscontainer addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="http://catalogue.pietmondrian.nl/amsterdam-i-circa-1893-1897-a23-a49/#261443"><div class="visualClear"></div><a class="addthis_button_facebook"></a><a class="addthis_button_twitter"></a><a class="addthis_button_linkedin"></a></div></div></td><td/><td valign="top" align="left"><br/> Piet&#160;Mondriaan
+      &#160;  
+
+    <br/><b>Waalseilandgracht with bridge and flat barges</b> c. 1895-1896<br/>oil paint / paper on panel, 225
+        x
+        275&#160;mm<br/>London (England)
+          (Christie's), 2006-02-07,
+          no. 255<br/><br/>A41</td></tr><tr><td colspan="3"><br/><hr/></td></tr></table></td></tr></table></div></body></html></span></p>  <p class="MsoNormal"><span style="color:black;mso-ansi-language:EN-US" lang="EN-US"><html xmlns:addthis="http://www.addthis.com/help/api-spec"><head><meta HTTP-EQUIV="Content-type" CONTENT="text/html; charset=utf8"/></head><body><div align="center"><table width="100%" border="0" class="main" cellpadding="0" cellspacing=""><tr><td><table class="area" border="0" width="100%" cellpadding="0" cellspacing="0" STYLE="font-size: 12px; font-type: Verdana;font-weight: normal;"><col width="30%"/><col width="5%"/><col width="65%"/><tr><td valign="top" align="center"><span class="listing-link link-to-popup" id="261449"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\981\1001246981.jpg&amp;width=150&amp;height=150"/></span><div class="image-popup"><span class="close-icon">X</span><div class="image-description"> Piet&#160;Mondriaan
+      &#160;  
+
+    ,
+            <b>Farm buildings with trees and water ditch</b>,&#160;c. 1895-1896</div><span class="image-thumb"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\981\1001246981.jpg&amp;width=220&amp;height=220"/></span><span class="image-large"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\981\1001246981.jpg&amp;width=700&amp;height=700"/></span><ul class="popup-icons"><li class="icon-item"><a href="#" class="image-fullsize">Image fullsize</a></li><li class="icon-item"><a href="https://rkd.nl/en/explore/images/261449" class="database-link" target="_blank">Show in RKDexplore</a></li><li class="icon-item"><a href="#" class="share-link">Share</a></li></ul><div class="addthiscontainer addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="http://catalogue.pietmondrian.nl/amsterdam-i-circa-1893-1897-a23-a49/#261449"><div class="visualClear"></div><a class="addthis_button_facebook"></a><a class="addthis_button_twitter"></a><a class="addthis_button_linkedin"></a></div></div></td><td/><td valign="top" align="left"><br/> Piet&#160;Mondriaan
+      &#160;  
+
+    <br/><b>Farm buildings with trees and water ditch</b> c. 1895-1896<br/>oil paint / canvas, 29,2
+        x
+        39,4&#160;cm<br/>private collection&#160;
+         Mr. and mrs. Isaac&#160;Schoenberg, Merion (Pennsylvania)<br/><br/>A42</td></tr><tr><td colspan="3"><br/><hr/></td></tr></table></td></tr></table></div></body></html></span></p>  <p class="MsoNormal"><span style="color:black;mso-ansi-language:EN-US" lang="EN-US"><html xmlns:addthis="http://www.addthis.com/help/api-spec"><head><meta HTTP-EQUIV="Content-type" CONTENT="text/html; charset=utf8"/></head><body><div align="center"><table width="100%" border="0" class="main" cellpadding="0" cellspacing=""><tr><td><table class="area" border="0" width="100%" cellpadding="0" cellspacing="0" STYLE="font-size: 12px; font-type: Verdana;font-weight: normal;"><col width="30%"/><col width="5%"/><col width="65%"/><tr><td valign="top" align="center"><span class="listing-link link-to-popup" id="261451"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\732\1001245732.jpg&amp;width=150&amp;height=150"/></span><div class="image-popup"><span class="close-icon">X</span><div class="image-description"> Piet&#160;Mondriaan
+      &#160;  
+
+    ,
+            <b>Farm building near irrigation ditch with farmer at work</b>,&#160;c. 1895-1896</div><span class="image-thumb"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\732\1001245732.jpg&amp;width=220&amp;height=220"/></span><span class="image-large"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\732\1001245732.jpg&amp;width=700&amp;height=700"/></span><ul class="popup-icons"><li class="icon-item"><a href="#" class="image-fullsize">Image fullsize</a></li><li class="icon-item"><a href="https://rkd.nl/en/explore/images/261451" class="database-link" target="_blank">Show in RKDexplore</a></li><li class="icon-item"><a href="#" class="share-link">Share</a></li></ul><div class="addthiscontainer addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="http://catalogue.pietmondrian.nl/amsterdam-i-circa-1893-1897-a23-a49/#261451"><div class="visualClear"></div><a class="addthis_button_facebook"></a><a class="addthis_button_twitter"></a><a class="addthis_button_linkedin"></a></div></div></td><td/><td valign="top" align="left"><br/> Piet&#160;Mondriaan
+      &#160;  
+
+    <br/><b>Farm building near irrigation ditch with farmer at work</b> c. 1895-1896<br/>oil paint / canvas on cardboard, 30,5
+        x
+        39,4&#160;cm<br/>art dealer&#160;
+        Gutmann Gallery, Los Angeles (California)<br/><br/>A43</td></tr><tr><td colspan="3"><br/><hr/></td></tr></table></td></tr></table></div></body></html></span></p>  <p class="MsoNormal"><span style="color:black;mso-ansi-language:EN-US" lang="EN-US"><html xmlns:addthis="http://www.addthis.com/help/api-spec"><head><meta HTTP-EQUIV="Content-type" CONTENT="text/html; charset=utf8"/></head><body><div align="center"><table width="100%" border="0" class="main" cellpadding="0" cellspacing=""><tr><td><table class="area" border="0" width="100%" cellpadding="0" cellspacing="0" STYLE="font-size: 12px; font-type: Verdana;font-weight: normal;"><col width="30%"/><col width="5%"/><col width="65%"/><tr><td valign="top" align="center"><span class="listing-link link-to-popup" id="261562"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\646\1001244646.jpg&amp;width=150&amp;height=150"/></span><div class="image-popup"><span class="close-icon">X</span><div class="image-description"> Piet&#160;Mondriaan
+      &#160;  
+
+    ,
+            <b>Scattered trees on sloping land</b>,&#160;c. 1894-1896</div><span class="image-thumb"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\646\1001244646.jpg&amp;width=220&amp;height=220"/></span><span class="image-large"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\646\1001244646.jpg&amp;width=700&amp;height=700"/></span><ul class="popup-icons"><li class="icon-item"><a href="#" class="image-fullsize">Image fullsize</a></li><li class="icon-item"><a href="https://rkd.nl/en/explore/images/261562" class="database-link" target="_blank">Show in RKDexplore</a></li><li class="icon-item"><a href="#" class="share-link">Share</a></li></ul><div class="addthiscontainer addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="http://catalogue.pietmondrian.nl/amsterdam-i-circa-1893-1897-a23-a49/#261562"><div class="visualClear"></div><a class="addthis_button_facebook"></a><a class="addthis_button_twitter"></a><a class="addthis_button_linkedin"></a></div></div></td><td/><td valign="top" align="left"><br/> Piet&#160;Mondriaan
+      &#160;  
+
+    <br/><b>Scattered trees on sloping land</b> c. 1894-1896<br/>oil paint / unknown, 24,5
+        x
+        32,4&#160;cm<br/>London (England)
+          (Christie's), 2016-06-22
+           - 2016-06-23,
+          no. 310<br/><br/>A44</td></tr><tr><td colspan="3"><br/><hr/></td></tr></table></td></tr></table></div></body></html></span></p>  <p class="MsoNormal"><span style="color:black;mso-ansi-language:EN-US" lang="EN-US"><html xmlns:addthis="http://www.addthis.com/help/api-spec"><head><meta HTTP-EQUIV="Content-type" CONTENT="text/html; charset=utf8"/></head><body><div align="center"><table width="100%" border="0" class="main" cellpadding="0" cellspacing=""><tr><td><table class="area" border="0" width="100%" cellpadding="0" cellspacing="0" STYLE="font-size: 12px; font-type: Verdana;font-weight: normal;"><col width="30%"/><col width="5%"/><col width="65%"/><tr><td valign="top" align="center"><span class="listing-link link-to-popup" id="261564"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\720\1001245720.jpg&amp;width=150&amp;height=150"/></span><div class="image-popup"><span class="close-icon">X</span><div class="image-description"> Piet&#160;Mondriaan
+      &#160;  
+
+    ,
+            <b>Tree trunks on sloping land</b>,&#160;c. 1895-1896</div><span class="image-thumb"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\720\1001245720.jpg&amp;width=220&amp;height=220"/></span><span class="image-large"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\720\1001245720.jpg&amp;width=700&amp;height=700"/></span><ul class="popup-icons"><li class="icon-item"><a href="#" class="image-fullsize">Image fullsize</a></li><li class="icon-item"><a href="https://rkd.nl/en/explore/images/261564" class="database-link" target="_blank">Show in RKDexplore</a></li><li class="icon-item"><a href="#" class="share-link">Share</a></li></ul><div class="addthiscontainer addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="http://catalogue.pietmondrian.nl/amsterdam-i-circa-1893-1897-a23-a49/#261564"><div class="visualClear"></div><a class="addthis_button_facebook"></a><a class="addthis_button_twitter"></a><a class="addthis_button_linkedin"></a></div></div></td><td/><td valign="top" align="left"><br/> Piet&#160;Mondriaan
+      &#160;  
+
+    <br/><b>Tree trunks on sloping land</b> c. 1895-1896<br/>oil paint / canvas, 33
+        x
+        41&#160;cm<br/>Kunsthandel Monet, Amsterdam<br/><br/>A45</td></tr><tr><td colspan="3"><br/><hr/></td></tr></table></td></tr></table></div></body></html></span></p>  <p class="MsoNormal"><span style="color:black;mso-ansi-language:EN-US" lang="EN-US"><html xmlns:addthis="http://www.addthis.com/help/api-spec"><head><meta HTTP-EQUIV="Content-type" CONTENT="text/html; charset=utf8"/></head><body><div align="center"><table width="100%" border="0" class="main" cellpadding="0" cellspacing=""><tr><td><table class="area" border="0" width="100%" cellpadding="0" cellspacing="0" STYLE="font-size: 12px; font-type: Verdana;font-weight: normal;"><col width="30%"/><col width="5%"/><col width="65%"/><tr><td valign="top" align="center"><span class="listing-link link-to-popup" id="261565"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\091\1001243091.jpg&amp;width=150&amp;height=150"/></span><div class="image-popup"><span class="close-icon">X</span><div class="image-description"> Piet&#160;Mondriaan
+      &#160;  
+
+    ,
+            <b>Trees and cows along a stream</b>,&#160;c. 1895-1897</div><span class="image-thumb"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\091\1001243091.jpg&amp;width=220&amp;height=220"/></span><span class="image-large"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\091\1001243091.jpg&amp;width=700&amp;height=700"/></span><ul class="popup-icons"><li class="icon-item"><a href="#" class="image-fullsize">Image fullsize</a></li><li class="icon-item"><a href="https://rkd.nl/en/explore/images/261565" class="database-link" target="_blank">Show in RKDexplore</a></li><li class="icon-item"><a href="#" class="share-link">Share</a></li></ul><div class="addthiscontainer addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="http://catalogue.pietmondrian.nl/amsterdam-i-circa-1893-1897-a23-a49/#261565"><div class="visualClear"></div><a class="addthis_button_facebook"></a><a class="addthis_button_twitter"></a><a class="addthis_button_linkedin"></a></div></div></td><td/><td valign="top" align="left"><br/> Piet&#160;Mondriaan
+      &#160;  
+
+    <br/><b>Trees and cows along a stream</b> c. 1895-1897<br/>oil paint / canvas on cardboard, 37
+        x
+        27&#160;cm<br/>Amsterdam
+          (Christie's), 2012-11-27,
+          no. 140<br/><br/>A46</td></tr><tr><td colspan="3"><br/><hr/></td></tr></table></td></tr></table></div></body></html></span></p>  <p class="MsoNormal"><span style="color:black;mso-ansi-language:EN-US" lang="EN-US"><html xmlns:addthis="http://www.addthis.com/help/api-spec"><head><meta HTTP-EQUIV="Content-type" CONTENT="text/html; charset=utf8"/></head><body><div align="center"><table width="100%" border="0" class="main" cellpadding="0" cellspacing=""><tr><td><table class="area" border="0" width="100%" cellpadding="0" cellspacing="0" STYLE="font-size: 12px; font-type: Verdana;font-weight: normal;"><col width="30%"/><col width="5%"/><col width="65%"/><tr><td valign="top" align="center"><span class="listing-link link-to-popup" id="261566"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\982\1001246982.jpg&amp;width=150&amp;height=150"/></span><div class="image-popup"><span class="close-icon">X</span><div class="image-description"> Piet&#160;Mondriaan
+      &#160;  
+
+    ,
+            <b>Trees and cows in a field</b>,&#160;c. 1895-1897</div><span class="image-thumb"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\982\1001246982.jpg&amp;width=220&amp;height=220"/></span><span class="image-large"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\982\1001246982.jpg&amp;width=700&amp;height=700"/></span><ul class="popup-icons"><li class="icon-item"><a href="#" class="image-fullsize">Image fullsize</a></li><li class="icon-item"><a href="https://rkd.nl/en/explore/images/261566" class="database-link" target="_blank">Show in RKDexplore</a></li><li class="icon-item"><a href="#" class="share-link">Share</a></li></ul><div class="addthiscontainer addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="http://catalogue.pietmondrian.nl/amsterdam-i-circa-1893-1897-a23-a49/#261566"><div class="visualClear"></div><a class="addthis_button_facebook"></a><a class="addthis_button_twitter"></a><a class="addthis_button_linkedin"></a></div></div></td><td/><td valign="top" align="left"><br/> Piet&#160;Mondriaan
+      &#160;  
+
+    <br/><b>Trees and cows in a field</b> c. 1895-1897<br/>oil paint / canvas on panel, 15
+        x
+        25&#160;cm<br/>Whereabouts unknown<br/><br/>A47</td></tr><tr><td colspan="3"><br/><hr/></td></tr></table></td></tr></table></div></body></html></span></p>  <p class="MsoNormal"><span style="color:black;mso-ansi-language:EN-US" lang="EN-US"><html xmlns:addthis="http://www.addthis.com/help/api-spec"><head><meta HTTP-EQUIV="Content-type" CONTENT="text/html; charset=utf8"/></head><body><div align="center"><table width="100%" border="0" class="main" cellpadding="0" cellspacing=""><tr><td><table class="area" border="0" width="100%" cellpadding="0" cellspacing="0" STYLE="font-size: 12px; font-type: Verdana;font-weight: normal;"><col width="30%"/><col width="5%"/><col width="65%"/><tr><td valign="top" align="center"><span class="listing-link link-to-popup" id="261568"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\563\1001236563.jpg&amp;width=150&amp;height=150"/></span><div class="image-popup"><span class="close-icon">X</span><div class="image-description"> Piet&#160;Mondriaan
+      &#160;  
+
+    ,
+            <b>Wood near Driebergen</b>,&#160;c. 1896-1897</div><span class="image-thumb"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\563\1001236563.jpg&amp;width=220&amp;height=220"/></span><span class="image-large"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\563\1001236563.jpg&amp;width=700&amp;height=700"/></span><ul class="popup-icons"><li class="icon-item"><a href="#" class="image-fullsize">Image fullsize</a></li><li class="icon-item"><a href="https://rkd.nl/en/explore/images/261568" class="database-link" target="_blank">Show in RKDexplore</a></li><li class="icon-item"><a href="#" class="share-link">Share</a></li></ul><div class="addthiscontainer addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="http://catalogue.pietmondrian.nl/amsterdam-i-circa-1893-1897-a23-a49/#261568"><div class="visualClear"></div><a class="addthis_button_facebook"></a><a class="addthis_button_twitter"></a><a class="addthis_button_linkedin"></a></div></div></td><td/><td valign="top" align="left"><br/> Piet&#160;Mondriaan
+      &#160;  
+
+    <br/><b>Wood near Driebergen</b> c. 1896-1897<br/>oil paint / canvas, 34,6
+        x
+        35&#160;cm<br/>New York City
+          ( Manson &amp; Woods&#160;Christie), 1982-05-21,
+          no. 390<br/><br/>A48</td></tr><tr><td colspan="3"><br/><hr/></td></tr></table></td></tr></table></div></body></html></span></p>  <p class="MsoNormal"><span style="color:black;mso-ansi-language:EN-US" lang="EN-US"><html xmlns:addthis="http://www.addthis.com/help/api-spec"><head><meta HTTP-EQUIV="Content-type" CONTENT="text/html; charset=utf8"/></head><body><div align="center"><table width="100%" border="0" class="main" cellpadding="0" cellspacing=""><tr><td><table class="area" border="0" width="100%" cellpadding="0" cellspacing="0" STYLE="font-size: 12px; font-type: Verdana;font-weight: normal;"><col width="30%"/><col width="5%"/><col width="65%"/><tr><td valign="top" align="center"><span class="listing-link link-to-popup" id="261569"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\567\1001245567.jpg&amp;width=150&amp;height=150"/></span><div class="image-popup"><span class="close-icon">X</span><div class="image-description"> Piet&#160;Mondriaan
+      &#160;  
+
+    ,
+            <b>Three farm workers near a gateway</b>,&#160;c. 1896-1897</div><span class="image-thumb"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\567\1001245567.jpg&amp;width=220&amp;height=220"/></span><span class="image-large"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\567\1001245567.jpg&amp;width=700&amp;height=700"/></span><ul class="popup-icons"><li class="icon-item"><a href="#" class="image-fullsize">Image fullsize</a></li><li class="icon-item"><a href="https://rkd.nl/en/explore/images/261569" class="database-link" target="_blank">Show in RKDexplore</a></li><li class="icon-item"><a href="#" class="share-link">Share</a></li></ul><div class="addthiscontainer addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="http://catalogue.pietmondrian.nl/amsterdam-i-circa-1893-1897-a23-a49/#261569"><div class="visualClear"></div><a class="addthis_button_facebook"></a><a class="addthis_button_twitter"></a><a class="addthis_button_linkedin"></a></div></div></td><td/><td valign="top" align="left"><br/> Piet&#160;Mondriaan
+      &#160;  
+
+    <br/><b>Three farm workers near a gateway</b> c. 1896-1897<br/>oil paint / canvas, 44,5
+        x
+        34,5&#160;cm<br/>Private collection<br/><br/>A49</td></tr><tr><td colspan="3"><br/><hr/></td></tr></table></td></tr></table></div></body></html></span></p><p>&nbsp;</p><br /></div>
+    
+
+      
+
+    <div class="documentByLine">       
+      Datum laatste wijziging: 
+      Sep 11, 2017 04:19 PM
+      
+      <div>            
+        <a class="previous"
+           href="http://catalogue.pietmondrian.nl/copy_of_winterswijk-i-before-circa-1897-a1-a22">
+          &laquo; Vorige
+        </a>
+        <a class="next"
+           href="http://catalogue.pietmondrian.nl/winterswijk-2-1897-1899-a50-a91">
+          Volgende &raquo;
+        </a>
+      </div>     
+    </div>
+    
+
+        
+        
+          <!-- end page content -->
+      
+      <div class="visualClear"></div>
+    </div>
+    <div id="portal-footer">
+      <a title="Disclaimer"
+         href="http://catalogue.pietmondrian.nl/disclaimer">Disclaimer</a>   |
+      <a title="Privacy Statement"
+         href="http://catalogue.pietmondrian.nl/privacy_statement">Privacy Statement</a>   |
+        Copyright <sup>&copy;</sup> <script type="text/javascript">date = new Date(); document.write(date.getFullYear());</script>
+        - RKD Monographs. <a href="http://www.swordfish.nl" target="_blank">Powered by SwordFish<sup>&reg;</sup></a>
+    </div>
+  </div>
+<!-- end content column -->
+   <!-- left column -->
+  	<div id="column1-wrapper">
+	   <div id="column_1">
+       
+          
+<div id="portletwrapper-73776f7264666973682e66726f6e74656e642e6c656674636f6c756d6e0a636f6e746578740a2f5357332f6d6f6e64726961616e0a6d656e75706c6161746a65"
+     class="kssattr-portlethash-73776f7264666973682e66726f6e74656e642e6c656674636f6c756d6e0a636f6e746578740a2f5357332f6d6f6e64726961616e0a6d656e75706c6161746a65"><div class="portlet portletHtmlText sponsors">
+
+    <div class="portletTitle">
+        <h2>
+        	Menuplaatje
+        </h2>
+    </div>
+
+    <div class="portletBody">
+        <p><img src="/mondriaan/bestanden/nieuwe-afbeelding-menu/image_preview" alt="Nieuwe afbeelding menu" height="168" width="169" /></p>
+		
+    </div>
+</div>
+</div>
+
+<div id="portletwrapper-73776f7264666973682e66726f6e74656e642e6c656674636f6c756d6e0a636f6e746578740a2f5357332f6d6f6e64726961616e0a6e617669676174696f6e"
+     class="kssattr-portlethash-73776f7264666973682e66726f6e74656e642e6c656674636f6c756d6e0a636f6e746578740a2f5357332f6d6f6e64726961616e0a6e617669676174696f6e">
+		<div class="portlet portletNavigationTree">
+	        <ul class="portletNavigationTree navTreeLevel0">
+	            
+	            
+
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/link-verantwoording"
+           class="state-published" title="">
+          
+            Foreword
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/inleiding"
+           class="state-published" title="">
+          
+            Notes to Readers
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/catalogus"
+           class="state-published" title="">
+          
+            Catalogue
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/copy_of_winterswijk-i-before-circa-1897-a1-a22"
+           class="state-published" title="">
+          
+            Winterswijk, 1888-1896 (A1-A22) 
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker navTreeCurrentNode navTreeItemInPath">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/amsterdam-i-circa-1893-1897-a23-a49"
+           class="state-published navTreeCurrentItem"
+           title="">
+          
+            Amsterdam, 1893-1897 (A23-A49)
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/winterswijk-2-1897-1899-a50-a91"
+           class="state-published" title="">
+          
+            Winterswijk, 1897-1899 (A50-A91)
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/amsterdam-2-circa-1897-1901-a92-a259"
+           class="state-published" title="">
+          
+            Amsterdam, 1897-1901 (A92-A259) 
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/amsterdam-3-circa-1902-1905-a260-a351"
+           class="state-published" title="">
+          
+            Amsterdam, 1902-1905 (A260-A351)
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/brabant-1904-early-1905-a352-a379"
+           class="state-published" title="">
+          
+            Brabant, 1904-1905 (A352-A379)
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/amsterdam-4-circa-1905-early-1908-a380-a537"
+           class="state-published" title="">
+          
+            Amsterdam, 1905-1908 (A380-A537)
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/twente-circa-1906-early-1908-a538-a593"
+           class="state-published" title="">
+          
+            Twente, 1906-1908 (A538-A593)
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/amsterdam-5-circa-1908-1911-a594-a673"
+           class="state-published" title="">
+          
+            Amsterdam, 1908-1911 (A594-A673)
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/zeeland-1909-1911-a674-a710-b1"
+           class="state-published" title="">
+          
+            Zeeland, 1909-1911 (A674-A710, B1)
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/unidentified-references-ua1-ua50"
+           class="state-published" title="">
+          
+            Unidentified references (UA1-UA50)
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/amsterdam-1911-b2-b4"
+           class="state-published" title="">
+          
+            Amsterdam, 1911 (B2-B4) 
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/paris-1-1912-1914-b5-b56"
+           class="state-published" title="">
+          
+            Paris 1, 1912-1914 (B5-B56)
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/nederland-1914-1919-b57-b103"
+           class="state-published" title="">
+          
+            Holland, 1914-1919 (B57-B103)
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/paris-2-1920-1937-b104-b281.312"
+           class="state-published" title="">
+          
+            Paris 2, 1920-1937 (B104-B281.312)
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/london-1938-1939-b282-b295.315"
+           class="state-published" title="">
+          
+            London, 1938-1939 (B282-B295.315)
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/new-york-1940-1944-b296.318-b324"
+           class="state-published" title="">
+          
+            New York, 1940-1944 (B296.318-B324)
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/drawings-1925-1943-b325-b370"
+           class="state-published" title="">
+          
+            Sketchbook, 1925 (B325-B333)
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/sketches-and-studies-b334-b370"
+           class="state-published" title="">
+          
+            Sketches and studies (B334-B370)
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/sketchbook-i-1914-b371-b375"
+           class="state-published" title="">
+          
+            Sketchbook I, 1914 (B371-B375)
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/sketchbook-ii-1914-b376-b378"
+           class="state-published" title="">
+          
+            Sketchbook II, 1914 (B376-B378)
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/sketchbook-leaves-1912-1914-b379-b411"
+           class="state-published" title="">
+          
+            Sketchbook leaves, 1912-1914 (B379-B411)
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/catalogue-of-the-furniture-b412-415"
+           class="state-published" title="">
+          
+            Furniture (B412-415)
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/unidentifiable-references-u1-u27"
+           class="state-published" title="">
+          
+            Unidentifiable references (U1-U27)
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/catalogue-of-late-naturalistic-works-c1-c155"
+           class="state-published" title="">
+          
+            Late naturalistic works, 1912-1942 (C1-C155)
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/copies-c154-c155"
+           class="state-published" title="">
+          
+            Copies (C154-C155)
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/additions"
+           class="state-published" title="">
+          
+            New Additions
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/bibliography"
+           class="state-published" title="">
+          
+            Bibliography 1994-2017 (selection)
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/colophon-and-copyright-notice"
+           class="state-published" title="">
+          
+            Colophon and copyright notice
+        </a>
+        
+    
+    
+</li>
+
+
+
+
+	        </ul>
+		</div>
+
+</div>
+
+		   
+	   </div>
+	   <div id="column1-bottom"></div>
+	    <div class="visualClear"></div>
+	</div>
+<!-- end left column -->
+    <div class="print-version">
+      De afgedrukte pagina is te vinden op:  <a
+    href="http://catalogue.pietmondrian.nl/amsterdam-i-circa-1893-1897-a23-a49">http://catalogue.pietmondrian.nl/amsterdam-i-circa-1893-1897-a23-a49</a>
+    </div>
+  </div>
+</div>
+
+
+	</div >
+	</body >
+
+ </html>
+
+

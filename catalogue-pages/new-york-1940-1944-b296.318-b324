@@ -1,0 +1,1363 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+
+
+<!-- <tal:global_defines define="global foo context/@@frontend/globalize"/>
+ -->
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="nl"
+      xml:lang="nl">
+
+  
+    
+    
+    
+    
+    
+    
+
+  
+
+<head>
+<base href="http://catalogue.pietmondrian.nl/new-york-1940-1944-b296.318-b324/" />
+
+
+    <meta http-equiv="Content-Type"
+          content="text/html;charset=utf-8" />
+
+    <title>Piet Mondrian | New York, 1940-1944 (B296.318-B324)</title>
+    <link rel="kss-base-url" href="http://catalogue.pietmondrian.nl/new-york-1940-1944-b296.318-b324" />
+
+  
+  
+    
+    
+    
+      <style type="text/css">@import url(http://catalogue.pietmondrian.nl/portal_css/rkdmonographsskin/kupustyles.css);</style>
+    
+    
+    
+  
+
+  
+    
+    
+    
+      <style type="text/css">@import url(http://catalogue.pietmondrian.nl/portal_css/rkdmonographsskin/kupuplone.css);</style>
+    
+    
+    
+  
+
+  
+    
+    
+    
+      <style type="text/css">@import url(http://catalogue.pietmondrian.nl/portal_css/rkdmonographsskin/kupudrawerstyles.css);</style>
+    
+    
+    
+  
+
+  
+    
+    
+    
+      <style type="text/css" media="print">@import url(http://catalogue.pietmondrian.nl/portal_css/rkdmonographsskin/print.css);</style>
+    
+    
+    
+  
+
+  
+    
+    
+    
+      <style type="text/css" media="screen">@import url(http://catalogue.pietmondrian.nl/portal_css/rkdmonographsskin/jscalendar/calendar-system.css);</style>
+    
+    
+    
+  
+
+  
+    
+        <!--[if IE]>    
+    
+    
+    
+      <style type="text/css" media="screen">@import url(http://catalogue.pietmondrian.nl/portal_css/rkdmonographsskin/IEFixes.css);</style>
+    
+    
+    
+        <![endif]-->
+    
+  
+
+  
+    
+    
+    
+      <style type="text/css" media="screen">@import url(http://catalogue.pietmondrian.nl/portal_css/rkdmonographsskin/defaultstyle.css);</style>
+    
+    
+    
+  
+
+  
+    
+    
+    
+      <style type="text/css" media="screen">@import url(http://catalogue.pietmondrian.nl/portal_css/rkdmonographsskin/subsite-theme.css);</style>
+    
+    
+    
+  
+
+  
+    
+    
+    
+      <style type="text/css" media="screen">@import url(http://catalogue.pietmondrian.nl/portal_css/rkdmonographsskin/rkdmonographs.css);</style>
+    
+    
+    
+  
+
+  
+    
+        <!--[if IE 7]>    
+    
+    
+    
+      <style type="text/css" media="screen">@import url(http://catalogue.pietmondrian.nl/portal_css/rkdmonographsskin/ie7fix.css);</style>
+    
+    
+    
+        <![endif]-->
+    
+  
+
+  
+    
+        <!--[if IE 8]>    
+    
+    
+    
+      <style type="text/css" media="screen">@import url(http://catalogue.pietmondrian.nl/portal_css/rkdmonographsskin/ie8fix.css);</style>
+    
+    
+    
+        <![endif]-->
+    
+  
+
+  
+    
+    
+    
+      <style type="text/css" media="screen">@import url(http://catalogue.pietmondrian.nl/portal_css/rkdmonographsskin/products.rkdmonographs.css);</style>
+    
+    
+    
+  
+
+  
+    
+    
+    
+      <style type="text/css" media="screen">@import url(http://catalogue.pietmondrian.nl/portal_css/rkdmonographsskin/monographs_print.css);</style>
+    
+    
+    
+  
+
+
+  
+  
+    
+    
+      <script type="text/javascript"
+              src="http://catalogue.pietmondrian.nl/portal_javascripts/rkdmonographsskin/jquery-cachekey2945.js">
+      </script>
+    
+    
+    
+  
+
+  
+    
+    
+      <script type="text/javascript"
+              src="http://catalogue.pietmondrian.nl/portal_javascripts/rkdmonographsskin/calendar_formfield-cachekey8509.js">
+      </script>
+    
+    
+    
+  
+
+  
+    
+    
+      <script type="text/javascript"
+              src="http://catalogue.pietmondrian.nl/portal_javascripts/rkdmonographsskin/swordfish_functions-cachekey3423.js">
+      </script>
+    
+    
+    
+  
+
+  
+    
+    
+      <script type="text/javascript"
+              src="http://catalogue.pietmondrian.nl/portal_javascripts/rkdmonographsskin/fckeditor-cachekey0070.js">
+      </script>
+    
+    
+    
+  
+
+  
+    
+    
+      <script type="text/javascript"
+              src="http://catalogue.pietmondrian.nl/portal_javascripts/rkdmonographsskin/print-cachekey8927.js">
+      </script>
+    
+    
+    
+  
+
+  
+    
+    
+      <script type="text/javascript"
+              src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=xa-4fd87a8b529ac85b">
+      </script>
+    
+    
+    
+  
+
+  
+    
+      <!--[if lt IE 9]>    
+    
+    
+      <script type="text/javascript"
+              src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js">
+      </script>
+    
+    
+    
+        <![endif]-->
+    
+  
+
+
+  
+  <link rel="kinetic-stylesheet" type="text/css"
+        href="http://catalogue.pietmondrian.nl/portal_kss/rkdmonographsskin/plone-cachekey6395.kss" />
+
+  <link rel="kinetic-stylesheet" type="text/css"
+        href="http://catalogue.pietmondrian.nl/portal_kss/rkdmonographsskin/fckeditor_plone-cachekey4455.kss" />
+
+
+
+          
+<!--      <script type="text/javascript" charset="iso-8859-1"-->
+<!--              src="jscripts/tiny_mce/tiny_mce.js"> </script>-->
+<!--      <script type="text/javascript" charset="iso-8859-1"-->
+<!--              src="jscripts/tiny_mce/tiny_mce_init.js"> </script>-->
+    
+   
+
+<title>New York, 1940-1944 (B296.318-B324) &mdash; Piet Mondrian</title>
+
+    
+
+    <link rel="shortcut icon" type="image/x-icon"
+          href="http://catalogue.pietmondrian.nl/favicon.ico" />
+
+
+
+    <link rel="home" href="http://catalogue.pietmondrian.nl"
+          title="Front page" />
+
+    <link rel="contents"
+          href="http://catalogue.pietmondrian.nl/sitemap"
+          title="Site Map" />
+
+
+
+
+
+
+    <link rel="search"
+          href="http://catalogue.pietmondrian.nl/search_form"
+          title="Search this site" />
+
+
+<!-- Internet Explorer ACC CSS Fixes -->
+<!-- MOVED TO RESOURCE REGISTRIES -->
+
+
+
+    <!-- Disable IE6 image toolbar -->
+    <meta http-equiv="imagetoolbar" content="no" />
+
+
+	
+    
+    <link rel="stylesheet" type="text/css" href="/subsite-theme.css" />
+
+   
+</head>
+
+   
+   	 <body>
+   
+
+   
+   	 <div id='mainContainer' class='contentpage'>
+   
+
+  <div class="print-version">
+    <img id="print-logo"
+         src="http://catalogue.pietmondrian.nl/print_logo.gif"
+         alt="New York, 1940-1944 (B296.318-B324)" />
+  </div>
+   <div id="top-actions-container">
+     <div id="socialmedia">
+       <span class="share-link">Share</span>
+       <div id="addthiscontainer" class="addthis_toolbox addthis_default_style addthis_32x32_style" addthis:title="RKD Monographs">
+        	 <div class="visualClear"></div>
+          <a class="addthis_button_facebook"></a>
+          <a class="addthis_button_twitter"></a>
+          <a class="addthis_button_linkedin"></a>
+        </div>
+     </div>
+
+    <ul id="portal-siteactions">
+      <!-- test -->
+      <li id="action-contact">
+        <a title="Link naar contactformulier"
+           href="http://catalogue.pietmondrian.nl/contact-info">
+          <img alt="e-mail"
+               src="http://catalogue.pietmondrian.nl/email-icon.gif" />
+        </a>
+      </li>
+      <li id="action-home">
+        <a title="Homepage"
+           href="http://www.rkdmonographs.nl">
+          <img alt="homepage"
+               src="http://catalogue.pietmondrian.nl/home-icon.gif" />
+        </a>
+      </li><li id="action-rkdhome">
+        <a href="http://www.rkd.nl" title="Link naar RKD website">RKD-home</a></li><li id="action-sitemap"><a
+    title="Sitemap"
+    href="http://catalogue.pietmondrian.nl/sitemap">sitemap</a>
+      </li></ul>     
+   </div>
+   <div id="logo-actions-container">
+    <a id="portal-logo" class="header" accesskey="1"
+       href="http://catalogue.pietmondrian.nl">
+      <img src="http://catalogue.pietmondrian.nl/rkd-logo.png"
+           alt="New York, 1940-1944 (B296.318-B324)" />
+    </a>
+   </div>
+
+
+<div id="columnWrapper">
+   <div id="header-wrapper">
+      
+        <a class="link-logo"
+           href="http://catalogue.pietmondrian.nl">
+         <div class="header header-image"
+              style="background-image:url(http://catalogue.pietmondrian.nl/header_images/banner-mondriaan)">
+         </div>
+         </a>
+      
+      <div id="searchContainerRight">
+         <form id="livesearch0"
+               action="http://catalogue.pietmondrian.nl/search"
+               name="searchform">
+            <div id="portal-searchbox">
+    <form name="searchform"
+          action="http://catalogue.pietmondrian.nl/search">
+
+        <label for="searchGadget" class="hiddenStructure">Search Site</label>
+
+        <div class="LSBox">
+        <input name="SearchableText" type="text" size="18"
+               title="Search Site" accesskey="4"
+               class="inputLabel" id="searchGadget" />
+
+        <input class="searchButton" type="submit" value="" />
+    
+        <div class="searchSection">
+            <input id="searchbox_currentfolder_only"
+                   class="noborder" type="checkbox"
+                   name="path"
+                   value="/SW3/mondriaan/new-york-1940-1944-b296.318-b324" />
+            <label for="searchbox_currentfolder_only"
+                   style="cursor: pointer">
+                only in current section
+            </label>
+        </div>
+
+        <div class="LSResult" id="LSResult" style=""><div class="LSShadow" id="LSShadow"></div></div>
+        </div>
+    </form>
+
+    <div id="portal-advanced-search" class="hiddenStructure">
+        <a href="http://catalogue.pietmondrian.nl/search_form"
+           accesskey="5">
+            Advanced Search&hellip;
+        </a>
+    </div>
+
+</div>
+
+			</form>
+      </div>
+      
+       <div id="portal-breadcrumbs">
+
+    <span id="breadcrumbs-you-are-here">You
+are here:</span>
+    <a href="http://catalogue.pietmondrian.nl">Home</a>
+    <span class="breadcrumbSeparator">
+        &rarr;
+        
+    </span>
+    <span dir="ltr">
+        
+            
+            
+            <span>New York, 1940-1944 (B296.318-B324)</span>
+         
+    </span>
+
+</div>
+
+      
+
+	</div>
+
+<!-- content column -->
+  <div id="contentcolumns-wrapper">
+   <div id="column_2">
+      <div id="content">
+       
+         
+
+    <dl class="portalMessage info" id="kssPortalMessage" style="display:none">
+        <dt>Info</dt>
+        <dd></dd>
+    </dl>
+
+
+          <!-- page content -->
+        
+           
+          
+  
+  <div class="visualClear"><!-- --></div>
+<div class="documentActions">
+    
+
+    <h5 class="hiddenStructure">Document Actions</h5>
+
+    <ul>
+    
+        <li id="document-action-print">
+            <a href="javascript:print();" title="">deze pagina</a>
+        </li>
+    
+
+    </ul>
+    
+
+    
+
+</div>
+
+    
+        <h1> 
+          New York, 1940-1944 (B296.318-B324)
+          
+        </h1>
+    
+    
+    
+
+    
+
+
+
+    
+
+    
+      <div class="document_content"><p><html xmlns:addthis="http://www.addthis.com/help/api-spec"><head><meta HTTP-EQUIV="Content-type" CONTENT="text/html; charset=utf8"/></head><body><div align="center"><table width="100%" border="0" class="main" cellpadding="0" cellspacing=""><tr><td><table class="area" border="0" width="100%" cellpadding="0" cellspacing="0" STYLE="font-size: 12px; font-type: Verdana;font-weight: normal;"><col width="30%"/><col width="5%"/><col width="65%"/><tr><td valign="top" align="center"><span class="listing-link link-to-popup" id="245334"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\235\1001247235.jpg&amp;width=150&amp;height=150"/></span><div class="image-popup"><span class="close-icon">X</span><div class="image-description"> Piet&#160;Mondriaan
+      &#160;  
+
+    ,
+            <b>Composition no. 11</b>,&#160;1940-1942</div><span class="image-thumb"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\235\1001247235.jpg&amp;width=220&amp;height=220"/></span><span class="image-large"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\235\1001247235.jpg&amp;width=700&amp;height=700"/></span><ul class="popup-icons"><li class="icon-item"><a href="#" class="image-fullsize">Image fullsize</a></li><li class="icon-item"><a href="https://rkd.nl/en/explore/images/245334" class="database-link" target="_blank">Show in RKDexplore</a></li><li class="icon-item"><a href="#" class="share-link">Share</a></li></ul><div class="addthiscontainer addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="http://catalogue.pietmondrian.nl/new-york-1940-1944-b296.318-b324/#245334"><div class="visualClear"></div><a class="addthis_button_facebook"></a><a class="addthis_button_twitter"></a><a class="addthis_button_linkedin"></a></div></div></td><td/><td valign="top" align="left"><br/> Piet&#160;Mondriaan
+      &#160;  
+
+    <br/><b>Composition no. 11</b> 1940-1942<br/>oil paint / canvas, 82,5
+        x
+        71,1&#160;cm<br/>Not applicable<br/><br/>B296.318 (first state)</td></tr><tr><td colspan="3"><br/><hr/></td></tr></table></td></tr></table></div></body></html><br /><html xmlns:addthis="http://www.addthis.com/help/api-spec"><head><meta HTTP-EQUIV="Content-type" CONTENT="text/html; charset=utf8"/></head><body><div align="center"><table width="100%" border="0" class="main" cellpadding="0" cellspacing=""><tr><td><table class="area" border="0" width="100%" cellpadding="0" cellspacing="0" STYLE="font-size: 12px; font-type: Verdana;font-weight: normal;"><col width="30%"/><col width="5%"/><col width="65%"/><tr><td valign="top" align="center"><span class="listing-link link-to-popup" id="245337"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\629\1001195629.jpg&amp;width=150&amp;height=150"/></span><div class="image-popup"><span class="close-icon">X</span><div class="image-description"> Piet&#160;Mondriaan
+      &#160;  
+
+    ,
+            <b>Composition with red, blue, and yellow (unfinished)</b>,&#160;1940</div><span class="image-thumb"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\629\1001195629.jpg&amp;width=220&amp;height=220"/></span><span class="image-large"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\629\1001195629.jpg&amp;width=700&amp;height=700"/></span><ul class="popup-icons"><li class="icon-item"><a href="#" class="image-fullsize">Image fullsize</a></li><li class="icon-item"><a href="https://rkd.nl/en/explore/images/245337" class="database-link" target="_blank">Show in RKDexplore</a></li><li class="icon-item"><a href="#" class="share-link">Share</a></li></ul><div class="addthiscontainer addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="http://catalogue.pietmondrian.nl/new-york-1940-1944-b296.318-b324/#245337"><div class="visualClear"></div><a class="addthis_button_facebook"></a><a class="addthis_button_twitter"></a><a class="addthis_button_linkedin"></a></div></div></td><td/><td valign="top" align="left"><br/> Piet&#160;Mondriaan
+      &#160;  
+
+    <br/><b>Composition with red, blue, and yellow (unfinished)</b> 1940<br/>charcoal / canvas, 73
+        x
+        70&#160;cm<br/>Private collection<br/><br/>B297</td></tr><tr><td colspan="3"><br/><hr/></td></tr></table></td></tr></table></div></body></html><br /><html xmlns:addthis="http://www.addthis.com/help/api-spec"><head><meta HTTP-EQUIV="Content-type" CONTENT="text/html; charset=utf8"/></head><body><div align="center"><table width="100%" border="0" class="main" cellpadding="0" cellspacing=""><tr><td><table class="area" border="0" width="100%" cellpadding="0" cellspacing="0" STYLE="font-size: 12px; font-type: Verdana;font-weight: normal;"><col width="30%"/><col width="5%"/><col width="65%"/><tr><td valign="top" align="center"><span class="listing-link link-to-popup" id="245338"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\236\1001247236.jpg&amp;width=150&amp;height=150"/></span><div class="image-popup"><span class="close-icon">X</span><div class="image-description"> Piet&#160;Mondriaan
+      &#160;  
+
+    ,
+            <b>Composition with red, blue and yellow (unfinished)</b>,&#160;1940</div><span class="image-thumb"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\236\1001247236.jpg&amp;width=220&amp;height=220"/></span><span class="image-large"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\236\1001247236.jpg&amp;width=700&amp;height=700"/></span><ul class="popup-icons"><li class="icon-item"><a href="#" class="image-fullsize">Image fullsize</a></li><li class="icon-item"><a href="https://rkd.nl/en/explore/images/245338" class="database-link" target="_blank">Show in RKDexplore</a></li><li class="icon-item"><a href="#" class="share-link">Share</a></li></ul><div class="addthiscontainer addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="http://catalogue.pietmondrian.nl/new-york-1940-1944-b296.318-b324/#245338"><div class="visualClear"></div><a class="addthis_button_facebook"></a><a class="addthis_button_twitter"></a><a class="addthis_button_linkedin"></a></div></div></td><td/><td valign="top" align="left"><br/> Piet&#160;Mondriaan
+      &#160;  
+
+    <br/><b>Composition with red, blue and yellow (unfinished)</b> 1940<br/>oil paint / canvas, 70,8
+        x
+        70,8&#160;cm<br/>Private collection<br/><br/>B298</td></tr><tr><td colspan="3"><br/><hr/></td></tr></table></td></tr></table></div></body></html><br /><html xmlns:addthis="http://www.addthis.com/help/api-spec"><head><meta HTTP-EQUIV="Content-type" CONTENT="text/html; charset=utf8"/></head><body><div align="center"><table width="100%" border="0" class="main" cellpadding="0" cellspacing=""><tr><td><table class="area" border="0" width="100%" cellpadding="0" cellspacing="0" STYLE="font-size: 12px; font-type: Verdana;font-weight: normal;"><col width="30%"/><col width="5%"/><col width="65%"/><tr><td valign="top" align="center"><span class="listing-link link-to-popup" id="245339"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\238\1001247238.jpg&amp;width=150&amp;height=150"/></span><div class="image-popup"><span class="close-icon">X</span><div class="image-description"> Piet&#160;Mondriaan
+      &#160;  
+
+    ,
+            <b>New York</b>,&#160;dated 1941</div><span class="image-thumb"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\238\1001247238.jpg&amp;width=220&amp;height=220"/></span><span class="image-large"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\238\1001247238.jpg&amp;width=700&amp;height=700"/></span><ul class="popup-icons"><li class="icon-item"><a href="#" class="image-fullsize">Image fullsize</a></li><li class="icon-item"><a href="https://rkd.nl/en/explore/images/245339" class="database-link" target="_blank">Show in RKDexplore</a></li><li class="icon-item"><a href="#" class="share-link">Share</a></li></ul><div class="addthiscontainer addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="http://catalogue.pietmondrian.nl/new-york-1940-1944-b296.318-b324/#245339"><div class="visualClear"></div><a class="addthis_button_facebook"></a><a class="addthis_button_twitter"></a><a class="addthis_button_linkedin"></a></div></div></td><td/><td valign="top" align="left"><br/> Piet&#160;Mondriaan
+      &#160;  
+
+    <br/><b>New York</b> dated 1941<br/>oil paint / canvas, 95,2
+        x
+        92&#160;cm<br/>Not applicable<br/><br/>B299.319 (first state)</td></tr><tr><td colspan="3"><br/><hr/></td></tr></table></td></tr></table></div></body></html><br /><html xmlns:addthis="http://www.addthis.com/help/api-spec"><head><meta HTTP-EQUIV="Content-type" CONTENT="text/html; charset=utf8"/></head><body><div align="center"><table width="100%" border="0" class="main" cellpadding="0" cellspacing=""><tr><td><table class="area" border="0" width="100%" cellpadding="0" cellspacing="0" STYLE="font-size: 12px; font-type: Verdana;font-weight: normal;"><col width="30%"/><col width="5%"/><col width="65%"/><tr><td valign="top" align="center"><span class="listing-link link-to-popup" id="245342"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\717\1001195717.jpg&amp;width=150&amp;height=150"/></span><div class="image-popup"><span class="close-icon">X</span><div class="image-description"> Piet&#160;Mondriaan
+      &#160;  
+
+    ,
+            <b>New York City 1 (unfinished)</b>,&#160;1941</div><span class="image-thumb"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\717\1001195717.jpg&amp;width=220&amp;height=220"/></span><span class="image-large"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\717\1001195717.jpg&amp;width=700&amp;height=700"/></span><ul class="popup-icons"><li class="icon-item"><a href="#" class="image-fullsize">Image fullsize</a></li><li class="icon-item"><a href="https://rkd.nl/en/explore/images/245342" class="database-link" target="_blank">Show in RKDexplore</a></li><li class="icon-item"><a href="#" class="share-link">Share</a></li></ul><div class="addthiscontainer addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="http://catalogue.pietmondrian.nl/new-york-1940-1944-b296.318-b324/#245342"><div class="visualClear"></div><a class="addthis_button_facebook"></a><a class="addthis_button_twitter"></a><a class="addthis_button_linkedin"></a></div></div></td><td/><td valign="top" align="left"><br/> Piet&#160;Mondriaan
+      &#160;  
+
+    <br/><b>New York City 1 (unfinished)</b> 1941<br/>oil paint / canvas, 119
+        x
+        115&#160;cm<br/>Kunstsammlung Nordrhein-Westfalen, D&#252;sseldorf, no.&#160;222<br/><br/>B300</td></tr><tr><td colspan="3"><br/><hr/></td></tr></table></td></tr></table></div></body></html><br /><html xmlns:addthis="http://www.addthis.com/help/api-spec"><head><meta HTTP-EQUIV="Content-type" CONTENT="text/html; charset=utf8"/></head><body><div align="center"><table width="100%" border="0" class="main" cellpadding="0" cellspacing=""><tr><td><table class="area" border="0" width="100%" cellpadding="0" cellspacing="0" STYLE="font-size: 12px; font-type: Verdana;font-weight: normal;"><col width="30%"/><col width="5%"/><col width="65%"/><tr><td valign="top" align="center"><span class="listing-link link-to-popup" id="245344"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\433\0001326433.jpg&amp;width=150&amp;height=150"/></span><div class="image-popup"><span class="close-icon">X</span><div class="image-description"> Piet&#160;Mondriaan
+      &#160;  
+
+    ,
+            <b>New York City</b>,&#160;dated 1942</div><span class="image-thumb"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\433\0001326433.jpg&amp;width=220&amp;height=220"/></span><span class="image-large"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\433\0001326433.jpg&amp;width=700&amp;height=700"/></span><ul class="popup-icons"><li class="icon-item"><a href="#" class="image-fullsize">Image fullsize</a></li><li class="icon-item"><a href="https://rkd.nl/en/explore/images/245344" class="database-link" target="_blank">Show in RKDexplore</a></li><li class="icon-item"><a href="#" class="share-link">Share</a></li></ul><div class="addthiscontainer addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="http://catalogue.pietmondrian.nl/new-york-1940-1944-b296.318-b324/#245344"><div class="visualClear"></div><a class="addthis_button_facebook"></a><a class="addthis_button_twitter"></a><a class="addthis_button_linkedin"></a></div></div></td><td/><td valign="top" align="left"><br/> Piet&#160;Mondriaan
+      &#160;  
+
+    <br/><b>New York City</b> dated 1942<br/>oil paint / canvas, 119,3
+        x
+        114,2&#160;cm<br/>Mus&#233;e National d'Art Moderne 
+           (Centre Pompidou), Paris, no.&#160;AM 1984-352 P<br/><br/>B301</td></tr><tr><td colspan="3"><br/><hr/></td></tr></table></td></tr></table></div></body></html><br /><html xmlns:addthis="http://www.addthis.com/help/api-spec"><head><meta HTTP-EQUIV="Content-type" CONTENT="text/html; charset=utf8"/></head><body><div align="center"><table width="100%" border="0" class="main" cellpadding="0" cellspacing=""><tr><td><table class="area" border="0" width="100%" cellpadding="0" cellspacing="0" STYLE="font-size: 12px; font-type: Verdana;font-weight: normal;"><col width="30%"/><col width="5%"/><col width="65%"/><tr><td valign="top" align="center"><span class="listing-link link-to-popup" id="245345"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\434\0001326434.jpg&amp;width=150&amp;height=150"/></span><div class="image-popup"><span class="close-icon">X</span><div class="image-description"> Piet&#160;Mondriaan
+      &#160;  
+
+    ,
+            <b>New York City 2 (unfinished)</b>,&#160;1941</div><span class="image-thumb"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\434\0001326434.jpg&amp;width=220&amp;height=220"/></span><span class="image-large"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\434\0001326434.jpg&amp;width=700&amp;height=700"/></span><ul class="popup-icons"><li class="icon-item"><a href="#" class="image-fullsize">Image fullsize</a></li><li class="icon-item"><a href="https://rkd.nl/en/explore/images/245345" class="database-link" target="_blank">Show in RKDexplore</a></li><li class="icon-item"><a href="#" class="share-link">Share</a></li></ul><div class="addthiscontainer addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="http://catalogue.pietmondrian.nl/new-york-1940-1944-b296.318-b324/#245345"><div class="visualClear"></div><a class="addthis_button_facebook"></a><a class="addthis_button_twitter"></a><a class="addthis_button_linkedin"></a></div></div></td><td/><td valign="top" align="left"><br/> Piet&#160;Mondriaan
+      &#160;  
+
+    <br/><b>New York City 2 (unfinished)</b> 1941<br/>charcoal / canvas, 115,7
+        x
+        99&#160;cm<br/>Private collection<br/><br/>B302</td></tr><tr><td colspan="3"><br/><hr/></td></tr></table></td></tr></table></div></body></html><br /><html xmlns:addthis="http://www.addthis.com/help/api-spec"><head><meta HTTP-EQUIV="Content-type" CONTENT="text/html; charset=utf8"/></head><body><div align="center"><table width="100%" border="0" class="main" cellpadding="0" cellspacing=""><tr><td><table class="area" border="0" width="100%" cellpadding="0" cellspacing="0" STYLE="font-size: 12px; font-type: Verdana;font-weight: normal;"><col width="30%"/><col width="5%"/><col width="65%"/><tr><td valign="top" align="center"><span class="listing-link link-to-popup" id="245303"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\431\0001326431.jpg&amp;width=150&amp;height=150"/></span><div class="image-popup"><span class="close-icon">X</span><div class="image-description"> Piet&#160;Mondriaan
+      &#160;  
+
+    ,
+            <b>New York City 3 (unfinished)</b>,&#160;1941</div><span class="image-thumb"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\431\0001326431.jpg&amp;width=220&amp;height=220"/></span><span class="image-large"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\431\0001326431.jpg&amp;width=700&amp;height=700"/></span><ul class="popup-icons"><li class="icon-item"><a href="#" class="image-fullsize">Image fullsize</a></li><li class="icon-item"><a href="https://rkd.nl/en/explore/images/245303" class="database-link" target="_blank">Show in RKDexplore</a></li><li class="icon-item"><a href="#" class="share-link">Share</a></li></ul><div class="addthiscontainer addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="http://catalogue.pietmondrian.nl/new-york-1940-1944-b296.318-b324/#245303"><div class="visualClear"></div><a class="addthis_button_facebook"></a><a class="addthis_button_twitter"></a><a class="addthis_button_linkedin"></a></div></div></td><td/><td valign="top" align="left"><br/> Piet&#160;Mondriaan
+      &#160;  
+
+    <br/><b>New York City 3 (unfinished)</b> 1941<br/>oil paint / canvas, 116,8
+        x
+        110,5&#160;cm<br/>Museo Thyssen-Bornemisza, Madrid (Spain), no.&#160;679 (1983.17)<br/><br/>B289.303 (second state)</td></tr><tr><td colspan="3"><br/><hr/></td></tr></table></td></tr></table></div></body></html><br /><html xmlns:addthis="http://www.addthis.com/help/api-spec"><head><meta HTTP-EQUIV="Content-type" CONTENT="text/html; charset=utf8"/></head><body><div align="center"><table width="100%" border="0" class="main" cellpadding="0" cellspacing=""><tr><td><table class="area" border="0" width="100%" cellpadding="0" cellspacing="0" STYLE="font-size: 12px; font-type: Verdana;font-weight: normal;"><col width="30%"/><col width="5%"/><col width="65%"/><tr><td valign="top" align="center"><span class="listing-link link-to-popup" id="219726"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\589\1001195589.jpg&amp;width=150&amp;height=150"/></span><div class="image-popup"><span class="close-icon">X</span><div class="image-description"> Piet&#160;Mondriaan
+      &#160;  
+
+    ,
+            <b>Composition of red, blue and white [Nom II]</b>,&#160;dated 1939-1941</div><span class="image-thumb"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\589\1001195589.jpg&amp;width=220&amp;height=220"/></span><span class="image-large"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\589\1001195589.jpg&amp;width=700&amp;height=700"/></span><ul class="popup-icons"><li class="icon-item"><a href="#" class="image-fullsize">Image fullsize</a></li><li class="icon-item"><a href="https://rkd.nl/en/explore/images/219726" class="database-link" target="_blank">Show in RKDexplore</a></li><li class="icon-item"><a href="#" class="share-link">Share</a></li></ul><div class="addthiscontainer addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="http://catalogue.pietmondrian.nl/new-york-1940-1944-b296.318-b324/#219726"><div class="visualClear"></div><a class="addthis_button_facebook"></a><a class="addthis_button_twitter"></a><a class="addthis_button_linkedin"></a></div></div></td><td/><td valign="top" align="left"><br/> Piet&#160;Mondriaan
+      &#160;  
+
+    <br/><b>Composition of red, blue and white [Nom II]</b> dated 1939-1941<br/>oil paint / canvas, 43,5
+        x
+        33&#160;cm<br/>Private collection<br/><br/>B293.304 (second state)</td></tr><tr><td colspan="3"><br/><hr/></td></tr></table></td></tr></table></div></body></html><br /><html xmlns:addthis="http://www.addthis.com/help/api-spec"><head><meta HTTP-EQUIV="Content-type" CONTENT="text/html; charset=utf8"/></head><body><div align="center"><table width="100%" border="0" class="main" cellpadding="0" cellspacing=""><tr><td><table class="area" border="0" width="100%" cellpadding="0" cellspacing="0" STYLE="font-size: 12px; font-type: Verdana;font-weight: normal;"><col width="30%"/><col width="5%"/><col width="65%"/><tr><td valign="top" align="center"><span class="listing-link link-to-popup" id="245350"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\010\1001242010.jpg&amp;width=150&amp;height=150"/></span><div class="image-popup"><span class="close-icon">X</span><div class="image-description"> Piet&#160;Mondriaan
+      &#160;  
+
+    ,
+            <b>Composition no. 15</b>,&#160;1942</div><span class="image-thumb"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\010\1001242010.jpg&amp;width=220&amp;height=220"/></span><span class="image-large"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\010\1001242010.jpg&amp;width=700&amp;height=700"/></span><ul class="popup-icons"><li class="icon-item"><a href="#" class="image-fullsize">Image fullsize</a></li><li class="icon-item"><a href="https://rkd.nl/en/explore/images/245350" class="database-link" target="_blank">Show in RKDexplore</a></li><li class="icon-item"><a href="#" class="share-link">Share</a></li></ul><div class="addthiscontainer addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="http://catalogue.pietmondrian.nl/new-york-1940-1944-b296.318-b324/#245350"><div class="visualClear"></div><a class="addthis_button_facebook"></a><a class="addthis_button_twitter"></a><a class="addthis_button_linkedin"></a></div></div></td><td/><td valign="top" align="left"><br/> Piet&#160;Mondriaan
+      &#160;  
+
+    <br/><b>Composition no. 15</b> 1942<br/>oil paint / canvas, 97,5
+        x
+        61,5&#160;cm<br/>Paris
+          (Christie's), 2009-02-23,
+          no. 43<br/><br/>B95.305 (second state)</td></tr><tr><td colspan="3"><br/><hr/></td></tr></table></td></tr></table></div></body></html><br /><html xmlns:addthis="http://www.addthis.com/help/api-spec"><head><meta HTTP-EQUIV="Content-type" CONTENT="text/html; charset=utf8"/></head><body><div align="center"><table width="100%" border="0" class="main" cellpadding="0" cellspacing=""><tr><td><table class="area" border="0" width="100%" cellpadding="0" cellspacing="0" STYLE="font-size: 12px; font-type: Verdana;font-weight: normal;"><col width="30%"/><col width="5%"/><col width="65%"/><tr><td valign="top" align="center"><span class="listing-link link-to-popup" id="219727"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\435\0001326435.jpg&amp;width=150&amp;height=150"/></span><div class="image-popup"><span class="close-icon">X</span><div class="image-description"> Piet&#160;Mondriaan
+      &#160;  
+
+    ,
+            <b>Composition (no. III) blanc-jaune</b>,&#160;dated 1935-1942</div><span class="image-thumb"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\435\0001326435.jpg&amp;width=220&amp;height=220"/></span><span class="image-large"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\435\0001326435.jpg&amp;width=700&amp;height=700"/></span><ul class="popup-icons"><li class="icon-item"><a href="#" class="image-fullsize">Image fullsize</a></li><li class="icon-item"><a href="https://rkd.nl/en/explore/images/219727" class="database-link" target="_blank">Show in RKDexplore</a></li><li class="icon-item"><a href="#" class="share-link">Share</a></li></ul><div class="addthiscontainer addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="http://catalogue.pietmondrian.nl/new-york-1940-1944-b296.318-b324/#219727"><div class="visualClear"></div><a class="addthis_button_facebook"></a><a class="addthis_button_twitter"></a><a class="addthis_button_linkedin"></a></div></div></td><td/><td valign="top" align="left"><br/> Piet&#160;Mondriaan
+      &#160;  
+
+    <br/><b>Composition (no. III) blanc-jaune</b> dated 1935-1942<br/>oil paint / canvas, 101
+        x
+        51&#160;cm<br/>San Francisco Museum of Modern Art, San Francisco (California), no.&#160;98.294<br/><br/>B257.306 (second state)</td></tr><tr><td colspan="3"><br/><hr/></td></tr></table></td></tr></table></div></body></html><br /><html xmlns:addthis="http://www.addthis.com/help/api-spec"><head><meta HTTP-EQUIV="Content-type" CONTENT="text/html; charset=utf8"/></head><body><div align="center"><table width="100%" border="0" class="main" cellpadding="0" cellspacing=""><tr><td><table class="area" border="0" width="100%" cellpadding="0" cellspacing="0" STYLE="font-size: 12px; font-type: Verdana;font-weight: normal;"><col width="30%"/><col width="5%"/><col width="65%"/><tr><td valign="top" align="center"><span class="listing-link link-to-popup" id="219728"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\582\1001195582.jpg&amp;width=150&amp;height=150"/></span><div class="image-popup"><span class="close-icon">X</span><div class="image-description"> Piet&#160;Mondriaan
+      &#160;  
+
+    ,
+            <b>Composition A (no. I)</b>,&#160;dated 1935-1942</div><span class="image-thumb"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\582\1001195582.jpg&amp;width=220&amp;height=220"/></span><span class="image-large"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\582\1001195582.jpg&amp;width=700&amp;height=700"/></span><ul class="popup-icons"><li class="icon-item"><a href="#" class="image-fullsize">Image fullsize</a></li><li class="icon-item"><a href="https://rkd.nl/en/explore/images/219728" class="database-link" target="_blank">Show in RKDexplore</a></li><li class="icon-item"><a href="#" class="share-link">Share</a></li></ul><div class="addthiscontainer addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="http://catalogue.pietmondrian.nl/new-york-1940-1944-b296.318-b324/#219728"><div class="visualClear"></div><a class="addthis_button_facebook"></a><a class="addthis_button_twitter"></a><a class="addthis_button_linkedin"></a></div></div></td><td/><td valign="top" align="left"><br/> Piet&#160;Mondriaan
+      &#160;  
+
+    <br/><b>Composition A (no. I)</b> dated 1935-1942<br/>oil paint / canvas, 100
+        x
+        50,5&#160;cm<br/>lower left
+          :&#160;
+      <i>35 | 42</i><br/>lower center
+          :&#160;
+      <i>PM</i><br/>Private collection<br/><br/>B260.307 (second state)</td></tr><tr><td colspan="3"><br/><hr/></td></tr></table></td></tr></table></div></body></html><br /><html xmlns:addthis="http://www.addthis.com/help/api-spec"><head><meta HTTP-EQUIV="Content-type" CONTENT="text/html; charset=utf8"/></head><body><div align="center"><table width="100%" border="0" class="main" cellpadding="0" cellspacing=""><tr><td><table class="area" border="0" width="100%" cellpadding="0" cellspacing="0" STYLE="font-size: 12px; font-type: Verdana;font-weight: normal;"><col width="30%"/><col width="5%"/><col width="65%"/><tr><td valign="top" align="center"><span class="listing-link link-to-popup" id="219729"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\621\1001195621.jpg&amp;width=150&amp;height=150"/></span><div class="image-popup"><span class="close-icon">X</span><div class="image-description"> Piet&#160;Mondriaan
+      &#160;  
+
+    ,
+            <b>Composition with Yellow, Blue and Red</b>,&#160;1937-1942</div><span class="image-thumb"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\621\1001195621.jpg&amp;width=220&amp;height=220"/></span><span class="image-large"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\621\1001195621.jpg&amp;width=700&amp;height=700"/></span><ul class="popup-icons"><li class="icon-item"><a href="#" class="image-fullsize">Image fullsize</a></li><li class="icon-item"><a href="https://rkd.nl/en/explore/images/219729" class="database-link" target="_blank">Show in RKDexplore</a></li><li class="icon-item"><a href="#" class="share-link">Share</a></li></ul><div class="addthiscontainer addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="http://catalogue.pietmondrian.nl/new-york-1940-1944-b296.318-b324/#219729"><div class="visualClear"></div><a class="addthis_button_facebook"></a><a class="addthis_button_twitter"></a><a class="addthis_button_linkedin"></a></div></div></td><td/><td valign="top" align="left"><br/> Piet&#160;Mondriaan
+      &#160;  
+
+    <br/><b>Composition with Yellow, Blue and Red</b> 1937-1942<br/>oil paint / canvas, 72,5
+        x
+        69&#160;cm<br/>Tate Gallery, London, no.&#160;T00648<br/><br/>B279.308 (second state)</td></tr><tr><td colspan="3"><br/><hr/></td></tr></table></td></tr></table></div></body></html><br /><html xmlns:addthis="http://www.addthis.com/help/api-spec"><head><meta HTTP-EQUIV="Content-type" CONTENT="text/html; charset=utf8"/></head><body><div align="center"><table width="100%" border="0" class="main" cellpadding="0" cellspacing=""><tr><td><table class="area" border="0" width="100%" cellpadding="0" cellspacing="0" STYLE="font-size: 12px; font-type: Verdana;font-weight: normal;"><col width="30%"/><col width="5%"/><col width="65%"/><tr><td valign="top" align="center"><span class="listing-link link-to-popup" id="219730"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\436\0001326436.jpg&amp;width=150&amp;height=150"/></span><div class="image-popup"><span class="close-icon">X</span><div class="image-description"> Piet&#160;Mondriaan
+      &#160;  
+
+    ,
+            <b>Composition no. 12</b>,&#160;1937-1942</div><span class="image-thumb"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\436\0001326436.jpg&amp;width=220&amp;height=220"/></span><span class="image-large"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\436\0001326436.jpg&amp;width=700&amp;height=700"/></span><ul class="popup-icons"><li class="icon-item"><a href="#" class="image-fullsize">Image fullsize</a></li><li class="icon-item"><a href="https://rkd.nl/en/explore/images/219730" class="database-link" target="_blank">Show in RKDexplore</a></li><li class="icon-item"><a href="#" class="share-link">Share</a></li></ul><div class="addthiscontainer addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="http://catalogue.pietmondrian.nl/new-york-1940-1944-b296.318-b324/#219730"><div class="visualClear"></div><a class="addthis_button_facebook"></a><a class="addthis_button_twitter"></a><a class="addthis_button_linkedin"></a></div></div></td><td/><td valign="top" align="left"><br/> Piet&#160;Mondriaan
+      &#160;  
+
+    <br/><b>Composition no. 12</b> 1937-1942<br/>oil paint / canvas, 62
+        x
+        60,5&#160;cm<br/>National Gallery of Canada, Ottawa (Canada), no.&#160;15911<br/><br/>B280.309 (second state)</td></tr><tr><td colspan="3"><br/><hr/></td></tr></table></td></tr></table></div></body></html><br /><html xmlns:addthis="http://www.addthis.com/help/api-spec"><head><meta HTTP-EQUIV="Content-type" CONTENT="text/html; charset=utf8"/></head><body><div align="center"><table width="100%" border="0" class="main" cellpadding="0" cellspacing=""><tr><td><table class="area" border="0" width="100%" cellpadding="0" cellspacing="0" STYLE="font-size: 12px; font-type: Verdana;font-weight: normal;"><col width="30%"/><col width="5%"/><col width="65%"/><tr><td valign="top" align="center"><span class="listing-link link-to-popup" id="219731"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\997\1001208997.jpg&amp;width=150&amp;height=150"/></span><div class="image-popup"><span class="close-icon">X</span><div class="image-description"> Piet&#160;Mondriaan
+      &#160;  
+
+    ,
+            <b>II: [...] blanc et rouge</b>,&#160;dated 1937-1942</div><span class="image-thumb"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\997\1001208997.jpg&amp;width=220&amp;height=220"/></span><span class="image-large"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\997\1001208997.jpg&amp;width=700&amp;height=700"/></span><ul class="popup-icons"><li class="icon-item"><a href="#" class="image-fullsize">Image fullsize</a></li><li class="icon-item"><a href="https://rkd.nl/en/explore/images/219731" class="database-link" target="_blank">Show in RKDexplore</a></li><li class="icon-item"><a href="#" class="share-link">Share</a></li></ul><div class="addthiscontainer addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="http://catalogue.pietmondrian.nl/new-york-1940-1944-b296.318-b324/#219731"><div class="visualClear"></div><a class="addthis_button_facebook"></a><a class="addthis_button_twitter"></a><a class="addthis_button_linkedin"></a></div></div></td><td/><td valign="top" align="left"><br/> Piet&#160;Mondriaan
+      &#160;  
+
+    <br/><b>II: [...] blanc et rouge</b> dated 1937-1942<br/>oil paint / canvas, 60,3
+        x
+        55,2&#160;cm<br/> The&#160;Museum of Modern Art, New York City, no.&#160;638.67<br/><br/>B274.310 (second state)</td></tr><tr><td colspan="3"><br/><hr/></td></tr></table></td></tr></table></div></body></html><br /><html xmlns:addthis="http://www.addthis.com/help/api-spec"><head><meta HTTP-EQUIV="Content-type" CONTENT="text/html; charset=utf8"/></head><body><div align="center"><table width="100%" border="0" class="main" cellpadding="0" cellspacing=""><tr><td><table class="area" border="0" width="100%" cellpadding="0" cellspacing="0" STYLE="font-size: 12px; font-type: Verdana;font-weight: normal;"><col width="30%"/><col width="5%"/><col width="65%"/><tr><td valign="top" align="center"><span class="listing-link link-to-popup" id="219808"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\602\1001195602.jpg&amp;width=150&amp;height=150"/></span><div class="image-popup"><span class="close-icon">X</span><div class="image-description"> Piet&#160;Mondriaan
+      &#160;  
+
+    ,
+            <b>Rythme de lignes droites (et couleur?)</b>,&#160;1937-1942</div><span class="image-thumb"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\602\1001195602.jpg&amp;width=220&amp;height=220"/></span><span class="image-large"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\602\1001195602.jpg&amp;width=700&amp;height=700"/></span><ul class="popup-icons"><li class="icon-item"><a href="#" class="image-fullsize">Image fullsize</a></li><li class="icon-item"><a href="https://rkd.nl/en/explore/images/219808" class="database-link" target="_blank">Show in RKDexplore</a></li><li class="icon-item"><a href="#" class="share-link">Share</a></li></ul><div class="addthiscontainer addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="http://catalogue.pietmondrian.nl/new-york-1940-1944-b296.318-b324/#219808"><div class="visualClear"></div><a class="addthis_button_facebook"></a><a class="addthis_button_twitter"></a><a class="addthis_button_linkedin"></a></div></div></td><td/><td valign="top" align="left"><br/> Piet&#160;Mondriaan
+      &#160;  
+
+    <br/><b>Rythme de lignes droites (et couleur?)</b> 1937-1942<br/>oil paint / canvas, 72,2
+        x
+        69,5&#160;cm<br/>Kunstsammlung Nordrhein-Westfalen, D&#252;sseldorf, no.&#160;165<br/><br/>B276.311 (second state)</td></tr><tr><td colspan="3"><br/><hr/></td></tr></table></td></tr></table></div></body></html><br /><html xmlns:addthis="http://www.addthis.com/help/api-spec"><head><meta HTTP-EQUIV="Content-type" CONTENT="text/html; charset=utf8"/></head><body><div align="center"><table width="100%" border="0" class="main" cellpadding="0" cellspacing=""><tr><td><table class="area" border="0" width="100%" cellpadding="0" cellspacing="0" STYLE="font-size: 12px; font-type: Verdana;font-weight: normal;"><col width="30%"/><col width="5%"/><col width="65%"/><tr><td valign="top" align="center"><span class="listing-link link-to-popup" id="219809"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\378\1001243378.jpg&amp;width=150&amp;height=150"/></span><div class="image-popup"><span class="close-icon">X</span><div class="image-description"> Piet&#160;Mondriaan
+      &#160;  
+
+    ,
+            <b>Composition no. 7</b>,&#160;dated 1937-1942</div><span class="image-thumb"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\378\1001243378.jpg&amp;width=220&amp;height=220"/></span><span class="image-large"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\378\1001243378.jpg&amp;width=700&amp;height=700"/></span><ul class="popup-icons"><li class="icon-item"><a href="#" class="image-fullsize">Image fullsize</a></li><li class="icon-item"><a href="https://rkd.nl/en/explore/images/219809" class="database-link" target="_blank">Show in RKDexplore</a></li><li class="icon-item"><a href="#" class="share-link">Share</a></li></ul><div class="addthiscontainer addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="http://catalogue.pietmondrian.nl/new-york-1940-1944-b296.318-b324/#219809"><div class="visualClear"></div><a class="addthis_button_facebook"></a><a class="addthis_button_twitter"></a><a class="addthis_button_linkedin"></a></div></div></td><td/><td valign="top" align="left"><br/> Piet&#160;Mondriaan
+      &#160;  
+
+    <br/><b>Composition no. 7</b> dated 1937-1942<br/>oil paint / canvas, 80,5
+        x
+        62,2&#160;cm<br/>Munson-Williams-Proctor Institute Museum of Art, Utica (New York), no.&#160;54.7<br/><br/>B281.312 (second state)</td></tr><tr><td colspan="3"><br/><hr/></td></tr></table></td></tr></table></div></body></html><br /><html xmlns:addthis="http://www.addthis.com/help/api-spec"><head><meta HTTP-EQUIV="Content-type" CONTENT="text/html; charset=utf8"/></head><body><div align="center"><table width="100%" border="0" class="main" cellpadding="0" cellspacing=""><tr><td><table class="area" border="0" width="100%" cellpadding="0" cellspacing="0" STYLE="font-size: 12px; font-type: Verdana;font-weight: normal;"><col width="30%"/><col width="5%"/><col width="65%"/><tr><td valign="top" align="center"><span class="listing-link link-to-popup" id="219810"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\304\0000353304.jpg&amp;width=150&amp;height=150"/></span><div class="image-popup"><span class="close-icon">X</span><div class="image-description"> Piet&#160;Mondriaan
+      &#160;  
+
+    ,
+            <b>Composition of red and white: nom I</b>,&#160;dated 1938-1942</div><span class="image-thumb"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\304\0000353304.jpg&amp;width=220&amp;height=220"/></span><span class="image-large"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\304\0000353304.jpg&amp;width=700&amp;height=700"/></span><ul class="popup-icons"><li class="icon-item"><a href="#" class="image-fullsize">Image fullsize</a></li><li class="icon-item"><a href="https://rkd.nl/en/explore/images/219810" class="database-link" target="_blank">Show in RKDexplore</a></li><li class="icon-item"><a href="#" class="share-link">Share</a></li></ul><div class="addthiscontainer addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="http://catalogue.pietmondrian.nl/new-york-1940-1944-b296.318-b324/#219810"><div class="visualClear"></div><a class="addthis_button_facebook"></a><a class="addthis_button_twitter"></a><a class="addthis_button_linkedin"></a></div></div></td><td/><td valign="top" align="left"><br/> Piet&#160;Mondriaan
+      &#160;  
+
+    <br/><b>Composition of red and white: nom I</b> dated 1938-1942<br/>oil paint / canvas, 100,3
+        x
+        99,1&#160;cm<br/>lower center
+          :&#160;
+      <i>PM</i><br/>lower right
+          :&#160;
+      <i>38-42</i><br/>Saint Louis Art Museum, Saint Louis (Missouri), no.&#160;242-1972<br/><br/>B285.313 (second state)</td></tr><tr><td colspan="3"><br/><hr/></td></tr></table></td></tr></table></div></body></html><br /><html xmlns:addthis="http://www.addthis.com/help/api-spec"><head><meta HTTP-EQUIV="Content-type" CONTENT="text/html; charset=utf8"/></head><body><div align="center"><table width="100%" border="0" class="main" cellpadding="0" cellspacing=""><tr><td><table class="area" border="0" width="100%" cellpadding="0" cellspacing="0" STYLE="font-size: 12px; font-type: Verdana;font-weight: normal;"><col width="30%"/><col width="5%"/><col width="65%"/><tr><td valign="top" align="center"><span class="listing-link link-to-popup" id="219811"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\627\1001195627.jpg&amp;width=150&amp;height=150"/></span><div class="image-popup"><span class="close-icon">X</span><div class="image-description"> Piet&#160;Mondriaan
+      &#160;  
+
+    ,
+            <b>Composition no. 5</b>,&#160;dated 1939-1942</div><span class="image-thumb"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\627\1001195627.jpg&amp;width=220&amp;height=220"/></span><span class="image-large"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\627\1001195627.jpg&amp;width=700&amp;height=700"/></span><ul class="popup-icons"><li class="icon-item"><a href="#" class="image-fullsize">Image fullsize</a></li><li class="icon-item"><a href="https://rkd.nl/en/explore/images/219811" class="database-link" target="_blank">Show in RKDexplore</a></li><li class="icon-item"><a href="#" class="share-link">Share</a></li></ul><div class="addthiscontainer addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="http://catalogue.pietmondrian.nl/new-york-1940-1944-b296.318-b324/#219811"><div class="visualClear"></div><a class="addthis_button_facebook"></a><a class="addthis_button_twitter"></a><a class="addthis_button_linkedin"></a></div></div></td><td/><td valign="top" align="left"><br/> Piet&#160;Mondriaan
+      &#160;  
+
+    <br/><b>Composition no. 5</b> dated 1939-1942<br/>oil paint / canvas, 75
+        x
+        65&#160;cm<br/>art dealer&#160;
+        Galerie Beyeler, Basel (Switzerland)<br/><br/>B286.314 (second state)</td></tr><tr><td colspan="3"><br/><hr/></td></tr></table></td></tr></table></div></body></html><br /><html xmlns:addthis="http://www.addthis.com/help/api-spec"><head><meta HTTP-EQUIV="Content-type" CONTENT="text/html; charset=utf8"/></head><body><div align="center"><table width="100%" border="0" class="main" cellpadding="0" cellspacing=""><tr><td><table class="area" border="0" width="100%" cellpadding="0" cellspacing="0" STYLE="font-size: 12px; font-type: Verdana;font-weight: normal;"><col width="30%"/><col width="5%"/><col width="65%"/><tr><td valign="top" align="center"><span class="listing-link link-to-popup" id="219812"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\305\0000353305.jpg&amp;width=150&amp;height=150"/></span><div class="image-popup"><span class="close-icon">X</span><div class="image-description"> Piet&#160;Mondriaan
+      &#160;  
+
+    ,
+            <b>Composition no. 8</b>,&#160;dated 1939-1942</div><span class="image-thumb"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\305\0000353305.jpg&amp;width=220&amp;height=220"/></span><span class="image-large"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\305\0000353305.jpg&amp;width=700&amp;height=700"/></span><ul class="popup-icons"><li class="icon-item"><a href="#" class="image-fullsize">Image fullsize</a></li><li class="icon-item"><a href="https://rkd.nl/en/explore/images/219812" class="database-link" target="_blank">Show in RKDexplore</a></li><li class="icon-item"><a href="#" class="share-link">Share</a></li></ul><div class="addthiscontainer addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="http://catalogue.pietmondrian.nl/new-york-1940-1944-b296.318-b324/#219812"><div class="visualClear"></div><a class="addthis_button_facebook"></a><a class="addthis_button_twitter"></a><a class="addthis_button_linkedin"></a></div></div></td><td/><td valign="top" align="left"><br/> Piet&#160;Mondriaan
+      &#160;  
+
+    <br/><b>Composition no. 8</b> dated 1939-1942<br/>oil paint / canvas, 75,2
+        x
+        68,1&#160;cm<br/>Kimbell Art Museum, Fort Worth (Texas), no.&#160;AP 1994.05<br/><br/>B295.315 (second state)</td></tr><tr><td colspan="3"><br/><hr/></td></tr></table></td></tr></table></div></body></html><br /><html xmlns:addthis="http://www.addthis.com/help/api-spec"><head><meta HTTP-EQUIV="Content-type" CONTENT="text/html; charset=utf8"/></head><body><div align="center"><table width="100%" border="0" class="main" cellpadding="0" cellspacing=""><tr><td><table class="area" border="0" width="100%" cellpadding="0" cellspacing="0" STYLE="font-size: 12px; font-type: Verdana;font-weight: normal;"><col width="30%"/><col width="5%"/><col width="65%"/><tr><td valign="top" align="center"><span class="listing-link link-to-popup" id="245291"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\437\0001326437.jpg&amp;width=150&amp;height=150"/></span><div class="image-popup"><span class="close-icon">X</span><div class="image-description"> Piet&#160;Mondriaan
+      &#160;  
+
+    ,
+            <b>Composition no. 9</b>,&#160;dated 1939-1940</div><span class="image-thumb"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\437\0001326437.jpg&amp;width=220&amp;height=220"/></span><span class="image-large"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\437\0001326437.jpg&amp;width=700&amp;height=700"/></span><ul class="popup-icons"><li class="icon-item"><a href="#" class="image-fullsize">Image fullsize</a></li><li class="icon-item"><a href="https://rkd.nl/en/explore/images/245291" class="database-link" target="_blank">Show in RKDexplore</a></li><li class="icon-item"><a href="#" class="share-link">Share</a></li></ul><div class="addthiscontainer addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="http://catalogue.pietmondrian.nl/new-york-1940-1944-b296.318-b324/#245291"><div class="visualClear"></div><a class="addthis_button_facebook"></a><a class="addthis_button_twitter"></a><a class="addthis_button_linkedin"></a></div></div></td><td/><td valign="top" align="left"><br/> Piet&#160;Mondriaan
+      &#160;  
+
+    <br/><b>Composition no. 9</b> dated 1939-1940<br/>oil paint / canvas, 79,7
+        x
+        74&#160;cm<br/>The Phillips Collection, Washington (D.C.), no.&#160;1374<br/><br/>B287.316 (second state)</td></tr><tr><td colspan="3"><br/><hr/></td></tr></table></td></tr></table></div></body></html><br /><html xmlns:addthis="http://www.addthis.com/help/api-spec"><head><meta HTTP-EQUIV="Content-type" CONTENT="text/html; charset=utf8"/></head><body><div align="center"><table width="100%" border="0" class="main" cellpadding="0" cellspacing=""><tr><td><table class="area" border="0" width="100%" cellpadding="0" cellspacing="0" STYLE="font-size: 12px; font-type: Verdana;font-weight: normal;"><col width="30%"/><col width="5%"/><col width="65%"/><tr><td valign="top" align="center"><span class="listing-link link-to-popup" id="219813"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\583\1001244583.jpg&amp;width=150&amp;height=150"/></span><div class="image-popup"><span class="close-icon">X</span><div class="image-description"> Piet&#160;Mondriaan
+      &#160;  
+
+    ,
+            <b>Composition no. 10</b>,&#160;dated 1939-1942</div><span class="image-thumb"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\583\1001244583.jpg&amp;width=220&amp;height=220"/></span><span class="image-large"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\583\1001244583.jpg&amp;width=700&amp;height=700"/></span><ul class="popup-icons"><li class="icon-item"><a href="#" class="image-fullsize">Image fullsize</a></li><li class="icon-item"><a href="https://rkd.nl/en/explore/images/219813" class="database-link" target="_blank">Show in RKDexplore</a></li><li class="icon-item"><a href="#" class="share-link">Share</a></li></ul><div class="addthiscontainer addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="http://catalogue.pietmondrian.nl/new-york-1940-1944-b296.318-b324/#219813"><div class="visualClear"></div><a class="addthis_button_facebook"></a><a class="addthis_button_twitter"></a><a class="addthis_button_linkedin"></a></div></div></td><td/><td valign="top" align="left"><br/> Piet&#160;Mondriaan
+      &#160;  
+
+    <br/><b>Composition no. 10</b> dated 1939-1942<br/>oil paint / canvas, 79,5
+        x
+        73&#160;cm<br/>Private collection<br/><br/>B288.317 (second state)</td></tr><tr><td colspan="3"><br/><hr/></td></tr></table></td></tr></table></div></body></html><br /><html xmlns:addthis="http://www.addthis.com/help/api-spec"><head><meta HTTP-EQUIV="Content-type" CONTENT="text/html; charset=utf8"/></head><body><div align="center"><table width="100%" border="0" class="main" cellpadding="0" cellspacing=""><tr><td><table class="area" border="0" width="100%" cellpadding="0" cellspacing="0" STYLE="font-size: 12px; font-type: Verdana;font-weight: normal;"><col width="30%"/><col width="5%"/><col width="65%"/><tr><td valign="top" align="center"><span class="listing-link link-to-popup" id="245335"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\438\0001326438.jpg&amp;width=150&amp;height=150"/></span><div class="image-popup"><span class="close-icon">X</span><div class="image-description"> Piet&#160;Mondriaan
+      &#160;  
+
+    ,
+            <b>Composition no. 11</b>,&#160;dated 1940-1942</div><span class="image-thumb"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\438\0001326438.jpg&amp;width=220&amp;height=220"/></span><span class="image-large"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\438\0001326438.jpg&amp;width=700&amp;height=700"/></span><ul class="popup-icons"><li class="icon-item"><a href="#" class="image-fullsize">Image fullsize</a></li><li class="icon-item"><a href="https://rkd.nl/en/explore/images/245335" class="database-link" target="_blank">Show in RKDexplore</a></li><li class="icon-item"><a href="#" class="share-link">Share</a></li></ul><div class="addthiscontainer addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="http://catalogue.pietmondrian.nl/new-york-1940-1944-b296.318-b324/#245335"><div class="visualClear"></div><a class="addthis_button_facebook"></a><a class="addthis_button_twitter"></a><a class="addthis_button_linkedin"></a></div></div></td><td/><td valign="top" align="left"><br/> Piet&#160;Mondriaan
+      &#160;  
+
+    <br/><b>Composition no. 11</b> dated 1940-1942<br/>oil paint / canvas, 82,5
+        x
+        71,1&#160;cm<br/>Albright-Knox Art Gallery, Buffalo (New York), no.&#160;RCA 1944:10<br/><br/>B296.318 (second state)</td></tr><tr><td colspan="3"><br/><hr/></td></tr></table></td></tr></table></div></body></html><br /><html xmlns:addthis="http://www.addthis.com/help/api-spec"><head><meta HTTP-EQUIV="Content-type" CONTENT="text/html; charset=utf8"/></head><body><div align="center"><table width="100%" border="0" class="main" cellpadding="0" cellspacing=""><tr><td><table class="area" border="0" width="100%" cellpadding="0" cellspacing="0" STYLE="font-size: 12px; font-type: Verdana;font-weight: normal;"><col width="30%"/><col width="5%"/><col width="65%"/><tr><td valign="top" align="center"><span class="listing-link link-to-popup" id="245340"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\439\0001326439.jpg&amp;width=150&amp;height=150"/></span><div class="image-popup"><span class="close-icon">X</span><div class="image-description"> Piet&#160;Mondriaan
+      &#160;  
+
+    ,
+            <b>New York</b>,&#160;dated 1941-1942</div><span class="image-thumb"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\439\0001326439.jpg&amp;width=220&amp;height=220"/></span><span class="image-large"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\439\0001326439.jpg&amp;width=700&amp;height=700"/></span><ul class="popup-icons"><li class="icon-item"><a href="#" class="image-fullsize">Image fullsize</a></li><li class="icon-item"><a href="https://rkd.nl/en/explore/images/245340" class="database-link" target="_blank">Show in RKDexplore</a></li><li class="icon-item"><a href="#" class="share-link">Share</a></li></ul><div class="addthiscontainer addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="http://catalogue.pietmondrian.nl/new-york-1940-1944-b296.318-b324/#245340"><div class="visualClear"></div><a class="addthis_button_facebook"></a><a class="addthis_button_twitter"></a><a class="addthis_button_linkedin"></a></div></div></td><td/><td valign="top" align="left"><br/> Piet&#160;Mondriaan
+      &#160;  
+
+    <br/><b>New York</b> dated 1941-1942<br/>oil paint / canvas, 95,2
+        x
+        92&#160;cm<br/>New York City
+          (Sotheby's), 2004-11-04,
+          no. 7<br/><br/>B299.319 (second state)</td></tr><tr><td colspan="3"><br/><hr/></td></tr></table></td></tr></table></div></body></html><br /><html xmlns:addthis="http://www.addthis.com/help/api-spec"><head><meta HTTP-EQUIV="Content-type" CONTENT="text/html; charset=utf8"/></head><body><div align="center"><table width="100%" border="0" class="main" cellpadding="0" cellspacing=""><tr><td><table class="area" border="0" width="100%" cellpadding="0" cellspacing="0" STYLE="font-size: 12px; font-type: Verdana;font-weight: normal;"><col width="30%"/><col width="5%"/><col width="65%"/><tr><td valign="top" align="center"><span class="listing-link link-to-popup" id="219815"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\440\0001326440.jpg&amp;width=150&amp;height=150"/></span><div class="image-popup"><span class="close-icon">X</span><div class="image-description"> Piet&#160;Mondriaan
+      &#160;  
+
+    ,
+            <b>No. III: opposition de lignes de blanc et jaune</b>,&#160;1937-1943</div><span class="image-thumb"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\440\0001326440.jpg&amp;width=220&amp;height=220"/></span><span class="image-large"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\440\0001326440.jpg&amp;width=700&amp;height=700"/></span><ul class="popup-icons"><li class="icon-item"><a href="#" class="image-fullsize">Image fullsize</a></li><li class="icon-item"><a href="https://rkd.nl/en/explore/images/219815" class="database-link" target="_blank">Show in RKDexplore</a></li><li class="icon-item"><a href="#" class="share-link">Share</a></li></ul><div class="addthiscontainer addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="http://catalogue.pietmondrian.nl/new-york-1940-1944-b296.318-b324/#219815"><div class="visualClear"></div><a class="addthis_button_facebook"></a><a class="addthis_button_twitter"></a><a class="addthis_button_linkedin"></a></div></div></td><td/><td valign="top" align="left"><br/> Piet&#160;Mondriaan
+      &#160;  
+
+    <br/><b>No. III: opposition de lignes de blanc et jaune</b> 1937-1943<br/>oil paint / canvas, 60
+        x
+        55&#160;cm<br/>lower left
+          :&#160;
+      <i>PM</i><br/>lower right
+          :&#160;
+      <i>36 | 43</i><br/>Moderna Museet, Stockholm, no.&#160;NM 6080<br/><br/>B275.320 (second state)</td></tr><tr><td colspan="3"><br/><hr/></td></tr></table></td></tr></table></div></body></html><br /><html xmlns:addthis="http://www.addthis.com/help/api-spec"><head><meta HTTP-EQUIV="Content-type" CONTENT="text/html; charset=utf8"/></head><body><div align="center"><table width="100%" border="0" class="main" cellpadding="0" cellspacing=""><tr><td><table class="area" border="0" width="100%" cellpadding="0" cellspacing="0" STYLE="font-size: 12px; font-type: Verdana;font-weight: normal;"><col width="30%"/><col width="5%"/><col width="65%"/><tr><td valign="top" align="center"><span class="listing-link link-to-popup" id="219816"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\441\0001326441.jpg&amp;width=150&amp;height=150"/></span><div class="image-popup"><span class="close-icon">X</span><div class="image-description"> Piet&#160;Mondriaan
+      &#160;  
+
+    ,
+            <b>Place de la Concorde</b>,&#160;dated 1938-1943</div><span class="image-thumb"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\441\0001326441.jpg&amp;width=220&amp;height=220"/></span><span class="image-large"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\441\0001326441.jpg&amp;width=700&amp;height=700"/></span><ul class="popup-icons"><li class="icon-item"><a href="#" class="image-fullsize">Image fullsize</a></li><li class="icon-item"><a href="https://rkd.nl/en/explore/images/219816" class="database-link" target="_blank">Show in RKDexplore</a></li><li class="icon-item"><a href="#" class="share-link">Share</a></li></ul><div class="addthiscontainer addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="http://catalogue.pietmondrian.nl/new-york-1940-1944-b296.318-b324/#219816"><div class="visualClear"></div><a class="addthis_button_facebook"></a><a class="addthis_button_twitter"></a><a class="addthis_button_linkedin"></a></div></div></td><td/><td valign="top" align="left"><br/> Piet&#160;Mondriaan
+      &#160;  
+
+    <br/><b>Place de la Concorde</b> dated 1938-1943<br/>oil paint / canvas, 94
+        x
+        94,4&#160;cm<br/>Dallas Museum of Art, Dallas (Texas), no.&#160;1982.22 FA<br/><br/>B283.321 (second state)</td></tr><tr><td colspan="3"><br/><hr/></td></tr></table></td></tr></table></div></body></html><br /><html xmlns:addthis="http://www.addthis.com/help/api-spec"><head><meta HTTP-EQUIV="Content-type" CONTENT="text/html; charset=utf8"/></head><body><div align="center"><table width="100%" border="0" class="main" cellpadding="0" cellspacing=""><tr><td><table class="area" border="0" width="100%" cellpadding="0" cellspacing="0" STYLE="font-size: 12px; font-type: Verdana;font-weight: normal;"><col width="30%"/><col width="5%"/><col width="65%"/><tr><td valign="top" align="center"><span class="listing-link link-to-popup" id="219817"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\719\1001348719.jpg&amp;width=150&amp;height=150"/></span><div class="image-popup"><span class="close-icon">X</span><div class="image-description"> Piet&#160;Mondriaan
+      &#160;  
+
+    ,
+            <b>Trafalgar Square</b>,&#160;dated 1939-1943</div><span class="image-thumb"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\719\1001348719.jpg&amp;width=220&amp;height=220"/></span><span class="image-large"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\719\1001348719.jpg&amp;width=700&amp;height=700"/></span><ul class="popup-icons"><li class="icon-item"><a href="#" class="image-fullsize">Image fullsize</a></li><li class="icon-item"><a href="https://rkd.nl/en/explore/images/219817" class="database-link" target="_blank">Show in RKDexplore</a></li><li class="icon-item"><a href="#" class="share-link">Share</a></li></ul><div class="addthiscontainer addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="http://catalogue.pietmondrian.nl/new-york-1940-1944-b296.318-b324/#219817"><div class="visualClear"></div><a class="addthis_button_facebook"></a><a class="addthis_button_twitter"></a><a class="addthis_button_linkedin"></a></div></div></td><td/><td valign="top" align="left"><br/> Piet&#160;Mondriaan
+      &#160;  
+
+    <br/><b>Trafalgar Square</b> dated 1939-1943<br/>oil paint / canvas, 145,2
+        x
+        120&#160;cm<br/> The&#160;Museum of Modern Art, New York City, no.&#160;510.64<br/><br/>B294.322 (second state)</td></tr><tr><td colspan="3"><br/><hr/></td></tr></table></td></tr></table></div></body></html><br /><html xmlns:addthis="http://www.addthis.com/help/api-spec"><head><meta HTTP-EQUIV="Content-type" CONTENT="text/html; charset=utf8"/></head><body><div align="center"><table width="100%" border="0" class="main" cellpadding="0" cellspacing=""><tr><td><table class="area" border="0" width="100%" cellpadding="0" cellspacing="0" STYLE="font-size: 12px; font-type: Verdana;font-weight: normal;"><col width="30%"/><col width="5%"/><col width="65%"/><tr><td valign="top" align="center"><span class="listing-link link-to-popup" id="245363"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\710\1001348710.jpg&amp;width=150&amp;height=150"/></span><div class="image-popup"><span class="close-icon">X</span><div class="image-description"> Piet&#160;Mondriaan
+      &#160;  
+
+    ,
+            <b>Broadway boogie woogie</b>,&#160;dated 1942-1943</div><span class="image-thumb"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\710\1001348710.jpg&amp;width=220&amp;height=220"/></span><span class="image-large"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\710\1001348710.jpg&amp;width=700&amp;height=700"/></span><ul class="popup-icons"><li class="icon-item"><a href="#" class="image-fullsize">Image fullsize</a></li><li class="icon-item"><a href="https://rkd.nl/en/explore/images/245363" class="database-link" target="_blank">Show in RKDexplore</a></li><li class="icon-item"><a href="#" class="share-link">Share</a></li></ul><div class="addthiscontainer addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="http://catalogue.pietmondrian.nl/new-york-1940-1944-b296.318-b324/#245363"><div class="visualClear"></div><a class="addthis_button_facebook"></a><a class="addthis_button_twitter"></a><a class="addthis_button_linkedin"></a></div></div></td><td/><td valign="top" align="left"><br/> Piet&#160;Mondriaan
+      &#160;  
+
+    <br/><b>Broadway boogie woogie</b> dated 1942-1943<br/>oil paint / canvas, 127
+        x
+        127&#160;cm<br/>lower left
+          :&#160;
+      <i>PM</i><br/>lower right
+          :&#160;
+      <i>42 | 43</i><br/>in verso
+          :&#160;
+      <i>BROADWAY BOOGIE WOOGIE</i><br/> The&#160;Museum of Modern Art, New York City, no.&#160;73-43<br/><br/>B323</td></tr><tr><td colspan="3"><br/><hr/></td></tr></table></td></tr></table></div></body></html><br /><html xmlns:addthis="http://www.addthis.com/help/api-spec"><head><meta HTTP-EQUIV="Content-type" CONTENT="text/html; charset=utf8"/></head><body><div align="center"><table width="100%" border="0" class="main" cellpadding="0" cellspacing=""><tr><td><table class="area" border="0" width="100%" cellpadding="0" cellspacing="0" STYLE="font-size: 12px; font-type: Verdana;font-weight: normal;"><col width="30%"/><col width="5%"/><col width="65%"/><tr><td valign="top" align="center"><span class="listing-link link-to-popup" id="245372"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\443\0001326443.jpg&amp;width=150&amp;height=150"/></span><div class="image-popup"><span class="close-icon">X</span><div class="image-description"> Piet&#160;Mondriaan
+      &#160;  
+
+    ,
+            <b>Victory boogie woogie (unfinished)</b>,&#160;1942-1944</div><span class="image-thumb"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\443\0001326443.jpg&amp;width=220&amp;height=220"/></span><span class="image-large"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\443\0001326443.jpg&amp;width=700&amp;height=700"/></span><ul class="popup-icons"><li class="icon-item"><a href="#" class="image-fullsize">Image fullsize</a></li><li class="icon-item"><a href="https://rkd.nl/en/explore/images/245372" class="database-link" target="_blank">Show in RKDexplore</a></li><li class="icon-item"><a href="#" class="share-link">Share</a></li></ul><div class="addthiscontainer addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="http://catalogue.pietmondrian.nl/new-york-1940-1944-b296.318-b324/#245372"><div class="visualClear"></div><a class="addthis_button_facebook"></a><a class="addthis_button_twitter"></a><a class="addthis_button_linkedin"></a></div></div></td><td/><td valign="top" align="left"><br/> Piet&#160;Mondriaan
+      &#160;  
+
+    <br/><b>Victory boogie woogie (unfinished)</b> 1942-1944<br/>oil paint / canvas, 126
+        x
+        126&#160;cm<br/>Gemeentemuseum Den Haag, The Hague, no.&#160;0810747 / sch-1998x0001<br/><br/>B324</td></tr><tr><td colspan="3"><br/><hr/></td></tr></table></td></tr></table></div></body></html></p><br /></div>
+    
+
+      
+
+    <div class="documentByLine">       
+      Datum laatste wijziging: 
+      Dec 19, 2016 02:34 PM
+      
+      <div>            
+        <a class="previous"
+           href="http://catalogue.pietmondrian.nl/london-1938-1939-b282-b295.315">
+          &laquo; Vorige
+        </a>
+        <a class="next"
+           href="http://catalogue.pietmondrian.nl/drawings-1925-1943-b325-b370">
+          Volgende &raquo;
+        </a>
+      </div>     
+    </div>
+    
+
+        
+        
+          <!-- end page content -->
+      
+      <div class="visualClear"></div>
+    </div>
+    <div id="portal-footer">
+      <a title="Disclaimer"
+         href="http://catalogue.pietmondrian.nl/disclaimer">Disclaimer</a>   |
+      <a title="Privacy Statement"
+         href="http://catalogue.pietmondrian.nl/privacy_statement">Privacy Statement</a>   |
+        Copyright <sup>&copy;</sup> <script type="text/javascript">date = new Date(); document.write(date.getFullYear());</script>
+        - RKD Monographs. <a href="http://www.swordfish.nl" target="_blank">Powered by SwordFish<sup>&reg;</sup></a>
+    </div>
+  </div>
+<!-- end content column -->
+   <!-- left column -->
+  	<div id="column1-wrapper">
+	   <div id="column_1">
+       
+          
+<div id="portletwrapper-73776f7264666973682e66726f6e74656e642e6c656674636f6c756d6e0a636f6e746578740a2f5357332f6d6f6e64726961616e0a6d656e75706c6161746a65"
+     class="kssattr-portlethash-73776f7264666973682e66726f6e74656e642e6c656674636f6c756d6e0a636f6e746578740a2f5357332f6d6f6e64726961616e0a6d656e75706c6161746a65"><div class="portlet portletHtmlText sponsors">
+
+    <div class="portletTitle">
+        <h2>
+        	Menuplaatje
+        </h2>
+    </div>
+
+    <div class="portletBody">
+        <p><img src="/mondriaan/bestanden/nieuwe-afbeelding-menu/image_preview" alt="Nieuwe afbeelding menu" height="168" width="169" /></p>
+		
+    </div>
+</div>
+</div>
+
+<div id="portletwrapper-73776f7264666973682e66726f6e74656e642e6c656674636f6c756d6e0a636f6e746578740a2f5357332f6d6f6e64726961616e0a6e617669676174696f6e"
+     class="kssattr-portlethash-73776f7264666973682e66726f6e74656e642e6c656674636f6c756d6e0a636f6e746578740a2f5357332f6d6f6e64726961616e0a6e617669676174696f6e">
+		<div class="portlet portletNavigationTree">
+	        <ul class="portletNavigationTree navTreeLevel0">
+	            
+	            
+
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/link-verantwoording"
+           class="state-published" title="">
+          
+            Foreword
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/inleiding"
+           class="state-published" title="">
+          
+            Notes to Readers
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/catalogus"
+           class="state-published" title="">
+          
+            Catalogue
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/copy_of_winterswijk-i-before-circa-1897-a1-a22"
+           class="state-published" title="">
+          
+            Winterswijk, 1888-1896 (A1-A22) 
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/amsterdam-i-circa-1893-1897-a23-a49"
+           class="state-published" title="">
+          
+            Amsterdam, 1893-1897 (A23-A49)
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/winterswijk-2-1897-1899-a50-a91"
+           class="state-published" title="">
+          
+            Winterswijk, 1897-1899 (A50-A91)
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/amsterdam-2-circa-1897-1901-a92-a259"
+           class="state-published" title="">
+          
+            Amsterdam, 1897-1901 (A92-A259) 
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/amsterdam-3-circa-1902-1905-a260-a351"
+           class="state-published" title="">
+          
+            Amsterdam, 1902-1905 (A260-A351)
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/brabant-1904-early-1905-a352-a379"
+           class="state-published" title="">
+          
+            Brabant, 1904-1905 (A352-A379)
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/amsterdam-4-circa-1905-early-1908-a380-a537"
+           class="state-published" title="">
+          
+            Amsterdam, 1905-1908 (A380-A537)
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/twente-circa-1906-early-1908-a538-a593"
+           class="state-published" title="">
+          
+            Twente, 1906-1908 (A538-A593)
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/amsterdam-5-circa-1908-1911-a594-a673"
+           class="state-published" title="">
+          
+            Amsterdam, 1908-1911 (A594-A673)
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/zeeland-1909-1911-a674-a710-b1"
+           class="state-published" title="">
+          
+            Zeeland, 1909-1911 (A674-A710, B1)
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/unidentified-references-ua1-ua50"
+           class="state-published" title="">
+          
+            Unidentified references (UA1-UA50)
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/amsterdam-1911-b2-b4"
+           class="state-published" title="">
+          
+            Amsterdam, 1911 (B2-B4) 
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/paris-1-1912-1914-b5-b56"
+           class="state-published" title="">
+          
+            Paris 1, 1912-1914 (B5-B56)
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/nederland-1914-1919-b57-b103"
+           class="state-published" title="">
+          
+            Holland, 1914-1919 (B57-B103)
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/paris-2-1920-1937-b104-b281.312"
+           class="state-published" title="">
+          
+            Paris 2, 1920-1937 (B104-B281.312)
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/london-1938-1939-b282-b295.315"
+           class="state-published" title="">
+          
+            London, 1938-1939 (B282-B295.315)
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker navTreeCurrentNode navTreeItemInPath">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/new-york-1940-1944-b296.318-b324"
+           class="state-published navTreeCurrentItem"
+           title="">
+          
+            New York, 1940-1944 (B296.318-B324)
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/drawings-1925-1943-b325-b370"
+           class="state-published" title="">
+          
+            Sketchbook, 1925 (B325-B333)
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/sketches-and-studies-b334-b370"
+           class="state-published" title="">
+          
+            Sketches and studies (B334-B370)
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/sketchbook-i-1914-b371-b375"
+           class="state-published" title="">
+          
+            Sketchbook I, 1914 (B371-B375)
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/sketchbook-ii-1914-b376-b378"
+           class="state-published" title="">
+          
+            Sketchbook II, 1914 (B376-B378)
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/sketchbook-leaves-1912-1914-b379-b411"
+           class="state-published" title="">
+          
+            Sketchbook leaves, 1912-1914 (B379-B411)
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/catalogue-of-the-furniture-b412-415"
+           class="state-published" title="">
+          
+            Furniture (B412-415)
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/unidentifiable-references-u1-u27"
+           class="state-published" title="">
+          
+            Unidentifiable references (U1-U27)
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/catalogue-of-late-naturalistic-works-c1-c155"
+           class="state-published" title="">
+          
+            Late naturalistic works, 1912-1942 (C1-C155)
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/copies-c154-c155"
+           class="state-published" title="">
+          
+            Copies (C154-C155)
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/additions"
+           class="state-published" title="">
+          
+            New Additions
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/bibliography"
+           class="state-published" title="">
+          
+            Bibliography 1994-2017 (selection)
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/colophon-and-copyright-notice"
+           class="state-published" title="">
+          
+            Colophon and copyright notice
+        </a>
+        
+    
+    
+</li>
+
+
+
+
+	        </ul>
+		</div>
+
+</div>
+
+		   
+	   </div>
+	   <div id="column1-bottom"></div>
+	    <div class="visualClear"></div>
+	</div>
+<!-- end left column -->
+    <div class="print-version">
+      De afgedrukte pagina is te vinden op:  <a
+    href="http://catalogue.pietmondrian.nl/new-york-1940-1944-b296.318-b324">http://catalogue.pietmondrian.nl/new-york-1940-1944-b296.318-b324</a>
+    </div>
+  </div>
+</div>
+
+
+	</div >
+	</body >
+
+ </html>
+
+

@@ -1,0 +1,1467 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+
+
+<!-- <tal:global_defines define="global foo context/@@frontend/globalize"/>
+ -->
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="nl"
+      xml:lang="nl">
+
+  
+    
+    
+    
+    
+    
+    
+
+  
+
+<head>
+<base href="http://catalogue.pietmondrian.nl/paris-2-1920-1937-b104-b281.312/1920-1921-b104-b132/" />
+
+
+    <meta http-equiv="Content-Type"
+          content="text/html;charset=utf-8" />
+
+    <title>Piet Mondrian | 1920-1921 (B104-B132)</title>
+    <link rel="kss-base-url" href="http://catalogue.pietmondrian.nl/paris-2-1920-1937-b104-b281.312/1920-1921-b104-b132" />
+
+  
+  
+    
+    
+    
+      <style type="text/css">@import url(http://catalogue.pietmondrian.nl/portal_css/rkdmonographsskin/kupustyles.css);</style>
+    
+    
+    
+  
+
+  
+    
+    
+    
+      <style type="text/css">@import url(http://catalogue.pietmondrian.nl/portal_css/rkdmonographsskin/kupuplone.css);</style>
+    
+    
+    
+  
+
+  
+    
+    
+    
+      <style type="text/css">@import url(http://catalogue.pietmondrian.nl/portal_css/rkdmonographsskin/kupudrawerstyles.css);</style>
+    
+    
+    
+  
+
+  
+    
+    
+    
+      <style type="text/css" media="print">@import url(http://catalogue.pietmondrian.nl/portal_css/rkdmonographsskin/print.css);</style>
+    
+    
+    
+  
+
+  
+    
+    
+    
+      <style type="text/css" media="screen">@import url(http://catalogue.pietmondrian.nl/portal_css/rkdmonographsskin/jscalendar/calendar-system.css);</style>
+    
+    
+    
+  
+
+  
+    
+        <!--[if IE]>    
+    
+    
+    
+      <style type="text/css" media="screen">@import url(http://catalogue.pietmondrian.nl/portal_css/rkdmonographsskin/IEFixes.css);</style>
+    
+    
+    
+        <![endif]-->
+    
+  
+
+  
+    
+    
+    
+      <style type="text/css" media="screen">@import url(http://catalogue.pietmondrian.nl/portal_css/rkdmonographsskin/defaultstyle.css);</style>
+    
+    
+    
+  
+
+  
+    
+    
+    
+      <style type="text/css" media="screen">@import url(http://catalogue.pietmondrian.nl/portal_css/rkdmonographsskin/subsite-theme.css);</style>
+    
+    
+    
+  
+
+  
+    
+    
+    
+      <style type="text/css" media="screen">@import url(http://catalogue.pietmondrian.nl/portal_css/rkdmonographsskin/rkdmonographs.css);</style>
+    
+    
+    
+  
+
+  
+    
+        <!--[if IE 7]>    
+    
+    
+    
+      <style type="text/css" media="screen">@import url(http://catalogue.pietmondrian.nl/portal_css/rkdmonographsskin/ie7fix.css);</style>
+    
+    
+    
+        <![endif]-->
+    
+  
+
+  
+    
+        <!--[if IE 8]>    
+    
+    
+    
+      <style type="text/css" media="screen">@import url(http://catalogue.pietmondrian.nl/portal_css/rkdmonographsskin/ie8fix.css);</style>
+    
+    
+    
+        <![endif]-->
+    
+  
+
+  
+    
+    
+    
+      <style type="text/css" media="screen">@import url(http://catalogue.pietmondrian.nl/portal_css/rkdmonographsskin/products.rkdmonographs.css);</style>
+    
+    
+    
+  
+
+  
+    
+    
+    
+      <style type="text/css" media="screen">@import url(http://catalogue.pietmondrian.nl/portal_css/rkdmonographsskin/monographs_print.css);</style>
+    
+    
+    
+  
+
+
+  
+  
+    
+    
+      <script type="text/javascript"
+              src="http://catalogue.pietmondrian.nl/portal_javascripts/rkdmonographsskin/jquery-cachekey2945.js">
+      </script>
+    
+    
+    
+  
+
+  
+    
+    
+      <script type="text/javascript"
+              src="http://catalogue.pietmondrian.nl/portal_javascripts/rkdmonographsskin/calendar_formfield-cachekey8509.js">
+      </script>
+    
+    
+    
+  
+
+  
+    
+    
+      <script type="text/javascript"
+              src="http://catalogue.pietmondrian.nl/portal_javascripts/rkdmonographsskin/swordfish_functions-cachekey3423.js">
+      </script>
+    
+    
+    
+  
+
+  
+    
+    
+      <script type="text/javascript"
+              src="http://catalogue.pietmondrian.nl/portal_javascripts/rkdmonographsskin/fckeditor-cachekey0070.js">
+      </script>
+    
+    
+    
+  
+
+  
+    
+    
+      <script type="text/javascript"
+              src="http://catalogue.pietmondrian.nl/portal_javascripts/rkdmonographsskin/print-cachekey8927.js">
+      </script>
+    
+    
+    
+  
+
+  
+    
+    
+      <script type="text/javascript"
+              src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=xa-4fd87a8b529ac85b">
+      </script>
+    
+    
+    
+  
+
+  
+    
+      <!--[if lt IE 9]>    
+    
+    
+      <script type="text/javascript"
+              src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js">
+      </script>
+    
+    
+    
+        <![endif]-->
+    
+  
+
+
+  
+  <link rel="kinetic-stylesheet" type="text/css"
+        href="http://catalogue.pietmondrian.nl/portal_kss/rkdmonographsskin/plone-cachekey6395.kss" />
+
+  <link rel="kinetic-stylesheet" type="text/css"
+        href="http://catalogue.pietmondrian.nl/portal_kss/rkdmonographsskin/fckeditor_plone-cachekey4455.kss" />
+
+
+
+          
+<!--      <script type="text/javascript" charset="iso-8859-1"-->
+<!--              src="jscripts/tiny_mce/tiny_mce.js"> </script>-->
+<!--      <script type="text/javascript" charset="iso-8859-1"-->
+<!--              src="jscripts/tiny_mce/tiny_mce_init.js"> </script>-->
+    
+   
+
+<title>1920-1921 (B104-B132) &mdash; Piet Mondrian</title>
+
+    
+
+    <link rel="shortcut icon" type="image/x-icon"
+          href="http://catalogue.pietmondrian.nl/favicon.ico" />
+
+
+
+    <link rel="home" href="http://catalogue.pietmondrian.nl"
+          title="Front page" />
+
+    <link rel="contents"
+          href="http://catalogue.pietmondrian.nl/sitemap"
+          title="Site Map" />
+
+
+
+
+
+
+    <link rel="search"
+          href="http://catalogue.pietmondrian.nl/search_form"
+          title="Search this site" />
+
+
+<!-- Internet Explorer ACC CSS Fixes -->
+<!-- MOVED TO RESOURCE REGISTRIES -->
+
+
+
+    <!-- Disable IE6 image toolbar -->
+    <meta http-equiv="imagetoolbar" content="no" />
+
+
+	
+    
+    <link rel="stylesheet" type="text/css" href="/subsite-theme.css" />
+
+   
+</head>
+
+   
+   	 <body>
+   
+
+   
+   	 <div id='mainContainer' class='contentpage'>
+   
+
+  <div class="print-version">
+    <img id="print-logo"
+         src="http://catalogue.pietmondrian.nl/print_logo.gif"
+         alt="1920-1921 (B104-B132)" />
+  </div>
+   <div id="top-actions-container">
+     <div id="socialmedia">
+       <span class="share-link">Share</span>
+       <div id="addthiscontainer" class="addthis_toolbox addthis_default_style addthis_32x32_style" addthis:title="RKD Monographs">
+        	 <div class="visualClear"></div>
+          <a class="addthis_button_facebook"></a>
+          <a class="addthis_button_twitter"></a>
+          <a class="addthis_button_linkedin"></a>
+        </div>
+     </div>
+
+    <ul id="portal-siteactions">
+      <!-- test -->
+      <li id="action-contact">
+        <a title="Link naar contactformulier"
+           href="http://catalogue.pietmondrian.nl/contact-info">
+          <img alt="e-mail"
+               src="http://catalogue.pietmondrian.nl/email-icon.gif" />
+        </a>
+      </li>
+      <li id="action-home">
+        <a title="Homepage"
+           href="http://www.rkdmonographs.nl">
+          <img alt="homepage"
+               src="http://catalogue.pietmondrian.nl/home-icon.gif" />
+        </a>
+      </li><li id="action-rkdhome">
+        <a href="http://www.rkd.nl" title="Link naar RKD website">RKD-home</a></li><li id="action-sitemap"><a
+    title="Sitemap"
+    href="http://catalogue.pietmondrian.nl/sitemap">sitemap</a>
+      </li></ul>     
+   </div>
+   <div id="logo-actions-container">
+    <a id="portal-logo" class="header" accesskey="1"
+       href="http://catalogue.pietmondrian.nl">
+      <img src="http://catalogue.pietmondrian.nl/rkd-logo.png"
+           alt="1920-1921 (B104-B132)" />
+    </a>
+   </div>
+
+
+<div id="columnWrapper">
+   <div id="header-wrapper">
+      
+        <a class="link-logo"
+           href="http://catalogue.pietmondrian.nl">
+         <div class="header header-image"
+              style="background-image:url(http://catalogue.pietmondrian.nl/header_images/banner-mondriaan)">
+         </div>
+         </a>
+      
+      <div id="searchContainerRight">
+         <form id="livesearch0"
+               action="http://catalogue.pietmondrian.nl/search"
+               name="searchform">
+            <div id="portal-searchbox">
+    <form name="searchform"
+          action="http://catalogue.pietmondrian.nl/search">
+
+        <label for="searchGadget" class="hiddenStructure">Search Site</label>
+
+        <div class="LSBox">
+        <input name="SearchableText" type="text" size="18"
+               title="Search Site" accesskey="4"
+               class="inputLabel" id="searchGadget" />
+
+        <input class="searchButton" type="submit" value="" />
+    
+        <div class="searchSection">
+            <input id="searchbox_currentfolder_only"
+                   class="noborder" type="checkbox"
+                   name="path"
+                   value="/SW3/mondriaan/paris-2-1920-1937-b104-b281.312/1920-1921-b104-b132" />
+            <label for="searchbox_currentfolder_only"
+                   style="cursor: pointer">
+                only in current section
+            </label>
+        </div>
+
+        <div class="LSResult" id="LSResult" style=""><div class="LSShadow" id="LSShadow"></div></div>
+        </div>
+    </form>
+
+    <div id="portal-advanced-search" class="hiddenStructure">
+        <a href="http://catalogue.pietmondrian.nl/search_form"
+           accesskey="5">
+            Advanced Search&hellip;
+        </a>
+    </div>
+
+</div>
+
+			</form>
+      </div>
+      
+       <div id="portal-breadcrumbs">
+
+    <span id="breadcrumbs-you-are-here">You
+are here:</span>
+    <a href="http://catalogue.pietmondrian.nl">Home</a>
+    <span class="breadcrumbSeparator">
+        &rarr;
+        
+    </span>
+    <span dir="ltr">
+        
+            <a href="http://catalogue.pietmondrian.nl/paris-2-1920-1937-b104-b281.312">Paris 2, 1920-1937 (B104-B281.312)</a>
+            <span class="breadcrumbSeparator">
+                &rarr;
+                
+            </span>
+            
+         
+    </span>
+    <span dir="ltr">
+        
+            
+            
+            <span>1920-1921 (B104-B132)</span>
+         
+    </span>
+
+</div>
+
+      
+
+	</div>
+
+<!-- content column -->
+  <div id="contentcolumns-wrapper">
+   <div id="column_2">
+      <div id="content">
+       
+         
+
+    <dl class="portalMessage info" id="kssPortalMessage" style="display:none">
+        <dt>Info</dt>
+        <dd></dd>
+    </dl>
+
+
+          <!-- page content -->
+        
+           
+          
+  
+  <div class="visualClear"><!-- --></div>
+<div class="documentActions">
+    
+
+    <h5 class="hiddenStructure">Document Actions</h5>
+
+    <ul>
+    
+        <li id="document-action-print">
+            <a href="javascript:print();" title="">deze pagina</a>
+        </li>
+    
+
+    </ul>
+    
+
+    
+
+</div>
+
+    
+        <h1> 
+          1920-1921 (B104-B132)
+          
+        </h1>
+    
+    
+    
+
+    
+
+
+
+    
+
+    
+      <div class="document_content"><p><html xmlns:addthis="http://www.addthis.com/help/api-spec"><head><meta HTTP-EQUIV="Content-type" CONTENT="text/html; charset=utf8"/></head><body><div align="center"><table width="100%" border="0" class="main" cellpadding="0" cellspacing=""><tr><td><table class="area" border="0" width="100%" cellpadding="0" cellspacing="0" STYLE="font-size: 12px; font-type: Verdana;font-weight: normal;"><col width="30%"/><col width="5%"/><col width="65%"/><tr><td valign="top" align="center"><span class="listing-link link-to-popup" id="272614"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\815\1001217815.jpg&amp;width=150&amp;height=150"/></span><div class="image-popup"><span class="close-icon">X</span><div class="image-description"> Piet&#160;Mondriaan
+      &#160;  
+
+    ,
+            <b>No. VI</b>,&#160;dated 1920</div><span class="image-thumb"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\815\1001217815.jpg&amp;width=220&amp;height=220"/></span><span class="image-large"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\815\1001217815.jpg&amp;width=700&amp;height=700"/></span><ul class="popup-icons"><li class="icon-item"><a href="#" class="image-fullsize">Image fullsize</a></li><li class="icon-item"><a href="https://rkd.nl/en/explore/images/272614" class="database-link" target="_blank">Show in RKDexplore</a></li><li class="icon-item"><a href="#" class="share-link">Share</a></li></ul><div class="addthiscontainer addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="http://catalogue.pietmondrian.nl/paris-2-1920-1937-b104-b281.312/1920-1921-b104-b132/#272614"><div class="visualClear"></div><a class="addthis_button_facebook"></a><a class="addthis_button_twitter"></a><a class="addthis_button_linkedin"></a></div></div></td><td/><td valign="top" align="left"><br/> Piet&#160;Mondriaan
+      &#160;  
+
+    <br/><b>No. VI</b> dated 1920<br/>oil paint / canvas, 100,5
+        x
+        101&#160;cm<br/>Tate Gallery, London, no.&#160;T.915<br/><br/>B104</td></tr><tr><td colspan="3"><br/><hr/></td></tr></table></td></tr></table></div></body></html><br /><html xmlns:addthis="http://www.addthis.com/help/api-spec"><head><meta HTTP-EQUIV="Content-type" CONTENT="text/html; charset=utf8"/></head><body><div align="center"><table width="100%" border="0" class="main" cellpadding="0" cellspacing=""><tr><td><table class="area" border="0" width="100%" cellpadding="0" cellspacing="0" STYLE="font-size: 12px; font-type: Verdana;font-weight: normal;"><col width="30%"/><col width="5%"/><col width="65%"/><tr><td valign="top" align="center"><span class="listing-link link-to-popup" id="272625"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\229\1001240229.jpg&amp;width=150&amp;height=150"/></span><div class="image-popup"><span class="close-icon">X</span><div class="image-description"> Piet&#160;Mondriaan
+      &#160;  
+
+    ,
+            <b>Composition A</b>,&#160;1920</div><span class="image-thumb"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\229\1001240229.jpg&amp;width=220&amp;height=220"/></span><span class="image-large"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\229\1001240229.jpg&amp;width=700&amp;height=700"/></span><ul class="popup-icons"><li class="icon-item"><a href="#" class="image-fullsize">Image fullsize</a></li><li class="icon-item"><a href="https://rkd.nl/en/explore/images/272625" class="database-link" target="_blank">Show in RKDexplore</a></li><li class="icon-item"><a href="#" class="share-link">Share</a></li></ul><div class="addthiscontainer addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="http://catalogue.pietmondrian.nl/paris-2-1920-1937-b104-b281.312/1920-1921-b104-b132/#272625"><div class="visualClear"></div><a class="addthis_button_facebook"></a><a class="addthis_button_twitter"></a><a class="addthis_button_linkedin"></a></div></div></td><td/><td valign="top" align="left"><br/> Piet&#160;Mondriaan
+      &#160;  
+
+    <br/><b>Composition A</b> 1920<br/>oil paint / canvas, 90
+        x
+        91&#160;cm<br/>Galleria Nazionale d'Arte Moderna 
+           (Rome), Rome, no.&#160;5519<br/><br/>B105</td></tr><tr><td colspan="3"><br/><hr/></td></tr></table></td></tr></table></div></body></html><br /><html xmlns:addthis="http://www.addthis.com/help/api-spec"><head><meta HTTP-EQUIV="Content-type" CONTENT="text/html; charset=utf8"/></head><body><div align="center"><table width="100%" border="0" class="main" cellpadding="0" cellspacing=""><tr><td><table class="area" border="0" width="100%" cellpadding="0" cellspacing="0" STYLE="font-size: 12px; font-type: Verdana;font-weight: normal;"><col width="30%"/><col width="5%"/><col width="65%"/><tr><td valign="top" align="center"><span class="listing-link link-to-popup" id="272641"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\068\1001241068.jpg&amp;width=150&amp;height=150"/></span><div class="image-popup"><span class="close-icon">X</span><div class="image-description"> Piet&#160;Mondriaan
+      &#160;  
+
+    ,
+            <b>Composition B</b>,&#160;dated 1920</div><span class="image-thumb"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\068\1001241068.jpg&amp;width=220&amp;height=220"/></span><span class="image-large"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\068\1001241068.jpg&amp;width=700&amp;height=700"/></span><ul class="popup-icons"><li class="icon-item"><a href="#" class="image-fullsize">Image fullsize</a></li><li class="icon-item"><a href="https://rkd.nl/en/explore/images/272641" class="database-link" target="_blank">Show in RKDexplore</a></li><li class="icon-item"><a href="#" class="share-link">Share</a></li></ul><div class="addthiscontainer addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="http://catalogue.pietmondrian.nl/paris-2-1920-1937-b104-b281.312/1920-1921-b104-b132/#272641"><div class="visualClear"></div><a class="addthis_button_facebook"></a><a class="addthis_button_twitter"></a><a class="addthis_button_linkedin"></a></div></div></td><td/><td valign="top" align="left"><br/> Piet&#160;Mondriaan
+      &#160;  
+
+    <br/><b>Composition B</b> dated 1920<br/>oil paint / canvas, 67
+        x
+        57,5&#160;cm<br/>Wilhelm Hack-Museum, Ludwigshafen am Rhein, no.&#160;458/52<br/><br/>B106</td></tr><tr><td colspan="3"><br/><hr/></td></tr></table></td></tr></table></div></body></html><br /><html xmlns:addthis="http://www.addthis.com/help/api-spec"><head><meta HTTP-EQUIV="Content-type" CONTENT="text/html; charset=utf8"/></head><body><div align="center"><table width="100%" border="0" class="main" cellpadding="0" cellspacing=""><tr><td><table class="area" border="0" width="100%" cellpadding="0" cellspacing="0" STYLE="font-size: 12px; font-type: Verdana;font-weight: normal;"><col width="30%"/><col width="5%"/><col width="65%"/><tr><td valign="top" align="center"><span class="listing-link link-to-popup" id="272663"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\717\1001348717.jpg&amp;width=150&amp;height=150"/></span><div class="image-popup"><span class="close-icon">X</span><div class="image-description"> Piet&#160;Mondriaan
+      &#160;  
+
+    ,
+            <b>Composition C</b>,&#160;dated 1920</div><span class="image-thumb"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\717\1001348717.jpg&amp;width=220&amp;height=220"/></span><span class="image-large"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\717\1001348717.jpg&amp;width=700&amp;height=700"/></span><ul class="popup-icons"><li class="icon-item"><a href="#" class="image-fullsize">Image fullsize</a></li><li class="icon-item"><a href="https://rkd.nl/en/explore/images/272663" class="database-link" target="_blank">Show in RKDexplore</a></li><li class="icon-item"><a href="#" class="share-link">Share</a></li></ul><div class="addthiscontainer addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="http://catalogue.pietmondrian.nl/paris-2-1920-1937-b104-b281.312/1920-1921-b104-b132/#272663"><div class="visualClear"></div><a class="addthis_button_facebook"></a><a class="addthis_button_twitter"></a><a class="addthis_button_linkedin"></a></div></div></td><td/><td valign="top" align="left"><br/> Piet&#160;Mondriaan
+      &#160;  
+
+    <br/><b>Composition C</b> dated 1920<br/>oil paint / canvas, 60,3
+        x
+        61&#160;cm<br/> The&#160;Museum of Modern Art, New York City, no.&#160;257.48<br/><br/>B107</td></tr><tr><td colspan="3"><br/><hr/></td></tr></table></td></tr></table></div></body></html><br /><html xmlns:addthis="http://www.addthis.com/help/api-spec"><head><meta HTTP-EQUIV="Content-type" CONTENT="text/html; charset=utf8"/></head><body><div align="center"><table width="100%" border="0" class="main" cellpadding="0" cellspacing=""><tr><td><table class="area" border="0" width="100%" cellpadding="0" cellspacing="0" STYLE="font-size: 12px; font-type: Verdana;font-weight: normal;"><col width="30%"/><col width="5%"/><col width="65%"/><tr><td valign="top" align="center"><span class="listing-link link-to-popup" id="272665"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\369\1001218369.jpg&amp;width=150&amp;height=150"/></span><div class="image-popup"><span class="close-icon">X</span><div class="image-description"> Piet&#160;Mondriaan
+      &#160;  
+
+    ,
+            <b>Composition I</b>,&#160;dated 1920</div><span class="image-thumb"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\369\1001218369.jpg&amp;width=220&amp;height=220"/></span><span class="image-large"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\369\1001218369.jpg&amp;width=700&amp;height=700"/></span><ul class="popup-icons"><li class="icon-item"><a href="#" class="image-fullsize">Image fullsize</a></li><li class="icon-item"><a href="https://rkd.nl/en/explore/images/272665" class="database-link" target="_blank">Show in RKDexplore</a></li><li class="icon-item"><a href="#" class="share-link">Share</a></li></ul><div class="addthiscontainer addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="http://catalogue.pietmondrian.nl/paris-2-1920-1937-b104-b281.312/1920-1921-b104-b132/#272665"><div class="visualClear"></div><a class="addthis_button_facebook"></a><a class="addthis_button_twitter"></a><a class="addthis_button_linkedin"></a></div></div></td><td/><td valign="top" align="left"><br/> Piet&#160;Mondriaan
+      &#160;  
+
+    <br/><b>Composition I</b> dated 1920<br/>oil paint / canvas, 75
+        x
+        65&#160;cm<br/>Paris
+          (Christie's), 2009-02-23,
+          no. 44<br/><br/>B108</td></tr><tr><td colspan="3"><br/><hr/></td></tr></table></td></tr></table></div></body></html><br /><html xmlns:addthis="http://www.addthis.com/help/api-spec"><head><meta HTTP-EQUIV="Content-type" CONTENT="text/html; charset=utf8"/></head><body><div align="center"><table width="100%" border="0" class="main" cellpadding="0" cellspacing=""><tr><td><table class="area" border="0" width="100%" cellpadding="0" cellspacing="0" STYLE="font-size: 12px; font-type: Verdana;font-weight: normal;"><col width="30%"/><col width="5%"/><col width="65%"/><tr><td valign="top" align="center"><span class="listing-link link-to-popup" id="272667"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\358\1001218358.jpg&amp;width=150&amp;height=150"/></span><div class="image-popup"><span class="close-icon">X</span><div class="image-description"> Piet&#160;Mondriaan
+      &#160;  
+
+    ,
+            <b>Composition II</b>,&#160;dated 1920</div><span class="image-thumb"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\358\1001218358.jpg&amp;width=220&amp;height=220"/></span><span class="image-large"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\358\1001218358.jpg&amp;width=700&amp;height=700"/></span><ul class="popup-icons"><li class="icon-item"><a href="#" class="image-fullsize">Image fullsize</a></li><li class="icon-item"><a href="https://rkd.nl/en/explore/images/272667" class="database-link" target="_blank">Show in RKDexplore</a></li><li class="icon-item"><a href="#" class="share-link">Share</a></li></ul><div class="addthiscontainer addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="http://catalogue.pietmondrian.nl/paris-2-1920-1937-b104-b281.312/1920-1921-b104-b132/#272667"><div class="visualClear"></div><a class="addthis_button_facebook"></a><a class="addthis_button_twitter"></a><a class="addthis_button_linkedin"></a></div></div></td><td/><td valign="top" align="left"><br/> Piet&#160;Mondriaan
+      &#160;  
+
+    <br/><b>Composition II</b> dated 1920<br/>oil paint / canvas, 63
+        x
+        56&#160;cm<br/>Private collection<br/><br/>B109</td></tr><tr><td colspan="3"><br/><hr/></td></tr></table></td></tr></table></div></body></html><br /><html xmlns:addthis="http://www.addthis.com/help/api-spec"><head><meta HTTP-EQUIV="Content-type" CONTENT="text/html; charset=utf8"/></head><body><div align="center"><table width="100%" border="0" class="main" cellpadding="0" cellspacing=""><tr><td><table class="area" border="0" width="100%" cellpadding="0" cellspacing="0" STYLE="font-size: 12px; font-type: Verdana;font-weight: normal;"><col width="30%"/><col width="5%"/><col width="65%"/><tr><td valign="top" align="center"><span class="listing-link link-to-popup" id="274115"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\204\1001247204.jpg&amp;width=150&amp;height=150"/></span><div class="image-popup"><span class="close-icon">X</span><div class="image-description"> Piet&#160;Mondriaan
+      &#160;  
+
+    ,
+            <b>Composition III</b>,&#160;dated 1920</div><span class="image-thumb"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\204\1001247204.jpg&amp;width=220&amp;height=220"/></span><span class="image-large"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\204\1001247204.jpg&amp;width=700&amp;height=700"/></span><ul class="popup-icons"><li class="icon-item"><a href="#" class="image-fullsize">Image fullsize</a></li><li class="icon-item"><a href="https://rkd.nl/en/explore/images/274115" class="database-link" target="_blank">Show in RKDexplore</a></li><li class="icon-item"><a href="#" class="share-link">Share</a></li></ul><div class="addthiscontainer addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="http://catalogue.pietmondrian.nl/paris-2-1920-1937-b104-b281.312/1920-1921-b104-b132/#274115"><div class="visualClear"></div><a class="addthis_button_facebook"></a><a class="addthis_button_twitter"></a><a class="addthis_button_linkedin"></a></div></div></td><td/><td valign="top" align="left"><br/> Piet&#160;Mondriaan
+      &#160;  
+
+    <br/><b>Composition III</b> dated 1920<br/>oil paint / canvas, 53
+        x
+        51&#160;cm<br/>Private collection<br/><br/>B110</td></tr><tr><td colspan="3"><br/><hr/></td></tr></table></td></tr></table></div></body></html><br /><html xmlns:addthis="http://www.addthis.com/help/api-spec"><head><meta HTTP-EQUIV="Content-type" CONTENT="text/html; charset=utf8"/></head><body><div align="center"><table width="100%" border="0" class="main" cellpadding="0" cellspacing=""><tr><td><table class="area" border="0" width="100%" cellpadding="0" cellspacing="0" STYLE="font-size: 12px; font-type: Verdana;font-weight: normal;"><col width="30%"/><col width="5%"/><col width="65%"/><tr><td valign="top" align="center"><span class="listing-link link-to-popup" id="274116"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\301\1001233301.jpg&amp;width=150&amp;height=150"/></span><div class="image-popup"><span class="close-icon">X</span><div class="image-description"> Piet&#160;Mondriaan
+      &#160;  
+
+    ,
+            <b>Study for Tableau I</b>,&#160;1920-1921</div><span class="image-thumb"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\301\1001233301.jpg&amp;width=220&amp;height=220"/></span><span class="image-large"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\301\1001233301.jpg&amp;width=700&amp;height=700"/></span><ul class="popup-icons"><li class="icon-item"><a href="#" class="image-fullsize">Image fullsize</a></li><li class="icon-item"><a href="https://rkd.nl/en/explore/images/274116" class="database-link" target="_blank">Show in RKDexplore</a></li><li class="icon-item"><a href="#" class="share-link">Share</a></li></ul><div class="addthiscontainer addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="http://catalogue.pietmondrian.nl/paris-2-1920-1937-b104-b281.312/1920-1921-b104-b132/#274116"><div class="visualClear"></div><a class="addthis_button_facebook"></a><a class="addthis_button_twitter"></a><a class="addthis_button_linkedin"></a></div></div></td><td/><td valign="top" align="left"><br/> Piet&#160;Mondriaan
+      &#160;  
+
+    <br/><b>Study for Tableau I</b> 1920-1921<br/>charcoal / paper, 958
+        x
+        616&#160;mm<br/>Staatsgalerie Stuttgart, Stuttgart, no.&#160;C 81/3057<br/><br/>B111</td></tr><tr><td colspan="3"><br/><hr/></td></tr></table></td></tr></table></div></body></html><br /><html xmlns:addthis="http://www.addthis.com/help/api-spec"><head><meta HTTP-EQUIV="Content-type" CONTENT="text/html; charset=utf8"/></head><body><div align="center"><table width="100%" border="0" class="main" cellpadding="0" cellspacing=""><tr><td><table class="area" border="0" width="100%" cellpadding="0" cellspacing="0" STYLE="font-size: 12px; font-type: Verdana;font-weight: normal;"><col width="30%"/><col width="5%"/><col width="65%"/><tr><td valign="top" align="center"><span class="listing-link link-to-popup" id="258753"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\149\1001247149.jpg&amp;width=150&amp;height=150"/></span><div class="image-popup"><span class="close-icon">X</span><div class="image-description"> Piet&#160;Mondriaan
+      &#160;  
+
+    ,
+            <b>Unfinished composition</b>,&#160;1920</div><span class="image-thumb"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\149\1001247149.jpg&amp;width=220&amp;height=220"/></span><span class="image-large"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\149\1001247149.jpg&amp;width=700&amp;height=700"/></span><ul class="popup-icons"><li class="icon-item"><a href="#" class="image-fullsize">Image fullsize</a></li><li class="icon-item"><a href="https://rkd.nl/en/explore/images/258753" class="database-link" target="_blank">Show in RKDexplore</a></li><li class="icon-item"><a href="#" class="share-link">Share</a></li></ul><div class="addthiscontainer addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="http://catalogue.pietmondrian.nl/paris-2-1920-1937-b104-b281.312/1920-1921-b104-b132/#258753"><div class="visualClear"></div><a class="addthis_button_facebook"></a><a class="addthis_button_twitter"></a><a class="addthis_button_linkedin"></a></div></div></td><td/><td valign="top" align="left"><br/> Piet&#160;Mondriaan
+      &#160;  
+
+    <br/><b>Unfinished composition</b> 1920<br/>oil paint / canvas, 67,7
+        x
+        57,5&#160;cm<br/>Not applicable<br/><br/>B112</td></tr><tr><td colspan="3"><br/><hr/></td></tr></table></td></tr></table></div></body></html><br /><html xmlns:addthis="http://www.addthis.com/help/api-spec"><head><meta HTTP-EQUIV="Content-type" CONTENT="text/html; charset=utf8"/></head><body><div align="center"><table width="100%" border="0" class="main" cellpadding="0" cellspacing=""><tr><td><table class="area" border="0" width="100%" cellpadding="0" cellspacing="0" STYLE="font-size: 12px; font-type: Verdana;font-weight: normal;"><col width="30%"/><col width="5%"/><col width="65%"/><tr><td valign="top" align="center"><span class="listing-link link-to-popup" id="255156"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\206\1001247206.jpg&amp;width=150&amp;height=150"/></span><div class="image-popup"><span class="close-icon">X</span><div class="image-description"> Piet&#160;Mondriaan
+      &#160;  
+
+    ,
+            <b>Tableau no. I</b>,&#160;1920-1921</div><span class="image-thumb"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\206\1001247206.jpg&amp;width=220&amp;height=220"/></span><span class="image-large"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\206\1001247206.jpg&amp;width=700&amp;height=700"/></span><ul class="popup-icons"><li class="icon-item"><a href="#" class="image-fullsize">Image fullsize</a></li><li class="icon-item"><a href="https://rkd.nl/en/explore/images/255156" class="database-link" target="_blank">Show in RKDexplore</a></li><li class="icon-item"><a href="#" class="share-link">Share</a></li></ul><div class="addthiscontainer addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="http://catalogue.pietmondrian.nl/paris-2-1920-1937-b104-b281.312/1920-1921-b104-b132/#255156"><div class="visualClear"></div><a class="addthis_button_facebook"></a><a class="addthis_button_twitter"></a><a class="addthis_button_linkedin"></a></div></div></td><td/><td valign="top" align="left"><br/> Piet&#160;Mondriaan
+      &#160;  
+
+    <br/><b>Tableau no. I</b> 1920-1921<br/>oil paint / canvas, 75,3
+        x
+        65&#160;cm<br/>Not applicable<br/><br/>B113.153 (first state)</td></tr><tr><td colspan="3"><br/><hr/></td></tr></table></td></tr></table></div></body></html><br /><html xmlns:addthis="http://www.addthis.com/help/api-spec"><head><meta HTTP-EQUIV="Content-type" CONTENT="text/html; charset=utf8"/></head><body><div align="center"><table width="100%" border="0" class="main" cellpadding="0" cellspacing=""><tr><td><table class="area" border="0" width="100%" cellpadding="0" cellspacing="0" STYLE="font-size: 12px; font-type: Verdana;font-weight: normal;"><col width="30%"/><col width="5%"/><col width="65%"/><tr><td valign="top" align="center"><span class="listing-link link-to-popup" id="218858"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\629\1001241629.jpg&amp;width=150&amp;height=150"/></span><div class="image-popup"><span class="close-icon">X</span><div class="image-description"> Piet&#160;Mondriaan
+      &#160;  
+
+    ,
+            <b>Composition with yellow, red, black, blue and gray</b>,&#160;dated 1920</div><span class="image-thumb"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\629\1001241629.jpg&amp;width=220&amp;height=220"/></span><span class="image-large"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\629\1001241629.jpg&amp;width=700&amp;height=700"/></span><ul class="popup-icons"><li class="icon-item"><a href="#" class="image-fullsize">Image fullsize</a></li><li class="icon-item"><a href="https://rkd.nl/en/explore/images/218858" class="database-link" target="_blank">Show in RKDexplore</a></li><li class="icon-item"><a href="#" class="share-link">Share</a></li></ul><div class="addthiscontainer addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="http://catalogue.pietmondrian.nl/paris-2-1920-1937-b104-b281.312/1920-1921-b104-b132/#218858"><div class="visualClear"></div><a class="addthis_button_facebook"></a><a class="addthis_button_twitter"></a><a class="addthis_button_linkedin"></a></div></div></td><td/><td valign="top" align="left"><br/> Piet&#160;Mondriaan
+      &#160;  
+
+    <br/><b>Composition with yellow, red, black, blue and gray</b> dated 1920<br/>oil paint / canvas, 51,5
+        x
+        61&#160;cm<br/>Stedelijk Museum Amsterdam, Amsterdam, no.&#160;A 9864<br/><br/>B114</td></tr><tr><td colspan="3"><br/><hr/></td></tr></table></td></tr></table></div></body></html><br /><html xmlns:addthis="http://www.addthis.com/help/api-spec"><head><meta HTTP-EQUIV="Content-type" CONTENT="text/html; charset=utf8"/></head><body><div align="center"><table width="100%" border="0" class="main" cellpadding="0" cellspacing=""><tr><td><table class="area" border="0" width="100%" cellpadding="0" cellspacing="0" STYLE="font-size: 12px; font-type: Verdana;font-weight: normal;"><col width="30%"/><col width="5%"/><col width="65%"/><tr><td valign="top" align="center"><span class="listing-link link-to-popup" id="218862"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\511\1001230511.jpg&amp;width=150&amp;height=150"/></span><div class="image-popup"><span class="close-icon">X</span><div class="image-description"> Piet&#160;Mondriaan
+      &#160;  
+
+    ,
+            <b>Composition with red, black, yellow, blue and grey</b>,&#160;dated 1921</div><span class="image-thumb"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\511\1001230511.jpg&amp;width=220&amp;height=220"/></span><span class="image-large"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\511\1001230511.jpg&amp;width=700&amp;height=700"/></span><ul class="popup-icons"><li class="icon-item"><a href="#" class="image-fullsize">Image fullsize</a></li><li class="icon-item"><a href="https://rkd.nl/en/explore/images/218862" class="database-link" target="_blank">Show in RKDexplore</a></li><li class="icon-item"><a href="#" class="share-link">Share</a></li></ul><div class="addthiscontainer addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="http://catalogue.pietmondrian.nl/paris-2-1920-1937-b104-b281.312/1920-1921-b104-b132/#218862"><div class="visualClear"></div><a class="addthis_button_facebook"></a><a class="addthis_button_twitter"></a><a class="addthis_button_linkedin"></a></div></div></td><td/><td valign="top" align="left"><br/> Piet&#160;Mondriaan
+      &#160;  
+
+    <br/><b>Composition with red, black, yellow, blue and grey</b> dated 1921<br/>oil paint / canvas, 80
+        x
+        50&#160;cm<br/>Gemeentemuseum Den Haag, The Hague, no.&#160;0333163 / sch-1955-0022<br/><br/>B115</td></tr><tr><td colspan="3"><br/><hr/></td></tr></table></td></tr></table></div></body></html><br /><html xmlns:addthis="http://www.addthis.com/help/api-spec"><head><meta HTTP-EQUIV="Content-type" CONTENT="text/html; charset=utf8"/></head><body><div align="center"><table width="100%" border="0" class="main" cellpadding="0" cellspacing=""><tr><td><table class="area" border="0" width="100%" cellpadding="0" cellspacing="0" STYLE="font-size: 12px; font-type: Verdana;font-weight: normal;"><col width="30%"/><col width="5%"/><col width="65%"/><tr><td valign="top" align="center"><span class="listing-link link-to-popup" id="218095"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\634\1001241634.jpg&amp;width=150&amp;height=150"/></span><div class="image-popup"><span class="close-icon">X</span><div class="image-description"> Piet&#160;Mondriaan
+      &#160;  
+
+    ,
+            <b>Composition with yellow, blue, black, red, and gray</b>,&#160;dated 1921</div><span class="image-thumb"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\634\1001241634.jpg&amp;width=220&amp;height=220"/></span><span class="image-large"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\634\1001241634.jpg&amp;width=700&amp;height=700"/></span><ul class="popup-icons"><li class="icon-item"><a href="#" class="image-fullsize">Image fullsize</a></li><li class="icon-item"><a href="https://rkd.nl/en/explore/images/218095" class="database-link" target="_blank">Show in RKDexplore</a></li><li class="icon-item"><a href="#" class="share-link">Share</a></li></ul><div class="addthiscontainer addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="http://catalogue.pietmondrian.nl/paris-2-1920-1937-b104-b281.312/1920-1921-b104-b132/#218095"><div class="visualClear"></div><a class="addthis_button_facebook"></a><a class="addthis_button_twitter"></a><a class="addthis_button_linkedin"></a></div></div></td><td/><td valign="top" align="left"><br/> Piet&#160;Mondriaan
+      &#160;  
+
+    <br/><b>Composition with yellow, blue, black, red, and gray</b> dated 1921<br/>oil paint / canvas, 88,5
+        x
+        72,5&#160;cm<br/>art dealer&#160;
+        Stephen Mazoh &amp; Co. Inc., New York City/Rhinebeck (NY)<br/><br/>B116</td></tr><tr><td colspan="3"><br/><hr/></td></tr></table></td></tr></table></div></body></html><br /><html xmlns:addthis="http://www.addthis.com/help/api-spec"><head><meta HTTP-EQUIV="Content-type" CONTENT="text/html; charset=utf8"/></head><body><div align="center"><table width="100%" border="0" class="main" cellpadding="0" cellspacing=""><tr><td><table class="area" border="0" width="100%" cellpadding="0" cellspacing="0" STYLE="font-size: 12px; font-type: Verdana;font-weight: normal;"><col width="30%"/><col width="5%"/><col width="65%"/><tr><td valign="top" align="center"><span class="listing-link link-to-popup" id="274120"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\512\1001230512.jpg&amp;width=150&amp;height=150"/></span><div class="image-popup"><span class="close-icon">X</span><div class="image-description"> Piet&#160;Mondriaan
+      &#160;  
+
+    ,
+            <b>Composition with large blue plane, red, black, yellow and gray</b>,&#160;dated 1921</div><span class="image-thumb"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\512\1001230512.jpg&amp;width=220&amp;height=220"/></span><span class="image-large"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\512\1001230512.jpg&amp;width=700&amp;height=700"/></span><ul class="popup-icons"><li class="icon-item"><a href="#" class="image-fullsize">Image fullsize</a></li><li class="icon-item"><a href="https://rkd.nl/en/explore/images/274120" class="database-link" target="_blank">Show in RKDexplore</a></li><li class="icon-item"><a href="#" class="share-link">Share</a></li></ul><div class="addthiscontainer addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="http://catalogue.pietmondrian.nl/paris-2-1920-1937-b104-b281.312/1920-1921-b104-b132/#274120"><div class="visualClear"></div><a class="addthis_button_facebook"></a><a class="addthis_button_twitter"></a><a class="addthis_button_linkedin"></a></div></div></td><td/><td valign="top" align="left"><br/> Piet&#160;Mondriaan
+      &#160;  
+
+    <br/><b>Composition with large blue plane, red, black, yellow and gray</b> dated 1921<br/>oil paint / canvas, 60,5
+        x
+        50&#160;cm<br/>Dallas Museum of Art, Dallas (Texas), no.&#160;1984.200.FA<br/><br/>B117</td></tr><tr><td colspan="3"><br/><hr/></td></tr></table></td></tr></table></div></body></html><br /><html xmlns:addthis="http://www.addthis.com/help/api-spec"><head><meta HTTP-EQUIV="Content-type" CONTENT="text/html; charset=utf8"/></head><body><div align="center"><table width="100%" border="0" class="main" cellpadding="0" cellspacing=""><tr><td><table class="area" border="0" width="100%" cellpadding="0" cellspacing="0" STYLE="font-size: 12px; font-type: Verdana;font-weight: normal;"><col width="30%"/><col width="5%"/><col width="65%"/><tr><td valign="top" align="center"><span class="listing-link link-to-popup" id="274121"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\150\1001247150.jpg&amp;width=150&amp;height=150"/></span><div class="image-popup"><span class="close-icon">X</span><div class="image-description"> Piet&#160;Mondriaan
+      &#160;  
+
+    ,
+            <b>Composition with large yellow plane</b>,&#160;1921</div><span class="image-thumb"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\150\1001247150.jpg&amp;width=220&amp;height=220"/></span><span class="image-large"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\150\1001247150.jpg&amp;width=700&amp;height=700"/></span><ul class="popup-icons"><li class="icon-item"><a href="#" class="image-fullsize">Image fullsize</a></li><li class="icon-item"><a href="https://rkd.nl/en/explore/images/274121" class="database-link" target="_blank">Show in RKDexplore</a></li><li class="icon-item"><a href="#" class="share-link">Share</a></li></ul><div class="addthiscontainer addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="http://catalogue.pietmondrian.nl/paris-2-1920-1937-b104-b281.312/1920-1921-b104-b132/#274121"><div class="visualClear"></div><a class="addthis_button_facebook"></a><a class="addthis_button_twitter"></a><a class="addthis_button_linkedin"></a></div></div></td><td/><td valign="top" align="left"><br/> Piet&#160;Mondriaan
+      &#160;  
+
+    <br/><b>Composition with large yellow plane</b> 1921<br/>oil paint / canvas, ?
+        x
+        ?&#160;cm<br/>private collection&#160;
+         Wim and Tonia&#160;Stieltjes, Parijs<br/><br/>B118</td></tr><tr><td colspan="3"><br/><hr/></td></tr></table></td></tr></table></div></body></html><br /><html xmlns:addthis="http://www.addthis.com/help/api-spec"><head><meta HTTP-EQUIV="Content-type" CONTENT="text/html; charset=utf8"/></head><body><div align="center"><table width="100%" border="0" class="main" cellpadding="0" cellspacing=""><tr><td><table class="area" border="0" width="100%" cellpadding="0" cellspacing="0" STYLE="font-size: 12px; font-type: Verdana;font-weight: normal;"><col width="30%"/><col width="5%"/><col width="65%"/><tr><td valign="top" align="center"><span class="listing-link link-to-popup" id="274122"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\151\1001247151.jpg&amp;width=150&amp;height=150"/></span><div class="image-popup"><span class="close-icon">X</span><div class="image-description"> Piet&#160;Mondriaan
+      &#160;  
+
+    ,
+            <b>Composition with large red plane</b>,&#160;1921</div><span class="image-thumb"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\151\1001247151.jpg&amp;width=220&amp;height=220"/></span><span class="image-large"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\151\1001247151.jpg&amp;width=700&amp;height=700"/></span><ul class="popup-icons"><li class="icon-item"><a href="#" class="image-fullsize">Image fullsize</a></li><li class="icon-item"><a href="https://rkd.nl/en/explore/images/274122" class="database-link" target="_blank">Show in RKDexplore</a></li><li class="icon-item"><a href="#" class="share-link">Share</a></li></ul><div class="addthiscontainer addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="http://catalogue.pietmondrian.nl/paris-2-1920-1937-b104-b281.312/1920-1921-b104-b132/#274122"><div class="visualClear"></div><a class="addthis_button_facebook"></a><a class="addthis_button_twitter"></a><a class="addthis_button_linkedin"></a></div></div></td><td/><td valign="top" align="left"><br/> Piet&#160;Mondriaan
+      &#160;  
+
+    <br/><b>Composition with large red plane</b> 1921<br/>oil paint / canvas, ?
+        x
+        ?&#160;cm<br/>private collection&#160;
+         Wim and Tonia&#160;Stieltjes, Parijs<br/><br/>B119</td></tr><tr><td colspan="3"><br/><hr/></td></tr></table></td></tr></table></div></body></html><br /><html xmlns:addthis="http://www.addthis.com/help/api-spec"><head><meta HTTP-EQUIV="Content-type" CONTENT="text/html; charset=utf8"/></head><body><div align="center"><table width="100%" border="0" class="main" cellpadding="0" cellspacing=""><tr><td><table class="area" border="0" width="100%" cellpadding="0" cellspacing="0" STYLE="font-size: 12px; font-type: Verdana;font-weight: normal;"><col width="30%"/><col width="5%"/><col width="65%"/><tr><td valign="top" align="center"><span class="listing-link link-to-popup" id="274125"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\515\1001230515.jpg&amp;width=150&amp;height=150"/></span><div class="image-popup"><span class="close-icon">X</span><div class="image-description"> Piet&#160;Mondriaan
+      &#160;  
+
+    ,
+            <b>Composition with large red plane, black, blue, yellow and gray</b>,&#160;dated 1921</div><span class="image-thumb"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\515\1001230515.jpg&amp;width=220&amp;height=220"/></span><span class="image-large"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\515\1001230515.jpg&amp;width=700&amp;height=700"/></span><ul class="popup-icons"><li class="icon-item"><a href="#" class="image-fullsize">Image fullsize</a></li><li class="icon-item"><a href="https://rkd.nl/en/explore/images/274125" class="database-link" target="_blank">Show in RKDexplore</a></li><li class="icon-item"><a href="#" class="share-link">Share</a></li></ul><div class="addthiscontainer addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="http://catalogue.pietmondrian.nl/paris-2-1920-1937-b104-b281.312/1920-1921-b104-b132/#274125"><div class="visualClear"></div><a class="addthis_button_facebook"></a><a class="addthis_button_twitter"></a><a class="addthis_button_linkedin"></a></div></div></td><td/><td valign="top" align="left"><br/> Piet&#160;Mondriaan
+      &#160;  
+
+    <br/><b>Composition with large red plane, black, blue, yellow and gray</b> dated 1921<br/>oil paint / canvas, 48
+        x
+        48&#160;cm<br/>The Judith Rothschild Foundation, New York City<br/><br/>B120</td></tr><tr><td colspan="3"><br/><hr/></td></tr></table></td></tr></table></div></body></html><br /><html xmlns:addthis="http://www.addthis.com/help/api-spec"><head><meta HTTP-EQUIV="Content-type" CONTENT="text/html; charset=utf8"/></head><body><div align="center"><table width="100%" border="0" class="main" cellpadding="0" cellspacing=""><tr><td><table class="area" border="0" width="100%" cellpadding="0" cellspacing="0" STYLE="font-size: 12px; font-type: Verdana;font-weight: normal;"><col width="30%"/><col width="5%"/><col width="65%"/><tr><td valign="top" align="center"><span class="listing-link link-to-popup" id="255143"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\207\1001247207.jpg&amp;width=150&amp;height=150"/></span><div class="image-popup"><span class="close-icon">X</span><div class="image-description"> Piet&#160;Mondriaan
+      &#160;  
+
+    ,
+            <b>Tableau no. II</b>,&#160;dated 1921</div><span class="image-thumb"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\207\1001247207.jpg&amp;width=220&amp;height=220"/></span><span class="image-large"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\207\1001247207.jpg&amp;width=700&amp;height=700"/></span><ul class="popup-icons"><li class="icon-item"><a href="#" class="image-fullsize">Image fullsize</a></li><li class="icon-item"><a href="https://rkd.nl/en/explore/images/255143" class="database-link" target="_blank">Show in RKDexplore</a></li><li class="icon-item"><a href="#" class="share-link">Share</a></li></ul><div class="addthiscontainer addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="http://catalogue.pietmondrian.nl/paris-2-1920-1937-b104-b281.312/1920-1921-b104-b132/#255143"><div class="visualClear"></div><a class="addthis_button_facebook"></a><a class="addthis_button_twitter"></a><a class="addthis_button_linkedin"></a></div></div></td><td/><td valign="top" align="left"><br/> Piet&#160;Mondriaan
+      &#160;  
+
+    <br/><b>Tableau no. II</b> dated 1921<br/>oil paint / canvas, 75
+        x
+        65&#160;cm<br/>Not applicable<br/><br/>B121.154 (first state)</td></tr><tr><td colspan="3"><br/><hr/></td></tr></table></td></tr></table></div></body></html><br /><html xmlns:addthis="http://www.addthis.com/help/api-spec"><head><meta HTTP-EQUIV="Content-type" CONTENT="text/html; charset=utf8"/></head><body><div align="center"><table width="100%" border="0" class="main" cellpadding="0" cellspacing=""><tr><td><table class="area" border="0" width="100%" cellpadding="0" cellspacing="0" STYLE="font-size: 12px; font-type: Verdana;font-weight: normal;"><col width="30%"/><col width="5%"/><col width="65%"/><tr><td valign="top" align="center"><span class="listing-link link-to-popup" id="274128"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\520\1001230520.jpg&amp;width=150&amp;height=150"/></span><div class="image-popup"><span class="close-icon">X</span><div class="image-description"> Piet&#160;Mondriaan
+      &#160;  
+
+    ,
+            <b>Tableau</b>,&#160;dated 1921</div><span class="image-thumb"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\520\1001230520.jpg&amp;width=220&amp;height=220"/></span><span class="image-large"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\520\1001230520.jpg&amp;width=700&amp;height=700"/></span><ul class="popup-icons"><li class="icon-item"><a href="#" class="image-fullsize">Image fullsize</a></li><li class="icon-item"><a href="https://rkd.nl/en/explore/images/274128" class="database-link" target="_blank">Show in RKDexplore</a></li><li class="icon-item"><a href="#" class="share-link">Share</a></li></ul><div class="addthiscontainer addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="http://catalogue.pietmondrian.nl/paris-2-1920-1937-b104-b281.312/1920-1921-b104-b132/#274128"><div class="visualClear"></div><a class="addthis_button_facebook"></a><a class="addthis_button_twitter"></a><a class="addthis_button_linkedin"></a></div></div></td><td/><td valign="top" align="left"><br/> Piet&#160;Mondriaan
+      &#160;  
+
+    <br/><b>Tableau</b> dated 1921<br/>oil paint / canvas, 49,5
+        x
+        49,5&#160;cm<br/> The&#160;Metropolitan Museum of Art, New York City, no.&#160;1999.363.57<br/><br/>B122</td></tr><tr><td colspan="3"><br/><hr/></td></tr></table></td></tr></table></div></body></html><br /><html xmlns:addthis="http://www.addthis.com/help/api-spec"><head><meta HTTP-EQUIV="Content-type" CONTENT="text/html; charset=utf8"/></head><body><div align="center"><table width="100%" border="0" class="main" cellpadding="0" cellspacing=""><tr><td><table class="area" border="0" width="100%" cellpadding="0" cellspacing="0" STYLE="font-size: 12px; font-type: Verdana;font-weight: normal;"><col width="30%"/><col width="5%"/><col width="65%"/><tr><td valign="top" align="center"><span class="listing-link link-to-popup" id="274135"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\753\1001240753.jpg&amp;width=150&amp;height=150"/></span><div class="image-popup"><span class="close-icon">X</span><div class="image-description"> Piet&#160;Mondriaan
+      &#160;  
+
+    ,
+            <b>Tableau 3</b>,&#160;dated 1921</div><span class="image-thumb"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\753\1001240753.jpg&amp;width=220&amp;height=220"/></span><span class="image-large"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\753\1001240753.jpg&amp;width=700&amp;height=700"/></span><ul class="popup-icons"><li class="icon-item"><a href="#" class="image-fullsize">Image fullsize</a></li><li class="icon-item"><a href="https://rkd.nl/en/explore/images/274135" class="database-link" target="_blank">Show in RKDexplore</a></li><li class="icon-item"><a href="#" class="share-link">Share</a></li></ul><div class="addthiscontainer addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="http://catalogue.pietmondrian.nl/paris-2-1920-1937-b104-b281.312/1920-1921-b104-b132/#274135"><div class="visualClear"></div><a class="addthis_button_facebook"></a><a class="addthis_button_twitter"></a><a class="addthis_button_linkedin"></a></div></div></td><td/><td valign="top" align="left"><br/> Piet&#160;Mondriaan
+      &#160;  
+
+    <br/><b>Tableau 3</b> dated 1921<br/>oil paint / canvas, 49,5
+        x
+        41,5&#160;cm<br/>Emanuel Hoffmann-Stiftung, Bazel (Switzerland), no.&#160;H 1937-3<br/><br/>B123</td></tr><tr><td colspan="3"><br/><hr/></td></tr></table></td></tr></table></div></body></html><br /><html xmlns:addthis="http://www.addthis.com/help/api-spec"><head><meta HTTP-EQUIV="Content-type" CONTENT="text/html; charset=utf8"/></head><body><div align="center"><table width="100%" border="0" class="main" cellpadding="0" cellspacing=""><tr><td><table class="area" border="0" width="100%" cellpadding="0" cellspacing="0" STYLE="font-size: 12px; font-type: Verdana;font-weight: normal;"><col width="30%"/><col width="5%"/><col width="65%"/><tr><td valign="top" align="center"><span class="listing-link link-to-popup" id="274136"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\198\1001247198.jpg&amp;width=150&amp;height=150"/></span><div class="image-popup"><span class="close-icon">X</span><div class="image-description"> Piet&#160;Mondriaan
+      &#160;  
+
+    ,
+            <b>Composition with large red plane, blue, gray, black and yellow</b>,&#160;dated 1921</div><span class="image-thumb"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\198\1001247198.jpg&amp;width=220&amp;height=220"/></span><span class="image-large"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\198\1001247198.jpg&amp;width=700&amp;height=700"/></span><ul class="popup-icons"><li class="icon-item"><a href="#" class="image-fullsize">Image fullsize</a></li><li class="icon-item"><a href="https://rkd.nl/en/explore/images/274136" class="database-link" target="_blank">Show in RKDexplore</a></li><li class="icon-item"><a href="#" class="share-link">Share</a></li></ul><div class="addthiscontainer addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="http://catalogue.pietmondrian.nl/paris-2-1920-1937-b104-b281.312/1920-1921-b104-b132/#274136"><div class="visualClear"></div><a class="addthis_button_facebook"></a><a class="addthis_button_twitter"></a><a class="addthis_button_linkedin"></a></div></div></td><td/><td valign="top" align="left"><br/> Piet&#160;Mondriaan
+      &#160;  
+
+    <br/><b>Composition with large red plane, blue, gray, black and yellow</b> dated 1921<br/>oil paint / canvas, 50
+        x
+        40&#160;cm<br/>Private collection<br/><br/>B124</td></tr><tr><td colspan="3"><br/><hr/></td></tr></table></td></tr></table></div></body></html><br /><html xmlns:addthis="http://www.addthis.com/help/api-spec"><head><meta HTTP-EQUIV="Content-type" CONTENT="text/html; charset=utf8"/></head><body><div align="center"><table width="100%" border="0" class="main" cellpadding="0" cellspacing=""><tr><td><table class="area" border="0" width="100%" cellpadding="0" cellspacing="0" STYLE="font-size: 12px; font-type: Verdana;font-weight: normal;"><col width="30%"/><col width="5%"/><col width="65%"/><tr><td valign="top" align="center"><span class="listing-link link-to-popup" id="218860"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\526\1001230526.jpg&amp;width=150&amp;height=150"/></span><div class="image-popup"><span class="close-icon">X</span><div class="image-description"> Piet&#160;Mondriaan
+      &#160;  
+
+    ,
+            <b>Compositie met rood, blauw, zwart, geel en grijs</b>,&#160;dated 1921</div><span class="image-thumb"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\526\1001230526.jpg&amp;width=220&amp;height=220"/></span><span class="image-large"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\526\1001230526.jpg&amp;width=700&amp;height=700"/></span><ul class="popup-icons"><li class="icon-item"><a href="#" class="image-fullsize">Image fullsize</a></li><li class="icon-item"><a href="https://rkd.nl/en/explore/images/218860" class="database-link" target="_blank">Show in RKDexplore</a></li><li class="icon-item"><a href="#" class="share-link">Share</a></li></ul><div class="addthiscontainer addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="http://catalogue.pietmondrian.nl/paris-2-1920-1937-b104-b281.312/1920-1921-b104-b132/#218860"><div class="visualClear"></div><a class="addthis_button_facebook"></a><a class="addthis_button_twitter"></a><a class="addthis_button_linkedin"></a></div></div></td><td/><td valign="top" align="left"><br/> Piet&#160;Mondriaan
+      &#160;  
+
+    <br/><b>Compositie met rood, blauw, zwart, geel en grijs</b> dated 1921<br/>oil paint / canvas, 39,5
+        x
+        35&#160;cm<br/>Gemeentemuseum Den Haag, The Hague, no.&#160;0334328 / sch-1971-0170<br/><br/>B125</td></tr><tr><td colspan="3"><br/><hr/></td></tr></table></td></tr></table></div></body></html><br /><html xmlns:addthis="http://www.addthis.com/help/api-spec"><head><meta HTTP-EQUIV="Content-type" CONTENT="text/html; charset=utf8"/></head><body><div align="center"><table width="100%" border="0" class="main" cellpadding="0" cellspacing=""><tr><td><table class="area" border="0" width="100%" cellpadding="0" cellspacing="0" STYLE="font-size: 12px; font-type: Verdana;font-weight: normal;"><col width="30%"/><col width="5%"/><col width="65%"/><tr><td valign="top" align="center"><span class="listing-link link-to-popup" id="274138"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\635\1001241635.jpg&amp;width=150&amp;height=150"/></span><div class="image-popup"><span class="close-icon">X</span><div class="image-description"> Piet&#160;Mondriaan
+      &#160;  
+
+    ,
+            <b>Tableau I</b>,&#160;dated 1921</div><span class="image-thumb"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\635\1001241635.jpg&amp;width=220&amp;height=220"/></span><span class="image-large"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\635\1001241635.jpg&amp;width=700&amp;height=700"/></span><ul class="popup-icons"><li class="icon-item"><a href="#" class="image-fullsize">Image fullsize</a></li><li class="icon-item"><a href="https://rkd.nl/en/explore/images/274138" class="database-link" target="_blank">Show in RKDexplore</a></li><li class="icon-item"><a href="#" class="share-link">Share</a></li></ul><div class="addthiscontainer addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="http://catalogue.pietmondrian.nl/paris-2-1920-1937-b104-b281.312/1920-1921-b104-b132/#274138"><div class="visualClear"></div><a class="addthis_button_facebook"></a><a class="addthis_button_twitter"></a><a class="addthis_button_linkedin"></a></div></div></td><td/><td valign="top" align="left"><br/> Piet&#160;Mondriaan
+      &#160;  
+
+    <br/><b>Tableau I</b> dated 1921<br/>oil paint / canvas, 96,5
+        x
+        60,5&#160;cm<br/>Museum Ludwig, Cologne, no.&#160;76/3195<br/><br/>B126</td></tr><tr><td colspan="3"><br/><hr/></td></tr></table></td></tr></table></div></body></html><br /><html xmlns:addthis="http://www.addthis.com/help/api-spec"><head><meta HTTP-EQUIV="Content-type" CONTENT="text/html; charset=utf8"/></head><body><div align="center"><table width="100%" border="0" class="main" cellpadding="0" cellspacing=""><tr><td><table class="area" border="0" width="100%" cellpadding="0" cellspacing="0" STYLE="font-size: 12px; font-type: Verdana;font-weight: normal;"><col width="30%"/><col width="5%"/><col width="65%"/><tr><td valign="top" align="center"><span class="listing-link link-to-popup" id="274159"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\704\1001348704.jpg&amp;width=150&amp;height=150"/></span><div class="image-popup"><span class="close-icon">X</span><div class="image-description"> Piet&#160;Mondriaan
+      &#160;  
+
+    ,
+            <b>Lozenge composition with yellow, black, blue, red and gray</b>,&#160;dated 1921</div><span class="image-thumb"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\704\1001348704.jpg&amp;width=220&amp;height=220"/></span><span class="image-large"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\704\1001348704.jpg&amp;width=700&amp;height=700"/></span><ul class="popup-icons"><li class="icon-item"><a href="#" class="image-fullsize">Image fullsize</a></li><li class="icon-item"><a href="https://rkd.nl/en/explore/images/274159" class="database-link" target="_blank">Show in RKDexplore</a></li><li class="icon-item"><a href="#" class="share-link">Share</a></li></ul><div class="addthiscontainer addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="http://catalogue.pietmondrian.nl/paris-2-1920-1937-b104-b281.312/1920-1921-b104-b132/#274159"><div class="visualClear"></div><a class="addthis_button_facebook"></a><a class="addthis_button_twitter"></a><a class="addthis_button_linkedin"></a></div></div></td><td/><td valign="top" align="left"><br/> Piet&#160;Mondriaan
+      &#160;  
+
+    <br/><b>Lozenge composition with yellow, black, blue, red and gray</b> dated 1921<br/>oil paint / canvas, 60,1
+        x
+        60,1&#160;cm<br/> The&#160;Art Institute of Chicago, Chicago (Illinois), no.&#160;57.307<br/><br/>B127</td></tr><tr><td colspan="3"><br/><hr/></td></tr></table></td></tr></table></div></body></html><br /><html xmlns:addthis="http://www.addthis.com/help/api-spec"><head><meta HTTP-EQUIV="Content-type" CONTENT="text/html; charset=utf8"/></head><body><div align="center"><table width="100%" border="0" class="main" cellpadding="0" cellspacing=""><tr><td><table class="area" border="0" width="100%" cellpadding="0" cellspacing="0" STYLE="font-size: 12px; font-type: Verdana;font-weight: normal;"><col width="30%"/><col width="5%"/><col width="65%"/><tr><td valign="top" align="center"><span class="listing-link link-to-popup" id="220211"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\551\1001230551.jpg&amp;width=150&amp;height=150"/></span><div class="image-popup"><span class="close-icon">X</span><div class="image-description"> Piet&#160;Mondriaan
+      &#160;  
+
+    ,
+            <b>Tableau I</b>,&#160;dated 1921</div><span class="image-thumb"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\551\1001230551.jpg&amp;width=220&amp;height=220"/></span><span class="image-large"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\551\1001230551.jpg&amp;width=700&amp;height=700"/></span><ul class="popup-icons"><li class="icon-item"><a href="#" class="image-fullsize">Image fullsize</a></li><li class="icon-item"><a href="https://rkd.nl/en/explore/images/220211" class="database-link" target="_blank">Show in RKDexplore</a></li><li class="icon-item"><a href="#" class="share-link">Share</a></li></ul><div class="addthiscontainer addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="http://catalogue.pietmondrian.nl/paris-2-1920-1937-b104-b281.312/1920-1921-b104-b132/#220211"><div class="visualClear"></div><a class="addthis_button_facebook"></a><a class="addthis_button_twitter"></a><a class="addthis_button_linkedin"></a></div></div></td><td/><td valign="top" align="left"><br/> Piet&#160;Mondriaan
+      &#160;  
+
+    <br/><b>Tableau I</b> dated 1921<br/>oil paint / canvas, 103
+        x
+        100&#160;cm<br/>Gemeentemuseum Den Haag, The Hague, no.&#160;0334327 / sch-1971-0169<br/><br/>B128</td></tr><tr><td colspan="3"><br/><hr/></td></tr></table></td></tr></table></div></body></html><br /><html xmlns:addthis="http://www.addthis.com/help/api-spec"><head><meta HTTP-EQUIV="Content-type" CONTENT="text/html; charset=utf8"/></head><body><div align="center"><table width="100%" border="0" class="main" cellpadding="0" cellspacing=""><tr><td><table class="area" border="0" width="100%" cellpadding="0" cellspacing="0" STYLE="font-size: 12px; font-type: Verdana;font-weight: normal;"><col width="30%"/><col width="5%"/><col width="65%"/><tr><td valign="top" align="center"><span class="listing-link link-to-popup" id="274162"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\636\1001241636.jpg&amp;width=150&amp;height=150"/></span><div class="image-popup"><span class="close-icon">X</span><div class="image-description"> Piet&#160;Mondriaan
+      &#160;  
+
+    ,
+            <b>Tableau II</b>,&#160;dated 1921</div><span class="image-thumb"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\636\1001241636.jpg&amp;width=220&amp;height=220"/></span><span class="image-large"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\636\1001241636.jpg&amp;width=700&amp;height=700"/></span><ul class="popup-icons"><li class="icon-item"><a href="#" class="image-fullsize">Image fullsize</a></li><li class="icon-item"><a href="https://rkd.nl/en/explore/images/274162" class="database-link" target="_blank">Show in RKDexplore</a></li><li class="icon-item"><a href="#" class="share-link">Share</a></li></ul><div class="addthiscontainer addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="http://catalogue.pietmondrian.nl/paris-2-1920-1937-b104-b281.312/1920-1921-b104-b132/#274162"><div class="visualClear"></div><a class="addthis_button_facebook"></a><a class="addthis_button_twitter"></a><a class="addthis_button_linkedin"></a></div></div></td><td/><td valign="top" align="left"><br/> Piet&#160;Mondriaan
+      &#160;  
+
+    <br/><b>Tableau II</b> dated 1921<br/>oil paint / canvas, 101
+        x
+        99&#160;cm<br/>Private collection, no.&#160;1984/69<br/><br/>B129</td></tr><tr><td colspan="3"><br/><hr/></td></tr></table></td></tr></table></div></body></html><br /><html xmlns:addthis="http://www.addthis.com/help/api-spec"><head><meta HTTP-EQUIV="Content-type" CONTENT="text/html; charset=utf8"/></head><body><div align="center"><table width="100%" border="0" class="main" cellpadding="0" cellspacing=""><tr><td><table class="area" border="0" width="100%" cellpadding="0" cellspacing="0" STYLE="font-size: 12px; font-type: Verdana;font-weight: normal;"><col width="30%"/><col width="5%"/><col width="65%"/><tr><td valign="top" align="center"><span class="listing-link link-to-popup" id="218084"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\568\1001230568.jpg&amp;width=150&amp;height=150"/></span><div class="image-popup"><span class="close-icon">X</span><div class="image-description"> Piet&#160;Mondriaan
+      &#160;  
+
+    ,
+            <b>Composition with large red plane, yellow, black, gray and blue</b>,&#160;dated 1921</div><span class="image-thumb"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\568\1001230568.jpg&amp;width=220&amp;height=220"/></span><span class="image-large"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\568\1001230568.jpg&amp;width=700&amp;height=700"/></span><ul class="popup-icons"><li class="icon-item"><a href="#" class="image-fullsize">Image fullsize</a></li><li class="icon-item"><a href="https://rkd.nl/en/explore/images/218084" class="database-link" target="_blank">Show in RKDexplore</a></li><li class="icon-item"><a href="#" class="share-link">Share</a></li></ul><div class="addthiscontainer addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="http://catalogue.pietmondrian.nl/paris-2-1920-1937-b104-b281.312/1920-1921-b104-b132/#218084"><div class="visualClear"></div><a class="addthis_button_facebook"></a><a class="addthis_button_twitter"></a><a class="addthis_button_linkedin"></a></div></div></td><td/><td valign="top" align="left"><br/> Piet&#160;Mondriaan
+      &#160;  
+
+    <br/><b>Composition with large red plane, yellow, black, gray and blue</b> dated 1921<br/>oil paint / canvas, 59,5
+        x
+        59,5&#160;cm<br/>Gemeentemuseum Den Haag, The Hague, no.&#160;0333329 / sch-1957-0071<br/><br/>B130</td></tr><tr><td colspan="3"><br/><hr/></td></tr></table></td></tr></table></div></body></html><br /><html xmlns:addthis="http://www.addthis.com/help/api-spec"><head><meta HTTP-EQUIV="Content-type" CONTENT="text/html; charset=utf8"/></head><body><div align="center"><table width="100%" border="0" class="main" cellpadding="0" cellspacing=""><tr><td><table class="area" border="0" width="100%" cellpadding="0" cellspacing="0" STYLE="font-size: 12px; font-type: Verdana;font-weight: normal;"><col width="30%"/><col width="5%"/><col width="65%"/><tr><td valign="top" align="center"><span class="listing-link link-to-popup" id="274176"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\752\1001240752.jpg&amp;width=150&amp;height=150"/></span><div class="image-popup"><span class="close-icon">X</span><div class="image-description"> Piet&#160;Mondriaan
+      &#160;  
+
+    ,
+            <b>Composition with red, yellow, black, blue, and gray</b>,&#160;dated 1921</div><span class="image-thumb"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\752\1001240752.jpg&amp;width=220&amp;height=220"/></span><span class="image-large"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\752\1001240752.jpg&amp;width=700&amp;height=700"/></span><ul class="popup-icons"><li class="icon-item"><a href="#" class="image-fullsize">Image fullsize</a></li><li class="icon-item"><a href="https://rkd.nl/en/explore/images/274176" class="database-link" target="_blank">Show in RKDexplore</a></li><li class="icon-item"><a href="#" class="share-link">Share</a></li></ul><div class="addthiscontainer addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="http://catalogue.pietmondrian.nl/paris-2-1920-1937-b104-b281.312/1920-1921-b104-b132/#274176"><div class="visualClear"></div><a class="addthis_button_facebook"></a><a class="addthis_button_twitter"></a><a class="addthis_button_linkedin"></a></div></div></td><td/><td valign="top" align="left"><br/> Piet&#160;Mondriaan
+      &#160;  
+
+    <br/><b>Composition with red, yellow, black, blue, and gray</b> dated 1921<br/>oil paint / canvas, 48
+        x
+        38&#160;cm<br/>Vereniging Rembrandt, Amsterdam<br/><br/>B131</td></tr><tr><td colspan="3"><br/><hr/></td></tr></table></td></tr></table></div></body></html><br /><html xmlns:addthis="http://www.addthis.com/help/api-spec"><head><meta HTTP-EQUIV="Content-type" CONTENT="text/html; charset=utf8"/></head><body><div align="center"><table width="100%" border="0" class="main" cellpadding="0" cellspacing=""><tr><td><table class="area" border="0" width="100%" cellpadding="0" cellspacing="0" STYLE="font-size: 12px; font-type: Verdana;font-weight: normal;"><col width="30%"/><col width="5%"/><col width="65%"/><tr><td valign="top" align="center"><span class="listing-link link-to-popup" id="274181"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\711\1001348711.jpg&amp;width=150&amp;height=150"/></span><div class="image-popup"><span class="close-icon">X</span><div class="image-description"> Piet&#160;Mondriaan
+      &#160;  
+
+    ,
+            <b>Composition with red, blue, black, yellow and gray</b>,&#160;dated 1921</div><span class="image-thumb"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\711\1001348711.jpg&amp;width=220&amp;height=220"/></span><span class="image-large"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\711\1001348711.jpg&amp;width=700&amp;height=700"/></span><ul class="popup-icons"><li class="icon-item"><a href="#" class="image-fullsize">Image fullsize</a></li><li class="icon-item"><a href="https://rkd.nl/en/explore/images/274181" class="database-link" target="_blank">Show in RKDexplore</a></li><li class="icon-item"><a href="#" class="share-link">Share</a></li></ul><div class="addthiscontainer addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="http://catalogue.pietmondrian.nl/paris-2-1920-1937-b104-b281.312/1920-1921-b104-b132/#274181"><div class="visualClear"></div><a class="addthis_button_facebook"></a><a class="addthis_button_twitter"></a><a class="addthis_button_linkedin"></a></div></div></td><td/><td valign="top" align="left"><br/> Piet&#160;Mondriaan
+      &#160;  
+
+    <br/><b>Composition with red, blue, black, yellow and gray</b> dated 1921<br/>oil paint / canvas, 76
+        x
+        52,4&#160;cm<br/> The&#160;Museum of Modern Art, New York City, no.&#160;154.57<br/><br/>B132</td></tr><tr><td colspan="3"><br/><hr/></td></tr></table></td></tr></table></div></body></html><br />&nbsp;</p><br /></div>
+    
+
+      
+
+    <div class="documentByLine">       
+      Datum laatste wijziging: 
+      Aug 04, 2016 12:35 PM
+      
+      <div>            
+        <a class="previous"
+           href="http://catalogue.pietmondrian.nl/paris-2-1920-1937-b104-b281.312">
+          &laquo; Vorige
+        </a>
+        <a class="next"
+           href="http://catalogue.pietmondrian.nl/paris-2-1920-1937-b104-b281.312/1922-1923-b133-b150">
+          Volgende &raquo;
+        </a>
+      </div>     
+    </div>
+    
+
+        
+        
+          <!-- end page content -->
+      
+      <div class="visualClear"></div>
+    </div>
+    <div id="portal-footer">
+      <a title="Disclaimer"
+         href="http://catalogue.pietmondrian.nl/disclaimer">Disclaimer</a>   |
+      <a title="Privacy Statement"
+         href="http://catalogue.pietmondrian.nl/privacy_statement">Privacy Statement</a>   |
+        Copyright <sup>&copy;</sup> <script type="text/javascript">date = new Date(); document.write(date.getFullYear());</script>
+        - RKD Monographs. <a href="http://www.swordfish.nl" target="_blank">Powered by SwordFish<sup>&reg;</sup></a>
+    </div>
+  </div>
+<!-- end content column -->
+   <!-- left column -->
+  	<div id="column1-wrapper">
+	   <div id="column_1">
+       
+          
+<div id="portletwrapper-73776f7264666973682e66726f6e74656e642e6c656674636f6c756d6e0a636f6e746578740a2f5357332f6d6f6e64726961616e0a6d656e75706c6161746a65"
+     class="kssattr-portlethash-73776f7264666973682e66726f6e74656e642e6c656674636f6c756d6e0a636f6e746578740a2f5357332f6d6f6e64726961616e0a6d656e75706c6161746a65"><div class="portlet portletHtmlText sponsors">
+
+    <div class="portletTitle">
+        <h2>
+        	Menuplaatje
+        </h2>
+    </div>
+
+    <div class="portletBody">
+        <p><img src="/mondriaan/bestanden/nieuwe-afbeelding-menu/image_preview" alt="Nieuwe afbeelding menu" height="168" width="169" /></p>
+		
+    </div>
+</div>
+</div>
+
+<div id="portletwrapper-73776f7264666973682e66726f6e74656e642e6c656674636f6c756d6e0a636f6e746578740a2f5357332f6d6f6e64726961616e0a6e617669676174696f6e"
+     class="kssattr-portlethash-73776f7264666973682e66726f6e74656e642e6c656674636f6c756d6e0a636f6e746578740a2f5357332f6d6f6e64726961616e0a6e617669676174696f6e">
+		<div class="portlet portletNavigationTree">
+	        <ul class="portletNavigationTree navTreeLevel0">
+	            
+	            
+
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/link-verantwoording"
+           class="state-published" title="">
+          
+            Foreword
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/inleiding"
+           class="state-published" title="">
+          
+            Notes to Readers
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/catalogus"
+           class="state-published" title="">
+          
+            Catalogue
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/copy_of_winterswijk-i-before-circa-1897-a1-a22"
+           class="state-published" title="">
+          
+            Winterswijk, 1888-1896 (A1-A22) 
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/amsterdam-i-circa-1893-1897-a23-a49"
+           class="state-published" title="">
+          
+            Amsterdam, 1893-1897 (A23-A49)
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/winterswijk-2-1897-1899-a50-a91"
+           class="state-published" title="">
+          
+            Winterswijk, 1897-1899 (A50-A91)
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/amsterdam-2-circa-1897-1901-a92-a259"
+           class="state-published" title="">
+          
+            Amsterdam, 1897-1901 (A92-A259) 
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/amsterdam-3-circa-1902-1905-a260-a351"
+           class="state-published" title="">
+          
+            Amsterdam, 1902-1905 (A260-A351)
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/brabant-1904-early-1905-a352-a379"
+           class="state-published" title="">
+          
+            Brabant, 1904-1905 (A352-A379)
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/amsterdam-4-circa-1905-early-1908-a380-a537"
+           class="state-published" title="">
+          
+            Amsterdam, 1905-1908 (A380-A537)
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/twente-circa-1906-early-1908-a538-a593"
+           class="state-published" title="">
+          
+            Twente, 1906-1908 (A538-A593)
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/amsterdam-5-circa-1908-1911-a594-a673"
+           class="state-published" title="">
+          
+            Amsterdam, 1908-1911 (A594-A673)
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/zeeland-1909-1911-a674-a710-b1"
+           class="state-published" title="">
+          
+            Zeeland, 1909-1911 (A674-A710, B1)
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/unidentified-references-ua1-ua50"
+           class="state-published" title="">
+          
+            Unidentified references (UA1-UA50)
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/amsterdam-1911-b2-b4"
+           class="state-published" title="">
+          
+            Amsterdam, 1911 (B2-B4) 
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/paris-1-1912-1914-b5-b56"
+           class="state-published" title="">
+          
+            Paris 1, 1912-1914 (B5-B56)
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/nederland-1914-1919-b57-b103"
+           class="state-published" title="">
+          
+            Holland, 1914-1919 (B57-B103)
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker navTreeItemInPath">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/paris-2-1920-1937-b104-b281.312"
+           class="state-published" title="">
+          
+            Paris 2, 1920-1937 (B104-B281.312)
+        </a>
+        
+    <ul class="navTree navTreeLevel1">  
+        
+
+
+
+<li class="navTreeItem visualNoMarker navTreeCurrentNode navTreeItemInPath">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/paris-2-1920-1937-b104-b281.312/1920-1921-b104-b132"
+           class="state-published navTreeCurrentItem"
+           title="">
+          
+            1920-1921 (B104-B132)
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/paris-2-1920-1937-b104-b281.312/1922-1923-b133-b150"
+           class="state-published" title="">
+          
+            1922-1923 (B133-B150)
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/paris-2-1920-1937-b104-b281.312/1924-1926-b151.156-b181"
+           class="state-published" title="">
+          
+            1924-1926 (B151.156-B181)
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/paris-2-1920-1937-b104-b281.312/1927-1928-b182-b205"
+           class="state-published" title="">
+          
+            1927-1928 (B182-B205)
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/paris-2-1920-1937-b104-b281.312/1929-1930-b206-b225"
+           class="state-published" title="">
+          
+            1929-1930 (B206-B225)
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/paris-2-1920-1937-b104-b281.312/1931-1934-b226-b252.258"
+           class="state-published" title="">
+          
+            1931-1934 (B226-B252.258)
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/paris-2-1920-1937-b104-b281.312/1935-1937-b253-b281.312"
+           class="state-published" title="">
+          
+            1935-1937 (B253-B281.312)
+        </a>
+        
+    
+    
+</li>
+
+
+
+
+    </ul>
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/london-1938-1939-b282-b295.315"
+           class="state-published" title="">
+          
+            London, 1938-1939 (B282-B295.315)
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/new-york-1940-1944-b296.318-b324"
+           class="state-published" title="">
+          
+            New York, 1940-1944 (B296.318-B324)
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/drawings-1925-1943-b325-b370"
+           class="state-published" title="">
+          
+            Sketchbook, 1925 (B325-B333)
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/sketches-and-studies-b334-b370"
+           class="state-published" title="">
+          
+            Sketches and studies (B334-B370)
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/sketchbook-i-1914-b371-b375"
+           class="state-published" title="">
+          
+            Sketchbook I, 1914 (B371-B375)
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/sketchbook-ii-1914-b376-b378"
+           class="state-published" title="">
+          
+            Sketchbook II, 1914 (B376-B378)
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/sketchbook-leaves-1912-1914-b379-b411"
+           class="state-published" title="">
+          
+            Sketchbook leaves, 1912-1914 (B379-B411)
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/catalogue-of-the-furniture-b412-415"
+           class="state-published" title="">
+          
+            Furniture (B412-415)
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/unidentifiable-references-u1-u27"
+           class="state-published" title="">
+          
+            Unidentifiable references (U1-U27)
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/catalogue-of-late-naturalistic-works-c1-c155"
+           class="state-published" title="">
+          
+            Late naturalistic works, 1912-1942 (C1-C155)
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/copies-c154-c155"
+           class="state-published" title="">
+          
+            Copies (C154-C155)
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/additions"
+           class="state-published" title="">
+          
+            New Additions
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/bibliography"
+           class="state-published" title="">
+          
+            Bibliography 1994-2017 (selection)
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/colophon-and-copyright-notice"
+           class="state-published" title="">
+          
+            Colophon and copyright notice
+        </a>
+        
+    
+    
+</li>
+
+
+
+
+	        </ul>
+		</div>
+
+</div>
+
+		   
+	   </div>
+	   <div id="column1-bottom"></div>
+	    <div class="visualClear"></div>
+	</div>
+<!-- end left column -->
+    <div class="print-version">
+      De afgedrukte pagina is te vinden op:  <a
+    href="http://catalogue.pietmondrian.nl/paris-2-1920-1937-b104-b281.312/1920-1921-b104-b132">http://catalogue.pietmondrian.nl/paris-2-1920-1937-b104-b281.312/1920-1921-b104-b132</a>
+    </div>
+  </div>
+</div>
+
+
+	</div >
+	</body >
+
+ </html>
+
+

@@ -1,0 +1,1315 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+
+
+<!-- <tal:global_defines define="global foo context/@@frontend/globalize"/>
+ -->
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="nl"
+      xml:lang="nl">
+
+  
+    
+    
+    
+    
+    
+    
+
+  
+
+<head>
+<base href="http://catalogue.pietmondrian.nl/amsterdam-2-circa-1897-1901-a92-a259/landscapes-het-gooi-a165-a176/" />
+
+
+    <meta http-equiv="Content-Type"
+          content="text/html;charset=utf-8" />
+
+    <title>Piet Mondrian | Landscapes (Het Gooi) (A165-A176)</title>
+    <link rel="kss-base-url" href="http://catalogue.pietmondrian.nl/amsterdam-2-circa-1897-1901-a92-a259/landscapes-het-gooi-a165-a176" />
+
+  
+  
+    
+    
+    
+      <style type="text/css">@import url(http://catalogue.pietmondrian.nl/portal_css/rkdmonographsskin/kupustyles.css);</style>
+    
+    
+    
+  
+
+  
+    
+    
+    
+      <style type="text/css">@import url(http://catalogue.pietmondrian.nl/portal_css/rkdmonographsskin/kupuplone.css);</style>
+    
+    
+    
+  
+
+  
+    
+    
+    
+      <style type="text/css">@import url(http://catalogue.pietmondrian.nl/portal_css/rkdmonographsskin/kupudrawerstyles.css);</style>
+    
+    
+    
+  
+
+  
+    
+    
+    
+      <style type="text/css" media="print">@import url(http://catalogue.pietmondrian.nl/portal_css/rkdmonographsskin/print.css);</style>
+    
+    
+    
+  
+
+  
+    
+    
+    
+      <style type="text/css" media="screen">@import url(http://catalogue.pietmondrian.nl/portal_css/rkdmonographsskin/jscalendar/calendar-system.css);</style>
+    
+    
+    
+  
+
+  
+    
+        <!--[if IE]>    
+    
+    
+    
+      <style type="text/css" media="screen">@import url(http://catalogue.pietmondrian.nl/portal_css/rkdmonographsskin/IEFixes.css);</style>
+    
+    
+    
+        <![endif]-->
+    
+  
+
+  
+    
+    
+    
+      <style type="text/css" media="screen">@import url(http://catalogue.pietmondrian.nl/portal_css/rkdmonographsskin/defaultstyle.css);</style>
+    
+    
+    
+  
+
+  
+    
+    
+    
+      <style type="text/css" media="screen">@import url(http://catalogue.pietmondrian.nl/portal_css/rkdmonographsskin/subsite-theme.css);</style>
+    
+    
+    
+  
+
+  
+    
+    
+    
+      <style type="text/css" media="screen">@import url(http://catalogue.pietmondrian.nl/portal_css/rkdmonographsskin/rkdmonographs.css);</style>
+    
+    
+    
+  
+
+  
+    
+        <!--[if IE 7]>    
+    
+    
+    
+      <style type="text/css" media="screen">@import url(http://catalogue.pietmondrian.nl/portal_css/rkdmonographsskin/ie7fix.css);</style>
+    
+    
+    
+        <![endif]-->
+    
+  
+
+  
+    
+        <!--[if IE 8]>    
+    
+    
+    
+      <style type="text/css" media="screen">@import url(http://catalogue.pietmondrian.nl/portal_css/rkdmonographsskin/ie8fix.css);</style>
+    
+    
+    
+        <![endif]-->
+    
+  
+
+  
+    
+    
+    
+      <style type="text/css" media="screen">@import url(http://catalogue.pietmondrian.nl/portal_css/rkdmonographsskin/products.rkdmonographs.css);</style>
+    
+    
+    
+  
+
+  
+    
+    
+    
+      <style type="text/css" media="screen">@import url(http://catalogue.pietmondrian.nl/portal_css/rkdmonographsskin/monographs_print.css);</style>
+    
+    
+    
+  
+
+
+  
+  
+    
+    
+      <script type="text/javascript"
+              src="http://catalogue.pietmondrian.nl/portal_javascripts/rkdmonographsskin/jquery-cachekey2945.js">
+      </script>
+    
+    
+    
+  
+
+  
+    
+    
+      <script type="text/javascript"
+              src="http://catalogue.pietmondrian.nl/portal_javascripts/rkdmonographsskin/calendar_formfield-cachekey8509.js">
+      </script>
+    
+    
+    
+  
+
+  
+    
+    
+      <script type="text/javascript"
+              src="http://catalogue.pietmondrian.nl/portal_javascripts/rkdmonographsskin/swordfish_functions-cachekey3423.js">
+      </script>
+    
+    
+    
+  
+
+  
+    
+    
+      <script type="text/javascript"
+              src="http://catalogue.pietmondrian.nl/portal_javascripts/rkdmonographsskin/fckeditor-cachekey0070.js">
+      </script>
+    
+    
+    
+  
+
+  
+    
+    
+      <script type="text/javascript"
+              src="http://catalogue.pietmondrian.nl/portal_javascripts/rkdmonographsskin/print-cachekey8927.js">
+      </script>
+    
+    
+    
+  
+
+  
+    
+    
+      <script type="text/javascript"
+              src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=xa-4fd87a8b529ac85b">
+      </script>
+    
+    
+    
+  
+
+  
+    
+      <!--[if lt IE 9]>    
+    
+    
+      <script type="text/javascript"
+              src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js">
+      </script>
+    
+    
+    
+        <![endif]-->
+    
+  
+
+
+  
+  <link rel="kinetic-stylesheet" type="text/css"
+        href="http://catalogue.pietmondrian.nl/portal_kss/rkdmonographsskin/plone-cachekey6395.kss" />
+
+  <link rel="kinetic-stylesheet" type="text/css"
+        href="http://catalogue.pietmondrian.nl/portal_kss/rkdmonographsskin/fckeditor_plone-cachekey4455.kss" />
+
+
+
+          
+<!--      <script type="text/javascript" charset="iso-8859-1"-->
+<!--              src="jscripts/tiny_mce/tiny_mce.js"> </script>-->
+<!--      <script type="text/javascript" charset="iso-8859-1"-->
+<!--              src="jscripts/tiny_mce/tiny_mce_init.js"> </script>-->
+    
+   
+
+<title>Landscapes (Het Gooi) (A165-A176) &mdash; Piet Mondrian</title>
+
+    
+
+    <link rel="shortcut icon" type="image/x-icon"
+          href="http://catalogue.pietmondrian.nl/favicon.ico" />
+
+
+
+    <link rel="home" href="http://catalogue.pietmondrian.nl"
+          title="Front page" />
+
+    <link rel="contents"
+          href="http://catalogue.pietmondrian.nl/sitemap"
+          title="Site Map" />
+
+
+
+
+
+
+    <link rel="search"
+          href="http://catalogue.pietmondrian.nl/search_form"
+          title="Search this site" />
+
+
+<!-- Internet Explorer ACC CSS Fixes -->
+<!-- MOVED TO RESOURCE REGISTRIES -->
+
+
+
+    <!-- Disable IE6 image toolbar -->
+    <meta http-equiv="imagetoolbar" content="no" />
+
+
+	
+    
+    <link rel="stylesheet" type="text/css" href="/subsite-theme.css" />
+
+   
+</head>
+
+   
+   	 <body>
+   
+
+   
+   	 <div id='mainContainer' class='contentpage'>
+   
+
+  <div class="print-version">
+    <img id="print-logo"
+         src="http://catalogue.pietmondrian.nl/print_logo.gif"
+         alt="Landscapes (Het Gooi) (A165-A176)" />
+  </div>
+   <div id="top-actions-container">
+     <div id="socialmedia">
+       <span class="share-link">Share</span>
+       <div id="addthiscontainer" class="addthis_toolbox addthis_default_style addthis_32x32_style" addthis:title="RKD Monographs">
+        	 <div class="visualClear"></div>
+          <a class="addthis_button_facebook"></a>
+          <a class="addthis_button_twitter"></a>
+          <a class="addthis_button_linkedin"></a>
+        </div>
+     </div>
+
+    <ul id="portal-siteactions">
+      <!-- test -->
+      <li id="action-contact">
+        <a title="Link naar contactformulier"
+           href="http://catalogue.pietmondrian.nl/contact-info">
+          <img alt="e-mail"
+               src="http://catalogue.pietmondrian.nl/email-icon.gif" />
+        </a>
+      </li>
+      <li id="action-home">
+        <a title="Homepage"
+           href="http://www.rkdmonographs.nl">
+          <img alt="homepage"
+               src="http://catalogue.pietmondrian.nl/home-icon.gif" />
+        </a>
+      </li><li id="action-rkdhome">
+        <a href="http://www.rkd.nl" title="Link naar RKD website">RKD-home</a></li><li id="action-sitemap"><a
+    title="Sitemap"
+    href="http://catalogue.pietmondrian.nl/sitemap">sitemap</a>
+      </li></ul>     
+   </div>
+   <div id="logo-actions-container">
+    <a id="portal-logo" class="header" accesskey="1"
+       href="http://catalogue.pietmondrian.nl">
+      <img src="http://catalogue.pietmondrian.nl/rkd-logo.png"
+           alt="Landscapes (Het Gooi) (A165-A176)" />
+    </a>
+   </div>
+
+
+<div id="columnWrapper">
+   <div id="header-wrapper">
+      
+        <a class="link-logo"
+           href="http://catalogue.pietmondrian.nl">
+         <div class="header header-image"
+              style="background-image:url(http://catalogue.pietmondrian.nl/header_images/banner-mondriaan)">
+         </div>
+         </a>
+      
+      <div id="searchContainerRight">
+         <form id="livesearch0"
+               action="http://catalogue.pietmondrian.nl/search"
+               name="searchform">
+            <div id="portal-searchbox">
+    <form name="searchform"
+          action="http://catalogue.pietmondrian.nl/search">
+
+        <label for="searchGadget" class="hiddenStructure">Search Site</label>
+
+        <div class="LSBox">
+        <input name="SearchableText" type="text" size="18"
+               title="Search Site" accesskey="4"
+               class="inputLabel" id="searchGadget" />
+
+        <input class="searchButton" type="submit" value="" />
+    
+        <div class="searchSection">
+            <input id="searchbox_currentfolder_only"
+                   class="noborder" type="checkbox"
+                   name="path"
+                   value="/SW3/mondriaan/amsterdam-2-circa-1897-1901-a92-a259/landscapes-het-gooi-a165-a176" />
+            <label for="searchbox_currentfolder_only"
+                   style="cursor: pointer">
+                only in current section
+            </label>
+        </div>
+
+        <div class="LSResult" id="LSResult" style=""><div class="LSShadow" id="LSShadow"></div></div>
+        </div>
+    </form>
+
+    <div id="portal-advanced-search" class="hiddenStructure">
+        <a href="http://catalogue.pietmondrian.nl/search_form"
+           accesskey="5">
+            Advanced Search&hellip;
+        </a>
+    </div>
+
+</div>
+
+			</form>
+      </div>
+      
+       <div id="portal-breadcrumbs">
+
+    <span id="breadcrumbs-you-are-here">You
+are here:</span>
+    <a href="http://catalogue.pietmondrian.nl">Home</a>
+    <span class="breadcrumbSeparator">
+        &rarr;
+        
+    </span>
+    <span dir="ltr">
+        
+            <a href="http://catalogue.pietmondrian.nl/amsterdam-2-circa-1897-1901-a92-a259">Amsterdam, 1897-1901 (A92-A259) </a>
+            <span class="breadcrumbSeparator">
+                &rarr;
+                
+            </span>
+            
+         
+    </span>
+    <span dir="ltr">
+        
+            
+            
+            <span>Landscapes (Het Gooi) (A165-A176)</span>
+         
+    </span>
+
+</div>
+
+      
+
+	</div>
+
+<!-- content column -->
+  <div id="contentcolumns-wrapper">
+   <div id="column_2">
+      <div id="content">
+       
+         
+
+    <dl class="portalMessage info" id="kssPortalMessage" style="display:none">
+        <dt>Info</dt>
+        <dd></dd>
+    </dl>
+
+
+          <!-- page content -->
+        
+           
+          
+  
+  <div class="visualClear"><!-- --></div>
+<div class="documentActions">
+    
+
+    <h5 class="hiddenStructure">Document Actions</h5>
+
+    <ul>
+    
+        <li id="document-action-print">
+            <a href="javascript:print();" title="">deze pagina</a>
+        </li>
+    
+
+    </ul>
+    
+
+    
+
+</div>
+
+    
+        <h1> 
+          Landscapes (Het Gooi) (A165-A176)
+          
+        </h1>
+    
+    
+    
+
+    
+
+
+
+    
+
+    
+      <div class="document_content"><p><html xmlns:addthis="http://www.addthis.com/help/api-spec"><head><meta HTTP-EQUIV="Content-type" CONTENT="text/html; charset=utf8"/></head><body><div align="center"><table width="100%" border="0" class="main" cellpadding="0" cellspacing=""><tr><td><table class="area" border="0" width="100%" cellpadding="0" cellspacing="0" STYLE="font-size: 12px; font-type: Verdana;font-weight: normal;"><col width="30%"/><col width="5%"/><col width="65%"/><tr><td valign="top" align="center"><span class="listing-link link-to-popup" id="263278"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\977\1001204977.jpg&amp;width=150&amp;height=150"/></span><div class="image-popup"><span class="close-icon">X</span><div class="image-description"> Piet&#160;Mondriaan
+      &#160;  
+
+    ,
+            <b>Farm building near Laren</b>,&#160;c. 1898-1899</div><span class="image-thumb"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\977\1001204977.jpg&amp;width=220&amp;height=220"/></span><span class="image-large"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\977\1001204977.jpg&amp;width=700&amp;height=700"/></span><ul class="popup-icons"><li class="icon-item"><a href="#" class="image-fullsize">Image fullsize</a></li><li class="icon-item"><a href="https://rkd.nl/en/explore/images/263278" class="database-link" target="_blank">Show in RKDexplore</a></li><li class="icon-item"><a href="#" class="share-link">Share</a></li></ul><div class="addthiscontainer addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="http://catalogue.pietmondrian.nl/amsterdam-2-circa-1897-1901-a92-a259/landscapes-het-gooi-a165-a176/#263278"><div class="visualClear"></div><a class="addthis_button_facebook"></a><a class="addthis_button_twitter"></a><a class="addthis_button_linkedin"></a></div></div></td><td/><td valign="top" align="left"><br/> Piet&#160;Mondriaan
+      &#160;  
+
+    <br/><b>Farm building near Laren</b> c. 1898-1899<br/>oil paint / canvas on cardboard, 31
+        x
+        43&#160;cm<br/>company collection&#160;
+        Caldic Collectie, Rotterdam<br/><br/>A165</td></tr><tr><td colspan="3"><br/><hr/></td></tr></table></td></tr></table></div></body></html><br /><html xmlns:addthis="http://www.addthis.com/help/api-spec"><head><meta HTTP-EQUIV="Content-type" CONTENT="text/html; charset=utf8"/></head><body><div align="center"><table width="100%" border="0" class="main" cellpadding="0" cellspacing=""><tr><td><table class="area" border="0" width="100%" cellpadding="0" cellspacing="0" STYLE="font-size: 12px; font-type: Verdana;font-weight: normal;"><col width="30%"/><col width="5%"/><col width="65%"/><tr><td valign="top" align="center"><span class="listing-link link-to-popup" id="263281"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\897\1001204897.jpg&amp;width=150&amp;height=150"/></span><div class="image-popup"><span class="close-icon">X</span><div class="image-description"> Piet&#160;Mondriaan
+      &#160;  
+
+    ,
+            <b>Farm complex in Het Gooi, roadway in foreground</b>,&#160;c. 1898-1899</div><span class="image-thumb"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\897\1001204897.jpg&amp;width=220&amp;height=220"/></span><span class="image-large"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\897\1001204897.jpg&amp;width=700&amp;height=700"/></span><ul class="popup-icons"><li class="icon-item"><a href="#" class="image-fullsize">Image fullsize</a></li><li class="icon-item"><a href="https://rkd.nl/en/explore/images/263281" class="database-link" target="_blank">Show in RKDexplore</a></li><li class="icon-item"><a href="#" class="share-link">Share</a></li></ul><div class="addthiscontainer addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="http://catalogue.pietmondrian.nl/amsterdam-2-circa-1897-1901-a92-a259/landscapes-het-gooi-a165-a176/#263281"><div class="visualClear"></div><a class="addthis_button_facebook"></a><a class="addthis_button_twitter"></a><a class="addthis_button_linkedin"></a></div></div></td><td/><td valign="top" align="left"><br/> Piet&#160;Mondriaan
+      &#160;  
+
+    <br/><b>Farm complex in Het Gooi, roadway in foreground</b> c. 1898-1899<br/>oil paint / canvas, 46
+        x
+        55&#160;cm<br/>Gemeentemuseum Den Haag, The Hague, no.&#160;178-1971 / 0334336<br/><br/>A166</td></tr><tr><td colspan="3"><br/><hr/></td></tr></table></td></tr></table></div></body></html><br /><html xmlns:addthis="http://www.addthis.com/help/api-spec"><head><meta HTTP-EQUIV="Content-type" CONTENT="text/html; charset=utf8"/></head><body><div align="center"><table width="100%" border="0" class="main" cellpadding="0" cellspacing=""><tr><td><table class="area" border="0" width="100%" cellpadding="0" cellspacing="0" STYLE="font-size: 12px; font-type: Verdana;font-weight: normal;"><col width="30%"/><col width="5%"/><col width="65%"/><tr><td valign="top" align="center"><span class="listing-link link-to-popup" id="263308"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\927\1001204927.jpg&amp;width=150&amp;height=150"/></span><div class="image-popup"><span class="close-icon">X</span><div class="image-description"> Piet&#160;Mondriaan
+      &#160;  
+
+    ,
+            <b>Farmstead in Het Gooi with three buildings</b>,&#160;c. 1898-1899</div><span class="image-thumb"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\927\1001204927.jpg&amp;width=220&amp;height=220"/></span><span class="image-large"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\927\1001204927.jpg&amp;width=700&amp;height=700"/></span><ul class="popup-icons"><li class="icon-item"><a href="#" class="image-fullsize">Image fullsize</a></li><li class="icon-item"><a href="https://rkd.nl/en/explore/images/263308" class="database-link" target="_blank">Show in RKDexplore</a></li><li class="icon-item"><a href="#" class="share-link">Share</a></li></ul><div class="addthiscontainer addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="http://catalogue.pietmondrian.nl/amsterdam-2-circa-1897-1901-a92-a259/landscapes-het-gooi-a165-a176/#263308"><div class="visualClear"></div><a class="addthis_button_facebook"></a><a class="addthis_button_twitter"></a><a class="addthis_button_linkedin"></a></div></div></td><td/><td valign="top" align="left"><br/> Piet&#160;Mondriaan
+      &#160;  
+
+    <br/><b>Farmstead in Het Gooi with three buildings</b> c. 1898-1899<br/>oil paint / canvas on board, 26,7
+        x
+        36,5&#160;cm<br/>London (England)
+          (Sotheby's), 1986-05-28,
+          no. 49<br/><br/>A167</td></tr><tr><td colspan="3"><br/><hr/></td></tr></table></td></tr></table></div></body></html><br /><html xmlns:addthis="http://www.addthis.com/help/api-spec"><head><meta HTTP-EQUIV="Content-type" CONTENT="text/html; charset=utf8"/></head><body><div align="center"><table width="100%" border="0" class="main" cellpadding="0" cellspacing=""><tr><td><table class="area" border="0" width="100%" cellpadding="0" cellspacing="0" STYLE="font-size: 12px; font-type: Verdana;font-weight: normal;"><col width="30%"/><col width="5%"/><col width="65%"/><tr><td valign="top" align="center"><span class="listing-link link-to-popup" id="263311"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\928\1001204928.jpg&amp;width=150&amp;height=150"/></span><div class="image-popup"><span class="close-icon">X</span><div class="image-description"> Piet&#160;Mondriaan
+      &#160;  
+
+    ,
+            <b>Small farm buildings in Het Gooi</b>,&#160;c. 1898</div><span class="image-thumb"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\928\1001204928.jpg&amp;width=220&amp;height=220"/></span><span class="image-large"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\928\1001204928.jpg&amp;width=700&amp;height=700"/></span><ul class="popup-icons"><li class="icon-item"><a href="#" class="image-fullsize">Image fullsize</a></li><li class="icon-item"><a href="https://rkd.nl/en/explore/images/263311" class="database-link" target="_blank">Show in RKDexplore</a></li><li class="icon-item"><a href="#" class="share-link">Share</a></li></ul><div class="addthiscontainer addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="http://catalogue.pietmondrian.nl/amsterdam-2-circa-1897-1901-a92-a259/landscapes-het-gooi-a165-a176/#263311"><div class="visualClear"></div><a class="addthis_button_facebook"></a><a class="addthis_button_twitter"></a><a class="addthis_button_linkedin"></a></div></div></td><td/><td valign="top" align="left"><br/> Piet&#160;Mondriaan
+      &#160;  
+
+    <br/><b>Small farm buildings in Het Gooi</b> c. 1898<br/>oil paint / cardboard, 32,5
+        x
+        40&#160;cm<br/>Kunsthandel Monet, Amsterdam<br/><br/>A168</td></tr><tr><td colspan="3"><br/><hr/></td></tr></table></td></tr></table></div></body></html><br /><html xmlns:addthis="http://www.addthis.com/help/api-spec"><head><meta HTTP-EQUIV="Content-type" CONTENT="text/html; charset=utf8"/></head><body><div align="center"><table width="100%" border="0" class="main" cellpadding="0" cellspacing=""><tr><td><table class="area" border="0" width="100%" cellpadding="0" cellspacing="0" STYLE="font-size: 12px; font-type: Verdana;font-weight: normal;"><col width="30%"/><col width="5%"/><col width="65%"/><tr><td valign="top" align="center"><span class="listing-link link-to-popup" id="263317"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\937\1001204937.jpg&amp;width=150&amp;height=150"/></span><div class="image-popup"><span class="close-icon">X</span><div class="image-description"> Piet&#160;Mondriaan
+      &#160;  
+
+    ,
+            <b>Farm building in Het Gooi with child</b>,&#160;c. 1898</div><span class="image-thumb"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\937\1001204937.jpg&amp;width=220&amp;height=220"/></span><span class="image-large"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\937\1001204937.jpg&amp;width=700&amp;height=700"/></span><ul class="popup-icons"><li class="icon-item"><a href="#" class="image-fullsize">Image fullsize</a></li><li class="icon-item"><a href="https://rkd.nl/en/explore/images/263317" class="database-link" target="_blank">Show in RKDexplore</a></li><li class="icon-item"><a href="#" class="share-link">Share</a></li></ul><div class="addthiscontainer addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="http://catalogue.pietmondrian.nl/amsterdam-2-circa-1897-1901-a92-a259/landscapes-het-gooi-a165-a176/#263317"><div class="visualClear"></div><a class="addthis_button_facebook"></a><a class="addthis_button_twitter"></a><a class="addthis_button_linkedin"></a></div></div></td><td/><td valign="top" align="left"><br/> Piet&#160;Mondriaan
+      &#160;  
+
+    <br/><b>Farm building in Het Gooi with child</b> c. 1898<br/>oil paint / canvas on panel, 38,5
+        x
+        49&#160;cm<br/>Gemeentemuseum Den Haag, The Hague, no.&#160;79-1971 / 0334237<br/><br/>A169</td></tr><tr><td colspan="3"><br/><hr/></td></tr></table></td></tr></table></div></body></html><br /><html xmlns:addthis="http://www.addthis.com/help/api-spec"><head><meta HTTP-EQUIV="Content-type" CONTENT="text/html; charset=utf8"/></head><body><div align="center"><table width="100%" border="0" class="main" cellpadding="0" cellspacing=""><tr><td><table class="area" border="0" width="100%" cellpadding="0" cellspacing="0" STYLE="font-size: 12px; font-type: Verdana;font-weight: normal;"><col width="30%"/><col width="5%"/><col width="65%"/><tr><td valign="top" align="center"><span class="listing-link link-to-popup" id="263320"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\750\1001245750.jpg&amp;width=150&amp;height=150"/></span><div class="image-popup"><span class="close-icon">X</span><div class="image-description"> Piet&#160;Mondriaan
+      &#160;  
+
+    ,
+            <b>Farm building in Het Gooi, viewed from a field</b>,&#160;c. 1898</div><span class="image-thumb"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\750\1001245750.jpg&amp;width=220&amp;height=220"/></span><span class="image-large"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\750\1001245750.jpg&amp;width=700&amp;height=700"/></span><ul class="popup-icons"><li class="icon-item"><a href="#" class="image-fullsize">Image fullsize</a></li><li class="icon-item"><a href="https://rkd.nl/en/explore/images/263320" class="database-link" target="_blank">Show in RKDexplore</a></li><li class="icon-item"><a href="#" class="share-link">Share</a></li></ul><div class="addthiscontainer addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="http://catalogue.pietmondrian.nl/amsterdam-2-circa-1897-1901-a92-a259/landscapes-het-gooi-a165-a176/#263320"><div class="visualClear"></div><a class="addthis_button_facebook"></a><a class="addthis_button_twitter"></a><a class="addthis_button_linkedin"></a></div></div></td><td/><td valign="top" align="left"><br/> Piet&#160;Mondriaan
+      &#160;  
+
+    <br/><b>Farm building in Het Gooi, viewed from a field</b> c. 1898<br/>oil paint / canvas on board, 29
+        x
+        42&#160;cm<br/>Whereabouts unknown<br/><br/>A170</td></tr><tr><td colspan="3"><br/><hr/></td></tr></table></td></tr></table></div></body></html><br /><html xmlns:addthis="http://www.addthis.com/help/api-spec"><head><meta HTTP-EQUIV="Content-type" CONTENT="text/html; charset=utf8"/></head><body><div align="center"><table width="100%" border="0" class="main" cellpadding="0" cellspacing=""><tr><td><table class="area" border="0" width="100%" cellpadding="0" cellspacing="0" STYLE="font-size: 12px; font-type: Verdana;font-weight: normal;"><col width="30%"/><col width="5%"/><col width="65%"/><tr><td valign="top" align="center"><span class="listing-link link-to-popup" id="263322"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\940\1001204940.jpg&amp;width=150&amp;height=150"/></span><div class="image-popup"><span class="close-icon">X</span><div class="image-description"> Piet&#160;Mondriaan
+      &#160;  
+
+    ,
+            <b>Farmhouse with wash on the line</b>,&#160;c. 1898</div><span class="image-thumb"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\940\1001204940.jpg&amp;width=220&amp;height=220"/></span><span class="image-large"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\940\1001204940.jpg&amp;width=700&amp;height=700"/></span><ul class="popup-icons"><li class="icon-item"><a href="#" class="image-fullsize">Image fullsize</a></li><li class="icon-item"><a href="https://rkd.nl/en/explore/images/263322" class="database-link" target="_blank">Show in RKDexplore</a></li><li class="icon-item"><a href="#" class="share-link">Share</a></li></ul><div class="addthiscontainer addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="http://catalogue.pietmondrian.nl/amsterdam-2-circa-1897-1901-a92-a259/landscapes-het-gooi-a165-a176/#263322"><div class="visualClear"></div><a class="addthis_button_facebook"></a><a class="addthis_button_twitter"></a><a class="addthis_button_linkedin"></a></div></div></td><td/><td valign="top" align="left"><br/> Piet&#160;Mondriaan
+      &#160;  
+
+    <br/><b>Farmhouse with wash on the line</b> c. 1898<br/>oil paint / cardboard, 31,5
+        x
+        37,5&#160;cm<br/>Gemeentemuseum Den Haag, The Hague, no.&#160;27-1960 / 0333468<br/><br/>A171</td></tr><tr><td colspan="3"><br/><hr/></td></tr></table></td></tr></table></div></body></html><br /><html xmlns:addthis="http://www.addthis.com/help/api-spec"><head><meta HTTP-EQUIV="Content-type" CONTENT="text/html; charset=utf8"/></head><body><div align="center"><table width="100%" border="0" class="main" cellpadding="0" cellspacing=""><tr><td><table class="area" border="0" width="100%" cellpadding="0" cellspacing="0" STYLE="font-size: 12px; font-type: Verdana;font-weight: normal;"><col width="30%"/><col width="5%"/><col width="65%"/><tr><td valign="top" align="center"><span class="listing-link link-to-popup" id="263325"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\944\1001204944.jpg&amp;width=150&amp;height=150"/></span><div class="image-popup"><span class="close-icon">X</span><div class="image-description"> Piet&#160;Mondriaan
+      &#160;  
+
+    ,
+            <b>Haystacks, farm building and farm woman with the wash</b>,&#160;c. 1898</div><span class="image-thumb"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\944\1001204944.jpg&amp;width=220&amp;height=220"/></span><span class="image-large"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\944\1001204944.jpg&amp;width=700&amp;height=700"/></span><ul class="popup-icons"><li class="icon-item"><a href="#" class="image-fullsize">Image fullsize</a></li><li class="icon-item"><a href="https://rkd.nl/en/explore/images/263325" class="database-link" target="_blank">Show in RKDexplore</a></li><li class="icon-item"><a href="#" class="share-link">Share</a></li></ul><div class="addthiscontainer addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="http://catalogue.pietmondrian.nl/amsterdam-2-circa-1897-1901-a92-a259/landscapes-het-gooi-a165-a176/#263325"><div class="visualClear"></div><a class="addthis_button_facebook"></a><a class="addthis_button_twitter"></a><a class="addthis_button_linkedin"></a></div></div></td><td/><td valign="top" align="left"><br/> Piet&#160;Mondriaan
+      &#160;  
+
+    <br/><b>Haystacks, farm building and farm woman with the wash</b> c. 1898<br/>oil paint / canvas, 46
+        x
+        55&#160;cm<br/>Gemeentemuseum Den Haag, The Hague, no.&#160;101-1971 / 0334259<br/><br/>A172</td></tr><tr><td colspan="3"><br/><hr/></td></tr></table></td></tr></table></div></body></html><br /><html xmlns:addthis="http://www.addthis.com/help/api-spec"><head><meta HTTP-EQUIV="Content-type" CONTENT="text/html; charset=utf8"/></head><body><div align="center"><table width="100%" border="0" class="main" cellpadding="0" cellspacing=""><tr><td><table class="area" border="0" width="100%" cellpadding="0" cellspacing="0" STYLE="font-size: 12px; font-type: Verdana;font-weight: normal;"><col width="30%"/><col width="5%"/><col width="65%"/><tr><td valign="top" align="center"><span class="listing-link link-to-popup" id="263327"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\947\1001204947.jpg&amp;width=150&amp;height=150"/></span><div class="image-popup"><span class="close-icon">X</span><div class="image-description"> Piet&#160;Mondriaan
+      &#160;  
+
+    ,
+            <b>Farmstead in Het Gooi, viewed between trees and over fence</b>,&#160;1898-1899</div><span class="image-thumb"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\947\1001204947.jpg&amp;width=220&amp;height=220"/></span><span class="image-large"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\947\1001204947.jpg&amp;width=700&amp;height=700"/></span><ul class="popup-icons"><li class="icon-item"><a href="#" class="image-fullsize">Image fullsize</a></li><li class="icon-item"><a href="https://rkd.nl/en/explore/images/263327" class="database-link" target="_blank">Show in RKDexplore</a></li><li class="icon-item"><a href="#" class="share-link">Share</a></li></ul><div class="addthiscontainer addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="http://catalogue.pietmondrian.nl/amsterdam-2-circa-1897-1901-a92-a259/landscapes-het-gooi-a165-a176/#263327"><div class="visualClear"></div><a class="addthis_button_facebook"></a><a class="addthis_button_twitter"></a><a class="addthis_button_linkedin"></a></div></div></td><td/><td valign="top" align="left"><br/> Piet&#160;Mondriaan
+      &#160;  
+
+    <br/><b>Farmstead in Het Gooi, viewed between trees and over fence</b> 1898-1899<br/>oil paint / cardboard, 45,5
+        x
+        56&#160;cm<br/>Gemeentemuseum Den Haag, The Hague, no.&#160;100-1971 / 0334258<br/><br/>A173</td></tr><tr><td colspan="3"><br/><hr/></td></tr></table></td></tr></table></div></body></html><br /><html xmlns:addthis="http://www.addthis.com/help/api-spec"><head><meta HTTP-EQUIV="Content-type" CONTENT="text/html; charset=utf8"/></head><body><div align="center"><table width="100%" border="0" class="main" cellpadding="0" cellspacing=""><tr><td><table class="area" border="0" width="100%" cellpadding="0" cellspacing="0" STYLE="font-size: 12px; font-type: Verdana;font-weight: normal;"><col width="30%"/><col width="5%"/><col width="65%"/><tr><td valign="top" align="center"><span class="listing-link link-to-popup" id="263331"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\364\1001456364.jpg&amp;width=150&amp;height=150"/></span><div class="image-popup"><span class="close-icon">X</span><div class="image-description"> Piet&#160;Mondriaan
+      &#160;  
+
+    ,
+            <b>Farm building in Het Gooi, fence and trees in the foreground</b>,&#160;c. 1898-1902</div><span class="image-thumb"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\364\1001456364.jpg&amp;width=220&amp;height=220"/></span><span class="image-large"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\364\1001456364.jpg&amp;width=700&amp;height=700"/></span><ul class="popup-icons"><li class="icon-item"><a href="#" class="image-fullsize">Image fullsize</a></li><li class="icon-item"><a href="https://rkd.nl/en/explore/images/263331" class="database-link" target="_blank">Show in RKDexplore</a></li><li class="icon-item"><a href="#" class="share-link">Share</a></li></ul><div class="addthiscontainer addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="http://catalogue.pietmondrian.nl/amsterdam-2-circa-1897-1901-a92-a259/landscapes-het-gooi-a165-a176/#263331"><div class="visualClear"></div><a class="addthis_button_facebook"></a><a class="addthis_button_twitter"></a><a class="addthis_button_linkedin"></a></div></div></td><td/><td valign="top" align="left"><br/> Piet&#160;Mondriaan
+      &#160;  
+
+    <br/><b>Farm building in Het Gooi, fence and trees in the foreground</b> c. 1898-1902<br/>oil paint / canvas, 38
+        x
+        42&#160;cm<br/>Paris
+          (Millon), 2013-11-27,
+          no. 91<br/><br/>A174</td></tr><tr><td colspan="3"><br/><hr/></td></tr></table></td></tr></table></div></body></html><br /><html xmlns:addthis="http://www.addthis.com/help/api-spec"><head><meta HTTP-EQUIV="Content-type" CONTENT="text/html; charset=utf8"/></head><body><div align="center"><table width="100%" border="0" class="main" cellpadding="0" cellspacing=""><tr><td><table class="area" border="0" width="100%" cellpadding="0" cellspacing="0" STYLE="font-size: 12px; font-type: Verdana;font-weight: normal;"><col width="30%"/><col width="5%"/><col width="65%"/><tr><td valign="top" align="center"><span class="listing-link link-to-popup" id="263334"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\401\1001236401.jpg&amp;width=150&amp;height=150"/></span><div class="image-popup"><span class="close-icon">X</span><div class="image-description"> Piet&#160;Mondriaan
+      &#160;  
+
+    ,
+            <b>Farm buildings in Het Gooi, veiled by trees</b>,&#160;c. 1898-1902</div><span class="image-thumb"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\401\1001236401.jpg&amp;width=220&amp;height=220"/></span><span class="image-large"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\401\1001236401.jpg&amp;width=700&amp;height=700"/></span><ul class="popup-icons"><li class="icon-item"><a href="#" class="image-fullsize">Image fullsize</a></li><li class="icon-item"><a href="https://rkd.nl/en/explore/images/263334" class="database-link" target="_blank">Show in RKDexplore</a></li><li class="icon-item"><a href="#" class="share-link">Share</a></li></ul><div class="addthiscontainer addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="http://catalogue.pietmondrian.nl/amsterdam-2-circa-1897-1901-a92-a259/landscapes-het-gooi-a165-a176/#263334"><div class="visualClear"></div><a class="addthis_button_facebook"></a><a class="addthis_button_twitter"></a><a class="addthis_button_linkedin"></a></div></div></td><td/><td valign="top" align="left"><br/> Piet&#160;Mondriaan
+      &#160;  
+
+    <br/><b>Farm buildings in Het Gooi, veiled by trees</b> c. 1898-1902<br/>oil paint / paper on cardboard, 32
+        x
+        38,5&#160;cm<br/>Private collection<br/><br/>A175</td></tr><tr><td colspan="3"><br/><hr/></td></tr></table></td></tr></table></div></body></html><br /><html xmlns:addthis="http://www.addthis.com/help/api-spec"><head><meta HTTP-EQUIV="Content-type" CONTENT="text/html; charset=utf8"/></head><body><div align="center"><table width="100%" border="0" class="main" cellpadding="0" cellspacing=""><tr><td><table class="area" border="0" width="100%" cellpadding="0" cellspacing="0" STYLE="font-size: 12px; font-type: Verdana;font-weight: normal;"><col width="30%"/><col width="5%"/><col width="65%"/><tr><td valign="top" align="center"><span class="listing-link link-to-popup" id="263349"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\603\1001241603.jpg&amp;width=150&amp;height=150"/></span><div class="image-popup"><span class="close-icon">X</span><div class="image-description"> Piet&#160;Mondriaan
+      &#160;  
+
+    ,
+            <b>Farmyard in Het Gooi flanked by saplings</b>,&#160;1901-1902</div><span class="image-thumb"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\603\1001241603.jpg&amp;width=220&amp;height=220"/></span><span class="image-large"><img src="http://imagehandler.rkd.nl/wwwopac.ashx?command=getcontent&amp;server=images&amp;value=jpg\603\1001241603.jpg&amp;width=700&amp;height=700"/></span><ul class="popup-icons"><li class="icon-item"><a href="#" class="image-fullsize">Image fullsize</a></li><li class="icon-item"><a href="https://rkd.nl/en/explore/images/263349" class="database-link" target="_blank">Show in RKDexplore</a></li><li class="icon-item"><a href="#" class="share-link">Share</a></li></ul><div class="addthiscontainer addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="http://catalogue.pietmondrian.nl/amsterdam-2-circa-1897-1901-a92-a259/landscapes-het-gooi-a165-a176/#263349"><div class="visualClear"></div><a class="addthis_button_facebook"></a><a class="addthis_button_twitter"></a><a class="addthis_button_linkedin"></a></div></div></td><td/><td valign="top" align="left"><br/> Piet&#160;Mondriaan
+      &#160;  
+
+    <br/><b>Farmyard in Het Gooi flanked by saplings</b> 1901-1902<br/>oil paint / canvas, 30,3
+        x
+        43&#160;cm<br/>Amsterdam
+          (Christie's), 1995-06-01,
+          no. 230<br/><br/>A176</td></tr><tr><td colspan="3"><br/><hr/></td></tr></table></td></tr></table></div></body></html><br />&nbsp;</p><br /></div>
+    
+
+      
+
+    <div class="documentByLine">       
+      Datum laatste wijziging: 
+      Aug 04, 2016 09:23 AM
+      
+      <div>            
+        <a class="previous"
+           href="http://catalogue.pietmondrian.nl/amsterdam-2-circa-1897-1901-a92-a259/city-scapes-near-amsterdam-a146-a164">
+          &laquo; Vorige
+        </a>
+        <a class="next"
+           href="http://catalogue.pietmondrian.nl/amsterdam-2-circa-1897-1901-a92-a259/city-scapes-amsterdam-a177-a210">
+          Volgende &raquo;
+        </a>
+      </div>     
+    </div>
+    
+
+        
+        
+          <!-- end page content -->
+      
+      <div class="visualClear"></div>
+    </div>
+    <div id="portal-footer">
+      <a title="Disclaimer"
+         href="http://catalogue.pietmondrian.nl/disclaimer">Disclaimer</a>   |
+      <a title="Privacy Statement"
+         href="http://catalogue.pietmondrian.nl/privacy_statement">Privacy Statement</a>   |
+        Copyright <sup>&copy;</sup> <script type="text/javascript">date = new Date(); document.write(date.getFullYear());</script>
+        - RKD Monographs. <a href="http://www.swordfish.nl" target="_blank">Powered by SwordFish<sup>&reg;</sup></a>
+    </div>
+  </div>
+<!-- end content column -->
+   <!-- left column -->
+  	<div id="column1-wrapper">
+	   <div id="column_1">
+       
+          
+<div id="portletwrapper-73776f7264666973682e66726f6e74656e642e6c656674636f6c756d6e0a636f6e746578740a2f5357332f6d6f6e64726961616e0a6d656e75706c6161746a65"
+     class="kssattr-portlethash-73776f7264666973682e66726f6e74656e642e6c656674636f6c756d6e0a636f6e746578740a2f5357332f6d6f6e64726961616e0a6d656e75706c6161746a65"><div class="portlet portletHtmlText sponsors">
+
+    <div class="portletTitle">
+        <h2>
+        	Menuplaatje
+        </h2>
+    </div>
+
+    <div class="portletBody">
+        <p><img src="/mondriaan/bestanden/nieuwe-afbeelding-menu/image_preview" alt="Nieuwe afbeelding menu" height="168" width="169" /></p>
+		
+    </div>
+</div>
+</div>
+
+<div id="portletwrapper-73776f7264666973682e66726f6e74656e642e6c656674636f6c756d6e0a636f6e746578740a2f5357332f6d6f6e64726961616e0a6e617669676174696f6e"
+     class="kssattr-portlethash-73776f7264666973682e66726f6e74656e642e6c656674636f6c756d6e0a636f6e746578740a2f5357332f6d6f6e64726961616e0a6e617669676174696f6e">
+		<div class="portlet portletNavigationTree">
+	        <ul class="portletNavigationTree navTreeLevel0">
+	            
+	            
+
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/link-verantwoording"
+           class="state-published" title="">
+          
+            Foreword
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/inleiding"
+           class="state-published" title="">
+          
+            Notes to Readers
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/catalogus"
+           class="state-published" title="">
+          
+            Catalogue
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/copy_of_winterswijk-i-before-circa-1897-a1-a22"
+           class="state-published" title="">
+          
+            Winterswijk, 1888-1896 (A1-A22) 
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/amsterdam-i-circa-1893-1897-a23-a49"
+           class="state-published" title="">
+          
+            Amsterdam, 1893-1897 (A23-A49)
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/winterswijk-2-1897-1899-a50-a91"
+           class="state-published" title="">
+          
+            Winterswijk, 1897-1899 (A50-A91)
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker navTreeItemInPath">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/amsterdam-2-circa-1897-1901-a92-a259"
+           class="state-published" title="">
+          
+            Amsterdam, 1897-1901 (A92-A259) 
+        </a>
+        
+    <ul class="navTree navTreeLevel1">  
+        
+
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/amsterdam-2-circa-1897-1901-a92-a259/still-lifes-a93-a111"
+           class="state-published" title="">
+          
+            Still lifes (A93-A111)
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/amsterdam-2-circa-1897-1901-a92-a259/figures-a112-a145"
+           class="state-published" title="">
+          
+            Figures (A112-A145)
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/amsterdam-2-circa-1897-1901-a92-a259/city-scapes-near-amsterdam-a146-a164"
+           class="state-published" title="">
+          
+            City scapes (near Amsterdam) (A146-A164)
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker navTreeCurrentNode navTreeItemInPath">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/amsterdam-2-circa-1897-1901-a92-a259/landscapes-het-gooi-a165-a176"
+           class="state-published navTreeCurrentItem"
+           title="">
+          
+            Landscapes (Het Gooi) (A165-A176)
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/amsterdam-2-circa-1897-1901-a92-a259/city-scapes-amsterdam-a177-a210"
+           class="state-published" title="">
+          
+            City scapes (Amsterdam) (A177-A210)
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/amsterdam-2-circa-1897-1901-a92-a259/landscapes-amsterdam-a211-a243"
+           class="state-published" title="">
+          
+            Landscapes (Amsterdam) (A211-A243)
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/amsterdam-2-circa-1897-1901-a92-a259/landscapes-gein-a244-259"
+           class="state-published" title="">
+          
+            Landscapes (Gein) (A244-259)
+        </a>
+        
+    
+    
+</li>
+
+
+
+
+    </ul>
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/amsterdam-3-circa-1902-1905-a260-a351"
+           class="state-published" title="">
+          
+            Amsterdam, 1902-1905 (A260-A351)
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/brabant-1904-early-1905-a352-a379"
+           class="state-published" title="">
+          
+            Brabant, 1904-1905 (A352-A379)
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/amsterdam-4-circa-1905-early-1908-a380-a537"
+           class="state-published" title="">
+          
+            Amsterdam, 1905-1908 (A380-A537)
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/twente-circa-1906-early-1908-a538-a593"
+           class="state-published" title="">
+          
+            Twente, 1906-1908 (A538-A593)
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/amsterdam-5-circa-1908-1911-a594-a673"
+           class="state-published" title="">
+          
+            Amsterdam, 1908-1911 (A594-A673)
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/zeeland-1909-1911-a674-a710-b1"
+           class="state-published" title="">
+          
+            Zeeland, 1909-1911 (A674-A710, B1)
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/unidentified-references-ua1-ua50"
+           class="state-published" title="">
+          
+            Unidentified references (UA1-UA50)
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/amsterdam-1911-b2-b4"
+           class="state-published" title="">
+          
+            Amsterdam, 1911 (B2-B4) 
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/paris-1-1912-1914-b5-b56"
+           class="state-published" title="">
+          
+            Paris 1, 1912-1914 (B5-B56)
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/nederland-1914-1919-b57-b103"
+           class="state-published" title="">
+          
+            Holland, 1914-1919 (B57-B103)
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/paris-2-1920-1937-b104-b281.312"
+           class="state-published" title="">
+          
+            Paris 2, 1920-1937 (B104-B281.312)
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/london-1938-1939-b282-b295.315"
+           class="state-published" title="">
+          
+            London, 1938-1939 (B282-B295.315)
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/new-york-1940-1944-b296.318-b324"
+           class="state-published" title="">
+          
+            New York, 1940-1944 (B296.318-B324)
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/drawings-1925-1943-b325-b370"
+           class="state-published" title="">
+          
+            Sketchbook, 1925 (B325-B333)
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/sketches-and-studies-b334-b370"
+           class="state-published" title="">
+          
+            Sketches and studies (B334-B370)
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/sketchbook-i-1914-b371-b375"
+           class="state-published" title="">
+          
+            Sketchbook I, 1914 (B371-B375)
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/sketchbook-ii-1914-b376-b378"
+           class="state-published" title="">
+          
+            Sketchbook II, 1914 (B376-B378)
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/sketchbook-leaves-1912-1914-b379-b411"
+           class="state-published" title="">
+          
+            Sketchbook leaves, 1912-1914 (B379-B411)
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/catalogue-of-the-furniture-b412-415"
+           class="state-published" title="">
+          
+            Furniture (B412-415)
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/unidentifiable-references-u1-u27"
+           class="state-published" title="">
+          
+            Unidentifiable references (U1-U27)
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/catalogue-of-late-naturalistic-works-c1-c155"
+           class="state-published" title="">
+          
+            Late naturalistic works, 1912-1942 (C1-C155)
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/copies-c154-c155"
+           class="state-published" title="">
+          
+            Copies (C154-C155)
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/additions"
+           class="state-published" title="">
+          
+            New Additions
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/bibliography"
+           class="state-published" title="">
+          
+            Bibliography 1994-2017 (selection)
+        </a>
+        
+    
+    
+</li>
+
+
+<li class="navTreeItem visualNoMarker">
+
+    
+        
+        <a href="http://catalogue.pietmondrian.nl/colophon-and-copyright-notice"
+           class="state-published" title="">
+          
+            Colophon and copyright notice
+        </a>
+        
+    
+    
+</li>
+
+
+
+
+	        </ul>
+		</div>
+
+</div>
+
+		   
+	   </div>
+	   <div id="column1-bottom"></div>
+	    <div class="visualClear"></div>
+	</div>
+<!-- end left column -->
+    <div class="print-version">
+      De afgedrukte pagina is te vinden op:  <a
+    href="http://catalogue.pietmondrian.nl/amsterdam-2-circa-1897-1901-a92-a259/landscapes-het-gooi-a165-a176">http://catalogue.pietmondrian.nl/amsterdam-2-circa-1897-1901-a92-a259/landscapes-het-gooi-a165-a176</a>
+    </div>
+  </div>
+</div>
+
+
+	</div >
+	</body >
+
+ </html>
+
+
