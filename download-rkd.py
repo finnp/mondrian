@@ -18,5 +18,5 @@ for file in files:
         soup = BeautifulSoup(page, 'html.parser')
         thumb_id = soup.select('.record-metadata')[0]['data-thumb-id']
         download_url = 'https://images.rkd.nl/rkd/thumb/1000x1000/' + thumb_id + '.jpg'
-        urlretrieve(download_url, 'img/' + id + '.jpg')
+        urlretrieve(download_url, 'catalogue-images/' + id + '.jpg')
         print('File ' + file + ' downloaded.')
