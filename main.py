@@ -9,7 +9,7 @@ from files import process_pipeline
 retr_type = cv2.RETR_LIST
 contour_algorithm = cv2.CHAIN_APPROX_SIMPLE
 
-threshold_value = 50
+threshold_value = 90
 
 kernel = cv2.getStructuringElement(cv2.MORPH_RECT,(10,10))
 
@@ -33,27 +33,31 @@ def draw_black_border(img):
     cv2.rectangle(img, (0,0), (width, height), (0, 0, 0))
 
 def process_image(original):
+    steps = []
     height, width, channels = original.shape
 
     b,g,r = cv2.split(original)
     _, binary = cv2.threshold(original, threshold_value, 255, cv2.THRESH_BINARY)
+    steps.append(('binary', binary))
 
     b_t,g_t,r_t = cv2.split(binary)
 
     max = cv2.max(cv2.max(b_t, g_t), r_t)
+    steps.append(('max', max))
 
     opening = cv2.morphologyEx(max, cv2.MORPH_OPEN, kernel)
 
     # remove lines, only black rectangles remain
     dilated = cv2.dilate(max, cv2.getStructuringElement(cv2.MORPH_RECT,(25,25)))
 
-    # adjust these numbers
     with_lines = np.copy(original)
 
     edges = cv2.Canny(dilated, 50, 150)
     black_rects,_ = find_contours(edges)
+    steps.append(('black-rectangles', edges))
     dilated = draw_rectangles(black_rects, original)
     clip_rectangles(black_rects, opening)
+    steps.append(('opening', opening))
 
     (horizontal, vertical) = detect_lines(cv2.bitwise_not(opening))
 
@@ -63,6 +67,7 @@ def process_image(original):
     before_connect = np.copy(original)
     draw_lines(before_connect, horizontal + vertical, color=(255,255,255))
     draw_lines(before_connect, vertical_lines + horizontal_lines)
+    steps.append(('raw-lines', before_connect))
 
     # add helper lines for borders
     horizontal_lines += [(0,0,width,0), (0,height,width,height)]
@@ -83,26 +88,19 @@ def process_image(original):
     draw_corners(with_lines, bottom_left, (270, 360))
 
     draw_lines(with_lines, horizontal + vertical)
+    steps.append(('lines', with_lines))
+
 
     draw_black_border(opening)
 
     rects, polygons = find_contours(opening)
     drawn = draw_rectangles(rectangles, binary)
 
-    # cv2.drawContours(original,polygons,-1,(0,255,0),3)
+    steps.append(('drawnn', drawn))
 
     overlay = cv2.addWeighted(original, 0.3, drawn, 0.7,0)
+    steps.append(('overlay', overlay))
 
-    return [
-        (dilated, 'dilated'),
-        (overlay, 'overlay'),
-        (before_connect, 'before-lines'),
-        (with_lines, 'lines'),
-        (edges, 'edges'),
-        (binary, 'binary'),
-        (max, 'max'),
-        (opening, 'open'),
-        (drawn, 'drawn')
-    ]
+    return steps
 
 process_pipeline(process_image)

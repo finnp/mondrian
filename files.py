@@ -3,7 +3,7 @@ import cv2
 import json
 import sys
 
-input_dir = 'img'
+input_dir = 'image-selection'
 output_dir = 'output'
 image_type = 'jpg'
 
@@ -15,14 +15,19 @@ def process_pipeline(process_image):
         files = list(filter(lambda f: f[-len(image_type):] == 'jpg', files))
     total = len(files)
 
+
     for index, file_name in enumerate(files):
         print('processing ' + str(index + 1) + '/' + str(total), file_name)
         img = cv2.imread(input_dir + '/' + file_name)
         outputs = process_image(img)
         file_without_ending = file_name[:-len('.' + image_type)]
-        for img, type in outputs:
-            output_filename = output_dir + '/' + type + '-' + file_without_ending
-            cv2.imwrite(output_filename  + '.jpg', img)
+        for step_index, (type, img) in enumerate(outputs):
+            subdir = output_dir + '/' + str(step_index) + '-' + type
+            if index == 0:
+                if not os.path.exists(subdir):
+                    os.makedirs(subdir)
+            output_filename = subdir + '/' + file_without_ending + '.jpg'
+            cv2.imwrite(output_filename, img)
 
 def save_rects(rects, filename):
     rectangles = []
