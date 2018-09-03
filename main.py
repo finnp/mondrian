@@ -11,7 +11,7 @@ contour_algorithm = cv2.CHAIN_APPROX_SIMPLE
 
 threshold_value = 90
 
-kernel = cv2.getStructuringElement(cv2.MORPH_RECT,(10,10))
+kernel = cv2.getStructuringElement(cv2.MORPH_RECT,(11,11))
 
 def find_contours (img):
     _, contours, _ = cv2.findContours(img.copy(), retr_type, contour_algorithm)
@@ -36,27 +36,46 @@ def process_image(original):
     steps = []
     height, width, channels = original.shape
 
-    b,g,r = cv2.split(original)
-    _, binary = cv2.threshold(original, threshold_value, 255, cv2.THRESH_BINARY)
-    steps.append(('binary', binary))
+    blurred = cv2.blur(original,(5,5))
 
-    b_t,g_t,r_t = cv2.split(binary)
+    b_t,g_t,r_t = cv2.split(blurred)
 
     max = cv2.max(cv2.max(b_t, g_t), r_t)
+
+    min = cv2.min(cv2.min(b_t, g_t), r_t)
+
+    _, deviation = cv2.threshold(max - min, 25, 255, cv2.THRESH_BINARY)
+
+    steps.append(('deviation', deviation))
+
+    # 200,200,200
+    # 100,200,100 -> 100
+
     steps.append(('max', max))
 
-    opening = cv2.morphologyEx(max, cv2.MORPH_OPEN, kernel)
+    contrast_fixed = cv2.equalizeHist(max)
+    steps.append(('contrast', contrast_fixed))
+
+    color_contrast = cv2.max(contrast_fixed, deviation)
+
+    steps.append(('color-contrast', color_contrast))
+
+    _, binary = cv2.threshold(color_contrast, threshold_value, 255, cv2.THRESH_BINARY)
+    steps.append(('binary', binary))
+
+    max = binary
+
+    opening = cv2.erode(max, kernel)
 
     # remove lines, only black rectangles remain
-    dilated = cv2.dilate(max, cv2.getStructuringElement(cv2.MORPH_RECT,(25,25)))
+    dilated = cv2.dilate(max, cv2.getStructuringElement(cv2.MORPH_RECT,(29,29)))
+
+    remove_mask = cv2.bitwise_not(dilated)
+
+    opening = cv2.max(opening, remove_mask)
 
     with_lines = np.copy(original)
 
-    edges = cv2.Canny(dilated, 50, 150)
-    black_rects,_ = find_contours(edges)
-    steps.append(('black-rectangles', edges))
-    dilated = draw_rectangles(black_rects, original)
-    clip_rectangles(black_rects, opening)
     steps.append(('opening', opening))
 
     (horizontal, vertical) = detect_lines(cv2.bitwise_not(opening))
