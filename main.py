@@ -44,7 +44,7 @@ def process_image(original):
 
     min = cv2.min(cv2.min(b_t, g_t), r_t)
 
-    _, deviation = cv2.threshold(max - min, 25, 255, cv2.THRESH_BINARY)
+    _, deviation = cv2.threshold(max - min, 20, 255, cv2.THRESH_BINARY)
 
     steps.append(('deviation', deviation))
 
