@@ -1,0 +1,96 @@
+{
+    "height": 1000,
+    "width": 981,
+    "rectangles": [
+        {
+            "x": 416,
+            "y": 540,
+            "width": 402,
+            "height": 413,
+            "color": [
+                255,
+                255,
+                255
+            ],
+            "color_id": "white"
+        },
+        {
+            "x": 818,
+            "y": 540,
+            "width": 163,
+            "height": 255,
+            "color": [
+                181,
+                102,
+                0
+            ],
+            "color_id": "blue"
+        },
+        {
+            "x": 0,
+            "y": 540,
+            "width": 416,
+            "height": 460,
+            "color": [
+                255,
+                255,
+                255
+            ],
+            "color_id": "white"
+        },
+        {
+            "x": 818,
+            "y": 795,
+            "width": 163,
+            "height": 205,
+            "color": [
+                255,
+                255,
+                255
+            ],
+            "color_id": "white"
+        },
+        {
+            "x": 416,
+            "y": 953,
+            "width": 402,
+            "height": 47,
+            "color": [
+                255,
+                255,
+                255
+            ],
+            "color_id": "white"
+        },
+        {
+            "x": 416,
+            "y": 0,
+            "width": 565,
+            "height": 540,
+            "color": [
+                255,
+                255,
+                255
+            ],
+            "color_id": "white"
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "width": 416,
+            "height": 540,
+            "color": [
+                0,
+                243,
+                255
+            ],
+            "color_id": "yellow"
+        }
+    ],
+    "options": {
+        "binary_threshold": 110,
+        "min_line_length": 40,
+        "min_distance_factor": 0.073,
+        "black_rectangle_dilate": 33
+    }
+}

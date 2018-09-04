@@ -5,3 +5,4 @@ output
 *.jpg
 __pycache__
 catalogue-images
+detected-output

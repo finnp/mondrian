@@ -79,8 +79,8 @@ def get_closest_color(img, rect):
 
 def find_closest_color(to_color):
     [[(hue,s,v)]] = cv2.cvtColor(np.uint8([[to_color]]),cv2.COLOR_BGR2HSV)
-    if s < 150:
-        if v > 90:
+    if s < 100:
+        if v > 120:
             return ((255,255,255), 'white')
         if v < 60:
             return ((0,0,0), 'black')
