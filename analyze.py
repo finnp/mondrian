@@ -22,6 +22,7 @@ def get_color_distribution(data):
     return colors
 
 color_distribution_by_area = []
+number_of_rects = []
 
 for file in files:
     print(file)
@@ -32,6 +33,7 @@ for file in files:
     if (total > 1.1 or total < 0.9):
         print('Problem with ' + file)
     color_distribution_by_area.append(by_area)
+    number_of_rects.append(len(data['rectangles']))
 
 df = pd.DataFrame(color_distribution_by_area)
 df.boxplot()
@@ -41,9 +43,15 @@ plt.close()
 axes = df.boxplot(column=['red', 'blue', 'yellow'], return_type='axes')
 axes.set_ylim(0, 0.3)
 plt.savefig(out_dir + '/colors-rby.png')
+plt.close()
 
 df['colors'] = df['red'] + df['blue'] + df['yellow']
 df['non-colors'] = df['white'] + df['black']
-plt.close()
 df.boxplot(column=['colors', 'non-colors'])
 plt.savefig(out_dir + '/colors-non-colors.png')
+plt.close()
+
+df = pd.DataFrame(number_of_rects)
+df.boxplot()
+plt.savefig(out_dir + '/n-rects.png')
+plt.close()
