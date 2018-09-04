@@ -1,0 +1,96 @@
+{
+    "height": 995,
+    "width": 1000,
+    "rectangles": [
+        {
+            "x": 491,
+            "y": 595,
+            "width": 417,
+            "height": 377,
+            "color": [
+                255,
+                255,
+                255
+            ],
+            "color_id": "white"
+        },
+        {
+            "x": 908,
+            "y": 595,
+            "width": 92,
+            "height": 162,
+            "color": [
+                181,
+                102,
+                0
+            ],
+            "color_id": "blue"
+        },
+        {
+            "x": 0,
+            "y": 595,
+            "width": 491,
+            "height": 400,
+            "color": [
+                255,
+                255,
+                255
+            ],
+            "color_id": "white"
+        },
+        {
+            "x": 908,
+            "y": 757,
+            "width": 92,
+            "height": 238,
+            "color": [
+                255,
+                255,
+                255
+            ],
+            "color_id": "white"
+        },
+        {
+            "x": 491,
+            "y": 972,
+            "width": 417,
+            "height": 23,
+            "color": [
+                255,
+                255,
+                255
+            ],
+            "color_id": "white"
+        },
+        {
+            "x": 491,
+            "y": 0,
+            "width": 509,
+            "height": 595,
+            "color": [
+                255,
+                255,
+                255
+            ],
+            "color_id": "white"
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "width": 491,
+            "height": 595,
+            "color": [
+                0,
+                243,
+                255
+            ],
+            "color_id": "yellow"
+        }
+    ],
+    "options": {
+        "binary_threshold": 110,
+        "min_line_length": 70,
+        "min_distance_factor": 0.073,
+        "black_rectangle_dilate": 33
+    }
+}

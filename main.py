@@ -11,7 +11,7 @@ contour_algorithm = cv2.CHAIN_APPROX_SIMPLE
 
 binary_threshold = 110
 min_line_length = 70
-min_distance_factor = 0.071
+min_distance_factor = 0.073
 black_rectangle_dilate = 33
 
 kernel = cv2.getStructuringElement(cv2.MORPH_RECT,(11,11))
