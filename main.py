@@ -9,7 +9,7 @@ from files import process_pipeline
 retr_type = cv2.RETR_LIST
 contour_algorithm = cv2.CHAIN_APPROX_SIMPLE
 
-threshold_value = 90
+threshold_value = 110
 
 kernel = cv2.getStructuringElement(cv2.MORPH_RECT,(11,11))
 
@@ -48,12 +48,22 @@ def process_image(original):
 
     steps.append(('deviation', deviation))
 
+    (minVal, maxVal, minLoc, maxLoc) = cv2.minMaxLoc(max)
+    print(minVal)
+
     # 200,200,200
     # 100,200,100 -> 100
 
     steps.append(('max', max))
 
-    contrast_fixed = cv2.equalizeHist(max)
+    clahe = cv2.createCLAHE(clipLimit=2.0, tileGridSize=(8,8))
+    contrast_fixed = clahe.apply(max)
+
+    # contrast_fixed = cv2.equalizeHist(max)
+
+    (minVal, maxVal, minLoc, maxLoc) = cv2.minMaxLoc(contrast_fixed)
+    print(minVal)
+
     steps.append(('contrast', contrast_fixed))
 
     color_contrast = cv2.max(contrast_fixed, deviation)
