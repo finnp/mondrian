@@ -34,52 +34,35 @@ def clip_rectangles(rects, img):
         x,y,w,h = rect
         cv2.rectangle(img, (x,y), (x + w, y + h), (255,255,255), -1)
 
-def draw_rectangles(rects, source):
-    height, width = source.shape[:2]
+
+def find_colors_for_rects(rects, source):
+    output = []
+    for rect in rects:
+        x,y,width,height = rect
+        (color, color_name) = get_closest_color(source, rect)
+        output.append({
+            'x': x,
+            'y': y,
+            'width': width,
+            'height': height,
+            'color': color,
+            'color_id': color_name
+        })
+    return output
+
+def draw_rectangles(rects, height, width):
     blank = np.ones((height,width,3), np.uint8) * 255
     for index, rect in enumerate(rects):
-        x,y,w,h = rect
-
-        color = get_closest_color(source, rect)
+        x = rect['x']
+        y = rect['y']
+        w = rect['width']
+        h = rect['height']
+        color = rect['color']
 
         cv2.rectangle(blank, (x,y), (x + w, y + h), color, -1)
         cv2.rectangle(blank, (x,y), (x + w, y + h), (0,0,0), 5)
 
-        # center
-        # cv2.circle(blank, (int(x + w/2), int(y + h/2)), 10, (100,100,100), -1)
-
     return blank
-
-def draw_voronoi(img, rects):
-
-    voronoi = img.copy()
-
-    width, height = img.shape[:2]
-
-    subdiv = cv2.Subdiv2D((0, 0, height, width))
-
-    for rect in rects :
-        x,y,w,h = rect
-        middle = (round((2*x + w)/2),round((2*y + h)/2))
-        subdiv.insert(middle)
-
-    (facets, centers) = subdiv.getVoronoiFacetList([])
-
-    for i in range(0,len(facets)) :
-        ifacet_arr = []
-        for f in facets[i] :
-            ifacet_arr.append(f)
-
-        color = get_closest_color(img, rects[i])
-
-        ifacet = np.array(ifacet_arr, np.int)
-
-
-        cv2.fillConvexPoly(voronoi, ifacet, color);
-        ifacets = np.array([ifacet])
-        cv2.polylines(voronoi, ifacets, True, (0, 0, 0), 1)
-        cv2.circle(voronoi, (centers[i][0], centers[i][1]), 3, (0, 0, 0), -1)
-    return voronoi
 
 def get_closest_color(img, rect):
     x,y,w,h = rect
@@ -98,11 +81,9 @@ def find_closest_color(to_color):
     [[(hue,s,v)]] = cv2.cvtColor(np.uint8([[to_color]]),cv2.COLOR_BGR2HSV)
     if s < 100:
         if v > 120:
-            # white
-            return (255,255,255)
+            return ((255,255,255), 'white')
         if v < 60:
-            # black
-            return (0,0,0)
+            return ((0,0,0), 'black')
 
     def get_hue_distance(hue1, hue2):
         small_hue = min(hue1, hue2)
@@ -117,10 +98,13 @@ def find_closest_color(to_color):
 
     distance = distance_yellow
     color = yellow
+    color_name = 'yellow'
     if distance_blue < distance:
         distance = distance_blue
         color = blue
+        color_name = 'blue'
     if distance_red < distance:
         color = red
+        color_name = 'red'
 
-    return color
+    return (color, color_name)

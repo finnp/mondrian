@@ -3,30 +3,15 @@ import sys
 import imutils
 import datetime
 from lines import connect_lines, reduce_lines, detect_lines, find_corners, find_rectangles
-from draw import draw_rectangles, draw_lines, draw_points, draw_corners, clip_rectangles
+from draw import find_colors_for_rects, draw_rectangles, draw_lines, draw_points, draw_corners, clip_rectangles
 from files import process_pipeline
 
 retr_type = cv2.RETR_LIST
 contour_algorithm = cv2.CHAIN_APPROX_SIMPLE
 
-threshold_value = 110
+binary_threshold = 110
 
 kernel = cv2.getStructuringElement(cv2.MORPH_RECT,(11,11))
-
-def find_contours (img):
-    _, contours, _ = cv2.findContours(img.copy(), retr_type, contour_algorithm)
-    # contours = list(filter(lambda cont: cv2.contourArea(cont) > min_ticket_size, contours))
-    rects = []
-    polygons = []
-    for cont in contours:
-        polygon = cv2.approxPolyDP(cont, 1, True).copy().reshape(-1, 2)
-        polygon = cv2.convexHull(polygon)
-        area = cv2.contourArea(polygon)
-        rect = cv2.boundingRect(polygon)
-        rects.append(rect)
-        polygons.append(polygon)
-
-    return (rects, polygons)
 
 def draw_black_border(img):
     height, width = img.shape[:2]
@@ -48,16 +33,10 @@ def process_image(original):
     steps.append(('deviation', deviation))
     # _, deviation = cv2.threshold(max - min, 25, 255, cv2.THRESH_BINARY)
 
-    (minVal, maxVal, minLoc, maxLoc) = cv2.minMaxLoc(max)
-    print(minVal)
-
     steps.append(('max', max))
 
     clahe = cv2.createCLAHE(clipLimit=2.0, tileGridSize=(8,8))
     contrast_fixed = clahe.apply(max)
-
-    (minVal, maxVal, minLoc, maxLoc) = cv2.minMaxLoc(contrast_fixed)
-    print(minVal)
 
     steps.append(('contrast', contrast_fixed))
 
@@ -65,7 +44,7 @@ def process_image(original):
 
     steps.append(('color-contrast', color_contrast))
 
-    _, binary = cv2.threshold(color_contrast, threshold_value, 255, cv2.THRESH_BINARY)
+    _, binary = cv2.threshold(color_contrast, binary_threshold, 255, cv2.THRESH_BINARY)
     steps.append(('binary', binary))
 
     max = binary
@@ -117,8 +96,16 @@ def process_image(original):
 
     draw_black_border(opening)
 
-    rects, polygons = find_contours(opening)
-    drawn = draw_rectangles(rectangles, original)
+    rects_with_color = find_colors_for_rects(rectangles, original)
+    output = {
+        'height': height,
+        'width': width,
+        'rectangles': rects_with_color,
+        'options': {
+            'binary_threshold': binary_threshold
+        }
+    }
+    drawn = draw_rectangles(rects_with_color, height, width)
 
     steps.append(('drawn', drawn))
 
@@ -128,6 +115,7 @@ def process_image(original):
     side_by_side = np.hstack((original, drawn, overlay))
     steps.append(('side_by_side', side_by_side))
 
-    return steps
+
+    return (steps, output)
 
 process_pipeline(process_image)
