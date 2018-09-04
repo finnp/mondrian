@@ -44,29 +44,24 @@ def process_image(original):
 
     min = cv2.min(cv2.min(b_t, g_t), r_t)
 
-    _, deviation = cv2.threshold(max - min, 20, 255, cv2.THRESH_BINARY)
-
+    deviation = max - min
     steps.append(('deviation', deviation))
+    # _, deviation = cv2.threshold(max - min, 25, 255, cv2.THRESH_BINARY)
 
     (minVal, maxVal, minLoc, maxLoc) = cv2.minMaxLoc(max)
     print(minVal)
-
-    # 200,200,200
-    # 100,200,100 -> 100
 
     steps.append(('max', max))
 
     clahe = cv2.createCLAHE(clipLimit=2.0, tileGridSize=(8,8))
     contrast_fixed = clahe.apply(max)
 
-    # contrast_fixed = cv2.equalizeHist(max)
-
     (minVal, maxVal, minLoc, maxLoc) = cv2.minMaxLoc(contrast_fixed)
     print(minVal)
 
     steps.append(('contrast', contrast_fixed))
 
-    color_contrast = cv2.max(contrast_fixed, deviation)
+    color_contrast = cv2.add(contrast_fixed, deviation)
 
     steps.append(('color-contrast', color_contrast))
 
