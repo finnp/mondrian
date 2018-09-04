@@ -12,7 +12,7 @@ def detect_lines_hough(img):
     )
     return [line[0] for line in lines] # weird HoughLinesP output
 
-def detect_lines(img):
+def detect_lines(img, min_line_length):
     """
         Custom line detection algorithm
     """
@@ -31,11 +31,11 @@ def detect_lines(img):
             else:
                 if current_line:
                     current_line = False
-                    if x - current_line_start > 100:
+                    if x - current_line_start > min_line_length:
                         horizontal.append((current_line_start, y, x - 1, y))
         if current_line:
             current_line = False
-            if x - current_line_start > 100:
+            if x - current_line_start > min_line_length:
                 horizontal.append((current_line_start, y, x - 1, y))
 
     current_line = False
@@ -49,13 +49,29 @@ def detect_lines(img):
             else:
                 if current_line:
                     current_line = False
-                    if y - current_line_start > 100:
+                    if y - current_line_start > min_line_length:
                         vertical.append((x, y - 1, x, current_line_start))
         if current_line:
             current_line = False
-            if y - current_line_start > 100:
+            if y - current_line_start > min_line_length:
                 vertical.append((x, y - 1, x, current_line_start))
     return (horizontal, vertical)
+
+def remove_lines_close_to_border(horizontal, vertical, width, height, min_distance):
+    horizontal_result = []
+    vertical_result = []
+    print(len(horizontal), len(vertical))
+    for h in horizontal:
+        y = h[1]
+        print(y, height, min_distance)
+        if y > min_distance and height - y > min_distance:
+            horizontal_result.append(h)
+    for v in vertical:
+        x = v[0]
+        print(x, width, min_distance)
+        if x > min_distance and width - x > min_distance:
+            vertical_result.append(v)
+    return (horizontal_result, vertical_result)
 
 
 def split_by_orientation(lines):

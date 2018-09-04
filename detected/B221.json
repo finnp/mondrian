@@ -1,0 +1,96 @@
+{
+    "height": 1000,
+    "width": 998,
+    "rectangles": [
+        {
+            "x": 501,
+            "y": 585,
+            "width": 412,
+            "height": 387,
+            "color": [
+                255,
+                255,
+                255
+            ],
+            "color_id": "white"
+        },
+        {
+            "x": 913,
+            "y": 585,
+            "width": 85,
+            "height": 181,
+            "color": [
+                0,
+                243,
+                255
+            ],
+            "color_id": "yellow"
+        },
+        {
+            "x": 0,
+            "y": 585,
+            "width": 501,
+            "height": 415,
+            "color": [
+                255,
+                255,
+                255
+            ],
+            "color_id": "white"
+        },
+        {
+            "x": 913,
+            "y": 766,
+            "width": 85,
+            "height": 234,
+            "color": [
+                255,
+                255,
+                255
+            ],
+            "color_id": "white"
+        },
+        {
+            "x": 501,
+            "y": 972,
+            "width": 412,
+            "height": 28,
+            "color": [
+                255,
+                255,
+                255
+            ],
+            "color_id": "white"
+        },
+        {
+            "x": 501,
+            "y": 0,
+            "width": 497,
+            "height": 585,
+            "color": [
+                255,
+                255,
+                255
+            ],
+            "color_id": "white"
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "width": 501,
+            "height": 585,
+            "color": [
+                255,
+                255,
+                255
+            ],
+            "color_id": "white"
+        }
+    ],
+    "options": {
+        "binary_threshold": 110,
+        "min_line_length": 70,
+        "min_distance_factor": 0.069,
+        "black_rectangle_dilate": 33
+    }
+}

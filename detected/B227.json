@@ -1,0 +1,96 @@
+{
+    "height": 1000,
+    "width": 984,
+    "rectangles": [
+        {
+            "x": 427,
+            "y": 584,
+            "width": 433,
+            "height": 383,
+            "color": [
+                255,
+                255,
+                255
+            ],
+            "color_id": "white"
+        },
+        {
+            "x": 860,
+            "y": 584,
+            "width": 124,
+            "height": 189,
+            "color": [
+                181,
+                102,
+                0
+            ],
+            "color_id": "blue"
+        },
+        {
+            "x": 0,
+            "y": 584,
+            "width": 427,
+            "height": 416,
+            "color": [
+                31,
+                21,
+                238
+            ],
+            "color_id": "red"
+        },
+        {
+            "x": 860,
+            "y": 773,
+            "width": 124,
+            "height": 227,
+            "color": [
+                255,
+                255,
+                255
+            ],
+            "color_id": "white"
+        },
+        {
+            "x": 427,
+            "y": 967,
+            "width": 433,
+            "height": 33,
+            "color": [
+                255,
+                255,
+                255
+            ],
+            "color_id": "white"
+        },
+        {
+            "x": 427,
+            "y": 0,
+            "width": 557,
+            "height": 584,
+            "color": [
+                255,
+                255,
+                255
+            ],
+            "color_id": "white"
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "width": 427,
+            "height": 584,
+            "color": [
+                255,
+                255,
+                255
+            ],
+            "color_id": "white"
+        }
+    ],
+    "options": {
+        "binary_threshold": 110,
+        "min_line_length": 70,
+        "min_distance_factor": 0.071,
+        "black_rectangle_dilate": 33
+    }
+}

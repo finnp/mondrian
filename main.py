@@ -2,7 +2,7 @@ import cv2, numpy as np
 import sys
 import imutils
 import datetime
-from lines import connect_lines, reduce_lines, detect_lines, find_corners, find_rectangles
+from lines import remove_lines_close_to_border, connect_lines, reduce_lines, detect_lines, find_corners, find_rectangles
 from draw import find_colors_for_rects, draw_rectangles, draw_lines, draw_points, draw_corners, clip_rectangles
 from files import process_pipeline
 
@@ -10,6 +10,9 @@ retr_type = cv2.RETR_LIST
 contour_algorithm = cv2.CHAIN_APPROX_SIMPLE
 
 binary_threshold = 110
+min_line_length = 70
+min_distance_factor = 0.071
+black_rectangle_dilate = 33
 
 kernel = cv2.getStructuringElement(cv2.MORPH_RECT,(11,11))
 
@@ -52,7 +55,7 @@ def process_image(original):
     opening = cv2.erode(max, kernel)
 
     # remove lines, only black rectangles remain
-    dilated = cv2.dilate(max, cv2.getStructuringElement(cv2.MORPH_RECT,(29,29)))
+    dilated = cv2.dilate(max, cv2.getStructuringElement(cv2.MORPH_RECT,(black_rectangle_dilate,black_rectangle_dilate)))
 
     remove_mask = cv2.bitwise_not(dilated)
 
@@ -62,20 +65,21 @@ def process_image(original):
 
     steps.append(('opening', opening))
 
-    (horizontal, vertical) = detect_lines(cv2.bitwise_not(opening))
+    (horizontal, vertical) = detect_lines(cv2.bitwise_not(opening), min_line_length)
 
-    min_distance = width * 0.03 # minimal distance for lines to be considered distinct
+    min_distance = width * min_distance_factor # minimal distance for lines to be considered distinct
 
     (vertical_lines, horizontal_lines) = reduce_lines(horizontal, vertical, min_distance)
+    (horizontal_lines, vertical_lines) = remove_lines_close_to_border(horizontal_lines, vertical_lines, width, height, 0.2 * min_distance)
     before_connect = np.copy(original)
     draw_lines(before_connect, horizontal + vertical, color=(255,255,255))
     draw_lines(before_connect, vertical_lines + horizontal_lines)
     steps.append(('raw-lines', before_connect))
 
+
     # add helper lines for borders
     horizontal_lines += [(0,0,width,0), (0,height,width,height)]
     vertical_lines += [(width,height,width,0), (0,height,0,0)]
-
     (horizontal, vertical) = connect_lines(horizontal_lines, vertical_lines)
 
     top_left, bottom_left, bottom_right, top_right = find_corners(horizontal, vertical)
@@ -102,7 +106,10 @@ def process_image(original):
         'width': width,
         'rectangles': rects_with_color,
         'options': {
-            'binary_threshold': binary_threshold
+            'binary_threshold': binary_threshold,
+            'min_line_length': min_line_length,
+            'min_distance_factor': min_distance_factor,
+            'black_rectangle_dilate': black_rectangle_dilate
         }
     }
     drawn = draw_rectangles(rects_with_color, height, width)
@@ -113,6 +120,8 @@ def process_image(original):
     steps.append(('overlay', overlay))
 
     side_by_side = np.hstack((original, drawn, overlay))
+    font = cv2.FONT_HERSHEY_SIMPLEX
+    cv2.putText(side_by_side,str(len(rects_with_color)),(10,500), font, 4,(0,0,0),2,cv2.LINE_AA)
     steps.append(('side_by_side', side_by_side))
 
 
