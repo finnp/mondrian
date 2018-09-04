@@ -1,16 +1,20 @@
 import cv2, numpy as np
 import math
 
-def to_opencv_color(color):
-    r,g,b = color
-    return (b,g,r)
+def get_hue(color):
+    [[(h,s,v)]] = cv2.cvtColor(np.uint8([[color]]),cv2.COLOR_BGR2HSV)
+    return h
 
-yellow = (255, 243, 0)
-blue = (0, 102, 181)
-red = (238, 21, 31)
-white = (255, 255, 255)
-black = (0,0,0)
-colors = [to_opencv_color(black), to_opencv_color(yellow), to_opencv_color(blue), to_opencv_color(red), to_opencv_color(white)]
+def to_bgr(color):
+    r,g,b = color
+    return b,g,r
+
+yellow = to_bgr((255, 243, 0))
+blue = to_bgr((0, 102, 181))
+red = to_bgr((238, 21, 31))
+yellow_hue = get_hue(yellow)
+blue_hue = get_hue(blue)
+red_hue = get_hue(red)
 
 def draw_lines(img, lines, color = (100, 100, 255)):
     for x1,y1,x2,y2 in lines:
@@ -80,10 +84,10 @@ def draw_voronoi(img, rects):
 def get_closest_color(img, rect):
     x,y,w,h = rect
 
-    w = math.ceil(w/2)
-    h = math.ceil(h/2)
-    x += int(w/4)
-    y += int(h/4)
+    # w = math.ceil(w/2)
+    # h = math.ceil(h/2)
+    # x += int(w/4)
+    # y += int(h/4)
 
     cropped = img[y: y + h, x: x + w]
 
@@ -91,11 +95,32 @@ def get_closest_color(img, rect):
     return find_closest_color(avg_color)
 
 def find_closest_color(to_color):
-    current_distance = 500
-    current_color = (255, 255, 255)
-    for from_color in colors:
-        new_distance = np.linalg.norm(np.array(from_color) - to_color)
-        if (new_distance < current_distance):
-            current_color = from_color
-            current_distance = new_distance
-    return current_color
+    [[(hue,s,v)]] = cv2.cvtColor(np.uint8([[to_color]]),cv2.COLOR_BGR2HSV)
+    if s < 100:
+        if v > 120:
+            # white
+            return (255,255,255)
+        if v < 60:
+            # black
+            return (0,0,0)
+
+    def get_hue_distance(hue1, hue2):
+        small_hue = min(hue1, hue2)
+        big_hue = max(hue1, hue2)
+        dist1 = big_hue - small_hue
+        dist2 = (small_hue + 180) - big_hue
+        return min(dist1, dist2)
+
+    distance_yellow = get_hue_distance(hue, yellow_hue)
+    distance_blue = get_hue_distance(hue, blue_hue)
+    distance_red = get_hue_distance(hue, red_hue)
+
+    distance = distance_yellow
+    color = yellow
+    if distance_blue < distance:
+        distance = distance_blue
+        color = blue
+    if distance_red < distance:
+        color = red
+
+    return color

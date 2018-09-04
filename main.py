@@ -118,12 +118,15 @@ def process_image(original):
     draw_black_border(opening)
 
     rects, polygons = find_contours(opening)
-    drawn = draw_rectangles(rectangles, binary)
+    drawn = draw_rectangles(rectangles, original)
 
-    steps.append(('drawnn', drawn))
+    steps.append(('drawn', drawn))
 
     overlay = cv2.addWeighted(original, 0.3, drawn, 0.7,0)
     steps.append(('overlay', overlay))
+
+    side_by_side = np.hstack((original, drawn, overlay))
+    steps.append(('side_by_side', side_by_side))
 
     return steps
 
