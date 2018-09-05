@@ -60,15 +60,12 @@ def detect_lines(img, min_line_length):
 def remove_lines_close_to_border(horizontal, vertical, width, height, min_distance):
     horizontal_result = []
     vertical_result = []
-    print(len(horizontal), len(vertical))
     for h in horizontal:
         y = h[1]
-        print(y, height, min_distance)
         if y > min_distance and height - y > min_distance:
             horizontal_result.append(h)
     for v in vertical:
         x = v[0]
-        print(x, width, min_distance)
         if x > min_distance and width - x > min_distance:
             vertical_result.append(v)
     return (horizontal_result, vertical_result)
