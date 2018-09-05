@@ -9,6 +9,9 @@ def to_bgr(color):
     r,g,b = color
     return b,g,r
 
+debug_colors = False
+
+
 yellow = to_bgr((255, 243, 0))
 blue = to_bgr((0, 102, 181))
 red = to_bgr((238, 21, 31))
@@ -37,9 +40,9 @@ def clip_rectangles(rects, img):
 
 def find_colors_for_rects(rects, source):
     output = []
-    for rect in rects:
+    for rect_id, rect in enumerate(rects):
         x,y,width,height = rect
-        (color, color_name) = get_closest_color(source, rect)
+        (color, color_name) = get_closest_color(source, rect, rect_id)
         output.append({
             'x': x,
             'y': y,
@@ -64,23 +67,20 @@ def draw_rectangles(rects, height, width):
 
     return blank
 
-def get_closest_color(img, rect):
+def get_closest_color(img, rect, rect_id):
     x,y,w,h = rect
-
-    # w = math.ceil(w/2)
-    # h = math.ceil(h/2)
-    # x += int(w/4)
-    # y += int(h/4)
-
     cropped = img[y: y + h, x: x + w]
 
-    avg_color = np.average( np.average(cropped, axis=0), axis=0)
-    return find_closest_color(avg_color)
 
-def find_closest_color(to_color):
+    avg_color = np.average( np.average(cropped, axis=0), axis=0)
+    return find_closest_color(avg_color, rect_id)
+
+def find_closest_color(to_color, rect_id):
     [[(hue,s,v)]] = cv2.cvtColor(np.uint8([[to_color]]),cv2.COLOR_BGR2HSV)
-    if s < 100:
-        if v > 120:
+    if debug_colors:
+        print('rect %s: saturation %s, value %s' % (rect_id, s,v))
+    if s < 88:
+        if v > 100:
             return ((255,255,255), 'white')
         if v < 60:
             return ((0,0,0), 'black')

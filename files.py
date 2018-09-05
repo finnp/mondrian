@@ -8,6 +8,8 @@ output_dir = 'output'
 image_type = 'jpg'
 detected_dir = 'detected'
 
+issues = []
+
 def process_pipeline(process_image):
     detected = [file[:-5] for file in os.listdir(detected_dir)]
     if len(sys.argv) > 1:
@@ -44,6 +46,7 @@ def process_pipeline(process_image):
                     os.makedirs(subdir)
             output_filename = subdir + '/' + file_without_ending + '.jpg'
             cv2.imwrite(output_filename, img)
+    print('%s issues' % len(issues))
 
 def save_data(data, filename):
     with open(filename, 'w') as fp:
@@ -55,8 +58,12 @@ def read_data(filename):
     with open(filename) as f:
         return json.load(f)
 
-def print_issue(text, got, expected):
-    print('\t🚨 %s, got %s, expected %s' %(text, got, expected))
+def print_issue(text, got, expected, rect_id = False):
+    issue = '\t🚨 %s, got %s, expected %s' %(text, got, expected)
+    if rect_id:
+        issue += ' - rect:' + rect_id
+    issues.append(issue)
+    print(issue)
 
 def check_data(proven, data):
     proven_rects = proven['rectangles']
@@ -69,4 +76,4 @@ def check_data(proven, data):
     for index, rect in enumerate(data_rects):
         rect_proven = proven_rects[index]
         if rect['color_id'] != rect_proven['color_id']:
-            print_issue('Wrong color', rect['color_id'], rect_proven['color_id'])
+            print_issue('Wrong color', rect['color_id'], rect_proven['color_id'], index)
