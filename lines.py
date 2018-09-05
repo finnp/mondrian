@@ -22,9 +22,12 @@ def detect_lines(img, min_line_length):
     current_line = False
     current_line_start = 0
 
+    white = img == 255
+
     for y in range(height):
         for x in range(width):
-            if(img.item(y,x) == 255):
+            is_white = white.item(y,x)
+            if(is_white):
                 if not current_line:
                     current_line = True
                     current_line_start = x
@@ -42,7 +45,8 @@ def detect_lines(img, min_line_length):
     current_line_start = 0
     for x in range(width):
         for y in range(height):
-            if(img.item(y,x) == 255):
+            is_white = white.item(y,x)
+            if(is_white):
                 if not current_line:
                     current_line = True
                     current_line_start = y
