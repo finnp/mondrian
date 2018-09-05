@@ -5,6 +5,7 @@ import datetime
 from lines import remove_lines_close_to_border, connect_lines, reduce_lines, detect_lines, find_corners, find_rectangles
 from draw import find_colors_for_rects, draw_rectangles, draw_lines, draw_points, draw_corners, clip_rectangles
 from files import process_pipeline
+import timings
 
 retr_type = cv2.RETR_LIST
 contour_algorithm = cv2.CHAIN_APPROX_SIMPLE
@@ -21,6 +22,7 @@ def draw_black_border(img):
     cv2.rectangle(img, (0,0), (width, height), (0, 0, 0))
 
 def process_image(original):
+    timings.start('full')
     steps = []
     height, width, channels = original.shape
 
@@ -65,7 +67,9 @@ def process_image(original):
 
     steps.append(('opening', opening))
 
+    timings.start('detect_lines')
     (horizontal, vertical) = detect_lines(cv2.bitwise_not(opening), min_line_length)
+    timings.end('detect_lines')
 
     min_distance = width * min_distance_factor # minimal distance for lines to be considered distinct
 
@@ -125,6 +129,10 @@ def process_image(original):
     steps.append(('side_by_side', side_by_side))
 
 
+    timings.end('full')
     return (steps, output)
 
 process_pipeline(process_image)
+print('')
+print('Time for iteration: %s' % timings.average('full'))
+print('Detect lines: %s' % timings.average('detect_lines'))
