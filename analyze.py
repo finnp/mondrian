@@ -1,5 +1,6 @@
 import json, os
 import pandas as pd
+import numpy as np
 import matplotlib.pyplot as plt
 
 dir = 'detected'
@@ -51,7 +52,12 @@ df.boxplot(column=['colors', 'non-colors'])
 plt.savefig(out_dir + '/colors-non-colors.png')
 plt.close()
 
-df = pd.DataFrame(number_of_rects)
-df.boxplot()
+def histogram(df, bins):
+    df.hist(bins=np.arange(bins + 1) - 0.5)
+    plt.xticks(range(bins))
+    plt.xlim([-1, bins])
+
+df = pd.DataFrame({'Number of rectangles': number_of_rects})
+histogram(df, 20)
 plt.savefig(out_dir + '/n-rects.png')
 plt.close()
