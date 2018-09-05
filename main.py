@@ -12,7 +12,7 @@ contour_algorithm = cv2.CHAIN_APPROX_SIMPLE
 
 binary_threshold = 110
 min_line_length = 70
-min_distance_factor = 0.065
+min_distance = 70
 black_rectangle_dilate = 33
 
 kernel = cv2.getStructuringElement(cv2.MORPH_RECT,(11,11))
@@ -71,12 +71,11 @@ def process_image(original):
     (horizontal, vertical) = detect_lines(cv2.bitwise_not(opening), min_line_length)
     timings.end('detect_lines')
 
-    min_distance = width * min_distance_factor # minimal distance for lines to be considered distinct
-
     (vertical_lines, horizontal_lines) = reduce_lines(horizontal, vertical, min_distance)
     (horizontal_lines, vertical_lines) = remove_lines_close_to_border(horizontal_lines, vertical_lines, width, height, 0.2 * min_distance)
     before_connect = np.copy(original)
-    draw_lines(before_connect, horizontal + vertical, color=(255,255,255))
+    draw_lines(before_connect, horizontal, color=(0,255,0))
+    draw_lines(before_connect, vertical, color=(255,0,0))
     draw_lines(before_connect, vertical_lines + horizontal_lines)
     steps.append(('raw-lines', before_connect))
 
@@ -112,7 +111,7 @@ def process_image(original):
         'options': {
             'binary_threshold': binary_threshold,
             'min_line_length': min_line_length,
-            'min_distance_factor': min_distance_factor,
+            'min_distance': min_distance,
             'black_rectangle_dilate': black_rectangle_dilate
         }
     }

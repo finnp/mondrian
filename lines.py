@@ -101,8 +101,10 @@ def reduce_lines(input_horizontal, input_vertical, min_distance):
     for index, (x1,y1,x2,y2) in enumerate(input_vertical):
         if index in seen_vertical:
             continue
-        x_values = [x1,x2]
+        x_values = [x1]
         for other_index, (x1_b,y1_b,x2_b,y2_b) in enumerate(input_vertical):
+            if other_index in seen_vertical:
+                continue
             if (abs(x1 - x1_b) < min_distance):
                 # if the end is further to the top, choose this end
                 if (y2_b < y2):
@@ -111,7 +113,7 @@ def reduce_lines(input_horizontal, input_vertical, min_distance):
                 if (y1_b > y1):
                     y1 = y1_b
 
-                x_values += [x1_b, x2_b]
+                x_values.append(x1_b)
                 seen_vertical.add(other_index)
 
             # taking the average x value for all the lines to get the middle
@@ -124,6 +126,8 @@ def reduce_lines(input_horizontal, input_vertical, min_distance):
             continue
         y_values = [y1, y2]
         for other_index, (x1_b,y1_b,x2_b,y2_b) in enumerate(input_horizontal):
+            if other_index in seen_horizontal:
+                continue
             if (abs(y1 - y1_b) < min_distance):
                 # if the start if further to the left, choose this point
                 if (x1_b < x1):
