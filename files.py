@@ -77,3 +77,7 @@ def check_data(proven, data):
         rect_proven = proven_rects[index]
         if rect['color_id'] != rect_proven['color_id']:
             print_issue('Wrong color', rect['color_id'], rect_proven['color_id'], index)
+        diff_x = abs(rect['x'] - rect_proven['x'])
+        diff_y = abs(rect['x'] -rect_proven['x'])
+        if diff_x > 10 or diff_y > 10:
+            print_issue('Different position', (diff_x, diff_y), (0,0), index)
