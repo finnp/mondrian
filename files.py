@@ -61,7 +61,7 @@ def read_data(filename):
 def print_issue(text, got, expected, rect_id = False):
     issue = '\t🚨 %s, got %s, expected %s' %(text, got, expected)
     if rect_id:
-        issue += ' - rect:' + rect_id
+        issue += ' - rect:' + str(rect_id)
     issues.append(issue)
     print(issue)
 
