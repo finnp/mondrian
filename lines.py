@@ -1,5 +1,6 @@
 import numpy as np
 import cv2
+import myrustlib
 
 def detect_lines_hough(img):
     lines = cv2.HoughLinesP(
@@ -11,6 +12,12 @@ def detect_lines_hough(img):
         maxLineGap=10
     )
     return [line[0] for line in lines] # weird HoughLinesP output
+
+def detect_lines_rust(img, min_line_length):
+    height, width = img.shape
+    white = (img == 255).flatten().tolist()
+    detected = myrustlib.detect_lines(white, width, height, min_line_length)
+    return split_by_orientation(detected)
 
 def detect_lines(img, min_line_length):
     """

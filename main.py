@@ -2,7 +2,7 @@ import cv2, numpy as np
 import sys
 import imutils
 import datetime
-from lines import remove_lines_close_to_border, connect_lines, reduce_lines, detect_lines, find_corners, find_rectangles
+from lines import remove_lines_close_to_border, connect_lines, reduce_lines, detect_lines, detect_lines_rust, find_corners, find_rectangles
 from draw import find_colors_for_rects, draw_rectangles, draw_lines, draw_points, draw_corners, clip_rectangles
 from files import process_pipeline
 import timings
@@ -68,7 +68,7 @@ def process_image(original):
     steps.append(('opening', opening))
 
     timings.start('detect_lines')
-    (horizontal, vertical) = detect_lines(cv2.bitwise_not(opening), min_line_length)
+    (horizontal, vertical) = detect_lines_rust(cv2.bitwise_not(opening), min_line_length)
     timings.end('detect_lines')
 
     (vertical_lines, horizontal_lines) = reduce_lines(horizontal, vertical, min_distance)
