@@ -1,10 +1,7 @@
 % !TeX encoding = UTF-8
 \section{Methods}
 
-% How does the program work?
 % What libraries, existing algorithms were used?
-% Description of the automatic Image processing
-% Detection of shapes
 
 Algorithm for detecting rectangles in Mondrian paiting can be separated roughly
 in two parts:
@@ -14,16 +11,6 @@ in two parts:
 \end{itemize}
 
 \subsection{Image preprocessing}
-
-\begin{itemize}
-  \item Gaussian blur
-  \item Turning the image into a greyscale (Finding the "brightest" part of the RGB, black and white)
-  \item Adjusting the contrast of the image using Contrast Limited Adaptive Histogram Equalization
-  \item Further brighten colorful areas to better separate them from black areas
-  \item Converting the image into a binary image via a binary threshold
-  \item Using the image morphology erosion to increase the size of black areas
-  \item Turn white rectangles in white ones with black borders (via a mask and a dilation)
-\end{itemize}
 
 The goal of the image preprocessing step is to turn the input image into a
 black-and-white or binary image where the lines of a Mondrian paiting are black
@@ -60,16 +47,33 @@ black rectangles remains. (This could actually be shown as a formular, A - Erode
 
 \subsection{Detection and recognition of rectangles}
 
+To detect the different rectangles in the resulting binary image is scanned
+horizontally as well as vertically line by line for each pixel to find horizontal
+and vertical lines. It only recognizes lines with a certain minimum length.
+However this means that what we perceive as for example a horizontal line in the
+painting is now recognized as multiple lines next to each other. A line that is
+50 pixel wide would be recognized as 50 lines.
 
+To then actually find the perceived lines, parallel lines are merged into one line.
+As long as parallel lines are within a certain distance from each other they are
+merged into one line. For horizontal lines the resulting line will have the average
+y value of all those lines. And the minimum and maximum x values for starting and end
+points.
 
+From out idealistic view on Mondrian paintings, the ends of lines always touch
+another line or the edge of the painting. Therefore the next step of the algorithm
+is to look at the ends of each line, determine the closest line and change the
+end of the line to this closest line. To simplify it the edges of the paintings
+are added as lines.
 
-\begin{itemize}
-  \item Find all horizontal and vertical lines by going through all the pixels
-  \item Combine close parallel lines to one line
-  \item Connect the lines so that the ends of each line always touch another line
-  \item Find the four different kind of corners that these lines form
-  \item Find the different rectangles given these corners
-  \item Determine the color of the rectangles by comparing the area with the original
-\end{itemize}}
+These lines now depict a number of rectangles. To find these rectangles we
+first find all the corners of the rectangles. The corners are always a cross-section
+of two lines. We find the top-left, top-right, bottom-left and bottom-right corners.
 
-% Siehe \zb \cite{Dje06, DjeOezSal07, CocWil00}.
+After this four different corners are combined into a rectangle by finding matching
+corners.
+
+Now that we have a list of rectangles, we determine the colors of the rectangles.
+For this purpose we clip the rectangle from the original image and determine the
+average color. This color is then compared to black, white, red, blue and yellow.
+The colors that we expect in an idealistic mondrian painting.
