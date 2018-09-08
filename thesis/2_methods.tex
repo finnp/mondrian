@@ -14,6 +14,7 @@ in two parts:
 \end{itemize}
 
 \subsection{Image preprocessing}
+
 \begin{itemize}
   \item Gaussian blur
   \item Turning the image into a greyscale (Finding the "brightest" part of the RGB, black and white)
@@ -24,7 +25,44 @@ in two parts:
   \item Turn white rectangles in white ones with black borders (via a mask and a dilation)
 \end{itemize}
 
+The goal of the image preprocessing step is to turn the input image into a
+black-and-white or binary image where the lines of a Mondrian paiting are black
+while the inner side of the rectangles are white.
+
+At first the image is transformed with a minimal Gaussian blur to reduce
+artifacts that the input images might include. (Reference Gaussian blur paper?)
+
+After that the RGB input image is converted into a greyscale image by using the
+maximum value of the RGB triplet.
+
+Now the contrast of the image is harmonized using the Contrast Limited Adaptive
+Histogram Equalization algorithm.
+
+As the next step the colorful areas of the images are further brightened to make
+them further stand out against the black areas of the paintings. This way darker
+blue areas can be better distinguished compared to black areas.
+
+Now the image is converted into a binary image using an arbitrary threshold that
+can be configured.
+
+Since this step will likely also turn a few areas white that a human would
+recognize as black line an erosion is applied now. Erosion is an image morphology
+that increases the size or black areas in an image. This way possible unwanted
+cracks in the lines are restored.
+
+The resulting image now separes the darker parts of the image fairly well.
+However we are only interested into black lines, but Mondrian paitings also include
+black rectangles. To remove these black rectangles we create a mask that applies a
+comparatively strong dilation on the image (the oppotive of an erosion). The resulting
+mask is then removed from the image in the step before. This way only the outline of the
+black rectangles remains. (This could actually be shown as a formular, A - Erode(A))
+
+
 \subsection{Detection and recognition of rectangles}
+
+
+
+
 \begin{itemize}
   \item Find all horizontal and vertical lines by going through all the pixels
   \item Combine close parallel lines to one line
