@@ -1,0 +1,11 @@
+[package]
+name = "python-rust"
+version = "0.1.0"
+authors = ["Finn Pauls <derfinn@gmail.com>"]
+
+[lib]
+name = "myrustlib"
+crate-type = ["cdylib"]
+
+[dependencies.cpython]
+git = "https://github.com/dgrunwald/rust-cpython"
