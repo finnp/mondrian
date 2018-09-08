@@ -1,0 +1,20 @@
+% !TeX encoding = UTF-8
+\section{Anhang}
+
+Quellcode der \LaTeX-Klasse \texttt{agse-thesis}:\footnote{Es ist nicht üblich,
+den gesamten produzierten Quellcode bei einer Abschlussarbeit in Textform
+abzugeben.}
+
+\lstinputlisting[
+    language={[LaTeX]Tex},
+    morekeywords={ProvidesClass, DeclareOption, PassOptionsToClass,
+        ProcessOptions, CurrentOption, LoadClass, RequirePackage, ifthenelse,
+        ifcsdef, equal, definecolor, lstset, pgfkeys},
+    basicstyle=\footnotesize\ttfamily,
+    numbers=left,
+    numberstyle=\footnotesize\ttfamily,
+    stepnumber=5,
+    inputencoding=utf8,
+    extendedchars=true,
+   literate={ä}{{\"a}}1 {ü}{{\"u}}1,
+]{agse-thesis.cls}
