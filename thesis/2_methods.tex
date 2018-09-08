@@ -1,9 +1,37 @@
 % !TeX encoding = UTF-8
-\section{Grundlagen}
+\section{Methods}
 
-\lipsum[8]
+% How does the program work?
+% What libraries, existing algorithms were used?
+% Description of the automatic Image processing
+% Detection of shapes
 
-Siehe \zb \cite{Dje06, DjeOezSal07, CocWil00}.
+Algorithm for detecting rectangles in Mondrian paiting can be separated roughly
+in two parts:
+\begin{itemize}
+  \item Image preprocessing
+  \item Detection and recognition of rectangles
+\end{itemize}
 
-\lipsum[9-11]
+\subsection{Image preprocessing}
+\begin{itemize}
+  \item Gaussian blur
+  \item Turning the image into a greyscale (Finding the "brightest" part of the RGB, black and white)
+  \item Adjusting the contrast of the image using Contrast Limited Adaptive Histogram Equalization
+  \item Further brighten colorful areas to better separate them from black areas
+  \item Converting the image into a binary image via a binary threshold
+  \item Using the image morphology erosion to increase the size of black areas
+  \item Turn white rectangles in white ones with black borders (via a mask and a dilation)
+\end{itemize}
 
+\subsection{Detection and recognition of rectangles}
+\begin{itemize}
+  \item Find all horizontal and vertical lines by going through all the pixels
+  \item Combine close parallel lines to one line
+  \item Connect the lines so that the ends of each line always touch another line
+  \item Find the four different kind of corners that these lines form
+  \item Find the different rectangles given these corners
+  \item Determine the color of the rectangles by comparing the area with the original
+\end{itemize}}
+
+% Siehe \zb \cite{Dje06, DjeOezSal07, CocWil00}.
