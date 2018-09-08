@@ -23,6 +23,7 @@ def draw_black_border(img):
 
 def process_image(original):
     timings.start('full')
+    timings.start('start')
     steps = []
     height, width, channels = original.shape
 
@@ -67,9 +68,11 @@ def process_image(original):
 
     steps.append(('opening', opening))
 
+    timings.end('start')
     timings.start('detect_lines')
     (horizontal, vertical) = detect_lines_rust(cv2.bitwise_not(opening), min_line_length)
     timings.end('detect_lines')
+    timings.start('after')
 
     (vertical_lines, horizontal_lines) = reduce_lines(horizontal, vertical, min_distance)
     (horizontal_lines, vertical_lines) = remove_lines_close_to_border(horizontal_lines, vertical_lines, width, height, 0.2 * min_distance)
@@ -128,6 +131,7 @@ def process_image(original):
     steps.append(('side_by_side', side_by_side))
 
 
+    timings.end('after')
     timings.end('full')
     return (steps, output)
 
@@ -135,3 +139,5 @@ process_pipeline(process_image)
 print('')
 print('Time for iteration: %s' % timings.average('full'))
 print('Detect lines: %s' % timings.average('detect_lines'))
+print('Before: %s' % timings.average('start'))
+print('After lines: %s' % timings.average('after'))
