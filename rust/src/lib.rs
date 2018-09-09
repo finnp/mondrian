@@ -14,21 +14,31 @@ py_module_initializer!(myrustlib, initmyrustlib, PyInit_myrustlib, |py, m| {
     Ok(())
 });
 
-fn reduce_lines(_: Python, horizontal: Vec<Line>, vertical: Vec<Line>, min_distance: usize) -> PyResult<Lines> {
+fn average(numbers: Vec<usize>) -> f64 {
+    let mut total = 0;
+    for index in 0..numbers.len() {
+        total = total + numbers[index];
+    }
+    (total as f64) / (numbers.len() as f64)
+}
+
+fn reduce_lines(_: Python, horizontal: Vec<Line>, vertical: Vec<Line>, min_distance: usize) -> PyResult<(Lines, Lines)> {
     let mut seen_vertical = HashSet::new();
+    let mut seen_horizontal = HashSet::new();
     let mut output_vertical = vec![];
+    let mut output_horizontal = vec![];
 
     for index in 0..vertical.len() {
         if seen_vertical.contains(&index) {
             continue;
         }
-        let (x1,mut y1,_x2,mut y2) = horizontal[index];
-        let mut x = x1 as f64; // running average
+        let (x1,mut y1,_x2,mut y2) = vertical[index];
+        let mut x_values = vec![x1];
         for other_index in 0..vertical.len() {
             if seen_vertical.contains(&other_index) {
                 continue;
             }
-            let (x1_b,y1_b,_x2_b,y2_b) = horizontal[other_index];
+            let (x1_b,y1_b,_x2_b,y2_b) = vertical[other_index];
             if (x1 as isize - x1_b as isize).abs() < min_distance as isize {
                 // if the end is further to the top, choose this end
                 if y2_b < y2 {
@@ -39,14 +49,42 @@ fn reduce_lines(_: Python, horizontal: Vec<Line>, vertical: Vec<Line>, min_dista
                     y1 = y1_b;
                 }
 
-                x = (x + x1_b as f64) / 2.0;
+                x_values.push(x1_b);
                 seen_vertical.insert(other_index);
             }
         }
-        output_vertical.push((x as usize,y1,x as usize,y2))
+        let x = average(x_values);
+        output_vertical.push((x as usize,y1,x as usize,y2));
     }
 
-    return Ok(output_vertical);
+    for index in 0..horizontal.len() {
+        if seen_horizontal.contains(&index) {
+            continue;
+        }
+        let (mut x1,y1,mut x2,_y2) = horizontal[index];
+        let mut y_values = vec![y1];
+        for other_index in 0..horizontal.len() {
+            if seen_horizontal.contains(&other_index) {
+                continue;
+            }
+            let (x1_b,y1_b,x2_b,_y2_b) = horizontal[other_index];
+            if (y1 as isize - y1_b as isize).abs() < min_distance as isize {
+                if x1_b < x1 {
+                    x1 = x1_b;
+                }
+                if x2_b > x2 {
+                    x2 = x2_b;
+                }
+
+                y_values.push(y1_b);
+                seen_horizontal.insert(other_index);
+            }
+        }
+        let y = average(y_values);
+        output_horizontal.push((x1,y as usize,x2,y as usize))
+    }
+
+    return Ok((output_vertical, output_horizontal));
 
 }
 

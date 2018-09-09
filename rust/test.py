@@ -1,4 +1,5 @@
 from myrustlib import detect_lines, reduce_lines
+import lines
 
 def split_by_orientation(lines):
     horizontal = []
@@ -22,4 +23,5 @@ height = 5
 (horizontal, vertical) = split_by_orientation(detect_lines(test, width, height,1))
 
 print(vertical)
+print(lines.reduce_lines(horizontal, vertical, 2))
 print(reduce_lines(horizontal, vertical, 2))

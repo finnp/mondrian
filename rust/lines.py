@@ -92,9 +92,6 @@ def split_by_orientation(lines):
             horizontal.append((x1,y1,x2,y2))
     return (horizontal, vertical)
 
-def reduce_lines_rust(input_horizontal, input_vertical, min_distance):
-    return myrustlib.reduce_lines(input_horizontal, input_vertical, min_distance)
-
 def reduce_lines(input_horizontal, input_vertical, min_distance):
     """
         Takes a list of vertical and horizontal lines,
@@ -134,7 +131,7 @@ def reduce_lines(input_horizontal, input_vertical, min_distance):
     for index, (x1,y1,x2,y2) in enumerate(input_horizontal):
         if index in seen_horizontal:
             continue
-        y_values = [y1]
+        y_values = [y1, y2]
         for other_index, (x1_b,y1_b,x2_b,y2_b) in enumerate(input_horizontal):
             if other_index in seen_horizontal:
                 continue
@@ -146,7 +143,7 @@ def reduce_lines(input_horizontal, input_vertical, min_distance):
                 if (x2_b > x2):
                     x2 = x2_b
 
-                y_values += [y1_b]
+                y_values += [y1_b, y2_b]
                 seen_horizontal.add(other_index)
 
             # taking the average y value for all the lines to get the middle
