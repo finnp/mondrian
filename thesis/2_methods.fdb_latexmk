@@ -1,10 +1,13 @@
 # Fdb version 3
-["pdflatex"] 1536416370 "2_methods.tex" "2_methods.pdf" "2_methods" 1536416370
+["pdflatex"] 1536605176 "2_methods.tex" "2_methods.pdf" "2_methods" 1536605177
+  "/usr/local/texlive/2018/texmf-dist/fonts/map/fontname/texfonts.map" 1511824771 3332 103109f5612ad95229751940c61aada0 ""
+  "/usr/local/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1480098701 1328 c834bbb027764024c09d3d2bf908b5f0 ""
+  "/usr/local/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmti10.tfm" 1480098701 1480 aa8e34af0eb6a2941b776984cf1dfdc4 ""
   "/usr/local/texlive/2018/texmf-dist/web2c/texmf.cnf" 1522066949 33362 cf75436e19743e94a92a6b1b9183c434 ""
   "/usr/local/texlive/2018/texmf-var/web2c/pdftex/pdflatex.fmt" 1536413913 4220279 dafef3b865c8db700b1c4b89bfa57594 ""
   "/usr/local/texlive/2018/texmf.cnf" 1523934483 577 0b39adfd7c93507ff20c9c14c2f1a33f ""
   "2_methods.aux" 1536416370 8 a94a2480d3289e625eea47cd1b285758 ""
-  "2_methods.tex" 1536416332 1561 66e426f45f0096cba94173a94c41a94b ""
+  "2_methods.tex" 1536605170 7617 b50295fee8e20a014b8f4fc0f5c519c5 ""
   (generated)
   "2_methods.pdf"
   "2_methods.log"

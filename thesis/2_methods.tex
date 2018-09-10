@@ -2,6 +2,35 @@
 
 \section{Methods}
 
+\subsection{Image Morphology}
+
+Image Morphology is based on Mathematical Morphology from the mathematical field
+of set theory. We are going to present two basic morphological operators
+commonly used in image processing without going into detail of their mathematical
+definition.
+
+Given a binary image $X$ and a smaller binary image $B$ called the
+\textit{Structuring Element}, we can apply the following operations.
+
+The Erosion $X \ominus B$ is equivalent to iterating through all of the white
+pixels of $X$ and only keeping them if $B$ translated to this position is fully
+included in $X$. Therefore the white areas in $X$ are reduced \cite{Smith1997}.
+
+Similarly with the Dilation operation $X \oplus B$ neighbouring pixels are
+turned white if they intersect with the translated Structuring Element. The size
+of white areas is increased.
+
+Image Morphologies have multiple uses like increasing certain areas for better
+recognition or separating larger shapes of an image.
+
+% \subsection{Thresholding}
+% ... Thresholding!
+% Concepts used
+% - Thresholding gray-scale images
+% - Contrast Limited Adaptive Histogram Equalization (CLAHE)
+% - Masks
+
+
 The input to the detection algorithm is an RGB image of a Mondrian painting. The
 expected output is a list of rectangles with their position, sizes and color as
 they are conceptionally seen in the painting. All rectangles combined are
@@ -46,26 +75,23 @@ the greyscale values. This value of the threshold can be configured. Through
 test runs a value of 110 for a greyscale range of 0 to 255 showed to give the
 reasonable results.
 
-Since the thresholding step might also turn a few areas white that a human would
-recognize as part of a black line Erosion is applied now. Erosion is an image
-morphology that increases the size or black areas in an image using a binary
-matrix called the \textit{structuring element}. The center of this matrix is
-aligned with each input pixel with the value 0 (black). Then the shape of the
-matrix is removed from the input image. In our case, the structuring element is
-a $N\times N$ filled matrix. Using the erosion possible considered accidental
-interruptions in the lines can be restored. However choosing a structuring
-element that is too big, might result into loss of information. Therefore the
-size $N$ of the erosion kernel needs to be chosen carefully.
+Since the thresholding step might leave some interuption in the black lines, we
+reduce the white areas of the image: An Erosion $A_2 = A_1 \ominus B_e$ is
+applied. In this case, the structuring element $B_e$ is a $N\times N$ filled
+matrix. Using the Erosion some accidental interruptions in the lines can be
+restored. However choosing a the Structuring Element that is too high, might
+result into loss of information. Therefore the size $N$ needs to be chosen
+carefully.
 
-The resulting image now separates the darker parts of the image fairly well.
-However, we are only interested in black lines, but Mondrian paintings also
-include filled black rectangles. To remove these black rectangles, we create a
-mask that applies a dilation with a comparatively large structuring element on
-the image. Dilation is the opposite of  Erosion, increasing the size of white
-areas. The size of the structuring element is chosen in a way that most of the
-lines in the paintings are removed, ideally only leaving inner subsections of
-black rectangles. The resulting mask is then removed from the image of the last
-step. Hence only the outlines of the black rectangles remain.
+The resulting image $A_2$ now separates the darker parts of the image fairly
+well. However, we are only interested in black lines, but Mondrian paintings
+also include filled black rectangles. To remove these black rectangles, we
+create a mask that applies a Dilation $A_m = A_2 \oplus B_d$ with a
+comparatively larger Structuring Element $B_d$ on the image. The size of $B_d$
+is chosen in a way that most of the lines in the paintings are removed, ideally
+only leaving inner areas of black rectangles. The resulting mask $A_m$ is then
+removed from the image of the last step $A_3 = A_2 - A_m$. Hence only the
+outlines of the black rectangles as well as the black lines remain in $A_3$.
 
 \subsection{Detection and recognition of rectangles}
 
@@ -77,7 +103,8 @@ To find horizontal lines, the image is scanned line by line for each pixel.
 Uninterrupted sequences of black pixels are added to a list of horizontal lines.
 Only sequences with a specified minimum length are added. The minimum length
 should ideally be slightly larger than the maximum width of the lines in the
-image. Vertical lines are recognized respectively.
+image. Vertical lines are recognized respectively. This step is the equivalent of
+applying a lossy run-length encoding once horizontally and once vertically.
 
 However, this means that what we perceive as one horizontal line in the painting
 is now recognized as multiple lines next to each other. For example, a line that

@@ -3,7 +3,7 @@
 
 %%% Read options
 % Language: Default is German
-\newcommand{\lang}{ngerman}
+\newcommand{\lang}{english}
 \DeclareOption{de}{\renewcommand{\lang}{ngerman}}
 \DeclareOption{en}{\renewcommand{\lang}{english}}
 
