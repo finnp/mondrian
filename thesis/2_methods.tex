@@ -1,7 +1,5 @@
 % !TeX encoding = UTF-8
 
-% What libraries, existing algorithms were used?
-
 \section{Methods}
 
 The input to the detection algorithm is an RGB image of a Mondrian painting. The
@@ -18,7 +16,7 @@ with only black and white pixels) in which the black represent the lines of the
 painting while the white represents the inner area of the rectangles.
 
 The second phase then takes this binary image and returns a list of found
-rectangles. Additionally, for recognizing the colors of the rectangles the
+rectangles. Additionally, for recognizing the colors of the rectangles, the
 original input image is used.
 
 \subsection{Image preprocessing}
@@ -32,9 +30,8 @@ the maximum value of the RGB triplet for each pixel.
 To normalize the greyscale image and increase the contrast of the darker
 regions, we now apply histogram equalization. Since global equalization did not
 work well for all images, we instead used Contrast Limited Adaptive Histogram
-Equalization (CLAHE) from OpenCV. In contrast to ordinary adaptive histogram
-equalization algorithms, this prevents the overamplification of noise. % TODO:
-Better explain Global harmonization -> Adaptive harmonization -> CLAHE
+Equalization (CLAHE) from OpenCV. In contrast to conventional adaptive histogram
+equalization algorithms, this prevents the overamplification of noise.
 
 After the normalization is applied, we now further brighten colorful areas of
 the image to make them further stand out against the black areas of the
@@ -50,7 +47,7 @@ test runs a value of 110 for a greyscale range of 0 to 255 showed to give the
 reasonable results.
 
 Since the thresholding step might also turn a few areas white that a human would
-recognize as part of a black line an erosion is applied now. Erosion is an image
+recognize as part of a black line Erosion is applied now. Erosion is an image
 morphology that increases the size or black areas in an image using a binary
 matrix called the \textit{structuring element}. The center of this matrix is
 aligned with each input pixel with the value 0 (black). Then the shape of the
@@ -61,14 +58,14 @@ element that is too big, might result into loss of information. Therefore the
 size $N$ of the erosion kernel needs to be chosen carefully.
 
 The resulting image now separates the darker parts of the image fairly well.
-However, we are only interested in black lines but Mondrian paintings also
-include filled black rectangles. To remove these black rectangles we create a
+However, we are only interested in black lines, but Mondrian paintings also
+include filled black rectangles. To remove these black rectangles, we create a
 mask that applies a dilation with a comparatively large structuring element on
-the image. A dilation is the opposite of an erosion, increasing the size of
-white areas. The size of the structuring element is chosen in a way that most of
-the lines in the paintings are removed, ideally only leaving inner subsections
-of black rectangles. The resulting mask is then removed from the image of the
-last step. Hence only the outlines of the black rectangles remain.
+the image. Dilation is the opposite of  Erosion, increasing the size of white
+areas. The size of the structuring element is chosen in a way that most of the
+lines in the paintings are removed, ideally only leaving inner subsections of
+black rectangles. The resulting mask is then removed from the image of the last
+step. Hence only the outlines of the black rectangles remain.
 
 \subsection{Detection and recognition of rectangles}
 
@@ -76,7 +73,7 @@ Since the rectangles in the image are defined through the horizontal and
 vertical lines in the image, the detection starts by finding all of those lines
 in the output binary image from the previous phase.
 
-To find horizontal lines the image is scanned line by line for each pixel.
+To find horizontal lines, the image is scanned line by line for each pixel.
 Uninterrupted sequences of black pixels are added to a list of horizontal lines.
 Only sequences with a specified minimum length are added. The minimum length
 should ideally be slightly larger than the maximum width of the lines in the
@@ -86,18 +83,18 @@ However, this means that what we perceive as one horizontal line in the painting
 is now recognized as multiple lines next to each other. For example, a line that
 is 50 pixels wide would be recognized as 50 lines. Therefore parallel lines
 close to each other are merged into a single line. As long as parallel lines are
-within a certain distance from each other they are merged into one line. For
+within a certain distance from each other, they are merged into one line. For
 horizontal lines, the resulting line will have the average $y$ value of all
 those lines and the minimum and maximum $x$ values as starting and end points.
 
 From out idealistic view on Mondrian paintings, the ends of lines always touch
-another line or the edge of the painting. But the lines that we reduced now
+another line or the edge of the painting. However, the lines that we reduced now
 might overlap slightly or not even connect to the next line.
 
-We therefore iterate over all the ends of the lines, determine the closest line
-to these point and change the position of this end to the closest line. For the
-purpose of this algorithm, the edges of the image are considered to be lines as
-well.
+We, therefore, iterate over all the ends of the lines, determine the closest
+line to this point and change the position of this end to the closest line. For
+the purpose of this algorithm, the edges of the image are considered to be lines
+as well.
 
 All lines should now represent the structure of the painting. What we want as
 our output though is a list of rectangles. Every rectangle in the image can be
@@ -106,7 +103,7 @@ bottom-left and bottom-right. These corners are always intersections of two
 lines, either crossing or touching. We determine the corners and their types by
 iterating through the lines.
 
-After this four different corners are combined into a rectangle by finding
+After this, four different corners are combined into a rectangle by finding
 matching corners. This is done by iterating through the top-left corners $(x,y)$
 and finding the closest top-right corner to the right $(x_r, y_r)$ and the
 closet bottom-left corner below $(x_b, y_b)$. The rectangle is then defined by
