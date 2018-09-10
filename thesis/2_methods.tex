@@ -72,32 +72,46 @@ last step. Hence only the outlines of the black rectangles remain.
 
 \subsection{Detection and recognition of rectangles}
 
-To detect the different rectangles in the resulting binary image is scanned
-horizontally as well as vertically line by line for each pixel to find
-horizontal and vertical lines. It only recognizes lines with a certain minimum
-length. However, this means that what we perceive as for example a horizontal
-line in the painting is now recognized as multiple lines next to each other. A
-line that is 50 pixels wide would be recognized as 50 lines.
+Since the rectangles in the image are defined through the horizontal and vertical
+lines in the image, the detection starts by finding all of those lines in
+the output binary image from the previous phase.
 
-To then actually find the perceived lines, parallel lines are merged into one
-line. As long as parallel lines are within a certain distance from each other
-they are merged into one line. For horizontal lines, the resulting line will
-have the average y value of all those lines. And the minimum and maximum x
-values for starting and end points.
+To find horizontal lines the image is scanned line by line for each pixel.
+Uninterrupted sequences of black pixels are added to a list of horizontal lines.
+Only sequences with a specified minimum length are added. The minimum length
+should ideally be slightly larger than the maximum width of the lines in the
+image. Vertical lines are recognized respectively.
+
+However, this means that what we perceive as one horizontal line in the painting
+is now recognized as multiple lines next to each other. For example, a line that
+is 50 pixels wide would be recognized as 50 lines. Therefore parallel lines
+close to each other are merged into a single line. As long as parallel lines are
+within a certain distance from each other they are merged into one line. For
+horizontal lines, the resulting line will have the average $y$ value of all those
+lines and the minimum and maximum $x$ values as starting and end points.
 
 From out idealistic view on Mondrian paintings, the ends of lines always touch
-another line or the edge of the painting. Therefore the next step of the
-algorithm is to look at the ends of each line, determine the closest line and
-change the end of the line to this closest line. To simplify it the edges of the
-paintings are added as lines.
+another line or the edge of the painting. But the lines that we reduced now might
+overlap slightly or not even connect to the next line.
 
-These lines now depict a number of rectangles. To find these rectangles we first
-find all the corners of the rectangles. The corners are always a cross-section
-of two lines. We find the top-left, top-right, bottom-left and bottom-right
-corners.
+We therefore iterate over all the ends of the lines, determine the closest line
+to these point and change the position of this end to the closest line. For the
+purpose of this algorithm, the edges of the image are considered to be lines as
+well.
+
+All lines should now represent the structure of the painting. What we want as
+our output though is a list of rectangles. Every rectangle in the image can be
+defined through a set of four different corners: top-left, top-right,
+bottom-left and bottom-right. These corners are always intersections of two
+lines, either crossing or touching. We determine the corners and their types by
+iterating through the lines.
+
 
 After this four different corners are combined into a rectangle by finding
-matching corners.
+matching corners. This is done by iterating through the top-left corners $(x,y)$ and
+finding the closest top-right corner to the right $(x_r, y_r)$ and the closet bottom-left
+corner below $(x_b, y_b)$. The rectangle is then defined by the position of the
+top-left corner and its width and height $(x,y,x_r-x,y_b-y)$.
 
 Now that we have a list of rectangles, we determine the colors of the
 rectangles. For this purpose, we clip the rectangle from the original image and
