@@ -72,9 +72,9 @@ last step. Hence only the outlines of the black rectangles remain.
 
 \subsection{Detection and recognition of rectangles}
 
-Since the rectangles in the image are defined through the horizontal and vertical
-lines in the image, the detection starts by finding all of those lines in
-the output binary image from the previous phase.
+Since the rectangles in the image are defined through the horizontal and
+vertical lines in the image, the detection starts by finding all of those lines
+in the output binary image from the previous phase.
 
 To find horizontal lines the image is scanned line by line for each pixel.
 Uninterrupted sequences of black pixels are added to a list of horizontal lines.
@@ -87,12 +87,12 @@ is now recognized as multiple lines next to each other. For example, a line that
 is 50 pixels wide would be recognized as 50 lines. Therefore parallel lines
 close to each other are merged into a single line. As long as parallel lines are
 within a certain distance from each other they are merged into one line. For
-horizontal lines, the resulting line will have the average $y$ value of all those
-lines and the minimum and maximum $x$ values as starting and end points.
+horizontal lines, the resulting line will have the average $y$ value of all
+those lines and the minimum and maximum $x$ values as starting and end points.
 
 From out idealistic view on Mondrian paintings, the ends of lines always touch
-another line or the edge of the painting. But the lines that we reduced now might
-overlap slightly or not even connect to the next line.
+another line or the edge of the painting. But the lines that we reduced now
+might overlap slightly or not even connect to the next line.
 
 We therefore iterate over all the ends of the lines, determine the closest line
 to these point and change the position of this end to the closest line. For the
@@ -106,14 +106,14 @@ bottom-left and bottom-right. These corners are always intersections of two
 lines, either crossing or touching. We determine the corners and their types by
 iterating through the lines.
 
-
 After this four different corners are combined into a rectangle by finding
-matching corners. This is done by iterating through the top-left corners $(x,y)$ and
-finding the closest top-right corner to the right $(x_r, y_r)$ and the closet bottom-left
-corner below $(x_b, y_b)$. The rectangle is then defined by the position of the
-top-left corner and its width and height $(x,y,x_r-x,y_b-y)$.
+matching corners. This is done by iterating through the top-left corners $(x,y)$
+and finding the closest top-right corner to the right $(x_r, y_r)$ and the
+closet bottom-left corner below $(x_b, y_b)$. The rectangle is then defined by
+the position of the top-left corner and its width and height
+$(x,y,x_r-x,y_b-y)$.
 
-Now that we have a list of rectangles, we determine the colors of the
-rectangles. For this purpose, we clip the rectangle from the original image and
-determine the average color. This color is then compared to black, white, red,
-blue and yellow. The colors that we expect in an idealistic Mondrian painting.
+For this list of rectangles, we determine the colors of the rectangles. For this
+purpose, we clip the rectangle from the original image and determine the average
+color or the selection. This color is then reduced to either black, white, red,
+blue or yellow.
