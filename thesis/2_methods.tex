@@ -2,6 +2,13 @@
 
 \section{Methods}
 
+\subsection{Concepts}
+
+For preprocessing the image several standard methods are used: \textit{Image
+Morphology}, \textit{Thresholding}, \textit{Contrast Limited Adaptive Histogram
+Equalization (CLAHE)} and Masks. These algorithms are provided by Python
+distribution of the Open Source library OpenCV \cite{opencv_library}.
+
 \subsection{Image Morphology}
 
 Image Morphology is based on Mathematical Morphology from the mathematical field
@@ -23,12 +30,12 @@ of white areas is increased.
 Image Morphologies have multiple uses like increasing certain areas for better
 recognition or separating larger shapes of an image.
 
-% \subsection{Thresholding}
-% ... Thresholding!
 % Concepts used
 % - Thresholding gray-scale images
 % - Contrast Limited Adaptive Histogram Equalization (CLAHE)
 % - Masks
+
+\subsection{Implementation}
 
 
 The input to the detection algorithm is an RGB image of a Mondrian painting. The
@@ -48,7 +55,7 @@ The second phase then takes this binary image and returns a list of found
 rectangles. Additionally, for recognizing the colors of the rectangles, the
 original input image is used.
 
-\subsection{Image preprocessing}
+\subsubsection{Image preprocessing}
 
 At first, the input image is transformed with a Gaussian blur to reduce
 artifacts that the input images might include.
@@ -70,12 +77,12 @@ of the RGB triplet is related to the colorfulness of a color, we calculate it
 for every pixel of the input image. The resulting mask from this calculation is
 added to the contrast-normalized image.
 
-Now the image is converted into a binary image using an arbitrary threshold for
-the greyscale values. This value of the threshold can be configured. Through
-test runs a value of 110 for a greyscale range of 0 to 255 showed to give the
-reasonable results.
+Now the image is converted into a binary image $A_1$ using an arbitrary
+threshold for the greyscale values. This value of the threshold can be
+configured. Through test runs a value of 110 for a greyscale range of 0 to 255
+showed to give the reasonable results.
 
-Since the thresholding step might leave some interuption in the black lines, we
+Since the thresholding step might leave some interruption in the black lines, we
 reduce the white areas of the image: An Erosion $A_2 = A_1 \ominus B_e$ is
 applied. In this case, the structuring element $B_e$ is a $N\times N$ filled
 matrix. Using the Erosion some accidental interruptions in the lines can be
@@ -91,9 +98,9 @@ comparatively larger Structuring Element $B_d$ on the image. The size of $B_d$
 is chosen in a way that most of the lines in the paintings are removed, ideally
 only leaving inner areas of black rectangles. The resulting mask $A_m$ is then
 removed from the image of the last step $A_3 = A_2 - A_m$. Hence only the
-outlines of the black rectangles as well as the black lines remain in $A_3$.
+outlines of the black rectangles, as well as the black lines, remain in $A_3$.
 
-\subsection{Detection and recognition of rectangles}
+\subsubsection{Detection and recognition of rectangles}
 
 Since the rectangles in the image are defined through the horizontal and
 vertical lines in the image, the detection starts by finding all of those lines
