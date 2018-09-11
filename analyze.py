@@ -8,15 +8,24 @@ out_dir = 'graphs'
 
 files = os.listdir(dir)
 
-def get_rect_centers(data):
+def get_rect_data(data):
     width = float(data['width'])
     height = float(data['height'])
-    positions = []
+    rects = []
     for rect in data['rectangles']:
         pos_x = float(rect['x']) + float(rect['width']) / 2.0
         pos_y = float(rect['y']) + float(rect['height']) / 2.0
-        positions.append((pos_x / width, pos_y / height, rect['color_id']))
-    return positions
+        longer_side = max(rect['width'], rect['height'])
+        shorter_side = min(rect['width'], rect['height'])
+        rects.append((
+            pos_x / width,
+            pos_y / height,
+            rect['color_id'],
+            float(longer_side) / float(shorter_side),
+            float(rect['width']) / float(rect['height'])
+        ))
+    return rects
+
 
 def get_color_distribution(data):
     full_area = float(data['height'] * data['width'])
@@ -34,14 +43,14 @@ def get_color_distribution(data):
 
 color_distribution_by_area = []
 number_of_rects = []
-centers = []
+rect_data = []
 
 for file in files:
     print(file)
     with open(dir + '/' + file) as f:
         data = json.load(f)
     by_area = get_color_distribution(data)
-    centers += get_rect_centers(data)
+    rect_data += get_rect_data(data)
     total = sum(by_area.values())
     if (total > 1.1 or total < 0.9):
         print('Problem with ' + file)
@@ -74,7 +83,7 @@ histogram(df, 20)
 plt.savefig(out_dir + '/n-rects.png')
 plt.close()
 
-df = pd.DataFrame(centers, columns=['x','y','color'])
+df = pd.DataFrame(rect_data, columns=['x','y','color', 'aspect_max_min', 'aspect'])
 without_white = df[df['color'] != 'white']
 without_white.plot.scatter(x='x', y='y',c=without_white['color'])
 plt.title('Center of rectangles, normalized by image height/width')
@@ -84,4 +93,14 @@ plt.close()
 df[df['color'] == 'white'].plot.scatter(x='x', y='y')
 plt.title('Center of white rectangles, normalized by image height/width')
 plt.savefig(out_dir + '/white-points.png')
+plt.close()
+
+histogram(df['aspect_max_min'], 20)
+plt.title('Aspect ratio longer side to shorter')
+plt.savefig(out_dir + '/aspect-max-min-rects.png')
+plt.close()
+
+histogram(df['aspect'], 20)
+plt.title('Aspect ratio width to height')
+plt.savefig(out_dir + '/aspect-rects.png')
 plt.close()
