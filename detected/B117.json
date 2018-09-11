@@ -5,8 +5,8 @@
         {
             "x": 0,
             "y": 104,
-            "width": 256,
-            "height": 487,
+            "width": 257,
+            "height": 489,
             "color": [
                 255,
                 255,
@@ -15,10 +15,10 @@
             "color_id": "white"
         },
         {
-            "x": 256,
+            "x": 257,
             "y": 386,
             "width": 306,
-            "height": 205,
+            "height": 207,
             "color": [
                 181,
                 102,
@@ -27,10 +27,10 @@
             "color_id": "blue"
         },
         {
-            "x": 562,
+            "x": 563,
             "y": 386,
-            "width": 261,
-            "height": 205,
+            "width": 260,
+            "height": 207,
             "color": [
                 181,
                 102,
@@ -39,10 +39,10 @@
             "color_id": "blue"
         },
         {
-            "x": 94,
-            "y": 591,
+            "x": 95,
+            "y": 593,
             "width": 162,
-            "height": 265,
+            "height": 261,
             "color": [
                 0,
                 0,
@@ -51,10 +51,10 @@
             "color_id": "black"
         },
         {
-            "x": 256,
-            "y": 591,
+            "x": 257,
+            "y": 593,
             "width": 306,
-            "height": 265,
+            "height": 261,
             "color": [
                 255,
                 255,
@@ -63,10 +63,10 @@
             "color_id": "white"
         },
         {
-            "x": 562,
-            "y": 591,
-            "width": 206,
-            "height": 265,
+            "x": 563,
+            "y": 593,
+            "width": 205,
+            "height": 261,
             "color": [
                 255,
                 255,
@@ -76,9 +76,9 @@
         },
         {
             "x": 768,
-            "y": 591,
+            "y": 593,
             "width": 55,
-            "height": 409,
+            "height": 407,
             "color": [
                 255,
                 255,
@@ -88,9 +88,9 @@
         },
         {
             "x": 0,
-            "y": 591,
-            "width": 94,
-            "height": 265,
+            "y": 593,
+            "width": 95,
+            "height": 261,
             "color": [
                 31,
                 21,
@@ -99,10 +99,10 @@
             "color_id": "red"
         },
         {
-            "x": 562,
-            "y": 856,
-            "width": 206,
-            "height": 144,
+            "x": 563,
+            "y": 854,
+            "width": 205,
+            "height": 146,
             "color": [
                 0,
                 243,
@@ -112,9 +112,9 @@
         },
         {
             "x": 0,
-            "y": 856,
-            "width": 562,
-            "height": 144,
+            "y": 854,
+            "width": 563,
+            "height": 146,
             "color": [
                 255,
                 255,
@@ -123,9 +123,9 @@
             "color_id": "white"
         },
         {
-            "x": 256,
+            "x": 257,
             "y": 0,
-            "width": 567,
+            "width": 566,
             "height": 386,
             "color": [
                 181,
@@ -137,7 +137,7 @@
         {
             "x": 0,
             "y": 0,
-            "width": 256,
+            "width": 257,
             "height": 104,
             "color": [
                 255,
@@ -148,6 +148,9 @@
         }
     ],
     "options": {
-        "binary_threshold": 110
+        "binary_threshold": 110,
+        "min_line_length": 60,
+        "min_distance": 70,
+        "black_rectangle_dilate": 35
     }
 }

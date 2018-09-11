@@ -18,7 +18,7 @@
             "x": 89,
             "y": 504,
             "width": 312,
-            "height": 412,
+            "height": 411,
             "color": [
                 255,
                 255,
@@ -54,7 +54,7 @@
             "x": 0,
             "y": 504,
             "width": 89,
-            "height": 412,
+            "height": 411,
             "color": [
                 255,
                 255,
@@ -76,9 +76,9 @@
         },
         {
             "x": 0,
-            "y": 916,
+            "y": 915,
             "width": 401,
-            "height": 53,
+            "height": 54,
             "color": [
                 255,
                 255,
@@ -124,6 +124,9 @@
         }
     ],
     "options": {
-        "binary_threshold": 110
+        "binary_threshold": 110,
+        "min_line_length": 60,
+        "min_distance": 70,
+        "black_rectangle_dilate": 35
     }
 }
