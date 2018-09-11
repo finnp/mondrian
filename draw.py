@@ -79,7 +79,7 @@ def find_closest_color(to_color, rect_id):
     [[(hue,s,v)]] = cv2.cvtColor(np.uint8([[to_color]]),cv2.COLOR_BGR2HSV)
     if debug_colors:
         print('rect %s: saturation %s, value %s' % (rect_id, s,v))
-    if s < 88:
+    if s < 62:
         if v > 100:
             return ((255,255,255), 'white')
         if v < 60:

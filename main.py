@@ -11,7 +11,7 @@ retr_type = cv2.RETR_LIST
 contour_algorithm = cv2.CHAIN_APPROX_SIMPLE
 
 binary_threshold = 110
-min_line_length = 70
+min_line_length = 65
 min_distance = 70
 black_rectangle_dilate = 35
 
