@@ -8,6 +8,16 @@ out_dir = 'graphs'
 
 files = os.listdir(dir)
 
+def get_rect_centers(data):
+    width = float(data['width'])
+    height = float(data['height'])
+    positions = []
+    for rect in data['rectangles']:
+        pos_x = float(rect['x']) + float(rect['width']) / 2.0
+        pos_y = float(rect['y']) + float(rect['height']) / 2.0
+        positions.append((pos_x / width, pos_y / height, rect['color_id']))
+    return positions
+
 def get_color_distribution(data):
     full_area = float(data['height'] * data['width'])
     colors = {
@@ -24,12 +34,14 @@ def get_color_distribution(data):
 
 color_distribution_by_area = []
 number_of_rects = []
+centers = []
 
 for file in files:
     print(file)
     with open(dir + '/' + file) as f:
         data = json.load(f)
     by_area = get_color_distribution(data)
+    centers += get_rect_centers(data)
     total = sum(by_area.values())
     if (total > 1.1 or total < 0.9):
         print('Problem with ' + file)
@@ -60,4 +72,14 @@ def histogram(df, bins):
 df = pd.DataFrame({'Number of rectangles': number_of_rects})
 histogram(df, 20)
 plt.savefig(out_dir + '/n-rects.png')
+plt.close()
+
+df = pd.DataFrame(centers, columns=['x','y','color'])
+without_white = df[df['color'] != 'white']
+without_white.plot.scatter(x='x', y='y',c=without_white['color'])
+plt.savefig(out_dir + '/points.png')
+plt.close()
+
+df[df['color'] == 'white'].plot.scatter(x='x', y='y')
+plt.savefig(out_dir + '/white-points.png')
 plt.close()
