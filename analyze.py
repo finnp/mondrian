@@ -77,9 +77,11 @@ plt.close()
 df = pd.DataFrame(centers, columns=['x','y','color'])
 without_white = df[df['color'] != 'white']
 without_white.plot.scatter(x='x', y='y',c=without_white['color'])
+plt.title('Center of rectangles, normalized by image height/width')
 plt.savefig(out_dir + '/points.png')
 plt.close()
 
 df[df['color'] == 'white'].plot.scatter(x='x', y='y')
+plt.title('Center of white rectangles, normalized by image height/width')
 plt.savefig(out_dir + '/white-points.png')
 plt.close()
