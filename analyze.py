@@ -22,7 +22,11 @@ def get_rect_data(data):
             pos_y / height,
             rect['color_id'],
             float(longer_side) / float(shorter_side),
-            float(rect['width']) / float(rect['height'])
+            float(rect['width']) / float(rect['height']),
+            rect['width'],
+            rect['height'],
+            longer_side,
+            shorter_side
         ))
     return rects
 
@@ -83,11 +87,21 @@ histogram(df, 20)
 plt.savefig(out_dir + '/n-rects.png')
 plt.close()
 
-df = pd.DataFrame(rect_data, columns=['x','y','color', 'aspect_max_min', 'aspect'])
+df = pd.DataFrame(rect_data, columns=['x','y','color', 'aspect_max_min', 'aspect', 'width', 'height', 'longer', 'shorter'])
 without_white = df[df['color'] != 'white']
 without_white.plot.scatter(x='x', y='y',c=without_white['color'])
 plt.title('Center of rectangles, normalized by image height/width')
 plt.savefig(out_dir + '/points.png')
+plt.close()
+
+df.plot.scatter(x='shorter', y='longer', s=1, c='black')
+plt.title('Rectangle longer to shorter side (not normalized)')
+plt.plot([0, 618], [0, 1000], 'k-', alpha=0.3, label='golden ratio', c='red')
+plt.plot([0, 414], [0, 1000], 'k-', alpha=0.3, label='silver ratio')
+plt.plot([0, 707], [0, 1000], 'k-', alpha=0.3, label='sqrt(2)', c='blue')
+plt.plot([0, 1000], [0, 1000], 'k-', alpha=0.7, label='1')
+plt.legend()
+plt.savefig(out_dir + '/longer-x-shorter.png')
 plt.close()
 
 df[df['color'] == 'white'].plot.scatter(x='x', y='y')
