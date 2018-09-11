@@ -8,26 +8,15 @@ out_dir = 'graphs'
 
 files = os.listdir(dir)
 
-def get_rect_data(data):
-    width = float(data['width'])
-    height = float(data['height'])
+def get_rect_data(data, file):
+    width = data['width']
+    height = data['height']
     rects = []
     for rect in data['rectangles']:
-        pos_x = float(rect['x']) + float(rect['width']) / 2.0
-        pos_y = float(rect['y']) + float(rect['height']) / 2.0
-        longer_side = max(rect['width'], rect['height'])
-        shorter_side = min(rect['width'], rect['height'])
-        rects.append((
-            pos_x / width,
-            pos_y / height,
-            rect['color_id'],
-            float(longer_side) / float(shorter_side),
-            float(rect['width']) / float(rect['height']),
-            rect['width'],
-            rect['height'],
-            longer_side,
-            shorter_side
-        ))
+        rect['image_width'] = width
+        rect['image_height'] = height
+        rect['image_file'] = file
+        rects.append(rect)
     return rects
 
 
@@ -54,7 +43,7 @@ for file in files:
     with open(dir + '/' + file) as f:
         data = json.load(f)
     by_area = get_color_distribution(data)
-    rect_data += get_rect_data(data)
+    rect_data += get_rect_data(data, file)
     total = sum(by_area.values())
     if (total > 1.1 or total < 0.9):
         print('Problem with ' + file)
@@ -87,9 +76,17 @@ histogram(df, 20)
 plt.savefig(out_dir + '/n-rects.png')
 plt.close()
 
-df = pd.DataFrame(rect_data, columns=['x','y','color', 'aspect_max_min', 'aspect', 'width', 'height', 'longer', 'shorter'])
+df = pd.DataFrame(rect_data)
+df['center_x'] = df['x'] + df['width'] / 2.0
+df['center_y'] = df['y'] + df['height'] / 2.0
+df['color'] = df['color_id']
+df['longer'] = df[['width','height']].max(axis=1)
+df['shorter'] = df[['width','height']].min(axis=1)
+df['aspect_max_min'] = df['longer'] / df['shorter']
+df['aspect'] = df['width'] / df['height']
+
 without_white = df[df['color'] != 'white']
-without_white.plot.scatter(x='x', y='y',c=without_white['color'])
+without_white.plot.scatter(x='center_x', y='center_y',c=without_white['color'])
 plt.title('Center of rectangles, normalized by image height/width')
 plt.savefig(out_dir + '/points.png')
 plt.close()
@@ -104,7 +101,7 @@ plt.legend()
 plt.savefig(out_dir + '/longer-x-shorter.png')
 plt.close()
 
-df[df['color'] == 'white'].plot.scatter(x='x', y='y')
+df[df['color'] == 'white'].plot.scatter(x='center_x', y='center_y')
 plt.title('Center of white rectangles, normalized by image height/width')
 plt.savefig(out_dir + '/white-points.png')
 plt.close()
