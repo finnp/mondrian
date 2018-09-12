@@ -74,7 +74,7 @@ def process_image(original):
     timings.end('detect_lines')
     timings.start('after')
 
-    (vertical_lines, horizontal_lines) = reduce_lines_rust(horizontal, vertical, min_distance)
+    (vertical_lines, horizontal_lines) = reduce_lines(horizontal, vertical, min_distance)
     (horizontal_lines, vertical_lines) = remove_lines_close_to_border(horizontal_lines, vertical_lines, width, height, 0.2 * min_distance)
     before_connect = np.copy(original)
     draw_lines(before_connect, horizontal, color=(0,255,0))

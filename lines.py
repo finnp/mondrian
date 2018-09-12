@@ -95,6 +95,12 @@ def split_by_orientation(lines):
 def reduce_lines_rust(input_horizontal, input_vertical, min_distance):
     return myrustlib.reduce_lines(input_horizontal, input_vertical, min_distance)
 
+def range_intersect(x1, x2, x1_b, x2_b):
+    """
+    Do the ranges [x1:x2] and [x1_b,x2] intersect, given x1 <= x2 and x1_b <= x2_b
+    """
+    return x1 <= x2_b and x1_b <= x2
+
 def reduce_lines(input_horizontal, input_vertical, min_distance):
     """
         Takes a list of vertical and horizontal lines,
@@ -115,6 +121,9 @@ def reduce_lines(input_horizontal, input_vertical, min_distance):
         for other_index, (x1_b,y1_b,x2_b,y2_b) in enumerate(input_vertical):
             if other_index in seen_vertical:
                 continue
+            if (not (y1 >= y2_b and y1_b >= y2)):
+                # not overlapping vertically
+                continue
             if (abs(x1 - x1_b) < min_distance):
                 # if the end is further to the top, choose this end
                 if (y2_b < y2):
@@ -130,13 +139,15 @@ def reduce_lines(input_horizontal, input_vertical, min_distance):
         x = int(np.mean(x_values))
         output_vertical.append((x,y1,x,y2))
 
-    #horizontal
     for index, (x1,y1,x2,y2) in enumerate(input_horizontal):
         if index in seen_horizontal:
             continue
         y_values = [y1]
         for other_index, (x1_b,y1_b,x2_b,y2_b) in enumerate(input_horizontal):
             if other_index in seen_horizontal:
+                continue
+            if (not (range_intersect(x1,x2,x1_b,x2_b))):
+                # not overlapping horizontally
                 continue
             if (abs(y1 - y1_b) < min_distance):
                 # if the start if further to the left, choose this point
@@ -155,6 +166,24 @@ def reduce_lines(input_horizontal, input_vertical, min_distance):
 
     return (output_vertical, output_horizontal)
 
+
+def separate_ranges(ranges):
+    """
+        Given a list of ranges with elements (start,end) and start <= end find a
+        list of ranges that can be separated without any other line intersecting
+        the gap.
+    """
+    separated = []
+    for (start,end) in ranges:
+        intersected = [r for r in separated if range_intersect(start,end,r[0],r[1])]
+        not_intersected = [r for r in separated if not range_intersect(start,end,r[0],r[1])]
+        if (len(intersected) == 0):
+            separated.append((start,end))
+        else:
+            new_start = min([r[0] for r in intersected + [(start,end)]])
+            new_end = max(r[1] for r in intersected + [(start,end)])
+            separated = not_intersected + [(new_start,new_end)]
+    return separated
 
 
 def connect_lines(horizontal_lines, vertical_lines):
