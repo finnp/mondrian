@@ -118,9 +118,11 @@ def reduce_lines(input_horizontal, input_vertical, min_distance):
         if index in seen_vertical:
             continue
         x_values = [x1]
+        y_ranges = [(y2,y1)]
         for other_index, (x1_b,y1_b,x2_b,y2_b) in enumerate(input_vertical):
             if other_index in seen_vertical:
                 continue
+<<<<<<< HEAD
             if (abs(x1 - x1_b) < min_distance):
                 # if the end is further to the top, choose this end
                 if (y2_b < y2):
@@ -128,35 +130,36 @@ def reduce_lines(input_horizontal, input_vertical, min_distance):
                 # if the start if further to the bottom, choose it
                 if (y1_b > y1):
                     y1 = y1_b
+=======
+>>>>>>> Trying to separate the lines
 
+            if (abs(x1 - x1_b) < min_distance):
                 x_values.append(x1_b)
+                y_ranges.append((y2_b,y1_b))
                 seen_vertical.add(other_index)
 
             # taking the average x value for all the lines to get the middle
         x = int(np.mean(x_values))
-        output_vertical.append((x,y1,x,y2))
+        for (ry2,ry1) in separate_ranges(y_ranges):
+            output_vertical.append((x,ry1,x,ry2))
 
     for index, (x1,y1,x2,y2) in enumerate(input_horizontal):
         if index in seen_horizontal:
             continue
+        x_ranges = [(x1,x2)]
         y_values = [y1]
         for other_index, (x1_b,y1_b,x2_b,y2_b) in enumerate(input_horizontal):
             if other_index in seen_horizontal:
                 continue
             if (abs(y1 - y1_b) < min_distance):
-                # if the start if further to the left, choose this point
-                if (x1_b < x1):
-                    x1 = x1_b
-                # if the end is further to the right, choose it
-                if (x2_b > x2):
-                    x2 = x2_b
-
-                y_values += [y1_b]
+                x_ranges.append((x1_b,x2_b))
+                y_values.append(y1_b)
                 seen_horizontal.add(other_index)
 
-            # taking the average y value for all the lines to get the middle
-        y = int(np.mean(y_values))
-        output_horizontal.append((x1,y,x2,y))
+        # taking the average y value for all the lines to get the middle
+        y = int(np.mean(y_values)) # TODO: Only use y values of that fragment
+        for (rx1,rx2) in separate_ranges(x_ranges):
+            output_horizontal.append((rx1,y,rx2,y))
 
     return (output_vertical, output_horizontal)
 
