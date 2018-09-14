@@ -2,11 +2,6 @@
 
 \section{Fundamentals}
 
-For preprocessing the images, a combination of methods are used: \textit{Image
-Morphology}, \textit{Thresholding}, \textit{Contrast Limited Adaptive Histogram
-Equalization (CLAHE)} and \textit{Masks}. These algorithms are provided by the
-Python distribution of the Open Source library OpenCV \cite{opencv_library}.
-
 \subsection{Definitions}
 
 We define an Image $I$ with width $w$ and height $h$ to be the set
@@ -17,7 +12,14 @@ an Image with $p_{xy} \in 0,1, \dots 255$.
 A Binary Image $B$ is an Image with $p_{xy} \in \{0,1\}$ where we also refer to
 $0$ as \textit{black} and $1$ as \textit{white}
 
-\subsection{Image Morphology}
+\subsection{Used Algorithms and Methods}
+
+For preprocessing the images, a combination of methods are used: \textit{Image
+Morphology}, \textit{Thresholding}, \textit{Contrast Limited Adaptive Histogram
+Equalization (CLAHE)} and \textit{Masks}. These algorithms are provided by the
+Python distribution of the Open Source library OpenCV \cite{opencv_library}.
+
+\subsubsection{Image Morphology}
 
 Image Morphology is based on Mathematical Morphology from the mathematical field
 of set theory. We are going to present two basic morphological operators
