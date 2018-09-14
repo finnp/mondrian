@@ -1,27 +1,31 @@
 % !TeX encoding = UTF-8
 
-\section{Methods}
+\section{Fundamentals}
 
-\subsection{Fundamentals}
-
-For preprocessing the image several standard methods are used: \textit{Image
+For preprocessing the images, a combination of methods are used: \textit{Image
 Morphology}, \textit{Thresholding}, \textit{Contrast Limited Adaptive Histogram
-Equalization (CLAHE)} and Masks. These algorithms are provided by Python
-distribution of the Open Source library OpenCV \cite{opencv_library}.
+Equalization (CLAHE)} and \textit{Masks}. These algorithms are provided by the
+Python distribution of the Open Source library OpenCV \cite{opencv_library}.
 
-\subsubsection{Image Morphology}
+% TODO: Definitions, e.g. Binary Image and Mondrian painting
+
+\subsection{Image Morphology}
 
 Image Morphology is based on Mathematical Morphology from the mathematical field
 of set theory. We are going to present two basic morphological operators
 commonly used in image processing without going into detail of their mathematical
-definition.
+definition. % TODO: Further reading in ...
 
 Given a binary image $X$ and a smaller binary image $B$ called the
-\textit{Structuring Element}, we can apply the following operations.
+\textit{Structuring Element} with an anchor point $a \element B$,
+we can apply the following operations.
 
 The Erosion $X \ominus B$ is equivalent to iterating through all of the white
-pixels of $X$ and only keeping them if $B$ translated to this position is fully
-included in $X$. Therefore the white areas in $X$ are reduced \cite{Smith1997}.
+pixels of $X$ and only keeping them if all of the points of $B$ are translated
+by its anchor point $a$ to this position is fully included in $X$. Therefore the
+white areas in $X$ are reduced \cite{Smith1997}.
+
+%TODO: Explain the Dilation section in more detail
 
 Similarly with the Dilation operation $X \oplus B$ neighbouring pixels are
 turned white if they intersect with the translated Structuring Element. The size
@@ -30,13 +34,11 @@ of white areas is increased.
 Image Morphologies have multiple uses like increasing certain areas for better
 recognition or separating larger shapes of an image.
 
-% Concepts used
-% - Thresholding gray-scale images
-% - Contrast Limited Adaptive Histogram Equalization (CLAHE)
-% - Masks
+\subsection{Concept}
 
-\subsection{Implementation}
+% TODO: Add introductory sentence to his setion (Aim for detection Alg...)
 
+% TODO: Explain what happened to the lines
 
 The input to the detection algorithm is an RGB image of a Mondrian painting. The
 expected output is a list of rectangles with their position, sizes and color as
@@ -45,17 +47,19 @@ expected to exactly cover the area of the input image in a way that the original
 could be dissected into this set of rectangles.
 
 The algorithm itself can be separated into two different phases: Image
-preprocessing and the recognition of rectangles.
+preprocessing (\ref{preprocessing}) and the recognition of rectangles (\ref{rectangles}).
 
-The goal of the first preprocessing phase is to get a binary image (an image
-with only black and white pixels) in which the black represent the lines of the
-painting while the white represents the inner area of the rectangles.
+The goal of the first preprocessing phase is to obtain a binary image (an image
+with only black and white pixels) in which black represent the lines of the
+painting while white represents the inner area of the rectangles.
 
 The second phase then takes this binary image and returns a list of found
 rectangles. Additionally, for recognizing the colors of the rectangles, the
 original input image is used.
 
-\subsubsection{Image preprocessing}
+\subsubsection{Image preprocessing} \label{preprocessing}
+
+% TODO: Explain where artifacts might come from
 
 At first, the input image is transformed with a Gaussian blur to reduce
 artifacts that the input images might include.
@@ -63,48 +67,55 @@ artifacts that the input images might include.
 Next, the RGB input image is decomposed into a greyscale image by always using
 the maximum value of the RGB triplet for each pixel.
 
+% TODO: Exaplain and add source why CLAHE is better than standard equalisation
+
 To normalize the greyscale image and increase the contrast of the darker
 regions, we now apply histogram equalization. Since global equalization did not
-work well for all images, we instead used Contrast Limited Adaptive Histogram
-Equalization (CLAHE) from OpenCV. In contrast to conventional adaptive histogram
+work well for all images, we instead used \textit{Contrast Limited Adaptive Histogram
+Equalization (CLAHE)} from OpenCV. In contrast to conventional adaptive histogram
 equalization algorithms, this prevents the overamplification of noise.
 
-After the normalization is applied, we now further brighten colorful areas of
-the image to make them further stand out against the black areas of the
-paintings. This way, for example, darker blue areas can be better distinguished
-from black areas. Since the difference between the maximum and the minimum value
-of the RGB triplet is related to the colorfulness of a color, we calculate it
-for every pixel of the input image. The resulting mask from this calculation is
-added to the contrast-normalized image.
+After the normalization is applied, we further brighten colorful areas of the
+image to make them stand out against the black areas of the paintings. This way,
+for example, darker blue areas can be better distinguished from black areas.
+Since the difference between the maximum and the minimum value of the RGB
+triplet is related to the colorfulness of a color, we calculate it for every
+pixel of the input image. The resulting mask from this calculation is added to
+the contrast-normalized image.
 
 Now the image is converted into a binary image $A_1$ using an arbitrary
-threshold for the greyscale values. This value of the threshold can be
-configured. Through test runs a value of 110 for a greyscale range of 0 to 255
-showed to give the reasonable results.
+threshold for the greyscale values. This value of the threshold $t$ can be
+configured.
+
+% TODO: How is N choosen? Why can it result in loss of information?
 
 Since the thresholding step might leave some interruption in the black lines, we
 reduce the white areas of the image: An Erosion $A_2 = A_1 \ominus B_e$ is
 applied. In this case, the structuring element $B_e$ is a $N\times N$ filled
 matrix. Using the Erosion some accidental interruptions in the lines can be
 restored. However choosing a the Structuring Element that is too high, might
-result into loss of information. Therefore the size $N$ needs to be chosen
+result in loss of information. Therefore the size $N$ needs to be chosen
 carefully.
 
 The resulting image $A_2$ now separates the darker parts of the image fairly
 well. However, we are only interested in black lines, but Mondrian paintings
 also include filled black rectangles. To remove these black rectangles, we
-create a mask that applies a Dilation $A_m = A_2 \oplus B_d$ with a
-comparatively larger Structuring Element $B_d$ on the image. The size of $B_d$
-is chosen in a way that most of the lines in the paintings are removed, ideally
-only leaving inner areas of black rectangles. The resulting mask $A_m$ is then
+create a mask that applies a Dilation $A_m = A_2 \oplus B_d$ with a larger
+Structuring Element $B_d$ compared with $B_e$ on the image. The size of $B_d$ is
+chosen in a way that most of the lines in the paintings are removed, only
+leaving inner areas of black rectangles. The resulting mask $A_m$ is then
 removed from the image of the last step $A_3 = A_2 - A_m$. Hence only the
 outlines of the black rectangles, as well as the black lines, remain in $A_3$.
 
-\subsubsection{Detection and recognition of rectangles}
+%TODO: Create an image showing the preprocessing steps
 
-Since the rectangles in the image are defined through the horizontal and
+\subsubsection{Detection and recognition of rectangles} \label{rectangles}
+
+Since the rectangles in the input image are defined by the horizontal and
 vertical lines in the image, the detection starts by finding all of those lines
 in the output binary image from the previous phase.
+
+%TODO: Explain Horizontal vs. Vertical better
 
 To find horizontal lines, the image is scanned line by line for each pixel.
 Uninterrupted sequences of black pixels are added to a list of horizontal lines.
@@ -115,20 +126,25 @@ applying a lossy run-length encoding once horizontally and once vertically.
 
 However, this means that what we perceive as one horizontal line in the painting
 is now recognized as multiple lines next to each other. For example, a line that
-is 50 pixels wide would be recognized as 50 lines. Therefore parallel lines
-close to each other are merged into a single line. As long as parallel lines are
-within a certain distance from each other, they are merged into one line. For
-horizontal lines, the resulting line will have the average $y$ value of all
-those lines and the minimum and maximum $x$ values as starting and end points.
+is 50 pixels wide would be recognized as 50 lines. Therefore as a next step
+parallel lines close to each other are merged into a single line. As long as
+parallel lines are within a certain distance from each other, they are merged
+into one line. For horizontal lines, the resulting line will have the average
+$y$ value of all those lines and the minimum and maximum $x$ values as starting
+and end points.
 
 From out idealistic view on Mondrian paintings, the ends of lines always touch
 another line or the edge of the painting. However, the lines that we reduced now
 might overlap slightly or not even connect to the next line.
 
+% TODO: Specify how to find the closest line
+
 We, therefore, iterate over all the ends of the lines, determine the closest
 line to this point and change the position of this end to the closest line. For
 the purpose of this algorithm, the edges of the image are considered to be lines
 as well.
+
+%TODO: How are they identified as top-left?
 
 All lines should now represent the structure of the painting. What we want as
 our output though is a list of rectangles. Every rectangle in the image can be
@@ -139,8 +155,8 @@ iterating through the lines.
 
 After this, four different corners are combined into a rectangle by finding
 matching corners. This is done by iterating through the top-left corners $(x,y)$
-and finding the closest top-right corner to the right $(x_r, y_r)$ and the
-closet bottom-left corner below $(x_b, y_b)$. The rectangle is then defined by
+and finding the closest top-right corner to the right $(x_r, y)$ and the
+closest bottom-left corner below $(x, y_b)$. The rectangle is then defined by
 the position of the top-left corner and its width and height
 $(x,y,x_r-x,y_b-y)$.
 
@@ -148,3 +164,18 @@ For this list of rectangles, we determine the colors of the rectangles. For this
 purpose, we clip the rectangle from the original image and determine the average
 color or the selection. This color is then reduced to either black, white, red,
 blue or yellow.
+
+\section{Implementation}
+
+%TODO: Write implementation
+
+Challenges?
+Code: Pseudo/Python?
+How do the choose threshold t?
+Min length t?
+Distance d?
+How to choose N?
+
+Thresholding:
+Through test runs a value of 110 for a greyscale range of 0 to 255
+showed to give the reasonable results.
