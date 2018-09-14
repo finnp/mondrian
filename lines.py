@@ -121,9 +121,6 @@ def reduce_lines(input_horizontal, input_vertical, min_distance):
         for other_index, (x1_b,y1_b,x2_b,y2_b) in enumerate(input_vertical):
             if other_index in seen_vertical:
                 continue
-            if (not (y1 >= y2_b and y1_b >= y2)):
-                # not overlapping vertically
-                continue
             if (abs(x1 - x1_b) < min_distance):
                 # if the end is further to the top, choose this end
                 if (y2_b < y2):
@@ -145,9 +142,6 @@ def reduce_lines(input_horizontal, input_vertical, min_distance):
         y_values = [y1]
         for other_index, (x1_b,y1_b,x2_b,y2_b) in enumerate(input_horizontal):
             if other_index in seen_horizontal:
-                continue
-            if (not (range_intersect(x1,x2,x1_b,x2_b))):
-                # not overlapping horizontally
                 continue
             if (abs(y1 - y1_b) < min_distance):
                 # if the start if further to the left, choose this point
