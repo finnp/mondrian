@@ -88,14 +88,12 @@ But they might also be results of the photography and scanning the images.
 Next, the RGB input image is decomposed into a Greyscale Image $G_1$ by using
 the maximum value of the RGB triplet for each pixel in $I_2$.
 
-% TODO: Exaplain and add source why CLAHE is better than standard equalisation
-
-To normalize the greyscale image and increase the contrast of the darker
-regions, we now apply histogram equalization to $G_1$. Since global equalization
-did not work well for all images, we instead used \textit{Contrast Limited
-Adaptive Histogram Equalization (CLAHE)} from OpenCV. In contrast to
-conventional adaptive histogram equalization algorithms, this prevents the
-overamplification of noise. We call the result of the equalization $G_2$.
+To normalize the lightness distribution of $G_1$ and increase the contrast of
+the darker regions, we now apply histogram equalization to $G_1$. For this we
+use \textit{Contrast Limited Adaptive Histogram Equalization (CLAHE)}. In
+contrast to non-adaptive and ordinary adaptive histogram equalization
+algorithms, this prevents the overamplification of noise. We call the result of
+the equalization $G_2$. \cite{Pizer1987}
 
 After the normalization is applied, we further brighten colorful areas of the
 image to make them stand out against the black areas of the paintings. This way,

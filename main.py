@@ -29,7 +29,7 @@ def process_image(original):
 
     blurred = cv2.blur(original,(5,5))
 
-    b_t,g_t,r_t = cv2.split(original)
+    b_t,g_t,r_t = cv2.split(blurred)
 
     max = cv2.max(cv2.max(b_t, g_t), r_t)
 
