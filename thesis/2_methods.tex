@@ -48,11 +48,11 @@ recognition or separating larger shapes of an image.
 
 % TODO: Explain what happened to the lines
 
-The input to the detection algorithm is an RGB image of a Mondrian painting. The
-expected output is a list of rectangles with their position, sizes and color as
-they are conceptionally seen in the painting. All rectangles combined are
-expected to exactly cover the area of the input image in a way that the original
-could be dissected into this set of rectangles.
+The input to the detection algorithm is an RGB Image $I_1$ of a Mondrian
+painting. The expected output is a list of rectangles with their position, sizes
+and color as they are conceptionally seen in the painting. All rectangles
+combined are expected to exactly cover the area of the input image in a way that
+the original could be dissected into this set of rectangles.
 
 The algorithm itself can be separated into two different phases: Image
 preprocessing (\ref{preprocessing}) and the recognition of rectangles (\ref{rectangles}).
@@ -69,51 +69,52 @@ original input image is used.
 
 % TODO: Explain where artifacts might come from
 
-At first, the input image is transformed with a Gaussian blur to reduce
-artifacts that the input images might include.
+At first, a Gaussian blur is applied to the input RGB Image
+$I_1$ to reduce artifacts that the input images might include: $I_2 = G(I_1)$
 
-Next, the RGB input image is decomposed into a greyscale image by always using
-the maximum value of the RGB triplet for each pixel.
+Next, the RGB input image is decomposed into a Greyscale Image $G_1$ by using
+the maximum value of the RGB triplet for each pixel in $I_2$.
 
 % TODO: Exaplain and add source why CLAHE is better than standard equalisation
 
 To normalize the greyscale image and increase the contrast of the darker
-regions, we now apply histogram equalization. Since global equalization did not
-work well for all images, we instead used \textit{Contrast Limited Adaptive Histogram
-Equalization (CLAHE)} from OpenCV. In contrast to conventional adaptive histogram
-equalization algorithms, this prevents the overamplification of noise.
+regions, we now apply histogram equalization to $G_1$. Since global equalization
+did not work well for all images, we instead used \textit{Contrast Limited
+Adaptive Histogram Equalization (CLAHE)} from OpenCV. In contrast to
+conventional adaptive histogram equalization algorithms, this prevents the
+overamplification of noise. We call the result of the equalization $G_2$.
 
 After the normalization is applied, we further brighten colorful areas of the
 image to make them stand out against the black areas of the paintings. This way,
 for example, darker blue areas can be better distinguished from black areas.
 Since the difference between the maximum and the minimum value of the RGB
 triplet is related to the colorfulness of a color, we calculate it for every
-pixel of the input image. The resulting mask from this calculation is added to
-the contrast-normalized image.
+pixel of the input image. The resulting Mask $G_m$ from this calculation is added to
+the contrast-normalized image $G_3 = G_2 + G_m$.
 
-Now the image is converted into a binary image $A_1$ using an arbitrary
+Now the image $G_3$ is converted into a binary image $B_1$ using an arbitrary
 threshold for the greyscale values. This value of the threshold $t$ can be
 configured.
 
 % TODO: How is N choosen? Why can it result in loss of information?
 
 Since the thresholding step might leave some interruption in the black lines, we
-reduce the white areas of the image: An Erosion $A_2 = A_1 \ominus B_e$ is
-applied. In this case, the structuring element $B_e$ is a $N\times N$ filled
-matrix. Using the Erosion some accidental interruptions in the lines can be
+reduce the white areas of the image: An Erosion $B_2 = B_1 \ominus B_e$ is
+applied. In this case, the structuring element $B_e$ is a $N\times N$ binary
+Image. Using the Erosion some accidental interruptions in the lines can be
 restored. However choosing a the Structuring Element that is too high, might
 result in loss of information. Therefore the size $N$ needs to be chosen
 carefully.
 
-The resulting image $A_2$ now separates the darker parts of the image fairly
+The resulting image $B_2$ now separates the darker parts of the image fairly
 well. However, we are only interested in black lines, but Mondrian paintings
 also include filled black rectangles. To remove these black rectangles, we
-create a mask that applies a Dilation $A_m = A_2 \oplus B_d$ with a larger
+create a mask that applies a Dilation $B_m = B_2 \oplus B_d$ with a larger
 Structuring Element $B_d$ compared with $B_e$ on the image. The size of $B_d$ is
 chosen in a way that most of the lines in the paintings are removed, only
-leaving inner areas of black rectangles. The resulting mask $A_m$ is then
-removed from the image of the last step $A_3 = A_2 - A_m$. Hence only the
-outlines of the black rectangles, as well as the black lines, remain in $A_3$.
+leaving inner areas of black rectangles. The resulting mask $B_m$ is then
+removed from the image of the last step $B_3 = B_2 - B_m$. Hence only the
+outlines of the black rectangles, as well as the black lines, remain in $B_3$.
 
 %TODO: Create an image showing the preprocessing steps
 

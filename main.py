@@ -29,7 +29,7 @@ def process_image(original):
 
     blurred = cv2.blur(original,(5,5))
 
-    b_t,g_t,r_t = cv2.split(blurred)
+    b_t,g_t,r_t = cv2.split(original)
 
     max = cv2.max(cv2.max(b_t, g_t), r_t)
 
@@ -37,7 +37,6 @@ def process_image(original):
 
     deviation = max - min
     steps.append(('deviation', deviation))
-    # _, deviation = cv2.threshold(max - min, 25, 255, cv2.THRESH_BINARY)
 
     steps.append(('max', max))
 
