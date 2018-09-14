@@ -103,9 +103,18 @@ triplet is related to the colorfulness of a color, we calculate it for every
 pixel of the input image. The resulting Mask $G_m$ from this calculation is added to
 the contrast-normalized image $G_3 = G_2 + G_m$.
 
-Now the image $G_3$ is converted into a binary image $B_1$ using an arbitrary
-threshold for the greyscale values. This value of the threshold $t$ can be
-configured.
+Now the image $G_3$ with the elements $g_{xy}$ is converted into a binary image
+$B_1$ with the elements $t_{xy}$ using a threshold $t \in 0,1,\dots255$ for the
+greyscale values. The value of $t$ needs to be chosen as such as its optimally
+separating between the darker lines an the lighter rectangles in the image.
+
+\begin{equation}
+  t_{xy} =
+  \begin{cases}
+    0 & \quad  \text{if}  \quad g_{xy} \leq t\\
+    1  & \quad \text{if}  \quad g_{xy} > t
+  \end{cases}
+\end{equation}
 
 % TODO: How is N choosen? Why can it result in loss of information?
 
