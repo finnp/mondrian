@@ -116,15 +116,13 @@ separating between the darker lines an the lighter rectangles in the image.
   \end{cases}
 \end{equation}
 
-% TODO: How is N choosen? Why can it result in loss of information?
-
 Since the thresholding step might leave some interruption in the black lines, we
 reduce the white areas of the image: An Erosion $B_2 = B_1 \ominus B_e$ is
 applied. In this case, the structuring element $B_e$ is a $N\times N$ binary
 Image. Using the Erosion some accidental interruptions in the lines can be
 restored. However choosing a the Structuring Element that is too high, might
-result in loss of information. Therefore the size $N$ needs to be chosen
-carefully.
+result in loss of information by filling smaller white rectangles black.
+Therefore the size $N$ needs to be chosen carefully.
 
 The resulting image $B_2$ now separates the darker parts of the image fairly
 well. However, we are only interested in black lines, but Mondrian paintings
