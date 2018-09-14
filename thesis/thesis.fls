@@ -151,8 +151,8 @@ INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/grfext.sty
 INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/grfext.sty
 INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-INPUT 2_methods.tex
-INPUT 2_methods.tex
+INPUT 2_fundamentals.tex
+INPUT 2_fundamentals.tex
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/adobe/palatino/pplr9e.tfm
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/adobe/palatino/pplb9e.tfm
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/adobe/palatino/pplri9e.tfm
