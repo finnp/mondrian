@@ -44,17 +44,22 @@ recognition or separating larger shapes of an image. In our case they will be
 helpful for correcting interruptions in the black lines of the image as well as
 for separating black areas that are bigger than typical lines.
 
+% TODO: Possibly try to use Opening operation again and explain it here
+
 \subsection{Concept}
 
-% TODO: Add introductory sentence to his setion (Aim for detection Alg...)
+%TODO: Define mondrian paintings in our context
 
-% TODO: Explain what happened to the lines
+Our aim for the detection algorithm is to take a cropped Mondrian painting as
+an input and detect all the rectangles in it as well as their colors.
 
-The input to the detection algorithm is an RGB Image $I_1$ of a Mondrian
-painting. The expected output is a list of rectangles with their position, sizes
-and color as they are conceptionally seen in the painting. All rectangles
-combined are expected to exactly cover the area of the input image in a way that
-the original could be dissected into this set of rectangles.
+The input to algorithm is an RGB Image $I_1$ of a Mondrian painting. The
+expected output is a list of rectangles with their position, sizes and color as
+they are conceptionally seen in the painting. All rectangles combined are
+expected to exactly cover the area of the input image in a way that the original
+could be dissected into this set of rectangles. The thick black lines in the
+paintings are seen as one-dimensional lines that are positioned in the middle
+of the detected thicker lines.
 
 The algorithm itself can be separated into two different phases: Image
 preprocessing (\ref{preprocessing}) and the recognition of rectangles (\ref{rectangles}).
