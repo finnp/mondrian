@@ -1,12 +1,12 @@
 # Fdb version 3
-["bibtex thesis"] 1536925188 "thesis.aux" "thesis.bbl" "thesis" 1536925190
+["bibtex thesis"] 1536929522 "thesis.aux" "thesis.bbl" "thesis" 1536930398
   "/usr/local/texlive/2018/texmf-dist/bibtex/bst/base/plain.bst" 1480098433 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
   "bibliography.bib" 1536607202 2337 c6e83501df2fb1f851fa469ed2ae02d7 ""
-  "thesis.aux" 1536925189 1690 3c5dfef355cee7768e60e49842856b14 ""
+  "thesis.aux" 1536930398 1871 db36d6bd9ea71c9f55fb27d9c8b24e06 ""
   (generated)
-  "thesis.blg"
   "thesis.bbl"
-["pdflatex"] 1536925189 "thesis.tex" "thesis.pdf" "thesis" 1536925190
+  "thesis.blg"
+["pdflatex"] 1536930397 "thesis.tex" "thesis.pdf" "thesis" 1536930398
   "/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc" 1480098666 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2018/texmf-dist/fonts/map/fontname/texfonts.map" 1511824771 3332 103109f5612ad95229751940c61aada0 ""
   "/usr/local/texlive/2018/texmf-dist/fonts/tfm/adobe/palatino/pplb8r.tfm" 1480098688 2532 9ad73cf4dd2173a847f2a5f5608e0b9a ""
@@ -110,17 +110,17 @@
   "/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1523934492 2717033 f61a5287d9c22a39a74f1979fe3f905c ""
   "/usr/local/texlive/2018/texmf-var/web2c/pdftex/pdflatex.fmt" 1536413913 4220279 dafef3b865c8db700b1c4b89bfa57594 ""
   "/usr/local/texlive/2018/texmf.cnf" 1523934483 577 0b39adfd7c93507ff20c9c14c2f1a33f ""
-  "2_methods.tex" 1536925172 8118 5b7e637f7a8fb4e18c2c71a5bf197895 ""
+  "2_methods.tex" 1536930389 9087 070fb6a366f5f971d9f62a2197acf319 ""
   "agse-thesis.cls" 1536594458 6550 3172f9099b1f08c5936b861212d16bb8 ""
-  "thesis.aux" 1536925189 1690 3c5dfef355cee7768e60e49842856b14 ""
-  "thesis.bbl" 1536925189 370 0e8f57b8bb2c5aad41f4266903c52384 "bibtex thesis"
-  "thesis.out" 1536925189 392 445ac9146efdeaf0ad598af7fecb8774 ""
+  "thesis.aux" 1536930398 1871 db36d6bd9ea71c9f55fb27d9c8b24e06 ""
+  "thesis.bbl" 1536929523 370 0e8f57b8bb2c5aad41f4266903c52384 "bibtex thesis"
+  "thesis.out" 1536930398 501 44e19dbd9daf94ac4f35617c571418f7 ""
   "thesis.tex" 1536594441 2334 422b30fb21df7a6b861e9aba292467e0 ""
   (generated)
   "thesis.out"
-  "thesis.aux"
+  "declaration.aux"
   "thesis.toc"
-  "5_appendix.aux"
   "thesis.log"
   "thesis.pdf"
-  "declaration.aux"
+  "5_appendix.aux"
+  "thesis.aux"

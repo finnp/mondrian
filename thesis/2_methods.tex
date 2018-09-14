@@ -7,7 +7,15 @@ Morphology}, \textit{Thresholding}, \textit{Contrast Limited Adaptive Histogram
 Equalization (CLAHE)} and \textit{Masks}. These algorithms are provided by the
 Python distribution of the Open Source library OpenCV \cite{opencv_library}.
 
-% TODO: Definitions, e.g. Binary Image and Mondrian painting
+\subsection{Definitions}
+
+We define an Image $I$ with width $w$ and height $h$ to be the set
+$I = \{ p_{xy} | x \in 1 \dots w, y \in 1 \dots h \}$. A RGB Image $C$ is an
+Image with $p_{xy} \in (r_{xy}, g_{xy}, b_{xy})$, while a Greyscale image is
+an Image with $p_{xy} \in 0,1, \dots 255$.
+
+A Binary Image $B$ is an Image with $p_{xy} \in \{0,1\}$ where we also refer to
+$0$ as \textit{black} and $1$ as \textit{white}
 
 \subsection{Image Morphology}
 
@@ -17,7 +25,7 @@ commonly used in image processing without going into detail of their mathematica
 definition. % TODO: Further reading in ...
 
 Given a binary image $X$ and a smaller binary image $B$ called the
-\textit{Structuring Element} with an anchor point $a \element B$,
+\textit{Structuring Element} with an anchor point $a \in B$,
 we can apply the following operations.
 
 The Erosion $X \ominus B$ is equivalent to iterating through all of the white
