@@ -25,21 +25,21 @@ commonly used in image processing without going into detail of their
 mathematical definition. A more formal definition and further reading can be
 found in Aguardo (2012) \cite{Aguardo2012}
 
-Given a binary image $X$ and a smaller binary image $B$ called the
-\textit{Structuring Element} with an anchor point $a \in B$,
-we can apply the following operations.
+Given a binary image $B$ and a smaller binary image $B_s$ called the
+\textit{Structuring Element}, we can apply the basic operations \textit{Erosion}
+and \textit{Dilation}.
 
-The Erosion $X \ominus B$ is equivalent to iterating through all of the white
-pixels of $X$ and only keeping them if all of the points of $B$ are translated
-by its anchor point $a$ to this position is fully included in $X$. Therefore the
-white areas in $X$ are reduced \cite{Smith1997}.
+The Erosion $B \ominus B_s$ is equivalent to iterating through all of the white
+pixels of $B$ and only keeping them if all of the points of $B_s$ translated
+by its center point $c \in B_s$ to this position are fully included in $B$.
+Therefore the white areas in $B$ are reduced . \cite{Smith1997}
 
-%TODO: Explain the Dilation section in more detail
+Similarly for the Dilation operation  $B \oplus B_s$ , the Structuring Element
+is translated to every pixel $p \in B$. For each of these pixels all the
+neighbouring pixels that intersect with the translated $B_s$ are turned white.
+The total area of white pixels is increased. \cite{Smith1997}
 
-Similarly with the Dilation operation $X \oplus B$ neighbouring pixels are
-turned white if they intersect with the translated Structuring Element. The size
-of white areas is increased.
-
+% TODO: Explain and hint how we are using them
 Image Morphologies have multiple uses like increasing certain areas for better
 recognition or separating larger shapes of an image.
 
