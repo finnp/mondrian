@@ -80,10 +80,10 @@ original input image is used.
   \label{fig:preprocessing}
 \end{figure}
 
-% TODO: Explain where artifacts might come from
-
 At first, a Gaussian blur is applied to the input RGB Image
-$I_1$ to reduce artifacts that the input images might include: $I_2 = G(I_1)$
+$I_1$ to reduce artifacts that the input images might include: $I_2 = G(I_1)$.
+These artifacts might be craquelure or fading of darker areas in the paintings.
+But they might also be results of the photography and scanning the images.
 
 Next, the RGB input image is decomposed into a Greyscale Image $G_1$ by using
 the maximum value of the RGB triplet for each pixel in $I_2$.
