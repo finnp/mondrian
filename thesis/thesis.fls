@@ -184,6 +184,8 @@ INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/mathpazo/zplmr7t.tfm
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/mathpazo/zplmr7t.tfm
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/adobe/palatino/pplri9e.tfm
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/adobe/palatino/pplb9e.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/adobe/palatino/pplr9e.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/adobe/palatino/pplr9e.tfm
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/vf/adobe/palatino/pplri9e.vf
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/adobe/palatino/pplri8r.tfm
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/mathpazo/fplmri.tfm
@@ -215,14 +217,12 @@ INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/mathpazo/fplmb.tfm
 INPUT preprocessing_steps.png
 INPUT ./preprocessing_steps.png
 INPUT ./preprocessing_steps.png
-INPUT /usr/local/texlive/2018/texmf-dist/fonts/vf/adobe/palatino/pplr9t.vf
-INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/mathpazo/fplmr.tfm
-INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/adobe/palatino/pplr9e.tfm
-INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/adobe/palatino/pplr9e.tfm
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/vf/public/mathpazo/zplmr7v.vf
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/mathpazo/fplmr.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/vf/adobe/palatino/pplr9t.vf
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/mathpazo/fplmr.tfm
 INPUT thesis.bbl
 INPUT thesis.bbl

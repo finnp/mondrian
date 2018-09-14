@@ -10,7 +10,7 @@ in Mondrians abstract paintings (\ref{concept}).
 
 \subsection{Definitions} \label{definitions}
 
-We define an Image $I$ with width $w$ and height $h$ to be the set
+We define an Image $X$ with width $w$ and height $h$ to be the set
 $I = \{ p_{xy} | x \in 1 \dots w, y \in 1 \dots h \}$. A RGB Image $I$ is an
 Image with $p_{xy} \in (r_{xy}, g_{xy}, b_{xy})$, while a Greyscale image is
 an Image with $p_{xy} \in 0,1, \dots 255$.
@@ -51,6 +51,34 @@ Image Morphologies have multiple uses like increasing certain areas for better
 recognition or separating larger shapes of an image. In our case they will be
 helpful for correcting interruptions in the black lines of the image as well as
 for separating black areas that are bigger than typical lines.
+
+\subsubsection{Thresholding}
+
+Thresholding $T(G) = \{t_{xy}\ | g_{xy} \in G\}$ is a process for turning a greyscale image $G$
+with pixels $g_{xy}$ into a binary image $B$ using a threshold $t \in
+0,1,\dots255$. Each pixel $t_{xy}$ is assigned a black or white value given
+whether it is below or above the threshold.
+
+\begin{equation}
+  t_{xy} =
+  \begin{cases}
+    0 & \quad  \text{if}  \quad g_{xy} \leq t\\
+    1  & \quad \text{if}  \quad g_{xy} > t
+  \end{cases}
+\end{equation}
+
+\subsubsection{Contrast Limited Adaptive Histogram
+Equalization (CLAHE)}
+
+TODO
+
+\subsubsection{Masks}
+
+Masks operations are similar to elementary arithmetics. Each pixel $a_{xy}$ in
+one image  $X_a$ is added, substracted, multiplied or divided with $b_{by}$ of
+another image $X_b$. For example the operation $X_a + X_b$ denotes the set
+$\{p_{xy} + q_{xy} | p_{xy} \in X_a, q_{xy} \in X_b\}$. For our purposes we only
+use addition and substraction.
 
 % TODO: Possibly try to use Opening operation again and explain it here
 
@@ -112,17 +140,9 @@ pixel of the input image. The resulting Mask $G_m$ from this calculation is adde
 the contrast-normalized image $G_3 = G_2 + G_m$.
 
 Now the image $G_3$ with the elements $g_{xy}$ is converted into a binary image
-$B_1$ with the elements $t_{xy}$ using a threshold $t \in 0,1,\dots255$ for the
-greyscale values. The value of $t$ needs to be chosen as such as its optimally
-separating between the darker lines an the lighter rectangles in the image.
-
-\begin{equation}
-  t_{xy} =
-  \begin{cases}
-    0 & \quad  \text{if}  \quad g_{xy} \leq t\\
-    1  & \quad \text{if}  \quad g_{xy} > t
-  \end{cases}
-\end{equation}
+using Thresholding $B_1 = T(G_2)$. The threshold value $t$ needs to be chosen
+as such as its optimally separating between the darker lines an the lighter
+rectangles in the image.
 
 Since the thresholding step might leave some interruption in the black lines, we
 reduce the white areas of the image: An Erosion $B_2 = B_1 \ominus B_e$ is
