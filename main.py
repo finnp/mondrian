@@ -55,6 +55,7 @@ def process_image(original):
     max = binary
 
     opening = cv2.erode(max, kernel)
+    steps.append(('opening', opening))
 
     # remove lines, only black rectangles remain
     dilated = cv2.dilate(max, cv2.getStructuringElement(cv2.MORPH_RECT,(black_rectangle_dilate,black_rectangle_dilate)))
@@ -65,7 +66,6 @@ def process_image(original):
 
     with_lines = np.copy(original)
 
-    steps.append(('opening', opening))
 
     timings.end('start')
     timings.start('detect_lines')
