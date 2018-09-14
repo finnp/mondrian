@@ -2,7 +2,13 @@
 
 \section{Fundamentals}
 
-\subsection{Definitions}
+In this section we will specify the different definitions used for
+conceptionalizing the program (\ref{definitions}). We are also going to present
+different existing methods and algorithms that were used (\ref{used}).
+Lastly we are going to outline the concept for detecting the structure of rectangles
+in Mondrians abstract paintings (\ref{concept}).
+
+\subsection{Definitions} \label{definitions}
 
 We define an Image $I$ with width $w$ and height $h$ to be the set
 $I = \{ p_{xy} | x \in 1 \dots w, y \in 1 \dots h \}$. A RGB Image $I$ is an
@@ -12,7 +18,7 @@ an Image with $p_{xy} \in 0,1, \dots 255$.
 A Binary Image $B$ is an Image with $p_{xy} \in \{0,1\}$ where we also refer to
 $0$ as \textit{black} and $1$ as \textit{white}
 
-\subsection{Used Algorithms and Methods}
+\subsection{Used Algorithms and Methods} \label{used}
 
 For preprocessing the images, a combination of methods are used: \textit{Image
 Morphology}, \textit{Thresholding}, \textit{Contrast Limited Adaptive Histogram
@@ -48,7 +54,7 @@ for separating black areas that are bigger than typical lines.
 
 % TODO: Possibly try to use Opening operation again and explain it here
 
-\subsection{Concept}
+\subsection{Concept} \label{concept}
 
 %TODO: Define mondrian paintings in our context
 
