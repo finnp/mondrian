@@ -1,5 +1,9 @@
 \section{Implementation}
 
+% - Structure (Wie ist Ihre Software strukturiert?)
+% - Performance
+% - Parameter Selection
+
 The algorithm was implemented using Python using the \textit{OpenCV} and
 \textit{NumPy} libraries. OpenCV provided the different image processing methods
 described in \ref{used} as well as other methods for reading, writing
@@ -8,6 +12,15 @@ package for scientific numerical computing \cite{scipy}. Images in OpenCV are
 represented as three-dimensional NumPy arrays. The first two dimensions of these
 array encode the positions of pixels in the image, while the third dimension
 encodes the three color values.
+
+%
+% - run from the command line `python main.py`
+% - Test phase: Run through images
+%
+% - Wie haben Sie Ihr Konzept umgesetzt?
+% - Wie ist Ihre Software strukturiert?
+% - Was sind exemplarische Quelltextfragmente, die zeigen, wie Ihre Programm arbeitet?
+%
 
 \subsection{Structure}
 
@@ -25,14 +38,9 @@ debug images given were saved to disk in an output directory. The data from the
 rectangles was encoded into \textit{JSON} and saved as well.
 
 The \texttt{process\_image} first calls another function \texttt{preprocessing}
-that executes the steps described in \ref{preprocessing}. The different processing
-steps were also provided for debugging and adjustment of the parameters. By
-running the program and looking at the result of the Thresholding the threshold
-value $t = 110$ was determined to give reasonable results.
-% TODO:
-% Min length m?
-% Distance d?
-% How to choose N?
+that executes the steps described in \ref{preprocessing}. The different
+processing steps were also provided for debugging and adjustment of the
+parameters, see \ref{parameter}.
 
 Then the result of \texttt{preprocessing(image)} is called by
 \texttt{detect\_rectangles}. This function executes the steps described in
@@ -74,12 +82,23 @@ library for bindings. Using the same algorithm implemented in Rust, the time of
 this step was reduce from about 1020 to 40 milliseconds. The run time of the
 program could be reduced by a factor of 13.
 
-% - run from the command line `python main.py`
-% - Test phase: Run through images
-%
-% - Wie haben Sie Ihr Konzept umgesetzt?
-% - Wie ist Ihre Software strukturiert?
-% - Was sind exemplarische Quelltextfragmente, die zeigen, wie Ihre Programm arbeitet?
-%
-% Challenges?
-% Code: Pseudo/Python?
+\subsection{Parameter Selection} \label{parameter}
+
+By running the program on the images and looking at the debugging output images
+for the different steps, the reasonable values for the parameters of the program
+can be determined.
+
+By running the program and looking at the results of the Thresholding for each
+image, comparing it to the input image, the threshold value $t = 110$ was
+determined to give reasonable results.
+
+To better fine-tune the parameters, we selected a subset of input images and
+always manually changed these parameters until the result was correct. The
+resulting \textit{JSON} files with the correct results were moved to another
+directory \textit{detected}. Then a step was added to the program that would
+always compare the computed result with result in that directory if available.
+When the result differed it would print out a warning.
+
+Using this output the minimum length $l$, the maximum width $d$ and the size of
+the erosion kernel $N$ were changed to maximize the number of recognized images
+from that set. The resulting parameters were $l = 60$, $d = 70$ and $N =11$.
