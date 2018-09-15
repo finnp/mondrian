@@ -3,7 +3,7 @@
 In this section we want to present our implementation of the above described
 concept. We are going to show how the software is structured
 (\ref{structure}), discuss challenges in performance (\ref{performance}) and
-explain how parameters were chosen (\ref{parameters}).
+explain how parameters were chosen (\ref{parameter}).
 
 The algorithm was implemented in Python using the \textit{OpenCV} and
 \textit{NumPy} libraries. OpenCV provided the different image processing methods
@@ -60,14 +60,24 @@ def detect_rectangles(preprocessed_img, original_img):
   return rects_with_color
 \end{lstlisting}
 
-As an example here is one of the source code of one of the functions
-\texttt{find\_rectangles}, which finds rectangles from a list of top-left,
-bottom-left and top-right positions. The length of each of these lists is the
-same and is expected to be the number of rectangles. The program first sorts
-the top-right corners by their x position and the bottom-left corners by their
-y position.
+As an example Listing \ref{lst:findrectangles} shows the source code of
+one of the functions \texttt{find\_rectangles}, which finds rectangles from a
+list of top-left, bottom-left and top-right positions. The length of each of
+these lists is the same and is expected to be the number of rectangles. The
+program first sorts the top-right corners by their x position and the
+bottom-left corners by their y position. When iterating through the top-left
+corners, we know that their x position is going to be the same as the matching
+bottom-left corner \texttt{bl}, but a larger y-coordinate. So we only select
+these candidates from the \texttt{bottom\_left} list using an iterator
+expression. Since we ordered the corners before from top to bottom, we know the
+matching corner is going to be the first returned by the iterator. We therefore
+only call the iterator once with \texttt{next}. The same logic is applied to
+bottom-left corners. Using the coordinates of the matching top-right and
+bottom-left corners, the rectangle is calculated and added to a list of
+rectangles as a tuple. That list is then returned by the function.
 
-\begin{lstlisting}
+\begin{minipage}{\linewidth}
+\begin{lstlisting}[label=lst:findrectangles,caption=Function for constructing rectangles from corners]
 def find_rectangles(top_left, bottom_left, top_right):
     top_right.sort(key=lambda pos: pos[0])
     bottom_left.sort(key=lambda pos: pos[1])
@@ -80,6 +90,7 @@ def find_rectangles(top_left, bottom_left, top_right):
         rectangles.append((x,y,w,h))
     return rectangles
 \end{lstlisting}
+\end{minipage}
 
 \subsection{Performance} \label{performance}
 
