@@ -2,6 +2,7 @@ import json, os
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
+import matplotlib.patches as patches
 
 dir = 'detected'
 out_dir = 'graphs'
@@ -86,7 +87,21 @@ df['aspect_max_min'] = df['longer'] / df['shorter']
 df['aspect'] = df['width'] / df['height']
 
 without_white = df[df['color'] != 'white']
-without_white.plot.scatter(x='center_x', y='center_y',c=without_white['color'])
+ax = without_white.plot.scatter(x='center_x', y='center_y',c=without_white['color'])
+grouped_by_color = without_white.groupby('color')
+mean_points = grouped_by_color.mean()
+std_points = grouped_by_color.std()
+# mean_points.plot(x='center_x', y='center_y', style='x',ax=ax)
+
+colors = ['red','blue','yellow','black']
+for color in colors:
+    c_x = mean_points['center_x'][color]
+    c_y = mean_points['center_y'][color]
+    s_x = std_points['center_y'][color]
+    s_y = std_points['center_y'][color]
+    std = np.sqrt(s_x**2 + s_y**2)
+    ax.add_artist(plt.Circle((c_x, c_y), std, color=color, Fill=False))
+
 plt.title('Center of rectangles, normalized by image height/width')
 plt.savefig(out_dir + '/points.png')
 plt.close()
