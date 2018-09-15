@@ -1,28 +1,20 @@
 \section{Implementation}
 
-% - Structure (Wie ist Ihre Software strukturiert?)
-% - Performance
-% - Parameter Selection
+In this section we want to present the out implementation of the above described
+concept. We are going to present how the software is structured (\ref{structure}),
+discuss challenges in performance (\ref{performance}) and explain how parameters
+were chosen (\ref{parameters}).
 
 The algorithm was implemented using Python using the \textit{OpenCV} and
 \textit{NumPy} libraries. OpenCV provided the different image processing methods
 described in \ref{used} as well as other methods for reading, writing
-and manipulating image files. NumPy which is part of the SciPy package is a
+and manipulating image files. NumPy, which is part of the SciPy package, is a
 package for scientific numerical computing \cite{scipy}. Images in OpenCV are
 represented as three-dimensional NumPy arrays. The first two dimensions of these
 array encode the positions of pixels in the image, while the third dimension
 encodes the three color values.
 
-%
-% - run from the command line `python main.py`
-% - Test phase: Run through images
-%
-% - Wie haben Sie Ihr Konzept umgesetzt?
-% - Wie ist Ihre Software strukturiert?
-% - Was sind exemplarische Quelltextfragmente, die zeigen, wie Ihre Programm arbeitet?
-%
-
-\subsection{Structure}
+\subsection{Structure} \label{structure}
 
 The processing and detection of the image was implemented in a function
 \texttt{process\_image}. This function takes a 3-dimensional array representing
@@ -64,7 +56,7 @@ def detect_rectangles(preprocessed_img, original_img):
   return rects_with_color
 \end{lstlisting}
 
-\subsection{Performance}
+\subsection{Performance} \label{performance}
 
 The performance of the algorithm was measured by timing the duration for each
 image. The first implementation of the algorithm took about 1100 milliseconds per
