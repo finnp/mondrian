@@ -40,8 +40,9 @@ Then the result of \texttt{preprocessing(image)} is called by
 well as images that show a visual representation of the rectangles next to
 the input image. This can be used to validate the result of the algorithm.
 
-The \texttt{detect\_rectangles} function can be boiled down to the following
-code:
+Leaving out debugging steps, the \texttt{detect\_rectangles} function can be
+boiled down to the following code:
+
 \begin{lstlisting}
 def detect_rectangles(preprocessed_img, original_img):
   (h1, v1) = detect_lines(preprocessed_img)
