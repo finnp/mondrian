@@ -17,13 +17,7 @@ black_rectangle_dilate = 35
 
 kernel = cv2.getStructuringElement(cv2.MORPH_RECT,(11,11))
 
-def draw_black_border(img):
-    height, width = img.shape[:2]
-    cv2.rectangle(img, (0,0), (width, height), (0, 0, 0))
-
-def process_image(original):
-    timings.start('full')
-    timings.start('start')
+def preprocessing(original):
     steps = []
     height, width, channels = original.shape
 
@@ -62,14 +56,20 @@ def process_image(original):
 
     remove_mask = cv2.bitwise_not(dilated)
 
-    opening = cv2.max(opening, remove_mask)
+    return (cv2.max(opening, remove_mask), steps)
 
+
+def process_image(original):
+    timings.start('full')
+    timings.start('start')
+
+    height, width, channels = original.shape
     with_lines = np.copy(original)
-
+    (preprocessed, steps) = preprocessing(original)
 
     timings.end('start')
     timings.start('detect_lines')
-    (horizontal, vertical) = detect_lines_rust(cv2.bitwise_not(opening), min_line_length)
+    (horizontal, vertical) = detect_lines_rust(cv2.bitwise_not(preprocessed), min_line_length)
     timings.end('detect_lines')
     timings.start('after')
 
@@ -101,9 +101,6 @@ def process_image(original):
 
     draw_lines(with_lines, horizontal + vertical)
     steps.append(('lines', with_lines))
-
-
-    draw_black_border(opening)
 
     rects_with_color = find_colors_for_rects(rectangles, original)
     output = {
