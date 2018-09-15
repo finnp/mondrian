@@ -10,10 +10,11 @@ in Mondrians abstract paintings (\ref{concept}).
 
 \subsection{Definitions} \label{definitions}
 
-We define an Image $X$ with width $w$ and height $h$ to be the set
-$I = \{ p_{xy} | x \in 1 \dots w, y \in 1 \dots h \}$. A RGB Image $I$ is an
-Image with $p_{xy} \in (r_{xy}, g_{xy}, b_{xy})$, while a Greyscale image is
-an Image with $p_{xy} \in 0,1, \dots 255$.
+We define an Image $X$ with width $w$ and height $h$ to be the set $I = \{
+p_{xy} | x \in \{1,2, \dots w\}, y \in \{1,2, \dots h\} \}$. A RGB Image $I$ is
+an Image with $p_{xy} = (r_{xy}, g_{xy}, b_{xy}) \in \{0,1,...,255\} \times
+\{0,1,...,255\} \times\{0,1,...,255\}$, while a Greyscale image is an Image with
+$p_{xy} \in \{0,1, \dots 255\}$.
 
 A Binary Image $B$ is an Image with $p_{xy} \in \{0,1\}$ where we also refer to
 $0$ as \textit{black} and $1$ as \textit{white}
@@ -31,11 +32,13 @@ Image Morphology is based on Mathematical Morphology from the mathematical field
 of set theory. We are going to present two basic morphological operators
 commonly used in image processing without going into detail of their
 mathematical definition. A more formal definition and further reading can be
-found in Aguardo (2012) \cite{Aguardo2012}
+found in Aguardo (2012) \cite{Aguardo2012}.
 
 Given a binary image $B$ and a smaller binary image $B_s$ called the
 \textit{Structuring Element}, we can apply the basic operations \textit{Erosion}
 and \textit{Dilation}.
+
+% Maybe add image about Erosion
 
 The Erosion $B \ominus B_s$ is equivalent to iterating through all of the white
 pixels of $B$ and only keeping them if all of the points of $B_s$ translated
@@ -89,13 +92,13 @@ use addition and substraction.
 Our aim for the detection algorithm is to take a cropped Mondrian painting as
 an input and detect all the rectangles in it as well as their colors.
 
-The input to algorithm is an RGB Image $I_1$ of a Mondrian painting. The
-expected output is a list of rectangles with their position, sizes and color as
-they are conceptionally seen in the painting. All rectangles combined are
-expected to exactly cover the area of the input image in a way that the original
-could be dissected into this set of rectangles. The thick black lines in the
-paintings are seen as one-dimensional lines that are positioned in the middle
-of the detected thicker lines.
+The input is an RGB Image $I_1$ of a Mondrian painting. The expected output is a
+list of rectangles with their position, sizes and color as they are
+conceptionally seen in the painting. All rectangles combined are expected to
+exactly cover the area of the input image in a way that the original could be
+dissected into this set of rectangles. The thick black lines in the paintings
+are seen as one-dimensional lines that are positioned in the middle of the
+detected thicker lines.
 
 The algorithm itself can be separated into two different phases: Image
 preprocessing (\ref{preprocessing}) and the recognition of rectangles (\ref{rectangles}).
@@ -116,10 +119,11 @@ original input image is used.
   \label{fig:preprocessing}
 \end{figure}
 
-At first, a Gaussian blur is applied to the input RGB Image
-$I_1$ to reduce artifacts that the input images might include: $I_2 = G(I_1)$.
-These artifacts might be craquelure or fading of darker areas in the paintings.
-But they might also be results of the photography and scanning the images.
+At first, a Gaussian blur is applied to the input RGB Image $I_1$ to reduce
+artifacts that the input images might include, we call the result of the blur
+$I_2$. These artifacts might be craquelure or fading of darker areas in the
+paintings. But they might also be results of the photography and scanning the
+images.
 
 Next, the RGB input image is decomposed into a Greyscale Image $G_1$ by using
 the maximum value of the RGB triplet for each pixel in $I_2$.
