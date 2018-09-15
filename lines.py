@@ -224,12 +224,8 @@ def find_rectangles(top_left, bottom_left, top_right):
     bottom_left.sort(key=lambda pos: pos[1])
     rectangles = []
     for x,y in top_left:
-        a = [tr for tr in top_right if tr[1] == y and tr[0] > x]
-        b = [bl for bl in bottom_left if bl[0] == x and bl[1] > y]
-        if (len(a) == 0 or len(b) == 0):
-            continue
-        x2,_a = a[0]
-        _,y2 = b[0]
+        x2,_ = next(tr for tr in top_right if tr[1] == y and tr[0] > x)
+        _,y2 = next(bl for bl in bottom_left if bl[0] == x and bl[1] > y)
         w = x2 - x
         h = y2 - y
         rectangles.append((x,y,w,h))
@@ -251,7 +247,7 @@ def find_corners(horizontal, vertical):
                     # left
                     if (y_1 != y_h):
                         bottom_left.append(crossing)
-                    if (y_2 != y_h):
+                    if (y_2 < y_h and y_1 > y_h):
                         top_left.append(crossing)
                 elif (x_2 == x_v):
                     # right
