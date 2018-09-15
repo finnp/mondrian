@@ -1,14 +1,14 @@
 \section{Implementation}
 
-In this section we want to present the out implementation of the above described
-concept. We are going to present how the software is structured (\ref{structure}),
-discuss challenges in performance (\ref{performance}) and explain how parameters
-were chosen (\ref{parameters}).
+In this section we want to present our implementation of the above described
+concept. We are going to show how the software is structured
+(\ref{structure}), discuss challenges in performance (\ref{performance}) and
+explain how parameters were chosen (\ref{parameters}).
 
-The algorithm was implemented using Python using the \textit{OpenCV} and
+The algorithm was implemented in Python using the \textit{OpenCV} and
 \textit{NumPy} libraries. OpenCV provided the different image processing methods
-described in \ref{used} as well as other methods for reading, writing
-and manipulating image files. NumPy, which is part of the SciPy package, is a
+described in \ref{used} as well as other methods for reading, writing and
+manipulating image files. NumPy, which is part of the SciPy package, is a
 package for scientific numerical computing \cite{scipy}. Images in OpenCV are
 represented as three-dimensional NumPy arrays. The first two dimensions of these
 array encode the positions of pixels in the image, while the third dimension
@@ -16,25 +16,29 @@ encodes the three color values.
 
 \subsection{Structure} \label{structure}
 
-The processing and detection of the image was implemented in a function
-\texttt{process\_image}. This function takes a 3-dimensional array representing
-the image as an input and outputs a tuple. The first element of that tuple is
-the actual output, a list of rectangles found in the image. Each rectangle is
-represented by a \textit{Dictionary} with their respective position, dimensions
-and color. The second element is a list of images, which represent different steps
-of the algorithm and are artifacts meant for debugging and feedback.
+The main algorithm was implemented in a function \texttt{process\_image}. This
+function takes a 3-dimensional array representing the image as an input and
+outputs a tuple. The first element of that tuple is the actual output, a list of
+rectangles found in the image. The second element is a list of images, which
+represent different steps of the algorithm and are artifacts meant for debugging
+and feedback. Each rectangle in the list is represented by a \textit{Dictionary}
+with their respective position, dimensions and color.
 
-Another function called \texttt{run\_pipeline} read a list of images from a
-given input directory and fed them into \texttt{process\_image}. Each of the
-debug images given were saved to disk in an output directory. The data from the
-rectangles was encoded into \textit{JSON} and saved as well.
+Another function called \texttt{run\_pipeline} reads a list of images from a
+given input directory and feeds them into \texttt{process\_image}. Each of the
+debug images given are saved to disk in an output directory. The data from the
+rectangles is encoded into \textit{JSON}-files.
 
-The \texttt{process\_image} first calls another function \texttt{preprocessing}
-that executes the steps described in \ref{preprocessing}. The different
-processing steps were also provided for debugging and adjustment of the
+% \subsubsection{\texttt{preprocessing(image)}}
+
+\texttt{process\_image} first calls another function \texttt{preprocessing} that
+executes the steps described in \ref{preprocessing}. The different processing
+steps are also provided as an output for debugging and adjustment of the
 parameters, see \ref{parameter}.
 
-Then the result of \texttt{preprocessing(image)} is called by
+% \subsubsection{\texttt{detect\_rectangles(binary\_image, image)}}
+
+Then the result of \texttt{preprocessing(image)} is then used as the input for
 \texttt{detect\_rectangles}. This function executes the steps described in
 \ref{rectangles}. The result is a list of rectangles and their colors. As
 well as images that show a visual representation of the rectangles next to
