@@ -226,7 +226,7 @@ def connect_lines(horizontal_lines, vertical_lines):
     return (horizontal, vertical)
 
 
-def find_rectangles(top_left, bottom_left, bottom_right, top_right):
+def find_rectangles(top_left, bottom_left, top_right):
     top_right.sort(key=lambda pos: pos[0])
     bottom_left.sort(key=lambda pos: pos[1])
     rectangles = []

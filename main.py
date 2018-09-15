@@ -4,7 +4,7 @@ import imutils
 import datetime
 from lines import remove_lines_close_to_border, connect_lines, reduce_lines, reduce_lines_rust, detect_lines_rust, find_corners, find_rectangles
 from draw import find_colors_for_rects, draw_rectangles, draw_lines, draw_points, draw_corners, clip_rectangles
-from files import process_pipeline
+from files import run_pipeline
 import timings
 
 retr_type = cv2.RETR_LIST
@@ -40,47 +40,37 @@ def preprocessing(original):
     steps.append(('contrast', contrast_fixed))
 
     color_contrast = cv2.add(contrast_fixed, deviation)
-
     steps.append(('color-contrast', color_contrast))
 
     _, binary = cv2.threshold(color_contrast, binary_threshold, 255, cv2.THRESH_BINARY)
     steps.append(('binary', binary))
 
-    max = binary
-
-    opening = cv2.erode(max, kernel)
+    opening = cv2.erode(binary, kernel)
     steps.append(('opening', opening))
 
     # remove lines, only black rectangles remain
-    dilated = cv2.dilate(max, cv2.getStructuringElement(cv2.MORPH_RECT,(black_rectangle_dilate,black_rectangle_dilate)))
+    dilated = cv2.dilate(binary, cv2.getStructuringElement(cv2.MORPH_RECT,(black_rectangle_dilate,black_rectangle_dilate)))
 
     remove_mask = cv2.bitwise_not(dilated)
 
     return (cv2.max(opening, remove_mask), steps)
 
-
-def process_image(original):
-    timings.start('full')
-    timings.start('start')
-
-    height, width, channels = original.shape
-    with_lines = np.copy(original)
-    (preprocessed, steps) = preprocessing(original)
-
-    timings.end('start')
+def detect_rectangles(binary, original):
+    steps = []
+    height, width = binary.shape
     timings.start('detect_lines')
-    (horizontal, vertical) = detect_lines_rust(cv2.bitwise_not(preprocessed), min_line_length)
+    (horizontal, vertical) = detect_lines_rust(cv2.bitwise_not(binary), min_line_length)
     timings.end('detect_lines')
-    timings.start('after')
 
     (vertical_lines, horizontal_lines) = reduce_lines(horizontal, vertical, min_distance)
     (horizontal_lines, vertical_lines) = remove_lines_close_to_border(horizontal_lines, vertical_lines, width, height, 0.2 * min_distance)
+
+    # debug
     before_connect = np.copy(original)
     draw_lines(before_connect, horizontal, color=(0,255,0))
     draw_lines(before_connect, vertical, color=(255,0,0))
     draw_lines(before_connect, vertical_lines + horizontal_lines)
     steps.append(('raw-lines', before_connect))
-
 
     # add helper lines for borders
     horizontal_lines += [(0,0,width,0), (0,height,width,height)]
@@ -88,12 +78,14 @@ def process_image(original):
     (horizontal, vertical) = connect_lines(horizontal_lines, vertical_lines)
 
     top_left, bottom_left, bottom_right, top_right = find_corners(horizontal, vertical)
-    # add given image corners (should be done by find_corners)
+    # add given image corners
     top_left.append((0,0))
     bottom_left.append((0,height))
     bottom_right.append((width,height))
     top_right.append((width,0))
-    rectangles = find_rectangles(top_left, bottom_left, bottom_right, top_right)
+
+    rectangles = find_rectangles(top_left, bottom_left, top_right)
+    with_lines = np.copy(original)
     draw_corners(with_lines, top_left, (0, 90))
     draw_corners(with_lines, top_right, (90, 180))
     draw_corners(with_lines, bottom_right, (180, 270))
@@ -103,10 +95,21 @@ def process_image(original):
     steps.append(('lines', with_lines))
 
     rects_with_color = find_colors_for_rects(rectangles, original)
+    return (rects_with_color, steps)
+
+def process_image(original):
+    timings.start('full')
+    height, width, channels = original.shape
+    (preprocessed, steps) = preprocessing(original)
+
+    (rects, second_steps) = detect_rectangles(preprocessed, original)
+
+    steps += second_steps
+
     output = {
         'height': height,
         'width': width,
-        'rectangles': rects_with_color,
+        'rectangles': rects,
         'options': {
             'binary_threshold': binary_threshold,
             'min_line_length': min_line_length,
@@ -114,7 +117,7 @@ def process_image(original):
             'black_rectangle_dilate': black_rectangle_dilate
         }
     }
-    drawn = draw_rectangles(rects_with_color, height, width)
+    drawn = draw_rectangles(rects, height, width)
 
     steps.append(('drawn', drawn))
 
@@ -123,17 +126,14 @@ def process_image(original):
 
     side_by_side = np.hstack((original, drawn, overlay))
     font = cv2.FONT_HERSHEY_SIMPLEX
-    cv2.putText(side_by_side,str(len(rects_with_color)),(10,500), font, 4,(0,0,0),2,cv2.LINE_AA)
+    cv2.putText(side_by_side,str(len(rects)),(10,500), font, 4,(0,0,0),2,cv2.LINE_AA)
     steps.append(('side_by_side', side_by_side))
 
 
-    timings.end('after')
     timings.end('full')
     return (steps, output)
 
-process_pipeline(process_image)
+run_pipeline(process_image)
 print('')
 print('Time for iteration: %s' % timings.average('full'))
 print('Detect lines: %s' % timings.average('detect_lines'))
-print('Before: %s' % timings.average('start'))
-print('After lines: %s' % timings.average('after'))

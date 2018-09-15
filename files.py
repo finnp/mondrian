@@ -10,7 +10,7 @@ detected_dir = 'detected'
 
 issues = []
 
-def process_pipeline(process_image):
+def run_pipeline(process_image):
     detected = [file[:-5] for file in os.listdir(detected_dir)]
     if len(sys.argv) > 1:
         if sys.argv[1] == 'test':
