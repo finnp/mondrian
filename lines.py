@@ -188,13 +188,6 @@ def connect_lines(horizontal_lines, vertical_lines):
             - Prefer crossing lines in the direction of the end
                 - e.g. the right end of a horizontal should rather connect to a vertical to the closest_vertical_right
             - Make sure the "crossing line" is actually long enough to cross this line
-
-        Idea:
-            - Test and improve this algorithm by
-                - 1. create lines a la mondrian
-                - 2. randomly shorten this lines
-                - 3. run the algorithm over the sortened version
-                - 4. check whether the result is the original
     """
     horizontal = []
     vertical = []
