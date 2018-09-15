@@ -60,6 +60,27 @@ def detect_rectangles(preprocessed_img, original_img):
   return rects_with_color
 \end{lstlisting}
 
+As an example here is one of the source code of one of the functions
+\texttt{find\_rectangles}, which finds rectangles from a list of top-left,
+bottom-left and top-right positions. The length of each of these lists is the
+same and is expected to be the number of rectangles. The program first sorts
+the top-right corners by their x position and the bottom-left corners by their
+y position.
+
+\begin{lstlisting}
+def find_rectangles(top_left, bottom_left, top_right):
+    top_right.sort(key=lambda pos: pos[0])
+    bottom_left.sort(key=lambda pos: pos[1])
+    rectangles = []
+    for x,y in top_left:
+        x2,_ = next(tr for tr in top_right if tr[1] == y and tr[0] > x)
+        _,y2 = next(bl for bl in bottom_left if bl[0] == x and bl[1] > y)
+        w = x2 - x
+        h = y2 - y
+        rectangles.append((x,y,w,h))
+    return rectangles
+\end{lstlisting}
+
 \subsection{Performance} \label{performance}
 
 The performance of the algorithm was measured by timing the duration for each
