@@ -7,4 +7,4 @@
 *.pdf
 *.gz
 *.fls
-*.fdp_latexmk
+*.fdb_latexmk
