@@ -73,7 +73,21 @@ whether it is below or above the threshold.
 \subsubsection{Contrast Limited Adaptive Histogram
 Equalization (CLAHE)}
 
-TODO
+A \textit{Histogram} of an image is the distribution of lightness values in an
+image. \textit{Histogram equalization} is the process of adjusting the contrast
+of an image using the Histogram. Global histogram equalization changes the
+brightness of each pixel in the image using the overall histogram of the image.
+\cite{ShapiroLindaG2001Cv}
+
+\textit{Adaptive histogram equalization (AHE)} on the other hand uses multiple
+histograms from different regions of an image to adjust the brightness of a
+pixel. It therefore is better able to increase the local contrast.
+
+However \textit{AHE} tends to overamplify noise in an image. Fairly uniform
+regions of the same brightness have high histogram pieaks and are turned into
+noisy patterns.  \textit{Contrast Limited Adaptive Histogram Equalization
+(CLAHE)} limites this effect by setting a maximum value for the values of the
+histogram. \cite{Pizer1987}
 
 \subsubsection{Masks}
 
