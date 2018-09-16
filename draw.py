@@ -61,6 +61,8 @@ def draw_rectangles(rects, height, width):
         w = rect['width']
         h = rect['height']
         color = rect['color']
+        if color == (0,0,0):
+            color = (30,30,30)
 
         cv2.rectangle(blank, (x,y), (x + w, y + h), color, -1)
         cv2.rectangle(blank, (x,y), (x + w, y + h), (0,0,0), 5)
