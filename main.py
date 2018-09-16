@@ -129,6 +129,9 @@ def process_image(original):
     side_by_side = np.hstack((original, drawn, overlay))
     font = cv2.FONT_HERSHEY_SIMPLEX
     cv2.putText(side_by_side,str(len(rects)),(10,500), font, 4,(0,0,0),2,cv2.LINE_AA)
+    for index,rect in enumerate(rects):
+        cv2.putText(side_by_side,str(index),(rect['x']+4,rect['y']+23), font, 1,(0,0,0),2,cv2.LINE_AA)
+
     steps.append(('side_by_side', side_by_side))
 
 
