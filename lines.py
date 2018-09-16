@@ -122,16 +122,6 @@ def reduce_lines(input_horizontal, input_vertical, min_distance):
         for other_index, (x1_b,y1_b,x2_b,y2_b) in enumerate(input_vertical):
             if other_index in seen_vertical:
                 continue
-<<<<<<< HEAD
-            if (abs(x1 - x1_b) < min_distance):
-                # if the end is further to the top, choose this end
-                if (y2_b < y2):
-                    y2 = y2_b
-                # if the start if further to the bottom, choose it
-                if (y1_b > y1):
-                    y1 = y1_b
-=======
->>>>>>> Trying to separate the lines
 
             if (abs(x1 - x1_b) < min_distance):
                 x_values.append(x1_b)
