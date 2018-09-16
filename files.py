@@ -40,11 +40,10 @@ def run_pipeline(process_image):
             os.makedirs(data_dir)
         save_data(data, data_dir + '/' + file_without_ending + '.json')
         for step_index, (type, img) in enumerate(outputs):
-            subdir = output_dir + '/' + str(step_index) + '-' + type
-            if index == 0:
-                if not os.path.exists(subdir):
-                    os.makedirs(subdir)
-            output_filename = subdir + '/' + file_without_ending + '.jpg'
+            subdir = output_dir + '/' + file_without_ending
+            if not os.path.exists(subdir):
+                os.makedirs(subdir)
+            output_filename = subdir + '/' + str(step_index) + '-' + type + '.jpg'
             cv2.imwrite(output_filename, img)
     print('%s issues' % len(issues))
 
