@@ -1,0 +1,96 @@
+{
+    "height": 1000,
+    "width": 698,
+    "rectangles": [
+        {
+            "x": 433,
+            "y": 208,
+            "width": 265,
+            "height": 618,
+            "color": [
+                255,
+                255,
+                255
+            ],
+            "color_id": "white"
+        },
+        {
+            "x": 0,
+            "y": 208,
+            "width": 433,
+            "height": 673,
+            "color": [
+                255,
+                255,
+                255
+            ],
+            "color_id": "white"
+        },
+        {
+            "x": 433,
+            "y": 826,
+            "width": 265,
+            "height": 174,
+            "color": [
+                181,
+                102,
+                0
+            ],
+            "color_id": "blue"
+        },
+        {
+            "x": 114,
+            "y": 881,
+            "width": 319,
+            "height": 119,
+            "color": [
+                255,
+                255,
+                255
+            ],
+            "color_id": "white"
+        },
+        {
+            "x": 0,
+            "y": 881,
+            "width": 114,
+            "height": 119,
+            "color": [
+                0,
+                243,
+                255
+            ],
+            "color_id": "yellow"
+        },
+        {
+            "x": 433,
+            "y": 0,
+            "width": 265,
+            "height": 208,
+            "color": [
+                255,
+                255,
+                255
+            ],
+            "color_id": "white"
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "width": 433,
+            "height": 208,
+            "color": [
+                31,
+                21,
+                238
+            ],
+            "color_id": "red"
+        }
+    ],
+    "options": {
+        "binary_threshold": 110,
+        "min_line_length": 40,
+        "min_distance": 32,
+        "black_rectangle_dilate": 40
+    }
+}
