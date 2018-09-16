@@ -11,9 +11,9 @@ retr_type = cv2.RETR_LIST
 contour_algorithm = cv2.CHAIN_APPROX_SIMPLE
 
 binary_threshold = 110
-min_line_length = 40
-min_distance = 32
-black_rectangle_dilate = 40
+min_line_length = 60
+min_distance = 70
+black_rectangle_dilate = 45
 
 kernel = cv2.getStructuringElement(cv2.MORPH_RECT,(11,11))
 
