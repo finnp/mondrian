@@ -123,14 +123,14 @@ def reduce_lines(input_horizontal, input_vertical, min_distance):
             if other_index in seen_vertical:
                 continue
 
-            if (abs(x1 - x1_b) < min_distance):
+            shortest_distance = min(abs(x - x1_b) for x in x_values)
+            if (shortest_distance < 4):
                 x_values.append(x1_b)
                 y_ranges.append((y2_b,y1_b))
                 seen_vertical.add(other_index)
 
-            # taking the average x value for all the lines to get the middle
-        x = int(np.mean(x_values))
-        for (ry2,ry1) in separate_ranges(y_ranges):
+        for (ry2,ry1,indices) in separate_ranges(y_ranges):
+            x = int(np.mean([x_values[index] for index in indices]))
             output_vertical.append((x,ry1,x,ry2))
 
     for index, (x1,y1,x2,y2) in enumerate(input_horizontal):
@@ -141,14 +141,14 @@ def reduce_lines(input_horizontal, input_vertical, min_distance):
         for other_index, (x1_b,y1_b,x2_b,y2_b) in enumerate(input_horizontal):
             if other_index in seen_horizontal:
                 continue
-            if (abs(y1 - y1_b) < min_distance):
+            shortest_distance = min(abs(y - y1_b) for y in y_values)
+            if (shortest_distance < 4):
                 x_ranges.append((x1_b,x2_b))
                 y_values.append(y1_b)
                 seen_horizontal.add(other_index)
 
-        # taking the average y value for all the lines to get the middle
-        y = int(np.mean(y_values)) # TODO: Only use y values of that fragment
-        for (rx1,rx2) in separate_ranges(x_ranges):
+        for (rx1,rx2,indices) in separate_ranges(x_ranges):
+            y = int(np.mean([y_values[index] for index in indices]))
             output_horizontal.append((rx1,y,rx2,y))
 
     return (output_vertical, output_horizontal)
@@ -161,15 +161,17 @@ def separate_ranges(ranges):
         the gap.
     """
     separated = []
-    for (start,end) in ranges:
+    for index,(start,end) in enumerate(ranges):
         intersected = [r for r in separated if range_intersect(start,end,r[0],r[1])]
         not_intersected = [r for r in separated if not range_intersect(start,end,r[0],r[1])]
         if (len(intersected) == 0):
-            separated.append((start,end))
+            separated.append((start,end,[index]))
         else:
             new_start = min([r[0] for r in intersected + [(start,end)]])
             new_end = max(r[1] for r in intersected + [(start,end)])
-            separated = not_intersected + [(new_start,new_end)]
+            indices = list(np.concatenate([r[2] for r in intersected]))
+            indices.append(index)
+            separated = not_intersected + [(new_start,new_end,indices)]
     return separated
 
 
@@ -188,7 +190,10 @@ def connect_lines(horizontal_lines, vertical_lines):
     for x1,y1,x2,y2 in horizontal_lines:
         closest_vertical_left = 20000
         closest_vertical_right = 20000
+        e = 10
         for v_x1,v_y1,v_x2,v_y2 in vertical_lines:
+            if not (y1 > v_y2 - e and y1 < v_y1 + e):
+                continue
             if abs(x1 - v_x1) < abs(closest_vertical_left):
                 closest_vertical_left = x1 - v_x1
             if abs(x2 - v_x1) < abs(closest_vertical_right):
@@ -201,6 +206,8 @@ def connect_lines(horizontal_lines, vertical_lines):
         closest_horizontal_up = 20000
         closest_horizontal_down = 20000
         for h_x1,h_y1,h_x2,h_y2 in horizontal_lines:
+            if not (x1 > v_x1 - e and x1 < h_x2 + e):
+                continue
             if abs(y1 - h_y1) < abs(closest_horizontal_up):
                 closest_horizontal_up = y1 - h_y1
             if abs(y2 - h_y1) < abs(closest_horizontal_down):
@@ -217,8 +224,14 @@ def find_rectangles(top_left, bottom_left, top_right):
     bottom_left.sort(key=lambda pos: pos[1])
     rectangles = []
     for x,y in top_left:
-        x2,_ = next(tr for tr in top_right if tr[1] == y and tr[0] > x)
-        _,y2 = next(bl for bl in bottom_left if bl[0] == x and bl[1] > y)
+        x2,_ = next((tr for tr in top_right if tr[1] == y and tr[0] > x),(-1,0))
+        if (x2 == -1):
+            print('Error could not find top-right for', (x,y))
+            continue
+        _,y2 = next((bl for bl in bottom_left if bl[0] == x and bl[1] > y), (0,-1))
+        if (y2 == -1):
+            print('Error could not find top-right for', (x,y))
+            continue
         w = x2 - x
         h = y2 - y
         rectangles.append((x,y,w,h))
