@@ -11,9 +11,9 @@ retr_type = cv2.RETR_LIST
 contour_algorithm = cv2.CHAIN_APPROX_SIMPLE
 
 binary_threshold = 110
-min_line_length = 60
-min_distance = 70
-black_rectangle_dilate = 35
+min_line_length = 78
+min_distance = 32
+black_rectangle_dilate = 40
 
 kernel = cv2.getStructuringElement(cv2.MORPH_RECT,(11,11))
 
@@ -46,14 +46,16 @@ def preprocessing(original):
     steps.append(('binary', binary))
 
     opening = cv2.erode(binary, kernel)
-    steps.append(('opening', opening))
 
     # remove lines, only black rectangles remain
     dilated = cv2.dilate(binary, cv2.getStructuringElement(cv2.MORPH_RECT,(black_rectangle_dilate,black_rectangle_dilate)))
 
     remove_mask = cv2.bitwise_not(dilated)
 
-    return (cv2.max(opening, remove_mask), steps)
+    rects_removed = cv2.max(opening, remove_mask)
+    steps.append(('opening', rects_removed))
+
+    return (rects_removed, steps)
 
 def detect_rectangles(binary, original):
     steps = []
