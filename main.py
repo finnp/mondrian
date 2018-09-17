@@ -65,6 +65,7 @@ def detect_rectangles(binary, original):
     timings.end('detect_lines')
 
     (vertical_lines, horizontal_lines) = reduce_lines(horizontal, vertical, min_distance)
+    # TODO: Only remove them if they are touching the border (in the step before or something)
     (horizontal_lines, vertical_lines) = remove_lines_close_to_border(horizontal_lines, vertical_lines, width, height, 0.2 * min_distance)
 
     # debug
