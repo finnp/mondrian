@@ -3,6 +3,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.patches as patches
+import seaborn as sns
 
 dir = 'detected'
 out_dir = 'graphs'
@@ -110,7 +111,9 @@ plt.gca().invert_yaxis()
 plt.savefig(out_dir + '/points.png')
 plt.close()
 
-ax = df[df['color'] == 'white'].plot.scatter(x='center_x_norm', y='center_y_norm')
+
+white_only = df[df['color'] == 'white']
+ax = white_only.plot.scatter(x='center_x_norm', y='center_y_norm')
 plt.title('Center of white rectangles, normalized by image height/width')
 c_x = mean_points['center_x_norm']['white']
 c_y = mean_points['center_y_norm']['white']
@@ -121,6 +124,14 @@ std = np.sqrt(s_x**2 + s_y**2)
 ax.add_artist(plt.Circle((c_x, c_y), std, color='black', Fill=False))
 plt.gca().invert_yaxis()
 plt.savefig(out_dir + '/white-points.png')
+plt.close()
+
+
+# https://seaborn.pydata.org/tutorial/distributions.html
+with sns.axes_style('white'):
+    sns.jointplot(x="center_x_norm", y="center_y_norm", data=white_only, kind="kde");
+plt.gca().invert_yaxis()
+plt.savefig(out_dir + '/kernel-density-white.png')
 plt.close()
 
 df.plot.scatter(x='shorter', y='longer', s=1, c='black')
