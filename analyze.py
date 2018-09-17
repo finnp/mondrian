@@ -40,7 +40,6 @@ number_of_rects = []
 rect_data = []
 
 for file in files:
-    print(file)
     with open(dir + '/' + file) as f:
         data = json.load(f)
     by_area = get_color_distribution(data)
@@ -78,8 +77,11 @@ plt.savefig(out_dir + '/n-rects.png')
 plt.close()
 
 df = pd.DataFrame(rect_data)
+df.index.name = 'id'
 df['center_x'] = df['x'] + df['width'] / 2.0
 df['center_y'] = df['y'] + df['height'] / 2.0
+df['center_x_norm'] = df['center_x'] / df['image_width']
+df['center_y_norm'] = df['center_y'] / df['image_height']
 df['color'] = df['color_id']
 df['longer'] = df[['width','height']].max(axis=1)
 df['shorter'] = df[['width','height']].min(axis=1)
@@ -87,23 +89,29 @@ df['aspect_max_min'] = df['longer'] / df['shorter']
 df['aspect'] = df['width'] / df['height']
 
 without_white = df[df['color'] != 'white']
-ax = without_white.plot.scatter(x='center_x', y='center_y',c=without_white['color'])
+ax = without_white.plot.scatter(x='center_x_norm', y='center_y_norm',c=without_white['color'])
 grouped_by_color = without_white.groupby('color')
 mean_points = grouped_by_color.mean()
 std_points = grouped_by_color.std()
-# mean_points.plot(x='center_x', y='center_y', style='x',ax=ax)
+df.to_csv('rectangles.csv')
 
 colors = ['red','blue','yellow','black']
 for color in colors:
-    c_x = mean_points['center_x'][color]
-    c_y = mean_points['center_y'][color]
-    s_x = std_points['center_y'][color]
-    s_y = std_points['center_y'][color]
+    c_x = mean_points['center_x_norm'][color]
+    c_y = mean_points['center_y_norm'][color]
+    s_x = std_points['center_x_norm'][color]
+    s_y = std_points['center_y_norm'][color]
     std = np.sqrt(s_x**2 + s_y**2)
     ax.add_artist(plt.Circle((c_x, c_y), std, color=color, Fill=False))
 
 plt.title('Center of rectangles, normalized by image height/width')
+plt.gca().invert_yaxis()
 plt.savefig(out_dir + '/points.png')
+plt.close()
+
+df[df['color'] == 'white'].plot.scatter(x='center_x_norm', y='center_y_norm')
+plt.title('Center of white rectangles, normalized by image height/width')
+plt.savefig(out_dir + '/white-points.png')
 plt.close()
 
 df.plot.scatter(x='shorter', y='longer', s=1, c='black')
@@ -114,11 +122,6 @@ plt.plot([0, 707], [0, 1000], 'k-', alpha=0.3, label='sqrt(2)', c='blue')
 plt.plot([0, 1000], [0, 1000], 'k-', alpha=0.7, label='1')
 plt.legend()
 plt.savefig(out_dir + '/longer-x-shorter.png')
-plt.close()
-
-df[df['color'] == 'white'].plot.scatter(x='center_x', y='center_y')
-plt.title('Center of white rectangles, normalized by image height/width')
-plt.savefig(out_dir + '/white-points.png')
 plt.close()
 
 histogram(df['aspect_max_min'], 20)
