@@ -113,6 +113,8 @@ def reduce_lines(input_horizontal, input_vertical, min_distance):
     output_vertical = []
     output_horizontal = []
 
+    distance = 4
+
     # vertical
     for index, (x1,y1,x2,y2) in enumerate(input_vertical):
         if index in seen_vertical:
@@ -124,7 +126,7 @@ def reduce_lines(input_horizontal, input_vertical, min_distance):
                 continue
 
             shortest_distance = min(abs(x - x1_b) for x in x_values)
-            if (shortest_distance < 4):
+            if (shortest_distance < distance):
                 x_values.append(x1_b)
                 y_ranges.append((y2_b,y1_b))
                 seen_vertical.add(other_index)
@@ -142,7 +144,7 @@ def reduce_lines(input_horizontal, input_vertical, min_distance):
             if other_index in seen_horizontal:
                 continue
             shortest_distance = min(abs(y - y1_b) for y in y_values)
-            if (shortest_distance < 4):
+            if (shortest_distance < distance):
                 x_ranges.append((x1_b,x2_b))
                 y_values.append(y1_b)
                 seen_horizontal.add(other_index)
@@ -161,7 +163,7 @@ def separate_ranges(ranges):
         the gap.
     """
     separated = []
-    e = 50
+    e = 30
     for index,(start,end) in enumerate(ranges):
         intersected = [r for r in separated if range_intersect(start+e,end-e,r[0],r[1])]
         not_intersected = [r for r in separated if not range_intersect(start+e,end-e,r[0],r[1])]
