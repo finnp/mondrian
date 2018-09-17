@@ -207,7 +207,7 @@ def connect_lines(horizontal_lines, vertical_lines):
         closest_horizontal_up = 20000
         closest_horizontal_down = 20000
         for h_x1,h_y1,h_x2,h_y2 in horizontal_lines:
-            if not (x1 > v_x1 - e and x1 < h_x2 + e):
+            if not (x1 > h_x1 - e and x1 < h_x2 + e):
                 continue
             if abs(y1 - h_y1) < abs(closest_horizontal_up):
                 closest_horizontal_up = y1 - h_y1
@@ -224,19 +224,22 @@ def find_rectangles(top_left, bottom_left, top_right):
     top_right.sort(key=lambda pos: pos[0])
     bottom_left.sort(key=lambda pos: pos[1])
     rectangles = []
+    errors = []
     for x,y in top_left:
         x2,_ = next((tr for tr in top_right if tr[1] == y and tr[0] > x),(-1,0))
         if (x2 == -1):
             print('Error could not find top-right for', (x,y))
+            errors.append((x,y))
             continue
         _,y2 = next((bl for bl in bottom_left if bl[0] == x and bl[1] > y), (0,-1))
         if (y2 == -1):
             print('Error could not find top-right for', (x,y))
+            errors.append((x,y))
             continue
         w = x2 - x
         h = y2 - y
         rectangles.append((x,y,w,h))
-    return rectangles
+    return (rectangles,errors)
 
 
 

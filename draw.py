@@ -19,6 +19,9 @@ yellow_hue = get_hue(yellow)
 blue_hue = get_hue(blue)
 red_hue = get_hue(red)
 
+def draw_circle(img, pos):
+    cv2.circle(img, pos, 30, (10,10,255), -1)
+
 def draw_lines(img, lines, color = (100, 100, 255)):
     for x1,y1,x2,y2 in lines:
         cv2.line(img,(x1,y1),(x2,y2),color,2)

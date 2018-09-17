@@ -3,7 +3,7 @@ import sys
 import imutils
 import datetime
 from lines import remove_lines_close_to_border, connect_lines, reduce_lines, reduce_lines_rust, detect_lines_rust, find_corners, find_rectangles
-from draw import find_colors_for_rects, draw_rectangles, draw_lines, draw_points, draw_corners, clip_rectangles
+from draw import draw_circle, find_colors_for_rects, draw_rectangles, draw_lines, draw_points, draw_corners, clip_rectangles
 from files import run_pipeline
 import timings
 
@@ -45,7 +45,8 @@ def preprocessing(original):
     _, binary = cv2.threshold(color_contrast, binary_threshold, 255, cv2.THRESH_BINARY)
     steps.append(('binary', binary))
 
-    opening = cv2.erode(binary, kernel)
+    # opening = cv2.erode(binary, kernel)
+    opening = cv2.morphologyEx(binary, cv2.MORPH_OPEN, kernel)
 
     # remove lines, only black rectangles remain
     dilated = cv2.dilate(binary, cv2.getStructuringElement(cv2.MORPH_RECT,(black_rectangle_dilate,black_rectangle_dilate)))
@@ -87,8 +88,10 @@ def detect_rectangles(binary, original):
     bottom_right.append((width,height))
     top_right.append((width,0))
 
-    rectangles = find_rectangles(top_left, bottom_left, top_right)
+    (rectangles,errors) = find_rectangles(top_left, bottom_left, top_right)
     with_lines = np.copy(original)
+    for error in errors:
+        draw_circle(with_lines, error)
     draw_corners(with_lines, top_left, (0, 90))
     draw_corners(with_lines, top_right, (90, 180))
     draw_corners(with_lines, bottom_right, (180, 270))
