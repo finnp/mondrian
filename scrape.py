@@ -13,6 +13,7 @@ for file in files:
     soup = BeautifulSoup(page, 'html.parser')
     cr_id_regex = re.compile('[ABC]\d+(?:\.\d+)?')
     state_regex = re.compile('\((first|second) state\)')
+    year_regex = re.compile('1[89]\d\d')
 
     for div in soup.select('table.main'):
         imgs = div.select('img')
@@ -24,6 +25,8 @@ for file in files:
         direct_link = share['addthis:url']
         database_link = div.select('.database-link')[0]['href']
         matches = re.findall(cr_id_regex, text)
+        year_matches = re.findall(year_regex,text)
+        year = year_matches[0]
         cr_id = matches[-1]
         state_description = state_regex.search(text)
         if state_description:
@@ -42,6 +45,7 @@ for file in files:
             'database': database_link,
             'link': direct_link,
             'thumbnail': img['src'],
+            'year': year,
             'description': text,
         }, indent=2))
         output.close()
