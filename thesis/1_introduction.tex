@@ -1,158 +1,39 @@
 % !TeX encoding = UTF-8
-\section{Einführung}
-
-Das Einführungskapitel beinhaltet ein paar praktische Hinweise zum Schreiben
-der Abschlussarbeit, sowie eine Kurzdokumentation der bereitgestellten
-\LaTeX-Klasse.
-Die restlichen Kapitel dienen lediglich zu Demonstrationszwecken.
-
-\subsection{Zur Abschlussarbeit als solche}
-
-Neben der jeweiligen Studien- und Prüfungsordnung, die die förmlichen
-Eigenschaften der Durchführung einer Abschlussarbeit regelt, sind folgende
-Quellen hilfreich:
-\begin{itemize}
-    \item Studien- und Prüfungsordnungen der Informatikstudiengänge
-    (\url{http://www.imp.fu-berlin.de/fbv/pruefungsbuero/Studien--und-Pruefungsordnungen/index.html})
-
-    \item ThesisRules (\url{http://www.inf.fu-berlin.de/w/SE/ThesisRules}):
-
-    Beschreibung des praktischen Ablaufs einer Abschlussarbeit in der AG
-    Software Engineering von A bis Z.
-
-    \item "`Technisches Schreiben"'
-    (\url{http://www.mi.fu-berlin.de/wiki/pub/SE/SeminarRegeln/Technisches_Schreiben.pdf}):
-
-    Ein von Lutz Prechelt verfasstes Dokument mit vielen praktischen
-    Hinweisen zum Schreibteil (nicht nur) einer Abschlussarbeit.
-\end{itemize}
-
-\subsection{Zu dieser \LaTeX{}-Vorlage}
-
-\subsubsection{Optionen der Dokumentenklasse}
-
-Die Dokumentenklasse \texttt{agse-thesis} unterstützt verschiedene
-Schriftarten:
-\begin{lstlisting}[language={[LaTeX]TeX}]
-% Standard LaTeX Schriftart
-\documentclass[plain]{agse-thesis}
-
-% Serifenschrift Palladino
-\documentclass[serif]{agse-thesis}
-
-% Serifenlose Schrift Paratype Sans
-\documentclass[sans-serif]{agse-thesis}
-\end{lstlisting}
-
-Für kürzere Arbeiten, die mit Abschnitten (\texttt{\textbackslash{}section})
-als oberste Gliederungsebene auskommen, reicht die Standard-Option
-\texttt{article}.
-Die Buch-Option \texttt{book} bietet darüber hinaus noch Kapitel
-(\texttt{\textbackslash{}chapter}) an.
-\begin{lstlisting}[language={[LaTeX]TeX}]
-% Standard fuer kuerzere Arbeiten
-\documentclass[article]{agse-thesis}
-
-% Buch-Variante fuer umfangreiche Arbeiten mit vielen
-% Gliederungselementen
-\documentclass[book]{agse-thesis}
-\end{lstlisting}
-
-Ob zwischen den Absätzen im Text Abstände angezeigt werden sollen, oder ob
-stattdessen die erste Zeile eines Absatzes eingerückt werden soll, kann mit
-\texttt{parskip} bzw. \texttt{noparskip} eingestellt werden.
-\begin{lstlisting}[language={[LaTeX]TeX}]
-% Absaetze deutlich trennen
-\documentclass[parskip]{agse-thesis}
-
-% Absaetze nah bei einander, erste Zeile eingerueckt
-\documentclass[noparskip]{agse-thesis}
-\end{lstlisting}
-
-Die Werte der drei o.g. Optionen können beliebig kombiniert werden:
-\begin{lstlisting}[language={[LaTeX]TeX}]
-% Einstellung des Beispieldokuments
-\documentclass[serif,article,noparskip]{agse-thesis}
-\end{lstlisting}
-
-\subsubsection{Befehl \texttt{\textbackslash{}thesisTitle}}
-
-Der Titel der Arbeit wird sowohl auf der Titelseite (siehe
-\ref{sec:cmd-coverpage}) als auch für die PDF-Metainformationen benötigt.
-Gesetzt wird der Titel durch das Definieren von
-\texttt{\textbackslash{}thesisTitle}.
-
-Für die Titelseite können manuell mit \texttt{\textbackslash{}par}
-Zeilenumbrüche eingefügt werden um das Textbild zu verbessern (nicht hingegen
-mit \texttt{\textbackslash\textbackslash}).
-Sollte von dieser Möglichkeit Gebrauch gemacht werden, muss der Titel für die
-PDF-Metainformationen manuell gesetzt werden
-(\texttt{\textbackslash{}hypersetup\{pdftitle=\{...\}\}}).
+\section{Introduction}
 
 
-\subsubsection{Befehl \texttt{\textbackslash{}coverpage}}
-\label{sec:cmd-coverpage}
+% Livio2002: Mondrian mocking arithmetic computations with regard to his work, Intuation not Calculation
+% Any kind of structure find in paintings are intuitive or non-concious apart from the basic axioms
 
-Die Titelseite der Abschlussarbeit wird mit dem
-\texttt{\textbackslash{}coverpage}-Befehl erzeugt.
-Dessen Ausgabe wird über eine Reihe von Schlüssel-Wert-Paaren konfiguriert
-(siehe \autoref{tab:coverpage-config}).
-\begin{table}[h]
-\begin{center}
-    \begin{tabular}{|l|L{5.5cm}|L{4cm}|}
-        \hline
-        \textbf{Schlüssel} & \textbf{Funktion} & \textbf{Default-Wert} \\
-        \hline
-        \texttt{student/id} & Matrikel-Nummer & -- \\
-        \texttt{student/mail} & E-Mail-Adresse & -- \\
-        \texttt{thesis/type} & Art der Abschlussarbeit & "`Bachelorarbeit"' \\
-        \texttt{thesis/group} & Arbeitsgruppe in der die Arbeit geschrieben
-        wurde & "`Arbeitsgruppe Software Engineering"' \\
-        \texttt{thesis/advisor} & \emph{optional:} Betreuer der Abschlussarbeit
-        & -- \\
-        \texttt{thesis/examiner} & Erstgutachter der Arbeit & -- \\
-        \texttt{thesis/examiner/2} & \emph{optional:} Zweitgutachter der Arbeit
-        & -- \\
-        \texttt{thesis/date} & \emph{optional:} Datum der Abgabe & aktuelles
-        Datum\\
-        \texttt{title/size} & \emph{optional:} \LaTeX-Schriftgröße für den
-        Titel (\zb \texttt{\textbackslash{}LARGE}) & wird automatisch gesetzt \\
-        \texttt{abstract/separate} & \emph{optional:} Schlüssel ohne Wert;
-        falls gesetzt, wird der Abstract auf eine eigene Seite gesetzt und die
-        Titelseite ist "`luftiger"' & -- \\
-        \hline
-    \end{tabular}
-    \caption{Schlüssel-Wert-Konfiguration des
-    \texttt{\textbackslash{}coverpage}-Kommandos.}
-    \label{tab:coverpage-config}
-\end{center}
-\end{table}
-Das einzige Argument des Kommandos ist der Abstract der Arbeit.
-Ein minimaler Aufruf könnte so aussehen:
-\begin{lstlisting}[language={[LaTeX]TeX}, morekeywords={coverpage}]
-\coverpage[
-    student/id=1234567,
-    student/mail=email@inf.fu-berlin.de,
-    thesis/type=Masterarbeit,
-    thesis/examiner={Prof. Dr. Mia Maus}
-]
-{
-    Prokrastination ist ein gut verstandenes Verhalten,
-    das auch vor Abschlussarbeitern mit Informatik-Hintergrund
-    nicht halt macht.
-    % ...
-}
-\end{lstlisting}
+% Mondrian axiom (cite Mondrian himself)
 
+% - Mondrian obsessd with positiotioning. he spend long periods of time shifting a single line back and forth within a couple of millimetres, believing that a precise positioning was essential for capturing an aesthetic order that was “free of tension” [Deicher, S., (1995), Mondrian, Taschen (Koln), 1995]. Australian
 
-\subsubsection{Verbesserungen der \LaTeX-Vorlage}
+% Historical background on Mondrian
+% Motivation
 
-Diese \LaTeX-Vorlage soll den Einstieg in das Setzen der Abschlussarbeit
-erleichtern.
-Die Vorlage selbst wird in einem öffentlichen Git-Repository in der
-GitLab-Instanz des Fachbereiches verwaltet, welches gerne als Grundlage für die
-eigene Ausarbeitung geklont werden darf:
-\begin{lstlisting}[language=bash]
-git clone https://git.imp.fu-berlin.de/agse/thesis-template
-\end{lstlisting}
-Änderungsvorschläge in Form von Merge-Requests sind jederzeit willkommen.
+\subsection{Related Works}
+
+% TODO: Write more about Hill, maybe, see Bear for more material about this
+
+In 1968 Hill \cite{Hill1968} analysed the network topology of Mondrian's paintings.
+While he did not see value in metrical analysis of Mondrian paintings, he called
+for a more detailed analysis of his paintings. He criticised earlier work for
+the lack of statistics.
+
+\subsubsection{Golden ratio}
+In a presentation from 2017 Tanaka and
+Miyanaga\cite{Tanaka2017} examine the use of rectangle ratios, specifically the
+golden and silver ratio, in 10 late Mondrian paintings. Their suggesting a
+preference of Mondrian for the silver ratio.
+
+% In popular science. Claims of golden ratio, charles Bouleau the painters secret geometry
+% - Bergamini
+
+% False claims about artists allegedly using the Golden Ratio continue to spring
+% up almost like mushrooms after the rain. One of these claims deserves some
+% special attention, since it is repeated endlessly.
+\cite{Livio2002}
+% However mathematician Markowsky \cite{Markowsky1992} says merely superimposing
+
+% No publication with a substantial data basis.
