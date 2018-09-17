@@ -163,7 +163,7 @@ def separate_ranges(ranges):
         the gap.
     """
     separated = []
-    e = 30
+    e = 20
     for index,(start,end) in enumerate(ranges):
         intersected = [r for r in separated if range_intersect(start+e,end-e,r[0],r[1])]
         not_intersected = [r for r in separated if not range_intersect(start+e,end-e,r[0],r[1])]
