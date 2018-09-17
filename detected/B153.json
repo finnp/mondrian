@@ -1,0 +1,336 @@
+{
+    "height": 1000,
+    "width": 864,
+    "rectangles": [
+        {
+            "x": 48,
+            "y": 48,
+            "width": 171,
+            "height": 118,
+            "color": [
+                181,
+                102,
+                0
+            ],
+            "color_id": "blue"
+        },
+        {
+            "x": 219,
+            "y": 48,
+            "width": 269,
+            "height": 118,
+            "color": [
+                0,
+                243,
+                255
+            ],
+            "color_id": "yellow"
+        },
+        {
+            "x": 488,
+            "y": 48,
+            "width": 303,
+            "height": 118,
+            "color": [
+                255,
+                255,
+                255
+            ],
+            "color_id": "white"
+        },
+        {
+            "x": 791,
+            "y": 48,
+            "width": 73,
+            "height": 118,
+            "color": [
+                0,
+                0,
+                0
+            ],
+            "color_id": "black"
+        },
+        {
+            "x": 0,
+            "y": 48,
+            "width": 48,
+            "height": 118,
+            "color": [
+                31,
+                21,
+                238
+            ],
+            "color_id": "red"
+        },
+        {
+            "x": 48,
+            "y": 166,
+            "width": 282,
+            "height": 200,
+            "color": [
+                255,
+                255,
+                255
+            ],
+            "color_id": "white"
+        },
+        {
+            "x": 330,
+            "y": 166,
+            "width": 158,
+            "height": 200,
+            "color": [
+                255,
+                255,
+                255
+            ],
+            "color_id": "white"
+        },
+        {
+            "x": 488,
+            "y": 166,
+            "width": 303,
+            "height": 200,
+            "color": [
+                181,
+                102,
+                0
+            ],
+            "color_id": "blue"
+        },
+        {
+            "x": 791,
+            "y": 166,
+            "width": 73,
+            "height": 717,
+            "color": [
+                255,
+                255,
+                255
+            ],
+            "color_id": "white"
+        },
+        {
+            "x": 0,
+            "y": 166,
+            "width": 48,
+            "height": 646,
+            "color": [
+                255,
+                255,
+                255
+            ],
+            "color_id": "white"
+        },
+        {
+            "x": 48,
+            "y": 366,
+            "width": 282,
+            "height": 253,
+            "color": [
+                31,
+                21,
+                238
+            ],
+            "color_id": "red"
+        },
+        {
+            "x": 330,
+            "y": 366,
+            "width": 158,
+            "height": 307,
+            "color": [
+                0,
+                0,
+                0
+            ],
+            "color_id": "black"
+        },
+        {
+            "x": 488,
+            "y": 366,
+            "width": 64,
+            "height": 307,
+            "color": [
+                181,
+                102,
+                0
+            ],
+            "color_id": "blue"
+        },
+        {
+            "x": 552,
+            "y": 366,
+            "width": 239,
+            "height": 307,
+            "color": [
+                181,
+                102,
+                0
+            ],
+            "color_id": "blue"
+        },
+        {
+            "x": 48,
+            "y": 619,
+            "width": 282,
+            "height": 193,
+            "color": [
+                31,
+                21,
+                238
+            ],
+            "color_id": "red"
+        },
+        {
+            "x": 330,
+            "y": 673,
+            "width": 158,
+            "height": 139,
+            "color": [
+                0,
+                243,
+                255
+            ],
+            "color_id": "yellow"
+        },
+        {
+            "x": 488,
+            "y": 673,
+            "width": 303,
+            "height": 139,
+            "color": [
+                181,
+                102,
+                0
+            ],
+            "color_id": "blue"
+        },
+        {
+            "x": 48,
+            "y": 812,
+            "width": 282,
+            "height": 165,
+            "color": [
+                255,
+                255,
+                255
+            ],
+            "color_id": "white"
+        },
+        {
+            "x": 330,
+            "y": 812,
+            "width": 158,
+            "height": 116,
+            "color": [
+                0,
+                243,
+                255
+            ],
+            "color_id": "yellow"
+        },
+        {
+            "x": 488,
+            "y": 812,
+            "width": 303,
+            "height": 116,
+            "color": [
+                0,
+                0,
+                0
+            ],
+            "color_id": "black"
+        },
+        {
+            "x": 0,
+            "y": 812,
+            "width": 48,
+            "height": 188,
+            "color": [
+                255,
+                255,
+                255
+            ],
+            "color_id": "white"
+        },
+        {
+            "x": 791,
+            "y": 883,
+            "width": 73,
+            "height": 117,
+            "color": [
+                0,
+                243,
+                255
+            ],
+            "color_id": "yellow"
+        },
+        {
+            "x": 330,
+            "y": 928,
+            "width": 461,
+            "height": 72,
+            "color": [
+                255,
+                255,
+                255
+            ],
+            "color_id": "white"
+        },
+        {
+            "x": 48,
+            "y": 977,
+            "width": 282,
+            "height": 23,
+            "color": [
+                255,
+                255,
+                255
+            ],
+            "color_id": "white"
+        },
+        {
+            "x": 219,
+            "y": 0,
+            "width": 269,
+            "height": 48,
+            "color": [
+                0,
+                243,
+                255
+            ],
+            "color_id": "yellow"
+        },
+        {
+            "x": 488,
+            "y": 0,
+            "width": 376,
+            "height": 48,
+            "color": [
+                255,
+                255,
+                255
+            ],
+            "color_id": "white"
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "width": 219,
+            "height": 48,
+            "color": [
+                255,
+                255,
+                255
+            ],
+            "color_id": "white"
+        }
+    ],
+    "options": {
+        "binary_threshold": 110,
+        "min_line_length": 60,
+        "min_distance": 70,
+        "black_rectangle_dilate": 45
+    }
+}
