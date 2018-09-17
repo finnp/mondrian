@@ -90,7 +90,7 @@ df['aspect'] = df['width'] / df['height']
 
 without_white = df[df['color'] != 'white']
 ax = without_white.plot.scatter(x='center_x_norm', y='center_y_norm',c=without_white['color'])
-grouped_by_color = without_white.groupby('color')
+grouped_by_color = df.groupby('color')
 mean_points = grouped_by_color.mean()
 std_points = grouped_by_color.std()
 df.to_csv('rectangles.csv')
@@ -101,6 +101,7 @@ for color in colors:
     c_y = mean_points['center_y_norm'][color]
     s_x = std_points['center_x_norm'][color]
     s_y = std_points['center_y_norm'][color]
+    plt.plot(c_x,c_y,'x',c=color)
     std = np.sqrt(s_x**2 + s_y**2)
     ax.add_artist(plt.Circle((c_x, c_y), std, color=color, Fill=False))
 
@@ -109,8 +110,16 @@ plt.gca().invert_yaxis()
 plt.savefig(out_dir + '/points.png')
 plt.close()
 
-df[df['color'] == 'white'].plot.scatter(x='center_x_norm', y='center_y_norm')
+ax = df[df['color'] == 'white'].plot.scatter(x='center_x_norm', y='center_y_norm')
 plt.title('Center of white rectangles, normalized by image height/width')
+c_x = mean_points['center_x_norm']['white']
+c_y = mean_points['center_y_norm']['white']
+s_x = std_points['center_x_norm']['white']
+s_y = std_points['center_y_norm']['white']
+plt.plot(c_x,c_y,'x',c='black')
+std = np.sqrt(s_x**2 + s_y**2)
+ax.add_artist(plt.Circle((c_x, c_y), std, color='black', Fill=False))
+plt.gca().invert_yaxis()
 plt.savefig(out_dir + '/white-points.png')
 plt.close()
 
