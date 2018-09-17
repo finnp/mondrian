@@ -167,7 +167,13 @@ plt.title('Aspect ratio longer side to shorter')
 plt.savefig(out_dir + '/aspect-max-min-rects.png')
 plt.close()
 
-histogram(df['aspect'], 20)
+width = df[df['aspect'] > 1]['aspect']
+height = 1 / df[df['aspect'] < 1]['aspect']
+sns.set_style("darkgrid")
+sns.kdeplot(width, shade=True, cut=0, label='width/height')
+sns.kdeplot(height, shade=True, cut=0,label='height/width')
+sns.rugplot(width);
+sns.rugplot(height);
 plt.title('Aspect ratio width to height')
 plt.savefig(out_dir + '/aspect-rects.png')
 plt.close()
