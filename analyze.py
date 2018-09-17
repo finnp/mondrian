@@ -96,8 +96,9 @@ mean_points = grouped_by_color.mean()
 std_points = grouped_by_color.std()
 df.to_csv('rectangles.csv')
 
-colors = ['red','blue','yellow','black']
-for color in colors:
+colors = ['red','blue','yellow','black', 'white']
+
+for color in ['red','blue','yellow','black']:
     c_x = mean_points['center_x_norm'][color]
     c_y = mean_points['center_y_norm'][color]
     s_x = std_points['center_x_norm'][color]
@@ -128,11 +129,24 @@ plt.close()
 
 
 # https://seaborn.pydata.org/tutorial/distributions.html
-with sns.axes_style('white'):
-    sns.jointplot(x="center_x_norm", y="center_y_norm", data=white_only, kind="kde");
-plt.gca().invert_yaxis()
-plt.savefig(out_dir + '/kernel-density-white.png')
-plt.close()
+# https://en.wikipedia.org/wiki/Kernel_density_estimation
+for color in colors:
+    with sns.axes_style('white'):
+        g = sns.jointplot(
+            x="center_x_norm",
+            y="center_y_norm",
+            xlim=(0,1),
+            ylim=(0,1),
+            data=df[df['color'] == color],
+            cbar=True,
+            vmin=0,
+            vmax=3,
+            kind="kde")
+        plt.title(color)
+        g.plot_joint(plt.scatter, c="w", s=30, linewidth=1, marker="+")
+    plt.gca().invert_yaxis()
+    plt.savefig(out_dir + '/kernel-density-' + color + '.png')
+    plt.close()
 
 df.plot.scatter(x='shorter', y='longer', s=1, c='black')
 plt.title('Rectangle longer to shorter side (not normalized)')
