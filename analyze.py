@@ -51,6 +51,7 @@ for file in files:
     color_distribution_by_area.append(by_area)
     number_of_rects.append(len(data['rectangles']))
 
+print('Rectangles loaded.')
 df = pd.DataFrame(color_distribution_by_area)
 df.boxplot()
 plt.savefig(out_dir + '/colors.png')
