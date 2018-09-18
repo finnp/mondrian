@@ -148,6 +148,12 @@ for color in colors:
     plt.savefig(out_dir + '/kernel-density-' + color + '.png')
     plt.close()
 
+g = sns.FacetGrid(df, col="color",legend_out=True,xlim=(0,1),ylim=(0,1),col_wrap=2)
+g.map(sns.kdeplot, "center_x_norm", "center_y_norm",shade=True,cbar=False,vmin=0,vmax=2.25)
+plt.gca().invert_yaxis()
+plt.savefig(out_dir + '/kernel-densities.png')
+plt.close()
+
 df.plot.scatter(x='shorter', y='longer', s=1, c='black')
 plt.title('Rectangle longer to shorter side (not normalized)')
 plt.plot([0, 618], [0, 1000], 'k-', alpha=0.3, label='golden ratio', c='red')
