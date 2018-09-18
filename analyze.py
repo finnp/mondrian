@@ -39,12 +39,15 @@ def get_color_distribution(data):
 color_distribution_by_area = []
 number_of_rects = []
 rect_data = []
+paintings = []
 
 for file in files:
     with open(dir + '/' + file) as f:
         data = json.load(f)
+    paintings.append(data)
     by_area = get_color_distribution(data)
-    rect_data += get_rect_data(data, file)
+    rectangles = get_rect_data(data, file)
+    rect_data += rectangles
     total = sum(by_area.values())
     if (total > 1.1 or total < 0.9):
         print('Problem with ' + file)
@@ -89,6 +92,13 @@ df['longer'] = df[['width','height']].max(axis=1)
 df['shorter'] = df[['width','height']].min(axis=1)
 df['aspect_max_min'] = df['longer'] / df['shorter']
 df['aspect'] = df['width'] / df['height']
+
+images = df.groupby('image_file').agg({'color': 'unique'})
+images['color'] = images['color'].apply(set)
+images['count'] = images['color'].apply(len)
+print('Number of different colors')
+print(images.groupby('count').count())
+# print(len(images[images['color'] == {'red', 'yellow', 'black', 'white', 'blue'}]))
 
 without_white = df[df['color'] != 'white']
 ax = without_white.plot.scatter(x='center_x_norm', y='center_y_norm',c=without_white['color'])
