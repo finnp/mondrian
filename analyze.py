@@ -97,7 +97,6 @@ df['aspect'] = df['width'] / df['height']
 
 images = df.groupby('image_file').agg({'color': 'unique'})
 images['color'] = images['color'].apply(set)
-images['count'] = images['color'].apply(len)
 total = len(images)
 print('total', total)
 for color in colors:
@@ -105,6 +104,13 @@ for color in colors:
     l = len(images[images[color]])
     print(color, l, float(l) / total * 100)
 
+print('Conditional probabilities, given color column')
+# Immer noch nicht so aussagkräftig :)
+l = []
+for color in colors:
+    l.append(images[images[color]].sum() / float(len(images[images[color]]))*100)
+print(pd.DataFrame(l, index=colors))
+images['count'] = images['color'].apply(len)
 print('Number of different colors')
 print(images.groupby('count').count()['color'])
 
