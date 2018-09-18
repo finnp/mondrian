@@ -54,6 +54,8 @@ for file in files:
     color_distribution_by_area.append(by_area)
     number_of_rects.append(len(data['rectangles']))
 
+colors = ['red','blue','yellow','black', 'white']
+
 print('Rectangles loaded.')
 df = pd.DataFrame(color_distribution_by_area)
 df.boxplot()
@@ -96,9 +98,16 @@ df['aspect'] = df['width'] / df['height']
 images = df.groupby('image_file').agg({'color': 'unique'})
 images['color'] = images['color'].apply(set)
 images['count'] = images['color'].apply(len)
+total = len(images)
+print('total', total)
+for color in colors:
+    images[color] = images['color'].apply(lambda r: color in r)
+    l = len(images[images[color]])
+    print(color, l, float(l) / total * 100)
+
 print('Number of different colors')
-print(images.groupby('count').count())
-# print(len(images[images['color'] == {'red', 'yellow', 'black', 'white', 'blue'}]))
+print(images.groupby('count').count()['color'])
+
 
 without_white = df[df['color'] != 'white']
 ax = without_white.plot.scatter(x='center_x_norm', y='center_y_norm',c=without_white['color'])
@@ -106,8 +115,6 @@ grouped_by_color = df.groupby('color')
 mean_points = grouped_by_color.mean()
 std_points = grouped_by_color.std()
 df.to_csv('rectangles.csv')
-
-colors = ['red','blue','yellow','black', 'white']
 
 for color in ['red','blue','yellow','black']:
     c_x = mean_points['center_x_norm'][color]
