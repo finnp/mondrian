@@ -69,6 +69,11 @@ plt.close()
 
 df['colors'] = df['red'] + df['blue'] + df['yellow']
 df['non-colors'] = df['white'] + df['black']
+print(df['colors'].mean(), df['colors'].std())
+print(df['non-colors'].mean(), df['non-colors'].std())
+for color in colors:
+    print(color, df[color].median()*100)
+    print(color, df[color].mean() * 100, df[color].std() * 100)
 df.boxplot(column=['colors', 'non-colors'])
 plt.savefig(out_dir + '/colors-non-colors.png')
 plt.close()
