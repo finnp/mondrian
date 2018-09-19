@@ -1,17 +1,19 @@
 \section{Implementation}
 
-In this section, we want to present our implementation of the above-described
+In this section, I want to present our implementation of the above-described
 concept. We are going to show how the software is structured
 (\ref{structure}), discuss challenges in performance (\ref{performance}) and
 explain how parameters were chosen (\ref{parameter}).
 
-The algorithm was implemented in Python using the \textit{OpenCV} and
+The algorithm was implemented in Python 3.7 using the \textit{OpenCV} and
 \textit{NumPy} libraries. OpenCV provided the different image processing methods
 described in \ref{used} as well as other methods for reading, writing and
 manipulating image files. NumPy, which is part of the SciPy package, is a
-package for scientific numerical computing \cite{scipy}. Images in OpenCV are
-represented as three-dimensional NumPy arrays. The first two dimensions of this array encode the positions of pixels in the image, while the third dimension
-encodes the three color values.
+package for scientific numerical computing \cite{scipy}.
+
+% Images in OpenCV are represented as three-dimensional NumPy arrays. The first
+% two dimensions of this array encode the positions of pixels in the image, while
+% the third dimension encodes the three color values.
 
 \subsection{Structure} \label{structure}
 
@@ -20,8 +22,10 @@ function takes a 3-dimensional array representing the image as an input and
 outputs a tuple. The first element of that tuple is the actual output, a list of
 rectangles found in the image. The second element is a list of images, which
 represent different steps of the algorithm and are artifacts meant for debugging
-and feedback. Each rectangle in the list is represented by a \textit{Dictionary}
-with their respective position, dimensions and color.
+and feedback. Each rectangle in the list carries information on position, dimensions
+and color.
+
+% TODO: Is the debug stuff important? Maybe have their own section for it?
 
 Another function called \texttt{run\_pipeline} reads a list of images from a
 given input directory and feeds them into \texttt{process\_image}. Each of the
@@ -43,8 +47,7 @@ Then the result of \texttt{preprocessing(image)} is then used as the input for
 well as images that show a visual representation of the rectangles next to
 the input image. This can be used to validate the result of the algorithm.
 
-Leaving out debugging steps, the \texttt{detect\_rectangles} function consist of
-to the following code:
+The \texttt{detect\_rectangles} function consist of to the following code:
 
 \begin{lstlisting}
 def detect_rectangles(preprocessed_img, original_img):
