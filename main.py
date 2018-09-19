@@ -2,7 +2,7 @@ import cv2, numpy as np
 import sys
 import imutils
 import datetime
-from lines import remove_lines_close_to_border, connect_lines, reduce_lines, reduce_lines_rust, detect_lines_rust, find_corners, find_rectangles
+from lines import remove_lines_close_to_border, connect_lines, reduce_lines, reduce_lines_rust, detect_lines_rust, detect_lines_hough, find_corners, find_rectangles
 from draw import draw_circle, find_colors_for_rects, draw_rectangles, draw_lines, draw_points, draw_corners, clip_rectangles
 from files import run_pipeline
 import timings
