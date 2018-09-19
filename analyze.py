@@ -194,11 +194,12 @@ plt.savefig(out_dir + '/longer-x-shorter.png')
 plt.close()
 
 # histogram(df['aspect_max_min'], 20)
-x = df[df['aspect_max_min'] < 3]['aspect_max_min']
+x = df[df['aspect_max_min'] <= 3]['aspect_max_min']
 sns.set_style("darkgrid")
-sns.kdeplot(x, shade=True, cut=0)
+sns.kdeplot(x, shade=True, cut=0,gridsize=100)
+# plt.xlim((1,20))
 sns.rugplot(x);
-plt.title('Aspect ratio longer side to shorter')
+plt.title('Aspect ratio r longer side to shorter r < 3')
 plt.savefig(out_dir + '/aspect-max-min-rects.png')
 plt.close()
 
