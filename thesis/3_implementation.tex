@@ -32,35 +32,26 @@ given input directory and feeds them into \texttt{process\_image}. Each of the
 debug images given is saved to disk in an output directory. The data from the
 rectangles is encoded into \textit{JSON}-files.
 
-% \subsubsection{\texttt{preprocessing(image)}}
-
 \texttt{process\_image} first calls another function \texttt{preprocessing} that
 executes the steps described in \ref{preprocessing}. The different processing
 steps are also provided as an output for debugging and adjustment of the
 parameters, see \ref{parameter}.
 
-% \subsubsection{\texttt{detect\_rectangles(binary\_image, image)}}
-
-Then the result of \texttt{preprocessing(image)} is then used as the input for
+Then the result of \texttt{preprocessing(image)} is used as the input for
 \texttt{detect\_rectangles}. This function executes the steps described in
-\ref{rectangles}. The result is a list of rectangles and their colors. As
-well as images that show a visual representation of the rectangles next to
-the input image. This can be used to validate the result of the algorithm.
+\ref{rectangles}. The result is a list of rectangles and their colors. As well
+as images that show a visual representation of the rectangles next to the input
+image. They can be used to validate the result of the algorithm.
 
-The \texttt{detect\_rectangles} function consist of to the following code:
+At first \texttt{detect\_rectangles} uses \texttt{detect_lines} to extract a
+list of all vertical and horizontal pixel lines from the preprocessed image.
+Then \texttt{reduce_lines} combines parallel lines that are next to each other
+into a single line. It iterates through the items in the list and looks for
+neighbouring lines by iterating in another nested loop through the same list.
+If a matching line is found, the line is removed from the list, so that it will
+not appear in the iteration again.
 
-\begin{lstlisting}
-def detect_rectangles(preprocessed_img, original_img):
-  (h1, v1) = detect_lines(preprocessed_img)
-  (h2, v2) = reduce_lines(h1,v1)
-  (h3, v3) = remove_lines_close_to_border(h2,v2)
-  (h4, v4) = add_border_lines(h3,v3)
-  (h5, v5) = connect_lines(h4,v4)
-  (tl, bl, br, tr) = find_corners(h5,v5)
-  rects = find_rectangles(tl, bl, tr))
-  rects_with_color = find_colors_for_rects(rects, original_img)
-  return rects_with_color
-\end{lstlisting}
+\texttt{connect_lines}
 
 As an example Listing \ref{lst:findrectangles} shows the source code of
 one of the functions \texttt{find\_rectangles}, which finds rectangles from a

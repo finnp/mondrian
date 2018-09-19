@@ -182,7 +182,7 @@ outlines of the black rectangles, as well as the black lines, remain in $B_3$.
 
 \subsubsection{Detection and recognition of rectangles} \label{rectangles}
 
-Since the rectangles in the input image are defined by the horizontal and
+Since the rectangles in the painting are defined by the horizontal and
 vertical lines in the image, the detection starts by finding all of those lines
 in the output binary image $B_3$ from the previous phase.
 
@@ -193,9 +193,14 @@ iterate through the pixels of each horizontal line. Uninterrupted sequences of
 black pixels are added to a list of horizontal lines. Only sequences with a
 specified minimum length $l$ are added. The minimum length should be slightly
 larger than the maximum width of the lines in the image. Vertical lines $V$ are
-recognized respectively by iterating through the lines from left to right. This
-step is the equivalent of applying a lossy run-length encoding once horizontally
-and once vertically.
+recognized respectively by iterating through the lines from left to right.
+
+% As a first step to find horizontal lines $H$, consecutive black pixels in every
+% row of the image are considered a line if at least $l$ of them occur without
+% interruption. The minimum length should be slightly larger than the maximum
+% width of the lines in the image. The same way a set of vertical lines $V$ can be
+% obtained for every column. This is the equivalent of applying a lossy run-length
+% encoding once horizontally and once vertically.
 
 However, this means that what we perceive as one horizontal line in the painting
 is now recognized as multiple lines next to each other. For example, a line that
