@@ -99,6 +99,7 @@ df['longer'] = df[['width','height']].max(axis=1)
 df['shorter'] = df[['width','height']].min(axis=1)
 df['aspect_max_min'] = df['longer'] / df['shorter']
 df['aspect'] = df['width'] / df['height']
+df['size'] = df['width'] * df['height']
 
 images = df.groupby('image_file').agg({'color': 'unique'})
 images['color'] = images['color'].apply(set)
@@ -126,6 +127,10 @@ grouped_by_color = df.groupby('color')
 mean_points = grouped_by_color.mean()
 std_points = grouped_by_color.std()
 df.to_csv('rectangles.csv')
+
+df.boxplot(by='color',column='size')
+plt.savefig(out_dir + '/size-by-color.png')
+plt.close()
 
 for color in ['red','blue','yellow','black']:
     c_x = mean_points['center_x_norm'][color]
