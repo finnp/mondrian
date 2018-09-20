@@ -1,10 +1,17 @@
   % !TeX encoding = UTF-8
 \section{Results} \label{results}
 
-% Description of input data
-% Descriptive/explorative data analysis
+For analysis 100 paintings from the \textit{Catalogue Raisonn{\'e}}
+\cite{joosten1998} that matched the criteria were selected and scanned. The
+scanned images were cropped so that no frame was visible. The images were then
+processed by the detection program and subsequently checked for accuracy by
+comparing the result with the original. The resulting dataset consists of 845
+rectangles and their respective paintings.
 
-\subsection{Colors}
+Some explorative analysis about the use of color (\ref{color}) and ratios
+(\ref{ratios}) was preformed.
+
+\subsection{Colors} \label{color}
 
 On average a Mondrian paintings consist of 78.3\% colors (red, blue, yellow) and
 21.7\% non-colors (black, white) ($\sigma = 17.2\%$), see Figure
@@ -37,7 +44,7 @@ corner. Similarly blue has a slighter bias to the bottom-right corner.
   \label{fig:kde}
 \end{figure}
 
-\subsection{Ratios}
+\subsection{Ratios} \label{ratios}
 
 For all rectangles we calculated the aspect ratio of the longer to the shorter
 side. Figure \ref{aspect-rects} shows the estimated probability density of the
@@ -56,7 +63,6 @@ for the golden or silver ratio, instead it seems biased towards rectangles.
   \caption{Rectangles longer side to shorter side}
   \label{fig:longer-x-shorter}
 \end{figure}
-
 
 
 % TODO: Number of rectangles over time?
