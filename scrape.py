@@ -29,13 +29,16 @@ for file in files:
         year = year_matches[0]
         cr_id = matches[-1]
         state_description = state_regex.search(text)
+        state = 0
         if state_description:
             state = state_description.group(1)
             prefix = cr_id[0]
             ids = cr_id[1:].split('.')
             if state == 'first':
+                state = 1
                 cr_id = prefix + ids[0]
             else:
+                state = 2
                 cr_id = prefix + ids[1]
 
         file_name = 'catalogue/' + cr_id + '.json'
@@ -47,6 +50,7 @@ for file in files:
             'thumbnail': img['src'],
             'year': year,
             'description': text,
+            'state': state
         }, indent=2))
         output.close()
         print('Written ' + file_name)
