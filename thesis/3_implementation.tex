@@ -43,14 +43,14 @@ Then the result of \texttt{preprocessing(image)} is used as the input for
 as images that show a visual representation of the rectangles next to the input
 image. They can be used to validate the result of the algorithm.
 
-At first \texttt{detect\_rectangles} uses \texttt{detect_lines} to extract a
+At first \texttt{detect\_rectangles} uses \texttt{detect\_lines} to extract a
 list of all vertical and horizontal pixel lines from the preprocessed image.
-Then \texttt{reduce_lines} combines parallel lines that are next to each other
+Then \texttt{reduce\_lines} combines parallel lines that are next to each other
 into a single line. It iterates through the items in the list and looks for
 neighbouring lines by iterating in another nested loop through the same list. If
 a matching line is found, the line is removed from the list, so that it will not
 appear in the iteration again. The loose ends of the lines are then connected by
-\texttt{connect_lines}.
+\texttt{connect\_lines}.
 
 As an example Listing \ref{lst:findrectangles} shows the source code of
 one of the functions \texttt{find\_rectangles}, which finds rectangles from a
