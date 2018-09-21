@@ -69,8 +69,8 @@ plt.close()
 
 df['colors'] = df['red'] + df['blue'] + df['yellow']
 df['non-colors'] = df['white'] + df['black']
-print(df['colors'].mean(), df['colors'].std())
-print(df['non-colors'].mean(), df['non-colors'].std())
+print(df['colors'].mean()*100, df['colors'].std()*100)
+print(df['non-colors'].mean()*100, df['non-colors'].std()*100)
 for color in colors:
     print(color, df[color].median()*100)
     print(color, df[color].mean() * 100, df[color].std() * 100)
