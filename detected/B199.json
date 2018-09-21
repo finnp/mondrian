@@ -101,7 +101,8 @@
     ],
     "options": {
         "binary_threshold": 110,
-        "min_line_length": 70,
-        "min_distance_factor": 0.069
+        "min_line_length": 55,
+        "min_distance": 70,
+        "black_rectangle_dilate": 50
     }
 }
