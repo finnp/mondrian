@@ -1,0 +1,96 @@
+{
+    "height": 1000,
+    "width": 806,
+    "rectangles": [
+        {
+            "x": 292,
+            "y": 268,
+            "width": 514,
+            "height": 43,
+            "color": [
+                255,
+                255,
+                255
+            ],
+            "color_id": "white"
+        },
+        {
+            "x": 0,
+            "y": 268,
+            "width": 292,
+            "height": 43,
+            "color": [
+                255,
+                255,
+                255
+            ],
+            "color_id": "white"
+        },
+        {
+            "x": 292,
+            "y": 311,
+            "width": 514,
+            "height": 643,
+            "color": [
+                255,
+                255,
+                255
+            ],
+            "color_id": "white"
+        },
+        {
+            "x": 0,
+            "y": 311,
+            "width": 292,
+            "height": 689,
+            "color": [
+                255,
+                255,
+                255
+            ],
+            "color_id": "white"
+        },
+        {
+            "x": 292,
+            "y": 954,
+            "width": 514,
+            "height": 46,
+            "color": [
+                181,
+                102,
+                0
+            ],
+            "color_id": "blue"
+        },
+        {
+            "x": 292,
+            "y": 0,
+            "width": 514,
+            "height": 268,
+            "color": [
+                255,
+                255,
+                255
+            ],
+            "color_id": "white"
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "width": 292,
+            "height": 268,
+            "color": [
+                0,
+                243,
+                255
+            ],
+            "color_id": "yellow"
+        }
+    ],
+    "options": {
+        "binary_threshold": 110,
+        "min_line_length": 70,
+        "min_distance": 70,
+        "black_rectangle_dilate": 70
+    }
+}
