@@ -11,9 +11,9 @@ retr_type = cv2.RETR_LIST
 contour_algorithm = cv2.CHAIN_APPROX_SIMPLE
 
 binary_threshold = 110
-min_line_length = 70
+min_line_length = 40
 min_distance = 70
-black_rectangle_dilate = 75
+black_rectangle_dilate = 40
 
 kernel = cv2.getStructuringElement(cv2.MORPH_RECT,(11,11))
 
@@ -67,7 +67,7 @@ def detect_rectangles(binary, original):
 
     (vertical_lines, horizontal_lines) = reduce_lines(horizontal, vertical, min_distance)
     # TODO: Only remove them if they are touching the border (in the step before or something)
-    (horizontal_lines, vertical_lines) = remove_lines_close_to_border(horizontal_lines, vertical_lines, width, height, 0.2 * min_distance)
+    (horizontal_lines, vertical_lines) = remove_lines_close_to_border(horizontal_lines, vertical_lines, width, height, 0.1 * min_distance)
 
     # debug
     before_connect = np.copy(original)
