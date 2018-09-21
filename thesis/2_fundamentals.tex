@@ -35,8 +35,8 @@ mathematical definition. A more formal definition and further reading can be
 found in Aguardo (2012) \cite{Aguardo2012}.
 
 Given a binary image $B$ and a smaller binary image $B_s$ called the
-\textit{Structuring Element}, we can apply the basic operations \textit{Erosion}
-and \textit{Dilation}.
+\textit{Structuring Element}, with a dedicated center point $c \in B_s$ we can
+apply the basic operations \textit{Erosion} and \textit{Dilation}.
 
 % Maybe add image about Erosion
 
@@ -45,10 +45,10 @@ pixels of $B$ and only keeping them if all of the points of $B_s$ translated
 by its center point $c \in B_s$ to this position are fully included in $B$.
 Therefore the white areas in $B$ are reduced . \cite{Smith1997}
 
-Similarly for the Dilation operation  $B \oplus B_s$ , the Structuring Element
-is translated to every pixel $p \in B$. For each of these pixels all the
-neighbouring pixels that intersect with the translated $B_s$ are turned white.
-The total area of white pixels is increased. \cite{Smith1997}
+Similarly for the Dilation operation  $B \oplus B_s$ , the center point of the
+Structuring Element is translated to every pixel $p \in B$. For each of these
+pixels all the neighbouring pixels that intersect with the translated $B_s$ are
+turned white. The total area of white pixels is increased. \cite{Smith1997}
 
 Image Morphologies have multiple uses like increasing certain areas for better
 recognition or separating larger shapes of an image. In our case they will be
@@ -73,7 +73,7 @@ whether it is below or above the threshold.
 \subsubsection{Contrast Limited Adaptive Histogram
 Equalization (CLAHE)}
 
-A \textit{Histogram} of an image is the distribution of lightness values in an
+A \textit{Histogram} of an image is the distribution of brightness values in an
 image. \textit{Histogram equalization} is the process of adjusting the contrast
 of an image using the Histogram. Global histogram equalization changes the
 brightness of each pixel in the image using the overall histogram of the image.
@@ -94,7 +94,7 @@ histogram. \cite{Pizer1987}
 Masks operations are similar to elementary arithmetics. Each pixel $a_{xy}$ in
 one image  $X_a$ is added, substracted, multiplied or divided with $b_{by}$ of
 another image $X_b$. For example the operation $X_a + X_b$ denotes the set
-$\{p_{xy} + q_{xy} | p_{xy} \in X_a, q_{xy} \in X_b\}$. For our purposes we only
+$\{\mathrm{min}(255, p_{xy} + q_{xy}) | p_{xy} \in X_a, q_{xy} \in X_b\}$. For our purposes we only
 use addition and substraction.
 
 % TODO: Possibly try to use Opening operation again and explain it here
@@ -117,9 +117,9 @@ detected thicker lines.
 The algorithm itself can be separated into two different phases: Image
 preprocessing (\ref{preprocessing}) and the recognition of rectangles (\ref{rectangles}).
 
-The goal of the first preprocessing phase is to obtain a binary image (an image
-with only black and white pixels) in which black represent the lines of the
-painting while white represents the inner area of the rectangles.
+The goal of the first preprocessing phase is to obtain a binary image in which
+black represent the lines of the painting while white represents the inner area
+of the rectangles.
 
 The second phase then takes this binary image and returns a list of found
 rectangles. Additionally, for recognizing the colors of the rectangles, the
@@ -129,7 +129,8 @@ original input image is used.
 
 \begin{figure}
   \includegraphics[width=\linewidth]{images/preprocessing_steps.png}
-  \caption{Preprocessing Steps}
+  \caption{Preprocessing Steps on \textit{Composition II in Red, Blue, and Yellow
+  from 1929}}
   \label{fig:preprocessing}
 \end{figure}
 
@@ -140,14 +141,15 @@ paintings. But they might also be results of the photography and scanning the
 images.
 
 Next, the RGB input image is decomposed into a Greyscale Image $G_1$ by using
-the maximum value of the RGB triplet for each pixel in $I_2$.
+the maximum value of the RGB triplet for each pixel in $I_2$:
+$$G_1 = \{p_{xy} \in \{0,\ldots,255\} \mid (r_{xy},g_{xy},b_{xy})\in I_2\text{ and }p_{xy}=\max\{r_{xy},g_{xy},b_{xy}\}\}$$.
 
-To normalize the lightness distribution of $G_1$ and increase the contrast of
+To normalize the brightness distribution of $G_1$ and increase the contrast of
 the darker regions, we now apply histogram equalization to $G_1$. For this we
 use \textit{Contrast Limited Adaptive Histogram Equalization (CLAHE)}. In
 contrast to non-adaptive and ordinary adaptive histogram equalization
-algorithms, this prevents the overamplification of noise. We call the result of
-the equalization $G_2$. \cite{Pizer1987}
+algorithms, this prevents the overamplification of noise as reasoned above. We
+call the result of the equalization $G_2$. \cite{Pizer1987}
 
 After the normalization is applied, we further brighten colorful areas of the
 image to make them stand out against the black areas of the paintings. This way,
@@ -166,7 +168,7 @@ Since the thresholding step might leave some interruption in the black lines, we
 reduce the white areas of the image: An Erosion $B_2 = B_1 \ominus B_e$ is
 applied. In this case, the structuring element $B_e$ is a $N\times N$ binary
 Image. Using the Erosion some accidental interruptions in the lines can be
-restored. However choosing a the Structuring Element that is too high, might
+restored. However choosing a Structuring Element that is too big, might
 result in loss of information by filling smaller white rectangles black.
 Therefore the size $N$ needs to be chosen carefully.
 
@@ -211,7 +213,7 @@ into one line. For horizontal lines, the resulting line will have the average
 $y$ value of all those lines and the minimum and maximum $x$ values as starting
 and end points.
 
-From out conceptional view on Mondrian paintings, the ends of lines always touch
+From our conceptional view on Mondrian paintings, the ends of lines always touch
 another line or the edge of the painting. However, the lines that we reduced now
 might overlap slightly or not even connect to the next line.
 

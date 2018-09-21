@@ -199,9 +199,15 @@ plt.savefig(out_dir + '/longer-x-shorter.png')
 plt.close()
 
 # histogram(df['aspect_max_min'], 20)
+
+rand_df = pd.DataFrame(np.random.randint(0,1000,size=(1000, 2)), columns=list('AB'))
+rand_df['aspect_max_min'] = rand_df[['A','B']].max(axis=1) / rand_df[['A','B']].min(axis=1)
 x = df[df['aspect_max_min'] <= 3]['aspect_max_min']
+y = rand_df[rand_df['aspect_max_min'] <= 3]['aspect_max_min']
+
 sns.set_style("darkgrid")
 sns.kdeplot(x, shade=True, cut=0,gridsize=100)
+sns.kdeplot(y, shade=True, cut=0,gridsize=100)
 # plt.xlim((1,20))
 sns.rugplot(x);
 plt.title('Aspect ratio r longer side to shorter r < 3')
