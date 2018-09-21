@@ -1,0 +1,192 @@
+{
+    "height": 878,
+    "width": 858,
+    "rectangles": [
+        {
+            "x": 326,
+            "y": 392,
+            "width": 87,
+            "height": 87,
+            "color": [
+                255,
+                255,
+                255
+            ],
+            "color_id": "white"
+        },
+        {
+            "x": 413,
+            "y": 392,
+            "width": 445,
+            "height": 87,
+            "color": [
+                255,
+                255,
+                255
+            ],
+            "color_id": "white"
+        },
+        {
+            "x": 0,
+            "y": 392,
+            "width": 326,
+            "height": 87,
+            "color": [
+                255,
+                255,
+                255
+            ],
+            "color_id": "white"
+        },
+        {
+            "x": 326,
+            "y": 479,
+            "width": 87,
+            "height": 399,
+            "color": [
+                255,
+                255,
+                255
+            ],
+            "color_id": "white"
+        },
+        {
+            "x": 413,
+            "y": 479,
+            "width": 250,
+            "height": 244,
+            "color": [
+                255,
+                255,
+                255
+            ],
+            "color_id": "white"
+        },
+        {
+            "x": 663,
+            "y": 479,
+            "width": 55,
+            "height": 244,
+            "color": [
+                255,
+                255,
+                255
+            ],
+            "color_id": "white"
+        },
+        {
+            "x": 718,
+            "y": 479,
+            "width": 140,
+            "height": 399,
+            "color": [
+                255,
+                255,
+                255
+            ],
+            "color_id": "white"
+        },
+        {
+            "x": 0,
+            "y": 479,
+            "width": 326,
+            "height": 399,
+            "color": [
+                255,
+                255,
+                255
+            ],
+            "color_id": "white"
+        },
+        {
+            "x": 413,
+            "y": 723,
+            "width": 250,
+            "height": 108,
+            "color": [
+                255,
+                255,
+                255
+            ],
+            "color_id": "white"
+        },
+        {
+            "x": 663,
+            "y": 723,
+            "width": 55,
+            "height": 108,
+            "color": [
+                255,
+                255,
+                255
+            ],
+            "color_id": "white"
+        },
+        {
+            "x": 413,
+            "y": 831,
+            "width": 250,
+            "height": 47,
+            "color": [
+                255,
+                255,
+                255
+            ],
+            "color_id": "white"
+        },
+        {
+            "x": 663,
+            "y": 831,
+            "width": 55,
+            "height": 47,
+            "color": [
+                255,
+                255,
+                255
+            ],
+            "color_id": "white"
+        },
+        {
+            "x": 326,
+            "y": 0,
+            "width": 87,
+            "height": 392,
+            "color": [
+                255,
+                255,
+                255
+            ],
+            "color_id": "white"
+        },
+        {
+            "x": 413,
+            "y": 0,
+            "width": 445,
+            "height": 392,
+            "color": [
+                255,
+                255,
+                255
+            ],
+            "color_id": "white"
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "width": 326,
+            "height": 392,
+            "color": [
+                255,
+                255,
+                255
+            ],
+            "color_id": "white"
+        }
+    ],
+    "options": {
+        "binary_threshold": 110,
+        "min_line_length": 70,
+        "min_distance": 70,
+        "black_rectangle_dilate": 70
+    }
+}
