@@ -426,9 +426,7 @@ debug images given is saved to disk in an output directory. The data from the
 rectangles is encoded into \textit{JSON}-files.
 
 \texttt{process\_image} first calls another function \texttt{preprocessing} that
-executes the steps described in \ref{preprocessing}. The different processing
-steps are also provided as an output for debugging and adjustment of the
-parameters, see \ref{parameter}.
+executes the steps described in \ref{preprocessing}.
 
 Then the result of \texttt{preprocessing(image)} is used as the input for
 \texttt{detect\_rectangles}. This function executes the steps described in
@@ -476,6 +474,21 @@ def find_rectangles(top_left, bottom_left, top_right):
     return rectangles
 \end{lstlisting}
 \end{minipage}
+
+\subsection{Iterative approach}
+
+The different processing steps of the algorithm are visualized by providing
+multiple output images for each input image. These images allow an inspection
+of the different intermediary results created in the process.
+
+Thes images were used to identify problems that might occur during the detection
+and could then be used as a basis for the adjustment of the parameters (see
+\ref{parameter}).
+
+This visual feedback also provided insights into problems of the algorithm like
+small bugs or conceptional problems. For example the preprocessing step to
+increase the brightness of areas that are more colorful was introduced because
+there were issues of discriminating darker blue areas from black ones.
 
 \subsection{Performance} \label{performance}
 
