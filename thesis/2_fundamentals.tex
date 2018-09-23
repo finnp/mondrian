@@ -10,13 +10,11 @@ in Mondrians abstract paintings (\ref{concept}).
 
 \subsection{Definitions} \label{definitions}
 
-We define an Image $X$ with width $w$ and height $h$ to be the set $I = \{
-p_{xy} | x \in \{1,2, \dots w\}, y \in \{1,2, \dots h\} \}$. A RGB Image $I$ is
-an Image with $p_{xy} = (r_{xy}, g_{xy}, b_{xy}) \in \{0,1,...,255\} \times
-\{0,1,...,255\} \times\{0,1,...,255\}$, while a Greyscale image is an Image with
-$p_{xy} \in \{0,1, \dots 255\}$.
-
-A Binary Image $B$ is an Image with $p_{xy} \in \{0,1\}$ where we also refer to
+We define an Image $X$ with width $w$ and height $h$ to be the set $I$.
+$$I = \{p_{xy} | x \in \{1,2, \dots w\}, y \in \{1,2, \dots h\} \}$$
+A RGB Image $I$ is an Image with the following  $p_{xy}$: $$p_{xy} = (r_{xy}, g_{xy}, b_{xy}) \in \{0,1,...,255\} \times
+\{0,1,...,255\} \times\{0,1,...,255\}$$ A Greyscale image is an Image with
+$p_{xy} \in \{0,1, \dots 255\}$ and a Binary Image $B$ is an Image with $p_{xy} \in \{0,1\}$ where we also refer to
 $0$ as \textit{black} and $1$ as \textit{white}
 
 \subsection{Used Algorithms and Methods} \label{used}
@@ -57,7 +55,7 @@ for separating black areas that are bigger than typical lines.
 
 \subsubsection{Thresholding}
 
-Thresholding $T(G) = \{t_{xy}\ | g_{xy} \in G\}$ is a process for turning a greyscale image $G$
+Thresholding $T(G) = \{t_{xy}\ \in {0,1} | g_{xy} \in G\}$ is a process for turning a greyscale image $G$
 with pixels $g_{xy}$ into a binary image $B$ using a threshold $t \in
 0,1,\dots255$. Each pixel $t_{xy}$ is assigned a black or white value given
 whether it is below or above the threshold.
@@ -155,14 +153,15 @@ After the normalization is applied, we further brighten colorful areas of the
 image to make them stand out against the black areas of the paintings. This way,
 for example, darker blue areas can be better distinguished from black areas.
 Since the difference between the maximum and the minimum value of the RGB
-triplet is related to the colorfulness of a color, we calculate it for every
+triplet is related to the colorfulness of a pixel, we calculate this for every
 pixel of the input image. The resulting Mask $G_m$ from this calculation is added to
 the contrast-normalized image $G_3 = G_2 + G_m$.
 
 Now the image $G_3$ with the elements $g_{xy}$ is converted into a binary image
 using Thresholding $B_1 = T(G_2)$. The threshold value $t$ needs to be chosen
 as such as its optimally separating between the darker lines an the lighter
-rectangles in the image.
+rectangles in the image. See \ref{parameter} for how that value was determined
+in praxis.
 
 Since the thresholding step might leave some interruption in the black lines, we
 reduce the white areas of the image: An Erosion $B_2 = B_1 \ominus B_e$ is
@@ -193,9 +192,10 @@ in the output binary image $B_3$ from the previous phase.
 To find horizontal lines $H$, the image is scanned vertically line by line. We
 iterate through the pixels of each horizontal line. Uninterrupted sequences of
 black pixels are added to a list of horizontal lines. Only sequences with a
-specified minimum length $l$ are added. The minimum length should be slightly
-larger than the maximum width of the lines in the image. Vertical lines $V$ are
-recognized respectively by iterating through the lines from left to right.
+specified minimum length $\ell$ are added (See \section{parameter} for details).
+The minimum length should be slightly larger than the maximum width of the lines
+in the image. Vertical lines $V$ are recognized respectively by iterating
+through the lines from left to right.
 
 % As a first step to find horizontal lines $H$, consecutive black pixels in every
 % row of the image are considered a line if at least $l$ of them occur without
