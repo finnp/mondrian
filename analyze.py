@@ -58,12 +58,14 @@ colors = ['red','blue','yellow','black', 'white']
 
 print('Rectangles loaded.')
 df = pd.DataFrame(color_distribution_by_area)
-df.boxplot()
+ax = df.boxplot()
+ax.set_ylabel('Proportion of total area')
 plt.savefig(out_dir + '/colors.png')
 plt.close()
 
 axes = df.boxplot(column=['red', 'blue', 'yellow'], return_type='axes')
-axes.set_ylim(0, 0.3)
+axes.set_ylim(0, 1)
+axes.set_ylabel('Proportion of total area')
 plt.savefig(out_dir + '/colors-rby.png')
 plt.close()
 
@@ -74,7 +76,8 @@ print(df['non-colors'].mean()*100, df['non-colors'].std()*100)
 for color in colors:
     print(color, df[color].median()*100)
     print(color, df[color].mean() * 100, df[color].std() * 100)
-df.boxplot(column=['colors', 'non-colors'])
+ax = df.boxplot(column=['colors', 'non-colors'])
+ax.set_ylabel('Proportion of total area')
 plt.savefig(out_dir + '/colors-non-colors.png')
 plt.close()
 
