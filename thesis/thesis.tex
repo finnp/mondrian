@@ -185,9 +185,9 @@ apply the basic operations \textit{Erosion} and \textit{Dilation}.
 % Maybe add image about Erosion
 
 The Erosion $B \ominus B_s$ is equivalent to iterating through all of the white
-pixels of $B$ and only keeping them if all of the points of $B_s$ translated
-by its center point $c \in B_s$ to this position are fully included in $B$.
-Therefore the white areas in $B$ are reduced . \cite{Smith1997}
+pixels of $B$ and turning them black if not all of the points of $B_s$
+translated by its center point $c \in B_s$ are also white in $B$. Therefore the
+white areas in $B$ are reduced. \cite{Smith1997}
 
 Similarly for the Dilation operation  $B \oplus B_s$ , the center point of the
 Structuring Element is translated to every pixel $p \in B$. For each of these
