@@ -223,9 +223,9 @@ of an image using the Histogram. Global histogram equalization changes the
 brightness of each pixel in the image using the overall histogram of the image.
 \cite{ShapiroLindaG2001Cv}
 
-\textit{Adaptive histogram equalization (AHE)} on the other hand uses multiple
-histograms from different regions of an image to adjust the brightness of a
-pixel. It therefore is better able to increase the local contrast.
+\textit{Adaptive histogram equalization (AHE)} on the other hand only uses the
+histogram of a specified area around any given pixel to adjust its brightness.
+It therefore is better able to increase the local contrast.
 
 However \textit{AHE} tends to overamplify noise in an image. Fairly uniform
 regions of the same brightness have high histogram pieaks and are turned into
@@ -263,7 +263,8 @@ preprocessing (\ref{preprocessing}) and the recognition of rectangles (\ref{rect
 
 The goal of the first preprocessing phase is to obtain a binary image in which
 black represent the lines of the painting while white represents the inner area
-of the rectangles.
+of the rectangles. The different steps of the preprocessing phase are visualized
+in Figure \ref{fig:preprocessing}.
 
 The second phase then takes this binary image and returns a list of found
 rectangles. Additionally, for recognizing the colors of the rectangles, the
@@ -428,7 +429,6 @@ human-readable. An example for such a \textit{JSON} file can be seen in Figure
 \ref{fig:json}.
 
 \begin{figure}
-\label{fig:json}
 \begin{minipage}{0.2\textwidth}
   \includegraphics[width=\linewidth]{images/B244.jpg}
 \end{minipage}
@@ -449,6 +449,7 @@ human-readable. An example for such a \textit{JSON} file can be seen in Figure
 \end{lstlisting}
 \end{minipage}
 \caption{Source image and \textit{JSON} representation for \textit{Composition no. I (1934)}}
+\label{fig:json}
 \end{figure}
 
 
