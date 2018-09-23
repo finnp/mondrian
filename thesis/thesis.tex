@@ -403,7 +403,6 @@ The algorithm was implemented in Python 3.7 using the \textit{OpenCV} and
 described in \ref{used} as well as other methods for reading, writing and
 manipulating image files. NumPy, which is part of the SciPy package, is a
 package for scientific numerical computing \cite{scipy}.
-
 % Images in OpenCV are represented as three-dimensional NumPy arrays. The first
 % two dimensions of this array encode the positions of pixels in the image, while
 % the third dimension encodes the three color values.
@@ -510,6 +509,11 @@ compiled, more low-level language. We chose to use Rust using the \textit{rust-c
 library for bindings. Using the same algorithm implemented in Rust, the time of
 this step was reduced from about 1020 to 40 milliseconds. The runtime of the
 program could be reduced by a factor of 13.
+
+This time could have been be further reduced by running multiple parallel
+iterations over the different rows or colums. However for our purpose the
+achieved time was sufficient.
+
 
 \subsection{Parameter Selection} \label{parameter}
 
