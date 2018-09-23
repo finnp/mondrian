@@ -423,7 +423,9 @@ and color.
 Another function called \texttt{run\_pipeline} reads a list of images from a
 given input directory and feeds them into \texttt{process\_image}. Each of the
 debug images given is saved to disk in an output directory. The data from the
-rectangles is encoded into \textit{JSON}-files.
+rectangles is encoded in a \textit{JSON} file for each image. \textit{JSON} was
+chosen, since it is a widespread flexible data-interchange format that is also
+human-readable.
 
 \texttt{process\_image} first calls another function \texttt{preprocessing} that
 executes the steps described in \ref{preprocessing}.
