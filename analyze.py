@@ -104,7 +104,8 @@ df['aspect_max_min'] = df['longer'] / df['shorter']
 df['aspect'] = df['width'] / df['height']
 df['size'] = df['width'] * df['height']
 
-images = df.groupby('image_file').agg({'color': 'unique'})
+images = df.groupby('image_file').agg({'color': 'unique', 'color_id': 'count'})
+print(images[images['color_id'] == 5])
 images['color'] = images['color'].apply(set)
 total = len(images)
 print('total', total)

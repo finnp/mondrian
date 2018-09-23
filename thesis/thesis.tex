@@ -338,7 +338,7 @@ in the output binary image $B_3$ from the previous phase.
 To find horizontal lines $H$, the image is scanned vertically line by line. We
 iterate through the pixels of each horizontal line. Uninterrupted sequences of
 black pixels are added to a list of horizontal lines. Only sequences with a
-specified minimum length $\ell$ are added (See \section{parameter} for details).
+specified minimum length $\ell$ are added (See \ref{parameter} for details).
 The minimum length should be slightly larger than the maximum width of the lines
 in the image. Vertical lines $V$ are recognized respectively by iterating
 through the lines from left to right.
@@ -424,7 +424,33 @@ given input directory and feeds them into \texttt{process\_image}. Each of the
 debug images given is saved to disk in an output directory. The data from the
 rectangles is encoded in a \textit{JSON} file for each image. \textit{JSON} was
 chosen, since it is a widespread flexible data-interchange format that is also
-human-readable.
+human-readable. An example for such a \textit{JSON} file can be seen in Figure
+\ref{fig:json}.
+
+\begin{figure}
+\label{fig:json}
+\begin{minipage}{0.2\textwidth}
+  \includegraphics[width=\linewidth]{images/B244.jpg}
+\end{minipage}
+\begin{minipage}{0.8\textwidth}
+\begin{lstlisting}
+{
+  "id": "B244",
+  "height":1000,
+  "width":489,
+  "rectangles":[
+    {"x":294,"y":91,"w":195,"h":691,"c":"white"},
+    {"x":294,"y":782,"w":195,"h":218,"c":"white"},
+    {"x":64,"y":0,"w":230,"h":1000,"c":"white"},
+    {"x":294,"y":0,"w":195,"h":91,"c":"blue"},
+    {"x":0,"y":0,"w":64,"h":1000,"c":"white"}
+  ]
+}
+\end{lstlisting}
+\end{minipage}
+\caption{Source image and \textit{JSON} representation for \textit{Composition no. I (1934)}}
+\end{figure}
+
 
 \texttt{process\_image} first calls another function \texttt{preprocessing} that
 executes the steps described in \ref{preprocessing}.
