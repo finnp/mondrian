@@ -214,6 +214,9 @@ whether it is below or above the threshold.
   \end{cases}
 \end{equation}
 
+It is usually used to separate out regions of interest in an image. For this
+application these regions will be the black lines of the painting.
+
 \subsubsection{Contrast Limited Adaptive Histogram
 Equalization (CLAHE)}
 
@@ -224,8 +227,8 @@ brightness of each pixel in the image using the overall histogram of the image.
 \cite{ShapiroLindaG2001Cv}
 
 \textit{Adaptive histogram equalization (AHE)} on the other hand only uses the
-histogram of a specified area around any given pixel to adjust its brightness.
-It therefore is better able to increase the local contrast.
+histogram of a specified area around any given pixel to adjust its brightness. It
+therefore is better able to increase the local contrast.
 
 However \textit{AHE} tends to overamplify noise in an image. Fairly uniform
 regions of the same brightness have high histogram pieaks and are turned into
