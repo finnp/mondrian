@@ -373,22 +373,10 @@ Since the rectangles in the painting are defined by the horizontal and
 vertical lines in the image, the detection starts by finding all of those lines
 in the output binary image $B_3$ from the previous phase.
 
-% TODO: Define all the different termini (lines, etc.)
-
-To find horizontal lines $H$, the image is scanned vertically line by line. We
-iterate through the pixels of each horizontal line. Uninterrupted sequences of
-black pixels are added to a list of horizontal lines. Only sequences with a
-specified minimum length $\ell$ are added (See \ref{parameter} for details).
-The minimum length should be slightly larger than the maximum width of the lines
-in the image. Vertical lines $V$ are recognized respectively by iterating
-through the lines from left to right.
-
-% As a first step to find horizontal lines $H$, consecutive black pixels in every
-% row of the image are considered a line if at least $l$ of them occur without
-% interruption. The minimum length should be slightly larger than the maximum
-% width of the lines in the image. The same way a set of vertical lines $V$ can be
-% obtained for every column. This is the equivalent of applying a lossy run-length
-% encoding once horizontally and once vertically.
+Now all uninterrupted vertical sequences $V$ and horizontal sequences $H$ of
+black pixels with a minimum length $\ell$ are considered. You can think of it as
+a lossy run-length encoding once horizontally and once vertically. The selection
+of the parameter $\ell$ is discussed in \ref{parameter}.
 
 However, this means that what we perceive as one horizontal line in the painting
 is now recognized as multiple lines next to each other. For example, a line that
@@ -541,6 +529,28 @@ def find_rectangles(top_left, bottom_left, top_right):
     return rectangles
 \end{lstlisting}
 \end{minipage}
+
+\subsection{Line Detection}
+
+Using a custom algorithm for the line detection was not the first choice. First
+a commong technique, the Hough Transform, was used. Hough Transforms rotate a
+line over every pixel of an image with an angle $\theta$ for every step. For
+each rotation white pixels on that lines are used as votes for that line. Then
+lines above a certain threshold of votes are considered. Using $\theta =
+\frac{\pi}{2}$ to only consider horizontal and vertical lines, this method did
+not give accurate enough results. The algorithm would for example sometimes
+detect a vertical line between two close horizontal ones. Since we did not
+expect gaps between lines after our preprocessing, this method did not fit.
+
+It became clear that it would be simpler and more accurate to construct the
+lines by iterating through the image. To find horizontal lines $H$ from
+\ref{\ref{rectangles}}, the image is scanned vertically line by line. The
+iteration runs through the pixels of each horizontal line. Uninterrupted
+sequences of black pixels are added to a list of horizontal lines. Only
+sequences with a specified minimum length $\ell$ are added. The minimum length
+should be slightly larger than the maximum width of the lines in the image.
+Vertical lines $V$ are recognized respectively by iterating through the lines
+from left to right.
 
 \subsection{Iterative approach}
 
