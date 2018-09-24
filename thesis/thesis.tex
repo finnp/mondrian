@@ -165,10 +165,18 @@ Providing numeric data to close the lack of foundation for analysis on the
 neo-plastic compositions by Mondrian is the main objective of this thesis. The
 goal is to create a program that uses methods of Computer Vision to extract the
 compositional elements from images of the paintings. The program is restricted
-to paintings from 1920-1937 that also always use black lines to separate the
-rectangles and are not drawn on a diamond canvas.
+to paintings from 1920 to 1937, which all use black lines to separate rectangles.
 
-% !TeX encoding = UTF-8
+There are 178 works listed in the \textit{Catalogue Raisonn{\'e}}
+\cite{joosten1998} of Mondrian for that time period. Of these works 150 were
+paintings while the other 28 were sketches, unfinished works or plastic art. For
+12 paintings, Mondrian used a tilted canvas, often referred to as
+\textit{Diamond Compositions}. For the sake of simplicity these paintings were
+excluded as well. Additionally 20 paintings in this source had either only a
+greyscale image or no image available at all. These paintins were excluded as
+well. The remaining 118 images were selected for the algorithm. They were
+scanned and subsequently cropped so that only the painting and no frame was
+visible. The images were scaled so that the longer side would be 1000 pixels.
 
 \section{Fundamentals} \label{fundamentals}
 
@@ -604,17 +612,9 @@ an iterative development.
 % !TeX encoding = UTF-8
 \section{Results} \label{results}
 
- The image selection was restricted to paintings 1920-1937. There are 178 works
- listed in the \textit{Catalogue Raisonn{\'e}} \cite{joosten1998} for that time
- period. 28 of those were sketches, unfinished work or not a painting. Of the
- remaining 12 were drawn on a diamond-shaped canvas and for 20 paintings was
- either no or only a greyscale image available. The remaining 178 images were
- scanned and subsequently cropped so that only the painting and no frame was
- visible.  The images were scaled so that the longer side would be 1000
- pixels. The images were then processed by the detection program and subsequently
- checked for accuracy by comparing the result with the original. The resulting
- dataset consists of 1316 rectangles and their respective size, colors, and
- paintings.
+ All 118 images were processed by the detection program and subsequently checked
+ for accuracy by comparing the result with the original. The resulting dataset
+ consists of 1316 rectangles and their respective size, colors, and paintings.
 
 Some explorative analysis about the use of color (\ref{color}) and ratios
 (\ref{ratios}) was performed.
