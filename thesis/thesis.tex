@@ -555,18 +555,41 @@ from left to right.
 \subsection{Iterative approach}
 
 The different processing steps of the algorithm are visualized by providing
-multiple output images for each input image. These images allow an inspection
-of the different intermediary results created in the process.
+multiple output images for each input image. These images allow an inspection of
+the different intermediary results created in the process. Additionally an image
+was created superimposing the detected rectangle over the input image. This was
+mainly used review the correctness of the result.
 
-Thes images were used to identify problems that might occur during the detection
-and could then be used as a basis for the adjustment of the parameters (see
-\ref{parameter}).
+This visual feedback gave insights into problems of the algorithm like small
+bugs or conceptional problems. For example the preprocessing step to increase
+the brightness of areas that are more colorful was introduced because there were
+issues of discriminating darker blue areas from black ones. This way the
+development of the algorithm could follow an iterative approach.
 
-This visual feedback also provided insights into problems of the algorithm like
-small bugs or conceptional problems. For example the preprocessing step to
-increase the brightness of areas that are more colorful was introduced because
-there were issues of discriminating darker blue areas from black ones. This way
-the development of the algorithm could follow an iterative approach.
+These images also provided a basis for the adjustment of the parameters of the
+different steps.
+
+\subsection{Parameter Selection} \label{parameter}
+
+By running the program on the images and looking at the output images for the
+different steps, the reasonable values for the parameters of the program can be
+determined.
+
+By running the program and looking at the results of the Thresholding for each
+image, comparing it to the input image, the threshold value $t = 110$ was
+determined to give reasonable results.
+
+To better fine-tune the parameters, we selected a subset of input images and
+always manually changed these parameters until the result was correct. The
+resulting \textit{JSON} files with the correct results were moved to another
+directory \textit{detected}. Then a step was added to the program that would
+always compare the computed result with the data in that directory if available.
+When the result differed, it would print out a warning.
+
+Using this output the minimum length $\ell$, the maximum width $d$ and the size of
+the erosion kernel $N$ were changed to maximize the number of recognized images
+from that set. The resulting parameters were $l = 60$, $d = 70$ and $N =11$.
+
 
 \subsection{Performance} \label{performance}
 
@@ -589,28 +612,6 @@ program could be reduced by a factor of 13.
 This time could have been be further reduced by running multiple parallel
 iterations over the different rows or colums. However for our purpose the
 achieved time was sufficient.
-
-
-\subsection{Parameter Selection} \label{parameter}
-
-By running the program on the images and looking at the debugging output images
-for the different steps, the reasonable values for the parameters of the program
-can be determined.
-
-By running the program and looking at the results of the Thresholding for each
-image, comparing it to the input image, the threshold value $t = 110$ was
-determined to give reasonable results.
-
-To better fine-tune the parameters, we selected a subset of input images and
-always manually changed these parameters until the result was correct. The
-resulting \textit{JSON} files with the correct results were moved to another
-directory \textit{detected}. Then a step was added to the program that would
-always compare the computed result with the data in that directory if available.
-When the result differed, it would print out a warning.
-
-Using this output the minimum length $\ell$, the maximum width $d$ and the size of
-the erosion kernel $N$ were changed to maximize the number of recognized images
-from that set. The resulting parameters were $l = 60$, $d = 70$ and $N =11$.
 
 \subsubsection{Evaluation of Tools}
 
