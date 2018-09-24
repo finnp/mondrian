@@ -404,8 +404,8 @@ All lines should now represent the structure of the painting. What we want as
 our output though is a list of rectangles. Every rectangle in the image can be
 defined through a set of four different corners: top-left, top-right,
 bottom-left and bottom-right. These corners are always intersections of two
-lines, either crossing or touching. We determine the corners and their types by
-iterating through the lines.
+lines, either fully crossing or touching (T-crossing). We determine the corners
+and their types by iterating through the lines.
 
 After this, four different corners are combined into a rectangle by finding
 matching corners. This is done by iterating through the top-left corners $(x,y)$
