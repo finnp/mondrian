@@ -9,6 +9,7 @@ image_type = 'jpg'
 detected_dir = 'detected'
 
 issues = []
+images_with_problems = []
 
 def run_pipeline(process_image):
     detected = [file[:-5] for file in os.listdir(detected_dir)]
@@ -46,6 +47,7 @@ def run_pipeline(process_image):
             output_filename = subdir + '/' + str(step_index) + '-' + type + '.jpg'
             cv2.imwrite(output_filename, img)
     print('%s issues' % len(issues))
+    print('%s images with problems' % len(images_with_problems))
 
 def save_data(data, filename):
     with open(filename, 'w') as fp:
@@ -69,14 +71,20 @@ def check_data(proven, data):
     data_rects = data['rectangles']
     len_proven = len(proven_rects)
     len_data = len(data_rects)
+    faulty = False
     if (len_proven != len_data):
         print_issue('Wrong number of rectangles', len_data, len_proven)
+        images_with_problems.append(data)
         return
     for index, rect in enumerate(data_rects):
         rect_proven = proven_rects[index]
         if rect['color_id'] != rect_proven['color_id']:
             print_issue('Wrong color', rect['color_id'], rect_proven['color_id'], index)
+            faulty = True
         diff_x = abs(rect['x'] - rect_proven['x'])
         diff_y = abs(rect['x'] -rect_proven['x'])
         if diff_x > 10 or diff_y > 10:
             print_issue('Different position', (diff_x, diff_y), (0,0), index)
+            faulty = True
+    if faulty:
+        images_with_problems.append(data)
