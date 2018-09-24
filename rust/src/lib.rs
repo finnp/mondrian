@@ -11,6 +11,7 @@ py_module_initializer!(myrustlib, initmyrustlib, PyInit_myrustlib, |py, m| {
     try!(m.add(py, "__doc__", "This module is implemented in Rust."));
     try!(m.add(py, "detect_lines", py_fn!(py, detect_lines(img: Vec<bool>, width: usize, height: usize, min_line_length: usize))));
     try!(m.add(py, "reduce_lines", py_fn!(py, reduce_lines(horizontal: Vec<Line>, vertical: Vec<Line>, min_distance: usize))));
+    try!(m.add(py, "write_line_length", py_fn!(py, write_line_length(height: usize, width: usize, horizontal: Vec<Line>,  vertical: Vec<Line>))));
     Ok(())
 });
 
@@ -20,6 +21,38 @@ fn average(numbers: Vec<usize>) -> f64 {
         total = total + numbers[index];
     }
     (total as f64) / (numbers.len() as f64)
+}
+
+fn write_line_length(_: Python, height: usize, width: usize, horizontal: Vec<Line>, vertical: Vec<Line>) -> PyResult<(Vec<bool>,Vec<bool>)> {
+    let mut blank_h = vec![0; height*width];
+    for index in 0..horizontal.len() {
+        let (start,y,end,_y) = horizontal[index];
+        let length = end - start;
+        for offset in 0..length {
+            blank_h[y * width + start + offset] = length
+        }
+    }
+
+    let mut blank_v = vec![0; height*width];
+    for index in 0..vertical.len() {
+        let (x,end,_x,start) = vertical[index];
+        let length = end - start;
+        for offset in 0..length {
+            blank_v[(start + offset) * width + x] = length
+        }
+    }
+
+    let min_length = 0;
+
+    let mut h = vec![false; height*width];
+    let mut v = vec![false; height*width];
+    for index in 0..(height*width) {
+        let h_len = blank_h[index];
+        let v_len = blank_v[index];
+        h[index] =  h_len > min_length && h_len >= v_len;
+        v[index] = v_len > min_length && v_len >= h_len;
+    }
+    Ok((h,v))
 }
 
 fn reduce_lines(_: Python, horizontal: Vec<Line>, vertical: Vec<Line>, min_distance: usize) -> PyResult<(Lines, Lines)> {

@@ -4,7 +4,7 @@ import json
 import sys
 
 input_dir = 'image-selection'
-output_dir = 'output'
+output_dir = 'outpu2'
 image_type = 'jpg'
 detected_dir = 'detected'
 

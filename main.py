@@ -6,11 +6,12 @@ from lines import remove_lines_close_to_border, connect_lines, reduce_lines, red
 from draw import draw_circle, find_colors_for_rects, draw_rectangles, draw_lines, draw_points, draw_corners, clip_rectangles
 from files import run_pipeline
 import timings
+import myrustlib
 
 retr_type = cv2.RETR_LIST
 contour_algorithm = cv2.CHAIN_APPROX_SIMPLE
 
-binary_threshold = 110
+binary_threshold = 130
 min_line_length = 40
 min_distance = 70
 black_rectangle_dilate = 40
@@ -63,6 +64,24 @@ def detect_rectangles(binary, original):
     height, width = binary.shape
     timings.start('detect_lines')
     (horizontal, vertical) = detect_lines_rust(cv2.bitwise_not(binary), min_line_length)
+    print(horizontal, height, width)
+    (h,v) = myrustlib.write_line_length(height,width,horizontal,vertical)
+    h = np.array(h).astype(np.int) * 255
+    v = np.array(v).astype(np.int) * 255
+    steps.append((
+        'horizontal', h.reshape((height, width))
+    ))
+    steps.append((
+        'vertical', v.reshape((height, width))
+    ))
+
+    v.shape = (height,width)
+    h.shape = (height,width)
+
+    (horizontal, _) = detect_lines_rust(h, 10)
+    (_, vertical) = detect_lines_rust(v, 10)
+
+    # steps.append(('vertical', np.array(v).reshape((width, height))))
     timings.end('detect_lines')
 
     (vertical_lines, horizontal_lines) = reduce_lines(horizontal, vertical, min_distance)
