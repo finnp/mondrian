@@ -2,7 +2,8 @@ output
 img/*
 .DS_Store
 output
-*.jpg
+image-selection/*.jpg
+complicated-images/*.jpg
 __pycache__
 catalogue-images
 detected-output

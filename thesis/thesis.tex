@@ -9,6 +9,7 @@
 %   noparskip (default, no spacing between paragraphs), parskip (spaced)
 \documentclass[serif,article,noparskip]{agse-thesis}
 \usepackage{amsmath}
+\usepackage{subcaption}
 
 % Global parameters, replace with actual values.
 \newcommand{\thesisTitle}{Implementation of a Software to detect the different Retangles in Images created by Piet Mondrian}
@@ -48,7 +49,29 @@
 
 \section{Introduction}
 
-% Introduce general problem area?
+\begin{figure}
+\centering
+\begin{subfigure}{.3\textwidth}
+  \centering
+  \includegraphics[width=\linewidth]{images/B104.jpg}
+  \caption{Composition II (1920)}
+  \label{fig:sub1}
+\end{subfigure}%
+\begin{subfigure}{.3\textwidth}
+  \centering
+  \includegraphics[width=\linewidth]{images/B123.jpg}
+  \caption{Composition with Red, Blue and Yellow (1930)}
+  \label{fig:sub2}
+\end{subfigure}
+\begin{subfigure}{.3\textwidth}
+  \centering
+  \includegraphics[width=\linewidth]{images/B273.jpg}
+  \caption{Opposition of Lines: Red and Yellow (1937)}
+  \label{fig:sub3}
+\end{subfigure}
+\caption{Three examples of Mondrian paintings from 1920, 1930 and 1937}
+\label{fig:mondrian}
+\end{figure}
 
 \subsection{Piet Mondrian}
 
@@ -66,7 +89,8 @@ art by "abolishing natural form" \cite{wiki:manifest} altogether.
 At some point around 1920 Mondrian further restricted his compositional elements
 to rectangles and straight black lines. The lines were only allowed to run
 horizontally or vertically. Only primary colors (red, blue and yellow) and
-non-colors (black, white and grey) were allowed to be used.
+non-colors (black, white and grey) were allowed to be used. See Figure
+\ref{fig:mondrian} for examples Mondrian paintings with these elements.
 
 Another founding member of \textit{De Stijl}, Georges Vantongerloo, used methods
 inspired from mathematics for his compositions. One example of this is his
