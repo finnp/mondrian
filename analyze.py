@@ -193,7 +193,6 @@ plt.savefig(out_dir + '/kernel-densities.png')
 plt.close()
 
 df.plot.scatter(x='shorter', y='longer', s=1, c='black')
-plt.title('Rectangle longer to shorter side (not normalized)')
 plt.plot([0, 618], [0, 1000], 'k-', alpha=0.3, label='golden ratio', c='red')
 plt.plot([0, 414], [0, 1000], 'k-', alpha=0.3, label='silver ratio')
 plt.plot([0, 707], [0, 1000], 'k-', alpha=0.3, label='sqrt(2)', c='blue')
@@ -204,17 +203,17 @@ plt.close()
 
 # histogram(df['aspect_max_min'], 20)
 
-rand_df = pd.DataFrame(np.random.randint(0,1000,size=(1000, 2)), columns=list('AB'))
+rand_df = pd.DataFrame(np.random.randint(0,1000,size=(10000, 2)), columns=list('AB'))
 rand_df['aspect_max_min'] = rand_df[['A','B']].max(axis=1) / rand_df[['A','B']].min(axis=1)
 x = df[df['aspect_max_min'] <= 3]['aspect_max_min']
 y = rand_df[rand_df['aspect_max_min'] <= 3]['aspect_max_min']
 
 sns.set_style("darkgrid")
-sns.kdeplot(x, shade=True, cut=0,gridsize=100)
-sns.kdeplot(y, shade=True, cut=0,gridsize=100)
+sns.kdeplot(x, shade=True, cut=0,gridsize=100,label="Mondrian rectangles")
+sns.kdeplot(y, shade=True, cut=0,gridsize=100,label="Random rectangles")
 # plt.xlim((1,20))
 sns.rugplot(x);
-plt.title('Aspect ratio r longer side to shorter r < 3')
+# plt.title('Aspect ratio r longer side to shorter r < 3')
 plt.savefig(out_dir + '/aspect-max-min-rects.png')
 plt.close()
 

@@ -544,7 +544,7 @@ expect gaps between lines after our preprocessing, this method did not fit.
 
 It became clear that it would be simpler and more accurate to construct the
 lines by iterating through the image. To find horizontal lines $H$ from
-\ref{\ref{rectangles}}, the image is scanned vertically line by line. The
+\ref{rectangles}, the image is scanned vertically line by line. The
 iteration runs through the pixels of each horizontal line. Uninterrupted
 sequences of black pixels are added to a list of horizontal lines. Only
 sequences with a specified minimum length $\ell$ are added. The minimum length
@@ -672,16 +672,17 @@ blue has a slighter bias to the bottom-right corner.
 
 For all rectangles we calculated the aspect ratio of the longer to the shorter
 side. Figure \ref{fig:aspect-rects} shows the estimated probability density of
-the ratios and Figure \ref{fig:longer-x-shorter} shows all rectangles plotted by
-their sides as well as lines for certain proposed ratios. The data does not show
-peaks for the golden or silver ratio. This supports the rejection by Livio
-(2002) \cite{Livio2002} and Markowsky (1992) \cite{Markowsky1992} of the golden
-rectangle claim by Bouleau (1963) \cite{bouleau1963} and Bergamini (1980)
-\cite{bergamini1980}.
+the ratios in Mondrians rectangles compared to the ratio of a set of 10000
+random rectangles. Figure \ref{fig:longer-x-shorter} shows all rectangles
+plotted by their sides as well as lines for certain proposed ratios. The data
+does not show peaks for the golden or silver ratio. This supports the rejection
+by Livio (2002) \cite{Livio2002} and Markowsky (1992) \cite{Markowsky1992} of
+the golden rectangle claim by Bouleau (1963) \cite{bouleau1963} and Bergamini
+(1980) \cite{bergamini1980}.
 
 \begin{figure}
 \includegraphics[width=\linewidth]{images/aspect-max-min-rects.png}
-\caption{Rectangles ratio KDE}
+\caption{There appears to be no difference between randomly generted rectangles and rectangles used by Mondrian.}
 \label{fig:aspect-rects}
 \end{figure}
 
