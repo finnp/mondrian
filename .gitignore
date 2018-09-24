@@ -3,7 +3,6 @@ img/*
 .DS_Store
 output
 image-selection/*.jpg
-complicated-images/*.jpg
 __pycache__
 catalogue-images
 detected-output
