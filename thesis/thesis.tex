@@ -12,7 +12,8 @@
 \usepackage{subcaption}
 
 % Global parameters, replace with actual values.
-\newcommand{\thesisTitle}{Implementation of a Software to detect the different Retangles in Images created by Piet Mondrian}
+\newcommand{\thesisTitle}{The Rhythm of Relations of Color and Size: Detecting
+Rectangles in Paintings created by Piet Mondrian}
 % -> You may use \par (but not \\) to format the title. If you do so, you'll
 %    need to manually set the 'pdftitle' attribute below.
 \newcommand{\studentName}{Finn Pauls}
@@ -33,9 +34,15 @@
     thesis/examiner/2={Prof. Dr. Konrad Polthier}, % optional
     thesis/date=\today,                    % optional, default: \today
    %title/size=\LARGE,      % set this value to overwrite automatic font size
-   %abstract/separate       % toggle this to move the abstract to its own page
-]
-{ Abstract TBD}
+   % abstract/separate       % toggle this to move the abstract to its own page
+] { The arrangement of compositional elements in abstract paintings by Piet
+Mondrian have been of interest by researchers for a long time. Despite this
+interest there are no publications examining these paintings numerically on a
+broad pool of data. This thesis tries to change this by describing an algorithm
+for detecting rectangles in Mondrian's compositions from 1920 to 1937. It also
+provides a descriptive analysis of the resulting data. While there are no hints
+that Mondrian used specific aspect ratios, a bias for positioning colors could
+be revealed.}
 
 \include{declaration}
 
@@ -275,7 +282,7 @@ histogram. \cite{Pizer1987}
 Masks operations are similar to elementary arithmetics. Each pixel $a_{xy}$ in
 one image  $X_a$ is added, substracted, multiplied or divided with $b_{by}$ of
 another image $X_b$. For example the operation $X_a + X_b$ denotes the set
-$$$X_a + X_b$ = \{\mathrm{min}(255, p_{xy} + q_{xy}) | p_{xy} \in X_a, q_{xy} \in X_b\}$$
+$$X_a + X_b = \{\mathrm{min}(255, p_{xy} + q_{xy}) | p_{xy} \in X_a, q_{xy} \in X_b\}$$
 
 \subsection{Concept} \label{concept}
 

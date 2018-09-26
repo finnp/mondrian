@@ -1,13 +1,24 @@
 The \texttt{detect\_rectangles} function consist of to the following code:
 \begin{lstlisting}
-def detect_rectangles(preprocessed_img, original_img):
-  (h1, v1) = detect_lines(preprocessed_img)
-  (h2, v2) = reduce_lines(h1,v1)
-  (h3, v3) = remove_lines_close_to_border(h2,v2)
-  (h4, v4) = add_border_lines(h3,v3)
-  (h5, v5) = connect_lines(h4,v4)
-  (tl, bl, br, tr) = find_corners(h5,v5)
-  rects = find_rectangles(tl, bl, tr))
-  rects_with_color = find_colors_for_rects(rects, original_img)
-  return rects_with_color
+# preprocessing
+blurred = blur(image)
+r,g,b = split_channels(blurred)
+maximum = max(r,g,b)
+minimum = min(r,g,b)
+contrast_fixed = clahe(max)
+color_contrast = contrast_fixed + maximum - minimum
+binary = threshold(color_contrast)
+erosion = erode(binary)
+dilated = dilate(binary)
+rects_removed = max(erosion, bitwise_not(dilated))
+
+# detect rectangles
+(h1, v1) = detect_lines(rects_removed)
+(h2, v2) = reduce_lines(h1,v1)
+(h3, v3) = remove_lines_close_to_border(h2,v2)
+(h4, v4) = add_border_lines(h3,v3)
+(h5, v5) = connect_lines(h4,v4)
+(tl, bl, br, tr) = find_corners(h5,v5)
+rects = find_rectangles(tl, bl, tr))
+rects_with_color = find_colors_for_rects(rects, original_img)
 \end{lstlisting}
