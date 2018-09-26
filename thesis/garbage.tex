@@ -1,24 +1,25 @@
 The \texttt{detect\_rectangles} function consist of to the following code:
 \begin{lstlisting}
-# preprocessing
-blurred = blur(image)
-r,g,b = split_channels(blurred)
-maximum = max(r,g,b)
-minimum = min(r,g,b)
-contrast_fixed = clahe(max)
-color_contrast = contrast_fixed + maximum - minimum
-binary = threshold(color_contrast)
-erosion = erode(binary)
-dilated = dilate(binary)
-rects_removed = max(erosion, bitwise_not(dilated))
+def preprocessing(image_1, t, N, M):
+  image_2 = blur(image_1)
+  r,g,b = split_channels(image_2)
+  grey_1 = max(r,g,b)
+  grey_min = min(r,g,b)
+  grey_2 = clahe(g1)
+  grey_c = grey_1 - grey_min
+  grey_3 = grey_2 + grey_c
+  binary_1 = threshold(grey_3, t)
+  binary_2 = erode(binary_1, N)
+  binary_m = dilate(binary_1, M)
+  result = binary_2 + bitwise_not(dilated)
 
-# detect rectangles
-(h1, v1) = detect_lines(rects_removed)
-(h2, v2) = reduce_lines(h1,v1)
-(h3, v3) = remove_lines_close_to_border(h2,v2)
-(h4, v4) = add_border_lines(h3,v3)
-(h5, v5) = connect_lines(h4,v4)
-(tl, bl, br, tr) = find_corners(h5,v5)
-rects = find_rectangles(tl, bl, tr))
-rects_with_color = find_colors_for_rects(rects, original_img)
+def detect_rectangles(binary_image, original_img, l, d)
+  (h1, v1) = detect_lines(binary_image, l)
+  (h2, v2) = reduce_lines(h1, v1, d)
+  (h3, v3) = remove_lines_close_to_border(h2, v2)
+  (h4, v4) = add_border_lines(h3, v3)
+  (h5, v5) = connect_lines(h4, v4)
+  (tl, bl, br, tr) = find_corners(h5, v5)
+  rects = find_rectangles(tl, bl, tr))
+  rects_with_color = find_colors_for_rects(rects, original_img)
 \end{lstlisting}

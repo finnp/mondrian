@@ -53,7 +53,7 @@ def preprocessing(original):
 
     remove_mask = cv2.bitwise_not(dilated)
 
-    rects_removed = cv2.max(opening, remove_mask)
+    rects_removed = cv2.add(opening, remove_mask)
     steps.append(('opening', rects_removed))
 
     return (rects_removed, steps)
