@@ -106,8 +106,6 @@ painting \textit{Composition Derived from the Equation y = -ax2 + bx + 18}.
 Mondrian on the other hand is known to only use intuition when creating his
 works, moving compositional elements for weeks, seeking a balanced composition,
 until he was satisfied with the result.
-% Find Citation, better
-% Deicher, S., (1995), Mondrian, Taschen (Koln), 1995 - Mondrian obsessed with positioning. he spends long periods of time shifting a single line back and forth within a couple of millimetres, believing that a precise positioning was essential for capturing an aesthetic order that was “free of tension”. Australian
 
 Still many people have been interested in the question if Mondrian's
 non-figurative paintings utilize certain compositional rules or techniques that
@@ -242,7 +240,7 @@ for separating black areas that are bigger than typical lines.
 
 \subsubsection{Thresholding}
 
-Thresholding $T(G) = \{t_{xy}\ \in {0,1} | g_{xy} \in G\}$ is a process for turning a greyscale image $G$
+Thresholding $T(G) = \{t_{xy}\ \in \{0,1\} | g_{xy} \in G\}$ is a process for turning a greyscale image $G$
 with pixels $g_{xy}$ into a binary image $B$ using a threshold $t \in
 0,1,\dots255$. Each pixel $t_{xy}$ is assigned a black or white value given
 whether it is below or above the threshold.
@@ -344,7 +342,7 @@ added to the contrast-normalized image $G_3 = G_2 + G_m$.
 
 Now the image $G_3$ with the elements $g_{xy}$ is converted into a binary image
 using Thresholding $B_1 = T(G_2)$. The threshold value $t$ needs to be chosen as
-such as it is optimally separating between the darker lines an the lighter
+such as it is optimally separating between the darker lines and the lighter
 rectangles in the image. See \ref{parameter} for how that value was determined
 in praxis.
 
@@ -364,7 +362,8 @@ Element $B_d$ compared with $B_e$ on the image. The size of $B_d$ is chosen in a
 way that most of the lines in the paintings are removed, only leaving inner
 areas of black rectangles. The resulting mask $B_m$ is then removed from the
 image of the last step $B_3 = B_2 - B_m$. Hence only the outlines of the black
-rectangles, as well as the black lines, remain in $B_3$.
+rectangles, as well as the black lines, remain in $B_3$. This is the output of
+the first phase.
 
 \subsubsection{Detection and recognition of rectangles} \label{rectangles}
 
@@ -418,19 +417,18 @@ blue or yellow.
 
 \section{Implementation} \label{implementation}
 
-In this section, I want to present our implementation of the above-described
-concept. We are going to show how the software is structured
-(\ref{structure}), discuss challenges in performance (\ref{performance}) and
-explain how parameters were chosen (\ref{parameter}).
+This section describes implementation of the above-described concept. First
+thehow structure of the software is presented (\ref{structure}), then challenges
+in performance are discussed (\ref{performance}) and finally the choosing of the
+parameters (\ref{parameter}) is explained.
 
-The algorithm was implemented in Python 3.7 using the \textit{OpenCV} and
-\textit{NumPy} libraries. OpenCV provided the different image processing methods
-described in \ref{used} as well as other methods for reading, writing and
-manipulating image files. NumPy, which is part of the SciPy package, is a
+% TODO: Missing, Line Detection, Iterative Approach
+
+The algorithm was implemented in Python 3.7 using the \textit{OpenCV 3.4.1} and
+\textit{NumPy 1.15.2} libraries. OpenCV provided the different image processing
+methods described in \ref{used} as well as other methods for reading, writing
+and manipulating image files. NumPy, which is part of the SciPy package, is a
 package for scientific numerical computing \cite{scipy}.
-% Images in OpenCV are represented as three-dimensional NumPy arrays. The first
-% two dimensions of this array encode the positions of pixels in the image, while
-% the third dimension encodes the three color values.
 
 \subsection{Structure} \label{structure}
 
@@ -612,14 +610,14 @@ achieved time was sufficient.
 
 \subsubsection{Evaluation of Tools}
 
-Reflecting about the used tools, I would definitely choose OpenCV again. It
+Reflecting about the used tools, OpenCV would certainly be chosen again. It
 supports a variety of established computer vision algorithms, is well documented
 and has a variety of learning resources. Since OpenCV primarily supports C++ and
 Python interfaces, the programming language choice was one of these options.
 While using the compiled language C++ could have increased performance over the
-interpreted Python, it would also have decreased productivity.
-Python's readibility and user-friendly data-structures made it a good choise for
-an iterative development.
+interpreted Python, it would also have decreased productivity. Python's
+readibility and user-friendly data-structures made it a good choise for an
+iterative development.
 
 % !TeX encoding = UTF-8
 \section{Results} \label{results}
@@ -633,7 +631,7 @@ Some explorative analysis about the use of color (\ref{color}) and ratios
 
 \subsection{Colors} \label{color}
 
-On average Mondrian paintings consist of 79.7\%  and non-colors (black, white)
+On average Mondrian paintings consist of 79.7\% non-colors (black, white) and
 20.3\% colors (red, blue, yellow) ($\sigma = 17.0\%$), see Figure
 \ref{fig:colors-noncolors}. The median percentage of each color appears to be
 rather similar, the distribution of red however is more widespread as you can
@@ -647,7 +645,7 @@ see in Figure \ref{fig:colors-rby}.
 
 \begin{figure} \includegraphics[width=\linewidth]{images/colors-rby.png}
 \caption{Median proportion of the colors are very similar, red however has a
-more wide distribution} \label{fig:colors-rby} \end{figure}
+wider distribution} \label{fig:colors-rby} \end{figure}
 
 To see if different colors of rectangles have overall preferred positions in the
 compositions, we assembled a dataset of all rectangles and their respective
@@ -655,9 +653,11 @@ positions, width and colors. We calculated the centers of all of these
 rectangles and plotted them by color. We also visualized the estimated
 probability density function of the positions using Kernel density estimation
 with an Gaussian kernel selected by Scott's method \cite{Terrell1992}. The
-result is given in Figure \ref{fig:kde}. The first thing you notice is that the
+result is given in Figure \ref{fig:kde}. The first thing noticable is that the
 color red appears to have a substantial bias to the top-left corner. Similarly
-blue has a slighter bias to the bottom-right corner.
+blue has a bias to the bottom-right corner, but is comparatively more evenly
+spread.
+
 
 \begin{figure}
 \includegraphics[width=\linewidth]{images/kernel-densities.png}
