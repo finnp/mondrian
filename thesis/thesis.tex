@@ -203,8 +203,8 @@ further reading can be found in Aguardo (2012) \cite{Aguardo2012}.
 Given a binary image $B$ and a smaller binary image $B_s$ called the
 \textit{Structuring Element}, with a dedicated center point $c \in B_s$, two
 basic operations can be applied: Erosion and Dilation. Figure \ref{fig:morphology}
-illustrates the two operations on a 150x150 pixel example image with a
-a Structuring Element of 10x10.
+illustrates the two operations on a $150 \times 150$ pixel example image with a
+a Structuring Element of $10 \times 10$.
 
 \begin{figure}
 \centering
@@ -300,17 +300,17 @@ These operations will be helpful in manipulating the image data.
 \subsection{Concept} \label{concept}
 
 The aim for the detection algorithm is to take a cropped Mondrian painting as
-an input and detect all the rectangle and their colors in it.
+an input and detect all the rectangles and their colors in it.
 
-The input is an RGB Image $I_1$ of a Mondrian painting. The expected output is a
+The input is a RGB Image $I_1$ of a Mondrian painting. The expected output is a
 list of rectangles with their position, size and color as they are
 compositionally seen in the painting. All rectangles combined are expected to
-completely dissect the original into. The thick black lines in the paintings are
+completely dissect the original image. The thick black lines in the paintings are
 seen as one-dimensional line segments that are positioned in the middle of the
 lines in the painting.
 
 The algorithm itself can be separated into two different phases: Image
-preprocessing (\ref{preprocessing}) and the recognition of rectangles (\ref{rectangles}).
+preprocessing (\ref{preprocessing}) and recognition of rectangles (\ref{rectangles}).
 
 The goal of the first preprocessing phase is to obtain a binary image in which
 black represents the lines of the painting while white represents the inner area
@@ -343,7 +343,7 @@ G_1 = \{p_{xy} \in \{0,\ldots,255\} \mid (r_{xy},g_{xy},b_{xy})\in I_2\text{ and
 \end{equation}
 
 To normalize the brightness distribution of $G_1$ and increase the contrast of
-the darker regions, we now apply histogram equalization to $G_1$. For this we
+the darker regions, histogram equalization is applied to $G_1$. For this we
 use \textit{Contrast Limited Adaptive Histogram Equalization (CLAHE)}. In
 contrast to non-adaptive and ordinary adaptive histogram equalization
 algorithms, this method prevents the overamplification of noise as reasoned
@@ -378,8 +378,8 @@ size $N$ needs to be chosen carefully.
 
 The resulting image $B_2$ now separates the darker parts of the image fairly
 well. But the goal is to detect black lines and Mondrian paintings also include
-filled black rectangles. To remove these black rectangles, we create a mask that
-applies a Dilation $B_m = B_2 \oplus B_d$ with a larger Structuring Element
+filled black rectangles. To remove these black rectangles, a mask is created
+that applies a Dilation $B_m = B_2 \oplus B_d$ with a larger Structuring Element
 $B_d$ ($M\times M$) compared to $B_e$ on the image. The size of $B_d$ is chosen
 so most of the lines in the paintings are removed, only leaving inner areas of
 black rectangles. The inverse of the resulting mask $B_m$ is then removed from
@@ -407,8 +407,8 @@ horizontal lines, the resulting line will have the average $y$ value of all
 those lines and the minimum and maximum $x$ values as starting and end points.
 
 From the conceptional view used in this thesis, the ends of lines always touch
-another line or the edge of the painting. However, the lines that we reduced now
-might overlap slightly or not even connect to the next line.
+another line or the edge of the painting. However, the remaining lines now might
+overlap slightly or not even connect to the next line.
 
 Now the two ends of every horizontal line $h \in H$ are considered. For each end
 $e = (x_e,y_e)$ find the closest vertical line $v \in V$ that could touch $e$ by
@@ -434,35 +434,16 @@ $(x,y,x_r-x,y_b-y)$.
 
 The colors are determined for each rectangle in the list. For this purpose, the
 rectangle is clipped from the original image $I_1$ and the average color of the
-selection is calcualted. This color is then reduced to either black, white, red,
+selection is calculated. This color is then reduced to either black, white, red,
 blue or yellow.
 
-\section{Implementation} \label{implementation}
-
-This section describes implementation and development of the above-described
-concept. First the structure of the software is presented (\ref{structure}),
-then challenges in performance (\ref{performance}) and line detection
-(\ref{linedetection}) are discussed. Finally the iterative development approach
-(\ref{iterative}) and the related choosing of the parameters (\ref{parameter})
-is explained.
-
-The program was implemented with a command line interface in \textit{Python 3.7}
-using the \textit{OpenCV 3.4.1} and \textit{NumPy 1.15.2} libraries. OpenCV
-provides the different image processing methods described in \ref{used} as well
-as other methods for reading, writing and manipulating image files. NumPy, which
-is part of the SciPy package, is a package for scientific numerical computing
-\cite{scipy}.
-
-\subsection{Structure} \label{structure}
-
 \begin{lstlisting}[otherkeywords={function,input\:,output\:},label=lst:program,caption=Flow and structure of the program]
-input:
-  directory d,
-  threshold t,
-  erosion kernel size N,
-  dilation kernel size M,
-  minimum line length l,
-  maximum line width d,
+input: directory d,
+    threshold t,
+    erosion kernel size N,
+    dilation kernel size M,
+    minimum line length l,
+    maximum line width d,
 
 for every file f in d,
   read original image from file f
@@ -506,6 +487,24 @@ function detect_rectangles
   return rects_with_color
 \end{lstlisting}
 
+\section{Implementation} \label{implementation}
+
+This section describes implementation and development of the above-described
+concept. First the structure of the software is presented (\ref{structure}),
+then challenges in line detection (\ref{linedetection}) and performance
+(\ref{performance}) are discussed. Also the iterative development approach
+(\ref{iterative}) and the related choosing of the parameters (\ref{parameter})
+is explained. Lastly the used tools are evaluated (\ref{evaluation}).
+
+The program was implemented with a command line interface in \textit{Python 3.7}
+using the \textit{OpenCV 3.4.1} and \textit{NumPy 1.15.2} libraries. OpenCV
+provides the different image processing methods described in \ref{used} as well
+as other methods for reading, writing and manipulating image files. NumPy, which
+is part of the SciPy package, is a package for scientific numerical computing
+\cite{scipy}.
+
+\subsection{Structure} \label{structure}
+
 The structure of the main algorithm could be closely modeled after the concept.
 The separation between preprocessing (\ref{preprocessing}) and detection of the
 rectangles (\ref{rectangles}) is also reasonable in the implementation.
@@ -520,7 +519,7 @@ was chosen, since it is a widespread flexible data-interchange format that is
 also human-readable. An example for such a \textit{JSON} file can be seen in
 Figure \ref{fig:json}.
 
-\begin{figure}
+\begin{figure}[b]
 \begin{minipage}{0.2\textwidth}
   \includegraphics[width=\linewidth]{images/B244.jpg}
 \end{minipage}
@@ -550,15 +549,15 @@ It finds rectangles from a list of top-left, bottom-left and top-right
 positions. The length of each of these lists is the same and is expected to be
 the number of rectangles. The program first sorts the top-right corners by their
 x position and the bottom-left corners by their y position. When iterating
-through the top-left corners, we know that their x position is going to be the
-same as the matching bottom-left corner, but with a larger y-coordinate. So we
-only select these candidates from the \texttt{b\_l} list using an iterator
-expression. Since we ordered the corners before from top to bottom, we know the
-matching corner is going to be the first returned by the iterator. We therefore
-only call the iterator once with \texttt{next}. The same logic is applied to
-bottom-left corners. Using the coordinates of the matching top-right and
-bottom-left corners, the rectangle is calculated and added to a list of
-rectangles as a tuple. That list is then returned by the function.
+through the top-left corners, their x position are going to be the same as the
+matching bottom-left corner, but with a larger y-coordinate. So only these
+candidates are selected from the \texttt{b\_l} list using an iterator
+expression. Since the cornersare ordered from top to bottom, the matching corner
+is going to be the first returned by the iterator. Therefore the iterator is
+only called once with \texttt{next}. The same logic is applied to bottom-left
+corners. Using the coordinates of the matching top-right and bottom-left
+corners, the rectangle is calculated and added to a list of rectangles as a
+tuple. That list is then returned by the function.
 
 \begin{minipage}{\linewidth}
 \begin{lstlisting}[otherkeywords=def,label=lst:findrectangles,caption=Function for constructing rectangles from corners]
@@ -598,6 +597,29 @@ should be slightly larger than the maximum width of the lines in the image.
 Vertical lines $V$ are recognized respectively by iterating through the lines
 from left to right.
 
+\subsection{Performance} \label{performance}
+
+The performance of the algorithm was measured by timing the duration for each
+image. The first implementation of the algorithm took about 1100 milliseconds per
+iteration. By running timings on different parts of the processing, the
+\texttt{detect\_lines} function was discovered as a bottleneck. It was
+accountable for about 93 percent of the processing time.
+
+This was the only place in the program were an iteration through all of the
+pixels in the image took place using Python. All other operations were done
+using OpenCV or NumPy. They also iterate through all of the pixels but using
+optimized C code.
+
+To reduce the time of this step this function was reimplemented in a compiled,
+more low-level language. Rust was chosen using the \textit{rust-cpython} library
+for bindings. Using the same algorithm implemented in Rust, the time of this
+step was reduced from about 1020 to 40 milliseconds. The runtime of the program
+could be reduced by a factor of 13.
+
+This time could have been be further reduced by running multiple parallel
+iterations over the different rows or colums. However for this purpose the
+achieved time was sufficient.
+
 \subsection{Iterative approach} \label{iterative}
 
 When developing the program, the different processing steps of the algorithm
@@ -636,30 +658,7 @@ of the erosion kernel $N$ as well as the dilation kernel $M$ were changed to
 maximize the number of recognized images from that set. The resulting parameters
 were $l = 60$, $d = 70$, $N=11$ and $M =40$.
 
-
-\subsection{Performance} \label{performance}
-
-The performance of the algorithm was measured by timing the duration for each
-image. The first implementation of the algorithm took about 1100 milliseconds per
-iteration. By running timings on different parts of the processing, the
-\texttt{detect\_lines} function was discovered as a bottleneck. It was
-accountable for about 93 percent of the processing time.
-
-This was the only place in the program were we iterated through all of the pixels
-in the image using Python. All other operations were done using OpenCV or NumPy.
-They also iterate through all of the pixels but using optimized C code.
-
-To reduce the time of this step this function was reimplemented in a compiled,
-more low-level language. Rust was chosen using the \textit{rust-cpython} library
-for bindings. Using the same algorithm implemented in Rust, the time of this
-step was reduced from about 1020 to 40 milliseconds. The runtime of the program
-could be reduced by a factor of 13.
-
-This time could have been be further reduced by running multiple parallel
-iterations over the different rows or colums. However for this purpose the
-achieved time was sufficient.
-
-\subsubsection{Evaluation of Tools}
+\subsection{Evaluation of Tools} \label{evaluation}
 
 Reflecting about the used tools, OpenCV would certainly be chosen again. It
 supports a variety of established computer vision algorithms, is well documented
@@ -689,14 +688,22 @@ be rather similar, the distribution of red is more widespread as can be seen in
 Figure \ref{fig:colors-rby}.
 
 \begin{figure}
-\includegraphics[width=\linewidth]{images/colors-non-colors.png}
-\caption{Evident preference of non-colors in the paintings}
-\label{fig:colors-noncolors}
+\centering
+\begin{subfigure}{.5\textwidth}
+  \includegraphics[width=\linewidth]{images/colors-non-colors.png}
+  \caption{ }
+  \label{fig:colors-noncolors}
+\end{subfigure}%
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[width=\linewidth]{images/colors-rby.png}
+  \caption{ }
+  \label{fig:colors-rby}
+\end{subfigure}
+\caption{The preference for non-colors in the paintings is evident in (a).
+The Median proportion of the colors in (b) are very similar, but red has a
+wider distribution.}
 \end{figure}
-
-\begin{figure} \includegraphics[width=\linewidth]{images/colors-rby.png}
-\caption{Median proportion of the colors are very similar, but red has a
-wider distribution} \label{fig:colors-rby} \end{figure}
 
 To see if different colors of rectangles have overall preferred positions in the
 compositions, a dataset of all rectangles and their respective positions, width
@@ -717,10 +724,10 @@ bias to the bottom-right corner, but is comparatively more evenly spread.
 
 \subsection{Ratios} \label{ratios}
 
-For all rectangles we calculated the aspect ratio of the longer to the shorter
-side. Figure \ref{fig:aspect-rects} shows the estimated probability density of
-the ratios in Mondrians rectangles compared to the ratio of a set of 10000
-random rectangles. Figure \ref{fig:longer-x-shorter} shows all rectangles
+For all rectangles the aspect ratio of the longer to the shorter side was
+calculated. Figure \ref{fig:aspect-rects} shows the estimated probability
+density of the ratios in Mondrians rectangles compared to the ratio of a set of
+10000 random rectangles. Figure \ref{fig:longer-x-shorter} shows all rectangles
 plotted by their sides, as well as lines for certain proposed ratios. The data
 does not show peaks for the golden or silver ratio. This supports the rejection
 by Livio (2002) \cite{Livio2002} and Markowsky (1992) \cite{Markowsky1992} of
@@ -750,7 +757,7 @@ the dataset of all chosen images 76\% of the images could be detected without
 manual intervention.
 
 A first look at the resulting data showed some interesting findings that deserves
-further investigation. The dataset that we obtained from the images will be made
+further investigation. The dataset that was obtained from the images will be made
 freely available for other applications, from statistical analysis to machine
 learning.
 
