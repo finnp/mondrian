@@ -416,10 +416,12 @@ blue or yellow.
 
 \section{Implementation} \label{implementation}
 
-This section describes implementation of the above-described concept. First
-the structure of the software is presented (\ref{structure}), then challenges
-in performance are discussed (\ref{performance}) and finally the choosing of the
-parameters (\ref{parameter}) is explained.
+This section describes implementation and development of the above-described
+concept. First the structure of the software is presented (\ref{structure}),
+then challenges in performance (\ref{performance}) and line detection
+(\ref{linedetection}) are discussed. Finally the iterative development approach
+(\ref{iterative}) and the related choosing of the parameters (\ref{parameter})
+is explained.
 
 The algorithm was implemented in Python 3.7 using the \textit{OpenCV 3.4.1} and
 \textit{NumPy 1.15.2} libraries. OpenCV provides the different image processing
@@ -480,12 +482,19 @@ function detect_rectangles
   return rects_with_color
 \end{lstlisting}
 
+The structure of the main algorithm could be closely modeled after the concept.
+The separation between preprocessing (\ref{preprocessing}) and detection of the
+rectangles (\ref{rectangles}) is also reasonable in the implementation.
+
 The program sketched out in Listing \ref{lst:program} takes a directory and the
-different parameters as an input. The main algorithm is implemented in two
-functions \texttt{preprocessing} and \texttt{detect\_rectangles}. The program
-reads the list of images from the input directory and feeds them into
-\texttt{preprocessing} to get a binary image. That binary images is then
-analyzed by \texttt{detect\_rectangles} to get a list of rectangles.
+different parameters as input. The output of the main algorithm is a list of
+rectangles and their respective dimensions, colors and positions. An image is
+created from the resulting data and overlaid over the original image and saved
+to disk. This can be used to validate the result of the algorithm. The data from
+the rectangles is encoded in a \textit{JSON} file for each image. \textit{JSON}
+was chosen, since it is a widespread flexible data-interchange format that is
+also human-readable. An example for such a \textit{JSON} file can be seen in
+Figure \ref{fig:json}.
 
 \begin{figure}
 \begin{minipage}{0.2\textwidth}
@@ -511,40 +520,21 @@ analyzed by \texttt{detect\_rectangles} to get a list of rectangles.
 \label{fig:json}
 \end{figure}
 
-Then the result of \texttt{preprocessing(image)} is used as the input for
-\texttt{detect\_rectangles}. This function executes the steps described in
-\ref{rectangles}. The result is a list of rectangles and their respective
-dimensions, colors and positions. An image is created from the resulting data
-and overlaid over the original image and saved to disk. This can be used to
-validate the result of the algorithm. The data from the rectangles is encoded in
-a \textit{JSON} file for each image. \textit{JSON} was chosen, since it is a
-widespread flexible data-interchange format that is also human-readable. An
-example for such a \textit{JSON} file can be seen in Figure \ref{fig:json}.
-
-% At first \texttt{detect\_rectangles} uses \texttt{detect\_lines} to extract a
-% list of all vertical and horizontal pixel lines from the preprocessed image.
-% Then \texttt{reduce\_lines} combines parallel lines that are next to each other
-% into a single line. It iterates through the items in the list and looks for
-% neighbouring lines by iterating in another nested loop through the same list. If
-% a matching line is found, the line is removed from the list, so that it will not
-% appear in the iteration again. The loose ends of the lines are then connected by
-% \texttt{connect\_lines}.
-
 As an example, Listing \ref{lst:findrectangles} shows the source code of the
-function \texttt{find\_rectangles}, which finds rectangles from a list of
-top-left, bottom-left and top-right positions. The length of each of these lists
-is the same and is expected to be the number of rectangles. The program first
-sorts the top-right corners by their x position and the bottom-left corners by
-their y position. When iterating through the top-left corners, we know that
-their x position is going to be the same as the matching bottom-left corner
-\texttt{bl}, but a larger y-coordinate. So we only select these candidates from
-the \texttt{bottom\_left} list using an iterator expression. Since we ordered
-the corners before from top to bottom, we know the matching corner is going to
-be the first returned by the iterator. We therefore only call the iterator once
-with \texttt{next}. The same logic is applied to bottom-left corners. Using the
-coordinates of the matching top-right and bottom-left corners, the rectangle is
-calculated and added to a list of rectangles as a tuple. That list is then
-returned by the function.
+function \texttt{find\_rectangles}, a subroutine of \texttt{detect\_rectangles}.
+It finds rectangles from a list of top-left, bottom-left and top-right
+positions. The length of each of these lists is the same and is expected to be
+the number of rectangles. The program first sorts the top-right corners by their
+x position and the bottom-left corners by their y position. When iterating
+through the top-left corners, we know that their x position is going to be the
+same as the matching bottom-left corner, but with a larger y-coordinate. So we
+only select these candidates from the \texttt{b\_l} list using an iterator
+expression. Since we ordered the corners before from top to bottom, we know the
+matching corner is going to be the first returned by the iterator. We therefore
+only call the iterator once with \texttt{next}. The same logic is applied to
+bottom-left corners. Using the coordinates of the matching top-right and
+bottom-left corners, the rectangle is calculated and added to a list of
+rectangles as a tuple. That list is then returned by the function.
 
 \begin{minipage}{\linewidth}
 \begin{lstlisting}[otherkeywords=def,label=lst:findrectangles,caption=Function for constructing rectangles from corners]
@@ -562,7 +552,7 @@ def find_rectangles(t_l, b_l, t_r):
 \end{lstlisting}
 \end{minipage}
 
-\subsection{Line Detection}
+\subsection{Line Detection} \label{linedetection}
 
 Using a custom algorithm for the line detection was not the first choice. First
 a commong technique, the Hough Transform, was used. Hough Transforms rotate a
@@ -584,13 +574,13 @@ should be slightly larger than the maximum width of the lines in the image.
 Vertical lines $V$ are recognized respectively by iterating through the lines
 from left to right.
 
-\subsection{Iterative approach}
+\subsection{Iterative approach} \label{iterative}
 
-The different processing steps of the algorithm are visualized by providing
-multiple output images for each input image. These images allow an inspection of
-the different intermediary results created in the process. Additionally, an image
-was created superimposing the detected rectangle over the input image. This was
-mainly used review the correctness of the result.
+When developing the program, the different processing steps of the algorithm
+were visualized by providing multiple output images for each input image. These
+images allow an inspection of the different intermediary results created in the
+process. Together with the superimposed output image, these could be used to
+review the correctness of the algorithm.
 
 This visual feedback gave insights into problems of the algorithm like small
 bugs or conceptional problems. For example, the preprocessing step to increase
