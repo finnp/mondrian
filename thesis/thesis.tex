@@ -196,21 +196,44 @@ Python distribution of the Open Source library OpenCV \cite{opencv_library}.
 
 Image Morphology is based on Mathematical Morphology from the mathematical field
 of set theory. For the purpose of this algorithm two basic morphological
-operators are used. They are going to be explained descriptively here, without
+operators are used. They are going to be explained briefly here, without
 going into detail of their mathematical definition. A more formal definition and
 further reading can be found in Aguardo (2012) \cite{Aguardo2012}.
 
 Given a binary image $B$ and a smaller binary image $B_s$ called the
 \textit{Structuring Element}, with a dedicated center point $c \in B_s$, two
-basic operations can be applied: Erosion and Dilation.
+basic operations can be applied: Erosion and Dilation. Figure \ref{fig:morphology}
+illustrates the two operations on a 150x150 pixel example image with a
+a Structuring Element of 10x10.
 
-and turning them black if not all of the points of $B_s$
-translated by its center point $c \in B_s$ are also white in $B$.
+\begin{figure}
+\centering
+\begin{subfigure}{.3\textwidth}
+  \centering
+  \includegraphics[width=\linewidth]{images/example.jpg}
+  \caption{Input}
+  \label{fig:input}
+\end{subfigure}%
+\begin{subfigure}{.3\textwidth}
+  \centering
+  \includegraphics[width=\linewidth]{images/example-erode.jpg}
+  \caption{Erosion}
+  \label{fig:erosion}
+\end{subfigure}
+\begin{subfigure}{.3\textwidth}
+  \centering
+  \includegraphics[width=\linewidth]{images/example-dilate.jpg}
+  \caption{Dilation}
+  \label{fig:dilation}
+\end{subfigure}
+\caption{Demonstration of the Erosion and Dilation operation on an example input image}
+\label{fig:morphology}
+\end{figure}
 
 \textit{Erosion} $B \ominus B_s$ is equivalent to going through all of the white
 pixels of $B$ and translate $B_s$ by its center point $c \in B_s$ to the pixel's
 position. The pixel is only kept white, if all of the translated points of $B_s$
-correspont to white pixels in the image. Otherwise the pixel is turned black. Therefore
+correspond to white pixels in the image. Otherwise the pixel is turned black. Therefore
 the white areas in $B$ are reduced. \cite{Smith1997}
 
 Similarly the \textit{Dilation} operation  $B \oplus B_s$ translates the center
@@ -226,8 +249,8 @@ as for separating black areas that are bigger than typical lines.
 \subsubsection{Thresholding}
 
 Thresholding $T(G) = \{t_{xy}\ \in \{0,1\} | g_{xy} \in G\}$ is a process for turning a greyscale image $G$
-with pixels $g_{xy}$ into a binary image $B$ using a threshold $t \in
-0,1,\dots255$. Each pixel $t_{xy}$ is assigned a black or white value given
+with pixels $g_{xy}$ into a binary image $B$ using a threshold $t \in \{
+0,1,\dots255\}$. Each pixel $t_{xy}$ is assigned a black or white value given
 whether it is below or above the threshold.
 
 \begin{equation}
@@ -263,7 +286,7 @@ histogram. \cite{Pizer1987}
 
 \subsubsection{Masks}
 
-Mask operations are similar to elementary arithmetics. Each pixel $a_{xy}$ in
+Mask operations are related to elementary arithmetics. Each pixel $a_{xy}$ in
 one image  $X_a$ is added, substracted, multiplied or divided with $b_{by}$ of
 another image $X_b$. For example the operation $X_a + X_b$ denotes the set
 $$X_a + X_b = \{\mathrm{min}(255, p_{xy} + q_{xy}) | p_{xy} \in X_a, q_{xy} \in X_b\}$$
