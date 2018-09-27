@@ -188,6 +188,9 @@ for color in colors:
 
 g = sns.FacetGrid(df, col="color",legend_out=True,xlim=(0,1),ylim=(0,1),col_wrap=2)
 g.map(sns.kdeplot, "center_x_norm", "center_y_norm",shade=True,cbar=False,vmin=0,vmax=2.25)
+g.map(plt.scatter, "center_x_norm", "center_y_norm",marker='x',color='white',alpha=0.7)
+# cbar_ax = g.fig.add_axes([1.015,0.13, 0.015, 0.8])
+# plt.colorbar(cbar_ax)
 plt.gca().invert_yaxis()
 plt.savefig(out_dir + '/kernel-densities.png')
 plt.close()
