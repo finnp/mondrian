@@ -1,17 +1,9 @@
 % !TeX encoding = UTF-f
 
-%===============================================================================
-% Font options are:
-%   plain (default), serif (uses Palladio), sans-serif (uses Paratype Sans)
-% Layout options are:
-%   article (default, no chapters), book (for longer texts, offers \chapter)
-% Paragraph options are:
-%   noparskip (default, no spacing between paragraphs), parskip (spaced)
 \documentclass[serif,article,noparskip]{agse-thesis}
 \usepackage{amsmath}
 \usepackage{subcaption}
 
-% Global parameters, replace with actual values.
 \newcommand{\thesisTitle}{The Rhythm of Relations of Color and Size: Detecting
 Rectangles in Paintings created by Piet Mondrian}
 % -> You may use \par (but not \\) to format the title. If you do so, you'll
@@ -36,13 +28,13 @@ Rectangles in Paintings created by Piet Mondrian}
    %title/size=\LARGE,      % set this value to overwrite automatic font size
    % abstract/separate       % toggle this to move the abstract to its own page
 ] { The arrangement of compositional elements in abstract paintings by Piet
-Mondrian have been of interest by researchers for a long time. Despite this
-interest there are no publications examining these paintings numerically on a
-broad pool of data. This thesis tries to change this by describing an algorithm
-for detecting rectangles in Mondrian's compositions from 1920 to 1937. It also
-provides a descriptive analysis of the resulting data. While there are no hints
-that Mondrian used specific aspect ratios, a bias for positioning colors could
-be revealed.}
+Mondrian have been of interest to researchers for a long time. Despite this
+interest there are no publications examining these paintings numerically across
+a broad pool of data. This thesis tries to change this lack of data by
+describing an algorithm for detecting rectangles in Mondrian's compositions from
+1920 to 1937. It also provides a descriptive analysis of the resulting data.
+While there are no hints that Mondrian used specific aspect ratios, a bias for
+positioning colors could be revealed.}
 
 \include{declaration}
 
@@ -83,34 +75,34 @@ be revealed.}
 \subsection{Piet Mondrian}
 
 The oeuvre of Piet Mondrian (1872-1944) consists of figurative paintings as well
-as abstract compositions. Up until 1910 his works only depicted naturalistic
+as abstract compositions. Up until 1910, his works only depicted naturalistic
 scenes like churches, trees, windmills or landscapes. From 1911 onwards his
 paintings remain representational but are increasingly painted in a more
 abstract way.
 
-Around 1914 his compositions begin to be purely abstract and in 1917 he cofounds
-the artistic movement and group \textit{De Stijl} also known as
+Around 1914, his compositions begin to be purely abstract and in 1917 he cofounds
+the artistic movement and group \textit{De Stijl}, also known as
 \textit{Neoplasticism}. One of the primary objectives of the group is to reform
 art by "abolishing natural form" \cite{wiki:manifest} altogether.
 
-At some point around 1920 Mondrian further restricted his compositional elements
-to rectangles and straight black lines. The lines were only allowed to run
-horizontally or vertically. Only primary colors (red, blue and yellow) and
-non-colors (black, white and grey) were allowed to be used. See Figure
-\ref{fig:mondrian} for examples of Mondrian paintings with these elements.
+At some point around 1920, Mondrian further restricted his compositional
+elements to rectangles and straight black lines. He only allowed lines to run
+horizontally or vertically and only used primary colors (red, blue and yellow)
+and non-colors (black, white and grey). See Figure \ref{fig:mondrian} for
+examples of Mondrian paintings with these elements.
 
 Another founding member of \textit{De Stijl}, Georges Vantongerloo, used methods
-inspired from mathematics for his compositions. One example of this is his
-painting \textit{Composition Derived from the Equation y = -ax2 + bx + 18}.
+inspired by mathematics for his compositions. One example of these paintings is
+\textit{Composition Derived from the Equation y = -ax2 + bx + 18}.
 
 Mondrian on the other hand is known to only use intuition when creating his
-works, moving compositional elements for weeks, seeking a balanced composition,
-until he was satisfied with the result.
+works, moving compositional elements around for weeks, seeking a balanced
+composition, until he was satisfied with the result.
 
 Still many people have been interested in the question if Mondrian's
 non-figurative paintings utilize certain compositional rules or techniques that
-the painter might have used unconsciously. One approach that only became
-feasible in the 1960s is to recreate art that resembles Mondrian's composition
+the painter might have used unconsciously. One approach to finding structure in
+Mondrian's paintings is to create art that resembles his compositions
 using computers.
 
 \subsection{Related Works}
@@ -119,7 +111,7 @@ There have been multiple attempts at creating art that resembles Mondrian's
 compositions using computers. Feijs (2004) \cite{Feijs2004} presents different
 techniques for generating images resembling non-figurative Mondrian paintings
 from different periods. He concludes that different kinds of algorithms for
-generating images can be used to formalise the distinction between different
+generating images can be used to formalize the distinction between different
 types of Mondrian paintings.
 
 Skrodzki and Polthier (2018) \cite{Skrodzki2018} use computer models to generate
@@ -128,39 +120,28 @@ note however that while their results are similar to Mondrian paintings, they do
 not always resemble Mondrian paintings since proportions are chosen randomly and
 not deliberately.
 
-There have been attempts to study the organisation and proportions of the
-compositional elements used by Mondrian. In 1968 Hill \cite{Hill1968} analysed
-the network topology of Mondrian's paintings. One of his findings shows the
-avoidance of symmetry on a structural level. He also criticised earlier work for
-inaccuracy of measurement and the lack of statistics and called for a more
-substantiated analysis of the paintings.
+In 1968 \cite{Hill1948} tied to study the orgnization of the compositional
+elements used by Mondrian. He analyzed the network topology of Mondrian's
+paintings. One of his findings shows the avoidance of symmetry on a structural
+level. He also criticized earlier work for inaccuracy of measurement and the
+lack of statistics and called for a more substantiated analysis of the
+paintings.
 
 Some sources \cite{bouleau1963,bergamini1980} suggest that Mondrian used golden
 rectangles in his paintings. A golden rectangle is rectangle, where the ratio
 between the sides length is the golden ratio $\phi \approx 1.618$. Other authors
-however \cite{Livio2002,Markowsky1992} refuse those claims, finding fault with
-the lack of evidence, which consists mostly just of exemplary superimposing
-golden rectangles on paintings.
+however \cite{Livio2002,Markowsky1992} refute those claims, finding fault with
+the lack of evidence, which consists of mostly exemplary superimposing golden
+rectangles on paintings. Despite this disagreement there have been very few
+attempts to actually evaluating this question statistically. In a poster from
+2017, Tanaka and Miyanaga \cite{Tanaka2017} examine the use of rectangle ratios,
+specifically the golden and silver ratio, in 10 late Mondrian paintings. They
+conclude that Mondrian actually had a preference for the silver ratio $\delta_S
+\approx 2.414$ instead.
 
-Despite this disagreement there have been very little attempts on actually
-evaluating this question statistically. In a poster from 2017, Tanaka and
-Miyanaga \cite{Tanaka2017} examine the use of rectangle ratios, specifically the
-golden and silver ratio, in 10 late Mondrian paintings. They conclude that
-Mondrian actually had a preference for the silver ratio $\delta_S \approx 2.414$ instead.
-
-However to the authors knowledge there is no publication examining the question of
+However to the author's knowledge there is no publication examining the question of
 the use of certain special ratios on Mondrian's paintings with a larger data
 set.
-
-% TODO: Could also be in discussion?
-% More motivational, could be easier done with our program
-% http://faculty.philosophy.umd.edu/jhbrown/mondriansbalance/index.html#19
-% "The lesson is that we must exploit digital technology to the full and set Mondrian's
-% designs into the relevant space of possibilities if we are ever to put judgments
-% of aesthetic balance on a firm footing – which at present they are clearly not."
-% "Such findings also suggest that we can put the formalist sector of aesthetic
-% response on a firm footing only by much more extensive and rigorous
-% experimentation with transforms of existing designs"
 
 \subsection{Scope of the Thesis}
 
@@ -171,11 +152,11 @@ compositional elements from images of the paintings. The program is restricted
 to paintings from 1920 to 1937, which all use black lines to separate rectangles.
 
 There are 178 works listed in the \textit{Catalogue Raisonn{\'e}}
-\cite{joosten1998} of Mondrian for that time period. Of these works 150 were
+\cite{joosten1998} of Mondrian for that time period. Of these works, 150 were
 paintings while the other 28 were sketches, unfinished works or plastic art. For
 12 paintings, Mondrian used a tilted canvas, often referred to as
 \textit{Diamond Compositions}. For the sake of simplicity these paintings were
-excluded as well. Additionally 20 paintings in this source had either only a
+excluded as well. Additionally 20 paintings in the catalogue had either only a
 greyscale image or no image available at all. These paintings were excluded as
 well. The remaining 118 images were selected for the algorithm. They were
 scanned and subsequently cropped so that only the painting and no frame was
@@ -189,7 +170,7 @@ thickness, so that they can be represented solely by their start and endpoints.
 \section{Fundamentals} \label{fundamentals}
 
 In this section I will specify the different definitions used for
-conceptionalizing the program (\ref{definitions}). I am going to present
+conceptualizing the program (\ref{definitions}). I am going to present
 different existing methods and algorithms that were used (\ref{used}). Lastly I
 am going to outline the concept for detecting the structure of rectangles in
 Mondrians abstract paintings (\ref{concept}).
@@ -202,7 +183,7 @@ is an Image with the following  $p_{xy}$: $$p_{xy} = (r_{xy}, g_{xy}, b_{xy})
 \in \{0,1,...,255\} \times \{0,1,...,255\} \times\{0,1,...,255\}$$ A Greyscale
 image is an Image with $p_{xy} \in \{0,1, \dots 255\}$ and a Binary Image $B$ is
 an Image with $p_{xy} \in \{0,1\}$, where we also refer to $0$ as \textit{black}
-and $1$ as \textit{white}
+and $1$ as \textit{white}.
 
 \subsection{Used Algorithms and Methods} \label{used}
 
@@ -223,20 +204,24 @@ Given a binary image $B$ and a smaller binary image $B_s$ called the
 \textit{Structuring Element}, with a dedicated center point $c \in B_s$, two
 basic operations can be applied: Erosion and Dilation.
 
-\textit{Erosion} $B \ominus B_s$ is equivalent to iterating through all of the white
-pixels of $B$ and turning them black if not all of the points of $B_s$
-translated by its center point $c \in B_s$ are also white in $B$. Therefore the
-white areas in $B$ are reduced. \cite{Smith1997}
+and turning them black if not all of the points of $B_s$
+translated by its center point $c \in B_s$ are also white in $B$.
+
+\textit{Erosion} $B \ominus B_s$ is equivalent to going through all of the white
+pixels of $B$ and translate $B_s$ by its center point $c \in B_s$ to the pixel's
+position. The pixel is only kept white, if all of the translated points of $B_s$
+correspont to white pixels in the image. Otherwise the pixel is turned black. Therefore
+the white areas in $B$ are reduced. \cite{Smith1997}
 
 Similarly the \textit{Dilation} operation  $B \oplus B_s$ translates the center
 point of the Structuring Element to every pixel $p \in B$. For each of these
-pixels all the neighbouring pixels that intersect with the translated $B_s$ are
+pixels all the neighboring pixels that intersect with the translated $B_s$ are
 turned white. The total area of white pixels is increased. \cite{Smith1997}
 
 Image Morphologies have multiple uses like increasing certain areas for better
-recognition or separating larger shapes of an image. In this case they will be
-helpful for correcting interruptions in the black lines of the image as well as
-for separating black areas that are bigger than typical lines.
+recognition or separating larger shapes of an image. For this thesis, they will
+be helpful for correcting interruptions in the black lines of the image as well
+as for separating black areas that are bigger than typical lines.
 
 \subsubsection{Thresholding}
 
@@ -253,8 +238,9 @@ whether it is below or above the threshold.
   \end{cases}
 \end{equation}
 
-It is usually used to separate out regions of interest in an image. For this
-application these regions will be the black lines of the painting.
+It is usually used to separate out regions of interest in an image. For the
+algorithm presented in this paper, these regions will be the black lines of the
+painting.
 
 \subsubsection{Contrast Limited Adaptive Histogram
 Equalization (CLAHE)}
@@ -265,19 +251,19 @@ of an image using the Histogram. Global histogram equalization changes the
 brightness of each pixel in the image using the overall histogram of the image.
 \cite{ShapiroLindaG2001Cv}
 
-\textit{Adaptive histogram equalization (AHE)} on the other hand only uses the
+\textit{Adaptive histogram equalization (AHE)} on the other hand, only uses the
 histogram of a specified area around any given pixel to adjust its brightness. It
 therefore is able to better increase the local contrast.
 
 However \textit{AHE} tends to overamplify noise in an image. Fairly uniform
 regions of the same brightness have high histogram pieaks and are turned into
 noisy patterns.  \textit{Contrast Limited Adaptive Histogram Equalization
-(CLAHE)} limites this effect by setting a maximum value for the values of the
+(CLAHE)} limits this effect by setting a maximum value for the values of the
 histogram. \cite{Pizer1987}
 
 \subsubsection{Masks}
 
-Masks operations are similar to elementary arithmetics. Each pixel $a_{xy}$ in
+Mask operations are similar to elementary arithmetics. Each pixel $a_{xy}$ in
 one image  $X_a$ is added, substracted, multiplied or divided with $b_{by}$ of
 another image $X_b$. For example the operation $X_a + X_b$ denotes the set
 $$X_a + X_b = \{\mathrm{min}(255, p_{xy} + q_{xy}) | p_{xy} \in X_a, q_{xy} \in X_b\}$$
@@ -286,13 +272,15 @@ An additional operation on a binary image $B_a$ is the opposite or inversion
 $\neg B_a$, which is equivalent to a bitwise not.
 $$\neg B_a = \{\mathrm{max}(0,p_{xy} - 1) | p_{xy} \in B_a\}$$
 
+These operations will be helpful in manipulating the image data.
+
 \subsection{Concept} \label{concept}
 
 The aim for the detection algorithm is to take a cropped Mondrian painting as
-an input and detect all the rectangles in it as well as their colors.
+an input and detect all the rectangle and their colors in it.
 
 The input is an RGB Image $I_1$ of a Mondrian painting. The expected output is a
-list of rectangles with their position, sizes and color as they are
+list of rectangles with their position, size and color as they are
 compositionally seen in the painting. All rectangles combined are expected to
 exactly cover the area of the input image in a way that the original could be
 dissected into this set of rectangles. The thick black lines in the paintings
