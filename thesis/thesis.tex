@@ -128,12 +128,12 @@ lack of statistics and called for a more substantiated analysis of the
 paintings.
 
 Some sources \cite{bouleau1963,bergamini1980} suggest that Mondrian used golden
-rectangles in his paintings. A golden rectangle is rectangle, where the ratio
-between the sides length is the golden ratio $\phi \approx 1.618$. Other authors
-however \cite{Livio2002,Markowsky1992} refute those claims, finding fault with
+rectangles in his paintings. A golden rectangle is a rectangle, where the ratio
+between the sides lengths is the golden ratio $\phi \approx 1.618$. Other authors
+ \cite{Livio2002,Markowsky1992} however refute those claims, finding fault with
 the lack of evidence, which consists of mostly exemplary superimposing golden
 rectangles on paintings. Despite this disagreement there have been very few
-attempts to actually evaluating this question statistically. In a poster from
+attempts to actually evaluate this question statistically. In a poster from
 2017, Tanaka and Miyanaga \cite{Tanaka2017} examine the use of rectangle ratios,
 specifically the golden and silver ratio, in 10 late Mondrian paintings. They
 conclude that Mondrian actually had a preference for the silver ratio $\delta_S
@@ -157,23 +157,23 @@ paintings while the other 28 were sketches, unfinished works or plastic art. For
 12 paintings, Mondrian used a tilted canvas, often referred to as
 \textit{Diamond Compositions}. For the sake of simplicity these paintings were
 excluded as well. Additionally 20 paintings in the catalogue had either only a
-greyscale image or no image available at all. These paintings were excluded as
-well. The remaining 118 images were selected for the algorithm. They were
+greyscale image or no image available at all. These paintings were also
+excluded. The remaining 118 images were selected for the algorithm. They were
 scanned and subsequently cropped so that only the painting and no frame was
 visible. The images were scaled so that the longer side would be 1000 pixels.
 
 Since the distinction between lighter grey to white and darker grey to black is
 difficult even for a human observer, the detection of non-colors is restricted
 to white and black only. Additionally the lines are simplified to not have any
-thickness, so that they can be represented solely by their start and endpoints.
+thickness, so that they can be represented solely by their start and end points.
 
 \section{Fundamentals} \label{fundamentals}
 
-In this section I will specify the different definitions used for
-conceptualizing the program (\ref{definitions}). I am going to present
-different existing methods and algorithms that were used (\ref{used}). Lastly I
-am going to outline the concept for detecting the structure of rectangles in
-Mondrians abstract paintings (\ref{concept}).
+This section will specify the different definitions used for conceptualizing the
+program (\ref{definitions}). It is also describing different existing methods
+and algorithms that were used (\ref{used}). Lastly it outlines the concept for
+detecting the structure of rectangles in Mondrians abstract paintings
+(\ref{concept}).
 
 \subsection{Definitions} \label{definitions}
 
@@ -182,8 +182,8 @@ An Image $X$ with width $w$ and height $h$ is defined to be the set $I$. $$I =
 is an Image with the following  $p_{xy}$: $$p_{xy} = (r_{xy}, g_{xy}, b_{xy})
 \in \{0,1,...,255\} \times \{0,1,...,255\} \times\{0,1,...,255\}$$ A Greyscale
 image is an Image with $p_{xy} \in \{0,1, \dots 255\}$ and a Binary Image $B$ is
-an Image with $p_{xy} \in \{0,1\}$, where we also refer to $0$ as \textit{black}
-and $1$ as \textit{white}.
+an Image with $p_{xy} \in \{0,1\}$, where $0$ is also referred to as
+\textit{black} and $1$ as \textit{white}.
 
 \subsection{Used Algorithms and Methods} \label{used}
 
