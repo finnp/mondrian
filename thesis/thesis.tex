@@ -5,7 +5,7 @@
 \usepackage{subcaption}
 
 \newcommand{\thesisTitle}{The Rhythm of Relations of Color and Size: Detecting
-Rectangles in Paintings created by Piet Mondrian}
+Rectangles in Paintings Created by Piet Mondrian}
 % -> You may use \par (but not \\) to format the title. If you do so, you'll
 %    need to manually set the 'pdftitle' attribute below.
 \newcommand{\studentName}{Finn Pauls}
@@ -24,7 +24,7 @@ Rectangles in Paintings created by Piet Mondrian}
     thesis/advisor={Martin Skrodzki},           % optional
     thesis/examiner={Prof. Wolfgang Mulzer},
     thesis/examiner/2={Prof. Dr. Konrad Polthier}, % optional
-    thesis/date=\today,                    % optional, default: \today
+    thesis/date={1. Oktober 2018},                    % optional, default: \today
    %title/size=\LARGE,      % set this value to overwrite automatic font size
    % abstract/separate       % toggle this to move the abstract to its own page
 ] { The arrangement of compositional elements in abstract paintings by Piet
@@ -120,7 +120,7 @@ note however that while their results are similar to Mondrian paintings, they do
 not always resemble Mondrian paintings since proportions are chosen randomly and
 not deliberately.
 
-In 1968 Hill \cite{Hill1968} tried to study the orgnization of the compositional
+In 1968 Hill \cite{Hill1968} tried to study the organization of the compositional
 elements used by Mondrian. He analyzed the network topology of Mondrian's
 paintings. One of his findings shows the avoidance of symmetry on a structural
 level. He also criticized earlier work for inaccuracy of measurement and the
@@ -128,7 +128,7 @@ lack of statistics and called for a more substantiated analysis of the
 paintings.
 
 Some sources \cite{bouleau1963,bergamini1980} suggest that Mondrian used golden
-rectangles in his paintings. A golden rectangle is a rectangle, where the ratio
+rectangles in his paintings. A golden rectangle is a rectangle where the ratio
 between the sides lengths is the golden ratio $\phi \approx 1.618$. Other authors
  \cite{Livio2002,Markowsky1992} however refute those claims, finding fault with
 the lack of evidence, which consists of mostly exemplary superimposing golden
@@ -172,13 +172,13 @@ thickness, so that they can be represented solely by their start and end points.
 This section will specify the different definitions used for conceptualizing the
 program (\ref{definitions}). It is also describing different existing methods
 and algorithms that were used (\ref{used}). Lastly it outlines the concept for
-detecting the structure of rectangles in Mondrians abstract paintings
+detecting the structure of rectangles in Mondrian's abstract paintings
 (\ref{concept}).
 
 \subsection{Definitions} \label{definitions}
 
 An Image $X$ with width $w$ and height $h$ is defined to be the set $I$. $$I =
-\{p_{xy} | x \in \{1,2, \dots w\}, y \in \{1,2, \dots h\} \}$$ A RGB Image $I$
+\{p_{xy} | x \in \{1,2, \dots w\}, y \in \{1,2, \dots h\} \}$$ An RGB Image $I$
 is an Image with the following  $p_{xy}$: $$p_{xy} = (r_{xy}, g_{xy}, b_{xy})
 \in \{0,1,...,255\} \times \{0,1,...,255\} \times\{0,1,...,255\}$$ A Greyscale
 image is an Image with $p_{xy} \in \{0,1, \dots 255\}$ and a Binary Image $B$ is
@@ -274,12 +274,12 @@ of an image using the Histogram. Global histogram equalization changes the
 brightness of each pixel in the image using the overall histogram of the image.
 \cite{ShapiroLindaG2001Cv}
 
-\textit{Adaptive histogram equalization (AHE)} on the other hand, only uses the
+\textit{Adaptive histogram equalization (AHE)}, on the other hand, only uses the
 histogram of a specified area around any given pixel to adjust its brightness. It
 therefore is able to better increase the local contrast.
 
 However \textit{AHE} tends to overamplify noise in an image. Fairly uniform
-regions of the same brightness have high histogram pieaks and are turned into
+regions of the same brightness have high histogram peaks and are turned into
 noisy patterns.  \textit{Contrast Limited Adaptive Histogram Equalization
 (CLAHE)} limits this effect by setting a maximum value for the values of the
 histogram. \cite{Pizer1987}
@@ -321,7 +321,7 @@ The second phase then takes this binary image and returns a list of found
 rectangles. Additionally, for recognizing the colors of the rectangles, the
 original input image is used.
 
-\subsubsection{Image preprocessing} \label{preprocessing}
+\subsubsection{Image Preprocessing} \label{preprocessing}
 
 \begin{figure}
   \includegraphics[width=\linewidth]{images/preprocessing_steps.png}
@@ -366,7 +366,7 @@ G_3 &= G_2 + G_c
 Now the image $G_3$ with the elements $g_{xy}$ is converted into a binary image
 using Thresholding $B_1 = T(G_2)$. The threshold value $t$ needs to be chosen to
 optimally separate between the darker lines and the lighter rectangles in the
-image. See \ref{parameter} for how that value was determined in praxis.
+image. See \ref{parameter} for how that value was determined in practice.
 
 Since the thresholding step might leave some interruption in the black lines,
 the white areas of the image are reduced: An Erosion $B_2 = B_1 \ominus B_e$ is
@@ -387,7 +387,7 @@ the image of the last step $B_3 = B_2 - B_m$. Hence only the outlines of the
 black rectangles, as well as the black lines, remain in $B_3$, which is the
 output of the first phase.
 
-\subsubsection{Detection and recognition of rectangles} \label{rectangles}
+\subsubsection{Detection and Recognition of Rectangles} \label{rectangles}
 
 Since the rectangles in the painting are defined by the horizontal and
 vertical lines in the image, the detection starts by finding all of those lines
@@ -418,8 +418,8 @@ Since a rectangle is defined by the black lines in the paintings, as well as the
 edges of the painting, the lines of the edges to the $H$ and $V$ are added as
 well.
 
-All lines should now represent the structure of the painting. The desired output
-however is a list of rectangles. Every rectangle in the image can be defined
+All lines should now represent the structure of the painting. The desired output,
+however, is a list of rectangles. Every rectangle in the image can be defined
 through a set of four different corners: top-left, top-right, bottom-left and
 bottom-right. These corners are always intersections of two lines, either fully
 crossing or touching (T-crossing). The corners and their types can be
@@ -489,11 +489,11 @@ function detect_rectangles
 
 \section{Implementation} \label{implementation}
 
-This section describes implementation and development of the above-described
-concept. First the structure of the software is presented (\ref{structure}),
+This section describes the implementation and development of the concept described
+above. First the structure of the software is presented (\ref{structure}),
 then challenges in line detection (\ref{linedetection}) and performance
 (\ref{performance}) are discussed. Also the iterative development approach
-(\ref{iterative}) and the related choosing of the parameters (\ref{parameter})
+(\ref{iterative}) and the related selection of the parameters (\ref{parameter})
 is explained. Lastly the used tools are evaluated (\ref{evaluation}).
 
 The program was implemented with a command line interface in \textit{Python 3.7}
@@ -545,12 +545,12 @@ Figure \ref{fig:json}.
 
 As an example, Listing \ref{lst:findrectangles} shows the source code of the
 function \texttt{find\_rectangles}, a subroutine of \texttt{detect\_rectangles}.
-It finds rectangles from a list of top-left, bottom-left and top-right
+It detects rectangles from a list of top-left, bottom-left and top-right
 positions. The length of each of these lists is the same and is expected to be
 the number of rectangles. The program first sorts the top-right corners by their
 x position and the bottom-left corners by their y position. When iterating
 through the top-left corners, their x position are going to be the same as the
-matching bottom-left corner, but with a larger y-coordinate. So only these
+matching bottom-left corner, apart from a larger y-coordinate. So only these
 candidates are selected from the \texttt{b\_l} list using an iterator
 expression. Since the cornersare ordered from top to bottom, the matching corner
 is going to be the first returned by the iterator. Therefore the iterator is
@@ -585,7 +585,8 @@ lines above a certain threshold of votes are considered. Using $\theta =
 \frac{\pi}{2}$ to only consider horizontal and vertical lines, this method did
 not give accurate enough results. The algorithm would, for example, sometimes
 detect a vertical line between two close horizontal ones. Since gaps between
-lines are not expected after the preprocessing, this method does not fit.
+lines are not expected after the preprocessing, this method is not suitable
+in this context.
 
 It became clear that it would be simpler and more accurate to construct the
 lines by iterating through the image. To find horizontal lines $H$ from
@@ -616,15 +617,15 @@ for bindings. Using the same algorithm implemented in Rust, the time of this
 step was reduced from about 1020 to 40 milliseconds. The runtime of the program
 could be reduced by a factor of 13.
 
-This time could have been be further reduced by running multiple parallel
-iterations over the different rows or colums. However for this purpose the
+This time could have been further reduced by running multiple parallel
+iterations over the different rows or colums. However, for this purpose the
 achieved time was sufficient.
 
 \subsection{Iterative approach} \label{iterative}
 
 When developing the program, the different processing steps of the algorithm
 were visualized by providing multiple output images for each input image. These
-images allow an inspection of the different intermediary results created in the
+images allow for an inspection of the different intermediary results created in the
 process. Together with the superimposed output image, these could be used to
 review the correctness of the algorithm.
 
@@ -681,7 +682,7 @@ Some explorative analysis about the use of color (\ref{color}) and ratios
 
 \subsection{Colors} \label{color}
 
-On average Mondrian paintings consist of 79.7\% non-colors (black, white) and
+On average, Mondrian paintings consist of 79.7\% non-colors (black, white) and
 20.3\% colors (red, blue, yellow) ($\sigma = 17.0\%$), see Figure
 \ref{fig:colors-noncolors}. While the median percentage of each color appears to
 be rather similar, the distribution of red is more widespread as can be seen in
@@ -708,7 +709,7 @@ wider distribution.}
 To see if different colors of rectangles have overall preferred positions in the
 compositions, a dataset of all rectangles and their respective positions, width
 and colors was assembled. The calculated centers of all of these rectangles are
-plotted by color. The visualisation in Figure \ref{fig:kde} shows the estimted
+plotted by color. The visualisation in Figure \ref{fig:kde} shows the estimated
 probability density function of the positions using \textit{Kernel density
 estimation (KDE)} with an Gaussian kernel selected by Scott's method
 \cite{Terrell1992}. The first noticable characteristic is that the color red
@@ -779,13 +780,13 @@ object in the upper part of the composition is heavier than none in the lower;
 and location at the right side makes more weight than location on the left."
 Winner (1987) \cite{Winner1987} psychologically tested these principles by
 showing abstract images and their horizontally or vertically flipped
-counterparts. Their findings support the up-down-principles, but not the
-left-right-principle.
+counterparts. Their findings support the up-down principle, but not the
+left-right principle.
 
 Arnheim also notes that the color red is heavier than the color blue. A study
 from \cite{Locher2005} found some support for this claim when showing
-design-trained participants modified Mondrian paintings were some colors were
-swopped.
+design-trained participants modified Mondrian paintings where some colors were
+swapped.
 
 It would be interesting to explore if the found preference by Mondrian to use
 red in the top-left corner could be explained by a combination of these proposed
