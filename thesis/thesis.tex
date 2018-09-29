@@ -29,7 +29,7 @@ Rectangles in Paintings Created by Piet Mondrian}
    % abstract/separate       % toggle this to move the abstract to its own page
 ] { The arrangement of compositional elements in abstract paintings by Piet
 Mondrian have been of interest to researchers for a long time. Despite this
-interest there are no publications examining these paintings numerically across
+interest, there are no publications examining these paintings numerically across
 a broad pool of data. This thesis tries to change this lack of data by
 describing an algorithm for detecting rectangles in Mondrian's compositions from
 1920 to 1937. It also provides a descriptive analysis of the resulting data.
@@ -95,11 +95,11 @@ Another founding member of \textit{De Stijl}, Georges Vantongerloo, used methods
 inspired by mathematics for his compositions. One example of these paintings is
 \textit{Composition Derived from the Equation y = -ax2 + bx + 18}.
 
-Mondrian on the other hand is known to only use intuition when creating his
+Mondrian, on the other hand, is known to only use intuition when creating his
 works, moving compositional elements around for weeks, seeking a balanced
 composition, until he was satisfied with the result.
 
-Still many people have been interested in the question if Mondrian's
+Still, many people have been interested in the question if Mondrian's
 non-figurative paintings utilize certain compositional rules or techniques that
 the painter might have used unconsciously. One approach to finding structure in
 Mondrian's paintings is to create art that resembles his compositions
@@ -123,7 +123,7 @@ not deliberately.
 In 1968 Hill \cite{Hill1968} tried to study the organization of the compositional
 elements used by Mondrian. He analyzed the network topology of Mondrian's
 paintings. One of his findings shows the avoidance of symmetry on a structural
-level. He also criticized earlier work for inaccuracy of measurement and the
+level. He also criticized earlier work for the inaccuracy of measurement and the
 lack of statistics and called for a more substantiated analysis of the
 paintings.
 
@@ -132,20 +132,20 @@ rectangles in his paintings. A golden rectangle is a rectangle where the ratio
 between the sides lengths is the golden ratio $\phi \approx 1.618$. Other authors
  \cite{Livio2002,Markowsky1992} however refute those claims, finding fault with
 the lack of evidence, which consists of mostly exemplary superimposing golden
-rectangles on paintings. Despite this disagreement there have been very few
+rectangles on paintings. Despite this disagreement, there have been very few
 attempts to actually evaluate this question statistically. In a poster from
 2017, Tanaka and Miyanaga \cite{Tanaka2017} examine the use of rectangle ratios,
 specifically the golden and silver ratio, in 10 late Mondrian paintings. They
 conclude that Mondrian actually had a preference for the silver ratio $\delta_S
 \approx 2.414$ instead.
 
-However to the author's knowledge there is no publication examining the question of
+However, to the author's knowledge, there is no publication examining the question of
 the use of certain special ratios on Mondrian's paintings with a larger data
 set.
 
 \subsection{Scope of the Thesis}
 
-Providing numeric data to close the lack of foundation for analysis on the
+Providing numeric data for closing the lack of foundation for analysis on the
 neo-plastic compositions by Mondrian is the main objective of this thesis. The
 goal is to create a program that uses methods of Computer Vision to extract the
 compositional elements from images of the paintings. The program is restricted
@@ -155,8 +155,8 @@ There are 178 works listed in the \textit{Catalogue Raisonn{\'e}}
 \cite{joosten1998} of Mondrian for that time period. Of these works, 150 were
 paintings while the other 28 were sketches, unfinished works or plastic art. For
 12 paintings, Mondrian used a tilted canvas, often referred to as
-\textit{Diamond Compositions}. For the sake of simplicity these paintings were
-excluded as well. Additionally 20 paintings in the catalogue had either only a
+\textit{Diamond Compositions}. For the sake of simplicity, these paintings were
+excluded as well. Additionally, 20 paintings in the catalogue had either only a
 greyscale image or no image available at all. These paintings were also
 excluded. The remaining 118 images were selected for the algorithm. They were
 scanned and subsequently cropped so that only the painting and no frame was
@@ -164,14 +164,14 @@ visible. The images were scaled so that the longer side would be 1000 pixels.
 
 Since the distinction between lighter grey to white and darker grey to black is
 difficult even for a human observer, the detection of non-colors is restricted
-to white and black only. Additionally the lines are simplified to not have any
+to white and black only. Additionally, the lines are simplified to not have any
 thickness, so that they can be represented solely by their start and end points.
 
 \section{Fundamentals} \label{fundamentals}
 
 This section will specify the different definitions used for conceptualizing the
 program (\ref{definitions}). It is also describing different existing methods
-and algorithms that were used (\ref{used}). Lastly it outlines the concept for
+and algorithms that were used (\ref{used}). Lastly, it outlines the concept for
 detecting the structure of rectangles in Mondrian's abstract paintings
 (\ref{concept}).
 
@@ -195,7 +195,7 @@ Python distribution of the Open Source library OpenCV \cite{opencv_library}.
 \subsubsection{Image Morphology}
 
 Image Morphology is based on Mathematical Morphology from the mathematical field
-of set theory. For the purpose of this algorithm two basic morphological
+of set theory. For the purpose of this algorithm, two basic morphological
 operators are used. They are going to be explained briefly here, without
 going into detail of their mathematical definition. A more formal definition and
 further reading can be found in Aguardo (2012) \cite{Aguardo2012}.
@@ -232,13 +232,13 @@ a Structuring Element of $10 \times 10$.
 
 \textit{Erosion} $B \ominus B_s$ is equivalent to going through all of the white
 pixels of $B$ and translate $B_s$ by its center point $c \in B_s$ to the pixel's
-position. The pixel is only kept white, if all of the translated points of $B_s$
-correspond to white pixels in the image. Otherwise the pixel is turned black. Therefore
+position. The pixel is only kept white if all of the translated points of $B_s$
+correspond to white pixels in the image. Otherwise, the pixel is turned black. Therefore
 the white areas in $B$ are reduced. \cite{Smith1997}
 
 Similarly the \textit{Dilation} operation  $B \oplus B_s$ translates the center
 point of the Structuring Element to every pixel $p \in B$. For each of these
-pixels all the neighboring pixels that intersect with the translated $B_s$ are
+pixels, all the neighboring pixels that intersect with the translated $B_s$ are
 turned white. The total area of white pixels is increased. \cite{Smith1997}
 
 Image Morphologies have multiple uses like increasing certain areas for better
@@ -276,9 +276,9 @@ brightness of each pixel in the image using the overall histogram of the image.
 
 \textit{Adaptive histogram equalization (AHE)}, on the other hand, only uses the
 histogram of a specified area around any given pixel to adjust its brightness. It
-therefore is able to better increase the local contrast.
+therefore is able to increase the local contrast better.
 
-However \textit{AHE} tends to overamplify noise in an image. Fairly uniform
+However, \textit{AHE} tends to overamplify noise in an image. Fairly uniform
 regions of the same brightness have high histogram peaks and are turned into
 noisy patterns.  \textit{Contrast Limited Adaptive Histogram Equalization
 (CLAHE)} limits this effect by setting a maximum value for the values of the
@@ -302,8 +302,8 @@ These operations will be helpful in manipulating the image data.
 The aim for the detection algorithm is to take a cropped Mondrian painting as
 an input and detect all the rectangles and their colors in it.
 
-The input is a RGB Image $I_1$ of a Mondrian painting. The expected output is a
-list of rectangles with their position, size and color as they are
+The input is an RGB Image $I_1$ of a Mondrian painting. The expected output is a
+list of rectangles with their position, size, and color as they are
 compositionally seen in the painting. All rectangles combined are expected to
 completely dissect the original image. The thick black lines in the paintings are
 seen as one-dimensional line segments that are positioned in the middle of the
@@ -347,7 +347,7 @@ the darker regions, histogram equalization is applied to $G_1$. For this we
 use \textit{Contrast Limited Adaptive Histogram Equalization (CLAHE)}. In
 contrast to non-adaptive and ordinary adaptive histogram equalization
 algorithms, this method prevents the overamplification of noise as reasoned
-above (\ref{clahe}). The the result of the equalization is called $G_2$. \cite{Pizer1987}
+above (\ref{clahe}). The result of the equalization is called $G_2$. \cite{Pizer1987}
 
 After the normalization is applied, colorful areas of the image are further
 brightened to make them stand out against the black areas of the paintings. This
@@ -474,7 +474,7 @@ function detect_rectangles
   input:
     Binary image where only the lines are black binary_image,
     Original RGB image of that painting original_img
-  output: List of rectangles and their colors, dimensions and positions
+  output: List of rectangles and their colors, dimensions, and positions
 
   (h1, v1) = detect_lines(binary_image, l)
   (h2, v2) = reduce_lines(h1, v1, d)
@@ -490,11 +490,11 @@ function detect_rectangles
 \section{Implementation} \label{implementation}
 
 This section describes the implementation and development of the concept described
-above. First the structure of the software is presented (\ref{structure}),
+above. First, the structure of the software is presented (\ref{structure}),
 then challenges in line detection (\ref{linedetection}) and performance
 (\ref{performance}) are discussed. Also the iterative development approach
 (\ref{iterative}) and the related selection of the parameters (\ref{parameter})
-is explained. Lastly the used tools are evaluated (\ref{evaluation}).
+is explained. Lastly, the used tools are evaluated (\ref{evaluation}).
 
 The program was implemented with a command line interface in \textit{Python 3.7}
 using the \textit{OpenCV 3.4.1} and \textit{NumPy 1.15.2} libraries. OpenCV
@@ -511,11 +511,11 @@ rectangles (\ref{rectangles}) is also reasonable in the implementation.
 
 The program sketched out in Listing \ref{lst:program} takes a directory and the
 different parameters as input. The output of the main algorithm is a list of
-rectangles and their respective dimensions, colors and positions. An image is
+rectangles and their respective dimensions, colors, and positions. An image is
 created from the resulting data and overlaid over the original image and saved
 to disk. This can be used to validate the result of the algorithm. The data from
 the rectangles is encoded in a \textit{JSON} file for each image. \textit{JSON}
-was chosen, since it is a widespread flexible data-interchange format that is
+was chosen, since it is a popular flexible data-interchange format that is
 also human-readable. An example for such a \textit{JSON} file can be seen in
 Figure \ref{fig:json}.
 
@@ -552,7 +552,7 @@ x position and the bottom-left corners by their y position. When iterating
 through the top-left corners, their x position are going to be the same as the
 matching bottom-left corner, apart from a larger y-coordinate. So only these
 candidates are selected from the \texttt{b\_l} list using an iterator
-expression. Since the cornersare ordered from top to bottom, the matching corner
+expression. Since the corners are ordered from top to bottom, the matching corner
 is going to be the first returned by the iterator. Therefore the iterator is
 only called once with \texttt{next}. The same logic is applied to bottom-left
 corners. Using the coordinates of the matching top-right and bottom-left
@@ -577,8 +577,7 @@ def find_rectangles(t_l, b_l, t_r):
 
 \subsection{Line Detection} \label{linedetection}
 
-Using a custom algorithm for the line detection was not the first choice. First
-a commong technique, the Hough Transform, was used. Hough Transforms rotate a
+Using a custom algorithm for the line detection was not the first choice. First, a common technique, the Hough Transform, was used. Hough Transforms rotate a
 line over every pixel of an image with an angle $\theta$ for every step. For
 each rotation white pixels on that lines are used as votes for that line. Then
 lines above a certain threshold of votes are considered. Using $\theta =
@@ -618,7 +617,7 @@ step was reduced from about 1020 to 40 milliseconds. The runtime of the program
 could be reduced by a factor of 13.
 
 This time could have been further reduced by running multiple parallel
-iterations over the different rows or colums. However, for this purpose the
+iterations over the different rows or columns. However, for this purpose the
 achieved time was sufficient.
 
 \subsection{Iterative approach} \label{iterative}
@@ -667,7 +666,7 @@ and has a variety of learning resources. Since OpenCV primarily supports C++ and
 Python interfaces, the programming language choice was one of these options.
 While using the compiled language C++ could have increased performance over the
 interpreted Python, it would also have decreased productivity. Python's
-readibility and user-friendly data-structures made it a good choice for an
+readability and user-friendly data-structures made it a good choice for an
 iterative development.
 
 % !TeX encoding = UTF-8
@@ -712,9 +711,9 @@ and colors was assembled. The calculated centers of all of these rectangles are
 plotted by color. The visualisation in Figure \ref{fig:kde} shows the estimated
 probability density function of the positions using \textit{Kernel density
 estimation (KDE)} with an Gaussian kernel selected by Scott's method
-\cite{Terrell1992}. The first noticable characteristic is that the color red
+\cite{Terrell1992}. The first notable characteristic is that the color red
 appears to have a substantial bias to the top-left corner. Similarly blue has a
-bias to the bottom-right corner, but is comparatively more evenly spread.
+bias to the bottom-right corner but is comparatively more evenly spread.
 
 
 \begin{figure}
@@ -725,9 +724,9 @@ bias to the bottom-right corner, but is comparatively more evenly spread.
 
 \subsection{Ratios} \label{ratios}
 
-For all rectangles the aspect ratio of the longer to the shorter side was
+For all rectangles, the aspect ratio of the longer to the shorter side was
 calculated. Figure \ref{fig:aspect-rects} shows the estimated probability
-density of the ratios in Mondrians rectangles compared to the ratio of a set of
+density of the ratios in Mondrian's rectangles compared to the ratio of a set of
 10000 random rectangles. Figure \ref{fig:longer-x-shorter} shows all rectangles
 plotted by their sides, as well as lines for certain proposed ratios. The data
 does not show peaks for the golden or silver ratio. This supports the rejection
@@ -758,7 +757,7 @@ The developed program is able to detect rectangles in a class of abstract
 Mondrian paintings. Human control and intervention are still necessary to make
 sure the result is correct. By adjusting the input parameter or in some cases
 manually editing the input images, all images were detected successfully. From
-the dataset of all chosen images 76\% of the images could be detected without
+the dataset of all chosen images, 76\% of the images could be detected without
 manual intervention.
 
 A first look at the resulting data showed some interesting findings that deserves
