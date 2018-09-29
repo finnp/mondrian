@@ -231,7 +231,8 @@ a Structuring Element of $10 \times 10$.
   \caption{Dilation}
   \label{fig:dilation}
 \end{subfigure}
-\caption{Demonstration of the Erosion and Dilation operation on an example input image}
+\caption{Demonstration of the Erosion and Dilation operation on an example input image
+using a quadratic Structuring Element.}
 \label{fig:morphology}
 \end{figure}
 
@@ -291,16 +292,19 @@ histogram. \cite{Pizer1987}
 
 \subsubsection{Masks}
 
-Mask operations are related to elementary arithmetics. Each pixel $a_{xy}$ in
-one image  $X_a$ is added, substracted, multiplied or divided with $b_{by}$ of
-another image $X_b$. For example the operation $X_a + X_b$ denotes the set
-$$X_a + X_b = \{\mathrm{min}(255, p_{xy} + q_{xy}) | p_{xy} \in X_a, q_{xy} \in X_b\}$$
+Mask operations are related to elementary arithmetics. Given two images $X_a$,
+$X_b$ with the same width and the same height, each pixel $a_{xy}$ in $X_a$ is
+added, substracted, multiplied or divided with $b_{xy}$ of $X_b$. For example
+the operation $X_a + X_b$ denotes the set $$X_a + X_b = \{\mathrm{min}(255,
+p_{xy} + q_{xy}) | p_{xy} \in X_a, q_{xy} \in X_b\}$$
 
 An additional operation on a binary image $B_a$ is the opposite or inversion
 $\neg B_a$, which is equivalent to a bitwise not.
 $$\neg B_a = \{\mathrm{max}(0,p_{xy} - 1) | p_{xy} \in B_a\}$$
 
-These operations will be helpful in manipulating the image data.
+These operations will be helpful in combining results from different parts of
+the algorithm or removing certain areas like black rectangles because later
+steps should ignore them.
 
 \subsection{Concept} \label{concept}
 
