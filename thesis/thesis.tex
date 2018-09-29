@@ -296,7 +296,7 @@ Mask operations are related to elementary arithmetics. Given two images $X_a$,
 $X_b$ with the same width and the same height, each pixel $a_{xy}$ in $X_a$ is
 added, substracted, multiplied or divided with $b_{xy}$ of $X_b$. For example
 the operation $X_a + X_b$ denotes the set $$X_a + X_b = \{\mathrm{min}(255,
-p_{xy} + q_{xy}) | p_{xy} \in X_a, q_{xy} \in X_b\}$$
+p_{xy} + q_{xy}) | p_{xy} \in X_a, q_{xy} \in X_b\}.$$
 
 An additional operation on a binary image $B_a$ is the opposite or inversion
 $\neg B_a$, which is equivalent to a bitwise not.
@@ -348,7 +348,7 @@ photography and scanning the images.
 Next, the RGB input image is decomposed into a Greyscale Image $G_1$ by using
 the maximum value of the RGB triplet for each pixel in $I_2$:
 \begin{equation}
-G_1 = \{p_{xy} \in \{0,\ldots,255\} \mid (r_{xy},g_{xy},b_{xy})\in I_2\text{ and }p_{xy}=\max\{r_{xy},g_{xy},b_{xy}\}\}\\
+G_1 = \{p_{xy} \in \{0,\ldots,255\} \mid (r_{xy},g_{xy},b_{xy})\in I_2\text{ and }p_{xy}=\max\{r_{xy},g_{xy},b_{xy}\}\}.\\
 \end{equation}
 
 To normalize the brightness distribution of $G_1$ and increase the contrast of
@@ -373,13 +373,13 @@ G_3 &= G_2 + G_c
 \end{align}
 
 Now the image $G_3$ with the elements $g_{xy}$ is converted into a binary image
-using Thresholding $B_1 = T(G_2)$. The threshold value $t$ needs to be chosen to
+using Thresholding $B_1 = T(G_3)$. The threshold value $t$ needs to be chosen to
 optimally separate between the darker lines and the lighter rectangles in the
 image. See \ref{parameter} for how that value was determined in practice.
 
 Since the thresholding step might leave some interruption in the black lines,
 the white areas of the image are reduced: An Erosion $B_2 = B_1 \ominus B_e$ is
-applied. In this case, the structuring element $B_e$ is a $N\times N$ binary
+applied. In this case, the structuring element $B_e$ is a $N\times N$ white binary
 Image. Using the Erosion some accidental interruptions in the lines can be
 restored. However, choosing a Structuring Element that is too big might result
 in loss of information by filling smaller white rectangles black. Therefore the
@@ -476,7 +476,7 @@ function preprocessing
   binary_1 = threshold(grey_3, t)
   binary_2 = erode(binary_1, N)
   binary_m = dilate(binary_1, M)
-  binary_3 = binary_2 + bitwise_not(dilated)
+  binary_3 = binary_2 + bitwise_not(binary_m)
   return binary_3
 
 function detect_rectangles
@@ -588,7 +588,7 @@ def find_rectangles(t_l, b_l, t_r):
 
 Using a custom algorithm for the line detection was not the first choice. First, a common technique, the Hough Transform, was used. Hough Transforms rotate a
 line over every pixel of an image with an angle $\theta$ for every step. For
-each rotation white pixels on that lines are used as votes for that line. Then
+each rotation black pixels on that lines are used as votes for that line. Then
 lines above a certain threshold of votes are considered. Using $\theta =
 \frac{\pi}{2}$ to only consider horizontal and vertical lines, this method did
 not give accurate enough results. The algorithm would, for example, sometimes
