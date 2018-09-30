@@ -239,13 +239,15 @@ using a quadratic Structuring Element.}
 \textit{Erosion} $B \ominus B_s$ is equivalent to going through all of the white
 pixels of $B$ and translate $B_s$ by its center point $c \in B_s$ to the pixel's
 position. The pixel is only kept white if all of the translated points of $B_s$
-correspond to white pixels in the image. Otherwise, the pixel is turned black. Therefore
-the white areas in $B$ are reduced. \cite{Smith1997}
+that are not positioned outside $B$ correspond to white pixels in the image.
+Otherwise, the pixel is turned black. Therefore the white areas in $B$ are
+reduced. \cite{Smith1997}
 
 Similarly the \textit{Dilation} operation  $B \oplus B_s$ translates the center
 point of the Structuring Element to every pixel $p \in B$. For each of these
-pixels, all the neighboring pixels that intersect with the translated $B_s$ are
-turned white. The total area of white pixels is increased. \cite{Smith1997}
+pixels, all the neighboring pixels in $B$ that intersect with the translated
+$B_s$ are turned white. The total area of white pixels is increased.
+\cite{Smith1997}
 
 Image Morphologies have multiple uses like increasing certain areas for better
 recognition or separating larger shapes of an image. For this thesis, they will
