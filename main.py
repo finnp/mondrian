@@ -70,11 +70,14 @@ def detect_rectangles(binary, original):
     (horizontal_lines, vertical_lines) = remove_lines_close_to_border(horizontal_lines, vertical_lines, width, height, 0.1 * min_distance)
 
     # debug
+    raw_lines = np.copy(original)
+    draw_lines(raw_lines, horizontal, color=(0,255,0))
+    draw_lines(raw_lines, vertical, color=(240,150,100))
+    steps.append(('raw-lines', raw_lines))
+
     before_connect = np.copy(original)
-    draw_lines(before_connect, horizontal, color=(0,255,0))
-    draw_lines(before_connect, vertical, color=(255,0,0))
     draw_lines(before_connect, vertical_lines + horizontal_lines)
-    steps.append(('raw-lines', before_connect))
+    steps.append(('before-connect', before_connect))
 
     # add helper lines for borders
     horizontal_lines += [(0,0,width,0), (0,height,width,height)]

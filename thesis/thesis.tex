@@ -492,7 +492,7 @@ function detect_rectangles
   (h5, v5) = connect_lines(h4, v4)
   (tl, bl, br, tr) = find_corners(h5, v5)
   rects = find_rectangles(tl, bl, tr))
-  rects_with_color = find_colors_for_rects(rects, original_img)
+  rects_with_color = find_colors(rects, original_img)
   return rects_with_color
 \end{lstlisting}
 
@@ -631,11 +631,43 @@ achieved time was sufficient.
 
 \subsection{Iterative approach} \label{iterative}
 
+\begin{figure}[b]
+\centering
+\begin{subfigure}{.23\textwidth}
+  \includegraphics[width=\linewidth]{images/detect-1.jpg}
+  \caption{\texttt{detect\_lines}}
+  \label{fig:detect1}
+\end{subfigure}%
+\begin{subfigure}{.23\textwidth}
+  \centering
+  \includegraphics[width=\linewidth]{images/detect-2.jpg}
+  \caption{\texttt{reduce\_lines}}
+  \label{fig:detect2}
+\end{subfigure}
+\begin{subfigure}{.23\textwidth}
+  \centering
+  \includegraphics[width=\linewidth]{images/detect-3.jpg}
+  \caption{\texttt{find\_corners}}
+  \label{fig:detect3}
+\end{subfigure}
+\begin{subfigure}{.23\textwidth}
+  \centering
+  \includegraphics[width=\linewidth]{images/detect-4.jpg}
+  \caption{\texttt{find\_colors}}
+  \label{fig:detect4}
+\end{subfigure}
+\caption{Details of example output images with the corresponding function from Listing \ref{lst:program} after which they were created.}
+\label{fig:detect}
+\end{figure}
+
 When developing the program, the different processing steps of the algorithm
-were visualized by providing multiple output images for each input image. These
-images allow for an inspection of the different intermediary results created in the
-process. Together with the superimposed output image, these could be used to
-review the correctness of the algorithm.
+were visualized by providing multiple output images for each input image. The
+output images from the preprocessing phase correspond to the images shown in
+Figure \ref{fig:preprocessing}. Example details of the same image from the
+second phase can be seen in Figure \ref{fig:detect}. These images allow for an
+inspection of the different intermediary results created in the process.
+Together with the superimposed output image, these could be used to review the
+correctness of the algorithm.
 
 This visual feedback gave insights into problems of the algorithm like small
 bugs or conceptional problems. For example, the preprocessing step to increase
@@ -674,27 +706,26 @@ supports a variety of established computer vision algorithms, is well documented
 and has a variety of learning resources. Since OpenCV primarily supports C++ and
 Python interfaces, the programming language choice was one of these options.
 While using the compiled language C++ could have increased performance over the
-interpreted Python, it would also have decreased productivity. Python's
+interpreted Python, it would also have lacked some of its benefits: Python's
 readability and user-friendly data-structures made it a good choice for an
 iterative development.
 
-% !TeX encoding = UTF-8
 \section{Results} \label{results}
 
  All 118 images were processed by the detection program and subsequently checked
  for accuracy by comparing the result with the original. The resulting dataset
  consists of 1316 rectangles and their respective size, colors, and paintings.
 
-Some explorative analysis about the use of color (\ref{color}) and ratios
+Some descriptive analysis about the use of color (\ref{color}) and ratios
 (\ref{ratios}) was performed.
 
 \subsection{Colors} \label{color}
 
-On average, Mondrian paintings consist of 79.7\% non-colors (black, white) and
-20.3\% colors (red, blue, yellow) ($\sigma = 17.0\%$), see Figure
-\ref{fig:colors-noncolors}. While the median percentage of each color appears to
-be rather similar, the distribution of red is more widespread as can be seen in
-Figure \ref{fig:colors-rby}.
+On average, neglecting the area used by lines, Mondrian paintings consist of
+79.7\% non-colors (black, white) and 20.3\% colors (red, blue, yellow) ($\sigma
+= 17.0\%$), see Figure \ref{fig:colors-noncolors}. While the median percentage
+of each color appears to be rather similar, the distribution of red is more
+widespread as can be seen in Figure \ref{fig:colors-rby}.
 
 \begin{figure}
 \centering
@@ -715,8 +746,8 @@ wider distribution.}
 \end{figure}
 
 To see if different colors of rectangles have overall preferred positions in the
-compositions, a dataset of all rectangles and their respective positions, width
-and colors was assembled. The calculated centers of all of these rectangles are
+compositions, the dataset of all rectangles and their respective positions, width
+and colors is used. The calculated centers of all of these rectangles are
 plotted by color. The visualisation in Figure \ref{fig:kde} shows the estimated
 probability density function of the positions using \textit{Kernel density
 estimation (KDE)} with an Gaussian kernel selected by Scott's method
