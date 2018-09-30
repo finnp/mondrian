@@ -57,6 +57,11 @@ for file in files:
 colors = ['red','blue','yellow','black', 'white']
 
 print('Rectangles loaded.')
+plt.rcParams.update({
+'axes.labelsize': 'xx-large',
+'xtick.labelsize': 'xx-large',
+'ytick.labelsize': 'x-large',
+})
 df = pd.DataFrame(color_distribution_by_area)
 ax = df.boxplot()
 ax.set_ylabel('Proportion of total area')
@@ -64,7 +69,7 @@ plt.savefig(out_dir + '/colors.png')
 plt.close()
 
 axes = df.boxplot(column=['red', 'blue', 'yellow'], return_type='axes')
-axes.set_ylim(0, 1)
+axes.set_ylim(0, 0.6)
 axes.set_ylabel('Proportion of total area')
 plt.savefig(out_dir + '/colors-rby.png')
 plt.close()
@@ -78,6 +83,7 @@ for color in colors:
     print(color, df[color].mean() * 100, df[color].std() * 100)
 ax = df.boxplot(column=['colors', 'non-colors'])
 ax.set_ylabel('Proportion of total area')
+ax.set_ylim(0, 1)
 plt.savefig(out_dir + '/colors-non-colors.png')
 plt.close()
 
@@ -195,7 +201,6 @@ plt.gca().invert_yaxis()
 plt.savefig(out_dir + '/kernel-densities.png')
 plt.close()
 
-plt.rcParams.update({'axes.labelsize': 'x-large'})
 df.plot.scatter(x='shorter', y='longer', s=1, c='black')
 plt.plot([0, 618], [0, 1000], 'k-', alpha=0.3, label='golden ratio', c='red')
 plt.plot([0, 414], [0, 1000], 'k-', alpha=0.3, label='silver ratio')
