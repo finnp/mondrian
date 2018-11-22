@@ -1,96 +1,149 @@
 {
-    "height": 1000,
-    "width": 998,
+    "width": 998, 
+    "edges": [
+        [
+            0, 
+            1
+        ], 
+        [
+            0, 
+            2
+        ], 
+        [
+            0, 
+            3
+        ], 
+        [
+            0, 
+            4
+        ], 
+        [
+            0, 
+            5
+        ], 
+        [
+            1, 
+            3
+        ], 
+        [
+            1, 
+            5
+        ], 
+        [
+            2, 
+            4
+        ], 
+        [
+            2, 
+            6
+        ], 
+        [
+            3, 
+            4
+        ], 
+        [
+            5, 
+            6
+        ]
+    ], 
     "rectangles": [
         {
-            "x": 501,
-            "y": 585,
-            "width": 412,
-            "height": 387,
+            "index": 0, 
             "color": [
-                255,
-                255,
+                255, 
+                255, 
                 255
-            ],
+            ], 
+            "height": 387, 
+            "width": 412, 
+            "y": 585, 
+            "x": 501, 
             "color_id": "white"
-        },
+        }, 
         {
-            "x": 913,
-            "y": 585,
-            "width": 85,
-            "height": 181,
+            "index": 1, 
             "color": [
-                0,
-                243,
+                0, 
+                243, 
                 255
-            ],
+            ], 
+            "height": 181, 
+            "width": 85, 
+            "y": 585, 
+            "x": 913, 
             "color_id": "yellow"
-        },
+        }, 
         {
-            "x": 0,
-            "y": 585,
-            "width": 501,
-            "height": 415,
+            "index": 2, 
             "color": [
-                255,
-                255,
+                255, 
+                255, 
                 255
-            ],
+            ], 
+            "height": 415, 
+            "width": 501, 
+            "y": 585, 
+            "x": 0, 
             "color_id": "white"
-        },
+        }, 
         {
-            "x": 913,
-            "y": 766,
-            "width": 85,
-            "height": 234,
+            "index": 3, 
             "color": [
-                255,
-                255,
+                255, 
+                255, 
                 255
-            ],
+            ], 
+            "height": 234, 
+            "width": 85, 
+            "y": 766, 
+            "x": 913, 
             "color_id": "white"
-        },
+        }, 
         {
-            "x": 501,
-            "y": 972,
-            "width": 412,
-            "height": 28,
+            "index": 4, 
             "color": [
-                255,
-                255,
+                255, 
+                255, 
                 255
-            ],
+            ], 
+            "height": 28, 
+            "width": 412, 
+            "y": 972, 
+            "x": 501, 
             "color_id": "white"
-        },
+        }, 
         {
-            "x": 501,
-            "y": 0,
-            "width": 497,
-            "height": 585,
+            "index": 5, 
             "color": [
-                255,
-                255,
+                255, 
+                255, 
                 255
-            ],
+            ], 
+            "height": 585, 
+            "width": 497, 
+            "y": 0, 
+            "x": 501, 
             "color_id": "white"
-        },
+        }, 
         {
-            "x": 0,
-            "y": 0,
-            "width": 501,
-            "height": 585,
+            "index": 6, 
             "color": [
-                255,
-                255,
+                255, 
+                255, 
                 255
-            ],
+            ], 
+            "height": 585, 
+            "width": 501, 
+            "y": 0, 
+            "x": 0, 
             "color_id": "white"
         }
-    ],
+    ], 
     "options": {
-        "binary_threshold": 110,
-        "min_line_length": 70,
-        "min_distance_factor": 0.069,
-        "black_rectangle_dilate": 33
-    }
+        "black_rectangle_dilate": 33, 
+        "binary_threshold": 110, 
+        "min_distance_factor": 0.069, 
+        "min_line_length": 70
+    }, 
+    "height": 1000
 }

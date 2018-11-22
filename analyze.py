@@ -14,13 +14,24 @@ def get_rect_data(data, file):
     width = data['width']
     height = data['height']
     rects = []
-    for rect in data['rectangles']:
+    for index, rect in enumerate(data['rectangles']):
+        rect['index'] = index
         rect['image_width'] = width
         rect['image_height'] = height
         rect['image_file'] = file
         rects.append(rect)
     return rects
 
+def get_all_points(rect):
+    points = []
+    for i in range(rect['width']):
+        for j in range(rect['height']):
+            points.append({
+                'x': rect['x'] + i,
+                'y': rect['y'] + j,
+                'color': rect['color_id']
+            })
+    return points
 
 def get_number_of_rectangle_by_color(data):
     colors = {
@@ -49,6 +60,7 @@ def get_color_distribution(data):
         colors[rect['color_id']] += float(rect_area) / full_area
     return colors
 
+
 color_distribution_by_area = []
 color_distribution_by_number = []
 number_of_rects = []
@@ -62,6 +74,10 @@ for file in files:
     by_area = get_color_distribution(data)
     by_number = get_number_of_rectangle_by_color(data)
     rectangles = get_rect_data(data, file)
+    edges = []
+    for (rect_a, rect_b) in list(combinations(rectangles,2)):
+        if are_neighbours(rect_a, rect_b):
+            edges += (rect_a['index'], rect_b['index'])
     rect_data += rectangles
     total = sum(by_area.values())
     if (total > 1.1 or total < 0.9):
@@ -70,6 +86,16 @@ for file in files:
     color_distribution_by_number.append(by_number)
     number_of_rects.append(len(data['rectangles']))
 
+
+print('Calculate all points')
+all_points = []
+for rect in rect_data:
+    all_points += get_all_points(rect)
+
+p_df = pd.DataFrame(all_points)
+p_df.to_csv('points.csv')
+
+print('done points')
 
 colors = ['red','blue','yellow','black', 'white']
 

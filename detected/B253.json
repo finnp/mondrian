@@ -1,84 +1,120 @@
 {
-    "height": 1000,
-    "width": 950,
+    "width": 950, 
+    "edges": [
+        [
+            0, 
+            1
+        ], 
+        [
+            0, 
+            2
+        ], 
+        [
+            0, 
+            4
+        ], 
+        [
+            1, 
+            3
+        ], 
+        [
+            1, 
+            5
+        ], 
+        [
+            2, 
+            3
+        ], 
+        [
+            4, 
+            5
+        ]
+    ], 
     "rectangles": [
         {
-            "x": 374,
-            "y": 106,
-            "width": 576,
-            "height": 144,
+            "index": 0, 
             "color": [
-                255,
-                255,
+                255, 
+                255, 
                 255
-            ],
+            ], 
+            "height": 144, 
+            "width": 576, 
+            "y": 106, 
+            "x": 374, 
             "color_id": "white"
-        },
+        }, 
         {
-            "x": 0,
-            "y": 106,
-            "width": 374,
-            "height": 144,
+            "index": 1, 
             "color": [
-                255,
-                255,
+                255, 
+                255, 
                 255
-            ],
+            ], 
+            "height": 144, 
+            "width": 374, 
+            "y": 106, 
+            "x": 0, 
             "color_id": "white"
-        },
+        }, 
         {
-            "x": 374,
-            "y": 250,
-            "width": 576,
-            "height": 750,
+            "index": 2, 
             "color": [
-                255,
-                255,
+                255, 
+                255, 
                 255
-            ],
+            ], 
+            "height": 750, 
+            "width": 576, 
+            "y": 250, 
+            "x": 374, 
             "color_id": "white"
-        },
+        }, 
         {
-            "x": 0,
-            "y": 250,
-            "width": 374,
-            "height": 750,
+            "index": 3, 
             "color": [
-                255,
-                255,
+                255, 
+                255, 
                 255
-            ],
+            ], 
+            "height": 750, 
+            "width": 374, 
+            "y": 250, 
+            "x": 0, 
             "color_id": "white"
-        },
+        }, 
         {
-            "x": 374,
-            "y": 0,
-            "width": 576,
-            "height": 106,
+            "index": 4, 
             "color": [
-                255,
-                255,
+                255, 
+                255, 
                 255
-            ],
+            ], 
+            "height": 106, 
+            "width": 576, 
+            "y": 0, 
+            "x": 374, 
             "color_id": "white"
-        },
+        }, 
         {
-            "x": 0,
-            "y": 0,
-            "width": 374,
-            "height": 106,
+            "index": 5, 
             "color": [
-                0,
-                243,
+                0, 
+                243, 
                 255
-            ],
+            ], 
+            "height": 106, 
+            "width": 374, 
+            "y": 0, 
+            "x": 0, 
             "color_id": "yellow"
         }
-    ],
+    ], 
     "options": {
-        "binary_threshold": 110,
-        "min_line_length": 70,
-        "min_distance_factor": 0.065,
-        "black_rectangle_dilate": 33
-    }
+        "black_rectangle_dilate": 33, 
+        "binary_threshold": 110, 
+        "min_distance_factor": 0.065, 
+        "min_line_length": 70
+    }, 
+    "height": 1000
 }
