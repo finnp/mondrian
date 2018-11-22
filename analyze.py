@@ -22,6 +22,19 @@ def get_rect_data(data, file):
     return rects
 
 
+def get_number_of_rectangle_by_color(data):
+    colors = {
+        'black': 0,
+        'white': 0,
+        'blue': 0,
+        'yellow': 0,
+        'red': 0
+    }
+    for rect in data['rectangles']:
+        colors[rect['color_id']] += 1
+    return colors
+
+
 def get_color_distribution(data):
     full_area = float(data['height'] * data['width'])
     colors = {
@@ -37,6 +50,7 @@ def get_color_distribution(data):
     return colors
 
 color_distribution_by_area = []
+color_distribution_by_number = []
 number_of_rects = []
 rect_data = []
 paintings = []
@@ -46,26 +60,33 @@ for file in files:
         data = json.load(f)
     paintings.append(data)
     by_area = get_color_distribution(data)
+    by_number = get_number_of_rectangle_by_color(data)
     rectangles = get_rect_data(data, file)
     rect_data += rectangles
     total = sum(by_area.values())
     if (total > 1.1 or total < 0.9):
         print('Problem with ' + file)
     color_distribution_by_area.append(by_area)
+    color_distribution_by_number.append(by_number)
     number_of_rects.append(len(data['rectangles']))
+
 
 colors = ['red','blue','yellow','black', 'white']
 
 print('Rectangles loaded.')
+
 plt.rcParams.update({
 'axes.labelsize': 'xx-large',
 'xtick.labelsize': 'xx-large',
 'ytick.labelsize': 'x-large',
 })
+
+# color distribution by area
+
 df = pd.DataFrame(color_distribution_by_area)
 ax = df.boxplot()
 ax.set_ylabel('Proportion of total area')
-plt.savefig(out_dir + '/colors.png')
+plt.savefig(out_dir + '/colors_area.png')
 plt.close()
 
 axes = df.boxplot(column=['red', 'blue', 'yellow'], return_type='axes')
@@ -85,6 +106,19 @@ ax = df.boxplot(column=['colors', 'non-colors'])
 ax.set_ylabel('Proportion of total area')
 ax.set_ylim(0, 1)
 plt.savefig(out_dir + '/colors-non-colors.png')
+plt.close()
+
+# color distribution by number of rectangles
+
+df = pd.DataFrame(color_distribution_by_number)
+ax = df.boxplot()
+ax.set_ylabel('Number of rectangles')
+plt.savefig(out_dir + '/colors_n.png')
+plt.close()
+
+axes = df.boxplot(column=['red', 'blue', 'yellow'], return_type='axes')
+axes.set_ylabel('Number of rectangles')
+plt.savefig(out_dir + '/colors-rby-n.png')
 plt.close()
 
 def histogram(df, bins):
