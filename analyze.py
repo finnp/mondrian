@@ -4,11 +4,26 @@ import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.patches as patches
 import seaborn as sns
+from itertools import combinations
+
 
 dir = 'detected'
 out_dir = 'graphs'
 
 files = os.listdir(dir)
+
+def load_kdtree():
+    data = open('KdTreeSizes.txt', 'r').read().split('\n')
+    data = [d.split(';') for d in data]
+
+    output = []
+    for run in data:
+        run = run[1:len(run)-1]
+        run = [float(r) for r in run]
+        output.append(run)
+
+    return output
+
 
 def get_rect_data(data, file):
     width = data['width']
@@ -74,10 +89,6 @@ for file in files:
     by_area = get_color_distribution(data)
     by_number = get_number_of_rectangle_by_color(data)
     rectangles = get_rect_data(data, file)
-    edges = []
-    for (rect_a, rect_b) in list(combinations(rectangles,2)):
-        if are_neighbours(rect_a, rect_b):
-            edges += (rect_a['index'], rect_b['index'])
     rect_data += rectangles
     total = sum(by_area.values())
     if (total > 1.1 or total < 0.9):
@@ -87,15 +98,15 @@ for file in files:
     number_of_rects.append(len(data['rectangles']))
 
 
-print('Calculate all points')
-all_points = []
-for rect in rect_data:
-    all_points += get_all_points(rect)
-
-p_df = pd.DataFrame(all_points)
-p_df.to_csv('points.csv')
-
-print('done points')
+# print('Calculate all points')
+# all_points = []
+# for rect in rect_data:
+#     all_points += get_all_points(rect)
+#
+# p_df = pd.DataFrame(all_points)
+# p_df.to_csv('points.csv')
+#
+# print('done points')
 
 colors = ['red','blue','yellow','black', 'white']
 
@@ -198,6 +209,11 @@ mean_points = grouped_by_color.mean()
 std_points = grouped_by_color.std()
 df.to_csv('rectangles.csv')
 
+fig, ax = plt.subplots()
+df['color'].value_counts().plot(ax=ax, kind='bar')
+plt.savefig(out_dir + '/n-by-color.png')
+plt.close()
+
 df.boxplot(by='color',column='size')
 plt.savefig(out_dir + '/size-by-color.png')
 plt.close()
@@ -277,12 +293,17 @@ rand_df['aspect_max_min'] = rand_df[['A','B']].max(axis=1) / rand_df[['A','B']].
 x = df[df['aspect_max_min'] <= 3]['aspect_max_min']
 y = rand_df[rand_df['aspect_max_min'] <= 3]['aspect_max_min']
 
+kd_data = np.array(load_kdtree()).flatten()
+kd_df = pd.DataFrame(kd_data[0:1300], columns=['aspect_max_min'])
+kd = kd_df[kd_df['aspect_max_min'] <= 3]['aspect_max_min']
+
 sns.set_style("darkgrid")
 sns.kdeplot(x, shade=True, cut=0,gridsize=100,label="Mondrian rectangles")
 sns.kdeplot(y, shade=True, cut=0,gridsize=100,label="Random rectangles")
+sns.kdeplot(kd, shade=True, cut=0,gridsize=100,label="Kd rectangles")
 # plt.xlim((1,20))
 sns.rugplot(x);
-# plt.title('Aspect ratio r longer side to shorter r < 3')
+plt.title('Aspect ratio r longer side to shorter r < 3')
 plt.savefig(out_dir + '/aspect-max-min-rects.png')
 plt.close()
 
