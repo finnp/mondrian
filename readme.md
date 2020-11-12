@@ -1,6 +1,6 @@
 # Mondrian
 
-Trying to detect rectangles in mondrian paintings.
+Detecting Rectangles in Mondrian Paintings.
 
 - [Catalogue](http://catalogue.pietmondrian.nl/)
 - [Mondrian paintings detection](https://docs.google.com/spreadsheets/d/1gykn4YAahoxwuy5IHN-61TagBj5on5Xgg2uDjT_zUlk/edit#gid=0)
